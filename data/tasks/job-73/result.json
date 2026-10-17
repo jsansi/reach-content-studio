@@ -1,0 +1,105 @@
+{
+  "concept": "Homenaje en el estilo de las conmemorativas de BTL: la imagen de la consulta ocupa casi todo el lienzo con un difuminado suave hacia el azul, el logo arriba al centro y, abajo, el texto centrado con la fecha sobre una etiqueta rosa.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-19",
+    "occasion": "Día Internacional de la Lucha contra el Cáncer de Mama",
+    "audience": "Médicos, clínicas, hospitales y profesionales de la salud en El Salvador",
+    "slides": [
+      {
+        "layout": "hero",
+        "theme": "dark",
+        "image": "data/uploads/pub-4/Empowered Breast Health Consultation.png",
+        "imageAlt": "Una paciente con bata rosa sonríe mientras su médica le apoya la mano en el hombro durante una consulta de salud mamaria",
+        "imageFrame": {
+          "left": 0,
+          "top": 165,
+          "width": 1080,
+          "height": 915,
+          "focusY": 12,
+          "fadeTop": 110,
+          "fadeBottom": 150
+        },
+        "datePill": "19 de octubre",
+        "title": "Día Internacional de la **Lucha**\n**contra el Cáncer de Mama**",
+        "body": "Cuidarte hoy puede cambiar tu mañana.",
+        "align": "center",
+        "alt": "Degradado azul con el logo de BTL arriba al centro y la fotografía de una paciente con bata rosa que sonríe mientras su médica le apoya la mano en el hombro, con un difuminado suave arriba y abajo. Texto centrado: 19 de octubre, sobre una etiqueta rosa. Día Internacional de la Lucha contra el Cáncer de Mama. Cuidarte hoy puede cambiar tu mañana.",
+        "style": [
+          {
+            "selector": ".logo",
+            "property": "left",
+            "value": "440px"
+          },
+          {
+            "selector": ".h-title",
+            "property": "font-size",
+            "value": "58px"
+          },
+          {
+            "selector": ".h-title",
+            "property": "font-weight",
+            "value": "300"
+          },
+          {
+            "selector": ".h-title",
+            "property": "line-height",
+            "value": "1.12"
+          },
+          {
+            "selector": ".h-title",
+            "property": "margin-top",
+            "value": "22px"
+          },
+          {
+            "selector": ".h-body",
+            "property": "font-size",
+            "value": "36px"
+          },
+          {
+            "selector": ".h-body",
+            "property": "margin-top",
+            "value": "20px"
+          },
+          {
+            "selector": ".h-text",
+            "property": "bottom",
+            "value": "80px"
+          }
+        ],
+        "pillColor": "pink"
+      }
+    ],
+    "caption": "Este 19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama, nos sumamos a quienes acompañan cada diagnóstico, cada tratamiento y cada paso de la recuperación.\n\nDetrás de cada paciente hay un equipo que escucha, sostiene y cuida. A todas las mujeres que enfrentan esta enfermedad, a sus familias y a los profesionales de la salud que están a su lado: gracias por recordarnos que cuidar también es acompañar.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #Prevención #BTLElSalvador",
+    "sources": [
+      "Brief de la publicación (fecha, ocasión e instrucciones)",
+      "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+    ],
+    "claims": [
+      {
+        "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+        "location": "diapositiva 1 y caption",
+        "source": "Brief de la publicación (fecha y ocasión)",
+        "approval": "general_statement"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ],
+  "summary": "Diapositiva 1: franjas azules más delgadas (la foto empieza en 165 px y llega más abajo), con el mismo difuminado arriba y abajo; la etiqueta \"19 de octubre\" pasa a fondo rosa (#ffb0d4) con texto azul oscuro.",
+  "changed_slides": [
+    1
+  ],
+  "warnings": [
+    "Etiqueta de fecha en rosa a petición de Jaime: es el rosa secundario de BTL (#ffb0d4, guía de redes sociales p. 8) en un elemento gráfico pequeño, muy por debajo del 10 % del visual; el texto sigue en colores de marca.",
+    "Siguen las excepciones al manual pedidas por Jaime (texto centrado y parte del titular en negrita).",
+    "Confirma que la imagen \"Empowered Breast Health Consultation\" se puede publicar (origen y licencia o autorización de las personas que aparecen)."
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "direction": "A",
+  "direction_name": "Revista editorial",
+  "concept": "Una edición especial de revista de divulgación para clínicas: \"Hoy el hueso es portada\". Tres secciones numeradas (01 Contexto, 02 Tecnología, 03 Consulta) llevan del corte de una cabeza femoral al aplicador de anillo en uso y a las ventajas para la clínica.",
+  "differentiation": "Maquetación de revista: cabecera de sección con filete en cada diapositiva, columna de texto estrecha frente a una ilustración o foto grande, pies de imagen y, al final, tres columnas de texto como en un artículo. Portada azul profunda como contrapunto y desarrollo en blanco y claro. Sin numerales gigantes, sin halos, sin curvas ni paneles partidos.",
+  "slides": [
+    {
+      "purpose": "Portada de la edición: \"Hoy el hueso es portada\", con el corte de la cabeza femoral y su pie de ilustración.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Portada de revista sobre azul profundo. Cabecera: \"01 · Contexto\" con un filete. Columna izquierda: \"20 de octubre · Día Mundial de la Osteoporosis\", titular \"Hoy el hueso es portada.\" y \"En esta edición, lo que una clínica de rehabilitación puede sumar a su consulta.\" A la derecha, el corte de una cabeza femoral dibujado en línea blanca con hueso esponjoso celeste luminoso, y el pie \"Ilustración: hueso esponjoso poroso de la cabeza femoral.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "01 · Contexto"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "c1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":340,\"left\":\"m\",\"width\":470,\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "d",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "20 de octubre · Día Mundial\nde la Osteoporosis"
+        },
+        {
+          "id": "h1",
+          "parent": "c1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "Hoy el hueso\nes portada."
+        },
+        {
+          "id": "b",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"maxWidth\":440}",
+          "text": "En esta edición, lo que\nuna clínica de\nrehabilitación puede\nsumar a su consulta."
+        },
+        {
+          "id": "ri",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":580,\"top\":330,\"width\":400}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": "ri",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.38\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient><clipPath id=\\\"c\\\"><path d=\\\"M150 210 C135 170 120 150 95 150 C60 150 50 200 75 230 C95 255 110 290 115 340 L120 520 L250 520 L248 360 C250 300 280 250 330 215 Z\\\"/><circle cx=\\\"230\\\" cy=\\\"130\\\" r=\\\"105\\\"/></clipPath></defs><ellipse cx=\\\"215\\\" cy=\\\"190\\\" rx=\\\"200\\\" ry=\\\"200\\\" fill=\\\"url(#h)\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.9\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M150 210 C135 170 120 150 95 150 C60 150 50 200 75 230 C95 255 110 290 115 340 L120 520 L250 520 L248 360 C250 300 280 250 330 215 Z\\\"/><circle cx=\\\"230\\\" cy=\\\"130\\\" r=\\\"105\\\"/></g><g clip-path=\\\"url(#c)\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M83.0 253.3Q84.8 268.8 83.4 276.4M83.0 253.3Q75.4 252.8 61.2 244.3M91.4 322.2Q81.7 323.1 65.4 330.2M124.3 89.6Q121.9 104.7 124.5 118.1M124.3 89.6Q132.3 77.1 136.9 63.2M182.2 87.3Q170.4 75.0 162.1 70.7M289.2 224.2Q277.5 227.7 266.0 228.4M289.2 224.2Q284.1 240.1 286.0 249.5M228.6 322.4Q218.7 333.6 204.6 337.4M213.0 172.0Q219.9 154.8 233.9 144.3M189.3 65.4Q179.1 64.3 162.1 70.7M219.0 68.4Q205.4 62.1 189.3 65.4M322.5 221.6Q333.4 235.9 339.7 245.0M250.9 247.5Q243.0 246.6 227.8 240.0M335.8 275.3Q328.4 280.6 315.1 284.6M335.8 275.3Q337.3 257.4 339.7 245.0M236.2 395.4Q230.2 377.8 224.0 365.4M236.2 395.4Q223.0 386.5 204.1 384.7M191.3 142.7Q179.7 128.9 176.6 115.1M133.7 335.3Q143.5 347.0 149.2 355.1M113.2 265.5Q103.7 266.5 83.4 276.4M315.3 169.3Q325.4 162.8 328.2 150.5M315.3 169.3Q313.6 160.3 304.9 148.3M164.4 26.8Q163.2 49.1 162.1 70.7M204.2 291.6Q212.5 279.5 222.2 268.6M162.2 337.1Q155.2 345.2 149.2 355.1M114.4 230.5Q114.3 215.3 111.6 200.6M187.5 308.9Q199.0 319.5 204.6 337.4M332.5 100.1Q338.5 89.8 339.7 77.7M271.5 205.0Q265.6 220.8 266.0 228.4M271.5 205.0Q266.6 194.2 257.3 183.4M271.5 205.0Q277.6 213.4 289.2 224.2M164.0 159.4Q167.6 179.1 169.0 189.7M248.9 359.4Q239.5 352.4 231.7 344.4M188.2 275.0Q193.2 258.8 202.3 250.7M283.7 109.6Q297.3 101.3 310.4 100.2M311.6 245.9Q321.7 250.1 339.7 245.0M242.7 300.6Q244.8 289.1 253.9 276.6M64.9 160.6Q63.6 144.5 62.3 126.3M63.5 199.4Q70.1 193.0 76.2 179.5M89.3 387.9Q79.2 388.2 63.1 386.2M176.6 115.1Q168.7 106.3 153.1 103.0M303.0 31.0Q293.1 27.3 279.2 25.2M98.8 79.8Q114.8 88.6 124.3 89.6M121.9 146.1Q111.4 157.6 106.7 176.9M310.4 100.2Q310.1 115.7 313.2 127.3M175.4 365.0Q189.7 377.2 204.1 384.7M255.2 118.7Q262.1 99.7 270.4 91.5M62.5 86.0Q77.2 85.1 98.8 79.8M210.5 214.8Q200.0 218.4 193.8 229.9M335.0 341.2Q321.2 335.5 311.9 321.5M204.1 384.7Q212.3 376.3 224.0 365.4M159.7 131.4Q158.0 121.7 153.1 103.0M278.2 132.8Q295.2 138.0 304.9 148.3M257.4 37.8Q271.1 33.8 279.2 25.2M193.8 229.9Q182.3 232.9 166.1 228.6M153.1 103.0Q138.4 96.4 124.3 89.6M222.6 116.1Q211.1 109.7 203.0 96.6M118.8 302.0Q134.0 295.5 141.2 293.2M118.8 302.0Q107.7 298.0 93.6 297.6M279.2 25.2Q282.6 41.1 289.7 60.9M160.3 399.6Q165.4 388.3 175.4 365.0M65.2 293.2Q78.4 300.1 93.6 297.6M263.7 67.2Q250.4 67.9 239.9 77.7M61.2 244.3Q72.0 231.5 79.3 220.9M187.4 202.6Q176.2 192.9 169.0 189.7M131.2 172.9Q127.0 158.7 121.9 146.1M308.8 75.9Q295.1 66.2 289.7 60.9M310.3 345.4Q319.9 342.3 335.0 341.2M83.4 276.4Q84.7 285.2 93.6 297.6\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.95\\\"/><path d=\\\"M60.1 29.6Q64.1 44.6 70.2 54.8M131.0 33.7Q132.8 46.1 136.9 63.2M131.0 33.7Q145.5 30.3 164.4 26.8M83.0 253.3Q84.9 234.9 79.3 220.9M234.7 209.2Q226.1 207.8 210.5 214.8M234.7 209.2Q235.6 223.2 227.8 240.0M289.8 379.7Q283.8 371.2 279.8 354.5M289.8 379.7Q307.0 386.2 316.0 392.0M228.6 322.4Q232.4 335.6 231.7 344.4M213.0 172.0Q200.7 170.2 189.2 175.6M213.0 172.0Q225.1 175.5 237.6 173.1M189.3 65.4Q186.8 76.5 182.2 87.3M92.3 35.3Q76.9 45.9 70.2 54.8M92.3 35.3Q98.6 47.5 112.0 57.3M219.0 68.4Q233.3 73.3 239.9 77.7M219.0 68.4Q217.9 53.2 223.6 41.5M70.2 54.8Q70.6 66.8 62.5 86.0M282.3 173.1Q274.0 173.8 257.3 183.4M282.3 173.1Q302.6 167.6 315.3 169.3M250.9 247.5Q260.1 242.1 266.0 228.4M233.9 144.3Q232.5 161.5 237.6 173.1M233.9 144.3Q227.9 128.2 222.6 116.1M133.7 335.3Q120.6 349.3 108.9 354.4M315.3 169.3Q322.7 176.1 336.5 186.1M286.0 249.5Q303.0 246.9 311.6 245.9M286.0 249.5Q278.2 238.2 266.0 228.4M254.0 157.4Q246.0 152.5 233.9 144.3M254.0 157.4Q259.1 166.3 257.3 183.4M283.6 284.6Q285.6 292.3 289.8 308.0M204.6 337.4Q222.7 344.6 231.7 344.4M164.4 26.8Q175.4 28.9 188.6 29.3M239.9 77.7Q251.4 82.8 270.4 91.5M71.1 355.7Q62.2 365.7 63.1 386.2M71.1 355.7Q79.4 377.2 89.3 387.9M162.2 337.1Q156.5 327.6 160.2 309.6M336.5 186.1Q335.0 165.1 328.2 150.5M160.2 309.6Q146.6 299.1 141.2 293.2M160.2 309.6Q175.8 312.9 187.5 308.9M187.5 308.9Q193.1 297.4 204.2 291.6M141.9 196.7Q158.2 195.3 169.0 189.7M164.0 159.4Q172.0 167.8 189.2 175.6M248.9 359.4Q233.4 364.6 224.0 365.4M248.9 359.4Q253.5 371.1 256.1 384.0M182.7 399.9Q175.3 400.0 160.3 399.6M182.7 399.9Q197.4 394.0 204.1 384.7M182.7 399.9Q181.6 380.2 175.4 365.0M86.0 139.9Q71.5 132.7 62.3 126.3M188.2 275.0Q194.7 283.3 204.2 291.6M133.3 397.2Q129.4 384.1 127.8 373.3M133.3 397.2Q149.7 394.7 160.3 399.6M283.7 109.6Q279.5 103.7 270.4 91.5M311.6 245.9Q315.8 237.6 322.5 221.6M316.0 392.0Q317.2 376.6 317.2 366.4M256.1 384.0Q244.4 387.1 236.2 395.4M256.1 384.0Q272.5 381.9 289.8 379.7M242.7 300.6Q254.2 308.9 270.8 323.9M64.9 160.6Q70.0 167.5 76.2 179.5M237.6 173.1Q244.7 162.3 254.0 157.4M63.5 199.4Q74.7 207.2 79.3 220.9M336.6 381.3Q327.3 372.9 317.2 366.4M336.6 381.3Q340.9 359.4 335.0 341.2M270.8 323.9Q281.6 312.9 289.8 308.0M270.8 323.9Q275.7 341.2 279.8 354.5M167.6 260.0Q177.5 268.1 188.2 275.0M167.6 260.0Q158.7 253.9 142.0 243.4M222.2 268.6Q214.3 259.0 202.3 250.7M222.2 268.6Q222.9 251.0 227.8 240.0M176.6 115.1Q170.5 124.7 159.7 131.4M176.6 115.1Q183.1 102.8 182.2 87.3M159.9 281.1Q152.1 286.1 141.2 293.2M159.9 281.1Q165.1 273.3 167.6 260.0M159.9 281.1Q156.2 294.1 160.2 309.6M316.3 198.8Q326.7 192.2 336.5 186.1M316.3 198.8Q310.7 179.9 315.3 169.3M136.9 63.2Q128.0 60.8 112.0 57.3M136.9 63.2Q150.6 69.5 162.1 70.7M108.9 354.4Q120.1 359.2 127.8 373.3M108.9 354.4Q104.5 335.1 91.4 322.2M317.2 366.4Q312.3 355.6 310.3 345.4M311.9 321.5Q299.0 317.8 289.8 308.0M98.8 79.8Q109.6 71.6 112.0 57.3M98.8 79.8Q96.8 89.3 86.8 105.8M121.9 146.1Q119.9 132.2 124.5 118.1M339.1 121.9Q336.7 112.5 332.5 100.1M339.1 121.9Q330.3 123.7 313.2 127.3M127.8 373.3Q141.8 362.2 149.2 355.1M255.2 118.7Q263.2 126.3 278.2 132.8M322.4 57.2Q328.9 40.7 326.8 31.7M322.4 57.2Q326.7 65.5 339.7 77.7M169.0 189.7Q177.8 185.6 189.2 175.6M253.9 276.6Q256.2 259.7 250.9 247.5M253.9 276.6Q273.7 282.5 283.6 284.6M65.4 330.2Q70.3 345.0 71.1 355.7M86.8 105.8Q75.5 119.7 62.3 126.3M315.1 284.6Q294.3 282.3 283.6 284.6M159.7 131.4Q158.1 147.7 164.0 159.4M313.2 127.3Q312.9 137.5 304.9 148.3M106.7 176.9Q92.6 177.9 76.2 179.5M124.5 118.1Q135.1 114.5 153.1 103.0M279.8 354.5Q260.3 351.5 248.9 359.4M222.6 116.1Q236.8 121.3 255.2 118.7M270.4 91.5Q270.1 83.0 263.7 67.2M202.3 250.7Q194.9 240.1 193.8 229.9M263.7 67.2Q280.8 63.0 289.7 60.9M224.0 365.4Q229.1 355.2 231.7 344.4M61.2 244.3Q74.6 258.2 83.4 276.4M187.4 202.6Q197.5 211.6 210.5 214.8M187.4 202.6Q185.9 191.8 189.2 175.6M131.2 172.9Q136.3 183.3 141.9 196.7M142.0 243.4Q153.4 233.3 166.1 228.6M308.8 75.9Q314.7 68.1 322.4 57.2M308.8 75.9Q312.2 86.1 310.4 100.2M328.2 150.5Q319.2 146.0 304.9 148.3M328.2 150.5Q321.8 138.1 313.2 127.3M257.3 183.4Q249.5 179.8 237.6 173.1M310.3 345.4Q314.9 334.8 311.9 321.5M83.4 276.4Q71.2 284.9 65.2 293.2M227.8 240.0Q210.4 248.1 202.3 250.7M240.0 20.3Q251.9 25.3 257.4 37.8M240.0 20.3Q228.1 35.2 223.6 41.5M339.7 77.7Q328.4 72.5 308.8 75.9\\\" stroke-width=\\\"1.6\\\" stroke-opacity=\\\"0.7\\\"/></g><g clip-path=\\\"url(#c)\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.55\\\" stroke-width=\\\"2.2\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M235 520 C232 400 250 300 300 200\\\"/><path d=\\\"M135 520 C150 380 190 270 250 60\\\"/><path d=\\\"M90 200 C150 120 240 90 330 110\\\"/></g><path d=\\\"M138 520 L136 380 M226 520 L228 380\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.85\\\" stroke-width=\\\"5\\\"/>\",\"viewBox\":\"0 0 400 520\",\"width\":400,\"height\":520,\"title\":\"Corte de la cabeza femoral con hueso esponjoso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "rc",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":870,\"left\":580,\"width\":406}",
+          "text": null
+        },
+        {
+          "id": "cap",
+          "parent": "rc",
+          "type": "Footnote",
+          "props": "{}",
+          "text": "Ilustración: hueso esponjoso\nporoso de la cabeza femoral."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "02 · Tecnología: el aplicador de anillo en uso con pie de foto y una columna sobre los 8 aplicadores; dos notas al pie de página.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Página de revista en blanco. Cabecera: \"02 · Tecnología\" con un filete. A la izquierda, la foto oficial de una paciente recostada con el aplicador de anillo de BTL Magnetotherapy, con el pie \"Aplicador de anillo de BTL Magnetotherapy, en uso.\" A la derecha, columna: \"Un equipo, 8 aplicadores.\" y \"Para tratar cualquier parte del cuerpo, con hasta 4 canales y protocolos por área anatómica.\" Abajo, dos notas: \"Tecnología FMF: el campo magnético se bloquea del lado del operador.\" e \"Interfaz: pantalla a color de 7″ con selección de protocolos por zona.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/web-magnetotherapy-03.jpg\",\"alt\":\"Paciente recostada con el aplicador de anillo de BTL Magnetotherapy\",\"left\":-60,\"top\":350,\"width\":640,\"fade\":[\"right\"],\"fadeSize\":90}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "02 · Tecnología"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "rcap",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":750,\"left\":\"m\",\"width\":480}",
+          "text": null
+        },
+        {
+          "id": "cap",
+          "parent": "rcap",
+          "type": "Footnote",
+          "props": "{}",
+          "text": "Aplicador de anillo de BTL\nMagnetotherapy, en uso."
+        },
+        {
+          "id": "c1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":350,\"left\":620,\"width\":366,\"gap\":16}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "c1",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Un equipo,\n8 aplicadores."
+        },
+        {
+          "id": "b",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Para tratar cualquier\nparte del cuerpo, con\nhasta 4 canales y\nprotocolos por área\nanatómica."
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":880,\"left\":\"m\",\"right\":\"m\",\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "rule2",
+          "parent": "r2",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "row",
+          "parent": "r2",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":52}",
+          "text": null
+        },
+        {
+          "id": "w1",
+          "parent": "row",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8,\"width\":420}",
+          "text": null
+        },
+        {
+          "id": "w1t",
+          "parent": "w1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Tecnología FMF"
+        },
+        {
+          "id": "w1b",
+          "parent": "w1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "El campo magnético se\nbloquea del lado\ndel operador."
+        },
+        {
+          "id": "w2",
+          "parent": "row",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8,\"width\":420}",
+          "text": null
+        },
+        {
+          "id": "w2t",
+          "parent": "w2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Interfaz"
+        },
+        {
+          "id": "w2b",
+          "parent": "w2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Pantalla a color de 7″\ncon selección de\nprotocolos por zona."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "03 · Consulta: tres columnas de artículo con las ventajas para la clínica y CTA \"Solicita tu demo\".",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Página de revista en fondo claro. Cabecera: \"03 · Consulta\" con un filete. Titular: \"Tres ventajas para la clínica.\" Tres columnas: \"Flexibilidad: 8 aplicadores y hasta 4 canales.\", \"Orden: protocolos por área anatómica y base de datos de pacientes.\" y \"Tu equipo: con FMF, el terapeuta no queda expuesto al campo magnético.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "03 · Consulta"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":340,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Tres ventajas\npara la clínica."
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":570,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "row",
+          "parent": "r2",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":40}",
+          "text": null
+        },
+        {
+          "id": "k1",
+          "parent": "row",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8,\"width\":270}",
+          "text": null
+        },
+        {
+          "id": "k1t",
+          "parent": "k1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Flexibilidad"
+        },
+        {
+          "id": "k1b",
+          "parent": "k1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "8 aplicadores y\nhasta 4 canales."
+        },
+        {
+          "id": "k2",
+          "parent": "row",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8,\"width\":270}",
+          "text": null
+        },
+        {
+          "id": "k2t",
+          "parent": "k2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Orden"
+        },
+        {
+          "id": "k2b",
+          "parent": "k2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Protocolos por\nárea anatómica y\nbase de datos\nde pacientes."
+        },
+        {
+          "id": "k3",
+          "parent": "row",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8,\"width\":270}",
+          "text": null
+        },
+        {
+          "id": "k3t",
+          "parent": "k3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Tu equipo"
+        },
+        {
+          "id": "k3b",
+          "parent": "k3",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Con FMF, el\nterapeuta no queda\nexpuesto al campo\nmagnético."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"outline\",\"size\":60}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: hoy el hueso es portada. Y en esta edición, lo que una clínica de rehabilitación puede sumar a su consulta.\n\nBTL Magnetotherapy reúne 8 aplicadores para tratar cualquier parte del cuerpo, hasta 4 canales, protocolos por área anatómica y base de datos de pacientes. Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Ilustración: hueso esponjoso poroso de la cabeza femoral.",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; ilustración educativa o frase general, no atribuida al producto",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Aplicador de anillo de BTL Magnetotherapy, en uso.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Camilla con aplicador de magnetoterapia\", \"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\") y fotos oficiales",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Un equipo, 8 aplicadores. Para tratar cualquier parte del cuerpo",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "con hasta 4 canales",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología FMF: el campo magnético se bloquea del lado del operador.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pantalla a color de 7″ con selección de protocolos por zona.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (pantalla táctil a color de 7´´)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores y hasta 4 canales.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica y base de datos de pacientes.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con FMF, el terapeuta no queda expuesto al campo magnético.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica y base de datos de pacientes",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "revista-editorial"
+}

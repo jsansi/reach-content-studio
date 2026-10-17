@@ -1,0 +1,293 @@
+{
+  "direction": "B",
+  "direction_name": "Tecnología médica premium",
+  "concept": "El aplicador es el protagonista: aparece iluminado sobre azul profundo como un objeto de precisión, y la pregunta de la portada invita a la clínica a imaginar la salud íntima dentro de su consulta. La segunda diapositiva lo presenta con su marca y su rasgo más visual (360°); el cierre muestra las puntas y la demo.",
+  "differentiation": "La imagen ocupa el centro en las tres diapositivas, con profundidad (luz de piso, anillos) sobre fondos oscuros; el texto es breve y vive en zonas lisas. La jerarquía es imagen → titular → datos, al revés que en A y sin la estructura modular de C.",
+  "slides": [
+    {
+      "purpose": "Conmemorar la fecha y despertar la pregunta con el equipo en escena",
+      "background": "dark",
+      "lightFrom": null,
+      "alt": "Fondo azul oscuro con el aplicador EMFEMME 360 iluminado en la parte inferior. Texto: 18 de octubre, Día Mundial de la Menopausia. ¿Y si la salud íntima fuera parte de tu consulta?",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\": -200, \"top\": 1080, \"width\": 1480, \"height\": 420, \"intensity\": 0.32}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator_5325_ENUS100.png\", \"alt\": \"Aplicador EMFEMME 360\", \"left\": -80, \"top\": 720, \"width\": 1240}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 290, \"right\": \"m\", \"gap\": 24}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "DateLine",
+          "props": "{\"date\": \"18 de octubre\", \"occasion\": \"Día Mundial de la Menopausia\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"tone\": \"base\", \"as\": \"h1\"}",
+          "text": "¿Y si la salud íntima\nfuera parte de\ntu consulta?"
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar EMFEMME 360 como tecnología",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Fondo azul oscuro con el aplicador intravaginal EMFEMME 360 dentro de anillos de luz y el logo de EMFEMME 360. Texto: Energía en 360°, interna y externa. Radiofrecuencia no ablativa: sin cortes ni láser.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\": 720, \"cy\": 690, \"radii\": [300, 210]}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\": 420, \"top\": 380, \"width\": 600, \"height\": 640, \"intensity\": 0.24}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator-V-30-Tip-5563_ENUS100.png\", \"alt\": \"Aplicador intravaginal EMFEMME 360\", \"left\": 470, \"top\": 320, \"width\": 500}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 300, \"width\": 380}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "ProductLogo",
+          "props": "{\"src\": \"data/uploads/pub-2/Exion_ICON_Oval_Emfemme-360_ENUS100.png\", \"alt\": \"EMFEMME 360\", \"width\": 360}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": 200, \"right\": \"m\", \"gap\": 16}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Headline",
+          "props": "{\"size\": \"m\", \"tone\": \"base\"}",
+          "text": "Energía en 360°,\ninterna y externa."
+        },
+        {
+          "id": "n9",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"size\": \"m\", \"tone\": \"accent\"}",
+          "text": "Radiofrecuencia no ablativa: sin cortes ni láser."
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica y CTA",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul oscuro con las puntas del aplicador EMFEMME 360. Texto: Para tu clínica. Una nueva línea de servicio para tu clínica. Sin cortes ni láser. Sesiones ambulatorias. Puntas de un solo uso. Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\": 500, \"top\": 480, \"width\": 640, \"height\": 520, \"intensity\": 0.22}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-2/Exion_360_PIC_Emfemme-360-Applicator-Tips_ENUS100.png\", \"alt\": \"Puntas del aplicador EMFEMME 360\", \"left\": 600, \"top\": 600, \"width\": 560}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 290, \"right\": \"m\", \"gap\": 16}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Eyebrow",
+          "props": "{}",
+          "text": "Para tu clínica"
+        },
+        {
+          "id": "n6",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"tone\": \"base\"}",
+          "text": "Una nueva línea\nde servicio para\ntu clínica."
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 660, \"width\": 440, \"gap\": 18}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "Sin cortes ni láser"
+        },
+        {
+          "id": "n9",
+          "parent": "n7",
+          "type": "Rule",
+          "props": "{\"length\": 440, \"thickness\": 1, \"emphasis\": \"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "Sesiones ambulatorias"
+        },
+        {
+          "id": "n11",
+          "parent": "n7",
+          "type": "Rule",
+          "props": "{\"length\": 440, \"thickness\": 1, \"emphasis\": \"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "Puntas de un solo uso"
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"right\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "CtaBlock",
+          "props": "{\"variant\": \"outline\", \"size\": 96, \"detail\": \"Escríbenos “DEMO” por mensaje directo\"}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "18 de octubre, Día Mundial de la Menopausia: ¿y si la salud íntima fuera parte de tu consulta?\n\nEMFEMME 360 lleva la radiofrecuencia no ablativa a la salud íntima femenina: energía en 360° con aplicador intravaginal y tratamiento externo, sin cortes ni láser. Sesiones ambulatorias y puntas de un solo uso para sumar una nueva línea de servicio a tu clínica.\n\nEscríbenos \"DEMO\" por mensaje directo y agenda tu demostración en El Salvador.\n\n#DíaMundialDeLaMenopausia #EMFEMME360 #SaludÍntima #TecnologíaMédica #ElSalvador",
+  "sources": [
+    "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión)",
+    "data/uploads/pub-2 (imágenes oficiales de BTL adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "18 de octubre, Día Mundial de la Menopausia",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Energía en 360°, interna y externa",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 2",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Radiofrecuencia no ablativa, sin cortes ni láser",
+      "location": "diapositivas 2, 3 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 1",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Una nueva línea de servicio para tu clínica",
+      "location": "diapositiva 3 y caption",
+      "source": "Preferencias editoriales activas (ventajas prácticas para la clínica)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Sesiones ambulatorias",
+      "location": "diapositiva 3 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 5",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Puntas de un solo uso",
+      "location": "diapositiva 3 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 6",
+      "approval": "manufacturer_description"
+    }
+  ]
+}

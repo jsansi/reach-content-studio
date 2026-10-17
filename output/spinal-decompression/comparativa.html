@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparativa A · B · C</title>
+<style>
+:root { --ink:#000a32; --muted:#00508c; --bg:#f2f5f8; --card:#ffffff; --line:#d5dfe9; --accent:#00508c; --on-accent:#fff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ink:#e8f1fa; --muted:#96d2ff; --bg:#0b1020; --card:#141b2e; --line:#26324d; --accent:#96d2ff; --on-accent:#000a32; } }
+:root[data-theme="dark"] { --ink:#e8f1fa; --muted:#96d2ff; --bg:#0b1020; --card:#141b2e; --line:#26324d; --accent:#96d2ff; --on-accent:#000a32; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family: system-ui, -apple-system, sans-serif; }
+main { max-width: 1240px; margin: 0 auto; padding: 28px 16px 60px; }
+h1 { font-size: 24px; margin: 0 0 4px; } .lede { color: var(--muted); margin: 0 0 20px; }
+.tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 20px; }
+.tabs button { font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.view[hidden] { display:none; }
+.opt { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 18px; }
+.opt header h2 { font-size: 18px; margin: 0 0 4px; } .opt header p { margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.row { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+figure { margin:0; } img { width:100%; height:auto; display:block; border-radius: 4px; box-shadow: 0 6px 22px rgba(0,10,50,.16); }
+figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+details { margin-top: 14px; } summary { cursor: pointer; font-size: 14px; color: var(--muted); }
+pre { white-space: pre-wrap; font: 14px/1.55 system-ui, sans-serif; margin: 10px 0 0; padding: 14px; border-left: 3px solid var(--accent); background: var(--bg); }
+.caps { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; } .caps h3 { margin: 0; font-size: 15px; }
+@media (max-width: 760px) { .row, .caps { grid-template-columns: 1fr; } }
+</style></head>
+<body><main>
+<h1>Día Mundial de la Columna Vertebral · Comparativa</h1>
+<p class="lede">BTL El Salvador · BTL Spinal Decompression · 16 de octubre de 2026 · Opción A sin cambios; B y C son alternativas.</p>
+<div class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" data-view="opciones">Carrusel completo</button>
+  <button role="tab" aria-selected="false" data-view="laminas">Lámina por lámina</button>
+  <button role="tab" aria-selected="false" data-view="captions">Captions</button>
+</div>
+<div class="view" id="opciones"><section class="opt">
+      <header><h2>Opción A · Actual</h2><p>Versión aprobada, sin cambios.</p></header>
+      <div class="row"><figure><img src="slide-01.png" alt="Ilustración de la columna vertebral en vista lateral con los discos lumbares resaltados en azul. Texto: 16 de octubre, Día Mundial de la Columna Vertebral. Ninguna espalda es igual. ¿Por qué tratarlas en la misma posición?" loading="lazy"><figcaption>Lámina 1</figcaption></figure><figure><img src="slide-02.png" alt="Paciente boca abajo con cinturón lumbar durante una aplicación en la camilla BTL Spinal Decompression. Texto: Descompresión que se adapta a cada paciente. +100 posiciones de tratamiento. Más formas de colocar al paciente para atender dolores de espalda de distintos orígenes." loading="lazy"><figcaption>Lámina 2</figcaption></figure><figure><img src="slide-03.png" alt="Tres ventajas de BTL Spinal Decompression para clínicas de fisioterapia y rehabilitación: terapia manos libres, trata toda la espalda y una nueva línea de servicio. Solicita tu demo con BTL El Salvador." loading="lazy"><figcaption>Lámina 3</figcaption></figure></div>
+      <details><summary>Caption (536 caracteres)</summary><pre>Día Mundial de la Columna Vertebral: ninguna espalda es igual, ¿por qué tratarlas en la misma posición?
+
+Con BTL Spinal Decompression, descompresión vertebral no invasiva, personalizas cada protocolo con +100 posiciones de tratamiento, trabajas con terapia manos libres en toda la espalda y sumas una nueva línea de servicio a tu clínica.
+
+¿Quieres verlo en acción? Escríbenos &quot;DEMO&quot; por mensaje directo y coordinamos tu demo con BTL El Salvador.
+
+#DescompresiónVertebral #Fisioterapia #Rehabilitación #ElSalvador #DíaMundialDeLaColumna</pre></details>
+    </section><section class="opt">
+      <header><h2>Opción B · Evolución</h2><p>Evolución de A: mismo gancho y estructura, público explícito, dos posiciones oficiales como prueba visual, ventajas verificadas y un CTA que dice exactamente qué hacer.</p></header>
+      <div class="row"><figure><img src="opcion-b/slide-01.png" alt="Ilustración de la columna vertebral con los discos lumbares resaltados. Texto: Para fisioterapeutas y clínicas. 16 de octubre, Día Mundial de la Columna Vertebral. Ninguna espalda es igual. ¿Por qué tratarlas en la misma posición?" loading="lazy"><figcaption>Lámina 1</figcaption></figure><figure><img src="opcion-b/slide-02.png" alt="Dos posiciones de tratamiento en BTL Spinal Decompression: semiincorporada y prono. Texto: +100 posiciones de tratamiento. Elige la que necesita cada paciente, en supino, prono o semiincorporado." loading="lazy"><figcaption>Lámina 2</figcaption></figure><figure><img src="opcion-b/slide-03.png" alt="Ventajas de BTL Spinal Decompression para clínicas: terapia manos libres con ciclos automatizados, columna cervical y lumbar en un mismo equipo, protocolos predefinidos. Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador." loading="lazy"><figcaption>Lámina 3</figcaption></figure></div>
+      <details><summary>Caption (423 caracteres)</summary><pre>Hoy es el Día Mundial de la Columna Vertebral, y en consulta lo sabes mejor que nadie: ninguna espalda es igual.
+
+BTL Spinal Decompression te da +100 posiciones de tratamiento, terapia manos libres y descompresión cervical y lumbar en un mismo equipo.
+
+¿Quieres verlo funcionar? Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador.
+
+#DíaMundialDeLaColumna #Fisioterapia #Rehabilitación #ElSalvador</pre></details>
+    </section><section class="opt">
+      <header><h2>Opción C · El segmento</h2><p>Concepto propio: abre con «L4–L5», un segmento que todo fisioterapeuta reconoce; muestra cómo ajustar la posición al segmento con dos posiciones oficiales y cierra con «DEMO» como acción.</p></header>
+      <div class="row"><figure><img src="opcion-c/slide-01.png" alt="Ilustración de tres vértebras lumbares, L3, L4 y L5, con el disco L4–L5 resaltado. Texto: 16 de octubre, Día Mundial de la Columna Vertebral. L4–L5. Si trabajas en rehabilitación, lo ves cada semana. ¿Y si pudieras ajustar la posición al segmento?" loading="lazy"><figcaption>Lámina 1</figcaption></figure><figure><img src="opcion-c/slide-02.png" alt="Dos posiciones de BTL Spinal Decompression. Flexión pélvica: ángulo pélvico ajustable para enfocar los segmentos lumbares. Semiincorporada: estiramiento suave, pensada para pacientes muy sensibles. Y descompresión cervical automatizada en el mismo equipo." loading="lazy"><figcaption>Lámina 2</figcaption></figure><figure><img src="opcion-c/slide-03.png" alt="DEMO. Escríbenos DEMO por mensaje directo y coordinamos una demostración de BTL Spinal Decompression con BTL El Salvador. Manos libres, cervical y lumbar, protocolos predefinidos." loading="lazy"><figcaption>Lámina 3</figcaption></figure></div>
+      <details><summary>Caption (453 caracteres)</summary><pre>L4–L5. Si trabajas en rehabilitación, lo ves cada semana.
+
+Este 16 de octubre, Día Mundial de la Columna Vertebral, te mostramos cómo BTL Spinal Decompression te permite ajustar la posición del paciente al segmento que quieres tratar, con descompresión cervical y lumbar en el mismo equipo.
+
+Escríbenos DEMO por mensaje directo y coordinamos una demostración con BTL El Salvador.
+
+#DíaMundialDeLaColumna #DescompresiónVertebral #Fisioterapia #ElSalvador</pre></details>
+    </section></div>
+<div class="view" id="laminas" hidden><section class="opt">
+      <header><h2>Lámina 1</h2></header>
+      <div class="row"><figure><img src="slide-01.png" alt="Ilustración de la columna vertebral en vista lateral con los discos lumbares resaltados en azul. Texto: 16 de octubre, Día Mundial de la Columna Vertebral. Ninguna espalda es igual. ¿Por qué tratarlas en la misma posición?" loading="lazy"><figcaption>Opción A</figcaption></figure><figure><img src="opcion-b/slide-01.png" alt="Ilustración de la columna vertebral con los discos lumbares resaltados. Texto: Para fisioterapeutas y clínicas. 16 de octubre, Día Mundial de la Columna Vertebral. Ninguna espalda es igual. ¿Por qué tratarlas en la misma posición?" loading="lazy"><figcaption>Opción B</figcaption></figure><figure><img src="opcion-c/slide-01.png" alt="Ilustración de tres vértebras lumbares, L3, L4 y L5, con el disco L4–L5 resaltado. Texto: 16 de octubre, Día Mundial de la Columna Vertebral. L4–L5. Si trabajas en rehabilitación, lo ves cada semana. ¿Y si pudieras ajustar la posición al segmento?" loading="lazy"><figcaption>Opción C</figcaption></figure></div>
+    </section><section class="opt">
+      <header><h2>Lámina 2</h2></header>
+      <div class="row"><figure><img src="slide-02.png" alt="Paciente boca abajo con cinturón lumbar durante una aplicación en la camilla BTL Spinal Decompression. Texto: Descompresión que se adapta a cada paciente. +100 posiciones de tratamiento. Más formas de colocar al paciente para atender dolores de espalda de distintos orígenes." loading="lazy"><figcaption>Opción A</figcaption></figure><figure><img src="opcion-b/slide-02.png" alt="Dos posiciones de tratamiento en BTL Spinal Decompression: semiincorporada y prono. Texto: +100 posiciones de tratamiento. Elige la que necesita cada paciente, en supino, prono o semiincorporado." loading="lazy"><figcaption>Opción B</figcaption></figure><figure><img src="opcion-c/slide-02.png" alt="Dos posiciones de BTL Spinal Decompression. Flexión pélvica: ángulo pélvico ajustable para enfocar los segmentos lumbares. Semiincorporada: estiramiento suave, pensada para pacientes muy sensibles. Y descompresión cervical automatizada en el mismo equipo." loading="lazy"><figcaption>Opción C</figcaption></figure></div>
+    </section><section class="opt">
+      <header><h2>Lámina 3</h2></header>
+      <div class="row"><figure><img src="slide-03.png" alt="Tres ventajas de BTL Spinal Decompression para clínicas de fisioterapia y rehabilitación: terapia manos libres, trata toda la espalda y una nueva línea de servicio. Solicita tu demo con BTL El Salvador." loading="lazy"><figcaption>Opción A</figcaption></figure><figure><img src="opcion-b/slide-03.png" alt="Ventajas de BTL Spinal Decompression para clínicas: terapia manos libres con ciclos automatizados, columna cervical y lumbar en un mismo equipo, protocolos predefinidos. Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador." loading="lazy"><figcaption>Opción B</figcaption></figure><figure><img src="opcion-c/slide-03.png" alt="DEMO. Escríbenos DEMO por mensaje directo y coordinamos una demostración de BTL Spinal Decompression con BTL El Salvador. Manos libres, cervical y lumbar, protocolos predefinidos." loading="lazy"><figcaption>Opción C</figcaption></figure></div>
+    </section></div>
+<div class="view" id="captions" hidden><section class="opt"><header><h2>Captions</h2></header><div class="caps"><div><h3>Opción A</h3><pre>Día Mundial de la Columna Vertebral: ninguna espalda es igual, ¿por qué tratarlas en la misma posición?
+
+Con BTL Spinal Decompression, descompresión vertebral no invasiva, personalizas cada protocolo con +100 posiciones de tratamiento, trabajas con terapia manos libres en toda la espalda y sumas una nueva línea de servicio a tu clínica.
+
+¿Quieres verlo en acción? Escríbenos &quot;DEMO&quot; por mensaje directo y coordinamos tu demo con BTL El Salvador.
+
+#DescompresiónVertebral #Fisioterapia #Rehabilitación #ElSalvador #DíaMundialDeLaColumna</pre></div><div><h3>Opción B</h3><pre>Hoy es el Día Mundial de la Columna Vertebral, y en consulta lo sabes mejor que nadie: ninguna espalda es igual.
+
+BTL Spinal Decompression te da +100 posiciones de tratamiento, terapia manos libres y descompresión cervical y lumbar en un mismo equipo.
+
+¿Quieres verlo funcionar? Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador.
+
+#DíaMundialDeLaColumna #Fisioterapia #Rehabilitación #ElSalvador</pre></div><div><h3>Opción C</h3><pre>L4–L5. Si trabajas en rehabilitación, lo ves cada semana.
+
+Este 16 de octubre, Día Mundial de la Columna Vertebral, te mostramos cómo BTL Spinal Decompression te permite ajustar la posición del paciente al segmento que quieres tratar, con descompresión cervical y lumbar en el mismo equipo.
+
+Escríbenos DEMO por mensaje directo y coordinamos una demostración con BTL El Salvador.
+
+#DíaMundialDeLaColumna #DescompresiónVertebral #Fisioterapia #ElSalvador</pre></div></div></section></div>
+</main>
+<script>
+const tabs = document.querySelectorAll('.tabs button');
+tabs.forEach((t) => t.addEventListener('click', () => {
+  tabs.forEach((x) => x.setAttribute('aria-selected', String(x === t)));
+  document.querySelectorAll('.view').forEach((v) => (v.hidden = v.id !== t.dataset.view));
+}));
+</script>
+</body></html>

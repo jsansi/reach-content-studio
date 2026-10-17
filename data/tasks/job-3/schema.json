@@ -1,0 +1,447 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "concept": {
+      "type": "string",
+      "description": "Creative direction in 1–3 sentences (Spanish)"
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "Signature brand name used in copy"
+        },
+        "date": {
+          "type": "string"
+        },
+        "occasion": {
+          "type": "string"
+        },
+        "product": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "string"
+        },
+        "slides": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "commemoration"
+                  },
+                  "datePill": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "Hook headline; use \\n for line breaks"
+                  },
+                  "question": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "illustration": {
+                    "description": "\"spine\" draws the vertebral column; use \"none\" for any other topic",
+                    "type": "string",
+                    "enum": [
+                      "spine",
+                      "none"
+                    ]
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "product"
+                  },
+                  "images": {
+                    "description": "Several images placed on the 1080×720 photo box",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "src": {
+                          "type": "string",
+                          "description": "Repo-relative path of an available image asset"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "left": {
+                          "type": "number"
+                        },
+                        "top": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "label_x": {
+                          "type": "number"
+                        },
+                        "label_y": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "src",
+                        "alt",
+                        "label",
+                        "left",
+                        "top",
+                        "width",
+                        "label_x",
+                        "label_y"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "image": {
+                    "description": "Single photo path (used when images is absent)",
+                    "type": "string"
+                  },
+                  "imageAlt": {
+                    "type": "string"
+                  },
+                  "imageFrame": {
+                    "type": "object",
+                    "properties": {
+                      "width": {
+                        "type": "number"
+                      },
+                      "left": {
+                        "type": "number"
+                      },
+                      "top": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "width",
+                      "left",
+                      "top"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "productLogo": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "stat": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "eyebrow",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "benefits"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "benefits": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "icon": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "icon",
+                        "title",
+                        "text"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "cta": {
+                    "type": "string"
+                  },
+                  "signature": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "benefits",
+                  "alt"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "caption": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim": {
+                "type": "string",
+                "description": "Exact technical, medical or commercial statement used in the copy"
+              },
+              "location": {
+                "type": "string",
+                "description": "\"slide 2\", \"caption\", …"
+              },
+              "source": {
+                "type": "string",
+                "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+              },
+              "approval": {
+                "type": "string",
+                "enum": [
+                  "approved_claim",
+                  "manufacturer_description",
+                  "general_statement"
+                ]
+              }
+            },
+            "required": [
+              "claim",
+              "location",
+              "source",
+              "approval"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "brand",
+        "date",
+        "occasion",
+        "audience",
+        "slides",
+        "caption",
+        "sources"
+      ],
+      "additionalProperties": false
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string",
+            "description": "Exact technical, medical or commercial statement used in the copy"
+          },
+          "location": {
+            "type": "string",
+            "description": "\"slide 2\", \"caption\", …"
+          },
+          "source": {
+            "type": "string",
+            "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+          },
+          "approval": {
+            "type": "string",
+            "enum": [
+              "approved_claim",
+              "manufacturer_description",
+              "general_statement"
+            ]
+          }
+        },
+        "required": [
+          "claim",
+          "location",
+          "source",
+          "approval"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Missing data, unverifiable claims or compliance doubts (Spanish)"
+    },
+    "summary": {
+      "type": "string",
+      "description": "What changed and why (Spanish)"
+    },
+    "changed_slides": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "1-based numbers of slides whose content or style changed"
+    }
+  },
+  "required": [
+    "concept",
+    "content",
+    "claims",
+    "warnings",
+    "summary",
+    "changed_slides"
+  ],
+  "additionalProperties": false
+}

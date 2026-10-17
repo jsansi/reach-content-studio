@@ -1,0 +1,145 @@
+{
+  "projectId": "28235767-e13b-423b-a739-f5fc2c8272bc",
+  "shape": "package",
+  "pkg": "@reach/btl-design-system",
+  "globalName": "BTLDesignSystem",
+  "buildCmd": "node design-system/btl/build.mjs",
+  "cssEntry": "dist/btl.css",
+  "docsDir": "docs",
+  "guidelinesGlob": "guidelines/*.md",
+  "overrides": {
+    "BenefitsSlide": {
+      "cardMode": "column"
+    },
+    "BigNumber": {
+      "cardMode": "column"
+    },
+    "Body": {
+      "cardMode": "column"
+    },
+    "BtlLogo": {
+      "cardMode": "column"
+    },
+    "CommemorationSlide": {
+      "cardMode": "column"
+    },
+    "CtaBlock": {
+      "cardMode": "column"
+    },
+    "CtaSlide": {
+      "cardMode": "column"
+    },
+    "DateLine": {
+      "cardMode": "column"
+    },
+    "DatePill": {
+      "cardMode": "column"
+    },
+    "DiscGlyph": {
+      "cardMode": "column"
+    },
+    "Eyebrow": {
+      "cardMode": "column"
+    },
+    "Footnote": {
+      "cardMode": "column"
+    },
+    "Glow": {
+      "cardMode": "column"
+    },
+    "Headline": {
+      "cardMode": "column"
+    },
+    "HeroSlide": {
+      "cardMode": "column"
+    },
+    "Icon": {
+      "cardMode": "column"
+    },
+    "IconList": {
+      "cardMode": "column"
+    },
+    "Module": {
+      "cardMode": "column"
+    },
+    "ModuleGrid": {
+      "cardMode": "column"
+    },
+    "NumberedList": {
+      "cardMode": "column"
+    },
+    "ProductImage": {
+      "cardMode": "column"
+    },
+    "ProductLogo": {
+      "cardMode": "column"
+    },
+    "ProductSlide": {
+      "cardMode": "column"
+    },
+    "Region": {
+      "cardMode": "column"
+    },
+    "Rings": {
+      "cardMode": "column"
+    },
+    "Rule": {
+      "cardMode": "column"
+    },
+    "SessionSquares": {
+      "cardMode": "column"
+    },
+    "Slide": {
+      "cardMode": "column"
+    },
+    "SpineDiagram": {
+      "cardMode": "column"
+    },
+    "SpineIllustration": {
+      "cardMode": "column"
+    },
+    "SplitSlide": {
+      "cardMode": "column"
+    },
+    "Stack": {
+      "cardMode": "column"
+    },
+    "Stat": {
+      "cardMode": "column"
+    },
+    "StatementSlide": {
+      "cardMode": "column"
+    },
+    "StatsSlide": {
+      "cardMode": "column"
+    },
+    "StepsSlide": {
+      "cardMode": "column"
+    },
+    "SwipeCue": {
+      "cardMode": "column"
+    },
+    "VertebraRuler": {
+      "cardMode": "column"
+    },
+    "Halo": {
+      "cardMode": "column"
+    },
+    "Curve": {
+      "cardMode": "column"
+    },
+    "LightBand": {
+      "cardMode": "column"
+    },
+    "BoneIllustration": {
+      "cardMode": "column"
+    },
+    "BoneDensity": {
+      "cardMode": "column"
+    },
+    "Illustration": {
+      "cardMode": "column"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

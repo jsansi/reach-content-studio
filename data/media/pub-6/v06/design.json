@@ -1,0 +1,638 @@
+{
+  "direction": "C",
+  "direction_name": "Dato protagonista",
+  "concept": "Las cifras marcan el ritmo: el \"29\" de la fecha abre, la ilustración del cerebro da la pausa, y los 1.500 pasos de R-GAIT dominan la diapositiva de la marcha. Cierre tipográfico con la demo.",
+  "differentiation": "Tipografía numérica gigante en trazo fino como protagonista (BigNumber 400 y 320) y fondos alternos oscuro / claro / oscuro / blanco / azul BTL. Solo se usan cifras que ya están en los textos aprobados o en la fecha; la 2 y la 4 se resuelven con ilustración y fotos.",
+  "slides": [
+    {
+      "purpose": "Gancho: la fecha como cifra protagonista y el gancho debajo.",
+      "background": "dark",
+      "lightFrom": "bottom-right",
+      "alt": "Fondo azul muy oscuro. Un \"29\" enorme en trazo fino, con \"de octubre\" y \"Día Mundial del Ictus\". Debajo: \"El ataque llega en segundos. Volver a moverse lleva tiempo.\" y \"¿Cómo aprovecha tu clínica cada sesión?\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":892,\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "BigNumber",
+          "props": "{\"value\":\"29\",\"size\":400,\"weight\":\"thin\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6,\"style\":{\"marginBottom\":20}}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Eyebrow",
+          "props": "{\"size\":40,\"weight\":\"regular\",\"tone\":\"strong\"}",
+          "text": "de octubre"
+        },
+        {
+          "id": "n6",
+          "parent": "n4",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "Día Mundial del Ictus"
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":610,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":2,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":650,\"width\":892,\"gap\":28}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"as\":\"h1\"}",
+          "text": "El ataque llega\nen segundos.\nVolver a moverse\nlleva tiempo."
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"maxWidth\":720}",
+          "text": "¿Cómo aprovecha tu clínica cada sesión?"
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Pausa visual: sin cifra, el tema dibujado; la respuesta arriba.",
+      "background": "light",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo claro. Texto: \"La respuesta: BTL Robotics\" y \"Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.\". Debajo, un cerebro en azul con la zona del ictus iluminada en celeste. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"width\":892,\"gap\":28}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\":\"l\"}",
+          "text": "La respuesta:\nBTL Robotics"
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"maxWidth\":892}",
+          "text": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión."
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":200,\"top\":600,\"width\":640,\"height\":512}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"10\\\"/></filter><radialGradient id=\\\"h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"1\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.45\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.7\\\"><path d=\\\"M150,318 C108,300 86,250 98,204 C104,150 140,108 196,92 C232,62 292,52 342,64 C392,50 452,66 486,104 C534,124 562,172 556,224 C566,268 546,306 506,320 C484,344 446,352 410,342 C380,358 330,360 296,346 C258,360 206,356 178,336 C166,334 156,328 150,318 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"14\\\"/></g><path d=\\\"M372,350 C376,382 380,414 376,452 L404,452 C404,414 404,382 410,344 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M418,342 C424,382 462,404 500,396 C534,388 548,356 532,330 C522,316 508,316 494,322 C470,340 440,346 418,342 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M150,318 C108,300 86,250 98,204 C104,150 140,108 196,92 C232,62 292,52 342,64 C392,50 452,66 486,104 C534,124 562,172 556,224 C566,268 546,306 506,320 C484,344 446,352 410,342 C380,358 330,360 296,346 C258,360 206,356 178,336 C166,334 156,328 150,318 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.3\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.25\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.55\\\"><path d=\\\"M206,286 C252,262 300,256 350,244 C384,236 410,222 432,204\\\"/><path d=\\\"M352,70 C340,112 350,150 332,190 C324,208 326,224 318,240\\\"/><path d=\\\"M182,168 C210,152 240,170 268,156\\\"/><path d=\\\"M150,236 C176,222 200,236 228,222\\\"/><path d=\\\"M262,118 C282,132 306,124 322,138\\\"/><path d=\\\"M396,104 C412,128 440,130 462,120\\\"/><path d=\\\"M410,168 C440,176 470,168 500,186\\\"/><path d=\\\"M454,240 C482,248 510,240 532,256\\\"/><path d=\\\"M240,318 C270,304 300,316 336,302\\\"/><path d=\\\"M380,282 C408,290 430,280 456,292\\\"/><path d=\\\"M438,360 C462,372 492,370 516,356\\\"/><path d=\\\"M452,382 C474,388 498,384 520,372\\\"/></g><path d=\\\"M300,196 C330,240 366,290 388,350 L390,446\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-dasharray=\\\"2 12\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"84\\\" fill=\\\"url(#h)\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"46\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"1.7999999999999998\\\" opacity=\\\"0.45\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"26\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.4000000000000004\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"10\\\" fill=\\\"#00508c\\\"/>\",\"viewBox\":\"0 0 600 480\",\"width\":640,\"height\":512,\"title\":\"Cerebro en vista lateral, en azul sobre fondo claro, con la zona del ictus iluminada en celeste\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cifra: los 1.500 pasos de R-GAIT dominan; debajo, los tres equipos de marcha.",
+      "background": "deep",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul oscuro. Cifra enorme \"1.500\". Texto: \"Entrenar la marcha, paso a paso\" y R-GAIT — \"Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.\"; BTL EXO — \"Exoesqueleto para caminar en llano, terreno irregular y pendientes.\"; R-FORCE — \"Descarga hasta el 100 % del peso para entrenar desde el primer día.\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "BigNumber",
+          "props": "{\"value\":\"1.500\",\"size\":320,\"weight\":\"thin\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":540,\"width\":892,\"gap\":16}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"size\":\"l\"}",
+          "text": "Entrenar la marcha,\npaso a paso"
+        },
+        {
+          "id": "n6",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2,\"style\":{\"marginTop\":8}}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Eyebrow",
+          "props": "{\"size\":32}",
+          "text": "R-GAIT"
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas."
+        },
+        {
+          "id": "n9",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2,\"style\":{\"marginTop\":8}}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Eyebrow",
+          "props": "{\"size\":32}",
+          "text": "BTL EXO"
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Exoesqueleto para caminar en llano, terreno irregular y pendientes."
+        },
+        {
+          "id": "n12",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2,\"style\":{\"marginTop\":8}}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "n12",
+          "type": "Eyebrow",
+          "props": "{\"size\":32}",
+          "text": "R-FORCE"
+        },
+        {
+          "id": "n14",
+          "parent": "n12",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Descarga hasta el 100 % del peso para entrenar desde el primer día."
+        },
+        {
+          "id": "n15",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Significado: los equipos de brazo, mano y pie en fotos sobre blanco.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco. Texto: \"Terapia que no aburre\" y \"Juegos, objetos reales y dificultad que se adapta para mantener al paciente motivado.\". Tres columnas con foto oficial y texto: R-LEAD — \"Decenas de juegos con dificultad que se ajusta sola al progreso.\"; R-TOUCH — \"Entrenar con objetos reales o en entornos virtuales inmersivos.\"; BTL WALK — \"Práctica de la marcha en el día a día: calle, escaleras y pendientes.\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"width\":892,\"gap\":24}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\":\"l\"}",
+          "text": "Terapia que\nno aburre"
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"maxWidth\":892}",
+          "text": "Juegos, objetos reales y dificultad que se adapta para mantener al paciente motivado."
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-r-lead-02.webp\",\"alt\":\"R-LEAD: usuario entrenando el brazo frente a una pantalla con un juego\",\"left\":94,\"top\":572,\"width\":276,\"height\":280}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":876,\"width\":276,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "R-LEAD"
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Decenas de juegos con dificultad que se ajusta sola al progreso."
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-r-touch-02.webp\",\"alt\":\"R-TOUCH: guante robótico en la mano\",\"left\":402,\"top\":572,\"width\":276,\"height\":280}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":402,\"top\":876,\"width\":276,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n10",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "R-TOUCH"
+        },
+        {
+          "id": "n12",
+          "parent": "n10",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Entrenar con objetos reales o en entornos virtuales inmersivos."
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-walk-04.webp\",\"alt\":\"BTL WALK colocado en la pierna al caminar\",\"left\":710,\"top\":572,\"width\":276,\"height\":280}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":710,\"top\":876,\"width\":276,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n15",
+          "parent": "n14",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "BTL WALK"
+        },
+        {
+          "id": "n16",
+          "parent": "n14",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"strong\"}",
+          "text": "Práctica de la marcha en el día a día: calle, escaleras y pendientes."
+        },
+        {
+          "id": "n17",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cierre: titular a gran tamaño, tres ventajas en filas y la demo.",
+      "background": "enterprise",
+      "lightFrom": null,
+      "alt": "Fondo azul BTL. Texto grande: \"Más terapia, menos esfuerzo\". Filas: Manos libres — \"El equipo guía el movimiento; tú diriges la terapia.\"; Protocolos a la medida — \"Parámetros ajustables según el paciente y su etapa.\"; Seguimiento objetivo — \"Reportes de cada sesión para evaluar el progreso.\". Cierre: \"Solicita tu demo\", \"Escríbenos “DEMO” por mensaje directo\", BTL El Salvador.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\"}",
+          "text": "Más terapia,\nmenos esfuerzo"
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":500,\"width\":892,\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "Manos libres"
+        },
+        {
+          "id": "n8",
+          "parent": "n5",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"strong\"}",
+          "text": "El equipo guía el movimiento; tú diriges la terapia."
+        },
+        {
+          "id": "n9",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "Protocolos a la medida"
+        },
+        {
+          "id": "n12",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"strong\"}",
+          "text": "Parámetros ajustables según el paciente y su etapa."
+        },
+        {
+          "id": "n13",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "Seguimiento objetivo"
+        },
+        {
+          "id": "n16",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"strong\"}",
+          "text": "Reportes de cada sesión para evaluar el progreso."
+        },
+        {
+          "id": "n17",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1056,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "n17",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"stacked\",\"size\":60}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "29 de octubre, Día Mundial del Ictus. Un dato para tu consulta: con R-GAIT, hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.\n\nEs parte de BTL Robotics: neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión, con R-GAIT, BTL EXO, R-FORCE, R-LEAD, R-TOUCH y BTL WALK. Más terapia, menos esfuerzo para tu equipo.\n\n¿Quieres verlo en tu clínica? Escríbenos \"DEMO\" por mensaje directo.\n\n#DíaMundialDelIctus #Neurorrehabilitación #Fisioterapia #CentrosDeRehabilitación #BTLElSalvador",
+  "sources": [
+    "data/tasks/job-144/approved-copy.json",
+    "data/web/robotics.md",
+    "data/web/r-gait.md",
+    "data/web/exo.md",
+    "data/web/r-force.md",
+    "data/web/r-lead.md",
+    "data/web/r-touch.md",
+    "data/web/walk.md",
+    "data/uploads/pub-6/web-r-lead-02.webp",
+    "data/uploads/pub-6/web-r-touch-02.webp",
+    "data/uploads/pub-6/web-walk-04.webp"
+  ],
+  "claims": [
+    {
+      "claim": "El ataque llega en segundos. Volver a moverse lleva tiempo.",
+      "location": "diapositiva 1",
+      "source": "Dato general sobre la fecha (sin atribución a un producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+      "location": "diapositiva 2",
+      "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-GAIT: Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+      "location": "diapositiva 3",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL EXO: Exoesqueleto para caminar en llano, terreno irregular y pendientes.",
+      "location": "diapositiva 3",
+      "source": "data/web/exo.md · Designed For Any Environment",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-FORCE: Descarga hasta el 100 % del peso para entrenar desde el primer día.",
+      "location": "diapositiva 3",
+      "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; Training Right After Injury",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-LEAD: Decenas de juegos con dificultad que se ajusta sola al progreso.",
+      "location": "diapositiva 4",
+      "source": "data/web/r-lead.md · Interactive Gaming Therapy",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-TOUCH: Entrenar con objetos reales o en entornos virtuales inmersivos.",
+      "location": "diapositiva 4",
+      "source": "data/web/r-touch.md · Soft Robotic Glove for Hand Rehabilitation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL WALK: Práctica de la marcha en el día a día: calle, escaleras y pendientes.",
+      "location": "diapositiva 4",
+      "source": "data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation; Limitless Walking on Any Terrain",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Mantener al paciente motivado.",
+      "location": "diapositiva 4",
+      "source": "data/web/r-lead.md · Interactive Gaming Therapy (\"motivate and keep patients fully engaged\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "El equipo guía el movimiento; tú diriges la terapia.",
+      "location": "diapositiva 5",
+      "source": "data/web/robotics.md · \"precisely guided training … while reducing therapist workload\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Parámetros ajustables según el paciente y su etapa.",
+      "location": "diapositiva 5",
+      "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Interactive Gaming Therapy",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Reportes de cada sesión para evaluar el progreso.",
+      "location": "diapositiva 5",
+      "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Robotic Arm Rehabilitation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con R-GAIT, hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+      "location": "caption",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"up to 1,500 steps in under 30 minutes\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Robotics: neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión, con R-GAIT, BTL EXO, R-FORCE, R-LEAD, R-TOUCH y BTL WALK.",
+      "location": "caption",
+      "source": "data/web/robotics.md · Select The Desired Solution",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "1.500",
+      "location": "diapositiva 3",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"up to 1,500 steps in under 30 minutes\")",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "dato-protagonista"
+}

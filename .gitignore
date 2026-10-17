@@ -1,0 +1,22 @@
+node_modules/
+.DS_Store
+
+# REACH Content Studio data IS versioned (calendar, versions, uploads travel with the repo).
+# Only SQLite's transient files and task previews stay out.
+data/*.db-wal
+data/*.db-shm
+data/tasks/*/preview/
+# Local secrets
+.env
+# Web build output
+web/dist/
+
+# design-sync (staged converter, build output, machine state)
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
+# BTL design-system build output and validation artifacts
+design-system/btl/dist/
+design-system/btl/.check/

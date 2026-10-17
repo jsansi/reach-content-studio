@@ -1,0 +1,301 @@
+{
+  "proposal": {
+    "direction": "B",
+    "direction_name": "Tecnología médica premium",
+    "concept": "Del tema del día a la clínica: hoy hablamos de osteoporosis, la enfermedad que vuelve los huesos más frágiles (hueso denso frente a hueso con osteoporosis), y la pregunta es qué puede ofrecer tu consulta de rehabilitación (1); la respuesta es la magnetoterapia de BTL, con aplicadores para cada zona del cuerpo (2); y lo que gana la clínica con el equipo (3). Objetivo: pedir la demo.",
+    "differentiation": "Se mantiene la composición elegida: mitad superior clara con la imagen protagonista, franja azul profunda abajo con el texto y un anillo fino que cruza de la portada a la segunda diapositiva; cierre en azul profundo con un anillo de luz en la esquina. Cambian la imagen de la portada (muestras de hueso), los aplicadores de la segunda y la lista con iconos del cierre.",
+    "slides": [
+      {
+        "purpose": "Gancho sobre la osteoporosis (\"Cuando el hueso se vuelve frágil, la consulta se vuelve clave\"), con hueso denso frente a hueso con osteoporosis, la fecha en la etiqueta y la pregunta que lleva a la consulta.",
+        "background": "light",
+        "lightFrom": "top-left",
+        "alt": "Mitad superior clara con dos círculos de hueso esponjoso dibujados en línea: \"Hueso denso\" y \"Hueso con osteoporosis\", con un anillo fino que continúa en la siguiente diapositiva. Abajo, sobre azul profundo: \"20 de octubre · Día Mundial de la Osteoporosis\", \"Cuando el hueso se vuelve frágil, la consulta se vuelve clave.\" y \"¿Qué puede ofrecer tu consulta de rehabilitación?\" Logo de BTL arriba a la derecha y \"Desliza\".",
+        "nodes": [
+          {
+            "id": "halo",
+            "parent": null,
+            "type": "Halo",
+            "props": "{\"cx\": 1080, \"cy\": 470, \"r\": 300, \"thickness\": 2, \"tone\": \"enterprise\", \"glow\": 0.25}",
+            "text": null
+          },
+          {
+            "id": "rd",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":300,\"left\":\"m\",\"right\":\"m\"}",
+            "text": null
+          },
+          {
+            "id": "row",
+            "parent": "rd",
+            "type": "Stack",
+            "props": "{\"direction\":\"row\",\"gap\":60}",
+            "text": null
+          },
+          {
+            "id": "bd1",
+            "parent": "row",
+            "type": "BoneDensity",
+            "props": "{\"porous\":false,\"size\":300,\"label\":\"Hueso denso\"}",
+            "text": null
+          },
+          {
+            "id": "bd2",
+            "parent": "row",
+            "type": "BoneDensity",
+            "props": "{\"porous\":true,\"size\":300,\"label\":\"Hueso con osteoporosis\"}",
+            "text": null
+          },
+          {
+            "id": "logo",
+            "parent": null,
+            "type": "BtlLogo",
+            "props": "{\"placement\": \"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "band",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"left\":0,\"width\":1080,\"top\":720,\"height\":630,\"surface\":\"deep\",\"padding\":\"m\",\"gap\":18,\"align\":\"start\"}",
+            "text": null
+          },
+          {
+            "id": "p",
+            "parent": "band",
+            "type": "DatePill",
+            "props": "{}",
+            "text": "20 de octubre · Día Mundial de la Osteoporosis"
+          },
+          {
+            "id": "h",
+            "parent": "band",
+            "type": "Headline",
+            "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"base\",\"as\":\"h1\"}",
+            "text": "Cuando el hueso\nse vuelve frágil,\nla consulta se vuelve clave."
+          },
+          {
+            "id": "b",
+            "parent": "band",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+            "text": "¿Qué puede ofrecer tu consulta de rehabilitación?"
+          },
+          {
+            "id": "sw",
+            "parent": "band",
+            "type": "SwipeCue",
+            "props": "{\"placement\":\"inline\"}",
+            "text": "Desliza"
+          }
+        ]
+      },
+      {
+        "purpose": "Respuesta a la pregunta de la portada: la magnetoterapia de BTL, con cuatro de sus aplicadores a la vista; el anillo de luz continúa desde la portada.",
+        "background": "light",
+        "lightFrom": "top-right",
+        "alt": "Mitad superior clara con las fotos oficiales de cuatro aplicadores de BTL Magnetotherapy: los solenoides de 30 y 60 cm, el aplicador de anillo, el multidisco y el doble disco; el anillo fino de la portada continúa por la izquierda. Abajo, sobre azul profundo: \"BTL Magnetotherapy\", \"Magnetoterapia para cada zona.\" y \"8 aplicadores para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+        "nodes": [
+          {
+            "id": "halo",
+            "parent": null,
+            "type": "Halo",
+            "props": "{\"cx\": 0, \"cy\": 470, \"r\": 300, \"thickness\": 2, \"tone\": \"enterprise\", \"glow\": 0.25}",
+            "text": null
+          },
+          {
+            "id": "i1",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy\",\"left\":80,\"top\":205,\"width\":380}",
+            "text": null
+          },
+          {
+            "id": "i2",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo de BTL Magnetotherapy\",\"left\":620,\"top\":210,\"width\":280}",
+            "text": null
+          },
+          {
+            "id": "i3",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Multi-disc-applicator.jpg\",\"alt\":\"Aplicador multidisco de BTL Magnetotherapy\",\"left\":80,\"top\":478,\"width\":420}",
+            "text": null
+          },
+          {
+            "id": "i4",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Double-disc-applicator.jpg\",\"alt\":\"Aplicador de doble disco de BTL Magnetotherapy\",\"left\":600,\"top\":478,\"width\":300}",
+            "text": null
+          },
+          {
+            "id": "logo",
+            "parent": null,
+            "type": "BtlLogo",
+            "props": "{\"placement\": \"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "band",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"left\":0,\"width\":1080,\"top\":720,\"height\":630,\"surface\":\"deep\",\"padding\":\"m\",\"gap\":18,\"align\":\"start\"}",
+            "text": null
+          },
+          {
+            "id": "e",
+            "parent": "band",
+            "type": "Eyebrow",
+            "props": "{\"size\":36,\"weight\":\"semibold\"}",
+            "text": "BTL Magnetotherapy"
+          },
+          {
+            "id": "h",
+            "parent": "band",
+            "type": "Headline",
+            "props": "{\"size\":\"m\",\"tone\":\"base\",\"as\":\"h2\"}",
+            "text": "Magnetoterapia\npara cada zona."
+          },
+          {
+            "id": "b",
+            "parent": "band",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+            "text": "8 aplicadores para tratar cualquier parte del cuerpo,\ncon hasta 4 canales en un solo equipo."
+          },
+          {
+            "id": "sw",
+            "parent": "band",
+            "type": "SwipeCue",
+            "props": "{\"placement\":\"inline\"}",
+            "text": "Desliza"
+          }
+        ]
+      },
+      {
+        "purpose": "Ventajas de tener el equipo para la clínica, en lista con iconos, y CTA \"Solicita tu demo\".",
+        "background": "deep",
+        "lightFrom": null,
+        "alt": "Fondo azul profundo con un anillo de luz en la esquina inferior derecha. Titular: \"Lo que gana tu clínica.\" Lista con iconos: \"Protocolos por zona: selección intuitiva en una pantalla táctil de 7″.\", \"Pacientes en orden: base de datos de pacientes en el mismo equipo.\" y \"Terapeuta protegido: con FMF, no queda expuesto al campo magnético.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+        "nodes": [
+          {
+            "id": "halo",
+            "parent": null,
+            "type": "Halo",
+            "props": "{\"cx\":960,\"cy\":1300,\"r\":260,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.6}",
+            "text": null
+          },
+          {
+            "id": "logo",
+            "parent": null,
+            "type": "BtlLogo",
+            "props": "{\"placement\": \"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "r",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":270,\"right\":\"m\",\"gap\":40}",
+            "text": null
+          },
+          {
+            "id": "h",
+            "parent": "r",
+            "type": "Headline",
+            "props": "{\"size\":\"xl\",\"tone\":\"base\",\"as\":\"h2\"}",
+            "text": "Lo que gana\ntu clínica."
+          },
+          {
+            "id": "l",
+            "parent": "r",
+            "type": "IconList",
+            "props": "{\"layout\":\"rows\",\"iconSize\":84,\"items\":[{\"icon\":\"checklist\",\"title\":\"Protocolos por zona\",\"text\":\"Selección intuitiva en una pantalla táctil de 7″.\"},{\"icon\":\"trending_up\",\"title\":\"Pacientes en orden\",\"text\":\"Base de datos de pacientes en el mismo equipo.\"},{\"icon\":\"do_not_touch\",\"title\":\"Terapeuta protegido\",\"text\":\"Con FMF, no queda expuesto al campo magnético.\"}]}",
+            "text": null
+          },
+          {
+            "id": "c",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"bottom\": \"m\", \"left\": \"m\", \"width\": 560}",
+            "text": null
+          },
+          {
+            "id": "cta",
+            "parent": "c",
+            "type": "CtaBlock",
+            "props": "{\"variant\": \"stacked\", \"size\": 64}",
+            "text": null
+          }
+        ]
+      }
+    ],
+    "caption": "Cuando el hueso se vuelve frágil, la consulta se vuelve clave. Hoy, 20 de octubre, es el Día Mundial de la Osteoporosis: ¿qué puede ofrecer tu consulta de rehabilitación?\n\nBTL Magnetotherapy suma magnetoterapia para cada zona: 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales en un solo equipo. Para tu clínica: protocolos por área anatómica en una pantalla táctil de 7″, base de datos de pacientes y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Osteoporosis #Fisioterapia #Magnetoterapia #BTLElSalvador",
+    "sources": [
+      "data/web/magnetotherapy.md",
+      "https://www.btlnet.es/magnetotherapy",
+      "knowledge/brand-guidelines/btl-corporate-identity.md",
+      "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_* (fotos oficiales de los aplicadores)"
+    ],
+    "claims": [
+      {
+        "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+        "location": "diapositiva 1 y caption",
+        "source": "brief.md · Brief de la publicación (fecha y ocasión)",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "Cuando el hueso se vuelve frágil, la consulta se vuelve clave. Hueso denso / Hueso con osteoporosis (ilustración educativa).",
+        "location": "diapositiva 1 y caption",
+        "source": "Gancho indicado por el usuario: frase general sobre la osteoporosis y el papel de la consulta, no atribuida al producto; ilustración BoneDensity del sistema de diseño (educativa, no imagen clínica)",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "Magnetoterapia para cada zona. 8 aplicadores para tratar cualquier parte del cuerpo",
+        "location": "diapositiva 2 y caption",
+        "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Solenoides de 30 y 60 cm · anillo · multidisco · doble disco (fotos oficiales)",
+        "location": "diapositiva 2",
+        "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\", \"Sencillo, doble y multidisco\", \"Aplicador de doble disco\") y fotos oficiales BTL-4000-5000_Magnet_PIC",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "con hasta 4 canales en un solo equipo",
+        "location": "diapositiva 2 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Protocolos por zona: selección intuitiva en una pantalla táctil de 7″.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo; pantalla táctil a color de 7´´)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Pacientes en orden: base de datos de pacientes en el mismo equipo.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Terapeuta protegido: con FMF, no queda expuesto al campo magnético.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (FMF filtra el campo magnético del lado del operador; el terapeuta no está expuesto)",
+        "approval": "manufacturer_description"
+      }
+    ]
+  },
+  "summary": "Portada: nuevo gancho \"Cuando el hueso se vuelve frágil, la consulta se vuelve clave.\" en tres líneas con cortes de sentido (Cuando el hueso / se vuelve frágil, / la consulta se vuelve clave.), en el mismo tono y peso que antes y a un tamaño que cabe sin cortes forzados. Se quitó la definición (\"La enfermedad que vuelve los huesos más frágiles\") porque repetía \"frágil\"; queda la pregunta \"¿Qué puede ofrecer tu consulta de rehabilitación?\" que lleva a la diapositiva 2. El caption abre con el nuevo gancho. Las diapositivas 2 y 3 no cambian.",
+  "changed_slides": [
+    1
+  ],
+  "warnings": [
+    "\"La consulta se vuelve clave\" es una frase de posicionamiento sobre el papel de la clínica, no una afirmación del equipo; ningún texto dice que BTL Magnetotherapy trate la osteoporosis."
+  ]
+}

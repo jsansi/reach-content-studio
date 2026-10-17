@@ -1,0 +1,123 @@
+{
+  "id": "layout-gallery",
+  "brand": "BTL El Salvador",
+  "date": "2026-10-14",
+  "occasion": "Galería de layouts (ejemplo, no publicar)",
+  "audience": "Equipo REACH",
+  "output": "output/layout-gallery",
+  "slides": [
+    {
+      "layout": "hero",
+      "theme": "light",
+      "image": "public/assets/products/spinal-decompression/spinal-decompression.jpg",
+      "imageAlt": "Equipo BTL Spinal Decompression",
+      "imageFrame": {
+        "left": -60,
+        "top": 110,
+        "width": 1200
+      },
+      "eyebrow": "hero · tema claro",
+      "title": "Un titular grande bajo el equipo",
+      "body": "Frase de apoyo breve.",
+      "swipe": "Desliza",
+      "alt": "Ejemplo del layout hero."
+    },
+    {
+      "layout": "statement",
+      "theme": "dark",
+      "datePill": "16 de octubre",
+      "kicker": "statement · tema oscuro",
+      "title": "Una sola idea,\nen grande.",
+      "body": "Ideal para ganchos que generan curiosidad.",
+      "swipe": "Desliza para ver la respuesta",
+      "alt": "Ejemplo del layout statement."
+    },
+    {
+      "layout": "statement",
+      "theme": "light",
+      "kicker": "statement · tema claro",
+      "title": "La misma idea\nsobre fondo claro.",
+      "body": "Alterna con las diapositivas oscuras.",
+      "alt": "Ejemplo del layout statement en tema claro."
+    },
+    {
+      "layout": "stats",
+      "theme": "dark",
+      "title": "stats · cifras con fuente",
+      "items": [
+        {
+          "value": "+100",
+          "label": "posiciones de tratamiento"
+        },
+        {
+          "value": "2",
+          "label": "zonas: lumbar y cervical"
+        }
+      ],
+      "note": "Fuente: documentación oficial del fabricante.",
+      "swipe": "Desliza",
+      "alt": "Ejemplo del layout stats."
+    },
+    {
+      "layout": "split",
+      "image": "public/assets/products/spinal-decompression/posiciones/semiincorporada-inclinada.png",
+      "imageAlt": "Paciente en posición semiincorporada",
+      "imageFrame": {
+        "left": -140,
+        "top": 480,
+        "width": 700
+      },
+      "label": "Etiqueta de imagen",
+      "eyebrow": "split",
+      "title": "Imagen a un lado, mensaje al otro",
+      "points": [
+        "Punto uno",
+        "Punto dos",
+        "Punto tres"
+      ],
+      "swipe": "Desliza",
+      "alt": "Ejemplo del layout split."
+    },
+    {
+      "layout": "steps",
+      "title": "steps · pasos o razones numeradas",
+      "items": [
+        {
+          "title": "Primer punto",
+          "text": "Explicación breve del punto."
+        },
+        {
+          "title": "Segundo punto",
+          "text": "Explicación breve del punto."
+        },
+        {
+          "title": "Tercer punto",
+          "text": "Explicación breve del punto."
+        }
+      ],
+      "cta": "Solicita tu demo",
+      "signature": "BTL El Salvador",
+      "alt": "Ejemplo del layout steps."
+    },
+    {
+      "layout": "cta",
+      "theme": "blue",
+      "image": "public/assets/products/spinal-decompression/posiciones/roof-prono.png",
+      "imageAlt": "Equipo BTL Spinal Decompression",
+      "imageFrame": {
+        "left": 470,
+        "top": 860,
+        "width": 640
+      },
+      "productLogo": "public/assets/products/spinal-decompression/logo/spinal-decompression-logo-white.png",
+      "productName": "BTL Spinal Decompression",
+      "kicker": "cta · cierre",
+      "title": "Solicita\ntu demo",
+      "action": "Escríbenos DEMO",
+      "signature": "BTL El Salvador",
+      "alt": "Ejemplo del layout cta."
+    }
+  ],
+  "caption": "Galería de layouts del generador. No es una publicación.",
+  "sources": []
+}

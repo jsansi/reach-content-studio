@@ -1,0 +1,331 @@
+{
+  "direction": "C",
+  "direction_name": "Objeto en el centro",
+  "concept": "Hoy el hueso está en el centro de la conversación; la pieza pregunta qué está en el centro de la consulta. Una vértebra iluminada ocupa el centro exacto de la portada, en la segunda le cede el sitio al aplicador de anillo de BTL Magnetotherapy, y en el cierre el centro lo ocupa la cifra de canales.",
+  "differentiation": "Composición simétrica y escultórica: un único objeto en el centro exacto de cada diapositiva rodeado de anillos concéntricos y un halo (vértebra dibujada → aplicador de anillo → numeral dentro del halo), con un titular corto arriba y una línea breve abajo. Es la única propuesta con un eje central y mucho aire alrededor; sin cortes del lienzo, sin láminas ni retícula.",
+  "slides": [
+    {
+      "purpose": "Gancho: la vértebra iluminada en el centro y la pregunta sobre el centro de la consulta; fecha abajo.",
+      "background": "dark",
+      "lightFrom": "bottom-right",
+      "alt": "Fondo azul oscuro. Arriba: \"Hoy, el hueso al centro.\" En el centro, una vértebra vista desde arriba dibujada en línea blanca, con hueso esponjoso poroso que brilla en celeste, rodeada de anillos concéntricos y un halo de luz. Abajo: \"¿Y qué está en el centro de tu consulta?\" y \"20 de octubre · Día Mundial de la Osteoporosis\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "rings",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":700,\"radii\":[250,305,360]}",
+          "text": null
+        },
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":700,\"r\":205,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "ri",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":340,\"top\":490,\"width\":400}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": "ri",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.4\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient><clipPath id=\\\"b\\\"><path d=\\\"M112 250 C112 204 160 198 200 212 C240 198 288 204 288 250 C288 308 246 344 200 344 C154 344 112 308 112 250 Z\\\"/></clipPath></defs><ellipse cx=\\\"200\\\" cy=\\\"230\\\" rx=\\\"190\\\" ry=\\\"170\\\" fill=\\\"url(#h)\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.9\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M150 170 L74 150 C60 147 56 166 70 170 L146 192\\\"/><path d=\\\"M250 170 L326 150 C340 147 344 166 330 170 L254 192\\\"/><path d=\\\"M156 214 L142 176 C138 152 152 138 172 132 L190 124 L196 52 C197 42 203 42 204 52 L210 124 L228 132 C248 138 262 152 258 176 L244 214\\\"/><path d=\\\"M112 250 C112 204 160 198 200 212 C240 198 288 204 288 250 C288 308 246 344 200 344 C154 344 112 308 112 250 Z\\\"/></g><ellipse cx=\\\"200\\\" cy=\\\"172\\\" rx=\\\"34\\\" ry=\\\"26\\\" fill=\\\"#000a32\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.8\\\" stroke-width=\\\"2.5\\\"/><g clip-path=\\\"url(#b)\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M106.6 203.2L134.4 202.6M106.6 203.2L109.0 222.7M152.0 194.4L167.3 205.0M152.0 194.4L148.8 218.9M167.3 205.0L187.6 202.3M236.6 204.3L257.9 205.5M236.6 204.3L234.7 219.1M257.9 205.5L248.4 217.7M148.8 218.9L176.6 220.7M190.2 221.5L214.8 218.0M214.8 218.0L234.7 219.1M214.8 218.0L211.8 236.2M234.7 219.1L248.4 217.7M248.4 217.7L277.8 225.9M113.6 244.5L137.0 236.4M137.0 236.4L135.0 254.3M153.7 235.6L172.0 240.7M172.0 240.7L195.3 245.3M172.0 240.7L168.4 262.7M195.3 245.3L211.8 236.2M195.3 245.3L189.5 256.8M231.4 236.0L254.0 240.3M231.4 236.0L226.9 263.3M272.7 240.1L276.9 262.2M115.1 258.3L135.0 254.3M135.0 254.3L149.6 260.5M168.4 262.7L189.5 256.8M168.4 262.7L166.4 275.6M276.9 262.2L268.4 282.1M117.5 274.3L135.1 281.2M135.1 281.2L154.7 284.8M154.7 284.8L166.4 275.6M154.7 284.8L154.1 303.3M187.0 275.3L186.7 296.8M207.0 274.1L215.7 305.7M233.3 285.3L227.8 305.1M108.9 299.5L137.9 299.1M154.1 303.3L170.8 299.0M215.7 305.7L227.8 305.1M227.8 305.1L252.1 295.5M227.8 305.1L231.0 315.1M268.5 301.2L275.3 323.2M108.0 314.9L129.3 321.8M108.0 314.9L111.2 344.3M152.7 319.8L153.9 340.9M177.9 314.9L191.0 317.8M177.9 314.9L170.2 338.9M191.0 317.8L206.0 314.1M206.0 314.1L231.0 315.1M206.0 314.1L212.8 342.7M231.0 315.1L248.8 325.1M231.0 315.1L234.0 341.6M248.8 325.1L275.3 323.2M248.8 325.1L254.7 344.6M275.3 323.2L276.1 345.9M137.5 343.6L153.9 340.9M234.0 341.6L254.7 344.6\\\" stroke-width=\\\"2.2\\\" stroke-opacity=\\\"0.85\\\"/></g><path d=\\\"M126 290 C140 326 172 340 200 340 C228 340 260 326 274 290\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.7\\\" filter=\\\"url(#g)\\\"/>\",\"viewBox\":\"0 0 400 400\",\"width\":400,\"height\":400,\"title\":\"Vértebra lumbar vista desde arriba, con hueso esponjoso poroso iluminado\"}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":245,\"left\":\"m\",\"width\":700}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Hoy, el hueso al centro."
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1085,\"left\":\"m\",\"width\":700,\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "¿Y qué está en el centro de tu consulta?"
+        },
+        {
+          "id": "d",
+          "parent": "r2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "20 de octubre · Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "El aplicador de anillo de BTL Magnetotherapy ocupa el centro: 8 aplicadores para cualquier parte del cuerpo.",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Fondo claro. Arriba: \"BTL Magnetotherapy\" y \"Un aplicador para cada zona.\" En el centro, la foto oficial del aplicador de anillo rodeada de anillos concéntricos. Abajo: \"8 aplicadores para tratar cualquier parte del cuerpo.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "rings",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":720,\"radii\":[250,300]}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo de BTL Magnetotherapy\",\"left\":290,\"top\":500,\"width\":500}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":245,\"left\":\"m\",\"width\":700,\"gap\":10}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r1",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "h",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Un aplicador\npara cada zona."
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1060,\"left\":\"m\",\"width\":700}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "8 aplicadores para tratar\ncualquier parte del cuerpo."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "La cifra de canales en el centro del halo, ventajas breves debajo y CTA \"Solicita tu demo\".",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul profundo. Arriba: \"Para tu clínica\". En el centro, dentro de un anillo de luz, un 4 grande en trazo fino y \"canales en un solo equipo\". Debajo: \"Protocolos por área anatómica.\" y \"FMF: el terapeuta no queda expuesto al campo magnético.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":555,\"r\":230,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":245,\"left\":\"m\",\"width\":600}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "Para tu clínica"
+        },
+        {
+          "id": "rc",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":385,\"left\":415,\"width\":250,\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "num",
+          "parent": "rc",
+          "type": "BigNumber",
+          "props": "{\"value\":\"4\",\"size\":230,\"weight\":\"thin\"}",
+          "text": null
+        },
+        {
+          "id": "nb",
+          "parent": "rc",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "canales en\nun solo equipo"
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":840,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "b1",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Protocolos por área anatómica."
+        },
+        {
+          "id": "b2",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "FMF: el terapeuta no queda expuesto al campo magnético."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"width\":700}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"stacked\",\"size\":56}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy, en el Día Mundial de la Osteoporosis, el hueso está en el centro de la conversación. ¿Y qué está en el centro de tu consulta?\n\nBTL Magnetotherapy reúne 8 aplicadores para tratar cualquier parte del cuerpo, hasta 4 canales en un solo equipo y protocolos por área anatómica. Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Vértebra con hueso esponjoso poroso (ilustración educativa, sin rótulos)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; rótulos anatómicos generales de una ilustración educativa (no atribuidos al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Un aplicador para cada zona. 8 aplicadores para tratar cualquier parte del cuerpo.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Aplicador de anillo (foto oficial)",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (doble disco, un solo disco, camilla con aplicador, anillos, solenoide grande y pequeño, sencillo, doble y multidisco)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "4 canales en un solo equipo",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "FMF: el terapeuta no queda expuesto al campo magnético.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales en un solo equipo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "objeto-centrado"
+}

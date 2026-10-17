@@ -1,0 +1,86 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "El día homenajeado manda en grande sobre fondo claro y la frase de apoyo lo sigue; la foto de las manos acompaña abajo, disuelta en el fondo.",
+  "differentiation": "Tipografía del día como protagonista arriba; foto como acento abajo; mucho espacio en blanco.",
+  "slides": [
+    {
+      "purpose": "El día homenajeado como titular principal y la frase de apoyo justo debajo; la foto acompaña abajo, disuelta en el fondo",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Fondo claro. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Juntas somos más fuertes. Abajo, la fotografía de una profesional de la salud que sostiene las manos de una paciente con pañuelo rosa, disuelta en el fondo. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/Compassionate Hands in Care.png\", \"alt\": \"Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa\", \"left\": 350, \"top\": 720, \"width\": 730, \"fade\": [\"left\", \"top\", \"bottom\"], \"fadeSize\": 170}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "p",
+          "parent": "r0",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de octubre"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 270, \"right\": \"m\", \"gap\": 30}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"xl\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h1\"}",
+          "text": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama"
+        },
+        {
+          "id": "rule",
+          "parent": "r",
+          "type": "Rule",
+          "props": "{\"length\": 96, \"thickness\": 3, \"emphasis\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"base\"}",
+          "text": "Juntas somos más fuertes."
+        }
+      ]
+    }
+  ],
+  "caption": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama. Juntas somos más fuertes.\n\nHoy reconocemos la valentía de cada mujer que enfrenta esta enfermedad y el apoyo de las familias, los amigos y los profesionales de la salud que la acompañan en cada paso de su recuperación.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

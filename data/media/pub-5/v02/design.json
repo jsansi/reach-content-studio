@@ -1,0 +1,230 @@
+{
+  "direction": "B",
+  "direction_name": "Tecnología médica premium",
+  "concept": "El equipo es el protagonista en un escenario claro; un halo cruza de la portada a la segunda diapositiva y vuelve en el cierre, y el texto se apoya en una franja azul profundo.",
+  "differentiation": "Escenario claro para el equipo con halos de luz y el texto en una franja azul profundo; cierre oscuro. Jerarquía imagen → titular → datos.",
+  "slides": [
+    {
+      "purpose": "Gancho: la camilla con el aplicador de anillo en un escenario claro con halo; la pregunta sobre una franja azul profundo",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Arriba, fondo claro con la fotografía de una paciente recostada con el aplicador de anillo de BTL Magnetotherapy y un halo azul. Abajo, franja azul profundo con el texto: 20 de octubre. Día Mundial de la Osteoporosis. ¿Y si el dolor de tus pacientes tuviera más de una salida? Desliza para descubrirla.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 1080, \"cy\": 470, \"r\": 300, \"thickness\": 2, \"tone\": \"enterprise\", \"glow\": 0.25}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-5/web-magnetotherapy-03.jpg\", \"alt\": \"Paciente recostada con el aplicador de anillo de magnetoterapia\", \"left\": 20, \"top\": 190, \"width\": 1000, \"fade\": [\"left\", \"right\", \"bottom\"], \"fadeSize\": 110}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "band",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\": 0, \"width\": 1080, \"top\": 770, \"height\": 580, \"surface\": \"deep\", \"padding\": \"m\", \"gap\": 22, \"align\": \"start\"}",
+          "text": null
+        },
+        {
+          "id": "p",
+          "parent": "band",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "20 de octubre · Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "h",
+          "parent": "band",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"semibold\", \"tone\": \"base\", \"as\": \"h1\"}",
+          "text": "¿Y si el dolor de tus\npacientes tuviera más\nde una salida?"
+        },
+        {
+          "id": "sw",
+          "parent": "band",
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"inline\"}",
+          "text": "Desliza para descubrirla"
+        }
+      ]
+    },
+    {
+      "purpose": "El equipo en el escenario claro (el halo llega desde la portada) y sus ventajas en la franja",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Arriba, fondo claro con el equipo BTL Magnetotherapy y un halo azul. Abajo, franja azul profundo con el texto: BTL Magnetotherapy. Un equipo, todo el cuerpo. 8 aplicadores para tratar cualquier zona. Hasta 4 canales. Tecnología FMF que protege al terapeuta. Desliza.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 0, \"cy\": 470, \"r\": 300, \"thickness\": 2, \"tone\": \"enterprise\", \"glow\": 0.25}",
+          "text": null
+        },
+        {
+          "id": "dev",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-5/web-magnetotherapy-08.jpg\", \"alt\": \"Equipo BTL Magnetotherapy con pantalla táctil\", \"left\": 300, \"top\": 180, \"width\": 620, \"fade\": [\"left\", \"right\", \"top\", \"bottom\"], \"fadeSize\": 90}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "band",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\": 0, \"width\": 1080, \"top\": 770, \"height\": 580, \"surface\": \"deep\", \"padding\": \"m\", \"gap\": 22, \"align\": \"start\"}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "band",
+          "type": "Eyebrow",
+          "props": "{\"size\": 36}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "h",
+          "parent": "band",
+          "type": "Headline",
+          "props": "{\"size\": \"m\", \"tone\": \"base\"}",
+          "text": "Un equipo, todo el cuerpo."
+        },
+        {
+          "id": "b",
+          "parent": "band",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "8 aplicadores para tratar cualquier zona.\nHasta 4 canales.\nTecnología FMF que protege al terapeuta."
+        },
+        {
+          "id": "sw",
+          "parent": "band",
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"inline\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cierre en azul profundo: ventajas para la clínica, un halo y la demo",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Fondo azul profundo con un halo de luz abajo a la derecha. Texto: Más opciones para tu clínica. Protocolos listos por zona anatómica. Base de datos de pacientes. Un entorno más seguro para tu equipo. Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 960, \"cy\": 1230, \"r\": 300, \"thickness\": 2, \"tone\": \"sky\", \"glow\": 0.6}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 270, \"right\": \"m\", \"gap\": 30}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"xl\", \"tone\": \"base\", \"as\": \"h2\"}",
+          "text": "Más opciones\npara tu clínica."
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "Protocolos listos por zona anatómica.\nBase de datos de pacientes.\nUn entorno más seguro para tu equipo."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"left\": \"m\", \"width\": 560}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\": \"stacked\", \"size\": 64}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis, 20 de octubre: una fecha para hablar de huesos, de dolor y de opciones de tratamiento en rehabilitación.\n\nCon BTL Magnetotherapy trabajas con 8 aplicadores, hasta 4 canales y protocolos por zona anatómica, en un entorno más seguro para tu equipo gracias a la tecnología FMF.\n\nEscríbenos \"DEMO\" por mensaje directo y agenda tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Fisioterapia #Rehabilitación #Magnetoterapia #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy)",
+    "https://www.btlnet.es/magnetotherapy (fotos oficiales añadidas por la app)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "Día Mundial de la Osteoporosis, 20 de octubre",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier zona del cuerpo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy) · \"¡Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo!\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Hasta 4 canales en un solo equipo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy) · \"hasta 4 canales\"; Beneficios de la magnetoterapia",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología FMF: el terapeuta no queda expuesto al campo magnético",
+      "location": "diapositivas 2 y 3, caption",
+      "source": "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy) · ¿Qué tiene de especial la máquina de magnetoterapia BTL? (FMF filtra el campo magnético del lado del operador)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por zona anatómica",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy) · Beneficios de la magnetoterapia (selección intuitiva de protocolos según las áreas anatómicas)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Base de datos de pacientes",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md (página oficial https://www.btlnet.es/magnetotherapy) · Beneficios de la magnetoterapia (base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "direction": "B",
+  "direction_name": "Tecnología médica premium",
+  "concept": "El hueso lo sostiene todo; la portada lo muestra iluminado y pregunta qué sostiene a la consulta. La respuesta aparece como en un escaparate: BTL Magnetotherapy en un escenario blanco, con aplicadores para todo el cuerpo, y un cierre oscuro con halo de luz para las ventajas y la demo.",
+  "differentiation": "La imagen es la protagonista: un fémur grande y luminoso con halo ocupa media portada; en la segunda, la foto de los aplicadores solenoides llena un escenario blanco a sangre en la mitad superior y el texto, breve, queda abajo sobre azul oscuro con el logo abajo a la derecha. Fondos oscuros, halos y luz de piso; nada de numerales gigantes ni módulos. El halo vuelve como motivo en la esquina del cierre.",
+  "slides": [
+    {
+      "purpose": "Gancho: el hueso como estructura que sostiene, y la pregunta a la consulta; fecha en segundo plano.",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul oscuro. A la derecha, un fémur grande dibujado en línea blanca con brillo celeste y un halo de luz en la cabeza del hueso. A la izquierda: \"El hueso lo sostiene todo.\" \"¿Y qué sostiene a tu consulta hoy?\" Abajo: \"20 de octubre\" y \"Día Mundial de la Osteoporosis\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "glow",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":560,\"top\":1050,\"width\":420,\"height\":220,\"intensity\":0.5}",
+          "text": null
+        },
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":770,\"cy\":380,\"r\":170,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":600,\"top\":236,\"width\":340}",
+          "text": null
+        },
+        {
+          "id": "bone",
+          "parent": "ill",
+          "type": "BoneIllustration",
+          "props": "{\"width\":300,\"height\":1000,\"porous\":false}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"left\":\"m\",\"width\":470,\"gap\":32}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "El hueso\nlo sostiene\ntodo."
+        },
+        {
+          "id": "b1",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"maxWidth\":470}",
+          "text": "¿Y qué sostiene\na tu consulta hoy?"
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":200,\"left\":\"m\",\"width\":470,\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "d",
+          "parent": "r2",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "20 de octubre"
+        },
+        {
+          "id": "do",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Día Mundial de\nla Osteoporosis"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar BTL Magnetotherapy: foto grande de los aplicadores solenoides y dos datos breves.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Mitad superior blanca con la foto oficial de los aplicadores solenoides grande y pequeño de BTL Magnetotherapy, con el grabado FMF technology. Mitad inferior azul oscuro: \"BTL Magnetotherapy\", \"8 aplicadores. Todo el cuerpo.\" \"Hasta 4 canales en un solo equipo.\" Logo de BTL abajo a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "stage",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":0,\"top\":0,\"width\":1080,\"height\":790,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy con tecnología FMF\",\"left\":90,\"top\":120,\"width\":900,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "glow",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":140,\"top\":760,\"width\":800,\"height\":160,\"intensity\":0.35}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":850,\"left\":\"m\",\"width\":640,\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r",
+          "type": "Eyebrow",
+          "props": "{\"size\":36,\"weight\":\"semibold\"}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "8 aplicadores.\nTodo el cuerpo."
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Hasta 4 canales en un solo equipo."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica sobre fondo oscuro con halo y CTA \"Solicita tu demo\".",
+      "background": "deep",
+      "lightFrom": "bottom-right",
+      "alt": "Fondo azul oscuro con un halo de luz celeste en la esquina inferior derecha. \"Para tu clínica\". Titular: \"Tu consulta, más completa.\" Texto: \"Protocolos por zona anatómica. Base de datos de pacientes. Tecnología FMF: el terapeuta no queda expuesto al campo magnético.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":1050,\"cy\":1260,\"r\":230,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":270,\"right\":\"m\",\"gap\":30}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r",
+          "type": "Eyebrow",
+          "props": "{\"size\":34}",
+          "text": "Para tu clínica"
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Tu consulta,\nmás completa."
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Protocolos por zona anatómica.\nBase de datos de pacientes.\nTecnología FMF: el terapeuta no queda\nexpuesto al campo magnético."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"stacked\",\"size\":64}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "En el Día Mundial de la Osteoporosis recordamos algo simple: el hueso lo sostiene todo. ¿Y qué sostiene a tu consulta?\n\nCon BTL Magnetotherapy tienes 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales en un solo equipo. Suma protocolos por zona anatómica, base de datos de pacientes y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.\n\nConócelo de cerca: escríbenos \"DEMO\" por mensaje directo y agenda tu demostración con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "El hueso lo sostiene todo.",
+      "location": "diapositiva 1 y caption",
+      "source": "brief.md · tema de la publicación (afirmación general sobre el esqueleto, no atribuida al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "8 aplicadores. Todo el cuerpo.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Hasta 4 canales en un solo equipo.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por zona anatómica.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Base de datos de pacientes.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología FMF: el terapeuta no queda expuesto al campo magnético.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales en un solo equipo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por zona anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "base de datos de pacientes",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "tecnología FMF, para que el terapeuta no quede expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ]
+}

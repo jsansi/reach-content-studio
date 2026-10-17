@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "proposal": {
+      "type": "object",
+      "properties": {
+        "direction": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "direction_name": {
+          "type": "string",
+          "description": "Name of the art direction in Spanish"
+        },
+        "concept": {
+          "type": "string",
+          "description": "Creative concept in 1–3 sentences (Spanish)"
+        },
+        "differentiation": {
+          "type": "string",
+          "description": "How composition, hierarchy, image prominence and negative space differ from the other proposals (Spanish)"
+        },
+        "slides": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "purpose": {
+                "type": "string",
+                "description": "What this slide does in the narrative (Spanish, one line)"
+              },
+              "background": {
+                "type": "string",
+                "enum": [
+                  "dark",
+                  "blue",
+                  "enterprise",
+                  "deep",
+                  "light",
+                  "white"
+                ]
+              },
+              "lightFrom": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "top-right",
+                      "top-left",
+                      "bottom-right",
+                      "bottom-left"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "Gradient light corner; null = default"
+              },
+              "alt": {
+                "type": "string",
+                "description": "Accessible description of the whole slide in Spanish, including its text"
+              },
+              "nodes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Unique id within the slide, e.g. \"n3\""
+                    },
+                    "parent": {
+                      "description": "id of a container node (Region, Stack, ModuleGrid, Module), or null for a direct child of the slide",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "Region",
+                        "Stack",
+                        "ModuleGrid",
+                        "Module",
+                        "Headline",
+                        "Body",
+                        "Eyebrow",
+                        "Footnote",
+                        "DatePill",
+                        "DateLine",
+                        "BigNumber",
+                        "Stat",
+                        "NumberedList",
+                        "IconList",
+                        "Rule",
+                        "ProductImage",
+                        "ProductLogo",
+                        "BtlLogo",
+                        "SwipeCue",
+                        "Icon",
+                        "CtaBlock",
+                        "Glow",
+                        "Halo",
+                        "Curve",
+                        "LightBand",
+                        "Rings",
+                        "SessionSquares",
+                        "SpineIllustration",
+                        "SpineDiagram",
+                        "VertebraRuler",
+                        "DiscGlyph"
+                      ],
+                      "description": "Design-system component"
+                    },
+                    "props": {
+                      "type": "string",
+                      "description": "JSON object with the component props, e.g. {\"top\":290,\"right\":\"m\",\"gap\":24}. Use \"{}\" for none."
+                    },
+                    "text": {
+                      "description": "Text for text components (Headline, Body, Eyebrow, Footnote, DatePill, SwipeCue); null for the rest. \"\\n\" = line break.",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "parent",
+                    "type",
+                    "props",
+                    "text"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Children of the slide, back to front. Exactly one BtlLogo."
+              }
+            },
+            "required": [
+              "purpose",
+              "background",
+              "lightFrom",
+              "alt",
+              "nodes"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "caption": {
+          "type": "string",
+          "description": "Instagram caption in Spanish, ≈500 characters, CTA by DM \"DEMO\", ~5 hashtags"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Files actually used"
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim": {
+                "type": "string",
+                "description": "Exact technical, medical or commercial statement used in the copy"
+              },
+              "location": {
+                "type": "string",
+                "description": "\"slide 2\", \"caption\", …"
+              },
+              "source": {
+                "type": "string",
+                "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+              },
+              "approval": {
+                "type": "string",
+                "enum": [
+                  "approved_claim",
+                  "manufacturer_description",
+                  "general_statement"
+                ]
+              }
+            },
+            "required": [
+              "claim",
+              "location",
+              "source",
+              "approval"
+            ],
+            "additionalProperties": false
+          },
+          "description": "Every technical, medical or commercial statement used, with its source and approval level"
+        }
+      },
+      "required": [
+        "direction",
+        "direction_name",
+        "concept",
+        "differentiation",
+        "slides",
+        "caption",
+        "sources",
+        "claims"
+      ],
+      "additionalProperties": false,
+      "description": "The complete revised proposal (same direction)"
+    },
+    "summary": {
+      "type": "string",
+      "description": "What changed and why (Spanish)"
+    },
+    "changed_slides": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": -9007199254740991,
+        "maximum": 9007199254740991
+      },
+      "description": "1-based numbers of the slides that changed"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "proposal",
+    "summary",
+    "changed_slides",
+    "warnings"
+  ],
+  "additionalProperties": false
+}

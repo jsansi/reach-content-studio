@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Día Mundial de la Columna Vertebral</title><style>
+@font-face { font-family: 'Noto Sans'; font-weight: 100; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-100-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 300; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-300-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 300; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-ext-300-normal.woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: 'Noto Sans'; font-weight: 400; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-400-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 600; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-600-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 600; src: url('../../../../public/assets/fonts/noto-sans/noto-sans-latin-ext-600-normal.woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+
+:root {
+  --enterprise: #00508c; --dark: #000a32; --sky: #96d2ff; --white: #ffffff;
+  --u: 46.78696662858044px; --m: 94px; --s: 30px; --t: 30px; /* 30 px floor: legible on a phone feed */
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #e9edf2; font-family: 'Noto Sans', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; margin: 0 0 40px; color: var(--white); }
+.slide p, .slide h1, .slide h2, .slide h3 { text-align: left; text-wrap: pretty; } /* left alignment (manual p. 19) */
+.slide h1, .slide h2 { text-wrap: balance; }
+
+/* Backgrounds: radial gradient of two brand colours, light source outside a corner (manual p. 15) */
+.bg-dark { background: radial-gradient(130% 95% at 108% -8%, var(--enterprise) 0%, var(--dark) 78%); }
+/* Product slide: the photo box covers the top, so the light source sits at the top-right of the dark band */
+.bg-dark-band { background: radial-gradient(110% 60% at 108% 50%, var(--enterprise) 0%, var(--dark) 78%); }
+.bg-light { background: radial-gradient(120% 90% at -10% -8%, var(--sky) 0%, var(--white) 72%); color: var(--dark); }
+
+.logo { position: absolute; top: var(--m); right: var(--m); width: 200px; line-height: 0; }
+.logo svg { width: 100%; height: auto; }
+.logo.white { color: var(--white); } .logo.blue { color: var(--enterprise); }
+
+.swipe { position: absolute; right: var(--m); bottom: var(--m); display: flex; align-items: center; gap: 12px;
+  font-size: var(--t); font-weight: 400; color: var(--white); }
+.swipe svg { width: 52px; height: 52px; fill: currentColor; }
+
+/* ---------- 1 · Commemoration ---------- */
+.c-spine { position: absolute; top: 300px; right: 70px; width: 410px; height: 891px; }
+.c-spine svg { width: 100%; height: 100%; }
+.c-main { position: absolute; left: var(--m); top: 320px; width: 500px; }
+.pill { display: inline-block; background: var(--sky); color: var(--dark); font-weight: 600; font-size: var(--t);
+  line-height: 1; padding: 12px 22px 13px; border-radius: 999px; margin-bottom: 26px; }
+.c-eyebrow { font-size: 52px; font-weight: 300; line-height: 1.12; }
+.c-title { font-size: 116px; font-weight: 600; line-height: 1; letter-spacing: -1.5px; margin-top: 52px; text-wrap: initial; }
+.c-main.wide { width: 820px; } /* cover without illustration */
+.c-main.wide .c-question { max-width: 720px; }
+.c-question { font-size: 42px; font-weight: 300; line-height: 1.22; margin-top: 44px; color: var(--sky); max-width: 480px; }
+
+/* ---------- 2 · Product ---------- */
+.p-box { position: absolute; left: 0; top: 0; width: 1080px; height: 720px; overflow: hidden;
+  background: radial-gradient(75% 70% at -8% -8%, var(--sky) 0%, var(--white) 70%); }
+.p-photo { position: absolute; left: 0; top: 70px; width: 1152px; mix-blend-mode: multiply; }
+.p-photo.flat { mix-blend-mode: normal; } /* photo background matches the box colour */
+/* Several treatment positions instead of a single photo; white photo backgrounds blend into the gradient */
+.p-pos { position: absolute; margin: 0; }
+.p-pos img { display: block; height: auto; mix-blend-mode: multiply; }
+.p-pos figcaption { position: absolute; font-size: var(--t); font-weight: 600; color: var(--dark); line-height: 1.1; white-space: nowrap; }
+.p-text { position: absolute; left: var(--m); right: var(--m); top: 770px; }
+.p-eyebrow { font-size: var(--t); font-weight: 600; color: var(--sky); letter-spacing: .5px; }
+.p-logo { display: block; width: 400px; height: auto; margin: 0 0 22px -10px; } /* official web asset, shown at native size */
+.p-title { font-size: 54px; font-weight: 300; line-height: 1.15; margin-top: 14px; max-width: 820px; }
+.p-row { display: flex; gap: 48px; align-items: flex-start; margin-top: 34px; }
+.p-stat { flex: 0 0 auto; border-left: 2px solid var(--sky); padding-left: 24px; }
+.p-stat b { display: block; font-size: 92px; font-weight: 100; line-height: .95; color: var(--white); }
+.p-stat span { display: block; font-size: var(--t); font-weight: 400; line-height: 1.25; margin-top: 8px; max-width: 240px; }
+.p-body { font-size: 32px; line-height: 1.35; font-weight: 400; padding-top: 6px; }
+
+/* ---------- 3 · Benefits + CTA ---------- */
+.b-title { position: absolute; left: var(--m); top: 270px; width: 700px; font-size: 64px; font-weight: 300;
+  line-height: 1.12; color: var(--enterprise); }
+.b-list { position: absolute; left: var(--m); right: var(--m); top: 500px; list-style: none; }
+.b-item { display: flex; gap: 36px; align-items: center; padding: 40px 0; border-top: 1.5px solid rgba(0,80,140,.25); }
+.b-item:last-child { border-bottom: 1.5px solid rgba(0,80,140,.25); }
+.b-item svg { flex: 0 0 auto; width: 92px; height: 92px; fill: var(--enterprise); }
+.b-item h3 { font-size: 36px; font-weight: 600; line-height: 1.2; color: var(--dark); }
+.b-item p { font-size: 32px; font-weight: 400; line-height: 1.3; color: var(--enterprise); margin-top: 6px; }
+.b-cta { position: absolute; left: 0; right: 0; bottom: 0; height: 250px; background: var(--enterprise);
+  padding: 0 var(--m); display: flex; flex-direction: column; justify-content: center; }
+.b-cta-text { font-size: 54px; font-weight: 300; line-height: 1.1; color: var(--white); }
+.b-cta small { display: block; font-size: var(--t); font-weight: 600; color: var(--sky); margin-top: 14px; }
+
+/* ===== Layouts added for REACH Content Studio (v2). Existing layouts above are unchanged. ===== */
+.bg-blue { background: radial-gradient(120% 90% at 108% -8%, var(--sky) 0%, var(--enterprise) 58%, var(--dark) 100%); }
+.bg-light .swipe { color: var(--enterprise); }
+.bg-light .pill { background: var(--enterprise); color: var(--white); }
+.img-frame { position: absolute; inset: 0; overflow: hidden; }
+.img-frame img { position: absolute; display: block; height: auto; }
+.bg-light .img-frame img, .sp-panel img { mix-blend-mode: multiply; } /* white photo backgrounds blend into light areas */
+
+/* ---------- hero · large product image with headline ---------- */
+.h-shade { position: absolute; left: 0; right: 0; bottom: 0; height: 780px;
+  background: linear-gradient(to top, var(--dark) 42%, rgba(0, 10, 50, 0)); }
+.bg-light .h-shade { background: linear-gradient(to top, var(--white) 40%, rgba(255, 255, 255, 0)); }
+.h-text { position: absolute; left: var(--m); right: var(--m); bottom: 200px; }
+.h-eyebrow { font-size: 40px; font-weight: 400; line-height: 1.2; color: var(--sky); }
+.bg-light .h-eyebrow { color: var(--enterprise); }
+.h-title { font-size: 100px; font-weight: 600; line-height: 1.02; letter-spacing: -1px; margin-top: 20px; text-wrap: balance; }
+.h-body { font-size: 38px; font-weight: 300; line-height: 1.3; margin-top: 28px; max-width: 840px; }
+
+/* ---------- statement · one big idea, typographic ---------- */
+.st-main { position: absolute; left: var(--m); top: 330px; width: 892px; }
+.st-bar { width: 120px; height: 6px; background: var(--sky); margin-bottom: 40px; }
+.bg-light .st-bar { background: var(--enterprise); }
+.st-kicker { font-size: 36px; font-weight: 600; line-height: 1.25; color: var(--sky); }
+.bg-light .st-kicker { color: var(--enterprise); }
+.st-title { font-size: 112px; font-weight: 600; line-height: 1.02; letter-spacing: -1.5px; margin-top: 30px; text-wrap: initial; }
+.st-body { font-size: 44px; font-weight: 300; line-height: 1.25; margin-top: 44px; max-width: 840px; color: var(--sky); }
+.bg-light .st-body { color: var(--enterprise); }
+
+/* ---------- stats · official figure badges or big numbers ---------- */
+.sx-title { position: absolute; left: var(--m); top: 270px; width: 640px; font-size: 60px; font-weight: 300; line-height: 1.12; }
+.bg-light .sx-title { color: var(--enterprise); }
+.sx-list { position: absolute; left: var(--m); right: var(--m); top: 470px; display: flex; flex-direction: column; gap: 44px; }
+.sx-item img { display: block; height: auto; }
+.sx-item b { display: block; font-size: 120px; font-weight: 100; line-height: .95; }
+.sx-item span { display: block; font-size: 34px; font-weight: 400; line-height: 1.25; margin-top: 8px; max-width: 760px; }
+.sx-note { position: absolute; left: var(--m); right: var(--m); font-size: 30px; font-weight: 400; line-height: 1.3; color: var(--sky); }
+.bg-light .sx-note { color: var(--enterprise); }
+
+/* ---------- split · image panel left, text right ---------- */
+.sp-panel { position: absolute; left: 0; top: 0; width: 520px; height: 1350px; overflow: hidden;
+  background: radial-gradient(120% 70% at -10% -5%, var(--sky) 0%, var(--white) 70%); }
+.sp-panel img { position: absolute; display: block; height: auto; }
+.sp-label { position: absolute; left: 60px; bottom: var(--m); font-size: var(--t); font-weight: 600; color: var(--dark); }
+.sp-text { position: absolute; left: 580px; right: var(--m); top: 330px; }
+.sp-eyebrow { font-size: var(--t); font-weight: 600; color: var(--sky); line-height: 1.25; }
+.sp-title { font-size: 60px; font-weight: 300; line-height: 1.12; margin-top: 18px; }
+.sp-body { font-size: 34px; font-weight: 400; line-height: 1.35; margin-top: 30px; }
+.sp-points { list-style: none; margin-top: 36px; }
+.sp-points li { font-size: 32px; font-weight: 400; line-height: 1.3; padding: 18px 0; border-top: 1.5px solid rgba(150, 210, 255, .35); }
+
+/* ---------- steps · numbered points on dark ---------- */
+.k-title { position: absolute; left: var(--m); top: 270px; width: 640px; font-size: 64px; font-weight: 300; line-height: 1.12; }
+.k-list { position: absolute; left: var(--m); right: var(--m); top: 480px; list-style: none; }
+.k-item { display: flex; gap: 36px; align-items: baseline; padding: 34px 0; border-top: 1.5px solid rgba(150, 210, 255, .35); }
+.k-item:last-child { border-bottom: 1.5px solid rgba(150, 210, 255, .35); }
+.k-num { flex: 0 0 110px; font-size: 72px; font-weight: 100; line-height: 1; color: var(--sky); }
+.k-item h3 { font-size: 38px; font-weight: 600; line-height: 1.2; }
+.k-item p { font-size: 32px; font-weight: 400; line-height: 1.3; color: var(--sky); margin-top: 6px; }
+.k-cta { position: absolute; left: var(--m); right: var(--m); bottom: var(--m); }
+.k-cta p { font-size: 54px; font-weight: 300; line-height: 1.1; }
+.k-cta small { display: block; font-size: var(--t); font-weight: 600; color: var(--sky); margin-top: 14px; }
+
+/* ---------- cta · closing slide ---------- */
+.ct-img { position: absolute; inset: 0; overflow: hidden; }
+.ct-img img { position: absolute; display: block; height: auto; }
+.ct-main { position: absolute; left: var(--m); top: 330px; width: 892px; }
+.ct-logo { display: block; width: 400px; height: auto; margin: 0 0 44px -10px; }
+.ct-kicker { font-size: 38px; font-weight: 400; line-height: 1.25; }
+.ct-title { font-size: 120px; font-weight: 600; line-height: 1; letter-spacing: -1.5px; margin-top: 24px; text-wrap: initial; }
+.ct-body { font-size: 42px; font-weight: 300; line-height: 1.25; margin-top: 40px; max-width: 760px; }
+.ct-action { display: inline-block; margin-top: 52px; border: 2px solid var(--white); border-radius: 999px; padding: 18px 36px 20px;
+  font-size: 40px; font-weight: 600; line-height: 1; }
+.ct-sign { position: absolute; left: var(--m); bottom: var(--m); font-size: 34px; font-weight: 600; color: var(--sky); }
+.bg-blue .ct-sign { color: var(--white); }
+
+/* per-slide overrides */
+#slide-3 .b-cta{height:160px}
+</style></head><body><section class="slide bg-dark" id="slide-1">
+    <div class="logo white blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <div class="c-spine blk"><svg viewBox="0 0 520 1130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <filter id="glow" x="-60%" y="-300%" width="220%" height="700%"><feGaussianBlur stdDeviation="5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <radialGradient id="halo"><stop offset="0" stop-color="#96d2ff" stop-opacity=".35"/><stop offset="1" stop-color="#96d2ff" stop-opacity="0"/></radialGradient>
+    </defs>
+    <ellipse cx="343.6" cy="845.8" rx="218.4" ry="244.0" fill="url(#halo)"/><g transform="translate(341.4 41.9) rotate(-8.61)">
+        <rect x="-20.7" y="-2.2" width="41.4" height="4.3"
+          rx="2.2" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(343.6 67.5) rotate(-3.00)">
+        <rect x="-21.6" y="-2.3" width="43.3" height="4.5"
+          rx="2.3" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(341.2 94.2) rotate(3.00)">
+        <rect x="-22.7" y="-2.4" width="45.4" height="4.8"
+          rx="2.4" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(334.6 122.0) rotate(8.61)">
+        <rect x="-23.8" y="-2.5" width="47.6" height="5.0"
+          rx="2.5" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(324.3 151.1) rotate(13.18)">
+        <rect x="-24.9" y="-2.6" width="49.9" height="5.2"
+          rx="2.6" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(311.6 181.5) rotate(16.25)">
+        <rect x="-26.1" y="-2.7" width="52.3" height="5.4"
+          rx="2.7" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(297.8 213.1) rotate(17.59)">
+        <rect x="-27.3" y="-2.8" width="54.7" height="5.6"
+          rx="2.8" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(284.5 246.1) rotate(17.14)">
+        <rect x="-28.6" y="-2.9" width="57.1" height="5.8"
+          rx="2.9" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(272.9 280.5) rotate(14.92)">
+        <rect x="-29.8" y="-3.0" width="59.6" height="6.0"
+          rx="3.0" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(264.5 316.2) rotate(11.06)">
+        <rect x="-31.0" y="-3.1" width="62.1" height="6.3"
+          rx="3.1" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(260.1 353.4) rotate(5.90)">
+        <rect x="-32.3" y="-3.2" width="64.6" height="6.5"
+          rx="3.2" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(260.2 392.0) rotate(0.00)">
+        <rect x="-33.6" y="-3.3" width="67.2" height="6.7"
+          rx="3.3" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(264.8 432.1) rotate(-5.90)">
+        <rect x="-34.9" y="-3.5" width="69.8" height="6.9"
+          rx="3.5" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(273.4 473.7) rotate(-11.06)">
+        <rect x="-36.2" y="-3.6" width="72.4" height="7.1"
+          rx="3.6" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(285.0 516.8) rotate(-14.92)">
+        <rect x="-37.5" y="-3.7" width="75.0" height="7.3"
+          rx="3.7" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(298.4 561.4) rotate(-17.14)">
+        <rect x="-38.8" y="-3.8" width="77.7" height="7.5"
+          rx="3.8" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(312.2 607.5) rotate(-17.59)">
+        <rect x="-40.2" y="-3.9" width="80.3" height="7.8"
+          rx="3.9" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(324.8 655.2) rotate(-16.25)">
+        <rect x="-41.5" y="-4.0" width="83.0" height="8.0"
+          rx="4.0" fill="#96d2ff" opacity="0.55"
+          /></g><g transform="translate(334.9 704.5) rotate(-13.18)">
+        <rect x="-42.9" y="-4.1" width="85.7" height="8.2"
+          rx="4.1" fill="#96d2ff" opacity="1"
+          filter="url(#glow)"/></g><g transform="translate(341.4 755.4) rotate(-8.61)">
+        <rect x="-44.2" y="-4.2" width="88.4" height="8.4"
+          rx="4.2" fill="#96d2ff" opacity="1"
+          filter="url(#glow)"/></g><g transform="translate(343.6 807.8) rotate(-3.00)">
+        <rect x="-45.6" y="-4.3" width="91.2" height="8.6"
+          rx="4.3" fill="#96d2ff" opacity="1"
+          filter="url(#glow)"/></g><g transform="translate(341.2 861.9) rotate(3.00)">
+        <rect x="-47.0" y="-4.4" width="93.9" height="8.8"
+          rx="4.4" fill="#96d2ff" opacity="1"
+          filter="url(#glow)"/></g><g transform="translate(334.6 917.6) rotate(8.61)">
+        <rect x="-48.3" y="-4.5" width="96.7" height="9.0"
+          rx="4.5" fill="#96d2ff" opacity="1"
+          filter="url(#glow)"/></g><g transform="translate(338.5 29.4) rotate(-8.61)">
+      <rect x="-22.5" y="-9.4" width="45.0" height="18.9" rx="5.3"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-22.5 -4.2 L-35.1 -5.7
+        L-54.3 10.4 L-51.6 16.0
+        L-30.6 6.0 L-22.5 4.2"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(343.0 54.6) rotate(-3.00)">
+      <rect x="-23.5" y="-9.7" width="47.0" height="19.5" rx="5.5"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-23.5 -4.3 L-36.7 -5.8
+        L-57.9 10.7 L-55.1 16.5
+        L-32.0 6.2 L-23.5 4.3"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(343.0 80.8) rotate(3.00)">
+      <rect x="-24.7" y="-10.1" width="49.3" height="20.2" rx="5.7"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-24.7 -4.5 L-38.5 -6.1
+        L-61.7 11.1 L-58.8 17.2
+        L-33.5 6.5 L-24.7 4.5"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(338.5 108.0) rotate(8.61)">
+      <rect x="-25.9" y="-10.6" width="51.7" height="21.1" rx="5.9"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-25.9 -4.6 L-40.4 -6.3
+        L-65.7 11.6 L-62.6 17.9
+        L-35.2 6.8 L-25.9 4.6"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(330.0 136.5) rotate(13.18)">
+      <rect x="-27.1" y="-11.0" width="54.2" height="22.0" rx="6.2"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-27.1 -4.8 L-42.3 -6.6
+        L-69.6 12.1 L-66.4 18.7
+        L-36.9 7.0 L-27.1 4.8"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(318.5 166.2) rotate(16.25)">
+      <rect x="-28.4" y="-11.5" width="56.8" height="23.0" rx="6.4"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-28.4 -5.1 L-44.3 -6.9
+        L-73.7 12.6 L-70.3 19.5
+        L-38.6 7.4 L-28.4 5.1"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(305.1 197.2) rotate(17.59)">
+      <rect x="-29.7" y="-12.0" width="59.4" height="24.0" rx="6.7"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-29.7 -5.3 L-46.3 -7.2
+        L-77.7 13.2 L-74.2 20.4
+        L-40.4 7.7 L-29.7 5.3"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(291.3 229.5) rotate(17.14)">
+      <rect x="-31.0" y="-12.5" width="62.1" height="25.0" rx="7.0"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-31.0 -5.5 L-48.4 -7.5
+        L-81.8 13.8 L-78.1 21.3
+        L-42.2 8.0 L-31.0 5.5"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(278.6 263.2) rotate(14.92)">
+      <rect x="-32.4" y="-13.1" width="64.8" height="26.1" rx="7.3"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-32.4 -5.7 L-50.5 -7.8
+        L-86.0 14.4 L-82.1 22.2
+        L-44.0 8.4 L-32.4 5.7"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(268.5 298.3) rotate(11.06)">
+      <rect x="-33.7" y="-13.6" width="67.5" height="27.2" rx="7.6"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-33.7 -6.0 L-52.6 -8.2
+        L-90.1 15.0 L-86.1 23.1
+        L-45.9 8.7 L-33.7 6.0"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(261.9 334.7) rotate(5.90)">
+      <rect x="-35.1" y="-14.2" width="70.3" height="28.3" rx="7.9"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-35.1 -6.2 L-54.8 -8.5
+        L-94.3 15.6 L-90.1 24.1
+        L-47.8 9.1 L-35.1 6.2"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(259.6 372.6) rotate(0.00)">
+      <rect x="-36.5" y="-14.7" width="73.0" height="29.5" rx="8.3"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-36.5 -6.5 L-57.0 -8.8
+        L-98.5 16.2 L-94.1 25.1
+        L-49.7 9.4 L-36.5 6.5"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(261.9 412.0) rotate(-5.90)">
+      <rect x="-37.9" y="-15.3" width="75.9" height="30.7" rx="8.6"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-37.9 -6.7 L-59.2 -9.2
+        L-102.7 16.9 L-98.2 26.1
+        L-51.6 9.8 L-37.9 6.7"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(268.5 452.8) rotate(-11.06)">
+      <rect x="-39.3" y="-15.9" width="78.7" height="31.8" rx="8.9"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-39.3 -7.0 L-61.4 -9.6
+        L-107.0 17.5 L-102.2 27.1
+        L-53.5 10.2 L-39.3 7.0"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(278.6 495.2) rotate(-14.92)">
+      <rect x="-40.8" y="-16.5" width="81.6" height="33.1" rx="9.3"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-40.8 -7.3 L-63.6 -9.9
+        L-111.2 18.2 L-106.3 28.1
+        L-55.5 10.6 L-40.8 7.3"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(291.3 539.0) rotate(-17.14)">
+      <rect x="-42.2" y="-17.1" width="84.4" height="34.3" rx="9.6"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-42.2 -7.5 L-65.9 -10.3
+        L-115.5 18.9 L-110.4 29.1
+        L-57.4 11.0 L-42.2 7.5"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(305.1 584.4) rotate(-17.59)">
+      <rect x="-43.7" y="-17.8" width="87.3" height="35.5" rx="9.9"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-43.7 -7.8 L-68.1 -10.7
+        L-119.8 19.5 L-114.6 30.2
+        L-59.4 11.4 L-43.7 7.8"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(318.5 631.3) rotate(-16.25)">
+      <rect x="-45.1" y="-18.4" width="90.2" height="36.8" rx="10.3"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-45.1 -8.1 L-70.4 -11.0
+        L-124.1 20.2 L-118.7 31.3
+        L-61.4 11.8 L-45.1 8.1"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(330.0 679.8) rotate(-13.18)">
+      <rect x="-46.6" y="-19.0" width="93.2" height="38.0" rx="10.7"
+        fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.7" stroke-width="1.6"/>
+      <path d="M-46.6 -8.4 L-72.7 -11.4
+        L-128.4 20.9 L-122.8 32.3
+        L-63.4 12.2 L-46.6 8.4"
+        fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(338.5 729.9) rotate(-8.61)">
+      <rect x="-48.1" y="-19.7" width="96.1" height="39.3" rx="11.0"
+        fill="rgba(150,210,255,0.16)" stroke="#fff" stroke-opacity="0.95" stroke-width="1.6"/>
+      <path d="M-48.1 -8.7 L-75.0 -11.8
+        L-132.7 21.6 L-127.0 33.4
+        L-65.4 12.6 L-48.1 8.7"
+        fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(343.0 781.5) rotate(-3.00)">
+      <rect x="-49.5" y="-20.3" width="99.1" height="40.6" rx="11.4"
+        fill="rgba(150,210,255,0.16)" stroke="#fff" stroke-opacity="0.95" stroke-width="1.6"/>
+      <path d="M-49.5 -8.9 L-77.3 -12.2
+        L-137.1 22.3 L-131.1 34.5
+        L-67.4 13.0 L-49.5 8.9"
+        fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(343.0 834.8) rotate(3.00)">
+      <rect x="-51.0" y="-21.0" width="102.1" height="41.9" rx="11.7"
+        fill="rgba(150,210,255,0.16)" stroke="#fff" stroke-opacity="0.95" stroke-width="1.6"/>
+      <path d="M-51.0 -9.2 L-79.6 -12.6
+        L-141.4 23.1 L-135.3 35.7
+        L-69.4 13.4 L-51.0 9.2"
+        fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(338.5 889.7) rotate(8.61)">
+      <rect x="-52.5" y="-21.6" width="105.1" height="43.3" rx="12.1"
+        fill="rgba(150,210,255,0.16)" stroke="#fff" stroke-opacity="0.95" stroke-width="1.6"/>
+      <path d="M-52.5 -9.5 L-82.0 -13.0
+        L-145.8 23.8 L-139.5 36.8
+        L-71.4 13.8 L-52.5 9.5"
+        fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><g transform="translate(330.0 946.2) rotate(13.18)">
+      <rect x="-54.0" y="-22.3" width="108.1" height="44.6" rx="12.5"
+        fill="rgba(150,210,255,0.16)" stroke="#fff" stroke-opacity="0.95" stroke-width="1.6"/>
+      <path d="M-54.0 -9.8 L-84.3 -13.4
+        L-150.2 24.5 L-143.7 37.9
+        L-73.5 14.3 L-54.0 9.8"
+        fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="1.4" stroke-linejoin="round"/>
+    </g><path d="M270.5 985.3
+    C252.5 1052.1 270.5 1097.1 243.5 1110.0
+    C286.7 1090.7 351.6 1045.7 378.6 985.3 Z"
+    fill="rgba(150,210,255,0.08)" stroke="#fff" stroke-opacity="0.6" stroke-width="1.6" stroke-linejoin="round"/>
+  </svg></div>
+    <div class="c-main blk">
+      <span class="pill">16 de octubre</span>
+      <p class="c-eyebrow">Día Mundial de la<br>Columna Vertebral</p>
+      <h1 class="c-title">Ninguna<br>espalda<br>es igual.</h1>
+      <p class="c-question">¿Por qué tratarlas en la misma posición?</p>
+    </div>
+    <div class="swipe blk">Desliza para ver la respuesta<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M132-666v-162h22v110q85-64 165.5-94.5T486-843q109 0 199.5 47T828-666h-25q-52-74-135.5-114.5T486-821q-85.87 0-167.44 32.5Q237-756 153-688h141v22H132Zm303 534L212-354l22-25 152 37v-349h22v379l-168-45 204 203h282v-289h22v311H435Zm64-257v-174h22v174h-22Zm114 0v-134h22v134h-22Zm-37 120Z"/></svg></div></section>
+<section class="slide bg-dark-band" id="slide-2">
+    <div class="p-box" data-clip>
+      <figure class="p-pos" style="left:30px;top:250px">
+            <img src="../../../../public/assets/products/spinal-decompression/posiciones/semiincorporada-inclinada.png" alt="Paciente en posición semiincorporada sobre BTL Spinal Decompression" style="width:640px">
+            <figcaption style="left:60px;top:350px">Semiincorporada</figcaption></figure><figure class="p-pos" style="left:700px;top:225px">
+            <img src="../../../../public/assets/products/spinal-decompression/posiciones/flexion-pelvica.png" alt="Paciente en supino con flexión pélvica sobre BTL Spinal Decompression" style="width:340px">
+            <figcaption style="left:20px;top:175px">Flexión pélvica</figcaption></figure><figure class="p-pos" style="left:720px;top:465px">
+            <img src="../../../../public/assets/products/spinal-decompression/posiciones/roof-prono.png" alt="Paciente en prono sobre BTL Spinal Decompression" style="width:290px">
+            <figcaption style="left:0px;top:185px">Prono</figcaption></figure>
+    </div>
+    <div class="logo blue blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <div class="p-text blk">
+      <img class="p-logo" src="../../../../public/assets/products/spinal-decompression/logo/spinal-decompression-logo-white.png" alt="BTL Spinal Decompression">
+      <h2 class="p-title">Descompresión que se adapta a cada paciente</h2>
+      <div class="p-row">
+        <div class="p-stat"><b>+100</b><span>posiciones de tratamiento</span></div>
+        <p class="p-body">Ajustas el ángulo para enfocar el segmento exacto que necesitas tratar.</p>
+      </div>
+    </div>
+    <div class="swipe blk">Desliza y descubre sus ventajas<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M132-666v-162h22v110q85-64 165.5-94.5T486-843q109 0 199.5 47T828-666h-25q-52-74-135.5-114.5T486-821q-85.87 0-167.44 32.5Q237-756 153-688h141v22H132Zm303 534L212-354l22-25 152 37v-349h22v379l-168-45 204 203h282v-289h22v311H435Zm64-257v-174h22v174h-22Zm114 0v-134h22v134h-22Zm-37 120Z"/></svg></div></section>
+<section class="slide bg-light" id="slide-3">
+    <div class="logo blue blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <h2 class="b-title blk">Más posibilidades para tu clínica</h2>
+    <ul class="b-list blk">
+      <li class="b-item"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m788-275-22-22v-451h22v473ZM354-708l-22-22v-29h22v51Zm145 144-22-21v-254h22v275Zm145 56h-22v-291h22v291ZM410-140h378L354-574v203L161-507l249 367Zm-11 22L129-515l26-24 177 126v-183L90-838l16-16L878-82l-16 16-52-52H399Zm156-390Zm16 151Z"/></svg><div><h3>Terapia manos libres</h3><p>El equipo aplica la descompresión; tú supervisas y ajustas.</p></div></li><li class="b-item"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M388-452v-176h412v176H388Zm22-154v132-132ZM160-344v-22h640v22H160Zm21-129q-21-21-21-53t21-53q21-21 53-21t53 21q21 21 21 53t-21 53q-21 21-53 21t-53-21Zm90-15.96q15-14.97 15-37Q286-548 271.04-563q-14.97-15-37-15Q212-578 197-563.04q-15 14.97-15 37Q182-504 196.96-489q14.97 15 37 15Q256-474 271-488.96ZM410-474h368v-132H410v132Zm-176-52Z"/></svg><div><h3>Trata toda la columna</h3><p>Zona lumbar y cervical en un solo equipo.</p></div></li><li class="b-item"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m148-287-16-16 238-239 162 162 261-257H644v-22h184v184h-22v-146L532-346 370-508 148-287Z"/></svg><div><h3>Una nueva línea de servicio</h3><p>Una nueva fuente de ingresos para tu consulta.</p></div></li>
+    </ul>
+    <div class="b-cta blk">
+      <p class="b-cta-text">Solicita tu demo</p>
+      <small></small>
+    </div></section></body></html>

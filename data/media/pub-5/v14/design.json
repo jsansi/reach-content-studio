@@ -1,0 +1,267 @@
+{
+  "direction": "B",
+  "direction_name": "Macro del detalle",
+  "concept": "Mirar de cerca. La portada pone una lupa sobre el hueso poroso del día; la segunda acerca la cámara a una curva azul sin decir qué es, y la tercera abre el plano: es el aplicador de anillo de BTL Magnetotherapy en uso, con las ventajas y la demo.",
+  "differentiation": "Recorrido detalle → intriga → revelación: primerísimos planos que salen del lienzo (la lupa de hueso, el arco del aplicador a sangre por tres lados) y el producto completo solo en la última diapositiva. La única propuesta que retiene el nombre del equipo hasta el final y que usa fondos claros en el desarrollo; la portada mantiene la ilustración luminosa sobre azul de las preferencias.",
+  "slides": [
+    {
+      "purpose": "Gancho: una lupa sobre el hueso poroso; \"ahora, mira otra cosa de cerca\".",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul profundo. Arriba: \"20 de octubre · Día Mundial de la Osteoporosis\" y el titular \"Un hueso poroso, de cerca.\" A la derecha, un gran círculo como una lupa lleno de hueso esponjoso poroso dibujado en celeste luminoso. Abajo a la izquierda: \"Ahora, mira otra cosa de cerca.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "20 de octubre · Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Un hueso poroso,\nde cerca."
+        },
+        {
+          "id": "rl",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":420,\"top\":500,\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "lens",
+          "parent": "rl",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"4\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><clipPath id=\\\"l\\\"><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"276\\\"/></clipPath><radialGradient id=\\\"h\\\"><stop offset=\\\"0.6\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.12\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.32\\\"/></radialGradient></defs><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"276\\\" fill=\\\"url(#h)\\\"/><g clip-path=\\\"url(#l)\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M13.0 2.1L8.6 50.9M89.0 10.0L144.3 -7.9M89.0 10.0L99.5 42.2M193.9 -1.1L226.8 -1.3M193.9 -1.1L195.8 40.5M226.8 -1.3L282.9 -3.5M282.9 -3.5L329.2 8.5M329.2 8.5L313.4 40.2M373.4 -8.9L419.8 -4.4M419.8 -4.4L421.8 41.4M449.1 11.4L516.2 10.2M449.1 11.4L471.6 59.4M516.2 10.2L497.1 39.2M8.6 50.9L46.1 41.8M99.5 42.2L130.3 36.8M99.5 42.2L83.9 88.3M130.3 36.8L142.0 83.6M236.1 55.2L225.3 79.0M271.9 35.2L313.4 40.2M313.4 40.2L319.9 99.7M360.1 43.4L364.2 105.4M421.8 41.4L424.3 102.7M471.6 59.4L497.1 39.2M471.6 59.4L454.2 93.1M557.6 51.0L565.5 80.1M589.7 38.5L606.0 102.4M37.7 100.4L83.9 88.3M37.7 100.4L35.2 148.7M142.0 83.6L139.1 145.5M171.8 95.9L225.3 79.0M225.3 79.0L266.3 96.3M225.3 79.0L228.9 143.3M266.3 96.3L319.9 99.7M266.3 96.3L272.8 127.2M319.9 99.7L321.1 148.5M364.2 105.4L424.3 102.7M454.2 93.1L500.1 90.0M454.2 93.1L447.5 140.6M500.1 90.0L565.5 80.1M565.5 80.1L606.0 102.4M606.0 102.4L595.1 142.9M9.4 126.9L35.2 148.7M9.4 126.9L-4.9 195.0M35.2 148.7L83.5 144.4M35.2 148.7L42.9 184.0M83.5 144.4L96.5 173.7M139.1 145.5L139.5 192.6M228.9 143.3L232.5 175.9M272.8 127.2L278.5 193.7M321.1 148.5L334.0 185.4M364.9 130.6L363.9 175.4M407.3 145.7L420.0 185.1M447.5 140.6L456.7 175.1M508.2 129.0L552.6 148.9M552.6 148.9L551.6 182.6M-4.9 195.0L11.8 230.2M184.1 181.0L232.5 175.9M232.5 175.9L278.5 193.7M232.5 175.9L240.0 221.5M278.5 193.7L264.6 239.7M363.9 175.4L420.0 185.1M363.9 175.4L362.1 218.0M420.0 185.1L456.7 175.1M456.7 175.1L509.3 194.7M509.3 194.7L506.4 228.4M551.6 182.6L598.1 170.7M551.6 182.6L564.9 225.0M39.5 223.0L96.1 220.1M136.7 236.4L142.8 288.3M189.6 234.1L240.0 221.5M189.6 234.1L191.6 268.8M240.0 221.5L264.6 239.7M264.6 239.7L279.7 289.1M316.1 239.9L312.3 265.8M362.1 218.0L365.7 268.7M455.2 242.1L506.4 228.4M455.2 242.1L465.3 276.1M506.4 228.4L564.9 225.0M506.4 228.4L516.8 285.5M564.9 225.0L552.2 263.4M13.5 265.2L40.2 269.3M40.2 269.3L41.7 317.7M142.8 288.3L191.6 268.8M191.6 268.8L183.9 325.7M242.0 263.9L242.3 317.8M279.7 289.1L312.3 265.8M312.3 265.8L308.3 333.2M365.7 268.7L404.0 266.7M365.7 268.7L376.6 313.5M404.0 266.7L465.3 276.1M404.0 266.7L411.6 331.0M465.3 276.1L516.8 285.5M465.3 276.1L460.1 320.3M516.8 285.5L506.5 319.0M552.2 263.4L600.2 264.1M552.2 263.4L545.3 316.8M600.2 264.1L601.2 308.9M0.1 312.0L41.7 317.7M0.1 312.0L-2.2 360.2M41.7 317.7L81.5 334.3M81.5 334.3L124.9 332.9M183.9 325.7L175.4 371.0M242.3 317.8L243.0 375.4M308.3 333.2L376.6 313.5M308.3 333.2L326.2 360.4M376.6 313.5L411.6 331.0M376.6 313.5L373.2 378.7M411.6 331.0L460.1 320.3M411.6 331.0L421.8 357.0M-2.2 360.2L-5.8 417.8M48.2 381.8L105.5 358.6M48.2 381.8L50.2 416.7M147.6 375.2L175.4 371.0M147.6 375.2L136.1 412.2M175.4 371.0L173.2 412.2M243.0 375.4L237.2 405.0M268.2 363.4L326.2 360.4M326.2 360.4L320.2 423.0M463.1 359.1L464.5 407.2M513.2 373.8L546.1 372.9M546.1 372.9L538.8 404.0M-5.8 417.8L50.2 416.7M50.2 416.7L83.3 408.0M50.2 416.7L48.1 461.0M83.3 408.0L83.8 462.5M136.1 412.2L147.7 466.1M173.2 412.2L237.2 405.0M237.2 405.0L283.0 422.8M237.2 405.0L222.0 471.4M283.0 422.8L263.4 465.1M320.2 423.0L375.7 407.5M375.7 407.5L424.6 420.0M375.7 407.5L372.2 470.9M424.6 420.0L464.5 407.2M424.6 420.0L402.9 469.2M464.5 407.2L493.1 403.3M464.5 407.2L458.4 472.9M538.8 404.0L610.5 411.6M48.1 461.0L83.8 462.5M83.8 462.5L147.7 466.1M83.8 462.5L81.4 511.6M147.7 466.1L140.1 502.5M188.5 452.5L222.0 471.4M319.2 452.4L328.6 506.8M372.2 470.9L359.3 498.6M493.4 456.3L506.5 504.7M546.7 448.8L592.7 452.2M5.7 493.1L53.0 506.9M53.0 506.9L81.4 511.6M53.0 506.9L58.7 543.1M81.4 511.6L140.1 502.5M140.1 502.5L143.3 553.6M228.4 495.9L265.1 493.9M228.4 495.9L217.0 554.1M265.1 493.9L328.6 506.8M265.1 493.9L286.9 555.5M359.3 498.6L373.7 545.7M409.9 518.6L457.2 518.1M409.9 518.6L406.9 562.3M457.2 518.1L506.5 504.7M457.2 518.1L451.1 560.8M506.5 504.7L561.8 507.9M506.5 504.7L497.7 565.1M561.8 507.9L587.8 514.9M561.8 507.9L543.0 554.8M-12.6 564.1L58.7 543.1M58.7 543.1L87.9 549.8M87.9 549.8L78.8 609.0M143.3 553.6L174.0 552.8M174.0 552.8L178.6 595.6M217.0 554.1L286.9 555.5M217.0 554.1L217.2 589.4M286.9 555.5L313.0 548.2M286.9 555.5L270.1 602.3M313.0 548.2L373.7 545.7M373.7 545.7L359.3 587.2M406.9 562.3L417.8 585.7M451.1 560.8L497.7 565.1M451.1 560.8L454.9 584.2M543.0 554.8L603.5 545.4M-4.7 604.8L52.9 585.5M134.1 610.7L178.6 595.6M178.6 595.6L217.2 589.4M217.2 589.4L270.1 602.3M454.9 584.2L514.1 591.9M514.1 591.9L559.0 586.2M559.0 586.2L590.7 602.2\\\" stroke-width=\\\"4.5\\\" stroke-opacity=\\\"0.9\\\"/></g><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"276\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\" stroke-opacity=\\\"0.9\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"294\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.5\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":640,\"height\":640,\"title\":\"Lupa sobre hueso esponjoso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1010,\"left\":\"m\",\"width\":300}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Ahora, mira\notra cosa\nde cerca."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Intriga: primerísimo plano de una curva azul (el aplicador de anillo) sin nombrarla.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco. Titular: \"¿Qué es esta curva azul?\" Texto: \"Pista: es una de 8 formas distintas.\" Debajo, un primerísimo plano de un arco azul acolchado que sale del lienzo por los lados y por abajo. Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Primer plano del aplicador de anillo\",\"left\":-200,\"top\":560,\"width\":2200,\"height\":790,\"objectPosition\":\"50% 30%\",\"fade\":[\"top\"],\"fadeSize\":160}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "¿Qué es esta\ncurva azul?"
+        },
+        {
+          "id": "b",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Pista: es una de 8 formas distintas."
+        },
+        {
+          "id": "sw",
+          "parent": "r1",
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"inline\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Revelación: el aplicador de anillo de BTL Magnetotherapy en uso, ventajas y CTA \"Solicita tu demo\".",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Fondo claro. Foto oficial de una paciente recostada en la camilla con el aplicador de anillo de BTL Magnetotherapy en las piernas. Debajo: \"Es el aplicador de anillo de BTL Magnetotherapy.\" y \"8 aplicadores · hasta 4 canales · protocolos por área anatómica.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/web-magnetotherapy-03.jpg\",\"alt\":\"Paciente recostada en la camilla con el aplicador de anillo de BTL Magnetotherapy\",\"left\":40,\"top\":236,\"width\":1000,\"fade\":[\"left\",\"right\",\"bottom\"],\"fadeSize\":120}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":860,\"left\":\"m\",\"right\":\"m\",\"gap\":10}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"as\":\"h2\"}",
+          "text": "Es el aplicador de anillo\nde BTL Magnetotherapy."
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "8 aplicadores · hasta 4 canales · protocolos por área anatómica."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"split\",\"size\":56}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: hoy miramos de cerca. Primero, un hueso poroso. Después, una curva azul que quizá ya viste en alguna consulta.\n\nEs el aplicador de anillo de BTL Magnetotherapy, uno de sus 8 aplicadores para tratar cualquier parte del cuerpo. El equipo suma hasta 4 canales, protocolos por área anatómica y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Un hueso poroso, de cerca (ilustración educativa del hueso esponjoso)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; ilustración educativa o frase general, no atribuida al producto",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Pista: es una de 8 formas distintas.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Es el aplicador de anillo de BTL Magnetotherapy.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\"); fotos oficiales del aplicador de anillo en uso (web-magnetotherapy-03, BTL-4000-5000_Magnet_PIC_Applicator-ring)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Es el aplicador de anillo de BTL Magnetotherapy",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\"); fotos oficiales del aplicador de anillo en uso (web-magnetotherapy-03, BTL-4000-5000_Magnet_PIC_Applicator-ring)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "uno de sus 8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "tecnología FMF, para que el terapeuta no quede expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "macro-detalle"
+}

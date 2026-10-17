@@ -1,0 +1,811 @@
+{
+  "direction": "C",
+  "direction_name": "Dato protagonista",
+  "concept": "Una campaña de luz sobre azul BTL: el cerebro iluminado abre como imagen del ictus, BTL EXO aparece dentro de un anillo de luz sobre su propio detalle, y cada equipo se presenta con nombre protagonista, descripción de apoyo y foto integrada con resplandores y fundidos. Cierre con iconos propios y un CTA final grande, \"Solicita tu demo\".",
+  "differentiation": "Fondo azul BTL común, sin huellas. Jerarquía fija en todo el carrusel: titular en dos pesos → nombre del equipo en seminegrita 48 px con una barra celeste → descripción en ligero 30 px. Imágenes sin recuadro, apoyadas en resplandores de suelo y fundidas por el lado del texto; filas en zigzag en la diapositiva 4 y columnas en la 3 para variar el ritmo.",
+  "slides": [
+    {
+      "purpose": "Gancho: un reloj con el cerebro dentro (cada segundo cuenta) como imagen del Día Mundial del Ictus, la fecha en pastilla y el gancho en dos pesos.",
+      "background": "blue",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul BTL. A la derecha, la esfera de un reloj en línea blanca con un cerebro dentro: la zona del ictus encendida en celeste y el segundero recorriendo un sector celeste, porque en el ictus cada segundo cuenta. A la izquierda, la pastilla \"29 de octubre\" y \"Día Mundial del Ictus\". Abajo: \"El ataque llega en segundos.\" en seminegrita, \"Volver a moverse lleva tiempo.\" en ligero y \"¿Cómo aprovecha tu clínica cada sesión?\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":380,\"top\":170,\"width\":700,\"height\":680,\"intensity\":0.3}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":456,\"top\":250,\"width\":500,\"height\":500}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"cg\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"8\\\"/></filter><filter id=\\\"cw\\\" x=\\\"-100%\\\" y=\\\"-100%\\\" width=\\\"300%\\\" height=\\\"300%\\\"><feGaussianBlur stdDeviation=\\\"24\\\"/></filter><radialGradient id=\\\"ch\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.95\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.3\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient><radialGradient id=\\\"cf\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.16\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.02\\\"/></radialGradient></defs><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"282\\\" fill=\\\"url(#cf)\\\"/><g filter=\\\"url(#cg)\\\" opacity=\\\"0.6\\\"><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"282\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"8\\\"/></g><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"282\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"/><line x1=\\\"300.0\\\" y1=\\\"64.0\\\" x2=\\\"300.0\\\" y2=\\\"34.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"326.1\\\" y1=\\\"51.4\\\" x2=\\\"327.8\\\" y2=\\\"35.5\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"352.0\\\" y1=\\\"55.5\\\" x2=\\\"355.3\\\" y2=\\\"39.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"377.3\\\" y1=\\\"62.2\\\" x2=\\\"382.2\\\" y2=\\\"47.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"401.7\\\" y1=\\\"71.6\\\" x2=\\\"408.2\\\" y2=\\\"57.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"418.0\\\" y1=\\\"95.6\\\" x2=\\\"433.0\\\" y2=\\\"69.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"446.9\\\" y1=\\\"97.7\\\" x2=\\\"456.4\\\" y2=\\\"84.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"467.3\\\" y1=\\\"114.2\\\" x2=\\\"478.0\\\" y2=\\\"102.3\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"485.8\\\" y1=\\\"132.7\\\" x2=\\\"497.7\\\" y2=\\\"122.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"502.3\\\" y1=\\\"153.1\\\" x2=\\\"515.2\\\" y2=\\\"143.6\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"504.4\\\" y1=\\\"182.0\\\" x2=\\\"530.4\\\" y2=\\\"167.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"528.4\\\" y1=\\\"198.3\\\" x2=\\\"543.0\\\" y2=\\\"191.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"537.8\\\" y1=\\\"222.7\\\" x2=\\\"553.0\\\" y2=\\\"217.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"544.5\\\" y1=\\\"248.0\\\" x2=\\\"560.2\\\" y2=\\\"244.7\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"548.6\\\" y1=\\\"273.9\\\" x2=\\\"564.5\\\" y2=\\\"272.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"536.0\\\" y1=\\\"300.0\\\" x2=\\\"566.0\\\" y2=\\\"300.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"548.6\\\" y1=\\\"326.1\\\" x2=\\\"564.5\\\" y2=\\\"327.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"544.5\\\" y1=\\\"352.0\\\" x2=\\\"560.2\\\" y2=\\\"355.3\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"537.8\\\" y1=\\\"377.3\\\" x2=\\\"553.0\\\" y2=\\\"382.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"528.4\\\" y1=\\\"401.7\\\" x2=\\\"543.0\\\" y2=\\\"408.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"504.4\\\" y1=\\\"418.0\\\" x2=\\\"530.4\\\" y2=\\\"433.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"502.3\\\" y1=\\\"446.9\\\" x2=\\\"515.2\\\" y2=\\\"456.4\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"485.8\\\" y1=\\\"467.3\\\" x2=\\\"497.7\\\" y2=\\\"478.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"467.3\\\" y1=\\\"485.8\\\" x2=\\\"478.0\\\" y2=\\\"497.7\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"446.9\\\" y1=\\\"502.3\\\" x2=\\\"456.4\\\" y2=\\\"515.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"418.0\\\" y1=\\\"504.4\\\" x2=\\\"433.0\\\" y2=\\\"530.4\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"401.7\\\" y1=\\\"528.4\\\" x2=\\\"408.2\\\" y2=\\\"543.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"377.3\\\" y1=\\\"537.8\\\" x2=\\\"382.2\\\" y2=\\\"553.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"352.0\\\" y1=\\\"544.5\\\" x2=\\\"355.3\\\" y2=\\\"560.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"326.1\\\" y1=\\\"548.6\\\" x2=\\\"327.8\\\" y2=\\\"564.5\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"300.0\\\" y1=\\\"536.0\\\" x2=\\\"300.0\\\" y2=\\\"566.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"273.9\\\" y1=\\\"548.6\\\" x2=\\\"272.2\\\" y2=\\\"564.5\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"248.0\\\" y1=\\\"544.5\\\" x2=\\\"244.7\\\" y2=\\\"560.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"222.7\\\" y1=\\\"537.8\\\" x2=\\\"217.8\\\" y2=\\\"553.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"198.3\\\" y1=\\\"528.4\\\" x2=\\\"191.8\\\" y2=\\\"543.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"182.0\\\" y1=\\\"504.4\\\" x2=\\\"167.0\\\" y2=\\\"530.4\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"153.1\\\" y1=\\\"502.3\\\" x2=\\\"143.6\\\" y2=\\\"515.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"132.7\\\" y1=\\\"485.8\\\" x2=\\\"122.0\\\" y2=\\\"497.7\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"114.2\\\" y1=\\\"467.3\\\" x2=\\\"102.3\\\" y2=\\\"478.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"97.7\\\" y1=\\\"446.9\\\" x2=\\\"84.8\\\" y2=\\\"456.4\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"95.6\\\" y1=\\\"418.0\\\" x2=\\\"69.6\\\" y2=\\\"433.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"71.6\\\" y1=\\\"401.7\\\" x2=\\\"57.0\\\" y2=\\\"408.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"62.2\\\" y1=\\\"377.3\\\" x2=\\\"47.0\\\" y2=\\\"382.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"55.5\\\" y1=\\\"352.0\\\" x2=\\\"39.8\\\" y2=\\\"355.3\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"51.4\\\" y1=\\\"326.1\\\" x2=\\\"35.5\\\" y2=\\\"327.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"64.0\\\" y1=\\\"300.0\\\" x2=\\\"34.0\\\" y2=\\\"300.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"51.4\\\" y1=\\\"273.9\\\" x2=\\\"35.5\\\" y2=\\\"272.2\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"55.5\\\" y1=\\\"248.0\\\" x2=\\\"39.8\\\" y2=\\\"244.7\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"62.2\\\" y1=\\\"222.7\\\" x2=\\\"47.0\\\" y2=\\\"217.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"71.6\\\" y1=\\\"198.3\\\" x2=\\\"57.0\\\" y2=\\\"191.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"95.6\\\" y1=\\\"182.0\\\" x2=\\\"69.6\\\" y2=\\\"167.0\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"97.7\\\" y1=\\\"153.1\\\" x2=\\\"84.8\\\" y2=\\\"143.6\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"114.2\\\" y1=\\\"132.7\\\" x2=\\\"102.3\\\" y2=\\\"122.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"132.7\\\" y1=\\\"114.2\\\" x2=\\\"122.0\\\" y2=\\\"102.3\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"153.1\\\" y1=\\\"97.7\\\" x2=\\\"143.6\\\" y2=\\\"84.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"182.0\\\" y1=\\\"95.6\\\" x2=\\\"167.0\\\" y2=\\\"69.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"198.3\\\" y1=\\\"71.6\\\" x2=\\\"191.8\\\" y2=\\\"57.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"222.7\\\" y1=\\\"62.2\\\" x2=\\\"217.8\\\" y2=\\\"47.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"248.0\\\" y1=\\\"55.5\\\" x2=\\\"244.7\\\" y2=\\\"39.8\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"273.9\\\" y1=\\\"51.4\\\" x2=\\\"272.2\\\" y2=\\\"35.5\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><path d=\\\"M300,300 L300,74 A226,226 0 0 1 482.8,167.2 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.16\\\"/><path d=\\\"M300,74 A226,226 0 0 1 482.8,167.2\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"4\\\" stroke-linecap=\\\"round\\\"/><g transform=\\\"translate(78,128) scale(0.68)\\\"><path d=\\\"M372,350 C376,382 380,414 376,452 L404,452 C404,414 404,382 410,344 Z\\\" fill=\\\"url(#cf)\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M418,342 C424,382 462,404 500,396 C534,388 548,356 532,330 C522,316 508,316 494,322 C470,340 440,346 418,342 Z\\\" fill=\\\"url(#cf)\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M150,318 C108,300 86,250 98,204 C104,150 140,108 196,92 C232,62 292,52 342,64 C392,50 452,66 486,104 C534,124 562,172 556,224 C566,268 546,306 506,320 C484,344 446,352 410,342 C380,358 330,360 296,346 C258,360 206,356 178,336 C166,334 156,328 150,318 Z\\\" fill=\\\"#000a32\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4.5\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.55\\\"><path d=\\\"M206,286 C252,262 300,256 350,244 C384,236 410,222 432,204\\\"/><path d=\\\"M352,70 C340,112 350,150 332,190 C324,208 326,224 318,240\\\"/><path d=\\\"M182,168 C210,152 240,170 268,156\\\"/><path d=\\\"M150,236 C176,222 200,236 228,222\\\"/><path d=\\\"M262,118 C282,132 306,124 322,138\\\"/><path d=\\\"M396,104 C412,128 440,130 462,120\\\"/><path d=\\\"M410,168 C440,176 470,168 500,186\\\"/><path d=\\\"M454,240 C482,248 510,240 532,256\\\"/><path d=\\\"M240,318 C270,304 300,316 336,302\\\"/><path d=\\\"M380,282 C408,290 430,280 456,292\\\"/><path d=\\\"M438,360 C462,372 492,370 516,356\\\"/><path d=\\\"M452,382 C474,388 498,384 520,372\\\"/></g><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"120\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.45\\\" filter=\\\"url(#cw)\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"70\\\" fill=\\\"url(#ch)\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"28\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\"/><circle cx=\\\"300\\\" cy=\\\"196\\\" r=\\\"11\\\" fill=\\\"#ffffff\\\"/></g><g filter=\\\"url(#cg)\\\" opacity=\\\"0.7\\\"><line x1=\\\"300\\\" y1=\\\"300\\\" x2=\\\"502.3\\\" y2=\\\"153.1\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"6\\\"/></g><line x1=\\\"300\\\" y1=\\\"300\\\" x2=\\\"502.3\\\" y2=\\\"153.1\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"300\\\" y1=\\\"300\\\" x2=\\\"300\\\" y2=\\\"96\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"5\\\" stroke-linecap=\\\"round\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"12\\\" fill=\\\"#000a32\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":500,\"height\":500,\"title\":\"Reloj con un cerebro dentro y la zona del ictus iluminada: en el ictus, cada segundo cuenta\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":400,\"width\":330,\"gap\":20,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "29 de octubre"
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Eyebrow",
+          "props": "{\"size\":44,\"weight\":\"semibold\"}",
+          "text": "Día Mundial\ndel Ictus"
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":800,\"width\":892,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "El ataque llega\nen segundos."
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "Volver a moverse\nlleva tiempo."
+        },
+        {
+          "id": "n11",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"strong\",\"style\":{\"marginTop\":24}}",
+          "text": "¿Cómo aprovecha tu clínica cada sesión?"
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Respuesta: BTL EXO de pie dentro de un anillo de luz, sobre el detalle de la articulación del exoesqueleto fundido en el fondo.",
+      "background": "blue",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul BTL. Arriba, \"La respuesta:\" en ligero y \"BTL Robotics\" en seminegrita grande. A la izquierda, \"Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.\". A la derecha, BTL EXO con un usuario de pie dentro de un anillo de luz celeste, sobre un primer plano de la articulación del exoesqueleto que se funde en el azul y un resplandor que hace de suelo. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-robotics-08.png\",\"alt\":\"BTL EXO: primer plano de la articulación de la rodilla\",\"left\":460,\"top\":700,\"width\":640,\"height\":640,\"fade\":[\"left\",\"top\",\"bottom\"],\"fadeSize\":220}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":948,\"r\":252,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":240,\"top\":1080,\"width\":600,\"height\":170,\"intensity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-exo-02.webp\",\"alt\":\"BTL EXO, exoesqueleto para caminar, con un usuario y bastones\",\"left\":280,\"top\":680,\"width\":520,\"height\":520,\"objectPosition\":\"center top\",\"fade\":[\"bottom\"],\"fadeSize\":80}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":892,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "La respuesta:"
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\"}",
+          "text": "BTL Robotics"
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":470,\"width\":892,\"gap\":20}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":80,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"maxWidth\":860}",
+          "text": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión."
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Marcha: tres equipos sobre un suelo de luz; nombre grande, descripción de apoyo.",
+      "background": "blue",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul BTL. \"Entrenar la marcha,\" en seminegrita y \"paso a paso\" en ligero. Tres equipos sobre un resplandor que hace de suelo, cada uno con su nombre en grande y su descripción debajo: R-GAIT — \"Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.\"; BTL EXO — \"Exoesqueleto para caminar en llano, terreno irregular y pendientes.\"; R-FORCE — \"Descarga hasta el 100 % del peso para entrenar desde el primer día.\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":-60,\"top\":690,\"width\":1200,\"height\":230,\"intensity\":0.5}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-r-gait-04.webp\",\"alt\":\"R-GAIT con un usuario\",\"left\":54,\"top\":430,\"width\":356,\"height\":420,\"fade\":[\"bottom\"],\"fadeSize\":60}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-exo-02.webp\",\"alt\":\"BTL EXO con un usuario caminando con bastones\",\"left\":362,\"top\":430,\"width\":356,\"height\":420,\"fade\":[\"bottom\"],\"fadeSize\":60}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-r-force-02.webp\",\"alt\":\"R-FORCE, cinta antigravedad, con un usuario\",\"left\":670,\"top\":430,\"width\":356,\"height\":420,\"fade\":[\"bottom\"],\"fadeSize\":60}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":892,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+          "text": "Entrenar la marcha,"
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "paso a paso"
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":880,\"width\":276,\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "R-GAIT"
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas."
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":402,\"top\":880,\"width\":276,\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "BTL EXO"
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n16",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Exoesqueleto para caminar en llano, terreno irregular y pendientes."
+        },
+        {
+          "id": "n17",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":710,\"top\":880,\"width\":276,\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "n17",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "R-FORCE"
+        },
+        {
+          "id": "n19",
+          "parent": "n17",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n20",
+          "parent": "n17",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Descarga hasta el 100 % del peso para entrenar desde el primer día."
+        },
+        {
+          "id": "n21",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Brazo, mano y pie: tres filas en zigzag, cada equipo con su imagen, nombre grande y descripción de apoyo.",
+      "background": "blue",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul BTL. \"Terapia que\" en ligero y \"no aburre\" en seminegrita. Tres filas alternas, cada una con la foto oficial fundida en el fondo y el nombre del equipo en grande con su descripción: R-LEAD — \"Decenas de juegos con dificultad que se ajusta sola al progreso.\"; R-TOUCH — \"Entrenar con objetos reales o en entornos virtuales inmersivos.\"; BTL WALK — \"Práctica de la marcha en el día a día: calle, escaleras y pendientes.\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":80,\"top\":500,\"width\":380,\"height\":180,\"intensity\":0.35}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-robotics-07.webp\",\"alt\":\"R-LEAD: usuario entrenando el brazo frente a una pantalla con un juego\",\"left\":60,\"top\":440,\"width\":420,\"height\":236,\"objectPosition\":\"center 35%\",\"fade\":[\"left\",\"right\",\"bottom\"],\"fadeSize\":90}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":620,\"top\":748,\"width\":380,\"height\":180,\"intensity\":0.35}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-robotics-06.webp\",\"alt\":\"R-TOUCH: guante robótico en la mano\",\"left\":600,\"top\":688,\"width\":420,\"height\":236,\"objectPosition\":\"center 45%\",\"fade\":[\"left\",\"bottom\"],\"fadeSize\":90}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":80,\"top\":996,\"width\":380,\"height\":180,\"intensity\":0.35}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-6/web-walk-04.webp\",\"alt\":\"BTL WALK colocado en la pierna al caminar\",\"left\":60,\"top\":936,\"width\":420,\"height\":236,\"objectPosition\":\"center 60%\",\"fade\":[\"right\",\"bottom\"],\"fadeSize\":90}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":892,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "Terapia que"
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+          "text": "no aburre"
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":520,\"top\":440,\"width\":466,\"height\":236,\"gap\":8,\"align\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n11",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "R-LEAD"
+        },
+        {
+          "id": "n13",
+          "parent": "n11",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\",\"style\":{\"marginTop\":4,\"marginBottom\":6}}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n11",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Pacientes motivados"
+        },
+        {
+          "id": "n15",
+          "parent": "n11",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Robot para el brazo con decenas de juegos en pantalla."
+        },
+        {
+          "id": "n16",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":688,\"width\":466,\"height\":236,\"gap\":8,\"align\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n16",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "R-TOUCH"
+        },
+        {
+          "id": "n18",
+          "parent": "n16",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\",\"style\":{\"marginTop\":4,\"marginBottom\":6}}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "n16",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Mano y brazo en un equipo"
+        },
+        {
+          "id": "n20",
+          "parent": "n16",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Guante robótico que guía cada dedo."
+        },
+        {
+          "id": "n21",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":520,\"top\":936,\"width\":466,\"height\":236,\"gap\":8,\"align\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "n21",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "BTL WALK"
+        },
+        {
+          "id": "n23",
+          "parent": "n21",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":48,\"thickness\":3,\"emphasis\":\"strong\",\"style\":{\"marginTop\":4,\"marginBottom\":6}}",
+          "text": null
+        },
+        {
+          "id": "n24",
+          "parent": "n21",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "La marcha, en el día a día"
+        },
+        {
+          "id": "n25",
+          "parent": "n21",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Para el pie caído: se lleva puesto en calle y escaleras."
+        },
+        {
+          "id": "n26",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cierre: tres ventajas con iconos propios del mismo trazo y un único CTA.",
+      "background": "blue",
+      "lightFrom": "bottom-right",
+      "alt": "Fondo azul BTL. \"Más terapia,\" en seminegrita y \"menos esfuerzo\" en ligero. Tres ventajas con iconos de línea propios: una mano abierta con una trayectoria guiada (Manos libres — \"El equipo guía el movimiento; tú diriges la terapia.\"), tres reguladores (Protocolos a la medida — \"Parámetros ajustables según el paciente y su etapa.\") y una gráfica ascendente (Seguimiento objetivo — \"Reportes de cada sesión para evaluar el progreso.\"). Abajo, el botón \"Solicita tu demo\".",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":892,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"semibold\"}",
+          "text": "Más terapia,"
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\"}",
+          "text": "menos esfuerzo"
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":530,\"width\":892,\"gap\":40}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"i\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"3\\\"/></filter></defs><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><rect x=\\\"31\\\" y=\\\"34\\\" width=\\\"9\\\" height=\\\"28\\\" rx=\\\"4.5\\\"/><rect x=\\\"42\\\" y=\\\"28\\\" width=\\\"9\\\" height=\\\"34\\\" rx=\\\"4.5\\\"/><rect x=\\\"53\\\" y=\\\"30\\\" width=\\\"9\\\" height=\\\"32\\\" rx=\\\"4.5\\\"/><rect x=\\\"64\\\" y=\\\"37\\\" width=\\\"8\\\" height=\\\"25\\\" rx=\\\"4\\\"/><path d=\\\"M31,56 C25,50 19,50 17,54 C15,58 21,66 31,76 C35,82 40,86 48,86 L58,86 C66,86 72,80 72,72 L72,56\\\"/></g><g filter=\\\"url(#i)\\\" opacity=\\\"0.7\\\"><path d=\\\"M18,20 C36,6 60,6 78,20\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/></g><path d=\\\"M18,20 C36,6 60,6 78,20\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" stroke-dasharray=\\\"1 7\\\"/><polyline points=\\\"70,14 78,20 70,24\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/><circle cx=\\\"18\\\" cy=\\\"20\\\" r=\\\"3.5\\\" fill=\\\"#96d2ff\\\"/>\",\"viewBox\":\"0 0 96 96\",\"width\":104,\"height\":104,\"title\":\"Mano abierta con una trayectoria guiada encima: manos libres\"}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "Manos libres"
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "El equipo guía el movimiento; tú diriges la terapia."
+        },
+        {
+          "id": "n11",
+          "parent": "n5",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n11",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"i\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"3\\\"/></filter></defs><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><line x1=\\\"14\\\" y1=\\\"26\\\" x2=\\\"82\\\" y2=\\\"26\\\"/><line x1=\\\"14\\\" y1=\\\"48\\\" x2=\\\"82\\\" y2=\\\"48\\\"/><line x1=\\\"14\\\" y1=\\\"70\\\" x2=\\\"82\\\" y2=\\\"70\\\"/></g><g filter=\\\"url(#i)\\\" opacity=\\\"0.7\\\"><circle cx=\\\"34\\\" cy=\\\"26\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"64\\\" cy=\\\"48\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"46\\\" cy=\\\"70\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\"/></g><g fill=\\\"#000a32\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\"><circle cx=\\\"34\\\" cy=\\\"26\\\" r=\\\"7\\\"/><circle cx=\\\"64\\\" cy=\\\"48\\\" r=\\\"7\\\"/><circle cx=\\\"46\\\" cy=\\\"70\\\" r=\\\"7\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":104,\"height\":104,\"title\":\"Tres reguladores con distinta posición: protocolos a la medida\"}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "n11",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "Protocolos a la medida"
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Parámetros ajustables según el paciente y su etapa."
+        },
+        {
+          "id": "n16",
+          "parent": "n5",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n16",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"i\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"3\\\"/></filter></defs><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><polyline points=\\\"14,14 14,82 84,82\\\"/><line x1=\\\"14\\\" y1=\\\"60\\\" x2=\\\"20\\\" y2=\\\"60\\\"/><line x1=\\\"14\\\" y1=\\\"38\\\" x2=\\\"20\\\" y2=\\\"38\\\"/></g><g filter=\\\"url(#i)\\\" opacity=\\\"0.7\\\"><polyline points=\\\"24,70 40,52 54,60 76,30\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/></g><polyline points=\\\"24,70 40,52 54,60 76,30\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/><circle cx=\\\"76\\\" cy=\\\"30\\\" r=\\\"5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"24\\\" cy=\\\"70\\\" r=\\\"3.5\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"40\\\" cy=\\\"52\\\" r=\\\"3.5\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"54\\\" cy=\\\"60\\\" r=\\\"3.5\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"0 0 96 96\",\"width\":104,\"height\":104,\"title\":\"Gráfica con una línea ascendente: seguimiento objetivo del progreso\"}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "n16",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "n18",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"h3\"}",
+          "text": "Seguimiento objetivo"
+        },
+        {
+          "id": "n20",
+          "parent": "n18",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Reportes de cada sesión para evaluar el progreso."
+        },
+        {
+          "id": "n21",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1060,\"width\":892,\"gap\":20}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "n21",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":120,\"thickness\":4,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n23",
+          "parent": "n21",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "29 de octubre, Día Mundial del Ictus. Un dato para tu consulta: con R-GAIT, hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.\n\nEs parte de BTL Robotics: neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión, con R-GAIT, BTL EXO, R-FORCE, R-LEAD, R-TOUCH y BTL WALK. Más terapia, menos esfuerzo para tu equipo.\n\n¿Quieres verlo en tu clínica? Escríbenos \"DEMO\" por mensaje directo.\n\n#DíaMundialDelIctus #Neurorrehabilitación #Fisioterapia #CentrosDeRehabilitación #BTLElSalvador",
+  "sources": [
+    "data/tasks/job-144/approved-copy.json",
+    "data/web/robotics.md",
+    "data/web/r-gait.md",
+    "data/web/exo.md",
+    "data/web/r-force.md",
+    "data/web/r-lead.md",
+    "data/web/r-touch.md",
+    "data/web/walk.md",
+    "data/uploads/pub-6/web-robotics-08.png",
+    "data/uploads/pub-6/web-exo-02.webp",
+    "data/uploads/pub-6/web-r-gait-04.webp",
+    "data/uploads/pub-6/web-r-force-02.webp",
+    "data/uploads/pub-6/web-robotics-07.webp",
+    "data/uploads/pub-6/web-robotics-06.webp",
+    "data/uploads/pub-6/web-walk-04.webp"
+  ],
+  "claims": [
+    {
+      "claim": "El ataque llega en segundos. Volver a moverse lleva tiempo.",
+      "location": "diapositiva 1",
+      "source": "Dato general sobre la fecha (sin atribución a un producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+      "location": "diapositiva 2",
+      "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-GAIT: Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+      "location": "diapositiva 3",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL EXO: Exoesqueleto para caminar en llano, terreno irregular y pendientes.",
+      "location": "diapositiva 3",
+      "source": "data/web/exo.md · Designed For Any Environment",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-FORCE: Descarga hasta el 100 % del peso para entrenar desde el primer día.",
+      "location": "diapositiva 3",
+      "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; Training Right After Injury",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "El equipo guía el movimiento; tú diriges la terapia.",
+      "location": "diapositiva 5",
+      "source": "data/web/robotics.md · \"precisely guided training … while reducing therapist workload\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Parámetros ajustables según el paciente y su etapa.",
+      "location": "diapositiva 5",
+      "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Interactive Gaming Therapy",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Reportes de cada sesión para evaluar el progreso.",
+      "location": "diapositiva 5",
+      "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Robotic Arm Rehabilitation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con R-GAIT, hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+      "location": "caption",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"up to 1,500 steps in under 30 minutes\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Robotics: neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión, con R-GAIT, BTL EXO, R-FORCE, R-LEAD, R-TOUCH y BTL WALK.",
+      "location": "caption",
+      "source": "data/web/robotics.md · Select The Desired Solution",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "1.500",
+      "location": "diapositiva 3",
+      "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"up to 1,500 steps in under 30 minutes\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-LEAD: pacientes motivados. Robot para el brazo con decenas de juegos en pantalla.",
+      "location": "diapositiva 4",
+      "source": "data/web/r-lead.md · Innovative Solution for Upper Limb Training (\"arm therapy machine… interactive on-screen exercises\"); Interactive Gaming Therapy (\"dozens of games that motivate and keep patients fully engaged\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "R-TOUCH: mano y brazo en un equipo. Guante robótico que guía cada dedo.",
+      "location": "diapositiva 4",
+      "source": "data/web/r-touch.md · Soft Robotic Glove for Hand Rehabilitation (\"hand and arm motion restoration\"); Highest Level of Precision (\"5 finger actuators, precisely guiding each finger's movement\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL WALK: la marcha, en el día a día. Para el pie caído: se lleva puesto en calle y escaleras.",
+      "location": "diapositiva 4",
+      "source": "data/web/walk.md · The Only 2-in-1 Wearable Technology for Drop Foot; Limitless Walking on Any Terrain (\"city strolls, climbing stairs\")",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "dato-protagonista"
+}

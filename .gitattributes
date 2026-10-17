@@ -1,0 +1,11 @@
+# Same line endings on Mac and Windows (prompts and task files are parsed line by line).
+* text=auto eol=lf
+*.db binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary

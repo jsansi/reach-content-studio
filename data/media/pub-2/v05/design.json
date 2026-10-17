@@ -1,0 +1,258 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "La tipografía cuenta la historia: un \"18\" fino y gigante y una frase que toca lo que muchas pacientes no dicen en voz alta. El producto aparece después como respuesta, con un \"360°\" como única cifra-imagen, y el cierre es una lista sobria de ventajas para la clínica.",
+  "differentiation": "Domina el espacio en blanco y la jerarquía tipográfica (numeral → titular → texto). La imagen es un acento pequeño y vertical solo en la diapositiva 2; no hay fotos en la portada ni en el cierre, que es un bloque Enterprise Blue con lista numerada.",
+  "slides": [
+    {
+      "purpose": "Conmemorar el 18 de octubre y abrir la pregunta para la clínica",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco. Un 18 grande en azul y el texto: de octubre, Día Mundial de la Menopausia. Lo que no siempre se cuenta en la consulta. ¿Tu clínica tiene una respuesta?",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 250, \"right\": \"m\", \"width\": 460}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "BigNumber",
+          "props": "{\"value\": \"18\", \"size\": 420}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 610, \"right\": \"m\", \"width\": 460}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Eyebrow",
+          "props": "{\"size\": 30, \"weight\": \"regular\", \"tone\": \"base\"}",
+          "text": "de octubre\nDía Mundial de la Menopausia"
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 760, \"right\": \"m\", \"gap\": 28}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\": \"xl\", \"as\": \"h1\"}",
+          "text": "Lo que no siempre\nse cuenta en\nla consulta."
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"accent\"}",
+          "text": "¿Tu clínica tiene una respuesta?"
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar EMFEMME 360 con una sola idea: 360°",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco con el aplicador EMFEMME 360 en vertical. Texto: EMFEMME 360. 360°. Aplicación interna en 360° y tratamiento externo de la zona vulvar. Salud íntima, sin cortes ni láser.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator-V-24-Tip-5564_ENUS100.png\", \"alt\": \"Aplicador EMFEMME 360\", \"left\": 600, \"top\": 250, \"width\": 560}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 290, \"width\": 560, \"gap\": 8}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Eyebrow",
+          "props": "{}",
+          "text": "EMFEMME 360"
+        },
+        {
+          "id": "n5",
+          "parent": "n3",
+          "type": "BigNumber",
+          "props": "{\"value\": \"360°\", \"size\": 280}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 640, \"width\": 500}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"base\"}",
+          "text": "Aplicación interna en 360° y tratamiento externo de la zona vulvar."
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": 200, \"width\": 640}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\": \"m\"}",
+          "text": "Salud íntima,\nsin cortes ni láser."
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\": \"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica y CTA",
+      "background": "enterprise",
+      "lightFrom": null,
+      "alt": "Fondo azul. Lo que suma a tu clínica: 01 Una nueva línea de servicio, salud íntima femenina en tu consulta. 02 Sesiones ambulatorias, se realizan en la consulta. 03 Puntas de un solo uso, un aplicador nuevo para cada paciente. Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 290, \"width\": 800}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"tone\": \"base\"}",
+          "text": "Lo que suma\na tu clínica"
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 520, \"right\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "NumberedList",
+          "props": "{\"items\": [{\"title\": \"Una nueva línea de servicio\", \"text\": \"Salud íntima femenina en tu consulta.\"}, {\"title\": \"Sesiones ambulatorias\", \"text\": \"Se realizan en la consulta.\"}, {\"title\": \"Puntas de un solo uso\", \"text\": \"Un aplicador nuevo para cada paciente.\"}]}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"right\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "CtaBlock",
+          "props": "{\"variant\": \"split\", \"size\": 72}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Este 18 de octubre, Día Mundial de la Menopausia, piensa en lo que tus pacientes no siempre cuentan en la consulta. ¿Tu clínica tiene una respuesta?\n\nEMFEMME 360 es radiofrecuencia no ablativa, sin cortes ni láser, con aplicación interna en 360° y tratamiento externo de la zona vulvar. Una nueva línea de servicio en salud íntima femenina, con sesiones ambulatorias y puntas de un solo uso.\n\n¿Quieres ofrecerlo en tu clínica en El Salvador? Escríbenos \"DEMO\" por mensaje directo.\n\n#DíaMundialDeLaMenopausia #SaludÍntimaFemenina #EMFEMME360 #MedicinaEstética #ElSalvador",
+  "sources": [
+    "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión)",
+    "data/uploads/pub-2 (imágenes oficiales de BTL adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "18 de octubre, Día Mundial de la Menopausia",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Aplicación interna en 360° y tratamiento externo de la zona vulvar",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 2",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Radiofrecuencia no ablativa, sin cortes ni láser",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 1",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Una nueva línea de servicio para tu clínica",
+      "location": "diapositiva 3 y caption",
+      "source": "Preferencias editoriales activas (ventajas prácticas para la clínica)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Sesiones ambulatorias, se realizan en la consulta",
+      "location": "diapositiva 3 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 5",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Puntas de un solo uso: un aplicador nuevo para cada paciente",
+      "location": "diapositiva 3 y caption",
+      "source": "Registro de producto emfemme-360 en REACH Content Studio (creado por el usuario, pendiente de revisión) · key_features 6",
+      "approval": "manufacturer_description"
+    }
+  ]
+}

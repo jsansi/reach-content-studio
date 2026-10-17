@@ -1,0 +1,158 @@
+{
+  "concept": "El Día Mundial de la Menopausia como pretexto para una pregunta directa a la clínica: ¿cuántas pacientes en menopausia atiende cada semana y qué le están pidiendo que aún no ofrece? La respuesta se revela al deslizar (EMFEMME 360), se respalda con las cifras oficiales de BTL y cierra con un CTA de demo muy visible. Cuatro layouts distintos: statement, split, stats y cta.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-18",
+    "occasion": "Día Mundial de la Menopausia",
+    "product": "emfemme-360",
+    "audience": "Médicos estéticos, ginecólogos, clínicas y centros de medicina estética en El Salvador",
+    "slides": [
+      {
+        "layout": "statement",
+        "theme": "dark",
+        "kicker": "18 de octubre · Día Mundial de la Menopausia",
+        "title": "¿Cuántas\npacientes en\nmenopausia\natiendes cada\nsemana?",
+        "body": "Puede que te estén pidiendo algo que tu clínica aún no ofrece.",
+        "swipe": "Desliza para descubrirlo",
+        "alt": "Diapositiva azul oscuro. Texto: 18 de octubre · Día Mundial de la Menopausia. ¿Cuántas pacientes en menopausia atiendes cada semana? Puede que te estén pidiendo algo que tu clínica aún no ofrece. Desliza para descubrirlo.",
+        "style": [
+          {
+            "selector": ".st-main",
+            "property": "top",
+            "value": "280px"
+          }
+        ]
+      },
+      {
+        "layout": "split",
+        "image": "data/uploads/pub-2/Exion_PIC_Intimate-app_5375_ENUS100.png",
+        "imageAlt": "Aplicador EMFEMME 360",
+        "imageFrame": {
+          "left": -20,
+          "top": 330,
+          "width": 560
+        },
+        "label": "Aplicador 360°",
+        "eyebrow": "EMFEMME 360",
+        "title": "Salud íntima,\nen tu consulta",
+        "points": [
+          "Radiofrecuencia no ablativa, sin cortes ni láser",
+          "Tratamiento interno y externo",
+          "Sesiones ambulatorias",
+          "Puntas de un solo uso"
+        ],
+        "swipe": "Desliza",
+        "alt": "Aplicador EMFEMME 360 sobre fondo claro. Texto: EMFEMME 360. Salud íntima, en tu consulta. Radiofrecuencia no ablativa, sin cortes ni láser. Tratamiento interno y externo. Sesiones ambulatorias. Puntas de un solo uso."
+      },
+      {
+        "layout": "stats",
+        "theme": "dark",
+        "title": "Lo que reporta BTL",
+        "items": [
+          {
+            "image": "data/uploads/pub-2/Exion_ICON_32__Oval_ES100.png",
+            "width": 600,
+            "alt": "32 % de aumento del espesor de la pared vaginal*"
+          },
+          {
+            "image": "data/uploads/pub-2/Exion_ICON_82__Oval_ES100.png",
+            "width": 600,
+            "alt": "82 % de los pacientes encontraron confortable el tratamiento*"
+          },
+          {
+            "value": "123%",
+            "label": "de mejora en la salud vaginal*"
+          }
+        ],
+        "note": "*Datos del fabricante. Los resultados pueden variar.",
+        "swipe": "Desliza",
+        "alt": "Cifras reportadas por BTL sobre EMFEMME 360: 32% de aumento del espesor de la pared vaginal; 82% de los pacientes encontraron confortable el tratamiento; 123% de mejora en la salud vaginal. Nota: datos del fabricante, los resultados pueden variar."
+      },
+      {
+        "layout": "cta",
+        "theme": "blue",
+        "image": "data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator_5325_ENUS100.png",
+        "imageAlt": "Aplicador EMFEMME 360",
+        "imageFrame": {
+          "left": 430,
+          "top": 820,
+          "width": 760
+        },
+        "productLogo": "data/uploads/pub-2/Exion_ICON_Oval_Emfemme-360_ENUS100.png",
+        "productName": "EMFEMME 360",
+        "kicker": "¿Quieres ofrecerlo en tu clínica?",
+        "title": "Solicita\ntu demo",
+        "action": "Escríbenos DEMO",
+        "signature": "BTL El Salvador",
+        "alt": "Cierre en azul con el logo de EMFEMME 360 y el aplicador. Texto: ¿Quieres ofrecerlo en tu clínica? Solicita tu demo. Escríbenos DEMO. BTL El Salvador."
+      }
+    ],
+    "caption": "Este 18 de octubre, Día Mundial de la Menopausia: ¿cuántas pacientes en menopausia atiendes cada semana? Puede que te estén pidiendo algo que tu clínica aún no ofrece.\n\nLa salud íntima femenina es una conversación que puede empezar en tu consulta. EMFEMME 360 es un tratamiento de radiofrecuencia no ablativa, sin cortes ni láser, con aplicador de 360° y sesiones ambulatorias.\n\n¿Quieres incorporarlo en tu clínica en El Salvador? Escríbenos \"DEMO\" por mensaje directo.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #ElSalvador",
+    "sources": [
+      "Registro de producto emfemme-360 en REACH Content Studio, creado por el usuario (pendiente de revisión; key_features 1, 2, 5 y 6)",
+      "data/uploads/pub-2 (imágenes oficiales de BTL adjuntas por el usuario, incluidas las insignias de cifras)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Día Mundial de la Menopausia, 18 de octubre",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Radiofrecuencia no ablativa, sin cortes ni láser",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro emfemme-360 · key_features 1 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tratamiento interno y externo / aplicador de 360°",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro emfemme-360 · key_features 2 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sesiones ambulatorias",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro emfemme-360 · key_features 5 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Puntas de un solo uso",
+      "location": "diapositiva 2",
+      "source": "Registro emfemme-360 · key_features 6 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "32% de aumento del espesor de la pared vaginal*",
+      "location": "diapositiva 3 (imagen tal cual)",
+      "source": "Imagen oficial de BTL adjunta por el usuario (Exion_ICON_32__Oval_ES100.png)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "82% de los pacientes encontraron confortable el tratamiento*",
+      "location": "diapositiva 3 (imagen tal cual)",
+      "source": "Imagen oficial de BTL adjunta por el usuario (Exion_ICON_82__Oval_ES100.png)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "123% de mejora en la salud vaginal* (original: \"123% Vaginal Health Improvement\")",
+      "location": "diapositiva 3 (texto traducido)",
+      "source": "Imagen oficial de BTL adjunta por el usuario (Exion_ICON_123_Vaginal-Health-Improvement_ENUS100.png)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "warnings": [
+    "El brief pide 3 diapositivas y esta versión tiene 4: las cifras necesitan su propia diapositiva. Si prefieres 3, se puede quitar la de cifras o unirla al cierre.",
+    "El texto completo de la nota al pie de las insignias (el asterisco) debe confirmarse con BTL; se usó \"Datos del fabricante. Los resultados pueden variar.\"",
+    "La cifra del 123 % viene de una insignia en inglés (\"Vaginal Health Improvement\"); se tradujo como \"de mejora en la salud vaginal\". Confirma que la traducción es la que usa BTL en español.",
+    "EMFEMME 360 sigue pendiente de revisión: sus características provienen de un registro manual con una fuente de terceros.",
+    "Las cifras no se usan en el titular ni en el caption, solo en la diapositiva 3."
+  ],
+  "summary": "Nuevo gancho en la diapositiva 1, específico para la fecha y para las clínicas: \"¿Cuántas pacientes en menopausia atiendes cada semana?\" con \"Puede que te estén pidiendo algo que tu clínica aún no ofrece.\" La fecha pasa al antetítulo y el bloque sube para dar espacio al titular. Se actualizó la primera línea del caption. Las diapositivas 2–4 no cambian.",
+  "changed_slides": [
+    1
+  ]
+}

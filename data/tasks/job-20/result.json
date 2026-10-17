@@ -1,0 +1,218 @@
+{
+  "concept": "El Día Mundial de la Menopausia abre una pregunta que muchas pacientes no se atreven a hacer; el carrusel plantea que la respuesta de la clínica puede caber en unos 8 minutos. La portada abre la intriga, la segunda diapositiva la resuelve con el aplicador de EMFEMME 360 de la página oficial de BTL y la tercera la convierte en una nueva línea de servicio con CTA de demo.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-18",
+    "occasion": "Día Mundial de la Menopausia",
+    "product": "emfemme-360",
+    "audience": "Clínicas, ginecólogos, médicos estéticos y profesionales que ofrecen tratamientos de salud íntima femenina en El Salvador",
+    "slides": [
+      {
+        "layout": "statement",
+        "theme": "dark",
+        "datePill": "18 de octubre",
+        "kicker": "Día Mundial de la Menopausia",
+        "title": "¿Y si la\nrespuesta\ndurara solo\n8 minutos?",
+        "swipe": "Desliza para descubrirlo",
+        "style": [
+          {
+            "selector": ".st-kicker",
+            "property": "font-size",
+            "value": "46px"
+          }
+        ],
+        "alt": "Fondo degradado azul oscuro. Texto: 18 de octubre. Día Mundial de la Menopausia. ¿Y si la respuesta durara solo 8 minutos? Desliza para descubrirlo."
+      },
+      {
+        "layout": "hero",
+        "theme": "light",
+        "image": "data/uploads/pub-3/Exion_PIC_Emfemme-360-Applicator-Energy_ENUS101.jpg",
+        "imageAlt": "Aplicador intravaginal de EMFEMME 360 con ondas de energía alrededor de la punta",
+        "imageFrame": {
+          "left": 0,
+          "top": 210,
+          "width": 900
+        },
+        "eyebrow": "EMFEMME 360",
+        "title": "Calor en 360°,\nsin láser",
+        "body": "Ambulatorio y sin anestesia.\nUnos 8 minutos de aplicación interna.\nTemperatura visible en tiempo real.",
+        "swipe": "Desliza",
+        "alt": "Aplicador intravaginal de EMFEMME 360 con ondas de energía sobre un fondo degradado celeste. Texto: EMFEMME 360. Calor en 360°, sin láser. Ambulatorio y sin anestesia. Unos 8 minutos de aplicación interna. Temperatura visible en tiempo real."
+      },
+      {
+        "layout": "cta",
+        "theme": "blue",
+        "productLogo": "data/uploads/pub-3/Exion_ICON_Oval_Emfemme-360_ENUS100.png",
+        "productName": "EMFEMME 360",
+        "image": "data/uploads/pub-3/Exion_PIC_Intimate-app_5375_ENUS100.png",
+        "imageAlt": "Aplicador de EMFEMME 360",
+        "imageFrame": {
+          "left": 690,
+          "top": 880,
+          "width": 400
+        },
+        "title": "Una nueva\nlínea de\nservicio",
+        "body": "Sesiones breves, técnica sencilla y puntas de un solo uso.",
+        "action": "Solicita tu demo",
+        "signature": "BTL El Salvador",
+        "style": [
+          {
+            "selector": ".ct-main",
+            "property": "top",
+            "value": "270px"
+          }
+        ],
+        "alt": "Fondo degradado azul con el logo de EMFEMME 360 y el aplicador abajo a la derecha. Texto: Una nueva línea de servicio. Sesiones breves, técnica sencilla y puntas de un solo uso. Solicita tu demo. BTL El Salvador."
+      }
+    ],
+    "caption": "Este 18 de octubre, Día Mundial de la Menopausia, ¿qué ofrece tu clínica cuando una paciente por fin habla de su salud íntima?\n\nEMFEMME 360 es radiofrecuencia no invasiva que calienta en 360° las áreas vaginales internas y externas, sin láser y sin anestesia. La aplicación interna dura unos 8 minutos, con la temperatura visible en tiempo real. Una nueva línea de servicio para tu consulta.\n\nEscríbenos \"DEMO\" por mensaje directo y agenda tu demo con BTL El Salvador.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #BTLElSalvador",
+    "sources": [
+      "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf (página oficial de BTL para proveedores, adjunta por el usuario)",
+      "knowledge/products/btl_products.json (emfemme-360, key_features)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+    ],
+    "claims": [
+      {
+        "claim": "La respuesta durara solo 8 minutos / Unos 8 minutos de aplicación interna",
+        "location": "diapositivas 1 y 2",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · portada \"8 minutos para despertar tu intimidad\"; knowledge/products/btl_products.json · emfemme-360 · key_features 4",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Calor en 360°",
+        "location": "diapositiva 2",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360? (calentamiento volumétrico de 360°); knowledge/products/btl_products.json · emfemme-360 · key_features 2",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Sin láser",
+        "location": "diapositiva 2",
+        "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 1 (radiofrecuencia monopolar no ablativa, sin láser)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Ambulatorio y sin anestesia",
+        "location": "diapositiva 2",
+        "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 5",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Temperatura visible en tiempo real",
+        "location": "diapositiva 2",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Control de tratamiento destacado; knowledge/products/btl_products.json · emfemme-360 · key_features 3",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Una nueva línea de servicio",
+        "location": "diapositiva 3",
+        "source": "Preferencias editoriales de la marca (ventaja comercial para la clínica, no atribuida a resultados)",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "Sesiones breves, técnica sencilla",
+        "location": "diapositiva 3",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Breve y sencillo (ejecución rápida y técnica fácil de manejar)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Puntas de un solo uso",
+        "location": "diapositiva 3",
+        "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 6",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Radiofrecuencia no invasiva que calienta en 360° las áreas vaginales internas y externas, sin láser y sin anestesia",
+        "location": "caption",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 1, 2 y 5",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "La aplicación interna dura unos 8 minutos, con la temperatura visible en tiempo real",
+        "location": "caption",
+        "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios y ¿Cómo funciona EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 3 y 4",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "18 de octubre, Día Mundial de la Menopausia",
+        "location": "diapositiva 1 y caption",
+        "source": "Brief de la publicación (fecha y ocasión)",
+        "approval": "general_statement"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "La respuesta durara solo 8 minutos / Unos 8 minutos de aplicación interna",
+      "location": "diapositivas 1 y 2",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · portada \"8 minutos para despertar tu intimidad\"; knowledge/products/btl_products.json · emfemme-360 · key_features 4",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Calor en 360°",
+      "location": "diapositiva 2",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360? (calentamiento volumétrico de 360°); knowledge/products/btl_products.json · emfemme-360 · key_features 2",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sin láser",
+      "location": "diapositiva 2",
+      "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 1 (radiofrecuencia monopolar no ablativa, sin láser)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Ambulatorio y sin anestesia",
+      "location": "diapositiva 2",
+      "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 5",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Temperatura visible en tiempo real",
+      "location": "diapositiva 2",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Control de tratamiento destacado; knowledge/products/btl_products.json · emfemme-360 · key_features 3",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Una nueva línea de servicio",
+      "location": "diapositiva 3",
+      "source": "Preferencias editoriales de la marca (ventaja comercial para la clínica, no atribuida a resultados)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Sesiones breves, técnica sencilla",
+      "location": "diapositiva 3",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Breve y sencillo (ejecución rápida y técnica fácil de manejar)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Puntas de un solo uso",
+      "location": "diapositiva 3",
+      "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 6",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Radiofrecuencia no invasiva que calienta en 360° las áreas vaginales internas y externas, sin láser y sin anestesia",
+      "location": "caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 1, 2 y 5",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "La aplicación interna dura unos 8 minutos, con la temperatura visible en tiempo real",
+      "location": "caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios y ¿Cómo funciona EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 3 y 4",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "18 de octubre, Día Mundial de la Menopausia",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ],
+  "warnings": [
+    "EMFEMME 360 sigue pendiente de revisión en el catálogo y approved_claims está vacío: todas las afirmaciones son descripciones del fabricante, no afirmaciones clínicas aprobadas.",
+    "La página de BTL dice \"El tratamiento de RF vaginal más corto del mercado*\" (con asterisco, datos en archivo). No se usó como comparación directa con otros productos porque la nota del asterisco no está en el material; si BTL la confirma, puede añadirse en la diapositiva 2.",
+    "Las cifras de la página de BTL (79 %, 89 %, 117 %) y las insignias adjuntas (32 %, 82 %, 123 %) no coinciden entre sí y no se usaron; no se muestran resultados clínicos.",
+    "No se usaron las fotos del equipo completo porque se lee \"EXION\" en el equipo; la diapositiva 2 usa la imagen del aplicador que aparece en la página de BTL.",
+    "El renderizador actual no aplica el color secundario magenta de EMFEMME 360; solo el logo oficial del producto lo muestra."
+  ]
+}

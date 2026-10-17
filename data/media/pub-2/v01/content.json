@@ -1,0 +1,80 @@
+{
+  "brand": "BTL El Salvador",
+  "date": "2026-10-18",
+  "occasion": "Día Mundial de la Menopausia",
+  "product": "emfemme-360",
+  "audience": "Médicos estéticos, ginecólogos, clínicas y centros de medicina estética en El Salvador",
+  "slides": [
+    {
+      "layout": "commemoration",
+      "datePill": "18 de octubre",
+      "eyebrow": "Día Mundial\nde la Menopausia",
+      "title": "Hablemos\nde salud\níntima.",
+      "question": "¿Qué puede ofrecer tu clínica en esta etapa?",
+      "swipe": "Desliza para conocer más",
+      "illustration": "none",
+      "alt": "Portada azul oscuro. Texto: 18 de octubre. Día Mundial de la Menopausia. Hablemos de salud íntima. ¿Qué puede ofrecer tu clínica en esta etapa? Desliza para conocer más."
+    },
+    {
+      "layout": "product",
+      "images": [
+        {
+          "src": "data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator_5262_ENUS100.png",
+          "alt": "Aplicador EMFEMME 360",
+          "label": "Aplicador 360°",
+          "left": -60,
+          "top": 100,
+          "width": 900,
+          "label_x": 206,
+          "label_y": 60
+        },
+        {
+          "src": "data/uploads/pub-2/Exion_360_PIC_Emfemme-360-Applicator-Tips_ENUS100.png",
+          "alt": "Puntas del aplicador EMFEMME 360",
+          "label": "Puntas de un solo uso",
+          "left": 560,
+          "top": 280,
+          "width": 560,
+          "label_x": 150,
+          "label_y": 360
+        }
+      ],
+      "productLogo": "data/uploads/pub-2/Exion_ICON_Oval_Emfemme-360_ENUS100.png",
+      "eyebrow": "EMFEMME 360",
+      "title": "Salud íntima femenina en tu consulta",
+      "body": "Tratamiento ambulatorio con aplicador de 360°, interno y externo.",
+      "swipe": "Desliza y descubre sus ventajas",
+      "alt": "Aplicador EMFEMME 360 y sus puntas de un solo uso. Texto: EMFEMME 360. Salud íntima femenina en tu consulta. Tratamiento ambulatorio con aplicador de 360°, interno y externo."
+    },
+    {
+      "layout": "benefits",
+      "title": "Nuevas opciones para tu clínica",
+      "benefits": [
+        {
+          "icon": "trending_up",
+          "title": "Nueva línea de servicio",
+          "text": "Amplía tu oferta en salud íntima femenina."
+        },
+        {
+          "icon": "checklist",
+          "title": "Sesiones ambulatorias",
+          "text": "Se integran con facilidad en tu agenda."
+        },
+        {
+          "icon": "do_not_touch",
+          "title": "Sin cortes ni láser",
+          "text": "Radiofrecuencia no ablativa."
+        }
+      ],
+      "cta": "Solicita tu demo",
+      "signature": "BTL El Salvador",
+      "alt": "Tres ventajas de EMFEMME 360 para tu clínica: nueva línea de servicio, sesiones ambulatorias y sin cortes ni láser. Solicita tu demo con BTL El Salvador."
+    }
+  ],
+  "caption": "Este 18 de octubre, Día Mundial de la Menopausia, hablemos de una conversación que merece espacio en la consulta: la salud íntima femenina.\n\nEMFEMME 360 es un tratamiento de radiofrecuencia no ablativa, sin cortes ni láser, con aplicador de 360° para la zona interna y externa, que se realiza de forma ambulatoria. Una nueva línea de servicio para tu clínica.\n\n¿Quieres incorporarlo en tu clínica en El Salvador? Escríbenos \"DEMO\" por mensaje directo y agendamos tu demostración.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #ElSalvador",
+  "sources": [
+    "Registro de producto emfemme-360 en REACH Content Studio, creado por el usuario (pendiente de revisión; key_features 1, 2, 5 y 6)",
+    "data/uploads/pub-2 (imágenes oficiales adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ]
+}

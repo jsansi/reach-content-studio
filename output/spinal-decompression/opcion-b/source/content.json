@@ -1,0 +1,63 @@
+{
+  "name": "Opción B · Evolución",
+  "approach": "Evolución de A: mismo gancho y estructura, público explícito, dos posiciones oficiales como prueba visual, ventajas verificadas y un CTA que dice exactamente qué hacer.",
+  "brand": "BTL El Salvador",
+  "date": "2026-10-16",
+  "slides": [
+    {
+      "layout": "commemoration",
+      "audience": "Para fisioterapeutas y clínicas",
+      "datePill": "16 de octubre",
+      "eyebrow": "Día Mundial de la\nColumna Vertebral",
+      "title": "Ninguna\nespalda\nes igual.",
+      "question": "¿Por qué tratarlas en la misma posición?",
+      "swipe": "Desliza",
+      "alt": "Ilustración de la columna vertebral con los discos lumbares resaltados. Texto: Para fisioterapeutas y clínicas. 16 de octubre, Día Mundial de la Columna Vertebral. Ninguna espalda es igual. ¿Por qué tratarlas en la misma posición?"
+    },
+    {
+      "layout": "positions",
+      "images": [
+        {
+          "src": "public/assets/products/spinal-decompression/posiciones/semiincorporada-inclinada.png",
+          "alt": "Paciente en posición semiincorporada inclinada sobre BTL Spinal Decompression",
+          "label": "Semiincorporada",
+          "left": 50,
+          "width": 460
+        },
+        {
+          "src": "public/assets/products/spinal-decompression/posiciones/roof-prono.png",
+          "alt": "Paciente en posición prono sobre BTL Spinal Decompression",
+          "label": "Prono",
+          "left": 570,
+          "width": 430
+        }
+      ],
+      "productLogo": "public/assets/products/spinal-decompression/logo/spinal-decompression-logo-white.png",
+      "stat": { "value": "+100", "label": "posiciones de\ntratamiento" },
+      "body": "Elige la que necesita cada paciente, en supino, prono o semiincorporado.",
+      "swipe": "Desliza",
+      "alt": "Dos posiciones de tratamiento en BTL Spinal Decompression: semiincorporada y prono. Texto: +100 posiciones de tratamiento. Elige la que necesita cada paciente, en supino, prono o semiincorporado."
+    },
+    {
+      "layout": "benefits",
+      "title": "Lo que gana tu clínica",
+      "benefits": [
+        { "icon": "do_not_touch", "title": "Terapia manos libres", "text": "Ciclos de descompresión automatizados." },
+        { "icon": "airline_seat_flat", "title": "Cervical y lumbar", "text": "Un mismo equipo para ambas zonas." },
+        { "icon": "checklist", "title": "Protocolos predefinidos", "text": "Y modos para personalizar cada sesión." }
+      ],
+      "cta": "Escríbenos DEMO\npor mensaje directo",
+      "signature": "Coordinamos tu demo con BTL El Salvador",
+      "alt": "Ventajas de BTL Spinal Decompression para clínicas: terapia manos libres con ciclos automatizados, columna cervical y lumbar en un mismo equipo, protocolos predefinidos. Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador."
+    }
+  ],
+  "caption": "Hoy es el Día Mundial de la Columna Vertebral, y en consulta lo sabes mejor que nadie: ninguna espalda es igual.\n\nBTL Spinal Decompression te da +100 posiciones de tratamiento, terapia manos libres y descompresión cervical y lumbar en un mismo equipo.\n\n¿Quieres verlo funcionar? Escríbenos DEMO por mensaje directo y coordinamos tu demo con BTL El Salvador.\n\n#DíaMundialDeLaColumna #Fisioterapia #Rehabilitación #ElSalvador",
+  "claims": [
+    { "claim": "+100 posiciones de tratamiento", "source": "btlnet.es/spinal-decompression (web oficial, 2025): «más de 100 posiciones de tratamiento únicas». El catálogo oficial de 2022 habla de 12 posiciones predefinidas y combinaciones «innumerables»; no da la cifra de 100." },
+    { "claim": "Supino, prono o semiincorporado", "source": "Catálogo BTL Spinal Decompression EN102 (2022), p. 7: posiciones Pelvic flexion, Inclined semi-upright, Prone extension, Roof, Side-line, Inversion." },
+    { "claim": "Fotos Semiincorporada y Prono", "source": "Imágenes de btlnet.com/spinal-decompression; coinciden con Inclined semi-upright y Roof del catálogo, p. 7." },
+    { "claim": "Terapia manos libres / ciclos automatizados", "source": "btlnet.es: «Terapia manos libres»; catálogo p. 5: «Decompressive forces occur as automated and controlled cycles»." },
+    { "claim": "Cervical y lumbar en un mismo equipo", "source": "Catálogo p. 4: «Slipped disc in the cervical and lumbar areas»; p. 8: descompresión automatizada para dolor cervical." },
+    { "claim": "Protocolos predefinidos y modos para personalizar", "source": "Catálogo p. 11: «Preset protocols», «Therapy modes for personalized treatment»." }
+  ]
+}

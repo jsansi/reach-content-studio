@@ -1,0 +1,82 @@
+{
+  "concept": "Un homenaje sereno: la imagen de una profesional que sostiene las manos de su paciente resume la idea de que el cuidado también es compañía. Sigue el estilo de los posts conmemorativos anteriores de BTL que se adjuntaron: foto a sangre que se funde en el fondo, la fecha en una etiqueta, el nombre del día como titular y una frase breve.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-19",
+    "occasion": "Día Internacional de la Lucha contra el Cáncer de Mama",
+    "audience": "Médicos, clínicas, hospitales y profesionales de la salud en El Salvador",
+    "slides": [
+      {
+        "layout": "hero",
+        "theme": "light",
+        "image": "data/uploads/pub-4/Compassionate Hands in Care.png",
+        "imageAlt": "Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa",
+        "imageFrame": {
+          "left": -40,
+          "top": -76,
+          "width": 1120
+        },
+        "datePill": "19 de octubre",
+        "title": "Día Internacional de la Lucha\ncontra el Cáncer de Mama",
+        "body": "Cuidar también es acompañar.",
+        "style": [
+          {
+            "selector": ".h-title",
+            "property": "font-size",
+            "value": "56px"
+          },
+          {
+            "selector": ".h-title",
+            "property": "line-height",
+            "value": "1.1"
+          },
+          {
+            "selector": ".h-title",
+            "property": "margin-top",
+            "value": "22px"
+          },
+          {
+            "selector": ".h-body",
+            "property": "margin-top",
+            "value": "20px"
+          },
+          {
+            "selector": ".h-text",
+            "property": "bottom",
+            "value": "110px"
+          }
+        ],
+        "alt": "Una profesional de la salud sostiene con cariño las manos de una paciente que lleva un pañuelo rosa, que se funde en un fondo claro. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Cuidar también es acompañar. Logo de BTL."
+      }
+    ],
+    "caption": "Este 19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama, nos sumamos a quienes acompañan cada diagnóstico, cada tratamiento y cada paso de la recuperación.\n\nDetrás de cada paciente hay un equipo que escucha, sostiene y cuida. A todas las mujeres que enfrentan esta enfermedad, a sus familias y a los profesionales de la salud que están a su lado: gracias por recordarnos que cuidar también es acompañar.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #Prevención #BTLElSalvador",
+    "sources": [
+      "Brief de la publicación (fecha, ocasión e instrucciones)",
+      "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+    ],
+    "claims": [
+      {
+        "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+        "location": "diapositiva 1 y caption",
+        "source": "Brief de la publicación (fecha y ocasión)",
+        "approval": "general_statement"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ],
+  "warnings": [
+    "Es una pieza conmemorativa sin producto, como pediste: no lleva \"Solicita tu demo\" ni beneficios de equipos, aunque las preferencias editoriales los piden para el caption. El caption cierra con la firma \"BTL El Salvador\".",
+    "Se usó la versión clara (la foto se funde en blanco) en lugar del azul oscuro de las publicaciones de referencia: la parte superior de la foto es muy clara y el logo blanco no se leía; sobre fondo claro el logo va en Enterprise Blue, como permite el manual (p. 6).",
+    "Los layouts actuales colocan el logo de BTL arriba a la derecha; en las publicaciones de referencia va centrado arriba. Si lo quieres centrado, hace falta un cambio en el renderizador.",
+    "El color rosa del lazo y de la foto no es un color de marca de BTL: se usa solo dentro de la fotografía; textos y fondos usan la paleta BTL.",
+    "Confirma que la imagen \"Compassionate Hands in Care\" se puede publicar (origen y licencia o autorización de las personas que aparecen)."
+  ]
+}

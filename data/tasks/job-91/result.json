@@ -1,0 +1,858 @@
+{
+  "concepts_explored": [
+    "Carteles por capítulos: \"Hoy hablamos de huesos\" → \"Ocho aplicadores. Todo el cuerpo.\" → \"Solicita tu demo\", sin fotos.",
+    "Preguntas del dueño de la clínica: tres preguntas reales con respuestas breves y verificables; la última se responde con la demo.",
+    "La brújula: hoy la aguja apunta a los huesos; ocho direcciones como los ocho aplicadores; el próximo rumbo es la demo.",
+    "Raíces: el hueso como raíz que sostiene (descartado: la metáfora de sostén ya se usó en \"El hueso lo sostiene todo\").",
+    "El puente: la estructura interna del hueso como un puente de vigas (descartado: sugeriría que el equipo \"repara\" la estructura, una promesa clínica).",
+    "La lista de la consulta: un checklist de lo que una clínica revisa hoy (descartado: se parecía a las listas numeradas de rondas anteriores).",
+    "El mapa de metro del cuerpo: ocho estaciones para ocho aplicadores (descartado: requiere dibujar el cuerpo completo; la brújula comunica lo mismo con geometría limpia)."
+  ],
+  "proposals": [
+    {
+      "direction": "A",
+      "direction_name": "Póster tipográfico",
+      "concept": "Tres carteles, tres capítulos: \"Hoy hablamos de huesos.\" → \"Ocho aplicadores. Todo el cuerpo.\" → \"Solicita tu demo.\" La palabra lo hace todo; un pequeño sello con un hueso luminoso firma la portada.",
+      "differentiation": "Titulares display en SemiBold que llenan el ancho, dos o tres palabras por línea, contra un único texto pequeño: contraste de escala extremo y mucho silencio. Fondos planos que cambian por capítulo (azul profundo, Enterprise Blue, azul profundo). Sin fotos, sin módulos ni listas; la ilustración se reduce a un sello. Es la propuesta más tipográfica de todas las rondas.",
+      "slides": [
+        {
+          "purpose": "Capítulo 1 · gancho: \"Hoy hablamos de huesos.\" con la fecha en el texto pequeño y el sello del hueso.",
+          "background": "deep",
+          "lightFrom": "bottom-left",
+          "alt": "Cartel sobre azul profundo. En letras enormes: \"Hoy hablamos de huesos.\" Abajo, en pequeño: \"20 de octubre · Día Mundial de la Osteoporosis. Y de lo que tu consulta puede sumar.\" Abajo a la derecha, un sello circular con un hueso dibujado en línea luminosa. Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":300,\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "h1",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+              "text": "Hoy\nhablamos\nde huesos."
+            },
+            {
+              "id": "rs",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":830,\"top\":960,\"width\":150}",
+              "text": null
+            },
+            {
+              "id": "seal",
+              "parent": "rs",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.35\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"98\\\" fill=\\\"url(#h)\\\"/><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"90\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.9\\\"/><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"78\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.6\\\"/><g transform=\\\"rotate(-35 100 100)\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.18\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M62 92 L138 92 C140 80 150 74 160 78 C170 82 172 94 164 100 C172 106 170 118 160 122 C150 126 140 120 138 108 L62 108 C60 120 50 126 40 122 C30 118 28 106 36 100 C28 94 30 82 40 78 C50 74 60 80 62 92 Z\\\"/></g>\",\"viewBox\":\"0 0 200 200\",\"width\":150,\"height\":150,\"title\":\"Sello circular con un hueso luminoso\"}",
+              "text": null
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":980,\"left\":\"m\",\"width\":700}",
+              "text": null
+            },
+            {
+              "id": "b",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+              "text": "20 de octubre · Día Mundial de la Osteoporosis.\nY de lo que tu consulta puede sumar."
+            },
+            {
+              "id": "sw",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-left\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Capítulo 2 · BTL Magnetotherapy: \"Ocho aplicadores. Todo el cuerpo.\"",
+          "background": "enterprise",
+          "lightFrom": "bottom-left",
+          "alt": "Cartel sobre Enterprise Blue. En letras enormes: \"Ocho aplicadores. Todo el cuerpo.\" Abajo, en pequeño: \"BTL Magnetotherapy: 8 aplicadores para tratar cualquier parte del cuerpo, con hasta 4 canales.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":300,\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "h",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"h2\"}",
+              "text": "Ocho\naplicadores.\nTodo el\ncuerpo."
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":980,\"left\":\"m\",\"width\":760}",
+              "text": null
+            },
+            {
+              "id": "b",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+              "text": "BTL Magnetotherapy: 8 aplicadores para tratar cualquier\nparte del cuerpo, con hasta 4 canales."
+            },
+            {
+              "id": "sw",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-left\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Capítulo 3 · ventajas en una línea pequeña y el cartel \"Solicita tu demo\".",
+          "background": "deep",
+          "lightFrom": "top-left",
+          "alt": "Cartel sobre azul profundo. Arriba, en pequeño: \"Protocolos por área anatómica y tecnología FMF: el terapeuta no queda expuesto al campo magnético.\" Abajo, en letras enormes: \"Solicita tu demo\", \"Escríbenos DEMO por mensaje directo\" y \"BTL El Salvador\". Logo de BTL arriba a la derecha.",
+          "nodes": [
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":300,\"left\":\"m\",\"width\":760}",
+              "text": null
+            },
+            {
+              "id": "b",
+              "parent": "r1",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+              "text": "Protocolos por área anatómica y tecnología FMF:\nel terapeuta no queda expuesto al campo magnético."
+            },
+            {
+              "id": "c",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "cta",
+              "parent": "c",
+              "type": "CtaBlock",
+              "props": "{\"variant\":\"stacked\",\"size\":110}",
+              "text": null
+            }
+          ]
+        }
+      ],
+      "caption": "Hoy hablamos de huesos: es el Día Mundial de la Osteoporosis. Y también de lo que tu consulta puede sumar.\n\nBTL Magnetotherapy: ocho aplicadores para tratar cualquier parte del cuerpo, hasta 4 canales en un solo equipo y protocolos por área anatómica. Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\nSolicita tu demo: escríbenos \"DEMO\" por mensaje directo. BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+      "sources": [
+        "data/web/magnetotherapy.md",
+        "https://www.btlnet.es/magnetotherapy",
+        "knowledge/brand-guidelines/btl-corporate-identity.md"
+      ],
+      "claims": [
+        {
+          "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+          "location": "diapositiva 1",
+          "source": "brief.md · Brief de la publicación (fecha y tema)",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Sello con un hueso (ilustración, sin rótulos)",
+          "location": "diapositiva 1",
+          "source": "brief.md · tema de la publicación; ilustración o frase general, no atribuida al producto",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Ocho aplicadores. Todo el cuerpo. / 8 aplicadores para tratar cualquier parte del cuerpo",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "con hasta 4 canales",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Protocolos por área anatómica",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "tecnología FMF: el terapeuta no queda expuesto al campo magnético",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "ocho aplicadores para tratar cualquier parte del cuerpo",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "hasta 4 canales en un solo equipo",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "protocolos por área anatómica",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "B",
+      "direction_name": "Conversación",
+      "concept": "Tres preguntas que se haría el dueño de una clínica de fisioterapia hoy, y tres respuestas breves y verificables: ¿qué tiene que ver el día del hueso con mi consulta?, ¿puedo tratar cualquier zona con un solo equipo?, ¿cómo lo veo funcionar? La última se responde con la demo.",
+      "differentiation": "Ritmo de diálogo: una pregunta enorme en Light domina cada diapositiva y debajo llega una respuesta corta; la imagen aparece como prueba de la respuesta (el fémur luminoso del sistema de diseño en la portada, la paciente con el aplicador de anillo en la segunda). Mucho aire, ningún numeral, módulo, línea continua ni ficha.",
+      "slides": [
+        {
+          "purpose": "Pregunta 1 (gancho): \"¿Qué tiene que ver el día del hueso con mi consulta?\", respuesta con la fecha y el fémur luminoso.",
+          "background": "dark",
+          "lightFrom": "bottom-left",
+          "alt": "Fondo azul oscuro. Pregunta grande: \"¿Qué tiene que ver el día del hueso con mi consulta?\" Respuesta: \"Hoy, 20 de octubre, es el Día Mundial de la Osteoporosis. La respuesta, deslizando.\" A la derecha, un fémur luminoso dibujado en línea blanca con hueso esponjoso celeste. Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "ri",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":770,\"top\":250,\"width\":210}",
+              "text": null
+            },
+            {
+              "id": "bone",
+              "parent": "ri",
+              "type": "BoneIllustration",
+              "props": "{\"width\":200,\"height\":667,\"porous\":true}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":260,\"left\":\"m\",\"width\":640}",
+              "text": null
+            },
+            {
+              "id": "q",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\"}",
+              "text": "¿Qué tiene que\nver el día del\nhueso con mi\nconsulta?"
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":680,\"left\":\"m\",\"width\":620,\"gap\":10}",
+              "text": null
+            },
+            {
+              "id": "rule",
+              "parent": "r2",
+              "type": "Rule",
+              "props": "{\"orientation\":\"horizontal\",\"length\":80,\"thickness\":3,\"emphasis\":\"strong\"}",
+              "text": null
+            },
+            {
+              "id": "a",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "Hoy, 20 de octubre, es el Día\nMundial de la Osteoporosis.\nLa respuesta, deslizando."
+            },
+            {
+              "id": "sw",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-left\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Pregunta 2: \"¿Puedo tratar cualquier zona con un solo equipo?\"; respuesta con BTL Magnetotherapy y la foto del aplicador de anillo en uso.",
+          "background": "light",
+          "lightFrom": "top-left",
+          "alt": "Fondo claro. Pregunta grande: \"¿Puedo tratar cualquier zona con un solo equipo?\" Respuesta: \"Con BTL Magnetotherapy, sí: 8 aplicadores para tratar cualquier parte del cuerpo.\" Debajo, la foto oficial de una paciente recostada con el aplicador de anillo de BTL Magnetotherapy. Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "img",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-5/web-magnetotherapy-03.jpg\",\"alt\":\"Paciente recostada con el aplicador de anillo de BTL Magnetotherapy\",\"left\":60,\"top\":760,\"width\":960,\"fade\":[\"left\",\"right\",\"bottom\"],\"fadeSize\":120}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":260,\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "q",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+              "text": "¿Puedo tratar\ncualquier zona\ncon un solo equipo?"
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":560,\"left\":\"m\",\"right\":\"m\",\"gap\":10}",
+              "text": null
+            },
+            {
+              "id": "rule",
+              "parent": "r2",
+              "type": "Rule",
+              "props": "{\"orientation\":\"horizontal\",\"length\":80,\"thickness\":3,\"emphasis\":\"strong\"}",
+              "text": null
+            },
+            {
+              "id": "a",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "Con BTL Magnetotherapy, sí: 8 aplicadores\npara tratar cualquier parte del cuerpo."
+            },
+            {
+              "id": "sw",
+              "parent": "r2",
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"inline\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Pregunta 3 (la de la demo): \"¿Cómo lo veo funcionar en mi clínica?\"; ventajas breves y CTA \"Solicita tu demo\".",
+          "background": "deep",
+          "lightFrom": "bottom-left",
+          "alt": "Fondo azul profundo. Pregunta grande: \"¿Cómo lo veo funcionar en mi clínica?\" Texto: \"Además: hasta 4 canales, protocolos por área anatómica y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.\" Respuesta: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+          "nodes": [
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":260,\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "q",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+              "text": "¿Cómo lo veo\nfuncionar en\nmi clínica?"
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":600,\"left\":\"m\",\"right\":\"m\",\"gap\":10}",
+              "text": null
+            },
+            {
+              "id": "rule",
+              "parent": "r2",
+              "type": "Rule",
+              "props": "{\"orientation\":\"horizontal\",\"length\":80,\"thickness\":3,\"emphasis\":\"strong\"}",
+              "text": null
+            },
+            {
+              "id": "b",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+              "text": "Además: hasta 4 canales, protocolos por área anatómica\ny tecnología FMF, para que el terapeuta no quede\nexpuesto al campo magnético."
+            },
+            {
+              "id": "c",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "cta",
+              "parent": "c",
+              "type": "CtaBlock",
+              "props": "{\"variant\":\"stacked\",\"size\":80}",
+              "text": null
+            }
+          ]
+        }
+      ],
+      "caption": "\"¿Qué tiene que ver el Día Mundial de la Osteoporosis con mi consulta?\" Tres preguntas, tres respuestas.\n\n¿Puedo tratar cualquier zona con un solo equipo? Con BTL Magnetotherapy, sí: 8 aplicadores para cualquier parte del cuerpo, hasta 4 canales y protocolos por área anatómica. Y con su tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\n¿Cómo lo veo funcionar? Escríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+      "sources": [
+        "data/web/magnetotherapy.md",
+        "https://www.btlnet.es/magnetotherapy",
+        "knowledge/brand-guidelines/btl-corporate-identity.md"
+      ],
+      "claims": [
+        {
+          "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+          "location": "diapositiva 1",
+          "source": "brief.md · Brief de la publicación (fecha y tema)",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Fémur luminoso con hueso esponjoso poroso (ilustración del sistema de diseño, sin rótulos)",
+          "location": "diapositiva 1",
+          "source": "brief.md · tema de la publicación; ilustración o frase general, no atribuida al producto",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Con BTL Magnetotherapy, sí: 8 aplicadores para tratar cualquier parte del cuerpo.",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Aplicador de anillo en uso (foto oficial)",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Sencillo, doble y multidisco\") y fotos oficiales",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "hasta 4 canales",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "protocolos por área anatómica",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "tecnología FMF, para que el terapeuta no quede expuesto al campo magnético",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Con BTL Magnetotherapy, sí: 8 aplicadores para cualquier parte del cuerpo",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "hasta 4 canales",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "protocolos por área anatómica",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "con su tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "C",
+      "direction_name": "Metáfora visual",
+      "concept": "Una brújula luminosa: hoy la aguja apunta a los huesos, ¿y la de tu consulta? Sus ocho direcciones anticipan los ocho aplicadores de BTL Magnetotherapy, y en el cierre la brújula vuelve en pequeño para marcar el próximo rumbo: la demo.",
+      "differentiation": "Una metáfora dibujada es la portada (brújula de trazo luminoso con rosa de ocho puntas) y vuelve como motivo pequeño en el cierre; la prueba es la foto oficial de dos aplicadores sobre fondo claro en el centro. Recorrido metáfora → idea → prueba. Ninguna anatomía, ningún titular gigante de cartel ni preguntas encadenadas.",
+      "slides": [
+        {
+          "purpose": "Gancho: \"Hoy, la brújula apunta a los huesos. ¿Y la de tu consulta?\" con la brújula luminosa y la fecha.",
+          "background": "dark",
+          "lightFrom": "bottom-left",
+          "alt": "Fondo azul oscuro. Titular: \"Hoy, la brújula apunta a los huesos.\" A la izquierda: \"¿Y la de tu consulta?\" A la derecha, una gran brújula dibujada en línea blanca y celeste, con una rosa de ocho puntas y la aguja iluminada. Abajo: \"20 de octubre · Día Mundial de la Osteoporosis\". Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "ri",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":440,\"top\":520,\"width\":560}",
+              "text": null
+            },
+            {
+              "id": "ill",
+              "parent": "ri",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.4\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"300\\\" fill=\\\"url(#h)\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"272\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.9\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"236\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.5\\\"/><path d=\\\"M320.9 60.9L322.0 49.0M341.7 63.6L343.8 51.8M362.1 68.2L365.2 56.6M382.1 74.5L386.2 63.2M401.4 82.5L406.5 71.6M420.0 92.2L426.0 81.8M437.7 103.4L444.5 93.6M454.3 116.1L462.0 107.0M483.9 145.7L493.0 138.0M496.6 162.3L506.4 155.5M507.8 180.0L518.2 174.0M517.5 198.6L528.4 193.5M525.5 217.9L536.8 213.8M531.8 237.9L543.4 234.8M536.4 258.3L548.2 256.2M539.1 279.1L551.0 278.0M539.1 320.9L551.0 322.0M536.4 341.7L548.2 343.8M531.8 362.1L543.4 365.2M525.5 382.1L536.8 386.2M517.5 401.4L528.4 406.5M507.8 420.0L518.2 426.0M496.6 437.7L506.4 444.5M483.9 454.3L493.0 462.0M454.3 483.9L462.0 493.0M437.7 496.6L444.5 506.4M420.0 507.8L426.0 518.2M401.4 517.5L406.5 528.4M382.1 525.5L386.2 536.8M362.1 531.8L365.2 543.4M341.7 536.4L343.8 548.2M320.9 539.1L322.0 551.0M279.1 539.1L278.0 551.0M258.3 536.4L256.2 548.2M237.9 531.8L234.8 543.4M217.9 525.5L213.8 536.8M198.6 517.5L193.5 528.4M180.0 507.8L174.0 518.2M162.3 496.6L155.5 506.4M145.7 483.9L138.0 493.0M116.1 454.3L107.0 462.0M103.4 437.7L93.6 444.5M92.2 420.0L81.8 426.0M82.5 401.4L71.6 406.5M74.5 382.1L63.2 386.2M68.2 362.1L56.6 365.2M63.6 341.7L51.8 343.8M60.9 320.9L49.0 322.0M60.9 279.1L49.0 278.0M63.6 258.3L51.8 256.2M68.2 237.9L56.6 234.8M74.5 217.9L63.2 213.8M82.5 198.6L71.6 193.5M92.2 180.0L81.8 174.0M103.4 162.3L93.6 155.5M116.1 145.7L107.0 138.0M145.7 116.1L138.0 107.0M162.3 103.4L155.5 93.6M180.0 92.2L174.0 81.8M198.6 82.5L193.5 71.6M217.9 74.5L213.8 63.2M237.9 68.2L234.8 56.6M258.3 63.6L256.2 51.8M279.1 60.9L278.0 49.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.6\\\" fill=\\\"none\\\"/><path d=\\\"M300.0 86.0L300.0 38.0M451.3 148.7L485.3 114.7M514.0 300.0L562.0 300.0M451.3 451.3L485.3 485.3M300.0 514.0L300.0 562.0M148.7 451.3L114.7 485.3M86.0 300.0L38.0 300.0M148.7 148.7L114.7 114.7\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" fill=\\\"none\\\"/><polygon points=\\\"300.0,100.0 313.0,268.6 399.0,201.0 331.4,287.0 500.0,300.0 331.4,313.0 399.0,399.0 313.0,331.4 300.0,500.0 287.0,331.4 201.0,399.0 268.6,313.0 100.0,300.0 268.6,287.0 201.0,201.0 287.0,268.6\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.75\\\" stroke-linejoin=\\\"round\\\"/><g transform=\\\"rotate(40 300 300)\\\" stroke-linejoin=\\\"round\\\"><polygon points=\\\"300,78 328,300 272,300\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.85\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" filter=\\\"url(#g)\\\"/><polygon points=\\\"272,300 328,300 300,522\\\" fill=\\\"#ffffff\\\" fill-opacity=\\\"0.12\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-opacity=\\\"0.8\\\"/></g><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"16\\\" fill=\\\"#000a32\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":560,\"height\":560,\"title\":\"Brújula luminosa con rosa de ocho puntas\"}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "h1",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+              "text": "Hoy, la brújula\napunta a los huesos."
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":560,\"left\":\"m\",\"width\":320}",
+              "text": null
+            },
+            {
+              "id": "q",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"l\"}",
+              "text": "¿Y la de tu\nconsulta?"
+            },
+            {
+              "id": "r3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1120,\"left\":\"m\",\"width\":700}",
+              "text": null
+            },
+            {
+              "id": "d",
+              "parent": "r3",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"regular\"}",
+              "text": "20 de octubre · Día Mundial de la Osteoporosis"
+            },
+            {
+              "id": "sw",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "La idea: ocho direcciones, ocho aplicadores. Prueba: fotos oficiales del aplicador de anillo y del multidisco.",
+          "background": "light",
+          "lightFrom": "top-left",
+          "alt": "Fondo claro. \"BTL Magnetotherapy\". Titular: \"Ocho direcciones. Ocho aplicadores.\" Texto: \"Para tratar cualquier parte del cuerpo.\" Fotos oficiales del aplicador de anillo y del aplicador multidisco. Abajo: \"Y hasta 4 canales en un solo equipo.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+          "nodes": [
+            {
+              "id": "i1",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo de BTL Magnetotherapy\",\"left\":70,\"top\":560,\"width\":460,\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":60}",
+              "text": null
+            },
+            {
+              "id": "i2",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Multi-disc-applicator.jpg\",\"alt\":\"Aplicador multidisco de BTL Magnetotherapy\",\"left\":540,\"top\":640,\"width\":480,\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":60}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":12}",
+              "text": null
+            },
+            {
+              "id": "e",
+              "parent": "r1",
+              "type": "Eyebrow",
+              "props": "{\"size\":34,\"weight\":\"semibold\"}",
+              "text": "BTL Magnetotherapy"
+            },
+            {
+              "id": "h",
+              "parent": "r1",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+              "text": "Ocho direcciones.\nOcho aplicadores."
+            },
+            {
+              "id": "b",
+              "parent": "r1",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "Para tratar cualquier parte del cuerpo."
+            },
+            {
+              "id": "r2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1070,\"left\":\"m\",\"width\":700}",
+              "text": null
+            },
+            {
+              "id": "b2",
+              "parent": "r2",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "Y hasta 4 canales en un solo equipo."
+            },
+            {
+              "id": "sw",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Cierre: la brújula pequeña marca \"Tu próximo rumbo\", dos ventajas y CTA \"Solicita tu demo\".",
+          "background": "deep",
+          "lightFrom": "bottom-left",
+          "alt": "Fondo azul profundo. A la derecha, la brújula luminosa en pequeño. \"Para tu clínica\". Titular: \"Tu próximo rumbo.\" Texto: \"Protocolos por área anatómica.\" y \"FMF: el terapeuta no queda expuesto al campo magnético.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+          "nodes": [
+            {
+              "id": "ri",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":760,\"top\":290,\"width\":210}",
+              "text": null
+            },
+            {
+              "id": "ill",
+              "parent": "ri",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.4\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"300\\\" fill=\\\"url(#h)\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"272\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.9\\\"/><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"236\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.5\\\"/><path d=\\\"M320.9 60.9L322.0 49.0M341.7 63.6L343.8 51.8M362.1 68.2L365.2 56.6M382.1 74.5L386.2 63.2M401.4 82.5L406.5 71.6M420.0 92.2L426.0 81.8M437.7 103.4L444.5 93.6M454.3 116.1L462.0 107.0M483.9 145.7L493.0 138.0M496.6 162.3L506.4 155.5M507.8 180.0L518.2 174.0M517.5 198.6L528.4 193.5M525.5 217.9L536.8 213.8M531.8 237.9L543.4 234.8M536.4 258.3L548.2 256.2M539.1 279.1L551.0 278.0M539.1 320.9L551.0 322.0M536.4 341.7L548.2 343.8M531.8 362.1L543.4 365.2M525.5 382.1L536.8 386.2M517.5 401.4L528.4 406.5M507.8 420.0L518.2 426.0M496.6 437.7L506.4 444.5M483.9 454.3L493.0 462.0M454.3 483.9L462.0 493.0M437.7 496.6L444.5 506.4M420.0 507.8L426.0 518.2M401.4 517.5L406.5 528.4M382.1 525.5L386.2 536.8M362.1 531.8L365.2 543.4M341.7 536.4L343.8 548.2M320.9 539.1L322.0 551.0M279.1 539.1L278.0 551.0M258.3 536.4L256.2 548.2M237.9 531.8L234.8 543.4M217.9 525.5L213.8 536.8M198.6 517.5L193.5 528.4M180.0 507.8L174.0 518.2M162.3 496.6L155.5 506.4M145.7 483.9L138.0 493.0M116.1 454.3L107.0 462.0M103.4 437.7L93.6 444.5M92.2 420.0L81.8 426.0M82.5 401.4L71.6 406.5M74.5 382.1L63.2 386.2M68.2 362.1L56.6 365.2M63.6 341.7L51.8 343.8M60.9 320.9L49.0 322.0M60.9 279.1L49.0 278.0M63.6 258.3L51.8 256.2M68.2 237.9L56.6 234.8M74.5 217.9L63.2 213.8M82.5 198.6L71.6 193.5M92.2 180.0L81.8 174.0M103.4 162.3L93.6 155.5M116.1 145.7L107.0 138.0M145.7 116.1L138.0 107.0M162.3 103.4L155.5 93.6M180.0 92.2L174.0 81.8M198.6 82.5L193.5 71.6M217.9 74.5L213.8 63.2M237.9 68.2L234.8 56.6M258.3 63.6L256.2 51.8M279.1 60.9L278.0 49.0\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.6\\\" fill=\\\"none\\\"/><path d=\\\"M300.0 86.0L300.0 38.0M451.3 148.7L485.3 114.7M514.0 300.0L562.0 300.0M451.3 451.3L485.3 485.3M300.0 514.0L300.0 562.0M148.7 451.3L114.7 485.3M86.0 300.0L38.0 300.0M148.7 148.7L114.7 114.7\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" fill=\\\"none\\\"/><polygon points=\\\"300.0,100.0 313.0,268.6 399.0,201.0 331.4,287.0 500.0,300.0 331.4,313.0 399.0,399.0 313.0,331.4 300.0,500.0 287.0,331.4 201.0,399.0 268.6,313.0 100.0,300.0 268.6,287.0 201.0,201.0 287.0,268.6\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.75\\\" stroke-linejoin=\\\"round\\\"/><g transform=\\\"rotate(40 300 300)\\\" stroke-linejoin=\\\"round\\\"><polygon points=\\\"300,78 328,300 272,300\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.85\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" filter=\\\"url(#g)\\\"/><polygon points=\\\"272,300 328,300 300,522\\\" fill=\\\"#ffffff\\\" fill-opacity=\\\"0.12\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-opacity=\\\"0.8\\\"/></g><circle cx=\\\"300\\\" cy=\\\"300\\\" r=\\\"16\\\" fill=\\\"#000a32\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":210,\"height\":210,\"title\":\"Brújula luminosa, motivo pequeño\"}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r0",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"left\":\"m\",\"width\":620,\"gap\":12}",
+              "text": null
+            },
+            {
+              "id": "e",
+              "parent": "r0",
+              "type": "Eyebrow",
+              "props": "{\"size\":34,\"weight\":\"semibold\"}",
+              "text": "Para tu clínica"
+            },
+            {
+              "id": "h",
+              "parent": "r0",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+              "text": "Tu próximo\nrumbo."
+            },
+            {
+              "id": "r1",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":560,\"left\":\"m\",\"right\":\"m\",\"gap\":12}",
+              "text": null
+            },
+            {
+              "id": "b1",
+              "parent": "r1",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "Protocolos por área anatómica."
+            },
+            {
+              "id": "b2",
+              "parent": "r1",
+              "type": "Body",
+              "props": "{\"size\":\"m\"}",
+              "text": "FMF: el terapeuta no queda expuesto\nal campo magnético."
+            },
+            {
+              "id": "c",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"bottom\":\"m\",\"left\":\"m\",\"width\":760}",
+              "text": null
+            },
+            {
+              "id": "cta",
+              "parent": "c",
+              "type": "CtaBlock",
+              "props": "{\"variant\":\"stacked\",\"size\":72}",
+              "text": null
+            }
+          ]
+        }
+      ],
+      "caption": "Hoy, Día Mundial de la Osteoporosis, la brújula apunta a los huesos. ¿Y la de tu consulta?\n\nOcho direcciones, ocho aplicadores: BTL Magnetotherapy permite tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo y protocolos por área anatómica. Su tecnología FMF evita que el terapeuta quede expuesto al campo magnético.\n\nTu próximo rumbo: escríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+      "sources": [
+        "data/web/magnetotherapy.md",
+        "https://www.btlnet.es/magnetotherapy",
+        "knowledge/brand-guidelines/btl-corporate-identity.md"
+      ],
+      "claims": [
+        {
+          "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+          "location": "diapositiva 1",
+          "source": "brief.md · Brief de la publicación (fecha y tema)",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Hoy, la brújula apunta a los huesos (metáfora visual; la brújula no representa el equipo)",
+          "location": "diapositiva 1",
+          "source": "brief.md · tema de la publicación; ilustración o frase general, no atribuida al producto",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Ocho direcciones. Ocho aplicadores. Para tratar cualquier parte del cuerpo.",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Aplicador de anillo · aplicador multidisco (fotos oficiales)",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Sencillo, doble y multidisco\") y fotos oficiales",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Y hasta 4 canales en un solo equipo.",
+          "location": "diapositiva 2",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Protocolos por área anatómica.",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "FMF: el terapeuta no queda expuesto al campo magnético.",
+          "location": "diapositiva 3",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "ocho aplicadores: BTL Magnetotherapy permite tratar cualquier parte del cuerpo",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "hasta 4 canales en un solo equipo",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "protocolos por área anatómica",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Su tecnología FMF evita que el terapeuta quede expuesto al campo magnético",
+          "location": "caption",
+          "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "BTL Magnetotherapy sigue PENDIENTE DE REVISIÓN y con approved_claims vacío: ninguna frase es una afirmación clínica aprobada. Los datos del equipo usados (8 aplicadores, aplicador de anillo, multidisco, hasta 4 canales, protocolos por área anatómica, tecnología FMF) están en la página oficial (data/web/magnetotherapy.md).",
+    "La descripción de la ficha incluye datos sin respaldo en la página oficial ni en otra fuente del encargo, que no se usaron (128 mT, 0–166 Hz, tipos de onda, pantalla de 4,3″, \"dos pacientes de forma simultánea\", protocolos para osteoporosis, \"garantiza…\", \"reduce los tiempos de sesión\", \"100 %\", \"optimiza el consumo\", BTL-4920, \"BTL Medical\"). Si BTL los confirma por escrito, se pueden usar.",
+    "Las fuentes no relacionan la magnetoterapia con la osteoporosis: el fémur, el sello y la brújula solo ilustran la fecha o la idea; ningún texto dice que el equipo trate o prevenga la osteoporosis. La brújula es una metáfora de rumbo, no una representación del campo magnético del equipo.",
+    "La ronda anterior marcó la zona del logo en la propuesta C (diapositiva 2): el acercamiento con viewBox no recortaba la ilustración y la pelvis completa invadía el logo. Esta ronda no recorta ilustraciones con viewBox.",
+    "A (póster tipográfico) no lleva fotos del equipo, por decisión de la dirección; el equipo se nombra en la diapositiva 2.",
+    "El CTA se escribe \"Solicita tu demo\" (sentence case, según el manual de BTL y las preferencias)."
+  ]
+}

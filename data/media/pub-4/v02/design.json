@@ -1,0 +1,100 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "Un homenaje sereno y tipográfico: el 19 como numeral fino abre la pieza, la foto de las manos se disuelve en el fondo y la frase cierra.",
+  "differentiation": "Tipografía protagonista sobre fondo claro, foto como acento sin recuadro, mucho espacio negativo.",
+  "slides": [
+    {
+      "purpose": "Homenaje tipográfico: la fecha como numeral, el nombre del día y la frase; la foto como acento que se disuelve",
+      "background": "light",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo claro con la fotografía de una profesional de la salud que sostiene las manos de una paciente con pañuelo rosa, disuelta en el fondo. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Cuidar también es acompañar. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/Compassionate Hands in Care.png\", \"alt\": \"Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa\", \"left\": 300, \"top\": 180, \"width\": 820, \"fade\": [\"left\", \"bottom\", \"top\"], \"fadeSize\": 240}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "dt",
+          "parent": "r0",
+          "type": "Stack",
+          "props": "{\"direction\": \"row\", \"gap\": 22, \"crossAlign\": \"center\"}",
+          "text": null
+        },
+        {
+          "id": "dn",
+          "parent": "dt",
+          "type": "BigNumber",
+          "props": "{\"value\": \"19\", \"size\": 200, \"weight\": \"thin\", \"tone\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "dm",
+          "parent": "dt",
+          "type": "Headline",
+          "props": "{\"size\": \"s\", \"weight\": \"semibold\", \"tone\": \"strong\", \"as\": \"p\"}",
+          "text": "de octubre"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 900, \"right\": \"m\", \"gap\": 26}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"m\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h1\"}",
+          "text": "Día Internacional de la Lucha\ncontra el Cáncer de Mama"
+        },
+        {
+          "id": "rule",
+          "parent": "r",
+          "type": "Rule",
+          "props": "{\"length\": 96, \"thickness\": 3, \"emphasis\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"base\"}",
+          "text": "Cuidar también es acompañar."
+        }
+      ]
+    }
+  ],
+  "caption": "Este 19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama, nos unimos a quienes acompañan cada diagnóstico, cada tratamiento y cada paso de la recuperación.\n\nA las mujeres que enfrentan esta enfermedad, a sus familias y a los profesionales de la salud que están a su lado: gracias por recordarnos que cuidar también es acompañar.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "direction": "C",
+  "direction_name": "Científica y educativa",
+  "concept": "La fecha se explica con un dato visual (hueso denso frente a hueso poroso) y conecta con una realidad de la consulta: cada paciente llega por una zona distinta del cuerpo. La segunda diapositiva lo resuelve con datos del equipo y la tercera ordena las ventajas en pasos numerados.",
+  "differentiation": "La estructura es la protagonista: la portada compara dos muestras de hueso en una retícula de módulos con filetes; la segunda combina la foto grande del aplicador de anillo con una banda de luz que sostiene dos cifras con regla de acento; la tercera usa una lista numerada 01/02/03 sobre la misma banda, que cruza de la diapositiva 2 a la 3. Información visual y modular, sin numeral gigante ni escenario oscuro de producto.",
+  "slides": [
+    {
+      "purpose": "Gancho educativo: hueso denso frente a hueso poroso y la pregunta de la consulta; fecha como etiqueta.",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul oscuro. Etiqueta: \"20 de octubre · Día Mundial de la Osteoporosis\". Titular: \"Cada paciente llega por una zona distinta.\" Texto: \"¿Tu equipo llega a todas?\" Abajo, dos círculos dibujados en línea celeste comparan el hueso esponjoso: \"Hueso denso\" y \"Hueso poroso\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "20 de octubre · Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":340,\"left\":\"m\",\"right\":\"m\",\"gap\":26}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "Cada paciente llega\npor una zona distinta."
+        },
+        {
+          "id": "b1",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"l\"}",
+          "text": "¿Tu equipo llega a todas?"
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":690,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "grid",
+          "parent": "r2",
+          "type": "ModuleGrid",
+          "props": "{\"columns\":2,\"open\":true}",
+          "text": null
+        },
+        {
+          "id": "m1",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"align\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "bd1",
+          "parent": "m1",
+          "type": "BoneDensity",
+          "props": "{\"porous\":false,\"size\":300,\"label\":\"Hueso denso\"}",
+          "text": null
+        },
+        {
+          "id": "m2",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"align\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "bd2",
+          "parent": "m2",
+          "type": "BoneDensity",
+          "props": "{\"porous\":true,\"size\":300,\"label\":\"Hueso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar BTL Magnetotherapy con foto oficial y dos cifras documentadas sobre la banda de luz.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco. \"BTL Magnetotherapy\". Titular: \"Un equipo para todo el cuerpo.\" Foto oficial de una paciente recostada con el aplicador de anillo en las piernas. Sobre una banda de luz celeste, dos cifras: \"8 aplicadores distintos\" y \"4 canales de conexión, como máximo\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "band",
+          "parent": null,
+          "type": "LightBand",
+          "props": "{\"left\":0,\"top\":960,\"width\":1900,\"height\":330,\"from\":\"left\",\"fade\":[\"top\",\"bottom\",\"right\"]}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/web-magnetotherapy-03.jpg\",\"alt\":\"Paciente recostada en la camilla con el aplicador de anillo de BTL Magnetotherapy\",\"left\":60,\"top\":380,\"width\":960,\"fade\":[\"top\",\"bottom\",\"left\",\"right\"],\"fadeSize\":120}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":\"m\",\"left\":\"m\",\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r1",
+          "type": "Eyebrow",
+          "props": "{\"size\":36,\"weight\":\"semibold\"}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r2",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Un equipo para\ntodo el cuerpo."
+        },
+        {
+          "id": "g",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":990,\"left\":\"m\",\"right\":\"m\",\"tone\":\"light\"}",
+          "text": null
+        },
+        {
+          "id": "grid",
+          "parent": "g",
+          "type": "ModuleGrid",
+          "props": "{\"columns\":2,\"open\":true}",
+          "text": null
+        },
+        {
+          "id": "m1",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24}",
+          "text": null
+        },
+        {
+          "id": "s1",
+          "parent": "m1",
+          "type": "Stat",
+          "props": "{\"value\":\"8\",\"label\":\"aplicadores distintos\",\"size\":96,\"rule\":\"left\"}",
+          "text": null
+        },
+        {
+          "id": "m2",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24}",
+          "text": null
+        },
+        {
+          "id": "s2",
+          "parent": "m2",
+          "type": "Stat",
+          "props": "{\"value\":\"4\",\"label\":\"canales de conexión, como máximo\",\"size\":96,\"rule\":\"left\",\"labelMaxWidth\":300}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica en lista numerada y CTA \"Solicita tu demo\".",
+      "background": "light",
+      "lightFrom": "top-left",
+      "alt": "Fondo claro. Titular: \"Lo que gana tu clínica.\" Lista: \"01 Protocolos por zona anatómica: selección intuitiva en la pantalla táctil.\" \"02 Base de datos de pacientes: integrada en el mismo equipo.\" \"03 Tecnología FMF: el terapeuta no queda expuesto al campo magnético.\" Sobre una banda de luz: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "band",
+          "parent": null,
+          "type": "LightBand",
+          "props": "{\"left\":-1080,\"top\":960,\"width\":1900,\"height\":330,\"from\":\"left\",\"fade\":[\"top\",\"bottom\",\"right\"]}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":260,\"right\":\"m\",\"gap\":34}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Lo que gana\ntu clínica."
+        },
+        {
+          "id": "l",
+          "parent": "r",
+          "type": "NumberedList",
+          "props": "{\"layout\":\"rows\",\"numeralSize\":56,\"numeralWidth\":110,\"gap\":20,\"items\":[{\"title\":\"Protocolos por zona anatómica\",\"text\":\"Selección intuitiva en la pantalla táctil.\"},{\"title\":\"Base de datos de pacientes\",\"text\":\"Integrada en el mismo equipo.\"},{\"title\":\"Tecnología FMF\",\"text\":\"El terapeuta no queda expuesto al campo magnético.\"}]}",
+          "text": null
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\",\"tone\":\"light\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"split\",\"size\":60}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: cada paciente llega a la consulta por una zona distinta del cuerpo. ¿Tu equipo llega a todas?\n\nBTL Magnetotherapy ofrece 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales. Su pantalla táctil permite elegir protocolos por zona anatómica, guarda una base de datos de pacientes y, con la tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Hueso denso / Hueso poroso (ilustración educativa del hueso esponjoso)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; ilustración BoneDensity del sistema de diseño (educativa, no imagen clínica ni atribuida al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "8 aplicadores distintos",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "4 canales de conexión, como máximo",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por zona anatómica: selección intuitiva en la pantalla táctil.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Base de datos de pacientes: integrada en el mismo equipo.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología FMF: el terapeuta no queda expuesto al campo magnético.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Su pantalla táctil permite elegir protocolos por zona anatómica, guarda una base de datos de pacientes",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas, base de datos de pacientes, pantalla táctil a color de 7″)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "con la tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ]
+}

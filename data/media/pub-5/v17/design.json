@@ -1,0 +1,380 @@
+{
+  "direction": "B",
+  "direction_name": "Recorrido continuo",
+  "concept": "Del hueso a tu consulta hay tres pasos. Una línea de luz recorre el carrusel de lado a lado y marca tres hitos: 01 el día (la muñeca, una de las zonas del esqueleto que se nombran hoy), 02 el equipo (BTL Magnetotherapy y sus aplicadores) y 03 la clínica (ventajas y demo).",
+  "differentiation": "Una sola línea luminosa ondulada cruza los dos cortes y une tres hitos numerados con un nodo de luz; todo el contenido vive por encima de esa línea, como un camino visto de perfil. Fondos azul profundo continuos, ilustración nueva de la muñeca en la portada, los aplicadores en una ficha blanca en el centro. Sin columnas de revista, sin numerales gigantes, sin ilustración a pantalla completa.",
+  "slides": [
+    {
+      "purpose": "Gancho: \"Del hueso a tu consulta hay tres pasos\"; hito 01 sobre la línea, muñeca ilustrada y fecha.",
+      "background": "deep",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul profundo. Arriba: \"20 de octubre\" y \"Día Mundial de la Osteoporosis\". Titular: \"Del hueso a tu consulta hay tres pasos.\" A la derecha, una muñeca dibujada en línea blanca (radio, cúbito y huesos del carpo) con hueso esponjoso celeste luminoso. Abajo, una línea de luz celeste cruza la imagen y continúa en la siguiente, con un nodo marcado \"01\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-200,1090],[540,1010],[1620,1090],[2700,1010],[3440,1090]],\"width\":6,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "node",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":1010,\"r\":30,\"thickness\":3,\"tone\":\"white\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "rn",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":470,\"top\":890,\"width\":160}",
+          "text": null
+        },
+        {
+          "id": "num",
+          "parent": "rn",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "01"
+        },
+        {
+          "id": "ri",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":650,\"top\":262,\"width\":300}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": "ri",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.38\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient><clipPath id=\\\"c\\\"><path d=\\\"M60 600 L70 330 C70 270 40 240 40 205 C40 168 72 158 120 158 L196 158 C222 166 222 198 206 218 C190 242 180 268 180 310 L170 600 Z\\\"/><path d=\\\"M222 600 L226 320 C226 270 232 240 252 220 C272 202 304 208 304 238 C304 266 284 284 282 318 L274 600 Z\\\"/><ellipse cx=\\\"80\\\" cy=\\\"122\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"138\\\" cy=\\\"118\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"196\\\" cy=\\\"120\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"254\\\" cy=\\\"128\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"96\\\" cy=\\\"72\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"150\\\" cy=\\\"66\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"204\\\" cy=\\\"68\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"258\\\" cy=\\\"78\\\" rx=\\\"27\\\" ry=\\\"21\\\"/></clipPath></defs><ellipse cx=\\\"175\\\" cy=\\\"200\\\" rx=\\\"200\\\" ry=\\\"210\\\" fill=\\\"url(#h)\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.9\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M60 600 L70 330 C70 270 40 240 40 205 C40 168 72 158 120 158 L196 158 C222 166 222 198 206 218 C190 242 180 268 180 310 L170 600 Z\\\"/><path d=\\\"M222 600 L226 320 C226 270 232 240 252 220 C272 202 304 208 304 238 C304 266 284 284 282 318 L274 600 Z\\\"/><ellipse cx=\\\"80\\\" cy=\\\"122\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"138\\\" cy=\\\"118\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"196\\\" cy=\\\"120\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"254\\\" cy=\\\"128\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"96\\\" cy=\\\"72\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"150\\\" cy=\\\"66\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"204\\\" cy=\\\"68\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><ellipse cx=\\\"258\\\" cy=\\\"78\\\" rx=\\\"27\\\" ry=\\\"21\\\"/><rect x=\\\"70\\\" y=\\\"-6\\\" width=\\\"38\\\" height=\\\"42\\\" rx=\\\"14\\\"/><rect x=\\\"125\\\" y=\\\"-6\\\" width=\\\"38\\\" height=\\\"42\\\" rx=\\\"14\\\"/><rect x=\\\"180\\\" y=\\\"-6\\\" width=\\\"38\\\" height=\\\"42\\\" rx=\\\"14\\\"/><rect x=\\\"235\\\" y=\\\"-6\\\" width=\\\"38\\\" height=\\\"42\\\" rx=\\\"14\\\"/></g><g clip-path=\\\"url(#c)\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M271.1 159.6Q267.6 167.2 262.6 179.8M271.1 159.6Q271.1 150.0 272.1 132.0M125.8 121.4Q137.5 116.9 149.1 117.0M153.3 199.2Q149.5 191.7 144.7 181.0M210.7 166.6Q215.8 172.8 226.2 176.9M217.0 54.1Q209.0 54.5 197.6 51.0M260.2 252.1Q269.8 254.2 282.4 262.2M151.7 159.9Q161.9 158.1 174.6 151.9M243.4 173.5Q232.7 167.2 227.7 159.9M120.4 251.8Q113.7 250.3 103.2 250.7M120.4 251.8Q127.2 260.1 132.5 264.7M143.8 99.3Q133.0 97.7 127.1 90.2M143.8 99.3Q143.8 92.3 141.1 78.4M294.0 237.1Q304.5 234.0 309.6 224.7M294.0 237.1Q294.7 223.5 292.1 216.5M239.7 74.8Q245.3 85.0 255.2 93.5M65.7 283.8Q58.4 274.0 50.3 265.0M38.9 178.4Q42.3 173.7 49.9 164.2M38.9 178.4Q46.4 188.7 45.3 202.5M72.0 171.9Q76.9 175.9 88.2 185.2M144.7 181.0Q138.6 190.9 135.3 198.6M105.7 305.0Q97.1 296.3 92.8 290.3M110.9 346.0Q114.1 339.3 117.3 327.0M267.6 359.6Q284.1 352.1 292.4 351.0M267.6 359.6Q263.5 340.8 260.8 330.6M292.4 351.0Q286.8 344.6 286.2 334.1M292.4 351.0Q297.6 340.3 305.0 331.8M138.1 56.5Q138.9 67.5 141.1 78.4M271.1 227.6Q280.4 229.0 294.0 237.1M101.7 206.2Q105.2 201.1 114.4 194.5M101.7 206.2Q91.3 203.9 81.2 202.4M101.7 206.2Q97.1 199.9 88.2 185.2M295.3 135.7Q299.2 128.0 304.3 118.9M295.3 135.7Q280.1 135.9 272.1 132.0M227.1 141.3Q232.6 134.9 232.7 124.8M107.5 99.7Q108.1 108.4 105.4 117.2M303.8 101.2Q295.7 95.4 289.6 90.7M67.5 258.8Q63.8 250.7 52.9 243.1M61.1 71.6Q53.3 75.0 46.7 83.6M42.5 44.4Q47.4 61.2 61.1 71.6M247.8 316.4Q256.4 324.6 260.8 330.6M247.8 316.4Q245.7 328.6 242.4 335.3M189.3 359.1Q183.0 361.6 170.3 359.6M296.1 274.8Q306.2 287.0 309.0 293.7M181.2 104.3Q185.0 98.0 187.8 84.8M133.7 217.1Q141.1 216.3 155.0 217.3M114.4 194.5Q116.9 181.0 120.9 172.1M309.2 80.8Q303.1 90.0 303.8 101.2M309.2 80.8Q305.3 71.8 293.2 63.3M66.0 118.4Q69.8 126.8 77.1 138.8M111.7 146.4Q123.5 151.1 133.4 150.4M111.7 146.4Q103.2 149.8 90.6 157.6M111.7 146.4Q98.2 140.7 92.7 131.2M192.9 189.4Q182.1 183.8 174.3 179.6M113.0 71.4Q114.2 61.0 113.4 48.8M293.2 63.3Q293.2 56.6 290.7 44.8M178.0 46.3Q188.5 47.1 197.6 51.0M247.9 291.0Q254.4 298.2 262.5 306.6M175.9 239.4Q163.2 240.2 153.4 242.5M175.9 239.4Q176.2 249.4 170.5 265.6M50.0 307.5Q53.1 314.9 50.6 325.6M226.2 176.9Q228.3 166.7 227.7 159.9M172.5 210.1Q179.1 217.1 190.0 218.9M227.3 273.9Q225.6 283.3 223.3 290.4M174.3 179.6Q174.8 166.5 174.6 151.9M202.3 138.5Q198.9 146.7 193.2 155.1M236.2 193.0Q228.1 197.5 222.0 207.9M45.3 202.5Q52.2 205.0 61.9 209.6M149.1 117.0Q142.1 124.7 140.7 133.6M32.0 322.6Q30.6 334.9 30.7 341.2M32.0 322.6Q42.4 322.5 50.6 325.6M113.4 48.8Q124.0 54.9 138.1 56.5M36.6 67.4Q41.4 75.1 46.7 83.6M282.4 262.2Q277.7 268.0 268.5 274.2M132.5 264.7Q134.1 275.6 136.5 282.6M274.0 99.4Q278.6 106.9 284.0 113.5M210.0 302.5Q217.9 299.2 223.3 290.4M120.9 172.1Q111.4 171.9 99.8 172.2M67.3 44.9Q58.5 42.4 42.5 44.4M91.4 358.4Q96.2 348.2 94.5 332.0M31.2 223.4Q39.7 219.3 48.3 220.5M31.2 223.4Q38.8 209.6 45.3 202.5M33.3 257.9Q52.2 259.6 67.5 258.8M284.0 113.5Q296.5 115.4 304.3 118.9M309.8 352.3Q304.5 343.0 305.0 331.8M94.5 332.0Q81.6 334.7 71.8 332.3M230.8 246.1Q239.6 236.4 240.8 222.4M221.9 344.1Q233.6 336.5 242.4 335.3M191.0 66.9Q196.2 56.9 197.6 51.0M191.0 66.9Q181.5 56.3 178.0 46.3M155.0 217.3Q153.9 205.9 153.3 199.2M57.1 98.1Q64.7 99.2 75.9 100.9M30.7 341.2Q44.7 341.3 55.7 342.4M222.0 207.9Q220.6 218.0 213.9 224.9M232.7 124.8Q230.0 119.8 222.8 110.3M232.7 124.8Q239.5 113.9 243.5 109.0M77.1 78.6Q66.2 74.2 61.1 71.6M146.1 299.6Q138.0 299.8 129.0 305.1M275.6 319.7Q267.4 322.7 260.8 330.6M131.8 359.4Q118.7 346.0 117.3 327.0M76.6 60.5Q74.2 50.1 67.3 44.9M76.6 60.5Q69.5 63.8 61.1 71.6M164.0 108.0Q154.5 112.5 149.1 117.0M32.4 301.0Q39.7 296.0 46.1 290.3M95.1 56.0Q84.7 58.1 76.6 60.5M103.2 250.7Q97.4 245.1 96.2 233.2M104.7 271.5Q97.7 266.3 89.4 261.8M104.7 271.5Q103.2 261.6 103.2 250.7\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.95\\\"/><path d=\\\"M125.8 121.4Q133.4 129.1 140.7 133.6M125.8 121.4Q113.0 120.1 105.4 117.2M216.1 190.8Q218.9 183.3 226.2 176.9M216.1 190.8Q220.0 196.6 222.0 207.9M216.1 190.8Q223.2 193.5 236.2 193.0M210.7 166.6Q221.3 161.5 227.7 159.9M260.2 252.1Q250.1 264.9 245.0 271.0M151.7 159.9Q140.4 155.5 133.4 150.4M143.8 344.9Q140.1 349.1 131.8 359.4M294.2 183.4Q295.9 171.6 303.7 165.7M294.2 183.4Q298.2 192.1 305.7 204.3M243.4 173.5Q253.8 173.9 262.6 179.8M265.7 52.9Q263.0 67.3 268.3 76.3M265.7 52.9Q274.4 46.7 290.7 44.8M58.4 189.0Q65.4 181.3 72.0 171.9M143.8 99.3Q149.1 109.2 149.1 117.0M156.7 321.6Q148.5 319.9 135.2 322.9M156.7 321.6Q163.5 332.7 173.1 336.7M273.2 291.5Q267.7 302.1 262.5 306.6M273.2 291.5Q257.5 294.6 247.9 291.0M222.8 110.3Q216.4 109.7 206.4 103.4M94.2 73.1Q88.7 76.4 77.1 78.6M49.9 164.2Q57.0 154.6 62.0 148.1M239.3 46.1Q226.0 47.7 217.0 54.1M239.3 46.1Q241.1 56.9 239.7 74.8M272.1 132.0Q276.4 126.0 284.0 113.5M294.0 237.1Q298.0 243.9 308.1 252.5M65.7 283.8Q65.6 293.3 70.8 302.7M65.7 283.8Q59.3 284.8 46.1 290.3M38.9 178.4Q47.9 179.9 58.4 189.0M214.7 258.1Q220.9 269.0 227.3 273.9M255.2 93.5Q252.0 97.9 243.5 109.0M255.2 93.5Q267.2 96.5 274.0 99.4M174.6 151.9Q181.8 153.6 193.2 155.1M174.6 151.9Q181.1 141.8 181.8 128.8M96.2 233.2Q108.2 235.8 115.5 234.0M96.2 233.2Q99.8 223.7 101.7 206.2M144.7 181.0Q148.4 169.3 151.7 159.9M206.4 103.4Q219.1 93.8 228.6 90.6M62.0 148.1Q52.4 151.2 38.1 149.8M105.7 305.0Q108.4 292.2 117.7 285.2M153.4 242.5Q152.0 230.7 155.0 217.3M153.4 242.5Q152.5 252.7 149.8 267.8M82.4 318.1Q88.2 327.3 94.5 332.0M82.4 318.1Q78.7 313.0 70.8 302.7M292.4 351.0Q302.0 349.0 309.8 352.3M138.1 56.5Q144.4 49.9 153.1 46.2M138.1 56.5Q150.9 59.8 157.0 63.1M117.3 327.0Q124.0 326.1 135.2 322.9M117.3 327.0Q104.9 331.2 94.5 332.0M149.8 267.8Q145.1 274.6 136.5 282.6M89.4 261.8Q75.2 261.8 67.5 258.8M305.7 204.3Q304.4 213.8 309.6 224.7M36.6 101.4Q47.4 99.9 57.1 98.1M36.6 101.4Q32.8 116.3 35.3 133.0M192.6 260.7Q206.4 262.1 214.7 258.1M192.6 260.7Q196.7 250.6 207.7 241.6M271.1 227.6Q270.7 212.8 264.0 203.7M55.7 342.4Q53.9 331.6 50.6 325.6M55.7 342.4Q48.6 348.5 42.9 358.7M295.3 135.7Q288.3 141.7 282.3 146.7M227.1 141.3Q226.2 148.3 227.7 159.9M171.6 311.5Q163.9 314.6 156.7 321.6M171.6 311.5Q180.9 315.6 193.4 313.1M243.4 357.8Q245.5 345.1 242.4 335.3M213.9 224.9Q201.7 225.3 190.0 218.9M204.1 283.6Q211.1 286.5 223.3 290.4M264.0 203.7Q272.4 197.9 279.7 195.1M42.5 44.4Q36.3 55.5 36.6 67.4M247.8 316.4Q253.8 314.0 262.5 306.6M189.3 359.1Q194.4 353.8 205.7 350.0M296.1 274.8Q287.9 267.1 282.4 262.2M242.4 335.3Q254.2 332.5 260.8 330.6M181.2 104.3Q184.2 118.0 181.8 128.8M133.7 217.1Q131.9 210.5 135.3 198.6M70.8 302.7Q62.9 301.5 50.0 307.5M181.8 128.8Q171.6 131.3 163.9 129.8M181.8 128.8Q188.3 136.9 202.3 138.5M309.2 80.8Q301.1 85.2 289.6 90.7M66.0 118.4Q68.3 113.0 75.9 100.9M192.9 189.4Q201.6 188.5 216.1 190.8M192.9 189.4Q200.1 179.8 210.7 166.6M218.3 74.3Q216.7 65.9 217.0 54.1M218.3 74.3Q228.1 74.2 239.7 74.8M166.1 82.0Q163.0 73.1 157.0 63.1M129.0 305.1Q124.4 291.5 117.7 285.2M113.0 71.4Q120.5 78.4 127.1 90.2M115.5 234.0Q107.8 240.3 103.2 250.7M187.8 84.8Q191.2 77.7 191.0 66.9M293.2 63.3Q290.9 77.2 289.6 90.7M247.9 291.0Q233.8 287.6 223.3 290.4M52.9 243.1Q61.6 240.7 66.5 232.3M52.9 243.1Q54.9 251.2 50.3 265.0M117.7 285.2Q126.8 280.6 136.5 282.6M117.7 285.2Q112.6 277.5 104.7 271.5M194.4 335.7Q197.6 342.3 205.7 350.0M194.4 335.7Q190.8 321.5 193.4 313.1M175.9 239.4Q179.1 232.0 190.0 218.9M268.5 274.2Q272.1 285.5 273.2 291.5M268.5 274.2Q262.3 262.0 260.2 252.1M127.1 90.2Q116.9 98.5 107.5 99.7M50.0 307.5Q40.1 301.9 32.4 301.0M252.1 125.2Q248.3 131.4 245.2 142.0M252.1 125.2Q247.7 117.4 243.5 109.0M252.1 125.2Q241.2 126.2 232.7 124.8M75.9 100.9Q78.8 89.0 77.1 78.6M292.1 216.5Q302.0 210.5 305.7 204.3M292.1 216.5Q299.5 218.7 309.6 224.7M214.4 321.3Q223.4 312.0 227.6 308.9M214.4 321.3Q211.9 310.6 210.0 302.5M66.5 232.3Q57.2 227.1 48.3 220.5M66.5 232.3Q64.6 218.2 61.9 209.6M172.5 210.1Q165.2 215.6 155.0 217.3M172.5 210.1Q165.2 207.6 153.3 199.2M308.1 252.5Q300.6 260.9 296.1 274.8M308.1 252.5Q296.2 260.8 282.4 262.2M303.7 165.7Q291.7 154.5 282.3 146.7M303.7 165.7Q295.3 148.1 295.3 135.7M289.6 90.7Q280.2 96.4 274.0 99.4M45.3 202.5Q45.0 212.2 48.3 220.5M45.3 202.5Q53.9 193.4 58.4 189.0M227.6 308.9Q224.9 299.9 223.3 290.4M32.0 322.6Q31.9 312.1 32.4 301.0M36.6 67.4Q50.2 73.8 61.1 71.6M90.6 157.6Q84.2 150.1 77.1 138.8M210.0 302.5Q221.7 307.5 227.6 308.9M38.1 149.8Q37.0 141.8 35.3 133.0M170.3 359.6Q173.9 349.0 173.1 336.7M170.3 359.6Q153.8 351.6 143.8 344.9M120.9 172.1Q126.3 158.6 133.4 150.4M165.9 289.6Q152.8 291.2 146.1 299.6M165.9 289.6Q176.9 294.3 189.2 296.4M245.0 271.0Q238.0 271.1 227.3 273.9M245.0 271.0Q248.4 280.4 247.9 291.0M77.1 138.8Q82.0 133.7 92.7 131.2M77.1 138.8Q72.3 144.7 62.0 148.1M69.4 359.3Q62.3 351.7 55.7 342.4M88.2 185.2Q97.0 177.1 99.8 172.2M88.2 185.2Q87.3 194.8 81.2 202.4M135.3 198.6Q147.0 200.9 153.3 199.2M33.3 257.9Q44.0 253.8 52.9 243.1M61.9 209.6Q72.2 207.1 81.2 202.4M170.5 265.6Q162.8 267.5 149.8 267.8M268.3 76.3Q258.7 83.1 255.2 93.5M262.6 179.8Q272.4 184.6 279.7 195.1M228.6 90.6Q225.6 85.4 218.3 74.3M189.2 296.4Q192.8 305.7 193.4 313.1M189.2 296.4Q195.8 287.5 204.1 283.6M189.2 296.4Q195.9 300.5 210.0 302.5M71.8 332.3Q78.6 323.5 82.4 318.1M71.8 332.3Q60.4 330.8 50.6 325.6M245.2 142.0Q235.0 144.0 227.1 141.3M245.2 142.0Q238.9 130.2 232.7 124.8M57.1 98.1Q54.1 90.1 46.7 83.6M279.7 195.1Q287.5 187.1 294.2 183.4M153.1 46.2Q155.6 56.3 157.0 63.1M193.2 155.1Q204.1 163.0 210.7 166.6M42.9 358.7Q53.9 357.8 69.4 359.3M50.3 265.0Q56.5 263.6 67.5 258.8M50.3 265.0Q38.7 260.2 33.3 257.9M77.1 78.6Q74.6 69.2 76.6 60.5M48.3 220.5Q56.1 213.2 61.9 209.6M275.6 319.7Q270.4 311.1 262.5 306.6M299.1 310.4Q286.4 313.1 275.6 319.7M99.8 172.2Q98.2 163.5 90.6 157.6M131.8 359.4Q124.0 352.2 110.9 346.0M304.3 118.9Q305.8 107.0 303.8 101.2M95.1 56.0Q92.8 49.4 84.8 42.4M95.1 56.0Q95.4 64.2 94.2 73.1M282.3 146.7Q276.3 141.0 272.1 132.0M103.2 250.7Q94.7 253.9 89.4 261.8\\\" stroke-width=\\\"1.6\\\" stroke-opacity=\\\"0.7\\\"/></g><path d=\\\"M120 600 L122 400 M248 600 L250 400\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-opacity=\\\"0.4\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"30 18\\\"/>\",\"viewBox\":\"0 -10 340 630\",\"width\":300,\"height\":556,\"title\":\"Muñeca: radio, cúbito y huesos del carpo con hueso esponjoso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"width\":520,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "d",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "20 de octubre"
+        },
+        {
+          "id": "do",
+          "parent": "r0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":400,\"left\":\"m\",\"width\":500}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Del hueso a\ntu consulta\nhay tres\npasos."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Hito 02: BTL Magnetotherapy, 8 aplicadores para cualquier zona, con dos aplicadores oficiales en una ficha blanca.",
+      "background": "deep",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul profundo. \"BTL Magnetotherapy\". Titular: \"8 aplicadores para cualquier zona del cuerpo.\" Una ficha blanca con las fotos oficiales del aplicador de anillo y de los solenoides de 30 y 60 cm. Abajo, la línea de luz sigue y marca el nodo \"02\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-1280,1090],[-540,1010],[540,1090],[1620,1010],[2360,1090]],\"width\":6,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "node",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":1090,\"r\":30,\"thickness\":3,\"tone\":\"white\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "rn",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":470,\"top\":970,\"width\":160}",
+          "text": null
+        },
+        {
+          "id": "num",
+          "parent": "rn",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "02"
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "h",
+          "parent": "r0",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "8 aplicadores para\ncualquier zona del cuerpo."
+        },
+        {
+          "id": "panel",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":490,\"width\":892,\"height\":380,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "i1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo de BTL Magnetotherapy\",\"left\":130,\"top\":510,\"width\":370,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "i2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy\",\"left\":540,\"top\":545,\"width\":420,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Hito 03: ventajas para la clínica y CTA \"Solicita tu demo\" sobre el final de la línea.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul profundo. \"Para tu clínica\". Titular: \"Lo que suma a tu consulta.\" Tres líneas: \"Hasta 4 canales en un solo equipo.\", \"Protocolos por área anatómica.\" y \"FMF: el terapeuta no queda expuesto al campo magnético.\" Debajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Abajo, la línea de luz termina con el nodo \"03\". Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-2360,1090],[-1620,1010],[-540,1090],[540,1010],[1280,1090]],\"width\":6,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "node",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":1010,\"r\":30,\"thickness\":3,\"tone\":\"white\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "rn",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":470,\"top\":890,\"width\":160}",
+          "text": null
+        },
+        {
+          "id": "num",
+          "parent": "rn",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "03"
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "Para tu clínica"
+        },
+        {
+          "id": "h",
+          "parent": "r0",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Lo que suma\na tu consulta."
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":470,\"left\":\"m\",\"right\":\"m\",\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "b1",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Hasta 4 canales en un solo equipo."
+        },
+        {
+          "id": "b2",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Protocolos por área anatómica."
+        },
+        {
+          "id": "b3",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "FMF: el terapeuta no queda expuesto al campo magnético."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":650,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"split\",\"size\":56}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: del hueso a tu consulta hay tres pasos. Desliza y recórrelos.\n\n01, el día en que se habla de los huesos. 02, BTL Magnetotherapy: 8 aplicadores para tratar cualquier parte del cuerpo. 03, tu clínica: hasta 4 canales en un solo equipo, protocolos por área anatómica y tecnología FMF para que el terapeuta no quede expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Muñeca (radio, cúbito y carpo) con hueso esponjoso poroso (ilustración educativa, sin rótulos)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; ilustración educativa o frase general, no atribuida al producto",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "8 aplicadores para cualquier zona del cuerpo.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Aplicador de anillo · solenoides de 30 y 60 cm (fotos oficiales)",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Camilla con aplicador de magnetoterapia\", \"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\") y fotos oficiales",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Hasta 4 canales en un solo equipo.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "FMF: el terapeuta no queda expuesto al campo magnético.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales en un solo equipo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "tecnología FMF para que el terapeuta no quede expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "recorrido-continuo"
+}

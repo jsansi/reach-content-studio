@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opción C · El segmento</title><style>
+@font-face { font-family: 'Noto Sans'; font-weight: 300; src: url('../../../public/assets/fonts/noto-sans/noto-sans-latin-300-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 300; src: url('../../../public/assets/fonts/noto-sans/noto-sans-latin-ext-300-normal.woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: 'Noto Sans'; font-weight: 400; src: url('../../../public/assets/fonts/noto-sans/noto-sans-latin-400-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 600; src: url('../../../public/assets/fonts/noto-sans/noto-sans-latin-600-normal.woff2'); }
+@font-face { font-family: 'Noto Sans'; font-weight: 600; src: url('../../../public/assets/fonts/noto-sans/noto-sans-latin-ext-600-normal.woff2'); unicode-range: U+0100-024F, U+1E00-1EFF; }
+
+:root { --enterprise: #00508c; --dark: #000a32; --sky: #96d2ff; --white: #ffffff; --m: 94px; --u: 46.78696662858044px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #e9edf2; font-family: 'Noto Sans', sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; margin: 0 0 40px; color: var(--white); }
+.slide p, .slide h1, .slide h2, .slide h3 { text-align: left; text-wrap: pretty; }
+.slide h2 { text-wrap: balance; }
+
+.bg-dark { background: radial-gradient(130% 95% at 108% -8%, var(--enterprise) 0%, var(--dark) 78%); }
+.bg-light { background: radial-gradient(120% 90% at -10% -8%, var(--sky) 0%, var(--white) 72%); color: var(--dark); }
+.bg-light-top { background: radial-gradient(75% 30% at -8% -6%, var(--sky) 0%, var(--white) 75%); color: var(--dark); } /* photos sit on pure white */
+.bg-blue { background: radial-gradient(140% 110% at -10% 112%, var(--dark) 0%, var(--enterprise) 62%); }
+
+.logo { position: absolute; top: var(--m); right: var(--m); width: 200px; line-height: 0; }
+.logo svg { width: 100%; height: auto; }
+.logo.white { color: var(--white); } .logo.blue { color: var(--enterprise); }
+
+.swipe { position: absolute; right: var(--m); bottom: var(--m); display: flex; align-items: center; gap: 12px;
+  font-size: 30px; font-weight: 400; color: var(--white); border: 1.5px solid rgba(255,255,255,.55);
+  border-radius: 999px; padding: 10px 18px 10px 26px; line-height: 1; }
+.swipe.on-light { color: var(--enterprise); border-color: rgba(0,80,140,.45); }
+.swipe svg { width: 40px; height: 40px; fill: currentColor; }
+
+/* Short statement: centred, large (manual p. 22) */
+.statement { position: absolute; left: var(--m); right: var(--m); text-align: center !important; font-weight: 600;
+  line-height: 1; letter-spacing: -4px; }
+
+/* ---------- 1 · Segment ---------- */
+.s-pill { position: absolute; left: var(--m); top: calc(var(--m) + 22px); display: inline-block; background: var(--sky);
+  color: var(--dark); font-weight: 600; font-size: 30px; line-height: 1; padding: 12px 22px 13px; border-radius: 999px; }
+.s-occasion { position: absolute; left: var(--m); top: 270px; font-size: 42px; font-weight: 300; line-height: 1.15; }
+.s-statement { top: 370px; font-size: 270px; }
+.s-segment { position: absolute; left: 110px; width: 860px; top: 690px; height: 200px; }
+.s-segment svg { width: 100%; height: 100%; }
+.s-text { position: absolute; left: var(--m); top: 950px; width: 820px; }
+.s-hook { font-size: 54px; font-weight: 600; line-height: 1.12; }
+.s-question { font-size: 42px; font-weight: 400; line-height: 1.2; color: var(--sky); margin-top: 22px; }
+
+/* ---------- 2 · Fit the position ---------- */
+.f-title { position: absolute; left: var(--m); top: 260px; width: 860px; font-size: 62px; font-weight: 300;
+  line-height: 1.12; color: var(--enterprise); }
+.f-rows { position: absolute; left: 60px; right: var(--m); top: 470px; display: flex; flex-direction: column; gap: 46px; }
+.f-row { display: flex; align-items: center; gap: 40px; }
+.f-ph { flex: 0 0 470px; height: 270px; display: flex; align-items: flex-end; justify-content: center; }
+.f-ph img { display: block; width: 470px; height: auto; }
+.f-row h3 { font-size: 40px; font-weight: 600; line-height: 1.12; color: var(--dark); }
+.f-row p { font-size: 32px; font-weight: 400; line-height: 1.3; color: var(--enterprise); margin-top: 10px; }
+.f-foot { position: absolute; left: var(--m); top: 1130px; width: 600px; font-size: 32px; font-weight: 600;
+  line-height: 1.3; color: var(--dark); border-left: 3px solid var(--sky); padding-left: 22px; }
+
+/* ---------- 3 · DEMO ---------- */
+.d-product { position: absolute; left: calc(var(--m) - 10px); top: calc(var(--m) + 13px); width: 400px; height: auto; }
+.d-statement { top: 380px; font-size: 300px; }
+.d-text { position: absolute; left: var(--m); right: var(--m); top: 780px; }
+.d-cta { font-size: 58px; font-weight: 300; line-height: 1.12; }
+.d-sub { font-size: 36px; font-weight: 400; line-height: 1.3; color: var(--sky); margin-top: 22px; }
+.d-chips { position: absolute; left: var(--m); right: var(--m); top: 1160px; display: flex; flex-wrap: wrap; gap: 16px; list-style: none; }
+.d-chips li { font-size: 30px; font-weight: 400; line-height: 1; padding: 14px 22px; border: 1.5px solid var(--sky); border-radius: 999px; }
+</style></head><body><section class="slide bg-dark" id="slide-1">
+    <span class="s-pill blk">16 de octubre</span>
+    <div class="logo white blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <p class="s-occasion blk">Día Mundial de la Columna Vertebral</p>
+    <p class="statement s-statement blk">L4–L5</p>
+    <div class="s-segment blk"><svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><filter id="sglow" x="-200%" y="-50%" width="500%" height="200%"><feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <rect x="54" y="30" width="220" height="112" rx="26" fill="rgba(150,210,255,.10)" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
+      <path d="M120 142 L137.6 176 L190.4 176 L208 142"
+        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linejoin="round"/>
+      <text x="164" y="98" text-anchor="middle" font-family="Noto Sans" font-weight="600" font-size="34" fill="#fff" fill-opacity=".85">L3</text><rect x="282" y="40" width="30" height="92" rx="14" fill="#96d2ff" opacity="0.4" /><rect x="320" y="30" width="220" height="112" rx="26" fill="rgba(150,210,255,.10)" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
+      <path d="M386 142 L403.6 176 L456.4 176 L474 142"
+        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linejoin="round"/>
+      <text x="430" y="98" text-anchor="middle" font-family="Noto Sans" font-weight="600" font-size="34" fill="#fff" fill-opacity=".85">L4</text><rect x="548" y="40" width="30" height="92" rx="14" fill="#96d2ff" opacity="1" filter="url(#sglow)"/><rect x="586" y="30" width="220" height="112" rx="26" fill="rgba(150,210,255,.10)" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
+      <path d="M652 142 L669.6 176 L722.4 176 L740 142"
+        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linejoin="round"/>
+      <text x="696" y="98" text-anchor="middle" font-family="Noto Sans" font-weight="600" font-size="34" fill="#fff" fill-opacity=".85">L5</text></svg></div>
+    <div class="s-text blk">
+      <h1 class="s-hook">Si trabajas en rehabilitación,<br>lo ves cada semana.</h1>
+      <p class="s-question">¿Y si pudieras ajustar la posición al segmento?</p>
+    </div>
+    <div class="swipe blk">Desliza<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M132-666v-162h22v110q85-64 165.5-94.5T486-843q109 0 199.5 47T828-666h-25q-52-74-135.5-114.5T486-821q-85.87 0-167.44 32.5Q237-756 153-688h141v22H132Zm303 534L212-354l22-25 152 37v-349h22v379l-168-45 204 203h282v-289h22v311H435Zm64-257v-174h22v174h-22Zm114 0v-134h22v134h-22Zm-37 120Z"/></svg></div></section>
+<section class="slide bg-light-top" id="slide-2">
+    <div class="logo blue blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <h2 class="f-title blk">Ajusta la posición al segmento que quieres tratar</h2>
+    <div class="f-rows blk">
+      <div class="f-row">
+        <div class="f-ph"><img src="../../../public/assets/products/spinal-decompression/posiciones/flexion-pelvica.png" alt="Paciente en posición de flexión pélvica sobre BTL Spinal Decompression"></div>
+        <div><h3>Flexión pélvica</h3><p>Ángulo pélvico ajustable para enfocar los segmentos lumbares.</p></div></div><div class="f-row">
+        <div class="f-ph"><img src="../../../public/assets/products/spinal-decompression/posiciones/semiincorporada-inclinada.png" alt="Paciente en posición semiincorporada inclinada sobre BTL Spinal Decompression"></div>
+        <div><h3>Semiincorporada</h3><p>Estiramiento suave, pensada para pacientes muy sensibles.</p></div></div>
+    </div>
+    <p class="f-foot blk">Y descompresión cervical automatizada en el mismo equipo.</p>
+    <div class="swipe blk on-light">Desliza<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M132-666v-162h22v110q85-64 165.5-94.5T486-843q109 0 199.5 47T828-666h-25q-52-74-135.5-114.5T486-821q-85.87 0-167.44 32.5Q237-756 153-688h141v22H132Zm303 534L212-354l22-25 152 37v-349h22v379l-168-45 204 203h282v-289h22v311H435Zm64-257v-174h22v174h-22Zm114 0v-134h22v134h-22Zm-37 120Z"/></svg></div></section>
+<section class="slide bg-blue" id="slide-3">
+    <img class="d-product blk" src="../../../public/assets/products/spinal-decompression/logo/spinal-decompression-logo-white.png" alt="BTL Spinal Decompression">
+    <div class="logo white blk" data-logo><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.24 475.00" fill="currentColor">
+<path d="M864.02 230.36L838.82 205.15L793.65 250.33L723.74 180.43L696.64 207.53L792.22 302.63L864.02 230.36"/>
+<path d="M258.68 170.44C242.04 153.32 218.26 159.98 199.72 178.52L151.69 226.08L247.75 322.13L295.77 274.10C318.60 251.28 320.50 224.65 305.76 209.91C293.48 197.62 280.75 197.22 267.74 202.10C270.08 191.11 268.18 179.94 258.68 170.44M215.41 202.30C223.49 194.22 231.10 193.74 236.81 199.45C242.99 205.63 241.56 213.71 234.43 221.32L216.34 240.03L196.93 220.50L215.41 202.30M275.80 253.66L252.62 276.53L233.10 256.89L255.83 234.16C263.44 226.55 271.05 226.55 277.23 232.73C283.41 238.44 281.98 247.47 275.80 253.66"/>
+<path d="M372.22 284.92L237.41 419.73L55.16 237.49L237.32 55.33L372.37 190.37L400.07 162.67L237.44 0.05L0.00 237.49L237.36 474.84L399.75 312.45L372.22 284.92"/>
+<path d="M504.53 149.04L420.84 232.73L446.51 257.94L474.81 229.64L545.42 300.26L572.05 273.63L501.44 203.01L529.73 174.72L504.53 149.04"/>
+<path d="M399.91 107.67L427.49 135.25L507.38 55.36L642.43 190.41L670.01 162.83L507.38 0.20L399.91 107.67"/>
+<path d="M507.14 419.85L427.49 340.20L399.91 367.78L507.16 475.00L670.27 311.93L642.68 284.34L507.14 419.85"/>
+<path d="M777.75 0.00L670.52 107.23L698.07 134.78L777.72 55.13L960.08 237.49L777.95 419.61L698.06 339.72L670.49 367.31L777.95 474.77L1015.24 237.49L777.75 0.00"/>
+</svg>
+</div>
+    <p class="statement d-statement blk">DEMO</p>
+    <div class="d-text blk">
+      <p class="d-cta">Escríbenos DEMO<br>por mensaje directo</p>
+      <p class="d-sub">y coordinamos una demostración<br>con BTL El Salvador.</p>
+    </div>
+    <ul class="d-chips blk"><li>Manos libres</li><li>Cervical y lumbar</li><li>Protocolos predefinidos</li></ul></section></body></html>

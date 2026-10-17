@@ -1,0 +1,161 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "El ataque llega\nen segundos.\nVolver a moverse\nlleva tiempo.",
+      "support": "¿Cómo aprovecha tu clínica cada sesión?",
+      "points": [],
+      "claims": [
+        {
+          "claim": "La rehabilitación después de un ictus lleva tiempo.",
+          "location": "diapositiva 1",
+          "source": "Dato general sobre la fecha (sin atribución a un producto)",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "La respuesta:\nBTL Robotics",
+      "support": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+          "location": "diapositiva 2",
+          "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training\"",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "equipo",
+      "headline": "Entrenar la marcha,\npaso a paso",
+      "support": null,
+      "points": [
+        {
+          "title": "R-GAIT",
+          "text": "Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas."
+        },
+        {
+          "title": "BTL EXO",
+          "text": "Exoesqueleto para caminar en llano, terreno irregular y pendientes."
+        },
+        {
+          "title": "R-FORCE",
+          "text": "Descarga hasta el 100 % del peso para entrenar desde el primer día."
+        }
+      ],
+      "claims": [
+        {
+          "claim": "R-GAIT: hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+          "location": "diapositiva 3",
+          "source": "data/web/r-gait.md · Robotic Early Gait Recovery",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "BTL EXO: exoesqueleto para caminar en llano, terreno irregular y pendientes.",
+          "location": "diapositiva 3",
+          "source": "data/web/exo.md · Designed For Any Environment",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "R-FORCE: descarga hasta el 100 % del peso para entrenar desde el primer día.",
+          "location": "diapositiva 3",
+          "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; Training Right After Injury",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "role": "equipo",
+      "headline": "Terapia que\nno aburre",
+      "support": "Juegos, objetos reales y dificultad que se adapta para mantener al paciente motivado.",
+      "points": [
+        {
+          "title": "R-LEAD",
+          "text": "Decenas de juegos con dificultad que se ajusta sola al progreso."
+        },
+        {
+          "title": "R-TOUCH",
+          "text": "Entrenar con objetos reales o en entornos virtuales inmersivos."
+        },
+        {
+          "title": "BTL WALK",
+          "text": "Práctica de la marcha en el día a día: calle, escaleras y pendientes."
+        }
+      ],
+      "claims": [
+        {
+          "claim": "R-LEAD: decenas de juegos con dificultad que se ajusta sola al progreso.",
+          "location": "diapositiva 4",
+          "source": "data/web/r-lead.md · Interactive Gaming Therapy",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "R-TOUCH: entrenar con objetos reales o en entornos virtuales inmersivos.",
+          "location": "diapositiva 4",
+          "source": "data/web/r-touch.md · Soft Robotic Glove for Hand Rehabilitation",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "BTL WALK: práctica de la marcha en el día a día: calle, escaleras y pendientes.",
+          "location": "diapositiva 4",
+          "source": "data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation; Limitless Walking on Any Terrain",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Mantener al paciente motivado.",
+          "location": "diapositiva 4",
+          "source": "data/web/r-lead.md · Interactive Gaming Therapy (\"motivate and keep patients fully engaged\")",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "role": "ventajas",
+      "headline": "Más terapia,\nmenos esfuerzo",
+      "support": null,
+      "points": [
+        {
+          "title": "Manos libres",
+          "text": "El equipo guía el movimiento; tú diriges la terapia."
+        },
+        {
+          "title": "Protocolos a la medida",
+          "text": "Parámetros ajustables según el paciente y su etapa."
+        },
+        {
+          "title": "Seguimiento objetivo",
+          "text": "Reportes de cada sesión para evaluar el progreso."
+        }
+      ],
+      "claims": [
+        {
+          "claim": "El equipo guía el movimiento; tú diriges la terapia.",
+          "location": "diapositiva 5",
+          "source": "data/web/robotics.md · \"precisely guided training … while reducing therapist workload\"",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Parámetros ajustables según el paciente y su etapa.",
+          "location": "diapositiva 5",
+          "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Interactive Gaming Therapy",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Reportes de cada sesión para evaluar el progreso.",
+          "location": "diapositiva 5",
+          "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Robotic Arm Rehabilitation",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-10-17T15:58:35.517Z"
+}

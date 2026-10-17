@@ -1,0 +1,322 @@
+{
+  "direction": "B",
+  "direction_name": "Pantalla dividida",
+  "concept": "Toda sesión de magnetoterapia tiene dos lados: el del paciente y el del terapeuta. La portada parte el lienzo entre la pregunta y el hueso poroso del día; la segunda revela los dos lados del aplicador (la terapia para el paciente, la tecnología FMF para el terapeuta) y la tercera parte la pieza entre la clínica y la demo.",
+  "differentiation": "El corte del lienzo es el protagonista y se mueve en cada diapositiva: vertical en la portada (panel celeste con el gancho frente al hueso poroso sobre azul), horizontal en la segunda (escenario blanco con los solenoides arriba, explicación abajo, logo abajo a la derecha) y vertical invertido en el cierre (ventajas en panel celeste a la derecha, CTA a la izquierda, logo arriba a la izquierda). Tensión → resolución, sin fichas, sin retícula y sin objeto centrado.",
+  "slides": [
+    {
+      "purpose": "Gancho: \"Toda sesión tiene dos lados\", en un panel celeste frente al hueso poroso del día.",
+      "background": "deep",
+      "lightFrom": "bottom-right",
+      "alt": "Diapositiva partida en vertical. Mitad izquierda celeste con el texto: \"Hoy, 20 de octubre\", \"Toda sesión tiene dos lados.\" y \"Día Mundial de la Osteoporosis\". Mitad derecha azul profundo con un círculo de hueso esponjoso poroso dibujado en línea celeste, un halo de luz y el rótulo \"Hueso poroso\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "half",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":0,\"top\":0,\"width\":540,\"height\":1350,\"surface\":\"sky\",\"padding\":94,\"align\":\"between\"}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "half",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"regular\"}",
+          "text": "Hoy, 20 de octubre"
+        },
+        {
+          "id": "h1",
+          "parent": "half",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Toda\nsesión\ntiene dos\nlados."
+        },
+        {
+          "id": "b",
+          "parent": "half",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Día Mundial de\nla Osteoporosis"
+        },
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":810,\"cy\":660,\"r\":220,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.55}",
+          "text": null
+        },
+        {
+          "id": "ri",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":630,\"top\":480,\"width\":360,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "bd",
+          "parent": "ri",
+          "type": "BoneDensity",
+          "props": "{\"porous\":true,\"size\":340,\"label\":\"Hueso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Revelación: los dos lados del aplicador de BTL Magnetotherapy (paciente arriba, terapeuta abajo) con la tecnología FMF.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Diapositiva partida en horizontal. Arriba, sobre blanco, \"Lado del paciente\" y la foto oficial de los aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy con el grabado FMF technology. Abajo, sobre azul profundo: \"Lado del terapeuta\", \"Terapia para el paciente. Campo lejos del terapeuta.\" y \"Tecnología FMF: el campo magnético se bloquea del lado del operador.\" Logo de BTL abajo a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "top",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":0,\"top\":0,\"width\":1080,\"height\":690,\"surface\":\"white\",\"padding\":94}",
+          "text": null
+        },
+        {
+          "id": "e1",
+          "parent": "top",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "Lado del paciente"
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy con tecnología FMF\",\"left\":180,\"top\":170,\"width\":760,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":750,\"left\":\"m\",\"width\":860,\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "e2",
+          "parent": "r",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "Lado del terapeuta"
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Terapia para el paciente.\nCampo lejos del terapeuta."
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Tecnología FMF de BTL Magnetotherapy: el campo\nmagnético se bloquea del lado del operador."
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cierre partido: la clínica y la demo a la izquierda, las ventajas en un panel celeste a la derecha.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Diapositiva partida en vertical. A la izquierda, sobre azul profundo: \"Lo que gana tu clínica.\" y abajo \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" A la derecha, panel celeste con tres ventajas separadas por filetes: \"8 aplicadores para cualquier zona.\", \"Hasta 4 canales en un solo equipo.\" y \"Protocolos por área anatómica.\" Logo de BTL arriba a la izquierda.",
+      "nodes": [
+        {
+          "id": "half",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":540,\"top\":0,\"width\":540,\"height\":1350,\"surface\":\"sky\",\"padding\":60,\"align\":\"center\",\"gap\":34}",
+          "text": null
+        },
+        {
+          "id": "b1",
+          "parent": "half",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "8 aplicadores para\ncualquier zona."
+        },
+        {
+          "id": "ru1",
+          "parent": "half",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":120,\"thickness\":2,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b2",
+          "parent": "half",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Hasta 4 canales\nen un solo equipo."
+        },
+        {
+          "id": "ru2",
+          "parent": "half",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":120,\"thickness\":2,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b3",
+          "parent": "half",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Protocolos por\nárea anatómica."
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":260,\"left\":\"m\",\"width\":400}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Lo que\ngana tu\nclínica."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"width\":420}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"stacked\",\"size\":48}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: toda sesión tiene dos lados, el del paciente y el de quien la aplica.\n\nCon BTL Magnetotherapy, el paciente recibe la terapia y su tecnología FMF bloquea el campo magnético del lado del operador, para que el terapeuta no quede expuesto. Además, 8 aplicadores para cualquier zona del cuerpo, hasta 4 canales y protocolos por área anatómica.\n\n¿Quieres verlo en tu clínica? Escríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Hueso poroso (ilustración educativa del hueso esponjoso)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; rótulos anatómicos generales de una ilustración educativa (no atribuidos al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Terapia para el paciente. Campo lejos del terapeuta.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (el paciente recibe la magnetoterapia durante el tratamiento; el terapeuta no está expuesto)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología FMF de BTL Magnetotherapy: el campo magnético se bloquea del lado del operador.",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Aplicadores solenoides de 30 y 60 cm (foto oficial)",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (doble disco, un solo disco, camilla con aplicador, anillos, solenoide grande y pequeño, sencillo, doble y multidisco)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para cualquier zona.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Hasta 4 canales en un solo equipo.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica.",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "el paciente recibe la terapia",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (el paciente recibe la magnetoterapia durante el tratamiento; el terapeuta no está expuesto)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "su tecnología FMF bloquea el campo magnético del lado del operador, para que el terapeuta no quede expuesto",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para cualquier zona del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "pantalla-dividida"
+}

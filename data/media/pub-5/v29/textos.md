@@ -1,0 +1,62 @@
+# Textos — Día Mundial de la Osteoporosis
+
+- Marca: BTL El Salvador
+- Fecha: 2026-10-20
+- Audiencia: Fisioterapeutas, médicos rehabilitadores, clínicas y centros de rehabilitación
+
+## Diapositiva 1 (commemoration)
+
+- **datePill:** 20 de octubre
+- **eyebrow:** Día Mundial de
+la Osteoporosis
+- **title:** Cuando el hueso
+se vuelve frágil,
+la consulta se
+vuelve clave.
+- **question:** ¿Qué puede ofrecer tu consulta
+de rehabilitación?
+- **swipe:** Desliza para descubrirlo
+- **illustration:** none
+- **alt:** Portada sobre fondo azul oscuro. Etiqueta: "20 de octubre". "Día Mundial de la Osteoporosis". Titular: "Cuando el hueso se vuelve frágil, la consulta se vuelve clave." Pregunta: "¿Qué puede ofrecer tu consulta de rehabilitación?" Logo de BTL arriba a la derecha y "Desliza para descubrirlo".
+
+## Diapositiva 2 (product)
+
+- **images:**
+  - undefined: undefined
+  - undefined: undefined
+  - undefined: undefined
+- **eyebrow:** BTL Magnetotherapy
+- **title:** Magnetoterapia para cada zona del cuerpo
+- **stat:** 8 aplicadores
+- **body:** Para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo.
+- **swipe:** Desliza: lo que gana tu clínica
+- **alt:** Arriba, sobre un degradado claro, fotos oficiales de tres aplicadores de BTL Magnetotherapy rotulados: "Solenoides", "Anillo" y "Multidisco". Abajo, sobre azul oscuro: "BTL Magnetotherapy". Titular: "Magnetoterapia para cada zona del cuerpo." Cifra: "8 aplicadores". Texto: "Para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo." Logo de BTL arriba a la derecha y "Desliza: lo que gana tu clínica".
+
+## Diapositiva 3 (benefits)
+
+- **title:** Lo que gana tu clínica
+- **benefits:**
+  - Protocolos por zona: Selección intuitiva según el área anatómica, en pantalla táctil.
+  - Pacientes en orden: Base de datos de pacientes en el mismo equipo.
+  - Terapeuta protegido: Con FMF, el terapeuta no queda expuesto al campo magnético.
+- **cta:** Solicita tu demo
+- **signature:** BTL El Salvador
+- **ctaBand:** glow
+- **alt:** Fondo claro. Titular: "Lo que gana tu clínica." Tres ventajas con iconos: "Protocolos por zona: selección intuitiva según el área anatómica, en pantalla táctil.", "Pacientes en orden: base de datos de pacientes en el mismo equipo." y "Terapeuta protegido: con FMF, el terapeuta no queda expuesto al campo magnético." Franja inferior azul: "Solicita tu demo. BTL El Salvador." Logo de BTL arriba a la derecha.
+
+## Copy para la publicación
+
+Cuando el hueso se vuelve frágil, la consulta se vuelve clave. Hoy, 20 de octubre, es el Día Mundial de la Osteoporosis: ¿qué puede ofrecer tu consulta de rehabilitación?
+
+BTL Magnetotherapy suma magnetoterapia para cada zona: 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales en un solo equipo. Para tu clínica: protocolos por área anatómica en pantalla táctil, base de datos de pacientes y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.
+
+Escríbenos "DEMO" por mensaje directo y solicita tu demo con BTL El Salvador.
+
+#DíaMundialDeLaOsteoporosis #Osteoporosis #Fisioterapia #Magnetoterapia #BTLElSalvador
+
+## Fuentes
+
+- data/web/magnetotherapy.md
+- https://www.btlnet.es/magnetotherapy
+- knowledge/brand-guidelines/btl-corporate-identity.md
+- data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_* (fotos oficiales de los aplicadores)

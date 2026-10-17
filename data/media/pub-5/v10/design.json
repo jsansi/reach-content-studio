@@ -1,0 +1,504 @@
+{
+  "direction": "A",
+  "direction_name": "Plano técnico",
+  "concept": "El Día Mundial de la Osteoporosis contado como una lámina técnica: el esqueleto se lee por zonas, y cada zona pide un plan distinto. Las tres diapositivas son láminas numeradas (01 anatomía, 02 aplicadores, 03 ventajas) que llevan del hueso a la consulta.",
+  "differentiation": "Estructura de plano: cadera dibujada en línea con puntos señalados y rótulos fuera del dibujo, cotas y filetes como en una lámina; la segunda diapositiva es una retícula de cuatro fichas blancas con los aplicadores oficiales, y la tercera una tabla modular 01–04. Todo sobre azul profundo, sin numerales gigantes, sin halos ni foto protagonista: la precisión es el recurso.",
+  "slides": [
+    {
+      "purpose": "Gancho: lámina anatómica de la cadera y pregunta a la consulta; fecha en el rótulo de la lámina.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Lámina técnica sobre azul profundo. Rótulo: \"Lámina 01 · 20 de octubre · Día Mundial de la Osteoporosis\". Titular: \"Cada zona del esqueleto pide un plan distinto.\" Texto: \"¿Tu consulta tiene uno para cada una?\" A la derecha, una cadera dibujada en línea blanca con hueso esponjoso celeste; tres puntos señalados con rótulos: cabeza femoral, cuello femoral y diáfisis. Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Lámina 01 · 20 de octubre · Día Mundial de la Osteoporosis"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":350,\"left\":\"m\",\"right\":\"m\",\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "Cada zona del esqueleto\npide un plan distinto."
+        },
+        {
+          "id": "b1",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "¿Tu consulta tiene uno para cada una?"
+        },
+        {
+          "id": "ri",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":470,\"top\":560,\"width\":450}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": "ri",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.35\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient><clipPath id=\\\"c\\\"><path d=\\\"M150 700 L152 400 C150 340 120 300 118 262 C116 236 132 222 152 226 C176 230 198 212 226 192 L304 136 L336 226 L272 282 C252 300 242 324 240 362 L238 700 Z\\\"/><circle cx=\\\"352\\\" cy=\\\"168\\\" r=\\\"62\\\"/></clipPath></defs><ellipse cx=\\\"330\\\" cy=\\\"190\\\" rx=\\\"170\\\" ry=\\\"150\\\" fill=\\\"url(#h)\\\"/><path d=\\\"M292 96 C330 70 400 66 440 100 C470 126 482 170 470 214\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.7\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.9\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M150 700 L152 400 C150 340 120 300 118 262 C116 236 132 222 152 226 C176 230 198 212 226 192 L304 136 L336 226 L272 282 C252 300 242 324 240 362 L238 700\\\"/><circle cx=\\\"352\\\" cy=\\\"168\\\" r=\\\"62\\\"/></g><g clip-path=\\\"url(#c)\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M205 640 C210 450 262 320 352 200\\\" stroke-dasharray=\\\"26 16\\\"/><path d=\\\"M180 640 C176 460 214 330 330 140\\\" stroke-dasharray=\\\"18 20\\\"/><path d=\\\"M128 300 C190 220 280 160 400 150\\\" stroke-dasharray=\\\"22 18\\\"/><path d=\\\"M140 340 C200 250 300 200 410 205\\\" stroke-dasharray=\\\"14 22\\\"/><path d=\\\"M293.4 115.6L304.2 128.6M319.2 106.2L320.3 134.7M347.0 110.4L346.6 126.1M363.7 113.3L391.4 110.6M363.7 113.3L368.4 131.6M412.4 111.8L405.0 132.2M304.2 128.6L305.6 156.5M320.3 134.7L346.6 126.1M320.3 134.7L323.9 155.0M346.6 126.1L368.4 131.6M368.4 131.6L393.6 136.1M393.6 136.1L405.0 132.2M305.6 156.5L323.9 155.0M364.3 151.8L360.2 173.0M392.5 151.8L405.4 151.3M392.5 151.8L388.8 176.1M405.4 151.3L409.0 171.9M299.1 173.3L327.8 176.8M327.8 176.8L347.0 181.0M360.2 173.0L388.8 176.1M388.8 176.1L409.0 171.9M388.8 176.1L386.8 195.1M305.4 192.1L320.2 195.9M320.2 195.9L346.2 203.6M366.2 193.6L386.8 195.1M386.8 195.1L408.2 197.0M323.5 216.5L349.4 219.4M349.4 219.4L370.8 221.8M370.8 221.8L389.8 220.2\\\" stroke-width=\\\"1.6\\\" stroke-opacity=\\\"0.8\\\"/></g><path d=\\\"M180 420 L180 690 M210 420 L210 690\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-opacity=\\\"0.35\\\" stroke-width=\\\"2\\\"/><path d=\\\"M262 420 L262 690 M252 420 L272 420 M252 690 L272 690\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-opacity=\\\"0.6\\\" stroke-width=\\\"2\\\"/><circle cx=\\\"352\\\" cy=\\\"168\\\" r=\\\"7\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"352\\\" cy=\\\"168\\\" r=\\\"14\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.6\\\" stroke-width=\\\"2\\\"/><path d=\\\"M338 168 L0 168\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.55\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"6 6\\\"/><circle cx=\\\"270\\\" cy=\\\"238\\\" r=\\\"7\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"270\\\" cy=\\\"238\\\" r=\\\"14\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.6\\\" stroke-width=\\\"2\\\"/><path d=\\\"M256 238 L0 238\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.55\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"6 6\\\"/><circle cx=\\\"195\\\" cy=\\\"520\\\" r=\\\"7\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"195\\\" cy=\\\"520\\\" r=\\\"14\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.6\\\" stroke-width=\\\"2\\\"/><path d=\\\"M181 520 L0 520\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-opacity=\\\"0.55\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"6 6\\\"/>\",\"viewBox\":\"0 0 500 700\",\"width\":450,\"height\":630,\"title\":\"Cadera en lámina técnica: cabeza y cuello femoral con hueso esponjoso poroso\"}",
+          "text": null
+        },
+        {
+          "id": "lr1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":691,\"left\":\"m\",\"width\":340}",
+          "text": null
+        },
+        {
+          "id": "l1",
+          "parent": "lr1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Cabeza femoral"
+        },
+        {
+          "id": "lr2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":754,\"left\":\"m\",\"width\":340}",
+          "text": null
+        },
+        {
+          "id": "l2",
+          "parent": "lr2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Cuello femoral"
+        },
+        {
+          "id": "lr3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1008,\"left\":\"m\",\"width\":340}",
+          "text": null
+        },
+        {
+          "id": "l3",
+          "parent": "lr3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Diáfisis"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Lámina 02: BTL Magnetotherapy y sus aplicadores oficiales en fichas, con la cifra de 8 aplicadores.",
+      "background": "deep",
+      "lightFrom": "top-left",
+      "alt": "Lámina sobre azul profundo. Rótulo: \"Lámina 02 · BTL Magnetotherapy\". Titular: \"8 aplicadores para cualquier zona del cuerpo.\" Cuatro fichas blancas con fotos oficiales: \"Solenoides de 30 y 60 cm\", \"Aplicador de anillo\", \"Multidisco\" y \"Doble disco\". Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Lámina 02 · BTL Magnetotherapy"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r0",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "8 aplicadores para\ncualquier zona del cuerpo."
+        },
+        {
+          "id": "p1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":500,\"width\":430,\"height\":290,\"surface\":\"white\",\"padding\":20,\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "c1",
+          "parent": "p1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Solenoides de 30 y 60 cm"
+        },
+        {
+          "id": "i1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm\",\"left\":109,\"top\":512,\"width\":400,\"height\":200,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "p2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":556,\"top\":500,\"width\":430,\"height\":290,\"surface\":\"white\",\"padding\":20,\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "c2",
+          "parent": "p2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Aplicador de anillo"
+        },
+        {
+          "id": "i2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo\",\"left\":571,\"top\":512,\"width\":400,\"height\":200,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "p3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":822,\"width\":430,\"height\":290,\"surface\":\"white\",\"padding\":20,\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "c3",
+          "parent": "p3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Multidisco"
+        },
+        {
+          "id": "i3",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Multi-disc-applicator.jpg\",\"alt\":\"Aplicador multidisco con cinta\",\"left\":109,\"top\":834,\"width\":400,\"height\":200,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "p4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":556,\"top\":822,\"width\":430,\"height\":290,\"surface\":\"white\",\"padding\":20,\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "c4",
+          "parent": "p4",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Doble disco"
+        },
+        {
+          "id": "i4",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Double-disc-applicator.jpg\",\"alt\":\"Aplicador de doble disco\",\"left\":571,\"top\":834,\"width\":400,\"height\":200,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Lámina 03: ventajas para la clínica en tabla modular y CTA \"Solicita tu demo\".",
+      "background": "deep",
+      "lightFrom": "bottom-right",
+      "alt": "Lámina sobre azul profundo. Rótulo: \"Lámina 03 · Para tu clínica\". Titular: \"Lo que cambia en la consulta.\" Tabla de cuatro módulos: \"01 Hasta 4 canales en un solo equipo\", \"02 Protocolos por área anatómica\", \"03 FMF: el terapeuta no queda expuesto al campo magnético\", \"04 Pantalla táctil a color de 7″\". Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "e0",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\"}",
+          "text": "Lámina 03 · Para tu clínica"
+        },
+        {
+          "id": "rule0",
+          "parent": "r0",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r0",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Lo que cambia\nen la consulta."
+        },
+        {
+          "id": "g",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":510,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "grid",
+          "parent": "g",
+          "type": "ModuleGrid",
+          "props": "{\"columns\":2,\"open\":true}",
+          "text": null
+        },
+        {
+          "id": "m0",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "m0e",
+          "parent": "m0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "01"
+        },
+        {
+          "id": "m0b",
+          "parent": "m0",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Hasta 4 canales\nen un solo equipo"
+        },
+        {
+          "id": "m1",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "m1e",
+          "parent": "m1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "02"
+        },
+        {
+          "id": "m1b",
+          "parent": "m1",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Protocolos por\nárea anatómica"
+        },
+        {
+          "id": "m2",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "m2e",
+          "parent": "m2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "03"
+        },
+        {
+          "id": "m2b",
+          "parent": "m2",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "FMF: el terapeuta\nno queda expuesto\nal campo magnético"
+        },
+        {
+          "id": "m3",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\":24,\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "m3e",
+          "parent": "m3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "04"
+        },
+        {
+          "id": "m3b",
+          "parent": "m3",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Pantalla táctil\na color de 7″"
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"outline\",\"size\":60}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial de la Osteoporosis: cada zona del esqueleto pide un plan distinto. ¿Tu consulta tiene uno para cada una?\n\nBTL Magnetotherapy ofrece 8 aplicadores para tratar cualquier parte del cuerpo, del solenoide al multidisco, con hasta 4 canales, protocolos por área anatómica y pantalla táctil a color. Su tecnología FMF evita que el terapeuta quede expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y conoce el equipo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Cabeza femoral / Cuello femoral / Diáfisis (rótulos de la ilustración)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; rótulos anatómicos generales de una ilustración educativa (no atribuidos al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "8 aplicadores para cualquier zona del cuerpo",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Solenoides de 30 y 60 cm · Aplicador de anillo · Multidisco · Doble disco",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (doble disco, un solo disco, camilla con aplicador, anillos, solenoide grande y pequeño, sencillo, doble y multidisco)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Hasta 4 canales en un solo equipo",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "FMF: el terapeuta no queda expuesto al campo magnético",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pantalla táctil a color de 7″",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (pantalla táctil a color de 7´´)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "8 aplicadores para tratar cualquier parte del cuerpo, del solenoide al multidisco",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "pantalla táctil a color",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (pantalla táctil a color de 7´´)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Su tecnología FMF evita que el terapeuta quede expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (tecnología FMF que bloquea el campo magnético del lado del aplicador hacia el operador) y Preguntas frecuentes (el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "plano-tecnico"
+}

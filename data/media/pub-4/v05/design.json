@@ -1,0 +1,86 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "La frase lo dice todo: tipografía grande sobre blanco y las manos en un círculo suave, rodeado por un halo fino.",
+  "differentiation": "Distinta de la ronda anterior: la frase es el titular y la foto se reduce a un detalle circular; mucho espacio en blanco.",
+  "slides": [
+    {
+      "purpose": "La frase como protagonista tipográfica; las manos en un círculo suave con halo; la fecha en una línea discreta",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco con un círculo suave que muestra las manos de una profesional de la salud sosteniendo las de una paciente, rodeado por un halo azul. Texto: 19 de octubre. Ninguna mujer debería recorrer este camino sola. Día Internacional de la Lucha contra el Cáncer de Mama. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 780, \"cy\": 470, \"r\": 255, \"thickness\": 2, \"tone\": \"enterprise\", \"glow\": 0.2, \"opacity\": 0.7}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/Compassionate Hands in Care.png\", \"alt\": \"Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa\", \"left\": 540, \"top\": 230, \"width\": 480, \"height\": 480, \"objectPosition\": \"62% 70%\", \"fade\": [\"left\", \"right\", \"top\", \"bottom\"], \"fadeSize\": 110}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\", \"width\": 560}",
+          "text": null
+        },
+        {
+          "id": "d",
+          "parent": "r0",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de octubre"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 800, \"right\": \"m\", \"gap\": 30}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h1\"}",
+          "text": "Ninguna mujer debería recorrer\neste camino sola."
+        },
+        {
+          "id": "e",
+          "parent": "r",
+          "type": "Eyebrow",
+          "props": "{\"size\": 34, \"weight\": \"semibold\", \"tone\": \"accent\"}",
+          "text": "Día Internacional de la Lucha\ncontra el Cáncer de Mama"
+        }
+      ]
+    }
+  ],
+  "caption": "Ninguna mujer debería recorrer este camino sola. Este 19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama, honramos a cada paciente y a quienes la acompañan.\n\nGracias a las familias, a los amigos y a los profesionales de la salud que convierten un diagnóstico en un camino compartido.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

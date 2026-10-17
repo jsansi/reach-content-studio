@@ -1,0 +1,72 @@
+{
+  "direction": "B",
+  "direction_name": "Tecnología médica premium",
+  "concept": "Fiel al estilo de las conmemorativas de BTL: la foto se funde en el azul profundo y abajo el nombre del día, en grande, con la frase de superación debajo.",
+  "differentiation": "Imagen arriba y bloque de texto abajo sobre azul liso; jerarquía fecha → día → frase.",
+  "slides": [
+    {
+      "purpose": "Como las publicaciones conmemorativas anteriores: la foto arriba se funde en el azul y abajo manda el nombre del día con la frase debajo",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Fotografía de una profesional de la salud que sostiene las manos de una paciente con pañuelo rosa, fundida en un fondo azul profundo. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Con apoyo, cada paso es una victoria. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/Compassionate Hands in Care.png\", \"alt\": \"Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa\", \"left\": 250, \"top\": 110, \"width\": 830, \"blend\": \"normal\", \"fade\": [\"top\", \"left\", \"bottom\"], \"fadeSize\": 230}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"right\": \"m\", \"gap\": 24}",
+          "text": null
+        },
+        {
+          "id": "p",
+          "parent": "r",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de octubre"
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"semibold\", \"tone\": \"base\", \"as\": \"h1\"}",
+          "text": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama"
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"accent\"}",
+          "text": "Con apoyo, cada paso es una victoria."
+        }
+      ]
+    }
+  ],
+  "caption": "En el Día Internacional de la Lucha contra el Cáncer de Mama, este 19 de octubre, celebramos cada paso: con apoyo, cada paso es una victoria.\n\nNuestro reconocimiento a las mujeres que luchan y superan, y a los médicos, enfermeras y equipos de salud de El Salvador que las acompañan todos los días.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

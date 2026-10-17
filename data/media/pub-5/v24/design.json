@@ -1,0 +1,342 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "Una historia en forma de pregunta y respuesta: hoy el mundo mira los huesos, y tus pacientes llegan por la cadera, la columna o la rodilla: ¿con qué los recibes? Con un aplicador para cada zona (BTL Magnetotherapy). Y esto es lo que encuentra tu paciente. Objetivo: que la clínica pida la demo.",
+  "differentiation": "Tipografía grande en Light con mucho aire y un solo trazo de luz al pie de las tres diapositivas; la pregunta de la portada se responde literalmente en el titular de la segunda. Los aplicadores aparecen grandes en una franja blanca de lado a lado con su nombre; el cierre cambia a Enterprise Blue con una lista de iconos en filas. Sin escenarios, sin módulos ni cifras grandes.",
+  "slides": [
+    {
+      "purpose": "Homenaje y pregunta: la fecha en una línea discreta, \"Hoy el mundo mira los huesos\" y la pregunta que lleva a la consulta.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul profundo. Arriba: \"20 de octubre — Día Mundial de la Osteoporosis\". Titular: \"Hoy el mundo mira los huesos.\" Debajo: \"Tus pacientes llegan por la cadera, la columna o la rodilla. ¿Con qué los recibes?\" Abajo a la derecha, un círculo de hueso esponjoso poroso dibujado en línea celeste. Un trazo fino de luz recorre el pie. Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-100,1300],[700,1286],[1620,1304],[2500,1288],[3340,1306]],\"width\":2,\"tone\":\"sky\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "dl",
+          "parent": "r0",
+          "type": "DateLine",
+          "props": "{\"date\":\"20 de octubre\",\"occasion\":\"Día Mundial de la Osteoporosis\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":380,\"left\":\"m\",\"right\":\"m\",\"gap\":30}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "Hoy el mundo\nmira los huesos."
+        },
+        {
+          "id": "rule",
+          "parent": "r1",
+          "type": "Rule",
+          "props": "{\"orientation\":\"horizontal\",\"length\":120,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"m\"}",
+          "text": "Tus pacientes llegan por la cadera,\nla columna o la rodilla.\n¿Con qué los recibes?"
+        },
+        {
+          "id": "rd",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":760,\"top\":860,\"width\":230}",
+          "text": null
+        },
+        {
+          "id": "bd",
+          "parent": "rd",
+          "type": "BoneDensity",
+          "props": "{\"porous\":true,\"size\":220}",
+          "text": null
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Respuesta (continúa la pregunta de la portada): \"Con un aplicador para cada zona\", con tres aplicadores oficiales grandes y su nombre.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul profundo, continuación de la portada. \"BTL Magnetotherapy\". Titular: \"Con un aplicador para cada zona.\" Una franja blanca de lado a lado muestra las fotos oficiales del aplicador de anillo, los solenoides y el aplicador multidisco, con sus nombres. Abajo: \"Tres de sus 8 aplicadores para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo.\" Un trazo fino de luz recorre el pie. Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-1180,1300],[-380,1286],[540,1304],[1420,1288],[2260,1306]],\"width\":2,\"tone\":\"sky\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":10}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r1",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"semibold\"}",
+          "text": "BTL Magnetotherapy"
+        },
+        {
+          "id": "h",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Con un aplicador\npara cada zona."
+        },
+        {
+          "id": "band",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":0,\"top\":570,\"width\":1080,\"height\":420,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "i0",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg\",\"alt\":\"Aplicador de anillo de BTL Magnetotherapy\",\"left\":50,\"top\":600,\"width\":300,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "rc0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":50,\"top\":912,\"width\":300,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "c0",
+          "parent": "rc0",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Anillo"
+        },
+        {
+          "id": "i1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg\",\"alt\":\"Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy\",\"left\":390,\"top\":640,\"width\":320,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "rc1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":390,\"top\":912,\"width\":300,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "c1",
+          "parent": "rc1",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Solenoides"
+        },
+        {
+          "id": "i2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Multi-disc-applicator.jpg\",\"alt\":\"Aplicador multidisco de BTL Magnetotherapy\",\"left\":730,\"top\":680,\"width\":320,\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "rc2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":730,\"top\":912,\"width\":300,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "c2",
+          "parent": "rc2",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\"}",
+          "text": "Multidisco"
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1030,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Tres de sus 8 aplicadores para tratar cualquier\nparte del cuerpo, con hasta 4 canales en un solo equipo."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "El objetivo de la historia, del lado del paciente: lista con iconos y CTA \"Solicita tu demo\".",
+      "background": "enterprise",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo Enterprise Blue. Titular: \"Lo que encuentra tu paciente.\" Lista con iconos: \"Recostado en la camilla: con aplicadores como el anillo o el solenoide.\", \"Un protocolo para su zona: según el área anatómica a tratar.\" y \"Su ficha, en el equipo: base de datos de pacientes integrada.\" Abajo: \"Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.\" Un trazo fino de luz recorre el pie. Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-2260,1300],[-1460,1286],[-540,1304],[340,1288],[1180,1306]],\"width\":2,\"tone\":\"sky\",\"glow\":0.3}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":270,\"right\":\"m\",\"gap\":40}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Lo que encuentra\ntu paciente."
+        },
+        {
+          "id": "l",
+          "parent": "r",
+          "type": "IconList",
+          "props": "{\"layout\":\"rows\",\"iconSize\":84,\"items\":[{\"icon\":\"airline_seat_flat\",\"title\":\"Recostado en la camilla\",\"text\":\"Con aplicadores como el anillo o el solenoide.\"},{\"icon\":\"checklist\",\"title\":\"Un protocolo para su zona\",\"text\":\"Según el área anatómica a tratar.\"},{\"icon\":\"trending_up\",\"title\":\"Su ficha, en el equipo\",\"text\":\"Base de datos de pacientes integrada.\"}]}",
+          "text": null
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"split\",\"size\":72}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy, 20 de octubre, Día Mundial de la Osteoporosis, el mundo mira los huesos. Y tus pacientes llegan por la cadera, la columna o la rodilla: ¿con qué los recibes?\n\nCon un aplicador para cada zona: BTL Magnetotherapy tiene 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales en un solo equipo. Tu paciente se trata recostado, con un protocolo según su área anatómica y su ficha en el equipo.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Fisioterapia #Rehabilitación #Magnetoterapia #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_* (fotos oficiales de los aplicadores)"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre — Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1 y caption",
+      "source": "brief.md · Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Hoy el mundo mira los huesos. Tus pacientes llegan por la cadera, la columna o la rodilla.",
+      "location": "diapositiva 1 y caption",
+      "source": "brief.md · tema de la publicación (frase o ilustración general, no atribuida al producto)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Con un aplicador para cada zona. Tres de sus 8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Anillo · Solenoides · Multidisco",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\", \"Sencillo, doble y multidisco\") y fotos oficiales BTL-4000-5000_Magnet_PIC",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "con hasta 4 canales en un solo equipo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Recostado en la camilla, con aplicadores como el anillo o el solenoide.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Camilla con aplicador de magnetoterapia\") y fotos oficiales de la paciente recostada con el aplicador de anillo y de la camilla con solenoide",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Un protocolo para su zona, según el área anatómica a tratar.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Su ficha, en el equipo: base de datos de pacientes integrada.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "editorial-minimalista"
+}

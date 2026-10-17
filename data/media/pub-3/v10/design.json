@@ -1,0 +1,293 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "La pregunta de Jaime manda en una composición clara y aireada, con la fecha como numeral editorial; un hilo fino de luz recorre el pie de las tres diapositivas, la segunda presenta el logo, el aplicador y sus cabezales, y la tercera resume tres ventajas para la clínica con iconos antes de la demo.",
+  "differentiation": "Tipografía protagonista sobre fondos claros: el 360° como numeral gigante en la segunda, ventajas numeradas con filetes en la tercera. Las imágenes son acentos, no el centro. Mucho espacio negativo.",
+  "slides": [
+    {
+      "purpose": "Conmemorar y abrir la conversación con la pregunta como protagonista",
+      "background": "light",
+      "lightFrom": "bottom-left",
+      "alt": "Fotografía de un profesional sosteniendo un aplicador de BTL junto a la cadera de una paciente recostada, que se disuelve en el fondo claro. Texto: 18 de octubre, Día Mundial de la Menopausia. ¿Y si la salud íntima también tuviera espacio en tu consulta? Abrir la conversación es el primer paso.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-3/femme360.png\", \"alt\": \"Profesional sosteniendo un aplicador de BTL junto a la cadera de una paciente recostada\", \"left\": 380, \"top\": 120, \"width\": 760, \"fade\": [\"left\", \"bottom\"], \"fadeSize\": 220}",
+          "text": null
+        },
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-100, 1318], [700, 1296], [1620, 1314], [2500, 1294], [3340, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 700, \"right\": \"m\", \"gap\": 34}",
+          "text": null
+        },
+        {
+          "id": "dt",
+          "parent": "r",
+          "type": "Stack",
+          "props": "{\"direction\": \"row\", \"gap\": 26, \"crossAlign\": \"center\"}",
+          "text": null
+        },
+        {
+          "id": "dn",
+          "parent": "dt",
+          "type": "BigNumber",
+          "props": "{\"value\": \"18\", \"size\": 170, \"weight\": \"thin\", \"tone\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "dc",
+          "parent": "dt",
+          "type": "Stack",
+          "props": "{\"direction\": \"column\", \"gap\": 4}",
+          "text": null
+        },
+        {
+          "id": "dm",
+          "parent": "dc",
+          "type": "Eyebrow",
+          "props": "{\"size\": 44, \"weight\": \"semibold\", \"tone\": \"strong\"}",
+          "text": "de octubre"
+        },
+        {
+          "id": "do",
+          "parent": "dc",
+          "type": "Eyebrow",
+          "props": "{\"size\": 40, \"weight\": \"regular\", \"tone\": \"accent\"}",
+          "text": "Día Mundial de la Menopausia"
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"semibold\", \"as\": \"h1\"}",
+          "text": "¿Y si la salud íntima\ntambién tuviera espacio\nen tu consulta?"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{}",
+          "text": "Abrir la conversación es el primer paso"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar EMFEMME 360: logo, aplicador y cabezales, y qué hace la tecnología",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco con el logo de EMFEMME 360, el aplicador intravaginal y sus puntas. Texto: 360°. Hablemos de lo que puedes ofrecer. Radiofrecuencia no invasiva con calentamiento en 360°. Distribuye el calor de forma homogénea en el área vaginal, interna y externa. Desliza.",
+      "nodes": [
+        {
+          "id": "tips",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-3/Exion_360_PIC_Emfemme-360-Applicator-Tips_ENUS100.png\", \"alt\": \"Puntas (cabezales) del aplicador de EMFEMME 360\", \"left\": 690, \"top\": 420, \"width\": 400}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-3/Exion_PIC_Emfemme-360-Applicator_5325_ENUS100.png\", \"alt\": \"Aplicador intravaginal de EMFEMME 360\", \"left\": 470, \"top\": 210, \"width\": 560}",
+          "text": null
+        },
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-1180, 1318], [-380, 1296], [540, 1314], [1420, 1294], [2260, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 250, \"left\": \"m\", \"gap\": 18}",
+          "text": null
+        },
+        {
+          "id": "pl",
+          "parent": "r1",
+          "type": "ProductLogo",
+          "props": "{\"src\": \"data/uploads/pub-3/Exion_ICON_Oval_Emfemme-360_ENUS100.png\", \"alt\": \"EMFEMME 360\", \"width\": 380}",
+          "text": null
+        },
+        {
+          "id": "n",
+          "parent": "r1",
+          "type": "BigNumber",
+          "props": "{\"value\": \"360°\", \"size\": 200, \"weight\": \"thin\"}",
+          "text": null
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 770, \"right\": \"m\", \"gap\": 24}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r2",
+          "type": "Headline",
+          "props": "{\"size\": \"l\"}",
+          "text": "Hablemos de lo que\npuedes ofrecer."
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\": \"m\"}",
+          "text": "Radiofrecuencia no invasiva\ncon calentamiento en 360°."
+        },
+        {
+          "id": "b2",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\": \"m\", \"tone\": \"accent\"}",
+          "text": "Distribuye el calor de forma homogénea\nen el área vaginal, interna y externa."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Completar la historia: ventajas para el profesional y una demo",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro. Texto: Dale espacio en tu consulta. Amplía tu oferta: una nueva línea de servicio de salud íntima. Breve y sencillo: técnica fácil y temperatura visible en tiempo real, según BTL. Ambulatorio: sin anestesia, según el protocolo publicado. Solicita tu demo. Escríbenos DEMO por mensaje directo. BTL El Salvador.",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-2260, 1318], [-1460, 1296], [-540, 1314], [340, 1294], [1180, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 270, \"right\": \"m\", \"gap\": 40}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"xl\", \"as\": \"h2\"}",
+          "text": "Dale espacio\nen tu consulta."
+        },
+        {
+          "id": "l",
+          "parent": "r",
+          "type": "IconList",
+          "props": "{\"layout\": \"rows\", \"iconSize\": 84, \"items\": [{\"icon\": \"trending_up\", \"title\": \"Amplía tu oferta\", \"text\": \"Una nueva línea de servicio de salud íntima.\"}, {\"icon\": \"checklist\", \"title\": \"Breve y sencillo\", \"text\": \"Técnica fácil y temperatura visible en tiempo real, según BTL.\"}, {\"icon\": \"airline_seat_flat\", \"title\": \"Ambulatorio\", \"text\": \"Sin anestesia, según el protocolo publicado.\"}]}",
+          "text": null
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"right\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\": \"split\", \"size\": 72}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "La salud íntima también puede tener espacio en tu consulta. Este 18 de octubre, Día Mundial de la Menopausia, es un buen momento para abrir esa conversación con tus pacientes.\n\nEMFEMME 360 es radiofrecuencia no invasiva con calentamiento en 360°, para aplicación interna y externa, con la temperatura visible en tiempo real.\n\n¿Quieres conocer el equipo? Escríbenos \"DEMO\" por mensaje directo y agenda tu demo con BTL El Salvador.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #BTLElSalvador",
+  "sources": [
+    "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf (página oficial de BTL para proveedores)",
+    "knowledge/products/btl_products.json (emfemme-360, key_features)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)",
+    "knowledge/brand-guidelines/Social-Media-Guideline.pdf (v1.3, plantilla de carrusel)"
+  ],
+  "claims": [
+    {
+      "claim": "Radiofrecuencia no invasiva con calentamiento en 360°",
+      "location": "diapositiva 2 y caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 1 y 2",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Distribuye el calor de forma homogénea en el área vaginal, interna y externa",
+      "location": "diapositiva 2",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Cómo funciona EMFEMME 360? (distribuye de manera homogénea el calor de la radiofrecuencia en toda el área vaginal, interna o externa)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Amplía tu oferta: una nueva línea de servicio de salud íntima",
+      "location": "diapositiva 3",
+      "source": "Preferencias editoriales de la marca (nueva línea de servicio; sin promesa de ingresos ni pacientes)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Breve y sencillo: técnica fácil y temperatura visible en tiempo real, según BTL",
+      "location": "diapositiva 3",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Breve y sencillo; Control de tratamiento destacado; knowledge/products/btl_products.json · emfemme-360 · key_features 3",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Ambulatorio: sin anestesia, según el protocolo publicado",
+      "location": "diapositiva 3",
+      "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 5 (ambulatorio y sin anestesia en el protocolo publicado)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Aplicación interna y externa; temperatura visible en tiempo real",
+      "location": "caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Versatilidad y Control de tratamiento destacado; knowledge/products/btl_products.json · emfemme-360 · key_features 2 y 3",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "18 de octubre, Día Mundial de la Menopausia",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

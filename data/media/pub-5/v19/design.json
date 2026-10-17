@@ -1,0 +1,234 @@
+{
+  "direction": "A",
+  "direction_name": "Póster tipográfico",
+  "concept": "Tres carteles, tres capítulos: \"Hoy hablamos de huesos.\" → \"Ocho aplicadores. Todo el cuerpo.\" → \"Solicita tu demo.\" La palabra lo hace todo; un pequeño sello con un hueso luminoso firma la portada.",
+  "differentiation": "Titulares display en SemiBold que llenan el ancho, dos o tres palabras por línea, contra un único texto pequeño: contraste de escala extremo y mucho silencio. Fondos planos que cambian por capítulo (azul profundo, Enterprise Blue, azul profundo). Sin fotos, sin módulos ni listas; la ilustración se reduce a un sello. Es la propuesta más tipográfica de todas las rondas.",
+  "slides": [
+    {
+      "purpose": "Capítulo 1 · gancho: \"Hoy hablamos de huesos.\" con la fecha en el texto pequeño y el sello del hueso.",
+      "background": "deep",
+      "lightFrom": "bottom-left",
+      "alt": "Cartel sobre azul profundo. En letras enormes: \"Hoy hablamos de huesos.\" Abajo, en pequeño: \"20 de octubre · Día Mundial de la Osteoporosis. Y de lo que tu consulta puede sumar.\" Abajo a la derecha, un sello circular con un hueso dibujado en línea luminosa. Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Hoy\nhablamos\nde huesos."
+        },
+        {
+          "id": "rs",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":830,\"top\":960,\"width\":150}",
+          "text": null
+        },
+        {
+          "id": "seal",
+          "parent": "rs",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"3\\\" result=\\\"b\\\"/><feMerge><feMergeNode in=\\\"b\\\"/><feMergeNode in=\\\"SourceGraphic\\\"/></feMerge></filter><radialGradient id=\\\"h\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.35\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"98\\\" fill=\\\"url(#h)\\\"/><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"90\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-opacity=\\\"0.9\\\"/><circle cx=\\\"100\\\" cy=\\\"100\\\" r=\\\"78\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-opacity=\\\"0.6\\\"/><g transform=\\\"rotate(-35 100 100)\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.18\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\" filter=\\\"url(#g)\\\"><path d=\\\"M62 92 L138 92 C140 80 150 74 160 78 C170 82 172 94 164 100 C172 106 170 118 160 122 C150 126 140 120 138 108 L62 108 C60 120 50 126 40 122 C30 118 28 106 36 100 C28 94 30 82 40 78 C50 74 60 80 62 92 Z\\\"/></g>\",\"viewBox\":\"0 0 200 200\",\"width\":150,\"height\":150,\"title\":\"Sello circular con un hueso luminoso\"}",
+          "text": null
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":980,\"left\":\"m\",\"width\":700}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "20 de octubre · Día Mundial de la Osteoporosis.\nY de lo que tu consulta puede sumar."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Capítulo 2 · BTL Magnetotherapy: \"Ocho aplicadores. Todo el cuerpo.\"",
+      "background": "enterprise",
+      "lightFrom": "bottom-left",
+      "alt": "Cartel sobre Enterprise Blue. En letras enormes: \"Ocho aplicadores. Todo el cuerpo.\" Abajo, en pequeño: \"BTL Magnetotherapy: 8 aplicadores para tratar cualquier parte del cuerpo, con hasta 4 canales.\" Logo de BTL arriba a la derecha y \"Desliza\".",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r1",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"h2\"}",
+          "text": "Ocho\naplicadores.\nTodo el\ncuerpo."
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":980,\"left\":\"m\",\"width\":760}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "BTL Magnetotherapy: 8 aplicadores para tratar cualquier\nparte del cuerpo, con hasta 4 canales."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-left\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Capítulo 3 · ventajas en una línea pequeña y el cartel \"Solicita tu demo\".",
+      "background": "deep",
+      "lightFrom": "top-left",
+      "alt": "Cartel sobre azul profundo. Arriba, en pequeño: \"Protocolos por área anatómica y tecnología FMF: el terapeuta no queda expuesto al campo magnético.\" Abajo, en letras enormes: \"Solicita tu demo\", \"Escríbenos DEMO por mensaje directo\" y \"BTL El Salvador\". Logo de BTL arriba a la derecha.",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"left\":\"m\",\"width\":760}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Protocolos por área anatómica y tecnología FMF:\nel terapeuta no queda expuesto al campo magnético."
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "CtaBlock",
+          "props": "{\"variant\":\"stacked\",\"size\":110}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy hablamos de huesos: es el Día Mundial de la Osteoporosis. Y también de lo que tu consulta puede sumar.\n\nBTL Magnetotherapy: ocho aplicadores para tratar cualquier parte del cuerpo, hasta 4 canales en un solo equipo y protocolos por área anatómica. Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético.\n\nSolicita tu demo: escríbenos \"DEMO\" por mensaje directo. BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Magnetoterapia #Fisioterapia #Rehabilitación #BTLElSalvador",
+  "sources": [
+    "data/web/magnetotherapy.md",
+    "https://www.btlnet.es/magnetotherapy",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1",
+      "source": "brief.md · Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Sello con un hueso (ilustración, sin rótulos)",
+      "location": "diapositiva 1",
+      "source": "brief.md · tema de la publicación; ilustración o frase general, no atribuida al producto",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Ocho aplicadores. Todo el cuerpo. / 8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "con hasta 4 canales",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por área anatómica",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "tecnología FMF: el terapeuta no queda expuesto al campo magnético",
+      "location": "diapositiva 3",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "ocho aplicadores para tratar cualquier parte del cuerpo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "hasta 4 canales en un solo equipo",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "protocolos por área anatómica",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Con su tecnología FMF, el terapeuta no queda expuesto al campo magnético",
+      "location": "caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (tecnología FMF; el terapeuta no está expuesto al campo magnético)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "poster-tipografico"
+}

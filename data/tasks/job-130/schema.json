@@ -1,0 +1,1133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "concept": {
+      "type": "string",
+      "description": "Creative direction in 1–3 sentences (Spanish)"
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "Signature brand name used in copy"
+        },
+        "date": {
+          "type": "string"
+        },
+        "occasion": {
+          "type": "string"
+        },
+        "product": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "string"
+        },
+        "slides": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "commemoration"
+                  },
+                  "datePill": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "Hook headline; use \\n for line breaks"
+                  },
+                  "question": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "illustration": {
+                    "description": "\"spine\" draws the vertebral column (spine topics); \"bone\" draws a glowing porous femur (bone health, osteoporosis); \"none\" for any other topic",
+                    "type": "string",
+                    "enum": [
+                      "spine",
+                      "bone",
+                      "none"
+                    ]
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "product"
+                  },
+                  "images": {
+                    "description": "Several images placed on the 1080×720 photo box",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "src": {
+                          "type": "string",
+                          "description": "Repo-relative path of an available image asset"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "left": {
+                          "type": "number"
+                        },
+                        "top": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "label_x": {
+                          "type": "number"
+                        },
+                        "label_y": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "src",
+                        "alt",
+                        "label",
+                        "left",
+                        "top",
+                        "width",
+                        "label_x",
+                        "label_y"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "image": {
+                    "description": "Single photo path (used when images is absent)",
+                    "type": "string"
+                  },
+                  "imageAlt": {
+                    "type": "string"
+                  },
+                  "imageFrame": {
+                    "type": "object",
+                    "properties": {
+                      "width": {
+                        "type": "number"
+                      },
+                      "left": {
+                        "type": "number"
+                      },
+                      "top": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "width",
+                      "left",
+                      "top"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "productLogo": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "stat": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "eyebrow",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "benefits"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "benefits": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "icon": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "icon",
+                        "title",
+                        "text"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "cta": {
+                    "type": "string"
+                  },
+                  "signature": {
+                    "type": "string"
+                  },
+                  "ctaBand": {
+                    "description": "CTA band background: flat Enterprise Blue (default) or \"glow\", the lit gradient of the dark slides",
+                    "type": "string",
+                    "enum": [
+                      "flat",
+                      "glow"
+                    ]
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "benefits",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "hero"
+                  },
+                  "theme": {
+                    "description": "Background: dark (default) or light",
+                    "type": "string",
+                    "enum": [
+                      "dark",
+                      "light"
+                    ]
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "imageAlt": {
+                    "type": "string"
+                  },
+                  "imageFrame": {
+                    "type": "object",
+                    "properties": {
+                      "left": {
+                        "type": "number"
+                      },
+                      "top": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "description": "Crop the photo to this height (object-fit cover)",
+                        "type": "number"
+                      },
+                      "focusY": {
+                        "description": "With height: vertical part of the photo kept, 0 = top, 50 = centre, 100 = bottom",
+                        "type": "number"
+                      },
+                      "fadeTop": {
+                        "description": "Dissolve the top edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeBottom": {
+                        "description": "Dissolve the bottom edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeLeft": {
+                        "description": "Dissolve the left edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeRight": {
+                        "description": "Dissolve the right edge of the photo into the background over this many px",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "left",
+                      "top",
+                      "width"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Image position and width in px on the 1080×1350 canvas"
+                  },
+                  "extraImages": {
+                    "description": "Up to two more photos in the image area (same rules as image: above the headline)",
+                    "maxItems": 2,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "image": {
+                          "type": "string"
+                        },
+                        "imageAlt": {
+                          "type": "string"
+                        },
+                        "imageFrame": {
+                          "type": "object",
+                          "properties": {
+                            "left": {
+                              "type": "number"
+                            },
+                            "top": {
+                              "type": "number"
+                            },
+                            "width": {
+                              "type": "number"
+                            },
+                            "height": {
+                              "description": "Crop the photo to this height (object-fit cover)",
+                              "type": "number"
+                            },
+                            "focusY": {
+                              "description": "With height: vertical part of the photo kept, 0 = top, 50 = centre, 100 = bottom",
+                              "type": "number"
+                            },
+                            "fadeTop": {
+                              "description": "Dissolve the top edge of the photo into the background over this many px",
+                              "type": "number"
+                            },
+                            "fadeBottom": {
+                              "description": "Dissolve the bottom edge of the photo into the background over this many px",
+                              "type": "number"
+                            },
+                            "fadeLeft": {
+                              "description": "Dissolve the left edge of the photo into the background over this many px",
+                              "type": "number"
+                            },
+                            "fadeRight": {
+                              "description": "Dissolve the right edge of the photo into the background over this many px",
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "left",
+                            "top",
+                            "width"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Image position and width in px on the 1080×1350 canvas"
+                        }
+                      },
+                      "required": [
+                        "image",
+                        "imageFrame"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "datePill": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "description": "Supporting text; **phrases** in SemiBold + corporate accent colour only on explicit request",
+                    "type": "string"
+                  },
+                  "rule": {
+                    "description": "Thin accent rule between headline and body (on request)",
+                    "type": "boolean"
+                  },
+                  "pillColor": {
+                    "description": "Date pill background; \"pink\" (#ffb0d4) only on explicit request",
+                    "type": "string",
+                    "enum": [
+                      "brand",
+                      "pink"
+                    ]
+                  },
+                  "align": {
+                    "description": "Text alignment; \"center\" only when the user explicitly asks (brand manual p. 19 is left-aligned)",
+                    "type": "string",
+                    "enum": [
+                      "left",
+                      "center"
+                    ]
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "image",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "statement"
+                  },
+                  "theme": {
+                    "description": "Background: dark (default) or light",
+                    "type": "string",
+                    "enum": [
+                      "dark",
+                      "light"
+                    ]
+                  },
+                  "datePill": {
+                    "type": "string"
+                  },
+                  "kicker": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "Short statement; use \\n for line breaks"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "stats"
+                  },
+                  "theme": {
+                    "description": "Background: dark (default) or light",
+                    "type": "string",
+                    "enum": [
+                      "dark",
+                      "light"
+                    ]
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "image": {
+                          "description": "Official figure badge image; the figure is shown exactly as supplied",
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "alt": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "note": {
+                    "description": "Footnote with the source of the figures",
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "items",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "split"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "imageAlt": {
+                    "type": "string"
+                  },
+                  "imageFrame": {
+                    "type": "object",
+                    "properties": {
+                      "left": {
+                        "type": "number"
+                      },
+                      "top": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "description": "Crop the photo to this height (object-fit cover)",
+                        "type": "number"
+                      },
+                      "focusY": {
+                        "description": "With height: vertical part of the photo kept, 0 = top, 50 = centre, 100 = bottom",
+                        "type": "number"
+                      },
+                      "fadeTop": {
+                        "description": "Dissolve the top edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeBottom": {
+                        "description": "Dissolve the bottom edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeLeft": {
+                        "description": "Dissolve the left edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeRight": {
+                        "description": "Dissolve the right edge of the photo into the background over this many px",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "left",
+                      "top",
+                      "width"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Image position and width in px on the 1080×1350 canvas"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "eyebrow": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "points": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "image",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "steps"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "title"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "cta": {
+                    "type": "string"
+                  },
+                  "signature": {
+                    "type": "string"
+                  },
+                  "swipe": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "items",
+                  "alt"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "const": "cta"
+                  },
+                  "theme": {
+                    "type": "string",
+                    "enum": [
+                      "dark",
+                      "blue"
+                    ]
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "imageAlt": {
+                    "type": "string"
+                  },
+                  "imageFrame": {
+                    "type": "object",
+                    "properties": {
+                      "left": {
+                        "type": "number"
+                      },
+                      "top": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "description": "Crop the photo to this height (object-fit cover)",
+                        "type": "number"
+                      },
+                      "focusY": {
+                        "description": "With height: vertical part of the photo kept, 0 = top, 50 = centre, 100 = bottom",
+                        "type": "number"
+                      },
+                      "fadeTop": {
+                        "description": "Dissolve the top edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeBottom": {
+                        "description": "Dissolve the bottom edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeLeft": {
+                        "description": "Dissolve the left edge of the photo into the background over this many px",
+                        "type": "number"
+                      },
+                      "fadeRight": {
+                        "description": "Dissolve the right edge of the photo into the background over this many px",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "left",
+                      "top",
+                      "width"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Image position and width in px on the 1080×1350 canvas"
+                  },
+                  "productLogo": {
+                    "type": "string"
+                  },
+                  "productName": {
+                    "type": "string"
+                  },
+                  "kicker": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "action": {
+                    "type": "string"
+                  },
+                  "signature": {
+                    "type": "string"
+                  },
+                  "alt": {
+                    "type": "string"
+                  },
+                  "style": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "selector": {
+                          "type": "string",
+                          "description": "Class selector inside the slide, e.g. \".p-title\" or \".b-item h3\""
+                        },
+                        "property": {
+                          "type": "string",
+                          "description": "CSS property from the allowed list (font-size, width, top, …)"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "CSS value in px, %, em, or a plain number"
+                        }
+                      },
+                      "required": [
+                        "selector",
+                        "property",
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "layout",
+                  "title",
+                  "alt"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "caption": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claim": {
+                "type": "string",
+                "description": "Exact technical, medical or commercial statement used in the copy"
+              },
+              "location": {
+                "type": "string",
+                "description": "\"slide 2\", \"caption\", …"
+              },
+              "source": {
+                "type": "string",
+                "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+              },
+              "approval": {
+                "type": "string",
+                "enum": [
+                  "approved_claim",
+                  "manufacturer_description",
+                  "general_statement"
+                ]
+              }
+            },
+            "required": [
+              "claim",
+              "location",
+              "source",
+              "approval"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "brand",
+        "date",
+        "occasion",
+        "audience",
+        "slides",
+        "caption",
+        "sources"
+      ],
+      "additionalProperties": false
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string",
+            "description": "Exact technical, medical or commercial statement used in the copy"
+          },
+          "location": {
+            "type": "string",
+            "description": "\"slide 2\", \"caption\", …"
+          },
+          "source": {
+            "type": "string",
+            "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+          },
+          "approval": {
+            "type": "string",
+            "enum": [
+              "approved_claim",
+              "manufacturer_description",
+              "general_statement"
+            ]
+          }
+        },
+        "required": [
+          "claim",
+          "location",
+          "source",
+          "approval"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Missing data, unverifiable claims or compliance doubts (Spanish)"
+    },
+    "summary": {
+      "type": "string",
+      "description": "What changed and why (Spanish)"
+    },
+    "changed_slides": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "1-based numbers of slides whose content or style changed"
+    }
+  },
+  "required": [
+    "concept",
+    "content",
+    "claims",
+    "warnings",
+    "summary",
+    "changed_slides"
+  ],
+  "additionalProperties": false
+}

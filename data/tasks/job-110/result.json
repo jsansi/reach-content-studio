@@ -1,0 +1,226 @@
+{
+  "concept": "Mismo carrusel clásico, con la portada que gustó y ahora con el fémur poroso luminoso de la versión 25 junto al gancho.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-20",
+    "occasion": "Día Mundial de la Osteoporosis",
+    "product": "magnetotherapy",
+    "audience": "Fisioterapeutas, médicos rehabilitadores, clínicas y centros de rehabilitación",
+    "slides": [
+      {
+        "layout": "commemoration",
+        "datePill": "20 de octubre",
+        "eyebrow": "Día Mundial de\nla Osteoporosis",
+        "title": "Cuando el hueso\nse vuelve frágil,\nla consulta se\nvuelve clave.",
+        "question": "¿Qué puede ofrecer tu consulta\nde rehabilitación?",
+        "swipe": "Desliza para descubrirlo",
+        "illustration": "bone",
+        "alt": "Portada sobre fondo azul oscuro. Etiqueta: \"20 de octubre\". \"Día Mundial de la Osteoporosis\". Titular: \"Cuando el hueso se vuelve frágil, la consulta se vuelve clave.\" Pregunta: \"¿Qué puede ofrecer tu consulta de rehabilitación?\" A la derecha, un fémur dibujado en línea blanca con hueso esponjoso poroso que brilla en celeste. Logo de BTL arriba a la derecha y \"Desliza para descubrirlo\".",
+        "style": [
+          {
+            "selector": ".c-title",
+            "property": "font-size",
+            "value": "80px"
+          }
+        ]
+      },
+      {
+        "layout": "product",
+        "images": [
+          {
+            "src": "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Solenoid-30-and-60cm.jpg",
+            "alt": "Aplicadores solenoides de 30 y 60 cm de BTL Magnetotherapy",
+            "label": "Solenoides",
+            "left": 20,
+            "top": 300,
+            "width": 380,
+            "label_x": 20,
+            "label_y": 263
+          },
+          {
+            "src": "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Applicator-ring.jpg",
+            "alt": "Aplicador de anillo de BTL Magnetotherapy",
+            "label": "Anillo",
+            "left": 420,
+            "top": 300,
+            "width": 260,
+            "label_x": 20,
+            "label_y": 247
+          },
+          {
+            "src": "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_Multi-disc-applicator.jpg",
+            "alt": "Aplicador multidisco de BTL Magnetotherapy",
+            "label": "Multidisco",
+            "left": 700,
+            "top": 330,
+            "width": 360,
+            "label_x": 20,
+            "label_y": 212
+          }
+        ],
+        "eyebrow": "BTL Magnetotherapy",
+        "title": "Magnetoterapia para cada zona del cuerpo",
+        "stat": {
+          "value": "8",
+          "label": "aplicadores"
+        },
+        "body": "Para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo.",
+        "swipe": "Desliza: lo que gana tu clínica",
+        "alt": "Arriba, sobre un degradado claro, fotos oficiales de tres aplicadores de BTL Magnetotherapy rotulados: \"Solenoides\", \"Anillo\" y \"Multidisco\". Abajo, sobre azul oscuro: \"BTL Magnetotherapy\". Titular: \"Magnetoterapia para cada zona del cuerpo.\" Cifra: \"8 aplicadores\". Texto: \"Para tratar cualquier parte del cuerpo, con hasta 4 canales en un solo equipo.\" Logo de BTL arriba a la derecha y \"Desliza: lo que gana tu clínica\"."
+      },
+      {
+        "layout": "benefits",
+        "title": "Lo que gana tu clínica",
+        "benefits": [
+          {
+            "icon": "checklist",
+            "title": "Protocolos por zona",
+            "text": "Selección intuitiva según el área anatómica."
+          },
+          {
+            "icon": "trending_up",
+            "title": "Pacientes en orden",
+            "text": "Base de datos de pacientes en el mismo equipo."
+          },
+          {
+            "icon": "do_not_touch",
+            "title": "Terapeuta protegido",
+            "text": "Con FMF, no queda expuesto al campo magnético."
+          }
+        ],
+        "cta": "Solicita tu demo",
+        "signature": "BTL El Salvador",
+        "ctaBand": "glow",
+        "alt": "Fondo claro. Titular: \"Lo que gana tu clínica.\" Tres ventajas con iconos: \"Protocolos por zona: selección intuitiva según el área anatómica.\", \"Pacientes en orden: base de datos de pacientes en el mismo equipo.\" y \"Terapeuta protegido: con FMF, no queda expuesto al campo magnético.\" Franja inferior: \"Solicita tu demo. BTL El Salvador.\" Logo de BTL arriba a la derecha."
+      }
+    ],
+    "caption": "Cuando el hueso se vuelve frágil, la consulta se vuelve clave. Hoy, 20 de octubre, es el Día Mundial de la Osteoporosis: ¿qué puede ofrecer tu consulta de rehabilitación?\n\nBTL Magnetotherapy suma magnetoterapia para cada zona: 8 aplicadores para tratar cualquier parte del cuerpo y hasta 4 canales en un solo equipo. Para tu clínica: protocolos por área anatómica en pantalla táctil, base de datos de pacientes y tecnología FMF, para que el terapeuta no quede expuesto al campo magnético.\n\nEscríbenos \"DEMO\" por mensaje directo y solicita tu demo con BTL El Salvador.\n\n#DíaMundialDeLaOsteoporosis #Osteoporosis #Fisioterapia #Magnetoterapia #BTLElSalvador",
+    "sources": [
+      "data/web/magnetotherapy.md",
+      "https://www.btlnet.es/magnetotherapy",
+      "knowledge/brand-guidelines/btl-corporate-identity.md",
+      "data/uploads/pub-5/BTL-4000-5000_Magnet_PIC_* (fotos oficiales de los aplicadores)"
+    ],
+    "claims": [
+      {
+        "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+        "location": "diapositiva 1 y caption",
+        "source": "brief.md · Brief de la publicación (fecha y ocasión)",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "Cuando el hueso se vuelve frágil, la consulta se vuelve clave.",
+        "location": "diapositiva 1 y caption",
+        "source": "Gancho indicado por el usuario (job-106): frase general sobre la osteoporosis y el papel de la consulta, no atribuida al producto",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "Magnetoterapia para cada zona del cuerpo. 8 aplicadores para tratar cualquier parte del cuerpo",
+        "location": "diapositiva 2 y caption",
+        "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Solenoides · Anillo · Multidisco (fotos oficiales)",
+        "location": "diapositiva 2",
+        "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\", \"Sencillo, doble y multidisco\") y fotos oficiales BTL-4000-5000_Magnet_PIC",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "con hasta 4 canales en un solo equipo",
+        "location": "diapositiva 2 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Protocolos por zona: selección intuitiva según el área anatómica.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo; pantalla táctil a color de 7´´)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Pacientes en orden: base de datos de pacientes en el mismo equipo.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Terapeuta protegido: con FMF, no queda expuesto al campo magnético.",
+        "location": "diapositiva 3 y caption",
+        "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (FMF filtra el campo magnético del lado del operador; el terapeuta no está expuesto)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Fémur con hueso esponjoso poroso (ilustración del tema, sin rótulos)",
+        "location": "diapositiva 1",
+        "source": "Ilustración \"bone\" del renderizador, el mismo dibujo que BoneIllustration del sistema de diseño (v25); ilustra el tema, no un resultado del equipo",
+        "approval": "general_statement"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "20 de octubre · Día Mundial de la Osteoporosis",
+      "location": "diapositiva 1 y caption",
+      "source": "brief.md · Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Cuando el hueso se vuelve frágil, la consulta se vuelve clave.",
+      "location": "diapositiva 1 y caption",
+      "source": "Gancho indicado por el usuario (job-106): frase general sobre la osteoporosis y el papel de la consulta, no atribuida al producto",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Magnetoterapia para cada zona del cuerpo. 8 aplicadores para tratar cualquier parte del cuerpo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md · \"¡Siempre tienes una opción!\" (Elige entre 8 aplicadores de magnetoterapia diferentes que permiten el tratamiento de cualquier parte del cuerpo)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Solenoides · Anillo · Multidisco (fotos oficiales)",
+      "location": "diapositiva 2",
+      "source": "data/web/magnetotherapy.md · lista de aplicadores (\"Aplicador de anillos\", \"Aplicador de solenoide grande y pequeño\", \"Sencillo, doble y multidisco\") y fotos oficiales BTL-4000-5000_Magnet_PIC",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "con hasta 4 canales en un solo equipo",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (conexión de hasta 4 canales)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Protocolos por zona: selección intuitiva según el área anatómica.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (selección intuitiva de protocolos según las áreas anatómicas del cuerpo; pantalla táctil a color de 7´´)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pacientes en orden: base de datos de pacientes en el mismo equipo.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · \"Beneficios de la magnetoterapia\" (una base de datos de pacientes)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Terapeuta protegido: con FMF, no queda expuesto al campo magnético.",
+      "location": "diapositiva 3 y caption",
+      "source": "data/web/magnetotherapy.md · Preguntas frecuentes, \"¿Qué tiene de especial la máquina de magnetoterapia BTL?\" (FMF filtra el campo magnético del lado del operador; el terapeuta no está expuesto)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Fémur con hueso esponjoso poroso (ilustración del tema, sin rótulos)",
+      "location": "diapositiva 1",
+      "source": "Ilustración \"bone\" del renderizador, el mismo dibujo que BoneIllustration del sistema de diseño (v25); ilustra el tema, no un resultado del equipo",
+      "approval": "general_statement"
+    }
+  ],
+  "warnings": [
+    "La ilustración del hueso es nueva en los layouts clásicos (illustration: \"bone\"): es el mismo fémur poroso de la v25 (sistema de diseño). Ilustra el Día Mundial de la Osteoporosis; ningún texto dice que el equipo la trate.",
+    "Con el fémur a la derecha, la columna de texto de la portada mide 640 px y el titular baja a 80 px (antes 92) para que el gancho siga en cuatro líneas."
+  ],
+  "summary": "Portada: se añade la ilustración del hueso de la v25 (fémur con hueso esponjoso poroso, luminoso) a la derecha; el gancho, la fecha, la pregunta y el texto para deslizar no cambian (titular a 80 px para que quepa junto al hueso). Diapositiva 3: se acortan las descripciones de las tres ventajas a una línea para corregir el solape entre la lista y la franja \"Solicita tu demo\" que marcó la validación. La diapositiva 2 y el caption no cambian.",
+  "changed_slides": [
+    1,
+    3
+  ]
+}

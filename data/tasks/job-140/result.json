@@ -1,0 +1,563 @@
+{
+  "angle": "El ictus ocurre en segundos y volver a moverse lleva tiempo: BTL Robotics le da a la clínica terapia más intensa, guiada y medible en cada etapa, de la marcha a la mano.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "¿Cuántos pasos\ncaben en una\nsesión?",
+          "support": "Después de un ictus, la respuesta cambia la terapia. Desliza.",
+          "points": [],
+          "rationale": "Pregunta concreta que el profesional se hace a diario; la diapositiva 2 la responde con la robótica y la 3 con la cifra de R-GAIT.",
+          "claims": []
+        },
+        {
+          "headline": "Cada 2 segundos,\nun ictus.",
+          "support": "¿Tu centro está listo para lo que viene después?",
+          "points": [],
+          "rationale": "Dato de impacto que lleva la mirada del día al trabajo de la clínica: la rehabilitación posterior, que resuelven las diapositivas 2–4.",
+          "claims": [
+            {
+              "claim": "Cada 2 segundos, un ictus.",
+              "location": "diapositiva 1",
+              "source": "data/web/robotics.md · \"every 2 seconds someone suffers from a stroke\"",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Tus manos\nno pueden dar\n1.500 pasos.",
+          "support": "Pero tu centro sí puede ofrecerlos. Desliza.",
+          "points": [],
+          "rationale": "Tensión reconocible para el fisioterapeuta (el límite físico de la terapia manual) que la robótica resuelve en las diapositivas 2 y 3.",
+          "claims": [
+            {
+              "claim": "1.500 pasos (por sesión, con R-GAIT)",
+              "location": "diapositiva 1",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"up to 1,500 steps in under 30 minutes\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "El ictus llega\nen segundos.\nVolver a moverse\nlleva tiempo.",
+          "support": "¿Cómo aprovecha tu centro cada sesión?",
+          "points": [],
+          "rationale": "Contraste entre el instante del ictus y el largo camino de la rehabilitación; la diapositiva 2 presenta cómo hacer cada sesión más intensa.",
+          "claims": [
+            {
+              "claim": "La rehabilitación después de un ictus lleva tiempo.",
+              "location": "diapositiva 1",
+              "source": "Dato general sobre la fecha (sin atribución a un producto)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "¿Y si el\nprimer paso\nllegara antes?",
+          "support": "Lo que la robótica cambia en tu centro de rehabilitación.",
+          "points": [],
+          "rationale": "Abre la curiosidad sobre empezar a entrenar la marcha antes; R-GAIT (etapas tempranas) y R-FORCE (desde el primer día) lo resuelven.",
+          "claims": [
+            {
+              "claim": "Entrenar la marcha desde las primeras etapas de la recuperación.",
+              "location": "diapositiva 1",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery; data/web/r-force.md · Training Right After Injury",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un terapeuta.\nUn paciente.\n¿Cuántas\nrepeticiones?",
+          "support": "Desliza y descubre cómo multiplicarlas sin agotar a tu equipo.",
+          "points": [],
+          "rationale": "Plantea el cuello de botella de la consulta (repeticiones vs. desgaste del terapeuta); la diapositiva 2 lo resuelve con la robótica.",
+          "claims": [
+            {
+              "claim": "Más repeticiones sin agotar al equipo de terapia.",
+              "location": "diapositiva 1",
+              "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training … while reducing therapist workload\"",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Su meta no es\nla camilla.\nEs la calle.",
+          "support": "¿Tu centro entrena para el mundo real? Desliza.",
+          "points": [],
+          "rationale": "La mirada del paciente que llega a la clínica; conecta con BTL EXO y BTL WALK (cualquier terreno) en las diapositivas 3 y 4.",
+          "claims": []
+        },
+        {
+          "headline": "Caminar no es\nlo único que\nse vuelve\na aprender.",
+          "support": "Brazo, mano, pie: ¿tu centro cubre todo el recorrido?",
+          "points": [],
+          "rationale": "Amplía la idea del ictus más allá de la marcha y prepara el recorrido completo de las diapositivas 3 (marcha) y 4 (brazo, mano y pie).",
+          "claims": []
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "options": [
+        {
+          "headline": "La respuesta:\nBTL Robotics",
+          "support": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+          "points": [],
+          "rationale": "Resuelve cualquier gancho de forma directa y presenta la familia de equipos que desarrollan las diapositivas 3 y 4.",
+          "claims": [
+            {
+              "claim": "Neurorrehabilitación con entrenamiento más intenso, repetible y guiado con precisión.",
+              "location": "diapositiva 2",
+              "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training\"",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más repeticiones,\nmenos desgaste",
+          "support": "BTL Robotics guía el movimiento repetitivo y reduce la carga de trabajo de tu equipo de terapia.",
+          "points": [],
+          "rationale": "Pone primero la ventaja para el profesional; encaja sobre todo con los ganchos de pasos y repeticiones.",
+          "claims": [
+            {
+              "claim": "BTL Robotics guía el movimiento repetitivo y reduce la carga de trabajo de tu equipo de terapia.",
+              "location": "diapositiva 2",
+              "source": "data/web/robotics.md · \"precisely guided training … while reducing therapist workload\"",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Robótica para cada\netapa de la recuperación",
+          "support": "Seis equipos de BTL Robotics para la marcha, el brazo y la mano, desde la fase temprana hasta el día a día.",
+          "points": [],
+          "rationale": "Anuncia el recorrido completo (marcha en la 3; brazo, mano y pie en la 4) y responde a los ganchos de \"después\" y \"todo el recorrido\".",
+          "claims": [
+            {
+              "claim": "Seis equipos de BTL Robotics para la marcha, el brazo y la mano.",
+              "location": "diapositiva 2",
+              "source": "data/web/robotics.md · Select The Desired Solution (R-GAIT, BTL EXO, R-FORCE, BTL WALK, R-TOUCH, R-LEAD)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Desde la fase temprana hasta el día a día.",
+              "location": "diapositiva 2",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery; data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tu terapia,\ncon datos",
+          "support": "Con BTL Robotics, cada sesión deja registro para ajustar la terapia y seguir el progreso del paciente.",
+          "points": [],
+          "rationale": "Ángulo de control y medición para el profesional; se conecta con los sensores y reportes de las diapositivas 3 y 4.",
+          "claims": [
+            {
+              "claim": "Cada sesión deja registro para ajustar la terapia y seguir el progreso del paciente.",
+              "location": "diapositiva 2",
+              "source": "data/web/r-gait.md · Interactive Feedback-Driven Therapy; data/web/r-force.md · Real-Time Therapy Feedback; data/web/r-lead.md · Robotic Arm Rehabilitation; data/web/r-touch.md · Highest Level of Precision",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Entrenar la marcha,\npaso a paso",
+          "support": null,
+          "points": [
+            { "title": "R-GAIT", "text": "Hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas." },
+            { "title": "BTL EXO", "text": "Exoesqueleto para caminar en llano, terreno irregular y pendientes." },
+            { "title": "R-FORCE", "text": "Descarga hasta el 100 % del peso para entrenar desde el primer día." }
+          ],
+          "rationale": "Un equipo por línea, cada uno con su ventaja más clara; responde a los ganchos de pasos y del primer paso.",
+          "claims": [
+            {
+              "claim": "R-GAIT: hasta 1.500 pasos en menos de 30 minutos, desde etapas tempranas.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL EXO: exoesqueleto para caminar en llano, terreno irregular y pendientes.",
+              "location": "diapositiva 3",
+              "source": "data/web/exo.md · Designed For Any Environment",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-FORCE: descarga hasta el 100 % del peso para entrenar desde el primer día.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; Training Right After Injury",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tres formas de\nentrenar la marcha",
+          "support": "Menos tiempo preparando al paciente, más tiempo de terapia.",
+          "points": [
+            { "title": "R-GAIT", "text": "El paciente queda listo en menos de 5 minutos." },
+            { "title": "BTL EXO", "text": "Ajuste en pocos minutos, con entrada y salida fáciles." },
+            { "title": "R-FORCE", "text": "Cámara y sensores que muestran cada paso en tiempo real." }
+          ],
+          "rationale": "Ángulo operativo (tiempo de preparación) que interesa al dueño de la clínica; encaja con los ganchos de repeticiones y desgaste.",
+          "claims": [
+            {
+              "claim": "R-GAIT: el paciente queda listo en menos de 5 minutos.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery (\"patient setup that takes less than 5 minutes\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL EXO: ajuste en pocos minutos, con entrada y salida fáciles.",
+              "location": "diapositiva 3",
+              "source": "data/web/exo.md · Unmatched Setup Speed",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-FORCE: cámara y sensores que muestran cada paso en tiempo real.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Menos tiempo preparando al paciente, más tiempo de terapia.",
+              "location": "diapositiva 3",
+              "source": "data/web/exo.md · Unmatched Setup Speed (\"you spend less time preparing your patients and have more focus on the actual therapy\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "De la fase temprana\na la calle",
+          "support": "R-GAIT, R-FORCE y BTL EXO acompañan cada etapa del entrenamiento de la marcha.",
+          "points": [
+            { "title": "Primeros pasos", "text": "R-GAIT guía una marcha natural, incluso en las primeras etapas." },
+            { "title": "Sin el peso del cuerpo", "text": "R-FORCE ajusta la descarga de peso durante la terapia." },
+            { "title": "Como en la vida real", "text": "BTL EXO entrena en terreno irregular y pendientes, con estabilidad." }
+          ],
+          "rationale": "Ordena los equipos como un recorrido; responde al gancho de \"la camilla / la calle\" y al del primer paso.",
+          "claims": [
+            {
+              "claim": "R-GAIT guía una marcha natural, incluso en las primeras etapas.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery; The Most Natural Gait Pattern",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-FORCE ajusta la descarga de peso durante la terapia.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-force.md · The Only Zero Gravity Treadmill (\"Unweighting levels … can be adjusted during therapy\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL EXO entrena en terreno irregular y pendientes, con estabilidad.",
+              "location": "diapositiva 3",
+              "source": "data/web/exo.md · Designed For Any Environment",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Cada paso,\nbajo control",
+          "support": "Sensores, retroalimentación y apoyo para que tu equipo ajuste la terapia al momento.",
+          "points": [
+            { "title": "R-GAIT", "text": "16 sensores en los apoyos de los pies para ajustar al instante." },
+            { "title": "R-FORCE", "text": "Simetría de la marcha y reparto del peso en reportes completos." },
+            { "title": "BTL EXO", "text": "Apoyo de tronco a medida para una marcha más estable y controlada." }
+          ],
+          "rationale": "Ángulo de control y seguimiento para el profesional; encaja con \"Tu terapia, con datos\" y con los ganchos de repeticiones.",
+          "claims": [
+            {
+              "claim": "R-GAIT: 16 sensores en los apoyos de los pies para ajustar al instante.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-gait.md · Interactive Feedback-Driven Therapy (\"16 sensors embedded in the footplates\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-FORCE: simetría de la marcha y reparto del peso en reportes completos.",
+              "location": "diapositiva 3",
+              "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL EXO: apoyo de tronco a medida para una marcha más estable y controlada.",
+              "location": "diapositiva 3",
+              "source": "data/web/exo.md · Autonomous Natural Walking (\"custom-fit trunk support\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "options": [
+        {
+          "headline": "Brazo, mano\ny pie",
+          "support": "La rehabilitación sigue más allá de la marcha asistida.",
+          "points": [
+            { "title": "R-LEAD", "text": "Brazo con juegos interactivos y apoyo ajustable de hasta 5 kg." },
+            { "title": "R-TOUCH", "text": "Guante robótico para mano y brazo, con objetos reales o virtuales." },
+            { "title": "BTL WALK", "text": "Para el pie caído: biofeedback y estimulación al caminar." }
+          ],
+          "rationale": "Completa el recorrido con los tres equipos restantes; responde al gancho de \"Caminar no es lo único…\".",
+          "claims": [
+            {
+              "claim": "R-LEAD: brazo con juegos interactivos y apoyo ajustable de hasta 5 kg.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-lead.md · Robotic Arm Rehabilitation; Interactive Gaming Therapy",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-TOUCH: guante robótico para mano y brazo, con objetos reales o virtuales.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-touch.md · Soft Robotic Glove for Hand Rehabilitation",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL WALK: para el pie caído, biofeedback y estimulación al caminar.",
+              "location": "diapositiva 4",
+              "source": "data/web/walk.md · Unique EMG-Driven Biofeedback; Adaptive Gait Sensing & Precise Stimulation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Terapia que\nno aburre",
+          "support": "Juegos, objetos reales y dificultad que se adapta para mantener al paciente motivado.",
+          "points": [
+            { "title": "R-LEAD", "text": "Decenas de juegos con dificultad que se ajusta sola al progreso." },
+            { "title": "R-TOUCH", "text": "Entrenar con objetos reales o en entornos virtuales inmersivos." },
+            { "title": "BTL WALK", "text": "Práctica de la marcha en el día a día: calle, escaleras y pendientes." }
+          ],
+          "rationale": "Ángulo de motivación del paciente, que también es fidelización para la clínica; encaja con cualquier gancho.",
+          "claims": [
+            {
+              "claim": "R-LEAD: decenas de juegos con dificultad que se ajusta sola al progreso.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-lead.md · Interactive Gaming Therapy",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-TOUCH: entrenar con objetos reales o en entornos virtuales inmersivos.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-touch.md · Soft Robotic Glove for Hand Rehabilitation",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL WALK: práctica de la marcha en el día a día: calle, escaleras y pendientes.",
+              "location": "diapositiva 4",
+              "source": "data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation; Limitless Walking on Any Terrain",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Mantener al paciente motivado.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-lead.md · Interactive Gaming Therapy (\"motivate and keep patients fully engaged\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Del centro\na la vida diaria",
+          "support": "Equipos para entrenar los movimientos que el paciente usa cada día.",
+          "points": [
+            { "title": "R-TOUCH", "text": "Agarrar y soltar objetos reales, con la palma libre." },
+            { "title": "R-LEAD", "text": "Tareas de la vida real y entrenamiento cognitivo en una sola terapia." },
+            { "title": "BTL WALK", "text": "Acompaña la marcha fuera del centro, en cualquier terreno." }
+          ],
+          "rationale": "Conecta con el gancho de \"la calle\": la terapia apunta a la vida real del paciente.",
+          "claims": [
+            {
+              "claim": "R-TOUCH: agarrar y soltar objetos reales, con la palma libre.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-touch.md · Stroke patients (\"a soft robotic glove that leaves the palm free for grasping\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-LEAD: tareas de la vida real y entrenamiento cognitivo en una sola terapia.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-lead.md · Cognitive Training",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL WALK: acompaña la marcha fuera del centro, en cualquier terreno.",
+              "location": "diapositiva 4",
+              "source": "data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation; Limitless Walking on Any Terrain",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Cada terapia,\na la medida",
+          "support": "Parámetros ajustables para cada paciente y cada etapa.",
+          "points": [
+            { "title": "R-TOUCH", "text": "Rango, posición inicial y velocidad ajustables para cada dedo." },
+            { "title": "R-LEAD", "text": "Entrenamiento activo o asistido, con apoyo del brazo ajustable." },
+            { "title": "BTL WALK", "text": "Se adapta a la marcha y estimula los músculos que elevan el pie." }
+          ],
+          "rationale": "Ángulo de personalización de protocolos, una ventaja práctica clave para el profesional.",
+          "claims": [
+            {
+              "claim": "R-TOUCH: rango, posición inicial y velocidad ajustables para cada dedo.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-touch.md · Highest Level of Precision",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-LEAD: entrenamiento activo o asistido, con apoyo del brazo ajustable.",
+              "location": "diapositiva 4",
+              "source": "data/web/r-lead.md · Innovative Solution for Upper Limb Training; Robotic Arm Rehabilitation",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL WALK: se adapta a la marcha y estimula los músculos que elevan el pie.",
+              "location": "diapositiva 4",
+              "source": "data/web/walk.md · Limitless Walking on Any Terrain",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "options": [
+        {
+          "headline": "Lo que gana\ntu centro",
+          "support": null,
+          "points": [
+            { "title": "Nueva línea de servicio", "text": "Neurorrehabilitación robótica para pacientes tras un ictus." },
+            { "title": "Menos carga para tu equipo", "text": "Los equipos guían el movimiento repetitivo." },
+            { "title": "Progreso medible", "text": "Datos de cada sesión para seguir la evolución del paciente." }
+          ],
+          "rationale": "Cierre directo con tres ventajas de negocio y operación; encaja con cualquier gancho.",
+          "claims": [
+            {
+              "claim": "Neurorrehabilitación robótica para pacientes tras un ictus.",
+              "location": "diapositiva 5",
+              "source": "data/web/robotics.md · BTL ROBOTICS (\"stroke rehabilitation devices\"); btl_products.json · robotics.description",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Los equipos guían el movimiento repetitivo (menos carga para tu equipo).",
+              "location": "diapositiva 5",
+              "source": "data/web/robotics.md · \"reducing therapist workload\"",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Datos de cada sesión para seguir la evolución del paciente.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-gait.md · Interactive Feedback-Driven Therapy; data/web/r-force.md · Real-Time Therapy Feedback; data/web/r-lead.md · Robotic Arm Rehabilitation; data/web/r-touch.md · Highest Level of Precision",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un centro listo\npara el después",
+          "support": null,
+          "points": [
+            { "title": "Todo el recorrido", "text": "Marcha, brazo, mano y pie con equipos de una sola marca." },
+            { "title": "Sesiones más intensas", "text": "Más repeticiones guiadas en cada sesión." },
+            { "title": "Preparación rápida", "text": "Pacientes listos en pocos minutos, más tiempo de terapia." }
+          ],
+          "rationale": "Responde al gancho \"¿Tu centro está listo para lo que viene después?\" y resume las diapositivas 2–4.",
+          "claims": [
+            {
+              "claim": "Marcha, brazo, mano y pie con equipos de una sola marca.",
+              "location": "diapositiva 5",
+              "source": "data/web/robotics.md · Select The Desired Solution",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Más repeticiones guiadas en cada sesión.",
+              "location": "diapositiva 5",
+              "source": "data/web/robotics.md · \"more intensive, repeatable, and precisely guided training\"",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Pacientes listos en pocos minutos, más tiempo de terapia.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery (setup < 5 min); data/web/exo.md · Unmatched Setup Speed",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Diferénciate en\nneurorrehabilitación",
+          "support": null,
+          "points": [
+            { "title": "Para cada etapa", "text": "Desde los primeros pasos hasta la vida diaria." },
+            { "title": "Adultos y niños", "text": "R-GAIT, R-LEAD y R-TOUCH también para pacientes pediátricos." },
+            { "title": "Pacientes motivados", "text": "Juegos y retroalimentación en tiempo real en cada sesión." }
+          ],
+          "rationale": "Ángulo de diferenciación frente a otros centros; encaja con los ganchos de \"todo el recorrido\" y \"la calle\".",
+          "claims": [
+            {
+              "claim": "Desde los primeros pasos hasta la vida diaria.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-gait.md · Robotic Early Gait Recovery; data/web/walk.md · Adaptive Gait Sensing & Precise Stimulation",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "R-GAIT, R-LEAD y R-TOUCH también para pacientes pediátricos.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-gait.md · \"Designed for adult and pediatric patients\"; data/web/r-lead.md · Pediatric patients; data/web/r-touch.md · Suitable for Children and Adults",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Juegos y retroalimentación en tiempo real en cada sesión.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-lead.md · Interactive Gaming Therapy; data/web/r-gait.md · Interactive Feedback-Driven Therapy; data/web/r-force.md · Real-Time Therapy Feedback",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más terapia,\nmenos esfuerzo",
+          "support": null,
+          "points": [
+            { "title": "Manos libres", "text": "El equipo guía el movimiento; tú diriges la terapia." },
+            { "title": "Protocolos a la medida", "text": "Parámetros ajustables según el paciente y su etapa." },
+            { "title": "Seguimiento objetivo", "text": "Reportes de cada sesión para evaluar el progreso." }
+          ],
+          "rationale": "Responde a los ganchos de \"Tus manos no pueden dar 1.500 pasos\" y de repeticiones con la ventaja práctica para el terapeuta.",
+          "claims": [
+            {
+              "claim": "El equipo guía el movimiento; tú diriges la terapia.",
+              "location": "diapositiva 5",
+              "source": "data/web/robotics.md · \"precisely guided training … while reducing therapist workload\"",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Parámetros ajustables según el paciente y su etapa.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-force.md · The Only Zero Gravity Treadmill; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Interactive Gaming Therapy",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Reportes de cada sesión para evaluar el progreso.",
+              "location": "diapositiva 5",
+              "source": "data/web/r-force.md · Provides Real-Time Therapy Feedback; data/web/r-touch.md · Highest Level of Precision; data/web/r-lead.md · Robotic Arm Rehabilitation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Reparto de equipos fijo para que cualquier opción combine con las demás: diapositiva 2 = BTL Robotics (la familia), diapositiva 3 = marcha (R-GAIT, BTL EXO, R-FORCE), diapositiva 4 = brazo, mano y pie (R-LEAD, R-TOUCH, BTL WALK).",
+    "Todos los productos están pendientes de revisión y sin approved_claims: las descripciones vienen de las páginas oficiales de BTL (manufacturer_description), no son afirmaciones clínicas aprobadas.",
+    "No se usaron las cifras de resultados de las páginas oficiales (\"hasta 75 % mejores resultados\", \"1 de cada 10 pacientes\", mejoras en velocidad o distancia) ni los testimonios: serían promesas de resultado sin afirmación aprobada.",
+    "El dato \"cada 2 segundos, un ictus\" (gancho 2) procede de la página oficial de BTL Robotics; conviene confirmar la fuente original con BTL antes de publicarlo.",
+    "Ninguna opción dice que un equipo trata o cura el ictus: se habla de entrenamiento y rehabilitación, como en las fuentes oficiales.",
+    "Los nombres de producto se escriben sin ® ni ™ (R-GAIT, BTL EXO, R-FORCE, R-LEAD, R-TOUCH, BTL WALK)."
+  ]
+}

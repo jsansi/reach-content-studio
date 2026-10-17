@@ -1,0 +1,69 @@
+{
+  "brand": "BTL El Salvador",
+  "date": "2026-10-19",
+  "occasion": "Día Internacional de la Lucha contra el Cáncer de Mama",
+  "audience": "Médicos, clínicas, hospitales y profesionales de la salud en El Salvador",
+  "slides": [
+    {
+      "layout": "hero",
+      "theme": "dark",
+      "image": "data/uploads/pub-4/Compassionate Hands in Care.png",
+      "imageAlt": "Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa",
+      "imageFrame": {
+        "left": 0,
+        "top": 215,
+        "width": 1080
+      },
+      "datePill": "19 de octubre",
+      "title": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama",
+      "body": "Cuidar también es acompañar.",
+      "alt": "Degradado azul con el logo de BTL arriba al centro y la fotografía de una profesional de la salud que sostiene las manos de una paciente con pañuelo rosa, fundida en el fondo. Abajo, texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Cuidar también es acompañar.",
+      "style": [
+        {
+          "selector": ".logo",
+          "property": "left",
+          "value": "440px"
+        },
+        {
+          "selector": ".h-title",
+          "property": "font-size",
+          "value": "80px"
+        },
+        {
+          "selector": ".h-title",
+          "property": "line-height",
+          "value": "1.05"
+        },
+        {
+          "selector": ".h-title",
+          "property": "margin-top",
+          "value": "20px"
+        },
+        {
+          "selector": ".h-body",
+          "property": "margin-top",
+          "value": "22px"
+        },
+        {
+          "selector": ".h-text",
+          "property": "bottom",
+          "value": "100px"
+        }
+      ]
+    }
+  ],
+  "caption": "Este 19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama, nos sumamos a quienes acompañan cada diagnóstico, cada tratamiento y cada paso de la recuperación.\n\nDetrás de cada paciente hay un equipo que escucha, sostiene y cuida. A todas las mujeres que enfrentan esta enfermedad, a sus familias y a los profesionales de la salud que están a su lado: gracias por recordarnos que cuidar también es acompañar.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #Prevención #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "concept": "Misma idea (de la fecha a lo que la clínica puede ofrecer y un CTA claro), con otra secuencia visual: portada fotográfica con el aplicador en lugar de una portada tipográfica, una diapositiva oscura dominada por la cifra 360° y un cierre con titular y CTA más grandes.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-10-18",
+    "occasion": "Día Mundial de la Menopausia",
+    "product": "emfemme-360",
+    "audience": "Médicos estéticos, ginecólogos, clínicas y centros de medicina estética en El Salvador",
+    "slides": [
+      {
+        "layout": "product",
+        "image": "data/uploads/pub-2/Exion_PIC_Emfemme-360-Applicator-Energy_ENUS101.jpg",
+        "imageAlt": "Aplicador EMFEMME 360 emitiendo energía",
+        "imageFrame": {
+          "width": 980,
+          "left": 40,
+          "top": 190
+        },
+        "eyebrow": "18 de octubre · Día Mundial de la Menopausia",
+        "title": "Hablemos de salud íntima.",
+        "body": "Una conversación que también llega a tu consulta.",
+        "swipe": "Desliza para conocer más",
+        "style": [
+          {
+            "selector": ".p-title",
+            "property": "font-size",
+            "value": "84px"
+          },
+          {
+            "selector": ".p-title",
+            "property": "font-weight",
+            "value": "600"
+          },
+          {
+            "selector": ".p-title",
+            "property": "line-height",
+            "value": "1.05"
+          },
+          {
+            "selector": ".p-title",
+            "property": "max-width",
+            "value": "900px"
+          }
+        ],
+        "alt": "Fotografía del aplicador EMFEMME 360 con un halo de energía. Texto: 18 de octubre · Día Mundial de la Menopausia. Hablemos de salud íntima. Una conversación que también llega a tu consulta. Desliza para conocer más."
+      },
+      {
+        "layout": "commemoration",
+        "illustration": "none",
+        "eyebrow": "Aplicador EMFEMME 360",
+        "title": "360°",
+        "question": "Tratamiento interno y externo, en sesiones ambulatorias.",
+        "swipe": "Desliza y descubre sus ventajas",
+        "style": [
+          {
+            "selector": ".c-main",
+            "property": "top",
+            "value": "520px"
+          },
+          {
+            "selector": ".c-title",
+            "property": "font-size",
+            "value": "240px"
+          },
+          {
+            "selector": ".c-title",
+            "property": "letter-spacing",
+            "value": "-4px"
+          },
+          {
+            "selector": ".c-title",
+            "property": "margin-top",
+            "value": "24px"
+          }
+        ],
+        "alt": "Diapositiva azul oscuro con la cifra 360° en grande. Texto: Aplicador EMFEMME 360. 360°. Tratamiento interno y externo, en sesiones ambulatorias. Desliza y descubre sus ventajas."
+      },
+      {
+        "layout": "benefits",
+        "title": "Lo que suma a tu clínica",
+        "benefits": [
+          {
+            "icon": "trending_up",
+            "title": "Nueva línea de servicio",
+            "text": "Amplía tu oferta en salud íntima femenina."
+          },
+          {
+            "icon": "checklist",
+            "title": "Encaja en tu agenda",
+            "text": "Sesiones ambulatorias que caben en tu agenda."
+          },
+          {
+            "icon": "do_not_touch",
+            "title": "Sin cortes ni láser",
+            "text": "Radiofrecuencia no ablativa."
+          }
+        ],
+        "cta": "Solicita tu demo",
+        "signature": "BTL El Salvador",
+        "style": [
+          {
+            "selector": ".b-title",
+            "property": "font-size",
+            "value": "76px"
+          },
+          {
+            "selector": ".b-title",
+            "property": "top",
+            "value": "250px"
+          },
+          {
+            "selector": ".b-list",
+            "property": "top",
+            "value": "470px"
+          },
+          {
+            "selector": ".b-cta",
+            "property": "height",
+            "value": "290px"
+          },
+          {
+            "selector": ".b-cta-text",
+            "property": "font-size",
+            "value": "76px"
+          },
+          {
+            "selector": ".b-cta-text",
+            "property": "font-weight",
+            "value": "600"
+          }
+        ],
+        "alt": "Tres ventajas de EMFEMME 360 para tu clínica: nueva línea de servicio, encaja en tu agenda y sin cortes ni láser. Solicita tu demo con BTL El Salvador."
+      }
+    ],
+    "caption": "Este 18 de octubre, Día Mundial de la Menopausia, hablemos de una conversación que merece espacio en la consulta: la salud íntima femenina.\n\nEMFEMME 360 es un tratamiento de radiofrecuencia no ablativa, sin cortes ni láser, con aplicador de 360° para la zona interna y externa, que se realiza de forma ambulatoria. Una nueva línea de servicio para tu clínica.\n\n¿Quieres incorporarlo en tu clínica en El Salvador? Escríbenos \"DEMO\" por mensaje directo y agendamos tu demostración.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #ElSalvador",
+    "sources": [
+      "Registro de producto emfemme-360 en REACH Content Studio, creado por el usuario (pendiente de revisión; key_features 1, 2, 5 y 6)",
+      "data/uploads/pub-2 (imágenes oficiales adjuntas por el usuario)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Día Mundial de la Menopausia, 18 de octubre",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y tema)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "360° (tratamiento interno y externo)",
+      "location": "diapositiva 2",
+      "source": "Registro emfemme-360 · key_features 2 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Aplicador de 360°, interno y externo",
+      "location": "diapositiva 2 y caption",
+      "source": "Registro emfemme-360 · key_features 2 (introducido por el usuario, pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tratamiento ambulatorio / sesiones ambulatorias",
+      "location": "diapositivas 2 y 3, caption",
+      "source": "Registro emfemme-360 · key_features 5 (protocolo publicado; pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Puntas de un solo uso",
+      "location": "diapositiva 2",
+      "source": "Registro emfemme-360 · key_features 6 (pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Radiofrecuencia no ablativa, sin cortes ni láser",
+      "location": "diapositiva 3 y caption",
+      "source": "Registro emfemme-360 · key_features 1 y description (pendiente de revisión)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Nueva línea de servicio para la clínica",
+      "location": "diapositiva 3 y caption",
+      "source": "Ventaja comercial general; no atribuye resultados al equipo",
+      "approval": "general_statement"
+    }
+  ],
+  "warnings": [
+    "La variedad gráfica está limitada por los 3 layouts disponibles (portada oscura, producto y ventajas), cada uno con fondo fijo. Para propuestas realmente nuevas (por ejemplo, foto a sangre completa, layout dividido o tarjeta de cifra) hay que añadir layouts al renderizador; es un cambio de desarrollo, no de contenido.",
+    "EMFEMME 360 sigue pendiente de revisión y su URL de referencia es un blog de terceros; confirma las características con documentación oficial de BTL.",
+    "Siguen sin usarse las imágenes con cifras (123 %, 32 %, 82 %), la mención \"FDA-cleared\" y los resultados del estudio: no hay afirmaciones aprobadas.",
+    "Las imágenes se llaman \"Exion_…\"; el copy no menciona BTL EXION hasta que confirmes la relación."
+  ],
+  "summary": "Se rediseñaron las tres diapositivas sin cambiar el mensaje: (1) la portada pasa a ser fotográfica, con el aplicador EMFEMME 360 y un titular grande en negrita; (2) la diapositiva de producto se convierte en una pieza tipográfica oscura con \"360°\" a 240 px; (3) el cierre tiene un titular más grande y una franja de CTA más alta con \"Solicita tu demo\" en negrita. El caption no cambia; se quitó la mención a la anestesia para no recargar la diapositiva 3.",
+  "changed_slides": [
+    1,
+    2,
+    3
+  ]
+}

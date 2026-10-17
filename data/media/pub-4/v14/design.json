@@ -1,0 +1,93 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "Solo tipografía: el nombre del día en grande sobre el degradado azul, la frase debajo y un halo de luz que asoma por la esquina como único gráfico.",
+  "differentiation": "Sin fotografía: la más minimalista; el halo aporta luz sin distraer.",
+  "slides": [
+    {
+      "purpose": "Solo tipografía sobre el degradado azul: el día homenajeado en grande, la frase y un halo de luz como único gráfico",
+      "background": "blue",
+      "lightFrom": "bottom-left",
+      "alt": "Degradado azul con un halo de luz que asoma por la esquina inferior derecha. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Tu fuerza nos inspira. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 960, \"cy\": 1180, \"r\": 360, \"thickness\": 3, \"tone\": \"white\", \"glow\": 0.5, \"opacity\": 0.8}",
+          "text": null
+        },
+        {
+          "id": "halo2",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\": 960, \"cy\": 1180, \"r\": 450, \"thickness\": 1, \"tone\": \"sky\", \"glow\": 0, \"opacity\": 0.5}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "p",
+          "parent": "r0",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de octubre"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 380, \"right\": \"m\", \"gap\": 34}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"xl\", \"weight\": \"semibold\", \"tone\": \"base\", \"as\": \"h1\"}",
+          "text": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama"
+        },
+        {
+          "id": "rule",
+          "parent": "r",
+          "type": "Rule",
+          "props": "{\"length\": 96, \"thickness\": 3, \"emphasis\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"accent\"}",
+          "text": "Tu fuerza nos inspira."
+        }
+      ]
+    }
+  ],
+  "caption": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama. A cada mujer que enfrenta esta enfermedad: tu fuerza nos inspira.\n\nHoy reconocemos su valentía y el apoyo de las familias, los amigos y los profesionales de la salud que caminan a su lado en cada etapa.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imágenes y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "BTL",
+  "products": [
+    {
+      "id": "spinal-decompression",
+      "name": "BTL Spinal Decompression",
+      "category": "Robotic spinal decompression",
+      "url": "https://www.btlnet.es/spinal-decompression",
+      "audience": ["clinics", "physiotherapists"],
+      "indications": [
+        "Disc herniation",
+        "Chronic low back pain",
+        "Radiating pain (sciatica, radiculopathy)",
+        "Back pain in surgical candidates or patients not helped by medication or epidural steroid injections"
+      ],
+      "key_features": [
+        "Over 100 treatment positions",
+        "Robotic forces with hand-like precision",
+        "Hands-free therapy for the whole back"
+      ],
+      "treatment_protocol": "Around 10 sessions, 1-2 times per week, individualized",
+      "assets_path": "public/assets/products/spinal-decompression",
+      "documentation": "knowledge/products/spinal-decompression.pdf"
+    }
+  ]
+}

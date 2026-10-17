@@ -1,0 +1,121 @@
+{
+  "direction": "C",
+  "direction_name": "Científica y educativa",
+  "concept": "Una lectura ordenada: la foto arriba y, sobre una banda de luz, la fecha y el nombre del día en dos módulos con filete, y la frase debajo.",
+  "differentiation": "Estructura modular con filetes y banda de luz; la información se lee por bloques.",
+  "slides": [
+    {
+      "purpose": "Homenaje ordenado: la foto arriba y, sobre una banda de luz, la fecha y el día en módulos con la frase",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro con la fotografía de una profesional de la salud que sostiene las manos de una paciente con pañuelo rosa y, debajo, una banda de luz celeste. Texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Prevenir, acompañar y cuidar: tarea de todos. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/Compassionate Hands in Care.png\", \"alt\": \"Una profesional de la salud sostiene las manos de una paciente con pañuelo rosa\", \"left\": 0, \"top\": 250, \"width\": 1080, \"height\": 560, \"objectPosition\": \"50% 45%\", \"fade\": [\"top\", \"bottom\"], \"fadeSize\": 140}",
+          "text": null
+        },
+        {
+          "id": "band",
+          "parent": null,
+          "type": "LightBand",
+          "props": "{\"left\": -60, \"top\": 800, \"width\": 1200, \"height\": 420, \"from\": \"left\", \"fade\": [\"top\", \"bottom\"]}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "e",
+          "parent": "r0",
+          "type": "Eyebrow",
+          "props": "{\"size\": 36, \"weight\": \"semibold\", \"tone\": \"accent\"}",
+          "text": "Fecha conmemorativa"
+        },
+        {
+          "id": "g",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 850, \"right\": \"m\", \"tone\": \"light\", \"gap\": 24}",
+          "text": null
+        },
+        {
+          "id": "grid",
+          "parent": "g",
+          "type": "ModuleGrid",
+          "props": "{\"columns\": \"300px 1fr\", \"open\": true}",
+          "text": null
+        },
+        {
+          "id": "m1",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\": 26, \"gap\": 6}",
+          "text": null
+        },
+        {
+          "id": "m1n",
+          "parent": "m1",
+          "type": "BigNumber",
+          "props": "{\"value\": \"19\", \"size\": 130, \"weight\": \"thin\", \"tone\": \"strong\"}",
+          "text": null
+        },
+        {
+          "id": "m1t",
+          "parent": "m1",
+          "type": "Body",
+          "props": "{\"size\": \"m\", \"weight\": \"semibold\", \"tone\": \"strong\"}",
+          "text": "de octubre"
+        },
+        {
+          "id": "m2",
+          "parent": "grid",
+          "type": "Module",
+          "props": "{\"padding\": 26, \"gap\": 10, \"align\": \"center\"}",
+          "text": null
+        },
+        {
+          "id": "m2h",
+          "parent": "m2",
+          "type": "Headline",
+          "props": "{\"size\": \"s\", \"weight\": \"semibold\", \"tone\": \"strong\", \"as\": \"h1\"}",
+          "text": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama"
+        },
+        {
+          "id": "b",
+          "parent": "g",
+          "type": "Body",
+          "props": "{\"size\": \"m\", \"tone\": \"base\"}",
+          "text": "Prevenir, acompañar y cuidar: tarea de todos."
+        }
+      ]
+    }
+  ],
+  "caption": "19 de octubre: Día Internacional de la Lucha contra el Cáncer de Mama. Una fecha para recordar que la prevención, el acompañamiento y el cuidado son tarea de todos.\n\nHoy reconocemos a las pacientes, a sus familias y a los profesionales de la salud que convierten ese compromiso en trabajo diario.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imagen y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

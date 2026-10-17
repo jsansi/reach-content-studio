@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "angle": {
+      "type": "string",
+      "description": "The angle chosen for the whole carousel (Spanish, one line)"
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slide": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991,
+            "description": "1-based slide number"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "headline": {
+                  "type": "string",
+                  "description": "Main text of the slide; \"\\n\" for line breaks"
+                },
+                "support": {
+                  "description": "Supporting line (question, subtitle or body), or null",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "points": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "title",
+                      "text"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "description": "Advantages {title, text}; empty when the slide has none"
+                },
+                "rationale": {
+                  "type": "string",
+                  "description": "Why it works and how it connects with the other slides (Spanish, one line)"
+                },
+                "claims": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "claim": {
+                        "type": "string",
+                        "description": "Exact technical, medical or commercial statement used in the copy"
+                      },
+                      "location": {
+                        "type": "string",
+                        "description": "\"slide 2\", \"caption\", …"
+                      },
+                      "source": {
+                        "type": "string",
+                        "description": "File and section, e.g. \"spinal-decompression.pdf · [posiciones]\""
+                      },
+                      "approval": {
+                        "type": "string",
+                        "enum": [
+                          "approved_claim",
+                          "manufacturer_description",
+                          "general_statement"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "claim",
+                      "location",
+                      "source",
+                      "approval"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "description": "Every product or medical statement in this option, with its source"
+                }
+              },
+              "required": [
+                "headline",
+                "support",
+                "points",
+                "rationale",
+                "claims"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "slide",
+          "options"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Options for each requested slide"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "angle",
+    "slides",
+    "warnings"
+  ],
+  "additionalProperties": false
+}

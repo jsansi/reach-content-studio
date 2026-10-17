@@ -1,0 +1,284 @@
+{
+  "direction": "A",
+  "direction_name": "Editorial minimalista",
+  "concept": "El Día Mundial de la Menopausia abre la portada con una etiqueta de fecha clara y la pregunta la cierra; la segunda diapositiva despierta el interés con el aplicador y sus ondas y explica qué hace y qué obtiene la paciente; la tercera seduce a la clínica con tres ventajas y una sola llamada. Una tipografía y una paleta en todo el carrusel, y un hilo fino de luz al pie.",
+  "differentiation": "Tipografía protagonista sobre fondos claros: el gancho domina la portada, la segunda muestra dos vistas oficiales del equipo y la tercera resume tres ventajas con iconos. Las imágenes acompañan; mucho espacio negativo.",
+  "slides": [
+    {
+      "purpose": "Conmemorar: la fecha abre la diapositiva en grande; la foto acompaña y la pregunta cierra",
+      "background": "light",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo claro. Arriba: 18 de octubre, Día Mundial de la Menopausia. En el centro, fotografía de un profesional sosteniendo un aplicador de BTL junto a la cadera de una paciente recostada, que se disuelve en el fondo. Abajo: ¿Y si la salud íntima también tuviera espacio en tu consulta? Desliza para descubrirlo.",
+      "nodes": [
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-3/femme360.png\", \"alt\": \"Profesional sosteniendo un aplicador de BTL junto a la cadera de una paciente recostada\", \"left\": 330, \"top\": 270, \"width\": 760, \"fade\": [\"left\", \"bottom\"], \"fadeSize\": 260}",
+          "text": null
+        },
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-100, 1318], [700, 1296], [1620, 1314], [2500, 1294], [3340, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\", \"gap\": 14}",
+          "text": null
+        },
+        {
+          "id": "dp",
+          "parent": "r0",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "18 de octubre"
+        },
+        {
+          "id": "do",
+          "parent": "r0",
+          "type": "Headline",
+          "props": "{\"size\": \"s\", \"weight\": \"semibold\", \"tone\": \"strong\", \"as\": \"p\"}",
+          "text": "Día Mundial\nde la Menopausia"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 890, \"right\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h1\"}",
+          "text": "¿Y si la salud íntima\ntambién tuviera espacio\nen tu consulta?"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{}",
+          "text": "Desliza para descubrirlo"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentar EMFEMME 360 con el aplicador como protagonista: una nueva etapa, el bienestar de la paciente y una alternativa no invasiva para la laxitud vaginal.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro con el logo de EMFEMME 360 y el aplicador con ondas de energía alrededor de la punta. Titular: \"Una nueva etapa. Su bienestar, siempre.\" Texto: \"Una alternativa sin cirugía para abordar la laxitud vaginal, con el bienestar de tu paciente en el centro.\" Desliza, aún hay más.",
+      "nodes": [
+        {
+          "id": "app",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-3/Exion_PIC_Emfemme-360-Applicator-Energy_ENUS101.jpg\", \"alt\": \"Aplicador de EMFEMME 360 con ondas de energía alrededor de la punta\", \"left\": 100, \"top\": 230, \"width\": 880}",
+          "text": null
+        },
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-1180, 1318], [-380, 1296], [540, 1314], [1420, 1294], [2260, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "pl",
+          "parent": "r1",
+          "type": "ProductLogo",
+          "props": "{\"src\": \"data/uploads/pub-3/Exion_ICON_Oval_Emfemme-360_ENUS100.png\", \"alt\": \"EMFEMME 360\", \"width\": 340}",
+          "text": null
+        },
+        {
+          "id": "r2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 760, \"right\": \"m\", \"gap\": 40}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r2",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h2\"}",
+          "text": "Una nueva etapa.\nSu bienestar, siempre."
+        },
+        {
+          "id": "p1",
+          "parent": "r2",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":18,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "p1r",
+          "parent": "p1",
+          "type": "Rule",
+          "props": "{\"length\":64,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"base\"}",
+          "text": "Una alternativa sin cirugía para abordar la laxitud\nvaginal, con el bienestar de tu paciente en el centro."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{}",
+          "text": "Desliza, aún hay más"
+        }
+      ]
+    },
+    {
+      "purpose": "Completar la historia: ventajas para el profesional y una demo",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro. Texto: Más para ofrecer, sin complicarte. Amplía tu oferta: suma una nueva línea de servicio de salud íntima. Breve y sencillo: técnica fácil, con la temperatura en tiempo real. Ambulatorio: se realiza sin anestesia, en la misma consulta. Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "line",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\": [[-2260, 1318], [-1460, 1296], [-540, 1314], [340, 1294], [1180, 1316]], \"width\": 2, \"tone\": \"enterprise\", \"glow\": 0}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 270, \"right\": \"m\", \"gap\": 40}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"light\", \"tone\": \"strong\", \"as\": \"h2\"}",
+          "text": "Más para ofrecer,\nsin complicarte."
+        },
+        {
+          "id": "l",
+          "parent": "r",
+          "type": "IconList",
+          "props": "{\"layout\": \"rows\", \"iconSize\": 84, \"items\": [{\"icon\": \"trending_up\", \"title\": \"Amplía tu oferta\", \"text\": \"Suma una nueva línea de servicio de salud íntima.\"}, {\"icon\": \"checklist\", \"title\": \"Breve y sencillo\", \"text\": \"Técnica fácil, con la temperatura en tiempo real.\"}, {\"icon\": \"airline_seat_flat\", \"title\": \"Ambulatorio\", \"text\": \"Se realiza sin anestesia, en la misma consulta.\"}]}",
+          "text": null
+        },
+        {
+          "id": "c",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": "c",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"semibold\", \"tone\": \"strong\", \"as\": \"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "La salud íntima también puede tener espacio en tu consulta. Este 18 de octubre, Día Mundial de la Menopausia, es un buen momento para abrir esa conversación con tus pacientes.\n\nEMFEMME 360 está diseñado para apoyar el tratamiento de la laxitud vaginal y la disfunción sexual de manera no invasiva, con calor por radiofrecuencia en la zona íntima, por dentro y por fuera.\n\n¿Quieres conocer el equipo? Escríbenos \"DEMO\" por mensaje directo y agenda tu demo con BTL El Salvador.\n\n#DíaMundialDeLaMenopausia #SaludÍntima #EMFEMME360 #MedicinaEstética #BTLElSalvador",
+  "sources": [
+    "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf (página oficial de BTL para proveedores)",
+    "knowledge/products/btl_products.json (emfemme-360, key_features)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)",
+    "knowledge/brand-guidelines/Social-Media-Guideline.pdf (v1.3, plantilla de carrusel)"
+  ],
+  "claims": [
+    {
+      "claim": "Una alternativa sin cirugía para abordar la laxitud vaginal",
+      "location": "diapositiva 2",
+      "source": "Registro del catálogo de EMFEMME 360 · description (\"Unlike lasers or surgery…\"); data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360? (\"procedimiento de radiofrecuencia no invasivo para el tratamiento de la laxitud vaginal y la disfunción sexual\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Una nueva etapa. Su bienestar, siempre. / con el bienestar de tu paciente en el centro",
+      "location": "diapositiva 2",
+      "source": "Titular de la marca indicado por el usuario; frase general sobre la etapa de la menopausia y el enfoque de la consulta, sin resultado clínico atribuido al equipo",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Diseñado para apoyar el tratamiento de la laxitud vaginal y la disfunción sexual de manera no invasiva",
+      "location": "caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Qué es EMFEMME 360? (\"procedimiento de radiofrecuencia no invasivo para el tratamiento de la laxitud vaginal y la disfunción sexual\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Lleva calor por radiofrecuencia a la zona íntima, por dentro y por fuera",
+      "location": "caption",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · ¿Cómo funciona EMFEMME 360?; knowledge/products/btl_products.json · emfemme-360 · key_features 1 y 2",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Amplía tu oferta: suma una nueva línea de servicio de salud íntima",
+      "location": "diapositiva 3",
+      "source": "Preferencias editoriales de la marca (nueva línea de servicio; sin promesa de ingresos ni pacientes)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Técnica fácil, con la temperatura en tiempo real",
+      "location": "diapositiva 3",
+      "source": "data/uploads/pub-3/btlaesthetics-es-for-providers-emfemme-360-providers-2026-10-15-08_25_42.pdf · Beneficios: Breve y sencillo; Control de tratamiento destacado; knowledge/products/btl_products.json · emfemme-360 · key_features 3",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Se realiza sin anestesia, en la misma consulta (ambulatorio)",
+      "location": "diapositiva 3",
+      "source": "knowledge/products/btl_products.json · emfemme-360 · key_features 5 (ambulatorio y sin anestesia en el protocolo publicado)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Más para ofrecer, sin complicarte",
+      "location": "diapositiva 3",
+      "source": "Titular comercial; resume las ventajas documentadas de la diapositiva 3",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "18 de octubre, Día Mundial de la Menopausia",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}

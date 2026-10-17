@@ -1,0 +1,86 @@
+{
+  "direction": "C",
+  "direction_name": "Científica y educativa",
+  "concept": "El texto arriba y, desde la esquina inferior, la médica con el lazo rosa, fundida en el azul profundo.",
+  "differentiation": "El lazo rosa como símbolo en un rincón; mucho azul liso alrededor del texto.",
+  "slides": [
+    {
+      "purpose": "Texto arriba y el lazo rosa en manos de una médica desde la esquina inferior, fundido en el azul profundo",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Azul profundo. Arriba, texto: 19 de octubre. Día Internacional de la Lucha contra el Cáncer de Mama. Hoy y siempre, a tu lado. Abajo a la derecha, la fotografía de una médica que sostiene un lazo rosa, fundida en el fondo. Logo de BTL.",
+      "nodes": [
+        {
+          "id": "glow",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\": 300, \"top\": 760, \"width\": 900, \"height\": 700, \"intensity\": 0.25}",
+          "text": null
+        },
+        {
+          "id": "img",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\": \"data/uploads/pub-4/images (1).jpeg\", \"alt\": \"Médica con bata blanca que sostiene un lazo rosa\", \"left\": 402, \"top\": 898, \"width\": 678, \"blend\": \"normal\", \"fade\": [\"left\", \"top\"], \"fadeSize\": 200}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\": \"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": \"m\", \"left\": \"m\"}",
+          "text": null
+        },
+        {
+          "id": "p",
+          "parent": "r0",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de octubre"
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\": 270, \"right\": \"m\", \"gap\": 26}",
+          "text": null
+        },
+        {
+          "id": "h",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\": \"l\", \"weight\": \"semibold\", \"tone\": \"base\", \"as\": \"h1\"}",
+          "text": "Día Internacional\nde la Lucha contra\nel Cáncer de Mama"
+        },
+        {
+          "id": "b",
+          "parent": "r",
+          "type": "Body",
+          "props": "{\"size\": \"l\", \"tone\": \"accent\"}",
+          "text": "Hoy y siempre, a tu lado."
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy y siempre, a tu lado. En el Día Internacional de la Lucha contra el Cáncer de Mama, este 19 de octubre, nos unimos a las pacientes, a quienes ya superaron la enfermedad y a sus familias.\n\nUn reconocimiento a los profesionales de la salud que acompañan cada paso de la recuperación.\n\nBTL El Salvador\n\n#CáncerDeMama #19DeOctubre #LazoRosa #SaludDeLaMujer #BTLElSalvador",
+  "sources": [
+    "Brief de la publicación (fecha, ocasión e instrucciones)",
+    "data/uploads/pub-4/ (imágenes y publicaciones de referencia adjuntas por el usuario)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)"
+  ],
+  "claims": [
+    {
+      "claim": "19 de octubre, Día Internacional de la Lucha contra el Cáncer de Mama",
+      "location": "diapositiva 1 y caption",
+      "source": "Brief de la publicación (fecha y ocasión)",
+      "approval": "general_statement"
+    }
+  ]
+}
