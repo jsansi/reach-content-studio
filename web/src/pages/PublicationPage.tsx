@@ -376,7 +376,13 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
           footer={
             <>
               <button className="btn" onClick={() => setModal(null)}>Cancelar</button>
-              <button className="btn dark" disabled={busy} onClick={() => act(() => api.approve(p.id, current.id), 'Publicación aprobada').then(() => setModal(null))}>
+              <button className="btn dark" disabled={busy} onClick={() =>
+                  act(async () => {
+                    // A proposal that was never chosen (e.g. revised without "Elegir") is chosen first: approving it is explicit.
+                    if (p.current_version_id !== current.id) await api.selectVersion(current.id);
+                    return api.approve(p.id, current.id);
+                  }, 'Publicación aprobada').then(() => setModal(null))
+                }>
                 ✓ Aprobar
               </button>
             </>
@@ -385,6 +391,9 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
           <p style={{ marginTop: 0 }}>
             Confirmas que la versión {current.number} ({current.slides.length} diapositivas y caption) está lista para publicarse.
           </p>
+          {p.current_version_id !== current.id && (
+            <div className="notice info">Esta versión todavía no estaba elegida: al aprobarla queda elegida como la versión actual.</div>
+          )}
           {current.validation.problems.length > 0 && (
             <div className="notice warn">La validación detectó {current.validation.problems.length} problema(s). Revísalos antes de aprobar.</div>
           )}
