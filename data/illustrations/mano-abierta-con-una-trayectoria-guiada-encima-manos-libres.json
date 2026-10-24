@@ -1,0 +1,9 @@
+{
+  "title": "Mano abierta con una trayectoria guiada encima: manos libres",
+  "viewBox": "0 0 96 96",
+  "svg": "<defs><filter id=\"i\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"2\"/></filter></defs><g fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"31\" y=\"34\" width=\"9\" height=\"28\" rx=\"4.5\"/><rect x=\"42\" y=\"28\" width=\"9\" height=\"34\" rx=\"4.5\"/><rect x=\"53\" y=\"30\" width=\"9\" height=\"32\" rx=\"4.5\"/><rect x=\"64\" y=\"37\" width=\"8\" height=\"25\" rx=\"4\"/><path d=\"M31,56 C25,50 19,50 17,54 C15,58 21,66 31,76 C35,82 40,86 48,86 L58,86 C66,86 72,80 72,72 L72,56\"/></g><g filter=\"url(#i)\" opacity=\"0.7\"><path d=\"M18,20 C36,6 60,6 78,20\" fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><path d=\"M18,20 C36,6 60,6 78,20\" fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"1 7\"/><polyline points=\"70,14 78,20 70,24\" fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"18\" cy=\"20\" r=\"3.5\" fill=\"#96d2ff\"/>",
+  "topic": "Día Mundial del Ictus",
+  "date": "2026-10-29",
+  "publication_id": 6,
+  "version": 16
+}

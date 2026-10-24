@@ -20,3 +20,8 @@ ds-bundle/
 # BTL design-system build output and validation artifacts
 design-system/btl/dist/
 design-system/btl/.check/
+
+# Working material for videos and briefs (references, web captures): kept outside the repo
+/*.mp4
+/*.mov
+/screencapture-*.pdf
