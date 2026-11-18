@@ -19,7 +19,8 @@ export class AnthropicProvider implements AIProvider {
   }
 
   async run(req: AIRequest): Promise<AIResponse> {
-    // Only the publication's own attachments are sent as documents; product knowledge goes in as text excerpts.
+    // The publication's attachments and the PDF/text files of its products' sheets are sent as documents;
+    // the rest of the product knowledge goes in as text excerpts.
     const documents: Anthropic.Beta.BetaContentBlockParam[] = [];
     const notes: string[] = [];
     for (const d of req.context.documents) {

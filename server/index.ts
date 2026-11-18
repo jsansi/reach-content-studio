@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { ROOT, DATA_DIR, MEDIA_DIR, UPLOADS_DIR, WEB_DIST, abs, rel, versionDir } from './paths.ts';
+import { ROOT, DATA_DIR, MEDIA_DIR, UPLOADS_DIR, PRODUCT_FILES_DIR, WEB_DIST, abs, rel, versionDir } from './paths.ts';
 
 const repo = await import('./repo.ts');
 const { seed } = await import('./seed.ts');
@@ -101,6 +101,45 @@ route('GET', '/api/brands', () => repo.listBrands());
 route('GET', '/api/products', () => repo.listProducts());
 route('POST', '/api/products', async (req) => repo.createProduct(await jsonBody(req)));
 route('PUT', '/api/products/:id', async (req) => repo.updateProduct(decodeURIComponent(req.params[0]), await jsonBody(req)));
+// Product sheet files (raw body upload: POST ...?name=file.ext). Any type is kept; images, PDFs and text files are
+// also read by the generation (see pipeline/context.ts); other formats are listed as reference material.
+route('POST', '/api/products/:id/files', async (req) => {
+  const productId = decodeURIComponent(req.params[0]);
+  if (!repo.getProducts([productId]).length) throw new HttpError(404, 'El producto no existe.');
+  const name = path.basename(req.query.get('name') || '').replace(/[^\w.\- ()áéíóúñÁÉÍÓÚÑ]/g, '_');
+  if (!name || name.startsWith('.')) throw new HttpError(400, 'Falta el nombre del archivo');
+  const ext = path.extname(name).toLowerCase();
+  const data = await readBody(req, MAX_UPLOAD);
+  const dir = path.join(PRODUCT_FILES_DIR, productId.replace(/[^\w-]/g, '_'));
+  fs.mkdirSync(dir, { recursive: true });
+  let file = path.join(dir, name);
+  if (fs.existsSync(file)) file = path.join(dir, `${path.basename(name, ext)}-${Date.now().toString(36)}${ext}`);
+  fs.writeFileSync(file, data);
+  repo.addProductFile(productId, { filename: name, path: rel(file), mime: MIME[ext]?.split(';')[0] ?? 'application/octet-stream', size: data.length });
+  return repo.getProducts([productId])[0];
+});
+// "Completar con las fuentes": draft of the sheet from its official pages and documents (never saved by itself).
+route('POST', '/api/products/:id/sheet-draft', async (req) => {
+  const { draftSheet } = await import('./pipeline/product-sheet.ts');
+  return draftSheet(decodeURIComponent(req.params[0]));
+});
+route('GET', '/api/products/:id/sheet-draft', async (req) => {
+  const { readSheetDraft } = await import('./pipeline/product-sheet.ts');
+  return readSheetDraft(decodeURIComponent(req.params[0]));
+});
+route('GET', '/api/product-refs/:id/file', (req, res) => {
+  const r = repo.getProductRef(id(req.params[0]));
+  if (r.kind !== 'file' || !r.path) throw new HttpError(404, 'No es un archivo.');
+  // Only images, PDFs and plain text open in the browser; anything else (HTML, SVG, Office…) is downloaded so an
+  // uploaded file never runs inside the app.
+  const inline = /\.(png|jpe?g|webp|pdf|txt|md)$/i.test(r.path);
+  sendFile(res, abs(r.path), req.query.get('download') || !inline ? r.filename ?? 'archivo' : undefined);
+});
+route('DELETE', '/api/product-refs/:id', (req) => {
+  const r = repo.getProductRef(id(req.params[0]));
+  repo.deleteProductRef(r.id); // the file stays on disk: versions may still reference it
+  return repo.getProducts([r.product_id])[0];
+});
 
 // ---------- publications ----------
 route('GET', '/api/publications', (req) =>
@@ -207,6 +246,15 @@ route('POST', '/api/publications/:id/copy/approve', async (req) => {
   repo.approveCopy(pubId, (await jsonBody(req)).slides);
   return detail(pubId);
 });
+// The version Jaime works on is the version he sees: editing, commenting, approving slides or approving a version
+// that wasn't chosen yet chooses it first (called after the request's checks, right before the change).
+function workOn(versionId: number) {
+  const v = repo.getVersion(versionId);
+  const p = repo.getPublication(v.publication_id);
+  if (p.current_version_id === v.id) return;
+  repo.selectVersion(v.id);
+  repo.addHistory(p.id, v.id, 'proposal_selected', null, null, `v${v.number}${v.direction ? ` · propuesta ${v.direction}` : ''} (al trabajar en ella)`);
+}
 route('POST', '/api/versions/:id/select', (req) => {
   const v = repo.getVersion(id(req.params[0]));
   const p = repo.getPublication(v.publication_id);
@@ -253,6 +301,7 @@ route('POST', '/api/publications/:id/design-revisions', async (req) => {
     repo.updateJob(waiting.id, { outcome: 'discarded' });
     repo.addHistory(pubId, null, 'task_discarded', null, null, `Tarea #${waiting.id} descartada`);
   }
+  workOn(v.id);
   const r = repo.insertRevision(pubId, { version_id: v.id, target: slide ? 'slide' : 'carousel', slide_number: slide, instruction });
   repo.setStatus(pubId, 'changes_requested', 'changes_requested', instruction, v.id);
   if (b.save_as_preference && general) repo.addPreference(p.brand_id, general);
@@ -266,7 +315,6 @@ function editableDesign(versionId: number, opts: { job: boolean }) {
   const p = repo.getPublication(v.publication_id);
   if (v.kind !== 'design' || !v.design) throw new HttpError(400, 'Solo las propuestas del sistema de diseño se ajustan así.');
   if (['approved', 'scheduled', 'published'].includes(p.status)) throw new HttpError(409, 'La publicación ya está aprobada. Revoca la aprobación para hacer cambios.');
-  if (p.current_version_id !== v.id) throw new HttpError(409, 'Elige primero esta propuesta: los ajustes se hacen sobre la versión actual.');
   if (repo.activeJob(p.id)) throw new HttpError(409, 'Hay un trabajo en curso. Espera a que termine.');
   if (opts.job) {
     const waiting = repo.waitingTask(p.id);
@@ -279,6 +327,7 @@ route('POST', '/api/versions/:id/locks', async (req) => {
   const b = await jsonBody(req);
   const n = Number(b.slide);
   if (!(n >= 1 && n <= v.slides.length)) throw new HttpError(400, 'Número de diapositiva fuera de rango');
+  workOn(v.id);
   const now = new Set(v.design!.locked_slides ?? []);
   if (b.locked) now.add(n);
   else now.delete(n);
@@ -299,6 +348,7 @@ route('POST', '/api/versions/:id/design-edit', async (req) => {
   } catch (e) {
     throw new HttpError(400, (e as Error).message);
   }
+  workOn(v.id);
   enqueue(p.id, 'design_edit', { base_version_id: v.id, op: 'text', slide: n, edits });
   return detail(p.id);
 });
@@ -312,6 +362,7 @@ route('POST', '/api/versions/:id/slides/:n/replace', async (req) => {
   const k = Number(b.from_slide);
   if (src.publication_id !== p.id || src.kind !== 'design' || !src.design?.slides[k - 1]) throw new HttpError(400, 'Elige una diapositiva de otra propuesta de esta publicación.');
   if (src.id === v.id && k === n) throw new HttpError(400, 'Es la misma diapositiva.');
+  workOn(v.id);
   enqueue(p.id, 'design_edit', { base_version_id: v.id, op: 'swap', slide: n, from_version_id: src.id, from_slide: k });
   return detail(p.id);
 });
@@ -352,6 +403,8 @@ route('POST', '/api/publications/:id/edit', async (req) => {
   if (base.publication_id !== pubId) throw new HttpError(400, 'La versión no pertenece a esta publicación');
   if (!body.content?.slides) throw new HttpError(400, 'Falta el contenido editado');
   if (base.kind === 'design') throw new HttpError(400, 'Las propuestas del sistema de diseño se cambian con "Solicitar cambios".');
+  if (repo.activeJob(pubId)) throw new HttpError(409, 'Ya hay un trabajo en curso para esta publicación. Espera a que termine.');
+  workOn(base.id);
   enqueue(pubId, 'edit', { base_version_id: base.id, content: body.content, note: body.note });
   return detail(pubId);
 });
@@ -362,9 +415,12 @@ route('POST', '/api/publications/:id/revisions', async (req) => {
   const b = await jsonBody(req);
   if (!String(b.instruction ?? '').trim()) throw new HttpError(400, 'Describe el cambio que quieres.');
   if (!(b.target in REVISION_TARGETS)) throw new HttpError(400, 'Alcance de cambio desconocido');
-  if (!p.current_version_id) throw new HttpError(400, 'La publicación aún no tiene contenido generado.');
-  const v = repo.getVersion(p.current_version_id);
-  if (v.kind === 'design') throw new HttpError(400, 'La versión actual es una propuesta del sistema de diseño: usa /design-revisions.');
+  // The version on screen (version_id), or the current one for older clients.
+  const vid = b.version_id ? Number(b.version_id) : p.current_version_id;
+  if (!vid) throw new HttpError(400, 'La publicación aún no tiene contenido generado.');
+  const v = repo.getVersion(vid);
+  if (v.publication_id !== pubId) throw new HttpError(400, 'La versión no pertenece a esta publicación');
+  if (v.kind === 'design') throw new HttpError(400, 'Esta versión es una propuesta del sistema de diseño: usa /design-revisions.');
   const slide = b.slide_number ? Number(b.slide_number) : null;
   if (slide && (slide < 1 || slide > v.content.slides.length)) throw new HttpError(400, 'Número de diapositiva fuera de rango');
   if (repo.activeJob(pubId)) throw new HttpError(409, 'Ya hay un trabajo en curso para esta publicación. Espera a que termine.');
@@ -372,6 +428,7 @@ route('POST', '/api/publications/:id/revisions', async (req) => {
   if (waiting && !b.discard_task)
     throw new HttpError(409, `Hay una tarea de Claude Code sin importar (#${waiting.id}). Impórtala o descártala antes de pedir otro cambio.`);
   if (waiting) repo.addHistory(pubId, null, 'task_discarded', null, null, `Tarea #${waiting.id} descartada`);
+  workOn(v.id);
   const r = repo.insertRevision(pubId, { version_id: v.id, target: b.target, slide_number: slide, instruction: String(b.instruction).trim() });
   repo.setStatus(pubId, 'changes_requested', 'changes_requested', r.instruction, v.id);
   if (b.save_as_preference) repo.addPreference(p.brand_id, String(b.instruction).trim());
@@ -385,7 +442,12 @@ route('POST', '/api/publications/:id/approve', async (req) => {
   const p = repo.getPublication(pubId);
   const b = await jsonBody(req);
   if (p.status !== 'ready_for_review') throw new HttpError(409, `Solo se aprueban publicaciones listas para revisión (estado actual: ${STATUS_LABELS[p.status]}).`);
-  if (!p.current_version_id || Number(b.version_id) !== p.current_version_id) throw new HttpError(409, 'Solo se puede aprobar la versión actual.');
+  const target = Number(b.version_id);
+  if (!target || repo.getVersion(target).publication_id !== pubId) throw new HttpError(400, 'Indica la versión que apruebas.');
+  if (repo.activeJob(pubId)) throw new HttpError(409, 'Hay un trabajo en curso. Espera a que termine.');
+  // Approving is explicit: the version on screen is approved (and chosen first if it wasn't).
+  workOn(target);
+  p.current_version_id = target;
   repo.setStatus(pubId, 'approved', 'approved', b.note || null, p.current_version_id);
   // Topic illustrations drawn for this publication go to the library for future publications.
   const saved = saveIllustrations(repo.getVersion(p.current_version_id), p.topic, p.date);

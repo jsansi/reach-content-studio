@@ -108,7 +108,7 @@ test('publications survive a restart; edits re-render only changed slides; appro
   assert.deepEqual(v2.slides.map((s: any) => s.rendered), [true, false, false]);
   assert.equal(v2.validation.status, 'passed', v2.validation.problems.join('\n'));
 
-  assert.equal((await api('POST', '/api/publications/1/approve', { version_id: d.versions[0].id })).status, 409); // not current
+  assert.equal((await api('POST', '/api/publications/1/approve', {})).status, 400); // which version is approved must be explicit
   assert.equal((await api('POST', '/api/publications/1/status', { to: 'published' })).status, 409); // not approved yet
   assert.equal((await api('POST', '/api/publications/1/approve', { version_id: v2.id })).json.publication.status, 'approved');
 

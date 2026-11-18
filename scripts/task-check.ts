@@ -32,6 +32,21 @@ const data = r.data as any;
 const copyFile = path.join(dir, 'approved-copy.json');
 const approved: ApprovedCopy | null = fs.existsSync(copyFile) ? JSON.parse(fs.readFileSync(copyFile, 'utf8')) : null;
 
+if (kind === 'product_sheet') {
+  const errors: string[] = [];
+  if (!data.description.trim()) errors.push('Falta la descripción.');
+  if (data.key_features.length < 3) errors.push('Se esperan al menos 3 características.');
+  for (const f of data.key_features) if (f.length > 160) errors.push(`Característica demasiado larga (${f.length} caracteres): "${f.slice(0, 60)}…"`);
+  if (!data.sources.length) errors.push('Indica las fuentes usadas en `sources`.');
+  if (errors.length) {
+    console.error('✗ Problemas en la ficha:');
+    for (const e of errors) console.error(`  - ${e}`);
+    process.exit(2);
+  }
+  console.log(`✓ ${name}: ficha con ${data.key_features.length} características. Jaime la importa desde la ficha del producto.`);
+  process.exit(0);
+}
+
 if (kind === 'copy') {
   const brief = fs.readFileSync(path.join(dir, 'brief.md'), 'utf8');
   const wanted = [...brief.matchAll(/^- Diapositiva (\d+) · .+?: \*\*(\d+) opciones\*\*/gm)].map((m) => ({ slide: Number(m[1]), n: Number(m[2]) }));

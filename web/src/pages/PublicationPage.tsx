@@ -63,18 +63,24 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
     return () => clearInterval(t);
   }, [active, waitingImport, load]);
 
-  // Follow the current version (or the newest, e.g. a fresh round of proposals) when one is created.
-  const newest = d?.versions[0]?.id;
+  // The version on screen is the version Jaime works on. It only moves by itself to a version that just appeared
+  // (the result of his own edit, a new round of proposals) or the one that just became the chosen one.
+  const newest = d?.versions[0]?.id ?? null;
   const currentId = d?.publication.current_version_id ?? null;
-  useEffect(() => setSelected(currentId ?? newest ?? null), [newest, currentId]);
+  useEffect(() => setSelected((s) => (s === null ? currentId ?? newest : newest)), [newest]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (currentId !== null) setSelected(currentId);
+  }, [currentId]);
 
   if (error) return <div className="notice error">{error}</div>;
   if (!d) return <p className="muted">Cargando…</p>;
 
   const p = d.publication;
+  // The version on screen is the one Jaime edits, comments, approves and downloads. Working on a version that
+  // wasn't chosen chooses it (the server does it with the first change).
   const version = d.versions.find((v) => v.id === selected) ?? d.versions[0];
-  // The current version is the one Jaime approves and downloads (a chosen proposal, or the latest carousel).
-  const current = d.versions.find((v) => v.id === p.current_version_id) ?? d.versions[0];
+  const current = version;
+  const chosen = !!version && version.id === p.current_version_id;
   const designCurrent = current?.kind === 'design';
   const pendingChoice = !!d.versions[0] && d.versions[0].origin === 'proposal' && d.versions[0].proposal_set !== null && !d.versions.some((v) => v.proposal_set === d.versions[0].proposal_set && v.id === p.current_version_id);
   const manual = data.settings.ai_mode === 'claude_code';
@@ -161,15 +167,15 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
             <ProposalsPanel
               versions={d.versions} currentId={p.current_version_id} viewing={version?.id ?? null} locked={locked} busy={busy || active}
               onView={(vid) => (setSelected(vid), document.getElementById('viewer')?.scrollIntoView({ behavior: 'smooth' }))}
-              onSelect={(vid) => act(() => api.selectVersion(vid), 'Propuesta elegida')}
+              onSelect={(vid) => (setSelected(vid), document.getElementById('viewer')?.scrollIntoView({ behavior: 'smooth' }), act(() => api.selectVersion(vid), 'Propuesta elegida'))}
             />
           </div>
           {version ? (
             <div style={{ marginTop: 16 }}>
               <CarouselViewer
-                version={version} versions={d.versions} onSelect={setSelected} isCurrent={version.id === current.id} currentId={p.current_version_id}
+                version={version} versions={d.versions} onSelect={setSelected} isCurrent={chosen} currentId={p.current_version_id}
                 onRegenerate={!locked && !active && job?.outcome !== 'task_package' ? (n) => (setDesignSlide(n), setModal('design')) : undefined}
-                actions={designCurrent && !locked && version.id === current.id ? {
+                actions={version.kind === 'design' && !locked ? {
                   busy: busy || active,
                   onLock: (n, on) => act(() => api.lockSlide(version.id, n, on), on ? `Diapositiva ${n} aprobada: ninguna revisión la cambiará` : `Diapositiva ${n} desbloqueada`),
                   onEdit: (n) => (setDesignSlide(n), setModal('slide')),
@@ -177,7 +183,7 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
                   onReplace: (n, from, k) => act(() => api.replaceSlide(version.id, n, from, k), `Trayendo la diapositiva ${k}…`),
                 } : undefined}
               />
-              {locked && version.id === current.id && (
+              {locked && chosen && (
                 <div style={{ marginTop: 16 }}>
                   <StoriesPanel
                     version={version} busy={busy} running={active && job?.kind === 'story'}
@@ -206,9 +212,11 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
           {current && (
             <section className="card">
               <h2>Revisión</h2>
-              {p.status === 'ready_for_review' && (
+              {!locked && (
                 <p className="small muted" style={{ marginTop: 0 }}>
-                  Versión actual: v{current.number}. Revísala y apruébala, o pide cambios.
+                  Estás trabajando en la <b>v{current.number}</b>{current.design ? ` (propuesta ${current.design.direction})` : ''}
+                  {chosen ? ', la versión elegida.' : '. Si la editas o la apruebas, pasa a ser la versión elegida.'}
+                  {' '}Para trabajar en otra, selecciónala arriba del carrusel.
                 </p>
               )}
               <div className="row">
@@ -221,9 +229,9 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
                 {!locked && designCurrent && (
                   <button className="btn" disabled={active || busy || job?.outcome === 'task_package'} onClick={() => (setDesignSlide(null), setModal('design'))}>Solicitar cambios</button>
                 )}
-                {pendingChoice && <p className="small muted" style={{ margin: 0 }}>Hay propuestas nuevas: elige una para aprobarla.</p>}
+                {pendingChoice && <p className="small muted" style={{ margin: 0 }}>Hay propuestas nuevas: ábrelas para trabajar en ellas o aprobarlas.</p>}
                 {p.status === 'ready_for_review' && (
-                  <button className="btn dark" disabled={active || busy || version?.id !== current.id} onClick={() => setModal('approve')}>
+                  <button className="btn dark" disabled={active || busy} onClick={() => setModal('approve')}>
                     ✓ Aprobar v{current.number}
                   </button>
                 )}
@@ -267,9 +275,9 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
                   ? d.products.map((x) => (
                       <div key={x.id}>
                         {x.name} {x.review_status === 'pending_review' && <span className="tag warn">pendiente de revisión</span>}
-                        {x.source === 'user' && (
-                          <button className="btn sm" style={{ marginLeft: 8 }} onClick={() => setProductSheet(x)}>Completar ficha</button>
-                        )}
+                        <button className="btn sm" style={{ marginLeft: 8 }} onClick={() => setProductSheet(x)} title="Enlaces de referencia, imágenes, logo y documentos del equipo">
+                          Ficha{x.refs?.length ? ` · ${x.refs.length}` : ''}
+                        </button>
                       </div>
                     ))
                   : '—'}
@@ -286,6 +294,16 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
               {p.brief?.avoid && (<><dt>Evitar</dt><dd>{p.brief.avoid}</dd></>)}
               <dt>Instrucciones</dt>
               <dd>{p.creative_instructions || '—'}</dd>
+              {d.references?.length > 0 && (
+                <>
+                  <dt>Referencias</dt>
+                  <dd>
+                    {d.references.map((r) => (
+                      <div key={r.id}><a href={`#/p/${r.id}`}>{r.date} · {r.topic}</a></div>
+                    ))}
+                  </dd>
+                </>
+              )}
             </dl>
           </section>
 
@@ -344,7 +362,7 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
       </div>
 
       {productSheet && (
-        <NewProduct product={productSheet} onClose={() => setProductSheet(null)} onCreated={() => (setProductSheet(null), load())} />
+        <NewProduct brands={data.brands} product={productSheet} onClose={() => setProductSheet(null)} onCreated={() => (setProductSheet(null), load(), data.reloadProducts())} />
       )}
       {modal === 'brief' && (
         <PublicationForm
@@ -377,11 +395,8 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
             <>
               <button className="btn" onClick={() => setModal(null)}>Cancelar</button>
               <button className="btn dark" disabled={busy} onClick={() =>
-                  act(async () => {
-                    // A proposal that was never chosen (e.g. revised without "Elegir") is chosen first: approving it is explicit.
-                    if (p.current_version_id !== current.id) await api.selectVersion(current.id);
-                    return api.approve(p.id, current.id);
-                  }, 'Publicación aprobada').then(() => setModal(null))
+                  // The server chooses the version on screen first if it wasn't the chosen one: approving it is explicit.
+                  act(() => api.approve(p.id, current.id), 'Publicación aprobada').then(() => setModal(null))
                 }>
                 ✓ Aprobar
               </button>

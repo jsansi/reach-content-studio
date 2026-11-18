@@ -59,10 +59,25 @@ validate → persist.
 - **Targeted retrieval** (`context.ts`): only the selected brand, the selected products (catalog record +
   `knowledge/products/<id>.md` excerpt), their asset folders, the publication's own attachments, one approved
   exemplar and the last 5 publications of the brand. Never the whole catalog or all PDFs.
-- **Official sources** (`sources.ts`, stage "Fuentes oficiales"): the product's BTL page (its `url`, or a link in its
-  description; BTL domains only) → visible text cached 7 days in `data/web/<product>.md` (used as the documentation
-  excerpt when `knowledge/products/<id>.md` is missing) and, for products without an official image folder, its large
-  photos added once per publication as `web-…` attachments. If the publication still has no image, photos inside its
+- **Reference publications** (`publications.reference_ids`, migration 7, max 5, picked in the brief form): the brief
+  section "Publicaciones de referencia elegidas por Jaime" lists each one's chosen (or latest) version: texts per
+  slide, slide PNG paths and caption, as a guide to tone/structure/style — never to be copied.
+- **Product sheets** ("Ficha" next to each product in Brief, any product): several reference links and files of any type
+  in table `product_refs` (migration 5; files in `data/products/<id>/`, routes `POST /api/products/:id/files`,
+  `GET|DELETE /api/product-refs/:id`). Sheet images are official assets (a filename with "logo" → `product_logo`), sheet
+  PDF/MD/TXT are documents (brief + API document blocks), other formats are listed in the brief; catalog products keep
+  their catalog description and only take links/files. Non-image/PDF/text files are always served as downloads.
+  `products.brand_ids` (migration 6, JSON array; empty = both clients) filters the product picker by client. "Ficha
+  revisada" sets a user product to `approved` (no longer "pendiente de revisión"; approved_claims are unaffected).
+  "Completar con las fuentes" (`server/pipeline/product-sheet.ts`, prompt `product-sheet`): reads the official pages
+  (`refreshProductText`) + sheet PDF/MD/TXT and drafts category, description and features — API mode returns it, Claude
+  Code mode writes `data/tasks/ficha-<product>/` (kind `product_sheet`, checked by task:check); the draft is only copied
+  into the form, never saved by itself.
+- **Official sources** (`sources.ts`, stage "Fuentes oficiales"): every official BTL link of the product (catalog `url`,
+  sheet links, links in its description; BTL domains only) → visible text of all pages cached 7 days (or until the links
+  change) in `data/web/<product>.md` (used as the documentation excerpt when `knowledge/products/<id>.md` is missing)
+  and, for products without official images (repo folder or sheet images), their large photos (deduplicated across
+  pages) added once per publication as `web-…` attachments. If the publication still has no image, photos inside its
   PDFs are extracted (page captures are cut into photo blocks) as `pdf-…` attachments. Jaime can delete any of them.
   `REACH_OFFLINE=1` disables web requests (tests).
 - **Missing essentials stop the job** with an actionable Spanish message (e.g. product without official images
@@ -111,7 +126,9 @@ for the clinic = the angle, tone, what to avoid; migration 4).
 `design-system/btl` primitives (`shared/design.ts`, allowed props in `design-system/btl/catalog.mjs`), rendered by
 `server/design/render.ts` with the real components and checked by `design-system/btl/validate.mjs` (auto-fix by
 stepping text down; otherwise flagged "Revisión manual"). Claim/brand checks are stored apart from visual checks.
-Proposals are never auto-chosen (`POST /api/versions/:id/select`); revising an unchosen proposal doesn't choose it.
+A new round of proposals is never auto-chosen (`POST /api/versions/:id/select`). The version on screen is the version
+Jaime works on: every action (design revision, slide lock, text edit, slide swap, classic edit/revision, approval)
+targets the version he is viewing, and the server's `workOn()` chooses it first if it wasn't the current one.
 **Variety**: the three art directions are not fixed. `server/design/directions.ts` picks three from the bank in
 `prompts/system/creative-directions.md` (different families, least recently used by the brand, random ties, at most one
 `libre`) and stores their ids in the job input; slot A/B/C keeps its `direction_id` in the stored design.
@@ -176,8 +193,8 @@ claim-verification, carousel-revision, copy-options) + `prompts/brands/<brand>.m
 
 ## Data & storage
 
-SQLite tables: brands, products (catalog synced from `btl_products.json` + user-created `pending_review`),
-publications (+ brief_json, approved_copy_json), copy_options, publication_products, attachments, jobs, versions, source_refs (sources + claims per version),
+SQLite tables: brands, products (catalog synced from `btl_products.json` + user-created `pending_review`), product_refs,
+publications (+ brief_json, approved_copy_json, reference_ids), copy_options, publication_products, attachments, jobs, versions, source_refs (sources + claims per version),
 prompt_versions, revision_requests, history (status changes, approvals), editorial_preferences, meta.
 Files: `data/media/pub-<id>/v<NN>/slide-0N.png` (+ content.json, caption.txt, slides.html, textos.md).
 Paths in the DB are repo-relative. The browser never stores source-of-truth data (sessionStorage only keeps

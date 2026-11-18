@@ -110,16 +110,22 @@ export function buildPrompt(kind: PromptKind, ctx: GenerationContext, revision?:
   const section = (title: string, body: string) => `## ${title}\n\n${body.trim()}\n`;
   const products = ctx.products.length
     ? ctx.products
-        .map(({ product, approvedClaims, excerpt, documentation }) =>
+        .map(({ product, approvedClaims, excerpt, documentation, links, otherFiles }) =>
           [
             `### ${product.name} (id: ${product.id})`,
-            `- Estado: ${product.review_status === 'pending_review' ? 'creado por el usuario, PENDIENTE DE REVISIÓN' : 'catálogo'}`,
+            `- Estado: ${product.review_status === 'pending_review' ? 'creado por el usuario, PENDIENTE DE REVISIÓN' : product.review_status === 'approved' ? 'ficha creada por el usuario y revisada por REACH (información verificada; no convierte nada en afirmación clínica aprobada)' : 'catálogo'}`,
             `- approved_claims: ${approvedClaims.length ? approvedClaims.map((c) => `"${c}"`).join('; ') : '[] (vacío: ninguna afirmación clínica aprobada)'}`,
             documentation ? `- Documentación original: ${documentation}` : '',
             '- Registro del catálogo (btl_products.json):',
             '```json',
-            JSON.stringify(product.data, null, 2),
+            JSON.stringify({ ...product.data, refs: undefined }, null, 2),
             '```',
+            links?.length
+              ? `- Enlaces de referencia de la ficha (las páginas oficiales de BTL se leen automáticamente; su texto está en el extracto):\n${links.map((u) => `  - ${u}`).join('\n')}`
+              : '',
+            otherFiles?.length
+              ? `- Otros archivos de la ficha (no se leen automáticamente; ábrelos si los necesitas):\n${otherFiles.map((f) => `  - \`${f.path}\` (${f.filename})`).join('\n')}`
+              : '',
             excerpt ? `- Extractos de la documentación (${excerpt.path}):\n\n${embed(excerpt.text)}` : '- Sin extractos de documentación.',
           ].filter(Boolean).join('\n')
         )
@@ -130,7 +136,7 @@ export function buildPrompt(kind: PromptKind, ctx: GenerationContext, revision?:
     .map((a) => `- \`${a.path}\` · ${a.kind}${a.product ? ` · ${a.product}` : ''}${a.width ? ` · ${a.width}×${a.height}px` : ''}`)
     .join('\n');
   const documents = ctx.documents.length
-    ? ctx.documents.map((d) => `- \`${d.path}\` (${d.filename}, ${Math.round(d.size / 1024)} KB)`).join('\n')
+    ? ctx.documents.map((d) => `- \`${d.path}\` (${d.filename}, ${Math.round(d.size / 1024)} KB${d.product ? ` · ficha de ${d.product}` : ''})`).join('\n')
     : 'Ninguno.';
 
   const feedback = repo
@@ -201,7 +207,23 @@ export function buildPrompt(kind: PromptKind, ctx: GenerationContext, revision?:
           shown.length ? shown.map((o) => `- Diapositiva ${o.slide}: "${o.headline.replace(/\n/g, ' ')}"${o.support ? ` / "${o.support.replace(/\n/g, ' ')}"` : ''}`).join('\n') : 'Ninguno todavía.'
         )
       : '',
-    section('Documentos adjuntos por el usuario', documents),
+    section('Documentos adjuntos (publicación y fichas de producto)', documents),
+    ctx.references.chosen.length
+      ? section(
+          'Publicaciones de referencia elegidas por Jaime',
+          'Jaime eligió estas publicaciones como referencia: tómalas como guía del tono, la estructura, la jerarquía y el estilo visual que le gustan (puedes abrir las imágenes de sus diapositivas). No copies sus textos ni repitas su composición tal cual; el brief, los textos aprobados y los comentarios de esta publicación mandan.\n\n' +
+            ctx.references.chosen
+              .map((r) =>
+                [
+                  `### ${r.date} · ${r.topic} (${r.brand})`,
+                  r.version ? `- Versión ${r.version}${r.style ? ` · estilo "${r.style}"` : ''} · estado: ${r.status}` : '- Sin versiones generadas todavía.',
+                  ...r.slides.map((s) => `- Diapositiva ${s.n}: «${s.text}» · imagen: \`${s.image}\``),
+                  r.caption ? `- Caption: «${r.caption.replace(/\s*\n\s*/g, ' ').slice(0, 600)}»` : '',
+                ].filter(Boolean).join('\n')
+              )
+              .join('\n\n')
+        )
+      : '',
     section(
       'Referencias editoriales',
       [

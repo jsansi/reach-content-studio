@@ -108,6 +108,35 @@ const MIGRATIONS: string[] = [
   );
   CREATE INDEX copy_options_pub ON copy_options(publication_id);
   `,
+  // 5 · product sheets: several reference links (e.g. the English and Spanish BTL pages) and files of any type
+  // (images, PDFs, …) per product, catalog or user-created. Kept apart from data_json so the catalog sync never drops them.
+  `
+  CREATE TABLE product_refs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    product_id TEXT NOT NULL REFERENCES products(id) ON DELETE CASCADE,
+    kind TEXT NOT NULL CHECK (kind IN ('link','file')),
+    url TEXT, filename TEXT, path TEXT, mime TEXT, size INTEGER,
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+  );
+  CREATE INDEX product_refs_product ON product_refs(product_id);
+  INSERT INTO product_refs (product_id, kind, url)
+    SELECT id, 'link', json_extract(data_json, '$.url') FROM products
+    WHERE source = 'user' AND COALESCE(json_extract(data_json, '$.url'), '') != '';
+  UPDATE products SET data_json = json_set(data_json, '$.url', NULL) WHERE source = 'user';
+  `,
+  // 6 · which client each product belongs to (BTL Medical and/or BTL Estética). JSON array of brand ids; empty or
+  // NULL = not assigned (offered for both). Filled from the publications that already use each product.
+  `
+  ALTER TABLE products ADD COLUMN brand_ids TEXT;
+  UPDATE products SET brand_ids = (
+    SELECT json_group_array(DISTINCT p.brand_id) FROM publication_products pp JOIN publications p ON p.id = pp.publication_id
+    WHERE pp.product_id = products.id
+  ) WHERE EXISTS (SELECT 1 FROM publication_products pp WHERE pp.product_id = products.id);
+  `,
+  // 7 · past publications Jaime picks as references for a new one (JSON array of publication ids).
+  `
+  ALTER TABLE publications ADD COLUMN reference_ids TEXT;
+  `,
 ];
 
 fs.mkdirSync(DATA_DIR, { recursive: true });

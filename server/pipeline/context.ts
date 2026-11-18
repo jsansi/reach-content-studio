@@ -3,11 +3,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { availableIcons, LAYOUTS, STYLE_PROPS } from '../../studio/engine.js';
-import { ROOT, abs, rel } from '../paths.ts';
+import { ROOT, abs, rel, versionDir } from '../paths.ts';
 import * as repo from '../repo.ts';
-import { officialUrl, productUrl, webExcerptPath } from './sources.ts';
+import { officialUrl, productUrls, webExcerptPath } from './sources.ts';
 import { coverHeadline } from '../design/memory.ts';
-import type { Attachment, Product, Publication } from '../../shared/types.ts';
+import { classicSlideTexts, designSlideTexts } from '../../shared/structure.ts';
+import type { Product, ProductRef, Publication } from '../../shared/types.ts';
 import type { BrandRow } from '../repo.ts';
 
 export interface AssetInfo {
@@ -23,6 +24,32 @@ export interface ProductContext {
   approvedClaims: string[];
   excerpt: { path: string; text: string } | null;
   documentation: string | null;
+  /** Reference links of the sheet (official BTL pages are read automatically; the rest are listed). */
+  links: string[];
+  /** Files of the sheet that are not read automatically (Office, video, …): listed as reference material. */
+  otherFiles: ProductRef[];
+}
+
+/** A document the model reads: attached to the publication, or to the sheet of one of its products. */
+export interface DocumentRef {
+  filename: string;
+  path: string;
+  mime: string;
+  size: number;
+  product?: string; // product id when it comes from the product sheet
+}
+
+/** A past publication Jaime picked as a reference: its chosen (or latest) version, texts and slide images. */
+export interface ChosenReference {
+  id: number;
+  date: string;
+  topic: string;
+  brand: string;
+  status: string;
+  version: number | null;
+  style: string | null; // art direction of a design version
+  slides: { n: number; text: string; image: string }[];
+  caption: string | null;
 }
 
 export interface GenerationContext {
@@ -32,8 +59,8 @@ export interface GenerationContext {
   editorialPrompt: string;
   products: ProductContext[];
   assets: AssetInfo[];
-  documents: (Attachment & { mime: string })[];
-  references: { exemplar: { path: string; json: string } | null; folders: string[]; recent: string[] };
+  documents: DocumentRef[];
+  references: { exemplar: { path: string; json: string } | null; folders: string[]; recent: string[]; chosen: ChosenReference[] };
   preferences: string[];
   icons: string[];
   layouts: string[];
@@ -43,6 +70,8 @@ export interface GenerationContext {
 }
 
 const IMAGE_EXT = /\.(png|jpe?g|webp)$/i;
+const DOC_EXT = /\.(pdf|md|txt)$/i;
+const sheetFiles = (product: Product) => (product.refs ?? []).filter((r) => r.kind === 'file' && r.path && fs.existsSync(abs(r.path)));
 const EXEMPLAR = 'content/spinal-decompression/dia-mundial-columna-2026.json';
 
 // Pixel size from the file header (PNG and JPEG), so the model can place images without guessing.
@@ -93,17 +122,21 @@ export function loadProducts(pub: Publication): { products: ProductContext[]; wa
     if (product.review_status === 'pending_review')
       warnings.push(`${product.name} está pendiente de revisión: se usará solo la información que registraste, sin afirmaciones técnicas.`);
     if (!approvedClaims.length) warnings.push(`${product.name} no tiene afirmaciones aprobadas (approved_claims vacío): ninguna frase se tratará como afirmación clínica aprobada.`);
-    const hasInfo = d.description || (d.key_features?.length ?? 0) > 0 || (d.indications?.length ?? 0) > 0 || excerpt || docs.length > 0;
-    if (!hasInfo) blocking.push(`Falta información de ${product.name}: pulsa "Completar ficha" junto al producto (en Brief) y añade una descripción o características, o adjunta su documentación (PDF) en Archivos.`);
-    if (!d.description && !(d.key_features?.length) && !excerpt && docs.length)
-      warnings.push(`${product.name} no tiene ficha: la información saldrá solo de los documentos adjuntos (${docs.map((x) => x.filename).join(', ')}).`);
+    const files = sheetFiles(product);
+    const sheetDocs = files.filter((f) => DOC_EXT.test(f.path!));
+    const hasInfo = d.description || (d.key_features?.length ?? 0) > 0 || (d.indications?.length ?? 0) > 0 || excerpt || docs.length > 0 || sheetDocs.length > 0;
+    if (!hasInfo) blocking.push(`Falta información de ${product.name}: pulsa "Ficha" junto al producto (en Brief) y añade una descripción, sus enlaces oficiales o su documentación (PDF), o adjunta el PDF en Archivos de la publicación.`);
+    if (!d.description && !(d.key_features?.length) && !excerpt && (docs.length || sheetDocs.length))
+      warnings.push(`${product.name} no tiene descripción: la información saldrá solo de los documentos (${[...sheetDocs.map((x) => x.filename), ...docs.map((x) => x.filename)].join(', ')}).`);
     if (!excerpt && documentation) warnings.push(`La documentación de ${product.name} (${documentation}) no tiene extracto de texto; solo se usará el catálogo.`);
-    return { product, approvedClaims, excerpt, documentation };
+    const links = productUrls(product);
+    const otherFiles = files.filter((f) => !DOC_EXT.test(f.path!) && !IMAGE_EXT.test(f.path!));
+    return { product, approvedClaims, excerpt, documentation, links, otherFiles };
   });
   return { products, warnings, blocking };
 }
 
-export function loadAssets(pub: Publication, products: ProductContext[]): { assets: AssetInfo[]; documents: (Attachment & { mime: string })[]; blocking: string[] } {
+export function loadAssets(pub: Publication, products: ProductContext[]): { assets: AssetInfo[]; documents: DocumentRef[]; blocking: string[] } {
   const assets: AssetInfo[] = [];
   const blocking: string[] = [];
   const attachments = repo.listAttachments(pub.id).map((a) => repo.getAttachment(a.id));
@@ -113,12 +146,22 @@ export function loadAssets(pub: Publication, products: ProductContext[]): { asse
     const files = dir ? walk(abs(dir)).filter((f) => IMAGE_EXT.test(f)) : [];
     for (const f of files)
       assets.push({ path: rel(f), kind: /\/logo\//.test(rel(f)) ? 'product_logo' : 'product_image', product: product.id, ...imageSize(f) });
-    if (!files.some((f) => !/\/logo\//.test(rel(f))) && !uploads.length)
-      blocking.push(`Faltan imágenes oficiales de ${product.name}: no se encontraron en su página oficial ni en los PDF adjuntos. Adjunta al menos una imagen del equipo (PNG, JPG o WEBP) en la sección Archivos, o añade la página oficial de BTL en "Completar ficha".`);
+    // Images attached to the product sheet count as official images; a file named "…logo…" is the product logo.
+    const sheetImages = sheetFiles(product).filter((r) => IMAGE_EXT.test(r.path!));
+    for (const r of sheetImages)
+      assets.push({ path: r.path!, kind: /logo/i.test(r.filename ?? r.path!) ? 'product_logo' : 'product_image', product: product.id, ...imageSize(abs(r.path!)) });
+    const hasPhoto = files.some((f) => !/\/logo\//.test(rel(f))) || sheetImages.some((r) => !/logo/i.test(r.filename ?? r.path!));
+    if (!hasPhoto && !uploads.length)
+      blocking.push(`Faltan imágenes oficiales de ${product.name}: no se encontraron en su página oficial ni en los PDF adjuntos. Adjunta al menos una imagen del equipo (PNG, JPG o WEBP) en la ficha del producto o en Archivos de la publicación, o añade su página oficial de BTL en la ficha.`);
   }
   for (const u of uploads) assets.push({ path: u.path, kind: 'upload', ...imageSize(abs(u.path)) });
   assets.push({ path: 'public/assets/brands/btl/logo/btl-logo.svg', kind: 'brand_logo' });
-  return { assets, documents: attachments.filter((a) => a.kind === 'document'), blocking };
+  const documents: DocumentRef[] = [
+    ...products.flatMap(({ product }) => sheetFiles(product).filter((r) => DOC_EXT.test(r.path!))
+      .map((r) => ({ filename: r.filename ?? path.basename(r.path!), path: r.path!, mime: r.mime ?? 'application/octet-stream', size: r.size ?? 0, product: product.id }))),
+    ...attachments.filter((a) => a.kind === 'document').map((a) => ({ filename: a.filename, path: a.path, mime: a.mime, size: a.size })),
+  ];
+  return { assets, documents, blocking };
 }
 
 export function loadReferences(pub: Publication) {
@@ -134,7 +177,27 @@ export function loadReferences(pub: Publication) {
       return `${p.date} · ${p.topic} · portada: "${cover}"`;
     });
   const exemplar = fs.existsSync(abs(EXEMPLAR)) ? { path: EXEMPLAR, json: fs.readFileSync(abs(EXEMPLAR), 'utf8') } : null;
-  return { exemplar, folders, recent };
+  const brands = Object.fromEntries(repo.listBrands().map((b) => [b.id, b.name]));
+  const chosen: ChosenReference[] = (pub.reference_ids ?? []).flatMap((id) => {
+    let ref: Publication;
+    try {
+      ref = repo.getPublication(id);
+    } catch {
+      return []; // deleted since it was picked
+    }
+    const versions = repo.listVersions(id);
+    const v = versions.find((x) => x.id === ref.current_version_id) ?? versions[0];
+    const dir = v ? versionDir(ref.id, v.number) : null;
+    const slides = v
+      ? v.slides.map((s, i) => ({
+          n: i + 1,
+          text: (v.design ? designSlideTexts(v.design.slides[i] ?? { nodes: [] }) : classicSlideTexts(v.content.slides[i])).replace(/\s*\n\s*/g, ' / ').slice(0, 400),
+          image: rel(path.join(dir!, s.file)),
+        }))
+      : [];
+    return [{ id: ref.id, date: ref.date, topic: ref.topic, brand: brands[ref.brand_id] ?? ref.brand_id, status: ref.status, version: v?.number ?? null, style: v?.design?.direction_name ?? null, slides, caption: v?.caption ?? null }];
+  });
+  return { exemplar, folders, recent, chosen };
 }
 
 export function buildContext(publicationId: number): GenerationContext {
@@ -146,7 +209,7 @@ export function buildContext(publicationId: number): GenerationContext {
   const sources = [
     guideline.path,
     'knowledge/products/btl_products.json',
-    ...p.products.flatMap((x) => [x.excerpt?.path, x.documentation, officialUrl(productUrl(x.product))?.href].filter(Boolean) as string[]),
+    ...p.products.flatMap((x) => [x.excerpt?.path, x.documentation, ...x.links.map((u) => officialUrl(u)?.href)].filter(Boolean) as string[]),
     ...a.documents.map((d) => d.path),
   ];
   return {

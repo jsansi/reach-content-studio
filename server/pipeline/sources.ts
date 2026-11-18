@@ -30,11 +30,18 @@ export function officialUrl(url: unknown): URL | null {
   }
 }
 
-/** The product's web page: its "url" field, else the first link written in its description. */
-export function productUrl(product: Product): string | null {
+/** Every reference link of the product: the catalog "url", the links added to its sheet, and links written in its description. */
+export function productUrls(product: Product): string[] {
   const d = product.data as { url?: string; description?: string };
-  return d.url || d.description?.match(/https?:\/\/[^\s)"'<>]+/)?.[0] || null;
+  const all = [d.url, ...(product.refs ?? []).filter((r) => r.kind === 'link').map((r) => r.url), ...(d.description?.match(/https?:\/\/[^\s)"'<>]+/g) ?? [])];
+  return [...new Set(all.filter((u): u is string => !!u))];
 }
+/** The product's first reference link (kept for older callers). */
+export const productUrl = (product: Product): string | null => productUrls(product)[0] ?? null;
+
+/** Images attached to the product sheet (data/products/<id>/). */
+export const productImageFiles = (product: Product) =>
+  (product.refs ?? []).filter((r) => r.kind === 'file' && r.path && /\.(png|jpe?g|webp)$/i.test(r.path));
 
 export const webExcerptPath = (productId: string) => path.join(WEB_DIR, `${productId}.md`);
 
@@ -51,44 +58,60 @@ export async function gatherSources(pub: Publication, products: Product[]): Prom
   const offline = process.env.REACH_OFFLINE === '1'; // tests and offline work: no web requests
   try {
     for (const product of products) {
-      const url = productUrl(product);
-      if (!url) continue;
-      const u = officialUrl(url);
-      if (!u) {
-        warnings.push(`La página de ${product.name} (${url}) no es un sitio oficial de BTL: no se consultó.`);
-        continue;
+      const urls = productUrls(product);
+      if (!urls.length) continue;
+      const official: URL[] = [];
+      for (const url of urls) {
+        const u = officialUrl(url);
+        if (u) official.push(u);
+        else warnings.push(`El enlace de ${product.name} (${url}) no es un sitio oficial de BTL: no se consultó automáticamente.`);
       }
-      const textFresh = isFresh(webExcerptPath(product.id));
+      if (!official.length) continue;
+      // The text of every official page goes in one excerpt; it is refreshed every 7 days or when the links change.
+      const excerptFile = webExcerptPath(product.id);
+      const textFresh = isFresh(excerptFile) && sameSources(excerptFile, official);
       const imagesKey = `web_images:${pub.id}:${product.id}`;
-      // Photos from the web only for products without an official image folder in the repo.
-      const hasOfficial = !!(product.data as { assets_path?: string }).assets_path;
+      // Photos from the web only for products without official images (repo folder or images on its sheet).
+      const hasOfficial = !!(product.data as { assets_path?: string }).assets_path || productImageFiles(product).length > 0;
       const needImages = !hasOfficial && !getMeta(imagesKey);
       if (offline) continue;
       if (textFresh && !needImages) continue;
-      try {
-        const page = await (await open()).newPage({ viewport: { width: 1440, height: 1000 } });
-        const r = await readPage(page, u.href);
-        if (!textFresh && r.text.length > 200) {
-          fs.mkdirSync(WEB_DIR, { recursive: true });
-          const date = new Date().toISOString().slice(0, 10);
-          fs.writeFileSync(webExcerptPath(product.id), `---\nid: web-${product.id}\nsource: ${u.href}\nretrieved: ${date}\n---\n\n# ${product.name} · página oficial (${u.hostname}, consultada ${date})\n\n${r.text}\n`);
-          notes.push(`texto de ${u.hostname}`);
-        }
-        if (needImages) {
-          let n = 0;
-          for (const src of r.images.slice(0, MAX_WEB_IMAGES)) {
-            const res = await page.request.get(src).catch(() => null);
-            const type = res?.headers()['content-type'] ?? '';
-            const ext = /png/.test(type) ? '.png' : /jpe?g/.test(type) ? '.jpg' : /webp/.test(type) ? '.webp' : null;
-            if (!res?.ok() || !ext) continue;
-            addImage(pub.id, `web-${product.id}-${String(++n).padStart(2, '0')}${ext}`, await res.body());
+      const texts: string[] = [];
+      const seen = new Set<string>();
+      let n = 0;
+      for (const u of official) {
+        try {
+          const page = await (await open()).newPage({ viewport: { width: 1440, height: 1000 } });
+          const r = await readPage(page, u.href);
+          if (r.text.length > 200) texts.push(`## ${u.href}\n\n${r.text}`);
+          if (needImages) {
+            // The English and Spanish pages usually share their photos: each image file is downloaded once.
+            for (const src of r.images) {
+              const key = src.split('?')[0].split('/').pop() ?? src;
+              if (n >= MAX_WEB_IMAGES || seen.has(key)) continue;
+              seen.add(key);
+              const res = await page.request.get(src).catch(() => null);
+              const type = res?.headers()['content-type'] ?? '';
+              const ext = /png/.test(type) ? '.png' : /jpe?g/.test(type) ? '.jpg' : /webp/.test(type) ? '.webp' : null;
+              if (!res?.ok() || !ext) continue;
+              addImage(pub.id, `web-${product.id}-${String(++n).padStart(2, '0')}${ext}`, await res.body());
+            }
           }
-          setMeta(imagesKey, new Date().toISOString());
-          if (n) notes.push(`${n} foto(s) de ${u.hostname}`);
+          await page.close();
+        } catch (e) {
+          warnings.push(`No se pudo consultar la página de ${product.name} (${u.href}): ${(e as Error).message.split('\n')[0]}`);
         }
-        await page.close();
-      } catch (e) {
-        warnings.push(`No se pudo consultar la página de ${product.name} (${u.href}): ${(e as Error).message.split('\n')[0]}`);
+      }
+      if (!textFresh && texts.length) {
+        fs.mkdirSync(WEB_DIR, { recursive: true });
+        const date = new Date().toISOString().slice(0, 10);
+        const hosts = [...new Set(official.map((u) => u.hostname))].join(', ');
+        fs.writeFileSync(excerptFile, `---\nid: web-${product.id}\nsources: ${official.map((u) => u.href).join(' ')}\nretrieved: ${date}\n---\n\n# ${product.name} · páginas oficiales (${hosts}, consultadas ${date})\n\n${texts.join('\n\n')}\n`);
+        notes.push(`texto de ${texts.length} página(s) oficial(es)`);
+      }
+      if (needImages) {
+        setMeta(imagesKey, new Date().toISOString());
+        if (n) notes.push(`${n} foto(s) de las páginas oficiales`);
       }
     }
 
@@ -116,6 +139,53 @@ export async function gatherSources(pub: Publication, products: Product[]): Prom
   return { notes, warnings };
 }
 
+/**
+ * Text of the product's official BTL pages (data/web/<product>.md), refreshed when older than 7 days or when the
+ * links changed (or always with `force`). Used to draft the product sheet. No images are downloaded here.
+ */
+export async function refreshProductText(product: Product, force = false): Promise<{ path: string | null; warnings: string[] }> {
+  const warnings: string[] = [];
+  const official: URL[] = [];
+  for (const url of productUrls(product)) {
+    const u = officialUrl(url);
+    if (u) official.push(u);
+    else warnings.push(`${url} no es un sitio oficial de BTL: no se leyó.`);
+  }
+  const file = webExcerptPath(product.id);
+  const existing = fs.existsSync(file) ? rel(file) : null;
+  if (!official.length || process.env.REACH_OFFLINE === '1') return { path: existing, warnings };
+  if (!force && isFresh(file) && sameSources(file, official)) return { path: existing, warnings };
+  const browser = await chromium.launch();
+  const texts: string[] = [];
+  try {
+    for (const u of official) {
+      try {
+        const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+        const r = await readPage(page, u.href);
+        if (r.text.length > 200) texts.push(`## ${u.href}\n\n${r.text}`);
+        else warnings.push(`${u.href} no tiene texto suficiente.`);
+        await page.close();
+      } catch (e) {
+        warnings.push(`No se pudo leer ${u.href}: ${(e as Error).message.split('\n')[0]}`);
+      }
+    }
+  } finally {
+    await browser.close();
+  }
+  if (!texts.length) return { path: existing, warnings };
+  fs.mkdirSync(WEB_DIR, { recursive: true });
+  const date = new Date().toISOString().slice(0, 10);
+  const hosts = [...new Set(official.map((u) => u.hostname))].join(', ');
+  fs.writeFileSync(file, `---\nid: web-${product.id}\nsources: ${official.map((u) => u.href).join(' ')}\nretrieved: ${date}\n---\n\n# ${product.name} · páginas oficiales (${hosts}, consultadas ${date})\n\n${texts.join('\n\n')}\n`);
+  return { path: rel(file), warnings };
+}
+
+// The excerpt records the pages it was made from ("sources:", or "source:" in older files).
+function sameSources(file: string, urls: URL[]): boolean {
+  const head = fs.readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  const listed = (head.match(/^sources?: (.*)$/m)?.[1] ?? '').split(/\s+/).filter(Boolean).sort();
+  return listed.join(' ') === urls.map((u) => u.href).sort().join(' ');
+}
 const isFresh = (file: string) => fs.existsSync(file) && Date.now() - fs.statSync(file).mtimeMs < WEB_TTL_DAYS * 864e5;
 const slug = (s: string) => s.replace(/\.[^.]+$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'documento';
 

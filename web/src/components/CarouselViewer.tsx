@@ -29,7 +29,7 @@ export function CarouselViewer({
   isCurrent: boolean;
   currentId?: number | null;
   onRegenerate?: (slide: number) => void; // design proposals: ask for another composition of one slide
-  actions?: SlideActions; // only on the current design version while it can still change
+  actions?: SlideActions; // on the design version on screen while the publication can still change
 }) {
   const [zoom, setZoom] = useState<number | null>(null);
   const [tray, setTray] = useState<number | null>(null);
@@ -76,7 +76,7 @@ export function CarouselViewer({
           {versions.map((x) => (
             <button key={x.id} aria-pressed={x.id === version.id} onClick={() => onSelect(x.id)} title={`${ORIGIN[x.origin]} · ${x.created_at}`}>
               {vlabel(x)}
-              {x.id === (currentId ?? versions[0]?.id) ? ' · actual' : ''}
+              {x.id === currentId ? ' · elegida' : ''}
             </button>
           ))}
         </div>
@@ -94,7 +94,7 @@ export function CarouselViewer({
       <p className="small muted" style={{ margin: '6px 0 0' }}>
         {version.design && <b>Propuesta {version.design.direction} · {version.design.direction_name} · </b>}
         {ORIGIN[version.origin]} · {provider(version.provider)}
-        {!isCurrent && ' · no es la versión actual (solo lectura)'}
+        {!isCurrent && ' · al editarla o aprobarla pasa a ser la versión elegida'}
         {version.notes && ` · ${version.notes}`}
       </p>
 
@@ -154,7 +154,7 @@ export function CarouselViewer({
               </span>
               {!s.rendered && version.parent_version_id && <span className="tag" title="Copiada sin cambios de la versión anterior">sin cambios</span>}
               <span className="spacer" />
-              {onRegenerate && isCurrent && version.kind === 'design' && !isLocked && (
+              {onRegenerate && version.kind === 'design' && !isLocked && (
                 <button className="btn sm ghost" onClick={() => onRegenerate(n)} title="Otra composición para esta diapositiva; las demás no cambian">Regenerar</button>
               )}
               <a className="btn sm" href={`/api/versions/${version.id}/slides/${n}/download`}>Descargar</a>

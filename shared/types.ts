@@ -75,6 +75,31 @@ export interface Product {
   review_status: 'catalog' | 'pending_review' | 'approved';
   data: Record<string, unknown>;
   created_at: string;
+  /** Reference links and files added to the product sheet (catalog or user products). */
+  refs: ProductRef[];
+  /** Clients (brand ids) the product belongs to; empty = not assigned (offered for every brand). */
+  brand_ids: string[];
+}
+
+/** Draft of a product sheet written from its sources (official pages and documents), for Jaime to review. */
+export interface ProductSheetDraft {
+  category: string | null;
+  description: string;
+  key_features: string[];
+  sources: string[];
+  warnings: string[];
+}
+
+export interface ProductRef {
+  id: number;
+  product_id: string;
+  kind: 'link' | 'file';
+  url: string | null;
+  filename: string | null;
+  path: string | null;
+  mime: string | null;
+  size: number | null;
+  created_at: string;
 }
 
 export interface Attachment {
@@ -102,6 +127,7 @@ export interface Publication {
   product_ids: string[];
   brief: QuickBrief | null; // short brief (audience, angle, tone, what to avoid); null on publications made before it
   approved_copy: ApprovedCopy | null; // step 1 "Mensaje": the texts approved for every slide
+  reference_ids: number[]; // past publications Jaime picked as references (style, tone, structure)
   created_at: string;
   updated_at: string;
 }
@@ -219,6 +245,7 @@ export interface PublicationDetail {
   revisions: RevisionRequest[];
   history: HistoryEvent[];
   copy_options: StoredCopyOption[]; // step 1: every text option proposed, newest first
+  references: { id: number; date: string; topic: string }[]; // publications picked as references (that still exist)
 }
 
 export interface Settings {

@@ -12,6 +12,8 @@ export const DATA_DIR = path.resolve(ROOT, process.env.REACH_DATA_DIR || 'data')
 export const MEDIA_DIR = path.join(DATA_DIR, 'media');
 export const UPLOADS_DIR = path.join(DATA_DIR, 'uploads');
 export const TASKS_DIR = path.join(DATA_DIR, 'tasks');
+/** Files attached to a product sheet (images, PDFs, anything): data/products/<product id>/. */
+export const PRODUCT_FILES_DIR = path.join(DATA_DIR, 'products');
 export const PROMPTS_DIR = path.join(ROOT, 'prompts');
 export const WEB_DIST = path.join(ROOT, 'web', 'dist');
 

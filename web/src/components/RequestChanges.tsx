@@ -31,7 +31,7 @@ export function RequestChanges({
   const send = async () => {
     setSaving(true);
     try {
-      onSaved(await api.requestChanges(version.publication_id, { target, slide_number: NEEDS_SLIDE.includes(target) ? slide : null, instruction, save_as_preference: pref }));
+      onSaved(await api.requestChanges(version.publication_id, { version_id: version.id, target, slide_number: NEEDS_SLIDE.includes(target) ? slide : null, instruction, save_as_preference: pref }));
       toast(manual ? 'Solicitud guardada. Se preparó una tarea para Claude Code.' : 'Solicitud enviada. Claude está revisando el carrusel.');
     } catch (e) {
       toast((e as Error).message, true);

@@ -83,15 +83,57 @@ test('a registered product can be completed later, and an attached PDF counts as
   seed();
   const prod = repo.createProduct({ name: 'BTL Prueba Ficha' });
   const pub = repo.createPublication({ brand_id: 'btl-medical-sv', date: '2026-10-20', topic: 'x', format: 'carousel', objective: 'Fecha conmemorativa', slide_count: 3, product_ids: [prod.id] } as any);
-  assert.match(loadProducts(pub).blocking.join(' '), /Completar ficha/);
+  assert.match(loadProducts(pub).blocking.join(' '), /Ficha/);
   repo.addAttachment(pub.id, { kind: 'document', filename: 'ficha.pdf', path: 'data/uploads/x/ficha.pdf', mime: 'application/pdf', size: 1 });
   const withPdf = loadProducts(pub);
   assert.deepEqual(withPdf.blocking, []);
-  assert.ok(withPdf.warnings.some((w) => /documentos adjuntos/.test(w)));
+  assert.ok(withPdf.warnings.some((w) => /solo de los documentos/.test(w)));
   const pub2 = repo.createPublication({ brand_id: 'btl-medical-sv', date: '2026-10-21', topic: 'y', format: 'carousel', objective: 'Fecha conmemorativa', slide_count: 3, product_ids: [prod.id] } as any);
   repo.updateProduct(prod.id, { description: 'Descripción oficial', features: ['Uno'] });
   assert.deepEqual(loadProducts(pub2).blocking, []);
-  assert.throws(() => repo.updateProduct('spinal-decompression', { description: 'x' }), /catálogo/);
+  // catalog products: description untouched, but extra links can be added
+  const before = repo.getProducts(['spinal-decompression'])[0].data.description;
+  const cat = repo.updateProduct('spinal-decompression', { description: 'x', urls: ['https://www.btlnet.es/spinal-decompression'] });
+  assert.equal(cat.data.description, before);
+  assert.deepEqual(cat.refs.filter((r) => r.kind === 'link').map((r) => r.url), ['https://www.btlnet.es/spinal-decompression']);
+  repo.updateProduct('spinal-decompression', { urls: [] });
+});
+
+test('product sheet: several links and files (images, logo, PDF, other) feed the generation context', async () => {
+  const fs2 = await import('node:fs');
+  const path2 = await import('node:path');
+  const repo = await import('../server/repo.ts');
+  const { loadProducts, loadAssets } = await import('../server/pipeline/context.ts');
+  const { productUrls } = await import('../server/pipeline/sources.ts');
+  const { PRODUCT_FILES_DIR, rel } = await import('../server/paths.ts');
+  const prod = repo.createProduct({ name: 'BTL FSWT Prueba', urls: ['https://www.btlnet.com/fswt', 'btlnet.es/fswt', 'https://www.btlnet.com/fswt'] });
+  assert.deepEqual(prod.refs.map((r) => r.url), ['https://www.btlnet.com/fswt', 'https://btlnet.es/fswt']);
+  assert.deepEqual(productUrls(prod), ['https://www.btlnet.com/fswt', 'https://btlnet.es/fswt']);
+  assert.throws(() => repo.createProduct({ name: 'X', urls: ['http://'] }), /no es válido/);
+  const dir = path2.join(PRODUCT_FILES_DIR, prod.id);
+  fs2.mkdirSync(dir, { recursive: true });
+  const png = Buffer.from('89504e470d0a1a0a0000000d49484452000000100000000c08060000001f15c489', 'hex');
+  const file = (name: string, data: Buffer, mime: string) => {
+    fs2.writeFileSync(path2.join(dir, name), data);
+    return repo.addProductFile(prod.id, { filename: name, path: rel(path2.join(dir, name)), mime, size: data.length });
+  };
+  file('equipo.png', png, 'image/png');
+  file('FSWT-logo.png', png, 'image/png');
+  file('ficha-tecnica.pdf', Buffer.from('%PDF-1.4 x'), 'application/pdf');
+  file('presentacion.pptx', Buffer.from('x'), 'application/octet-stream');
+  const pub = repo.createPublication({ brand_id: 'btl-medical-sv', date: '2026-11-20', topic: 'z', format: 'carousel', objective: 'Fecha conmemorativa', slide_count: 3, product_ids: [prod.id] } as any);
+  const p = loadProducts(pub);
+  assert.deepEqual(p.blocking, []); // the PDF on the sheet counts as information
+  assert.deepEqual(p.products[0].otherFiles.map((f) => f.filename), ['presentacion.pptx']);
+  const a = loadAssets(pub, p.products);
+  assert.deepEqual(a.blocking, []); // the sheet image counts as an official image
+  const mine = a.assets.filter((x) => x.product === prod.id);
+  assert.deepEqual(mine.map((x) => x.kind).sort(), ['product_image', 'product_logo']);
+  assert.equal(mine.find((x) => x.kind === 'product_image')!.width, 16);
+  assert.deepEqual(a.documents.filter((x) => x.product === prod.id).map((x) => x.filename), ['ficha-tecnica.pdf']);
+  const ref = repo.getProducts([prod.id])[0].refs.find((r) => r.filename === 'presentacion.pptx')!;
+  repo.deleteProductRef(ref.id);
+  assert.equal(repo.getProducts([prod.id])[0].refs.filter((r) => r.kind === 'file').length, 3);
 });
 
 test('official sources: only BTL sites; PDF photos are extracted when the publication has no image', async () => {
@@ -207,4 +249,57 @@ test('direct design edits: editable texts with their effective style; invalid va
   assert.equal(claimSlide('diapositiva 3'), 3);
   assert.equal(claimSlide('slide 2'), 2);
   assert.equal(claimSlide('caption'), null);
+});
+
+test('product sheet: client assignment, review flag, and a source draft written as a Claude Code task', async () => {
+  process.env.REACH_AI_MODE = 'claude_code';
+  process.env.REACH_OFFLINE = '1';
+  const fs2 = await import('node:fs');
+  const path2 = await import('node:path');
+  const repo = await import('../server/repo.ts');
+  const { draftSheet, readSheetDraft, sheetTaskName } = await import('../server/pipeline/product-sheet.ts');
+  const { PRODUCT_FILES_DIR, TASKS_DIR, rel } = await import('../server/paths.ts');
+  const prod = repo.createProduct({ name: 'BTL Ficha Borrador', brand_ids: ['btl-estetica-sv'] });
+  assert.deepEqual(prod.brand_ids, ['btl-estetica-sv']);
+  assert.equal(prod.review_status, 'pending_review');
+  assert.throws(() => repo.updateProduct(prod.id, { brand_ids: ['otra-marca'] }), /Marca desconocida/);
+  assert.equal(repo.updateProduct(prod.id, { reviewed: true, brand_ids: ['btl-medical-sv', 'btl-estetica-sv'] }).review_status, 'approved');
+  assert.equal(repo.updateProduct(prod.id, { reviewed: false }).review_status, 'pending_review');
+  assert.equal(repo.updateProduct('spinal-decompression', { reviewed: false }).review_status, 'catalog'); // catalog stays catalog
+  // no sources yet: the draft asks for links or a PDF
+  await assert.rejects(draftSheet(prod.id), /No hay fuentes/);
+  assert.equal(readSheetDraft(prod.id).status, 'none');
+  const dir = path2.join(PRODUCT_FILES_DIR, prod.id);
+  fs2.mkdirSync(dir, { recursive: true });
+  fs2.writeFileSync(path2.join(dir, 'ficha.md'), '# Ficha\nEquipo de prueba.');
+  repo.addProductFile(prod.id, { filename: 'ficha.md', path: rel(path2.join(dir, 'ficha.md')), mime: 'text/markdown', size: 10 });
+  const started = await draftSheet(prod.id);
+  assert.equal(started.status, 'waiting');
+  const task = path2.join(TASKS_DIR, sheetTaskName(prod.id));
+  assert.match(fs2.readFileSync(path2.join(task, 'TASK.md'), 'utf8'), /<!-- kind: product_sheet -->/);
+  assert.match(fs2.readFileSync(path2.join(task, 'brief.md'), 'utf8'), /ficha\.md/);
+  fs2.writeFileSync(path2.join(task, 'result.json'), JSON.stringify({ category: 'Prueba', description: 'Descripción.', key_features: ['a', 'b', 'c'], sources: ['ficha.md'], warnings: [] }));
+  const ready = readSheetDraft(prod.id);
+  assert.equal(ready.status, 'ready');
+  assert.equal(ready.status === 'ready' && ready.draft.key_features.length, 3);
+  // the draft is never saved by itself
+  assert.equal(repo.getProducts([prod.id])[0].data.description, '');
+});
+
+test('past publications can be picked as references and reach the context', async () => {
+  const repo = await import('../server/repo.ts');
+  const { loadReferences } = await import('../server/pipeline/context.ts');
+  const base = { brand_id: 'btl-medical-sv', format: 'carousel', objective: 'Fecha conmemorativa', slide_count: 3 } as any;
+  const old = repo.createPublication({ ...base, date: '2026-09-01', topic: 'Referencia antigua' });
+  const pub = repo.createPublication({ ...base, date: '2026-12-01', topic: 'Nueva', reference_ids: [old.id, old.id] });
+  assert.deepEqual(pub.reference_ids, [old.id]);
+  assert.throws(() => repo.updatePublication(pub.id, { reference_ids: [999999] }), /desconocida/);
+  assert.deepEqual(repo.updatePublication(pub.id, { reference_ids: [pub.id, old.id] }).reference_ids, [old.id]); // never itself
+  const chosen = loadReferences(repo.getPublication(pub.id)).chosen;
+  assert.equal(chosen.length, 1);
+  assert.equal(chosen[0].topic, 'Referencia antigua');
+  assert.equal(chosen[0].version, null); // no versions yet
+  assert.deepEqual(repo.publicationDetail(pub.id).references.map((r) => r.topic), ['Referencia antigua']);
+  repo.deletePublication(old.id);
+  assert.deepEqual(loadReferences(repo.getPublication(pub.id)).chosen, []); // a deleted reference is skipped
 });

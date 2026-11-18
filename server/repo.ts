@@ -4,7 +4,7 @@ import { db, tx } from './db.ts';
 import { TASKS_DIR, versionDir } from './paths.ts';
 import path from 'node:path';
 import type {
-  Attachment, Brand, EditorialPreference, HistoryEvent, Job, JobKind, Product, Publication,
+  Attachment, Brand, EditorialPreference, HistoryEvent, Job, JobKind, Product, ProductRef, Publication,
   PublicationDetail, RevisionRequest, Stage, Status, StoryRender, Version,
 } from '../shared/types.ts';
 import { narrative, type ApprovedCopy, type ApprovedSlide, type CopyOptionT, type QuickBrief, type StoredCopyOption } from '../shared/structure.ts';
@@ -33,48 +33,103 @@ export const getBrand = (id: string): BrandRow => {
   return b as BrandRow;
 };
 
-const toProduct = ({ data_json, ...r }: Row): Product => ({ ...r, data: JSON.parse(data_json) } as Product);
+const toProduct = ({ data_json, brand_ids, ...r }: Row): Product =>
+  ({ ...r, data: JSON.parse(data_json), refs: listProductRefs(String(r.id)), brand_ids: brand_ids ? JSON.parse(brand_ids) : [] } as Product);
 export const listProducts = (): Product[] =>
-  all('SELECT id, name, category, data_json, source, review_status, created_at FROM products ORDER BY name').map(toProduct);
+  all('SELECT id, name, category, data_json, source, review_status, brand_ids, created_at FROM products ORDER BY name').map(toProduct);
 export const getProducts = (ids: string[]): Product[] =>
   ids.map((id) => one('SELECT * FROM products WHERE id = ?', id)).filter(Boolean).map((r) => toProduct(r!));
 
-export function createProduct(input: { name: string; category?: string; description?: string; url?: string; features?: string[] }): Product {
+// ---------- product sheet: reference links and files ----------
+export const listProductRefs = (productId: string): ProductRef[] =>
+  all('SELECT * FROM product_refs WHERE product_id = ? ORDER BY kind DESC, id', productId) as ProductRef[];
+export function getProductRef(id: number): ProductRef {
+  const r = one('SELECT * FROM product_refs WHERE id = ?', id);
+  if (!r) throw new NotFound('Archivo o enlace no encontrado');
+  return r as ProductRef;
+}
+export const deleteProductRef = (id: number) => run('DELETE FROM product_refs WHERE id = ?', id);
+export function addProductFile(productId: string, f: { filename: string; path: string; mime: string; size: number }): ProductRef {
+  const r = run("INSERT INTO product_refs (product_id, kind, filename, path, mime, size) VALUES (?, 'file', ?, ?, ?, ?)", productId, f.filename, f.path, f.mime, f.size);
+  return getProductRef(Number(r.lastInsertRowid));
+}
+/** Normalises a list of links (one per entry, http/https only, no duplicates). */
+export function cleanLinks(urls: unknown): string[] {
+  const list = (Array.isArray(urls) ? urls : String(urls ?? '').split(/\s+/)).map((u) => String(u).trim()).filter(Boolean);
+  const out: string[] = [];
+  for (const u of list) {
+    let parsed: URL;
+    try {
+      parsed = new URL(/^https?:\/\//i.test(u) ? u : `https://${u}`);
+    } catch {
+      throw new BadRequest(`El enlace "${u}" no es válido.`);
+    }
+    if (!out.includes(parsed.href)) out.push(parsed.href);
+  }
+  return out;
+}
+function setProductLinks(productId: string, urls: string[]) {
+  tx(() => {
+    run("DELETE FROM product_refs WHERE product_id = ? AND kind = 'link'", productId);
+    for (const u of urls) run("INSERT INTO product_refs (product_id, kind, url) VALUES (?, 'link', ?)", productId, u);
+  });
+}
+
+type ProductInput = {
+  name?: string; category?: string; description?: string; urls?: string[] | string; url?: string; features?: string[];
+  brand_ids?: string[]; reviewed?: boolean;
+};
+function cleanBrands(ids: unknown): string[] {
+  const known = new Set(all('SELECT id FROM brands').map((b) => String(b.id)));
+  const list = [...new Set((Array.isArray(ids) ? ids : []).map(String))];
+  for (const b of list) if (!known.has(b)) throw new BadRequest(`Marca desconocida: ${b}`);
+  return list;
+}
+
+export function createProduct(input: ProductInput): Product {
   const name = input.name?.trim();
   if (!name) throw new BadRequest('El producto necesita un nombre.');
+  const links = cleanLinks(input.urls ?? input.url);
   let id = name.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^btl\s+/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   if (one('SELECT 1 FROM products WHERE id = ?', id)) id = `${id}-${Date.now().toString(36)}`;
   const data = {
-    id, name, category: input.category || null, url: input.url || null,
+    id, name, category: input.category || null, url: null,
     description: input.description || '', key_features: input.features || [], approved_claims: [],
     assets_path: null, documentation: null,
   };
   run(
-    "INSERT INTO products (id, name, category, data_json, source, review_status) VALUES (?, ?, ?, ?, 'user', 'pending_review')",
-    id, name, input.category || null, JSON.stringify(data)
+    "INSERT INTO products (id, name, category, data_json, source, review_status, brand_ids) VALUES (?, ?, ?, ?, 'user', ?, ?)",
+    id, name, input.category || null, JSON.stringify(data), input.reviewed ? 'approved' : 'pending_review', JSON.stringify(cleanBrands(input.brand_ids))
   );
+  setProductLinks(id, links);
   return getProducts([id])[0];
 }
 
-// Completes or corrects a product registered by the user (catalog products are read-only).
-export function updateProduct(id: string, input: { category?: string; description?: string; url?: string; features?: string[] }): Product {
+// Completes or corrects a product sheet. Every product (catalog or user) takes extra links and files; the
+// description, category and features of catalog products come from btl_products.json and are not edited here.
+export function updateProduct(id: string, input: ProductInput): Product {
   const row = one('SELECT * FROM products WHERE id = ?', id);
   if (!row) throw new BadRequest('El producto no existe.');
-  if (row.source !== 'user') throw new BadRequest('Los productos del catálogo no se editan desde aquí.');
-  const data = { ...JSON.parse(String(row.data_json)) };
-  if (input.category !== undefined) data.category = input.category || null;
-  if (input.url !== undefined) data.url = input.url || null;
-  if (input.description !== undefined) data.description = input.description;
-  if (input.features !== undefined) data.key_features = input.features;
-  run('UPDATE products SET category = ?, data_json = ? WHERE id = ?', data.category, JSON.stringify(data), id);
+  if (input.urls !== undefined || input.url !== undefined) setProductLinks(id, cleanLinks(input.urls ?? input.url));
+  if (input.brand_ids !== undefined) run('UPDATE products SET brand_ids = ? WHERE id = ?', JSON.stringify(cleanBrands(input.brand_ids)), id);
+  // "Revisada": Jaime checked the sheet's information (description, features, links). Catalog products are always reviewed.
+  if (input.reviewed !== undefined && row.source === 'user') run('UPDATE products SET review_status = ? WHERE id = ?', input.reviewed ? 'approved' : 'pending_review', id);
+  if (row.source === 'user') {
+    const data = { ...JSON.parse(String(row.data_json)) };
+    if (input.category !== undefined) data.category = input.category || null;
+    if (input.description !== undefined) data.description = input.description;
+    if (input.features !== undefined) data.key_features = input.features;
+    run('UPDATE products SET category = ?, data_json = ? WHERE id = ?', data.category, JSON.stringify(data), id);
+  }
   return getProducts([id])[0];
 }
 
 // ---------- publications ----------
-const toPublication = ({ brief_json, approved_copy_json, ...r }: Row): Publication => ({
+const toPublication = ({ brief_json, approved_copy_json, reference_ids, ...r }: Row): Publication => ({
   ...(r as Publication),
   brief: json(brief_json),
   approved_copy: json(approved_copy_json),
+  reference_ids: json(reference_ids) ?? [],
   product_ids: all('SELECT product_id FROM publication_products WHERE publication_id = ?', r.id).map((x) => x.product_id),
 });
 
@@ -105,6 +160,15 @@ export interface PublicationInput {
   deadline?: string | null;
   product_ids?: string[];
   brief?: Partial<QuickBrief> | null;
+  reference_ids?: number[];
+}
+
+// References must be other existing publications; duplicates are dropped and at most 5 are kept.
+function cleanReferences(ids: unknown, self: number | null): string {
+  const list = [...new Set((Array.isArray(ids) ? ids : []).map(Number).filter((n) => Number.isInteger(n) && n !== self))];
+  for (const r of list) if (!one('SELECT 1 FROM publications WHERE id = ?', r)) throw new BadRequest(`Publicación de referencia desconocida: ${r}`);
+  if (list.length > 5) throw new BadRequest('Elige como máximo 5 publicaciones de referencia.');
+  return JSON.stringify(list);
 }
 
 const cleanBrief = (b: Partial<QuickBrief> | null | undefined): string | null => {
@@ -128,9 +192,10 @@ export function createPublication(i: PublicationInput): Publication {
   checkInput(i, false);
   return tx(() => {
     const r = run(
-      `INSERT INTO publications (brand_id, date, topic, format, objective, slide_count, creative_instructions, deadline, brief_json)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      i.brand_id, i.date, i.topic.trim(), i.format, i.objective.trim(), i.slide_count ?? 3, i.creative_instructions ?? '', i.deadline || null, cleanBrief(i.brief)
+      `INSERT INTO publications (brand_id, date, topic, format, objective, slide_count, creative_instructions, deadline, brief_json, reference_ids)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      i.brand_id, i.date, i.topic.trim(), i.format, i.objective.trim(), i.slide_count ?? 3, i.creative_instructions ?? '', i.deadline || null, cleanBrief(i.brief),
+      cleanReferences(i.reference_ids, null)
     );
     const id = Number(r.lastInsertRowid);
     for (const pid of i.product_ids ?? []) run('INSERT INTO publication_products VALUES (?, ?)', id, pid);
@@ -146,6 +211,7 @@ export function updatePublication(id: number, i: Partial<PublicationInput>): Pub
   return tx(() => {
     for (const c of cols) if (i[c] !== undefined) run(`UPDATE publications SET ${c} = ?, updated_at = datetime('now') WHERE id = ?`, (i[c] as any) ?? null, id);
     if (i.brief !== undefined) run("UPDATE publications SET brief_json = ?, updated_at = datetime('now') WHERE id = ?", cleanBrief(i.brief), id);
+    if (i.reference_ids !== undefined) run("UPDATE publications SET reference_ids = ?, updated_at = datetime('now') WHERE id = ?", cleanReferences(i.reference_ids, id), id);
     // Approved texts belong to a structure: changing the format or the slide count invalidates them.
     if ((i.format !== undefined && i.format !== before.format) || (i.slide_count !== undefined && i.slide_count !== before.slide_count))
       run('UPDATE publications SET approved_copy_json = NULL WHERE id = ?', id);
@@ -397,5 +463,9 @@ export function publicationDetail(id: number): PublicationDetail {
     revisions: listRevisions(id),
     history: listHistory(id),
     copy_options: listCopyOptions(id),
+    references: publication.reference_ids
+      .map((r) => one('SELECT id, date, topic FROM publications WHERE id = ?', r))
+      .filter(Boolean)
+      .map((r) => ({ id: Number(r!.id), date: String(r!.date), topic: String(r!.topic) })),
   };
 }

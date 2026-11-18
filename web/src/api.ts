@@ -1,5 +1,5 @@
 // Thin client for the REACH Content Studio API. All persistence happens on the server (SQLite + files).
-import type { Brand, EditorialPreference, Job, Product, Publication, PublicationDetail, Settings } from '../../shared/types.ts';
+import type { Brand, EditorialPreference, Job, Product, ProductSheetDraft, Publication, PublicationDetail, Settings } from '../../shared/types.ts';
 import type { CarouselContentT } from '../../shared/schema.ts';
 import type { ApprovedSlide, QuickBrief } from '../../shared/structure.ts';
 import type { NodeEdit } from '../../shared/design-edit.ts';
@@ -15,6 +15,19 @@ async function call<T>(method: string, url: string, body?: unknown, raw?: Blob |
   return data as T;
 }
 
+export interface ProductSheetInput {
+  category?: string;
+  description?: string;
+  urls?: string[];
+  features?: string[];
+  brand_ids?: string[];
+  reviewed?: boolean;
+}
+export type SheetDraftState =
+  | { status: 'ready'; draft: ProductSheetDraft; provider: string }
+  | { status: 'waiting'; task: string; command: string }
+  | { status: 'none' };
+
 export interface PublicationInput {
   brand_id: string;
   date: string;
@@ -26,14 +39,19 @@ export interface PublicationInput {
   deadline: string | null;
   product_ids: string[];
   brief: QuickBrief | null;
+  reference_ids: number[];
 }
 
 export const api = {
   settings: () => call<Settings & { statuses: Record<string, string> }>('GET', '/api/settings'),
   brands: () => call<Brand[]>('GET', '/api/brands'),
   products: () => call<Product[]>('GET', '/api/products'),
-  createProduct: (p: { name: string; category?: string; description?: string; url?: string; features?: string[] }) => call<Product>('POST', '/api/products', p),
-  updateProduct: (id: string, p: { category?: string; description?: string; url?: string; features?: string[] }) => call<Product>('PUT', `/api/products/${encodeURIComponent(id)}`, p),
+  createProduct: (p: ProductSheetInput & { name: string }) => call<Product>('POST', '/api/products', p),
+  updateProduct: (id: string, p: ProductSheetInput) => call<Product>('PUT', `/api/products/${encodeURIComponent(id)}`, p),
+  startSheetDraft: (id: string) => call<SheetDraftState>('POST', `/api/products/${encodeURIComponent(id)}/sheet-draft`),
+  sheetDraft: (id: string) => call<SheetDraftState>('GET', `/api/products/${encodeURIComponent(id)}/sheet-draft`),
+  uploadProductFile: (id: string, file: File) => call<Product>('POST', `/api/products/${encodeURIComponent(id)}/files?name=${encodeURIComponent(file.name)}`, undefined, file),
+  deleteProductRef: (refId: number) => call<Product>('DELETE', `/api/product-refs/${refId}`),
   publications: (q: { from: string; to: string; brand?: string; status?: string }) =>
     call<Publication[]>('GET', `/api/publications?${new URLSearchParams(Object.entries(q).filter(([, v]) => v) as [string, string][])}`),
   publication: (id: number) => call<PublicationDetail>('GET', `/api/publications/${id}`),
@@ -61,7 +79,7 @@ export const api = {
   discardJob: (id: number) => call<PublicationDetail>('POST', `/api/jobs/${id}/discard`),
   retryJob: (id: number) => call<PublicationDetail>('POST', `/api/jobs/${id}/retry`),
   edit: (id: number, versionId: number, content: CarouselContentT) => call<PublicationDetail>('POST', `/api/publications/${id}/edit`, { version_id: versionId, content }),
-  requestChanges: (id: number, r: { target: string; slide_number: number | null; instruction: string; save_as_preference: boolean; discard_task?: boolean }) =>
+  requestChanges: (id: number, r: { version_id: number; target: string; slide_number: number | null; instruction: string; save_as_preference: boolean; discard_task?: boolean }) =>
     call<PublicationDetail>('POST', `/api/publications/${id}/revisions`, r),
   stories: (versionId: number) => call<PublicationDetail>('POST', `/api/versions/${versionId}/stories`),
   approve: (id: number, versionId: number) => call<PublicationDetail>('POST', `/api/publications/${id}/approve`, { version_id: versionId }),

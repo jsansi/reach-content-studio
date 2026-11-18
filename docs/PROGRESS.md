@@ -114,7 +114,7 @@ overflow, no console errors). `npm test`: 10/10 passing.
   the prompt allows it only on explicit request. Note: a result that uses new layout fields must be imported after
   restarting the server (v17 of pub-4 was imported with the old renderer and lost the photo crop/fades).
 - Product info gaps (2026-10-16): an attached document now counts as product information; user-registered products can be
-  completed later ("Completar ficha", PUT /api/products/:id; catalog products stay read-only).
+  completed later ("Ficha", PUT /api/products/:id). Every sheet (catalog too) takes several reference links and files of any type (product_refs, data/products/<id>/); catalog descriptions stay read-only.
 - Official sources (2026-10-16, `server/pipeline/sources.ts`): BTL product page text + photos, PDF photo extraction
   (dependency-free: JPEG passthrough, Flate → PNG; page captures segmented in Chromium). Tried on pub-5
   (BTL Magnetotherapy): 8 clean applicator/device photos from btlnet.es; the page-capture PDF gave 4 blocks, 2 of them

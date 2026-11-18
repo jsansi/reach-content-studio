@@ -286,9 +286,12 @@ test('step 3 without AI: approve slides, adjust texts, bring a slide from anothe
   d = await waitJob(pub.id);
   const a = d.versions.find((v: any) => v.direction === 'A');
   const b = d.versions.find((v: any) => v.direction === 'B');
-  // adjustments only on the chosen (current) proposal
-  assert.equal((await api('POST', `/api/versions/${a.id}/locks`, { slide: 2, locked: true })).status, 409);
-  await api('POST', `/api/versions/${a.id}/select`);
+  // the version on screen is the one being worked on: adjusting a proposal that wasn't chosen chooses it
+  d = (await api('POST', `/api/versions/${b.id}/locks`, { slide: 2, locked: false })).json;
+  assert.equal(d.publication.current_version_id, b.id);
+  d = (await api('POST', `/api/versions/${a.id}/locks`, { slide: 2, locked: false })).json;
+  assert.equal(d.publication.current_version_id, a.id);
+  assert.equal(d.history[0].action, 'slide_unlocked');
 
   // 1 · approve slide 2
   d = (await api('POST', `/api/versions/${a.id}/locks`, { slide: 2, locked: true })).json;
