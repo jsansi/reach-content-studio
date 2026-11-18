@@ -1,0 +1,20 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "pieza",
+      "headline": "Un congreso,\nun ganador",
+      "support": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+          "location": "diapositiva 1",
+          "source": "brief.md · Instrucciones creativas del usuario",
+          "approval": "general_statement"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-10-24T15:46:55.218Z"
+}

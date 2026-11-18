@@ -1,0 +1,252 @@
+{
+  "concept": "El homenaje abre con el gesto de la prueba: una persona soplando por la boquilla bajo el gancho \"Respirar no debería costar.\" En la segunda diapositiva el equipo y sus tres ventajas de uso; el cierre convierte el costo en servicio para la clínica.",
+  "content": {
+    "brand": "BTL El Salvador",
+    "date": "2026-11-18",
+    "occasion": "Día Mundial de la Enfermedad Pulmonar Obstructiva Crónica (EPOC)",
+    "product": "spirometry",
+    "audience": "Fisioterapeutas, médicos rehabilitadores, clínicas y centros de rehabilitación",
+    "slides": [
+      {
+        "layout": "hero",
+        "theme": "light",
+        "lightFrom": "right",
+        "image": "data/uploads/pub-8/web-spirometry-05.webp",
+        "imageAlt": "Persona soplando por la boquilla del espirómetro BTL Spirometry",
+        "imageFrame": {
+          "left": 120,
+          "top": 0,
+          "width": 960,
+          "height": 640,
+          "focusY": 25,
+          "fadeLeft": 340,
+          "fadeBottom": 280,
+          "fadeTop": 160
+        },
+        "datePill": "18 de noviembre",
+        "eyebrow": "Día Mundial de la EPOC",
+        "title": "**Respirar**\nno debería\ncostar.",
+        "swipe": "Desliza",
+        "style": [
+          {
+            "selector": ".h-title",
+            "property": "font-weight",
+            "value": "300"
+          }
+        ],
+        "alt": "Foto de una persona soplando por la boquilla del espirómetro BTL Spirometry. Texto: 18 de noviembre, Día Mundial de la EPOC. Respirar no debería costar. Desliza."
+      },
+      {
+        "layout": "split",
+        "image": "data/uploads/pub-8/web-spirometry-04.webp",
+        "imageAlt": "BTL Spirometry conectado a una computadora con la prueba en pantalla",
+        "imageFrame": {
+          "left": -130,
+          "top": 420,
+          "width": 700
+        },
+        "eyebrow": "BTL Spirometry",
+        "title": "Mide la función pulmonar\ndesde tu computadora",
+        "body": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+        "points": [
+          "Normas predictivas: Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+          "Comparación de tendencias: Resultados actuales y anteriores, lado a lado",
+          "Interpretación automática: El software interpreta cada prueba"
+        ],
+        "swipe": "Desliza",
+        "style": [
+          {
+            "selector": ".sp-panel",
+            "property": "width",
+            "value": "440px"
+          },
+          {
+            "selector": ".sp-text",
+            "property": "left",
+            "value": "490px"
+          },
+          {
+            "selector": ".sp-text",
+            "property": "top",
+            "value": "250px"
+          },
+          {
+            "selector": ".sp-title",
+            "property": "font-size",
+            "value": "50px"
+          },
+          {
+            "selector": ".sp-body",
+            "property": "font-size",
+            "value": "30px"
+          },
+          {
+            "selector": ".sp-body",
+            "property": "margin-top",
+            "value": "22px"
+          },
+          {
+            "selector": ".sp-points",
+            "property": "margin-top",
+            "value": "22px"
+          }
+        ],
+        "alt": "Foto de BTL Spirometry conectado a una computadora. Texto: Mide la función pulmonar desde tu computadora. BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico. Normas predictivas: Interpretación ajustada a la edad, el sexo y la etnia del paciente. Comparación de tendencias: Resultados actuales y anteriores, lado a lado. Interpretación automática: El software interpreta cada prueba. Desliza."
+      },
+      {
+        "layout": "steps",
+        "title": "Menos gasto,\nmás servicio respiratorio",
+        "items": [
+          {
+            "title": "Usa lo que ya tienes",
+            "text": "Funciona con tu computadora o laptop y ocupa poco espacio"
+          },
+          {
+            "title": "Costo de operación bajo",
+            "text": "Sensores y boquillas reutilizables reducen el gasto a largo plazo"
+          },
+          {
+            "title": "Listo para alto volumen",
+            "text": "Pensado para consultas que hacen muchas pruebas"
+          }
+        ],
+        "cta": "Solicita tu demo",
+        "style": [
+          {
+            "selector": ".k-title",
+            "property": "width",
+            "value": "892px"
+          }
+        ],
+        "alt": "Texto: Menos gasto, más servicio respiratorio. 01 Usa lo que ya tienes: Funciona con tu computadora o laptop y ocupa poco espacio. 02 Costo de operación bajo: Sensores y boquillas reutilizables reducen el gasto a largo plazo. 03 Listo para alto volumen: Pensado para consultas que hacen muchas pruebas. Solicita tu demo."
+      }
+    ],
+    "caption": "Hoy es el Día Mundial de la EPOC. Respirar no debería costar, y sumar espirometría a tu consulta tampoco.\n\nBTL Spirometry se conecta por USB a tu computadora, interpreta cada prueba según normas predictivas y usa sensores y boquillas reutilizables. Comparas resultados actuales y anteriores, lado a lado, y ofreces un servicio respiratorio con un costo de operación bajo.\n\nEscríbenos \"DEMO\" por mensaje directo y te lo mostramos.\n\n#DiaMundialEPOC #EPOC #Espirometria #BTLElSalvador #Fisioterapia",
+    "sources": [
+      "data/web/spirometry.md (página oficial btlnet.com/spirometry)",
+      "knowledge/brand-guidelines/btl_corporate_identity.pdf (v2.3)",
+      "data/uploads/pub-8/web-spirometry-04.webp",
+      "data/uploads/pub-8/web-spirometry-05.webp"
+    ],
+    "claims": [
+      {
+        "claim": "Día Mundial de la EPOC · 18 de noviembre",
+        "location": "diapositiva 1",
+        "source": "brief de la publicación · fecha 2026-11-18, tema",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+        "location": "diapositiva 2",
+        "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics / PC Spirometry",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+        "location": "diapositiva 2",
+        "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Resultados actuales y anteriores, lado a lado",
+        "location": "diapositiva 2",
+        "source": "data/web/spirometry.md · Advanced Trend Analysis",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "El software interpreta cada prueba",
+        "location": "diapositiva 2",
+        "source": "data/web/spirometry.md · Automatic Interpretation",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Funciona con tu computadora o laptop y ocupa poco espacio",
+        "location": "diapositiva 3",
+        "source": "data/web/spirometry.md · PC Spirometry (uses your existing PC or laptop, space-saving)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Sensores y boquillas reutilizables reducen el gasto a largo plazo",
+        "location": "diapositiva 3",
+        "source": "data/web/spirometry.md · Cost-Efficient Operation",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Pensado para consultas que hacen muchas pruebas",
+        "location": "diapositiva 3",
+        "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "BTL Spirometry se conecta por USB a tu computadora, interpreta cada prueba según normas predictivas y usa sensores y boquillas reutilizables.",
+        "location": "caption",
+        "source": "data/web/spirometry.md · PC Spirometry / Automatic Interpretation / Cost-Efficient Operation",
+        "approval": "manufacturer_description"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Día Mundial de la EPOC · 18 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · fecha 2026-11-18, tema",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics / PC Spirometry",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Resultados actuales y anteriores, lado a lado",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Advanced Trend Analysis",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "El software interpreta cada prueba",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Automatic Interpretation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Funciona con tu computadora o laptop y ocupa poco espacio",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · PC Spirometry (uses your existing PC or laptop, space-saving)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sensores y boquillas reutilizables reducen el gasto a largo plazo",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Cost-Efficient Operation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pensado para consultas que hacen muchas pruebas",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Spirometry se conecta por USB a tu computadora, interpreta cada prueba según normas predictivas y usa sensores y boquillas reutilizables.",
+      "location": "caption",
+      "source": "data/web/spirometry.md · PC Spirometry / Automatic Interpretation / Cost-Efficient Operation",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "warnings": [
+    "Como pidió Jaime, la pastilla lleva solo \"18 de noviembre\" y \"Día Mundial de la EPOC\" va fuera (eyebrow). El apoyo aprobado de la diapositiva 1 es \"Día Mundial de la EPOC · 18 de noviembre\", así que task:check lo marca como texto aprobado ausente y la app puede avisar \"Texto aprobado modificado\". Para quitar el aviso, cambia ese apoyo a \"Día Mundial de la EPOC\" en el paso 1.",
+    "Portada en dos pesos según la preferencia editorial de Jaime: \"Respirar\" en seminegrita (**…**) y el resto en ligero; el layout steps del cierre no admite dos pesos en el titular. El manual de BTL (p. 19) no resalta partes de un texto; se usa porque lo pide la preferencia.",
+    "Los layouts clásicos no tienen ilustración de pulmones (solo columna y hueso), así que la portada usa la foto oficial de la prueba. Para la ilustración, usa las propuestas creativas.",
+    "Las ventajas de la diapositiva 2 van como lista con \"título: texto\" porque el layout split no tiene títulos separados por punto.",
+    "BTL SPIROMETRY no tiene logo oficial de producto en los activos: se muestra el nombre como texto.",
+    "Ninguna afirmación es clínica aprobada (approved_claims vacío): todo es descripción del fabricante."
+  ]
+}

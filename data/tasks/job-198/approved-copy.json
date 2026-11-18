@@ -1,0 +1,106 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "Respirar\nno debería\ncostar.",
+      "support": "Día Mundial de la EPOC · 18 de noviembre",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Día Mundial de la EPOC · 18 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · fecha 2026-11-18, tema",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "Mide la función pulmonar\ndesde tu computadora",
+      "support": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+      "points": [
+        {
+          "title": "Normas predictivas",
+          "text": "Interpretación ajustada a la edad, el sexo y la etnia del paciente"
+        },
+        {
+          "title": "Comparación de tendencias",
+          "text": "Resultados actuales y anteriores, lado a lado"
+        },
+        {
+          "title": "Interpretación automática",
+          "text": "El software interpreta cada prueba"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+          "location": "diapositiva 2",
+          "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics / PC Spirometry",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+          "location": "diapositiva 2",
+          "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Resultados actuales y anteriores, lado a lado",
+          "location": "diapositiva 2",
+          "source": "data/web/spirometry.md · Advanced Trend Analysis",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "El software interpreta cada prueba",
+          "location": "diapositiva 2",
+          "source": "data/web/spirometry.md · Automatic Interpretation",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "ventajas",
+      "headline": "Menos gasto,\nmás servicio respiratorio",
+      "support": null,
+      "points": [
+        {
+          "title": "Usa lo que ya tienes",
+          "text": "Funciona con tu computadora o laptop y ocupa poco espacio"
+        },
+        {
+          "title": "Costo de operación bajo",
+          "text": "Sensores y boquillas reutilizables reducen el gasto a largo plazo"
+        },
+        {
+          "title": "Listo para alto volumen",
+          "text": "Pensado para consultas que hacen muchas pruebas"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Funciona con tu computadora o laptop y ocupa poco espacio",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · PC Spirometry (uses your existing PC or laptop, space-saving)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Sensores y boquillas reutilizables reducen el gasto a largo plazo",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · Cost-Efficient Operation",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pensado para consultas que hacen muchas pruebas",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-11-18T02:01:15.291Z"
+}

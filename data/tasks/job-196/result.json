@@ -1,0 +1,74 @@
+{
+  "angle": "Después de \"Respirar no debería costar\" y \"Cada prueba, frente a la anterior\", el cierre habla de lo que gana la clínica: un servicio respiratorio propio, seguimiento que el paciente ve y un costo de operación bajo.",
+  "slides": [
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Un servicio más\nen tu propia consulta",
+          "support": null,
+          "points": [
+            { "title": "Sin derivar al paciente", "text": "Haz la prueba donde ya lo atiendes, sin enviarlo a otro lado" },
+            { "title": "Seguimiento que se ve", "text": "Muéstrale en pantalla cómo cambia su función pulmonar" },
+            { "title": "Inversión que no se desecha", "text": "Sensores y boquillas reutilizables: menos gasto a largo plazo" }
+          ],
+          "rationale": "Pone la ventaja de negocio al frente (nueva línea de servicio) y cierra el recorrido: la prueba de la diapositiva 2 se vuelve un servicio de la clínica.",
+          "claims": [
+            { "claim": "Haz la prueba donde ya lo atiendes, sin enviarlo a otro lado", "location": "diapositiva 3", "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics (ideal for clinics) / PC Spirometry", "approval": "manufacturer_description" },
+            { "claim": "Muéstrale en pantalla cómo cambia su función pulmonar", "location": "diapositiva 3", "source": "data/web/spirometry.md · Advanced Trend Analysis", "approval": "manufacturer_description" },
+            { "claim": "Sensores y boquillas reutilizables: menos gasto a largo plazo", "location": "diapositiva 3", "source": "data/web/spirometry.md · Cost-Efficient Operation", "approval": "manufacturer_description" }
+          ]
+        },
+        {
+          "headline": "Cuando el avance se ve,\ntu clínica gana",
+          "support": null,
+          "points": [
+            { "title": "Planes mejor informados", "text": "Ajusta la rehabilitación con la evolución pulmonar a la vista" },
+            { "title": "Pacientes que entienden", "text": "Pruebas pasadas y actuales, lado a lado, para explicarle su avance" },
+            { "title": "Lectura automática", "text": "El software interpreta cada prueba según normas predictivas" }
+          ],
+          "rationale": "Responde al dolor de demostrar el progreso: el dato visible se traduce en mejores decisiones y en conversaciones más claras con el paciente.",
+          "claims": [
+            { "claim": "Ajusta la rehabilitación con la evolución pulmonar a la vista", "location": "diapositiva 3", "source": "data/web/spirometry.md · Advanced Trend Analysis (more informed treatment planning)", "approval": "manufacturer_description" },
+            { "claim": "Pruebas pasadas y actuales, lado a lado, para explicarle su avance", "location": "diapositiva 3", "source": "data/web/spirometry.md · Advanced Trend Analysis", "approval": "manufacturer_description" },
+            { "claim": "El software interpreta cada prueba según normas predictivas", "location": "diapositiva 3", "source": "data/web/spirometry.md · Automatic Interpretation / Wide Range of Predictive Norms", "approval": "manufacturer_description" }
+          ]
+        },
+        {
+          "headline": "Menos gasto,\nmás servicio respiratorio",
+          "support": null,
+          "points": [
+            { "title": "Usa lo que ya tienes", "text": "Funciona con tu computadora o laptop y ocupa poco espacio" },
+            { "title": "Costo de operación bajo", "text": "Sensores y boquillas reutilizables reducen el gasto a largo plazo" },
+            { "title": "Listo para alto volumen", "text": "Pensado para consultas que hacen muchas pruebas" }
+          ],
+          "rationale": "Ángulo de rentabilidad para el dueño de la clínica: sumar un servicio sin cargar costos fijos, conectado con \"no debería costar\" de la portada.",
+          "claims": [
+            { "claim": "Funciona con tu computadora o laptop y ocupa poco espacio", "location": "diapositiva 3", "source": "data/web/spirometry.md · PC Spirometry (uses your existing PC or laptop, space-saving)", "approval": "manufacturer_description" },
+            { "claim": "Sensores y boquillas reutilizables reducen el gasto a largo plazo", "location": "diapositiva 3", "source": "data/web/spirometry.md · Cost-Efficient Operation", "approval": "manufacturer_description" },
+            { "claim": "Pensado para consultas que hacen muchas pruebas", "location": "diapositiva 3", "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)", "approval": "manufacturer_description" }
+          ]
+        },
+        {
+          "headline": "Lo que tu clínica\ngana con cada prueba",
+          "support": null,
+          "points": [
+            { "title": "Un servicio propio", "text": "Suma espirometría a tu consulta de rehabilitación" },
+            { "title": "Confianza con datos", "text": "Muéstrale al paciente sus pruebas anteriores y la de hoy" },
+            { "title": "Resultados confiables", "text": "Interpretación ajustada a la edad, el sexo y la etnia del paciente" }
+          ],
+          "rationale": "Cada ventaja es una ganancia para la clínica (oferta, confianza, solidez del dato) y retoma la comparación de la diapositiva 2.",
+          "claims": [
+            { "claim": "Suma espirometría a tu consulta de rehabilitación", "location": "diapositiva 3", "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics (ideal for clinics)", "approval": "manufacturer_description" },
+            { "claim": "Muéstrale al paciente sus pruebas anteriores y la de hoy", "location": "diapositiva 3", "source": "data/web/spirometry.md · Advanced Trend Analysis", "approval": "manufacturer_description" },
+            { "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente", "location": "diapositiva 3", "source": "data/web/spirometry.md · Wide Range of Predictive Norms", "approval": "manufacturer_description" }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Todas las ventajas son descripciones del fabricante (página oficial de BTL Spirometry); approved_claims está vacío, así que ninguna es una afirmación clínica aprobada. No se prometen resultados para el paciente ni ingresos concretos para la clínica.",
+    "\"Sin enviarlo a otro lado\" y \"Suma espirometría a tu consulta\" son ventajas de uso deducidas de que el equipo está pensado para clínicas y funciona con su computadora; no son cifras ni resultados."
+  ]
+}

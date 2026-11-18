@@ -1,0 +1,127 @@
+{
+  "angle": "La portada conmemora el Día Mundial de la EPOC y, desde la fecha, invita al profesional a preguntarse cómo mide la función pulmonar en su consulta; la diapositiva 2 lo resuelve con BTL Spirometry.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Hoy es el\nDía Mundial\nde la EPOC.",
+          "support": "¿Tu consulta está lista para medir la función pulmonar?",
+          "points": [],
+          "rationale": "Conmemoración directa en el titular; la pregunta conecta la fecha con la consulta y la diapositiva 2 presenta el equipo para medir.",
+          "claims": [
+            {
+              "claim": "Hoy es el Día Mundial de la EPOC.",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · fecha 2026-11-18, tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Día Mundial\nde la EPOC:\nhoy el tema\nes respirar.",
+          "support": "¿Cómo lo evalúas en tu consulta?",
+          "points": [],
+          "rationale": "Nombra el día y lo traduce a algo humano (respirar); la pregunta al profesional abre la brecha que cierra el espirómetro.",
+          "claims": [
+            {
+              "claim": "Día Mundial de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Respirar\nno debería\ncostar.",
+          "support": "Día Mundial de la EPOC · 18 de noviembre",
+          "points": [],
+          "rationale": "Frase emotiva desde la mirada del paciente, con la fecha conmemorada justo debajo; la diapositiva 2 muestra cómo la clínica puede medir ese esfuerzo.",
+          "claims": [
+            {
+              "claim": "Día Mundial de la EPOC · 18 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · fecha 2026-11-18, tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "18 de\nnoviembre:\nun día para\nel aire.",
+          "support": "Día Mundial de la EPOC. Desliza y descubre qué puede sumar tu consulta.",
+          "points": [],
+          "rationale": "La fecha es el gancho; el giro \"un día para el aire\" lo hace memorable y el subtítulo lleva al equipo.",
+          "claims": [
+            {
+              "claim": "18 de noviembre · Día Mundial de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · fecha 2026-11-18, tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Día de la EPOC:\nque nadie\nse quede\nsin aire.",
+          "support": "¿Qué puede hacer tu consulta? Desliza.",
+          "points": [],
+          "rationale": "Deseo conmemorativo y emotivo ligado al día; la pregunta pone al profesional en el centro y la diapositiva 2 responde.",
+          "claims": [
+            {
+              "claim": "Día de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Día Mundial\nde la EPOC:\nel aire\nse cuida.",
+          "support": "Y en tu consulta, también se mide.",
+          "points": [],
+          "rationale": "Mensaje de cuidado propio de la fecha; el subtítulo gira hacia la medición, que es lo que aporta el equipo de la diapositiva 2.",
+          "claims": [
+            {
+              "claim": "Día Mundial de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Día Mundial\nde la EPOC:\ncada pulmón\ncuenta.",
+          "support": "¿Tu consulta ya lo está midiendo?",
+          "points": [],
+          "rationale": "Juego entre \"contar\" (importar) y medir; conmemora la fecha y la pregunta conduce al espirómetro.",
+          "claims": [
+            {
+              "claim": "Día Mundial de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Hoy\nrespiramos\npor quienes\nmás les cuesta.",
+          "support": "Día Mundial de la EPOC. Desliza y descubre cómo acompañarlos desde tu consulta.",
+          "points": [],
+          "rationale": "La opción más emotiva: homenaje a los pacientes en su día; el subtítulo nombra la fecha y conecta con el papel de la clínica.",
+          "claims": [
+            {
+              "claim": "Día Mundial de la EPOC",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema",
+              "approval": "general_statement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Siguiendo el comentario de Jaime, las 8 opciones conmemoran la fecha: el nombre del día va en el titular o en el subtítulo de cada una.",
+    "Ningún gancho afirma que el equipo diagnostique o trate la EPOC: la fecha da contexto y la diapositiva 2 presenta BTL Spirometry como equipo de pruebas de función pulmonar.",
+    "BTL SPIROMETRY no tiene foto ni logo oficial en los activos: hay que adjuntar la foto del dispositivo PC (sin la consola de escritorio) y el logo del producto, si existe, antes del paso 2."
+  ]
+}

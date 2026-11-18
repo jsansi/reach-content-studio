@@ -1,0 +1,9 @@
+{
+  "title": "Ícono de una pantalla con una curva de prueba y una línea de latido: varias evaluaciones en un solo sistema",
+  "viewBox": "0 0 96 96",
+  "svg": "<defs><filter id=\"g\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"2\"/></filter></defs><g filter=\"url(#g)\" opacity=\"0.6\" fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"16\" width=\"72\" height=\"50\" rx=\"3\"/><path d=\"M40,66 L36,80 L60,80 L56,66\"/><path d=\"M30,80 L66,80\"/><path d=\"M20,34 C26,24 30,22 34,28 C38,34 40,38 46,38\"/><path d=\"M50,48 L58,48 L62,38 L67,58 L71,46 L76,46\"/></g><g fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"16\" width=\"72\" height=\"50\" rx=\"3\"/><path d=\"M40,66 L36,80 L60,80 L56,66\"/><path d=\"M30,80 L66,80\"/><path d=\"M20,34 C26,24 30,22 34,28 C38,34 40,38 46,38\"/><path d=\"M50,48 L58,48 L62,38 L67,58 L71,46 L76,46\"/></g>",
+  "topic": "Día Mundial de la Enfermedad Pulmonar Obstructiva Crónica (EPOC)",
+  "date": "2026-11-18",
+  "publication_id": 8,
+  "version": 34
+}

@@ -1,0 +1,75 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "Respirar\nno debería\ncostar.",
+      "support": "Día Mundial de la EPOC · 18 de noviembre",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Día Mundial de la EPOC · 18 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · fecha 2026-11-18, tema",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "Cada prueba,\nfrente a la anterior",
+      "support": "Con BTL Spirometry comparas resultados pasados y actuales lado a lado y ves cómo cambia la función pulmonar de tu paciente.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Con BTL Spirometry comparas resultados pasados y actuales lado a lado y ves cómo cambia la función pulmonar de tu paciente.",
+          "location": "diapositiva 2",
+          "source": "data/web/spirometry.md · Advanced Trend Analysis",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "ventajas",
+      "headline": "Tu consulta,\ncon cada respiro medido",
+      "support": null,
+      "points": [
+        {
+          "title": "Usa tu propia computadora",
+          "text": "Se conecta por USB y ahorra espacio en la consulta"
+        },
+        {
+          "title": "Interpretación automática",
+          "text": "Cada prueba se interpreta según normas predictivas"
+        },
+        {
+          "title": "Resultados comparables",
+          "text": "Pruebas pasadas y actuales, lado a lado"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Se conecta por USB y ahorra espacio en la consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · PC Spirometry (space-saving choice)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Cada prueba se interpreta según normas predictivas",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · Automatic Interpretation / Wide Range of Predictive Norms",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pruebas pasadas y actuales, lado a lado",
+          "location": "diapositiva 3",
+          "source": "data/web/spirometry.md · Advanced Trend Analysis",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-11-18T01:41:22.492Z"
+}

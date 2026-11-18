@@ -1,0 +1,121 @@
+{
+  "direction": "A",
+  "direction_name": "Recorrido continuo",
+  "concept": "Un solo trazo de luz cuenta el camino: nace en la mandíbula (la especialidad del congreso), sube por la pieza y desemboca en el ganador. Del congreso al ganador, sin cortes.",
+  "differentiation": "Fondo oscuro con la foto del ganador saliendo por la esquina inferior derecha y una curva diagonal como protagonista; el texto ocupa todo el ancho arriba. B es una metáfora (boleto) sobre azul con la foto en columna izquierda; C es un primer plano sobre fondo claro con el texto abajo.",
+  "slides": [
+    {
+      "purpose": "Anunciar al ganador: del congreso (mandíbula) al ganador (foto), unidos por un trazo de luz.",
+      "background": "dark",
+      "lightFrom": "top-right",
+      "alt": "Fondo azul oscuro de BTL. Arriba, el texto «Un congreso, un ganador» y «[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.». Abajo a la izquierda, una ilustración de una mandíbula en trazo blanco con la articulación iluminada en celeste; de ella sale una curva de luz que sube hasta la foto del ganador, abajo a la derecha. Logo de BTL arriba a la izquierda.",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":820,\"cy\":1060,\"r\":270,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6,\"opacity\":0.8}",
+          "text": null
+        },
+        {
+          "id": "glow",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":420,\"top\":760,\"width\":700,\"height\":600,\"intensity\":0.5}",
+          "text": null
+        },
+        {
+          "id": "photo",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-7/Imagen de ChatGPT 24 oct 2026_ 09_41_49.png\",\"alt\":\"Foto del ganador de la rifa (referencia; se sustituye por la foto real)\",\"left\":440,\"top\":660,\"width\":640,\"height\":690,\"objectPosition\":\"50% 30%\",\"fade\":[\"left\",\"top\"],\"fadeSize\":200}",
+          "text": null
+        },
+        {
+          "id": "curve",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-40,1270],[200,1250],[400,1120],[500,930],[640,760]],\"width\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"top\":960,\"width\":330,\"height\":260}",
+          "text": null
+        },
+        {
+          "id": "jaw",
+          "parent": "ill",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"jg\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"14\\\"/></filter><filter id=\\\"js\\\" x=\\\"-20%\\\" y=\\\"-20%\\\" width=\\\"140%\\\" height=\\\"140%\\\"><feGaussianBlur stdDeviation=\\\"4\\\"/></filter><radialGradient id=\\\"jh\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.9\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.3\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g filter=\\\"url(#js)\\\" opacity=\\\"0.55\\\"><path d=\\\"M70,214 C58,240 62,282 88,300 L282,300 C306,300 320,284 322,262 L332,124 C334,104 342,90 354,86 C368,82 376,94 368,106 C360,116 348,120 342,132 C332,152 312,152 302,130 L286,94 C280,88 272,92 272,100 L274,188 C270,204 256,212 240,212 L92,212 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/></g><path d=\\\"M70,214 C58,240 62,282 88,300 L282,300 C306,300 320,284 322,262 L332,124 C334,104 342,90 354,86 C368,82 376,94 368,106 C360,116 348,120 342,132 C332,152 312,152 302,130 L286,94 C280,88 272,92 272,100 L274,188 C270,204 256,212 240,212 L92,212 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.14\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.12\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M78,212 C74,196 76,180 84,178 C92,180 94,196 92,212 Z\\\"/><path d=\\\"M98,212 C94,194 96,176 105,174 C114,176 116,194 112,212 Z\\\"/><path d=\\\"M120,212 C116,192 118,172 128,170 C138,172 140,192 136,212 Z\\\"/><rect x=\\\"146\\\" y=\\\"168\\\" width=\\\"24\\\" height=\\\"44\\\" rx=\\\"9\\\"/><rect x=\\\"176\\\" y=\\\"164\\\" width=\\\"28\\\" height=\\\"48\\\" rx=\\\"10\\\"/><rect x=\\\"210\\\" y=\\\"162\\\" width=\\\"30\\\" height=\\\"50\\\" rx=\\\"10\\\"/><rect x=\\\"246\\\" y=\\\"160\\\" width=\\\"24\\\" height=\\\"52\\\" rx=\\\"9\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.5\\\"><path d=\\\"M100,262 C160,256 220,258 300,240\\\"/><path d=\\\"M296,226 C304,196 312,170 318,150\\\"/></g><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"60\\\" fill=\\\"url(#jh)\\\"/><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"44\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.35\\\" filter=\\\"url(#jg)\\\"/><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"7\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"40 60 350 260\",\"width\":330,\"height\":245,\"title\":\"Mandíbula en vista lateral con la articulación iluminada: cirugía oral y maxilofacial\"}",
+          "text": null
+        },
+        {
+          "id": "txt",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "eb",
+          "parent": "txt",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"regular\",\"tone\":\"accent\"}",
+          "text": "IAOMS / ALACIBU 2026"
+        },
+        {
+          "id": "h1",
+          "parent": "txt",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"semibold\",\"as\":\"h1\",\"style\":{\"marginTop\":24}}",
+          "text": "Un congreso,"
+        },
+        {
+          "id": "h2",
+          "parent": "txt",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "un ganador"
+        },
+        {
+          "id": "sup",
+          "parent": "txt",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"maxWidth\":820,\"style\":{\"marginTop\":32}}",
+          "text": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026."
+        }
+      ]
+    }
+  ],
+  "caption": "¡Ya tenemos ganador del Segundo Congreso IAOMS / ALACIBU 2026! 🎉\n\nFelicidades a [Nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial, celebrado en San Salvador. Gracias a todos los especialistas que visitaron nuestro stand y participaron.\n\n¿Quieres conocer la tecnología de BTL para tu clínica? Escríbenos “DEMO” por mensaje directo.\n\n#BTLElSalvador #IAOMS #ALACIBU2026 #CirugíaMaxilofacial #ElSalvador",
+  "sources": [
+    "brief.md · Instrucciones creativas del usuario",
+    "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+  ],
+  "claims": [
+    {
+      "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+      "location": "diapositiva 1",
+      "source": "brief.md · Instrucciones creativas del usuario",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+      "location": "caption",
+      "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+      "approval": "general_statement"
+    }
+  ],
+  "direction_id": "recorrido-continuo"
+}

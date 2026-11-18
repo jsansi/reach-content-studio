@@ -1,0 +1,100 @@
+{
+  "angle": "Anunciar con alegría al ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, con la foto del ganador como protagonista.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Ya tenemos\nganador",
+          "support": "Felicidades a [nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.",
+          "points": [],
+          "rationale": "Directo y comercial: el titular confirma la noticia y el apoyo nombra al ganador y al congreso; la foto hace el resto.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Y el ganador\nes…",
+          "support": "[Nombre del ganador] se lleva la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026. ¡Felicidades!",
+          "points": [],
+          "rationale": "Juega con el suspenso del sorteo: el titular deja la frase abierta y la foto del ganador la completa.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "¡Felicidades,\n[nombre]!",
+          "support": "Ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.",
+          "points": [],
+          "rationale": "Pone a la persona en el centro desde el titular; ideal si el nombre es corto y la foto es cercana.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Un congreso,\nun ganador",
+          "support": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.",
+          "points": [],
+          "rationale": "Ritmo breve y paralelo que une el evento y la noticia; deja espacio para los elementos gráficos del congreso.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "La suerte\nestuvo en\nIAOMS / ALACIBU",
+          "support": "Felicidades a [nombre del ganador], ganador de nuestra rifa en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial 2026. Gracias por visitar a BTL El Salvador.",
+          "points": [],
+          "rationale": "Usa el nombre del congreso como protagonista, reconocible para los asistentes, y cierra agradeciendo la visita.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Gracias por\nvisitarnos",
+          "support": "Y felicidades a [nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.",
+          "points": [],
+          "rationale": "Agradece a todos los asistentes que participaron y anuncia al ganador en el apoyo: suma a la comunidad, no solo al ganador.",
+          "claims": [
+            {
+              "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+              "location": "diapositiva 1",
+              "source": "brief.md · Instrucciones creativas del usuario",
+              "approval": "general_statement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Aún no tenemos el nombre del ganador: todas las opciones llevan el marcador \"[nombre del ganador]\" (o \"[nombre]\"). Sustitúyelo al elegir el texto, antes de aprobar.",
+    "El brief no indica el premio de la rifa; no se menciona para no inventarlo. Si quieres incluirlo, añádelo al editar el texto.",
+    "La estructura fija de \"pieza única\" es de homenaje a una fecha; aquí se adaptó a un anuncio de ganador (titular + apoyo, sin CTA ni características de equipos), según las instrucciones del usuario.",
+    "El nombre oficial del congreso es largo: en el diseño puede ir como texto de apoyo o junto a los elementos gráficos del congreso, no en el titular."
+  ]
+}

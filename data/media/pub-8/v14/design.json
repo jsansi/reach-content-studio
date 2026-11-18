@@ -1,0 +1,459 @@
+{
+  "direction": "C",
+  "direction_name": "Objeto en el centro",
+  "concept": "Un objeto en el centro de un anillo de luz: primero los pulmones (lo que se cuida), luego el equipo (con qué se mide) y al final los pulmones pequeños como sello de la consulta que mide cada respiro.",
+  "differentiation": "Composición simétrica: el protagonista ocupa el centro exacto con anillos concéntricos y un halo amplio, sobre fondos dark y deep; titular corto arriba y texto breve abajo, alineados a la izquierda. El protagonista cambia (pulmones → equipo → pulmones pequeños) y el anillo se repite como hilo.",
+  "slides": [
+    {
+      "purpose": "Homenaje con los pulmones en el centro del anillo de luz: pastilla y día arriba, gancho abajo.",
+      "background": "dark",
+      "lightFrom": "top-right",
+      "alt": "Pastilla \"18 de noviembre\", \"Día Mundial de la EPOC\", unos pulmones luminosos en el centro de anillos de luz y el gancho \"Respirar no debería costar.\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":690,\"r\":270,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.55,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":690,\"radii\":[220,305]}",
+          "text": null
+        },
+        {
+          "id": "fig",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":490,\"left\":355,\"width\":370}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "fig",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"oc1b\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"9\\\"/></filter><radialGradient id=\\\"oc1h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.55\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g filter=\\\"url(#oc1b)\\\" opacity=\\\"0.75\\\"><path d=\\\"M262,176 C204,150 128,214 98,326 C70,438 72,548 118,596 C162,632 236,610 268,566 C284,470 282,312 262,176 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/><path d=\\\"M338,176 C396,150 472,214 502,326 C530,438 528,548 482,596 C440,632 372,612 340,574 C356,528 348,488 330,452 C330,340 330,262 338,176 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/></g><ellipse cx=\\\"180\\\" cy=\\\"520\\\" rx=\\\"110\\\" ry=\\\"90\\\" fill=\\\"url(#oc1h)\\\"/><ellipse cx=\\\"420\\\" cy=\\\"520\\\" rx=\\\"110\\\" ry=\\\"90\\\" fill=\\\"url(#oc1h)\\\"/><path d=\\\"M262,176 C204,150 128,214 98,326 C70,438 72,548 118,596 C162,632 236,610 268,566 C284,470 282,312 262,176 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M338,176 C396,150 472,214 502,326 C530,438 528,548 482,596 C440,632 372,612 340,574 C356,528 348,488 330,452 C330,340 330,262 338,176 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M288,30 L288,200 M312,30 L312,200\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"288\\\" y1=\\\"60\\\" x2=\\\"312\\\" y2=\\\"60\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"92\\\" x2=\\\"312\\\" y2=\\\"92\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"124\\\" x2=\\\"312\\\" y2=\\\"124\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"156\\\" x2=\\\"312\\\" y2=\\\"156\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"186\\\" x2=\\\"312\\\" y2=\\\"186\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,206 C284,226 262,246 238,268\\\"/><path d=\\\"M300,206 C316,226 338,246 362,268\\\"/><path d=\\\"M238,268 C214,300 196,330 184,372\\\"/><path d=\\\"M238,268 C220,286 186,292 154,296\\\"/><path d=\\\"M184,372 C170,412 160,452 156,500\\\"/><path d=\\\"M184,372 C206,404 216,440 222,484\\\"/><path d=\\\"M184,372 C156,388 134,404 118,430\\\"/><path d=\\\"M156,500 C146,530 140,552 140,572\\\"/><path d=\\\"M222,484 C232,512 236,536 236,558\\\"/><path d=\\\"M154,296 C138,304 124,318 116,336\\\"/><path d=\\\"M362,268 C386,300 404,330 416,372\\\"/><path d=\\\"M362,268 C380,286 414,292 446,296\\\"/><path d=\\\"M416,372 C430,412 440,452 444,500\\\"/><path d=\\\"M416,372 C394,404 384,440 378,480\\\"/><path d=\\\"M416,372 C444,388 466,404 482,430\\\"/><path d=\\\"M444,500 C454,530 460,552 460,572\\\"/><path d=\\\"M446,296 C462,304 476,318 484,336\\\"/></g><circle cx=\\\"156\\\" cy=\\\"500\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"222\\\" cy=\\\"484\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"140\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"236\\\" cy=\\\"558\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"118\\\" cy=\\\"430\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"444\\\" cy=\\\"500\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"378\\\" cy=\\\"480\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"460\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"482\\\" cy=\\\"430\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 600 640\",\"width\":370,\"height\":395,\"title\":\"Pulmones en el centro, con las zonas inferiores iluminadas\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":600,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "r",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "18 de noviembre"
+        },
+        {
+          "id": "n6",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":20}}",
+          "text": "Día Mundial de la EPOC"
+        },
+        {
+          "id": "h",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1020,\"width\":700,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "h",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Respirar"
+        },
+        {
+          "id": "n8",
+          "parent": "h",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "no debería costar."
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "El equipo en el centro, en un panel blanco dentro del anillo, con las ventajas abajo.",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Mide la función pulmonar desde tu computadora. BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico. Normas predictivas: Interpretación ajustada a la edad, el sexo y la etnia del paciente. Comparación de tendencias: Resultados actuales y anteriores, lado a lado. Interpretación automática: El software interpreta cada prueba. Foto de BTL Spirometry con una computadora en el centro de anillos de luz. Desliza.",
+      "nodes": [
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":710,\"radii\":[200,250]}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":710,\"r\":225,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.5,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "ph",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":590,\"left\":330,\"width\":420,\"height\":240,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-8/web-spirometry-04.webp\",\"alt\":\"BTL Spirometry conectado a una computadora con la prueba en pantalla\",\"left\":340,\"top\":595,\"width\":400,\"height\":230,\"objectPosition\":\"50% 50%\"}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\"}",
+          "text": "Mide la función pulmonar"
+        },
+        {
+          "id": "n15",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+          "text": "desde tu computadora"
+        },
+        {
+          "id": "n16",
+          "parent": "t",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"maxWidth\":820,\"style\":{\"marginTop\":18}}",
+          "text": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico."
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":980,\"right\":\"m\",\"direction\":\"row\",\"gap\":32}",
+          "text": null
+        },
+        {
+          "id": "c0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "c0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Normas predictivas"
+        },
+        {
+          "id": "n18",
+          "parent": "c0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Interpretación ajustada a la edad, el sexo y la etnia del paciente"
+        },
+        {
+          "id": "c1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Comparación de tendencias"
+        },
+        {
+          "id": "n20",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Resultados actuales y anteriores, lado a lado"
+        },
+        {
+          "id": "c2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n21",
+          "parent": "c2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Interpretación automática"
+        },
+        {
+          "id": "n22",
+          "parent": "c2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "El software interpreta cada prueba"
+        },
+        {
+          "id": "n23",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Pulmones pequeños como sello en el centro, ventajas para la clínica y CTA.",
+      "background": "dark",
+      "lightFrom": "bottom-right",
+      "alt": "Menos gasto, más servicio respiratorio. Usa lo que ya tienes: Funciona con tu computadora o laptop y ocupa poco espacio. Costo de operación bajo: Sensores y boquillas reutilizables reducen el gasto a largo plazo. Listo para alto volumen: Pensado para consultas que hacen muchas pruebas. Solicita tu demo. Pulmones pequeños en el centro de anillos de luz.",
+      "nodes": [
+        {
+          "id": "n24",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":590,\"r\":180,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.55,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n25",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":590,\"radii\":[130,225]}",
+          "text": null
+        },
+        {
+          "id": "fig",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":484,\"left\":440,\"width\":200}",
+          "text": null
+        },
+        {
+          "id": "n26",
+          "parent": "fig",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"oc3b\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"9\\\"/></filter><radialGradient id=\\\"oc3h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.55\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g filter=\\\"url(#oc3b)\\\" opacity=\\\"0.75\\\"><path d=\\\"M262,176 C204,150 128,214 98,326 C70,438 72,548 118,596 C162,632 236,610 268,566 C284,470 282,312 262,176 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/><path d=\\\"M338,176 C396,150 472,214 502,326 C530,438 528,548 482,596 C440,632 372,612 340,574 C356,528 348,488 330,452 C330,340 330,262 338,176 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/></g><ellipse cx=\\\"180\\\" cy=\\\"520\\\" rx=\\\"110\\\" ry=\\\"90\\\" fill=\\\"url(#oc3h)\\\"/><ellipse cx=\\\"420\\\" cy=\\\"520\\\" rx=\\\"110\\\" ry=\\\"90\\\" fill=\\\"url(#oc3h)\\\"/><path d=\\\"M262,176 C204,150 128,214 98,326 C70,438 72,548 118,596 C162,632 236,610 268,566 C284,470 282,312 262,176 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M338,176 C396,150 472,214 502,326 C530,438 528,548 482,596 C440,632 372,612 340,574 C356,528 348,488 330,452 C330,340 330,262 338,176 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M288,30 L288,200 M312,30 L312,200\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><line x1=\\\"288\\\" y1=\\\"60\\\" x2=\\\"312\\\" y2=\\\"60\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"92\\\" x2=\\\"312\\\" y2=\\\"92\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"124\\\" x2=\\\"312\\\" y2=\\\"124\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"156\\\" x2=\\\"312\\\" y2=\\\"156\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><line x1=\\\"288\\\" y1=\\\"186\\\" x2=\\\"312\\\" y2=\\\"186\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"/><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,206 C284,226 262,246 238,268\\\"/><path d=\\\"M300,206 C316,226 338,246 362,268\\\"/><path d=\\\"M238,268 C214,300 196,330 184,372\\\"/><path d=\\\"M238,268 C220,286 186,292 154,296\\\"/><path d=\\\"M184,372 C170,412 160,452 156,500\\\"/><path d=\\\"M184,372 C206,404 216,440 222,484\\\"/><path d=\\\"M184,372 C156,388 134,404 118,430\\\"/><path d=\\\"M156,500 C146,530 140,552 140,572\\\"/><path d=\\\"M222,484 C232,512 236,536 236,558\\\"/><path d=\\\"M154,296 C138,304 124,318 116,336\\\"/><path d=\\\"M362,268 C386,300 404,330 416,372\\\"/><path d=\\\"M362,268 C380,286 414,292 446,296\\\"/><path d=\\\"M416,372 C430,412 440,452 444,500\\\"/><path d=\\\"M416,372 C394,404 384,440 378,480\\\"/><path d=\\\"M416,372 C444,388 466,404 482,430\\\"/><path d=\\\"M444,500 C454,530 460,552 460,572\\\"/><path d=\\\"M446,296 C462,304 476,318 484,336\\\"/></g><circle cx=\\\"156\\\" cy=\\\"500\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"222\\\" cy=\\\"484\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"140\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"236\\\" cy=\\\"558\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"118\\\" cy=\\\"430\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"444\\\" cy=\\\"500\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"378\\\" cy=\\\"480\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"460\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"482\\\" cy=\\\"430\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 600 640\",\"width\":200,\"height\":213,\"title\":\"Pulmones pequeños en el centro\"}",
+          "text": null
+        },
+        {
+          "id": "n27",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n28",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\"}",
+          "text": "Menos gasto,"
+        },
+        {
+          "id": "n29",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+          "text": "más servicio respiratorio"
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":850,\"right\":\"m\",\"direction\":\"row\",\"gap\":32}",
+          "text": null
+        },
+        {
+          "id": "c0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n30",
+          "parent": "c0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Usa lo que ya tienes"
+        },
+        {
+          "id": "n31",
+          "parent": "c0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Funciona con tu computadora o laptop y ocupa poco espacio"
+        },
+        {
+          "id": "c1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n32",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Costo de operación bajo"
+        },
+        {
+          "id": "n33",
+          "parent": "c1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Sensores y boquillas reutilizables reducen el gasto a largo plazo"
+        },
+        {
+          "id": "c2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":8,\"width\":276}",
+          "text": null
+        },
+        {
+          "id": "n34",
+          "parent": "c2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Listo para alto volumen"
+        },
+        {
+          "id": "n35",
+          "parent": "c2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Pensado para consultas que hacen muchas pruebas"
+        },
+        {
+          "id": "cta",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"width\":600}",
+          "text": null
+        },
+        {
+          "id": "n36",
+          "parent": "cta",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "En el Día Mundial de la EPOC ponemos la respiración en el centro.\n\nBTL Spirometry convierte tu computadora en una estación de espirometría de nivel clínico y usa sensores y boquillas reutilizables que reducen el gasto a largo plazo. Cada prueba se compara con la anterior, lado a lado.\n\nEscríbenos \"DEMO\" por mensaje directo para una demostración.\n\n#DiaMundialEPOC #EPOC #Espirometria #BTLElSalvador #FuncionPulmonar",
+  "sources": [
+    "data/web/spirometry.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/uploads/pub-8/web-spirometry-04.webp"
+  ],
+  "claims": [
+    {
+      "claim": "Día Mundial de la EPOC · 18 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · fecha 2026-11-18, tema",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics / PC Spirometry",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Resultados actuales y anteriores, lado a lado",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Advanced Trend Analysis",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "El software interpreta cada prueba",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Automatic Interpretation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Funciona con tu computadora o laptop y ocupa poco espacio",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · PC Spirometry (uses your existing PC or laptop, space-saving)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sensores y boquillas reutilizables reducen el gasto a largo plazo",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Cost-Efficient Operation",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pensado para consultas que hacen muchas pruebas",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Spirometry convierte tu computadora en una estación de espirometría de nivel clínico y usa sensores y boquillas reutilizables que reducen el gasto a largo plazo.",
+      "location": "caption",
+      "source": "data/web/spirometry.md · PC Spirometry / Advanced Trend Analysis / Cost-Efficient Operation",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "objeto-centrado"
+}

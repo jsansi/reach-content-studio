@@ -1,0 +1,129 @@
+{
+  "direction": "C",
+  "direction_name": "Macro del detalle",
+  "concept": "Felicitación editorial: el anuncio y el nombre de la Dra. Ligia Martínez arriba, su foto real con el certificado como protagonista en un marco limpio, y el contexto del congreso en voz baja al pie.",
+  "differentiation": "Retícula de una columna con márgenes de marca: franja superior (logo + evento), bloque de anuncio y nombre, foto delimitada a todo el ancho de la retícula, bloque de mensaje y contexto al pie. Sin curvas ni resplandores; la mandíbula queda como un detalle pequeño alineado al pie.",
+  "slides": [
+    {
+      "purpose": "Felicitar a la ganadora de la rifa: anuncio, nombre, foto con el certificado y contexto del congreso.",
+      "background": "dark",
+      "lightFrom": "top-right",
+      "alt": "Fondo azul oscuro de BTL. Arriba, el logo de BTL a la izquierda y «IAOMS / ALACIBU 2026» a la derecha. Debajo, «¡Ya tenemos ganadora!» y, en celeste, «Dra. Ligia Martínez». En el centro, la foto de la Dra. Ligia Martínez con su certificado de regalo junto a un representante de BTL en el stand, con los bordes disueltos en el fondo azul. Al pie, «Felicitamos a la ganadora de la rifa de BTL El Salvador.» y, más pequeño, «Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial», con un pequeño dibujo de una mandíbula en trazo celeste a la derecha.",
+      "nodes": [
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "ev",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"right\":\"m\",\"width\":440,\"top\":118,\"crossAlign\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "evt",
+          "parent": "ev",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\",\"tone\":\"accent\"}",
+          "text": "IAOMS / ALACIBU 2026"
+        },
+        {
+          "id": "top",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"right\":\"m\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "top",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "¡Ya tenemos ganadora!"
+        },
+        {
+          "id": "h2",
+          "parent": "top",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"tone\":\"accent\",\"as\":\"h2\"}",
+          "text": "Dra. Ligia Martínez"
+        },
+        {
+          "id": "photo",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-7/WhatsApp Image 2026-10-24 at 13.54.30.jpeg\",\"alt\":\"La Dra. Ligia Martínez con su certificado de regalo junto a un representante de BTL en el stand del congreso\",\"left\":223,\"top\":430,\"width\":634,\"height\":598,\"objectPosition\":\"50% 0%\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":90,\"blend\":\"normal\"}",
+          "text": null
+        },
+        {
+          "id": "bot",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1055,\"left\":\"m\",\"width\":760,\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "sup",
+          "parent": "bot",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"tone\":\"strong\"}",
+          "text": "Felicitamos a la ganadora de la rifa\nde BTL El Salvador."
+        },
+        {
+          "id": "ctx",
+          "parent": "bot",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\"}",
+          "text": "Segundo Congreso Centroamericano de\nCirugía Oral y Maxilofacial"
+        },
+        {
+          "id": "ill",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":896,\"top\":1183,\"width\":90,\"height\":72}",
+          "text": null
+        },
+        {
+          "id": "jaw",
+          "parent": "ill",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<path d=\\\"M70,214 C58,240 62,282 88,300 L282,300 C306,300 320,284 322,262 L332,124 C334,104 342,90 354,86 C368,82 376,94 368,106 C360,116 348,120 342,132 C332,152 312,152 302,130 L286,94 C280,88 272,92 272,100 L274,188 C270,204 256,212 240,212 L92,212 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"7\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"6\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M78,212 C74,196 76,180 84,178 C92,180 94,196 92,212 Z\\\"/><path d=\\\"M98,212 C94,194 96,176 105,174 C114,176 116,194 112,212 Z\\\"/><path d=\\\"M120,212 C116,192 118,172 128,170 C138,172 140,192 136,212 Z\\\"/><rect x=\\\"146\\\" y=\\\"168\\\" width=\\\"24\\\" height=\\\"44\\\" rx=\\\"9\\\"/><rect x=\\\"176\\\" y=\\\"164\\\" width=\\\"28\\\" height=\\\"48\\\" rx=\\\"10\\\"/><rect x=\\\"210\\\" y=\\\"162\\\" width=\\\"30\\\" height=\\\"50\\\" rx=\\\"10\\\"/><rect x=\\\"246\\\" y=\\\"160\\\" width=\\\"24\\\" height=\\\"52\\\" rx=\\\"9\\\"/></g>\",\"viewBox\":\"50 70 340 250\",\"width\":90,\"height\":66,\"title\":\"Mandíbula en vista lateral, trazo celeste: cirugía oral y maxilofacial\"}",
+          "text": null
+        }
+      ]
+    }
+  ],
+  "caption": "¡Ya tenemos ganadora en IAOMS / ALACIBU 2026! 🎉\n\nFelicitamos a la Dra. Ligia Martínez, ganadora de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial, celebrado en San Salvador. Gracias a todos los especialistas que visitaron nuestro stand y participaron.\n\n¿Quieres conocer la tecnología de BTL para tu clínica? Escríbenos “DEMO” por mensaje directo.\n\n#BTLElSalvador #IAOMS #ALACIBU2026 #CirugíaMaxilofacial #ElSalvador",
+  "sources": [
+    "brief.md · Instrucciones creativas del usuario",
+    "brief.md · Comentarios previos de Jaime",
+    "data/uploads/pub-7/WhatsApp Image 2026-10-24 at 13.54.30.jpeg (foto de la ganadora)",
+    "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+  ],
+  "claims": [
+    {
+      "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+      "location": "diapositiva 1",
+      "source": "brief.md · Instrucciones creativas del usuario",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Dra. Ligia Martínez, ganadora de la rifa",
+      "location": "diapositiva 1 y caption",
+      "source": "brief.md · Comentarios previos de Jaime (2026-10-24)",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+      "location": "caption",
+      "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+      "approval": "general_statement"
+    }
+  ],
+  "direction_id": "macro-detalle"
+}

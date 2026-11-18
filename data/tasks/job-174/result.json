@@ -1,0 +1,331 @@
+{
+  "concepts_explored": [
+    "Recorrido: un trazo de luz va del congreso (mandíbula, la especialidad) al ganador.",
+    "Metáfora del boleto ganador: un ticket luminoso con una estrella como portada.",
+    "Primer plano de la celebración: la sonrisa y el boleto en la mano, con el congreso como contexto abajo.",
+    "Escenario: la pirámide del afiche del congreso dibujada como un podio sobre el que se coloca la foto.",
+    "Mapa: un punto de luz sobre San Salvador en un mapa de Centroamérica que señala dónde ocurrió.",
+    "Foco de escenario: un haz de luz cae desde arriba sobre la foto del ganador, como en un sorteo en vivo.",
+    "Tómbola: una esfera de sorteo con boletos girando, con uno que sale iluminado."
+  ],
+  "proposals": [
+    {
+      "direction": "A",
+      "direction_name": "Recorrido continuo",
+      "concept": "Un solo trazo de luz cuenta el camino: nace en la mandíbula (la especialidad del congreso), sube por la pieza y desemboca en el ganador. Del congreso al ganador, sin cortes.",
+      "differentiation": "Fondo oscuro con la foto del ganador saliendo por la esquina inferior derecha y una curva diagonal como protagonista; el texto ocupa todo el ancho arriba. B es una metáfora (boleto) sobre azul con la foto en columna izquierda; C es un primer plano sobre fondo claro con el texto abajo.",
+      "slides": [
+        {
+          "purpose": "Anunciar al ganador: del congreso (mandíbula) al ganador (foto), unidos por un trazo de luz.",
+          "background": "dark",
+          "lightFrom": "top-right",
+          "alt": "Fondo azul oscuro de BTL. Arriba, el texto «Un congreso, un ganador» y «[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.». Abajo a la izquierda, una ilustración de una mandíbula en trazo blanco con la articulación iluminada en celeste; de ella sale una curva de luz que sube hasta la foto del ganador, abajo a la derecha. Logo de BTL arriba a la izquierda.",
+          "nodes": [
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "halo",
+              "parent": null,
+              "type": "Halo",
+              "props": "{\"cx\":820,\"cy\":1060,\"r\":270,\"thickness\":3,\"tone\":\"sky\",\"glow\":0.6,\"opacity\":0.8}",
+              "text": null
+            },
+            {
+              "id": "glow",
+              "parent": null,
+              "type": "Glow",
+              "props": "{\"left\":420,\"top\":760,\"width\":700,\"height\":600,\"intensity\":0.5}",
+              "text": null
+            },
+            {
+              "id": "photo",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-7/Imagen de ChatGPT 24 oct 2026_ 09_41_49.png\",\"alt\":\"Foto del ganador de la rifa (referencia; se sustituye por la foto real)\",\"left\":440,\"top\":660,\"width\":640,\"height\":690,\"objectPosition\":\"50% 30%\",\"fade\":[\"left\",\"top\"],\"fadeSize\":200}",
+              "text": null
+            },
+            {
+              "id": "curve",
+              "parent": null,
+              "type": "Curve",
+              "props": "{\"points\":[[-40,1270],[200,1250],[400,1120],[500,930],[640,760]],\"width\":3,\"tone\":\"sky\",\"glow\":0.6}",
+              "text": null
+            },
+            {
+              "id": "ill",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":\"m\",\"top\":960,\"width\":330,\"height\":260}",
+              "text": null
+            },
+            {
+              "id": "jaw",
+              "parent": "ill",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"jg\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"14\\\"/></filter><filter id=\\\"js\\\" x=\\\"-20%\\\" y=\\\"-20%\\\" width=\\\"140%\\\" height=\\\"140%\\\"><feGaussianBlur stdDeviation=\\\"4\\\"/></filter><radialGradient id=\\\"jh\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.9\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.3\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g filter=\\\"url(#js)\\\" opacity=\\\"0.55\\\"><path d=\\\"M70,214 C58,240 62,282 88,300 L282,300 C306,300 320,284 322,262 L332,124 C334,104 342,90 354,86 C368,82 376,94 368,106 C360,116 348,120 342,132 C332,152 312,152 302,130 L286,94 C280,88 272,92 272,100 L274,188 C270,204 256,212 240,212 L92,212 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\"/></g><path d=\\\"M70,214 C58,240 62,282 88,300 L282,300 C306,300 320,284 322,262 L332,124 C334,104 342,90 354,86 C368,82 376,94 368,106 C360,116 348,120 342,132 C332,152 312,152 302,130 L286,94 C280,88 272,92 272,100 L274,188 C270,204 256,212 240,212 L92,212 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.14\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.12\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M78,212 C74,196 76,180 84,178 C92,180 94,196 92,212 Z\\\"/><path d=\\\"M98,212 C94,194 96,176 105,174 C114,176 116,194 112,212 Z\\\"/><path d=\\\"M120,212 C116,192 118,172 128,170 C138,172 140,192 136,212 Z\\\"/><rect x=\\\"146\\\" y=\\\"168\\\" width=\\\"24\\\" height=\\\"44\\\" rx=\\\"9\\\"/><rect x=\\\"176\\\" y=\\\"164\\\" width=\\\"28\\\" height=\\\"48\\\" rx=\\\"10\\\"/><rect x=\\\"210\\\" y=\\\"162\\\" width=\\\"30\\\" height=\\\"50\\\" rx=\\\"10\\\"/><rect x=\\\"246\\\" y=\\\"160\\\" width=\\\"24\\\" height=\\\"52\\\" rx=\\\"9\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.5\\\"><path d=\\\"M100,262 C160,256 220,258 300,240\\\"/><path d=\\\"M296,226 C304,196 312,170 318,150\\\"/></g><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"60\\\" fill=\\\"url(#jh)\\\"/><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"44\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.35\\\" filter=\\\"url(#jg)\\\"/><circle cx=\\\"356\\\" cy=\\\"96\\\" r=\\\"7\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"40 60 350 260\",\"width\":330,\"height\":245,\"title\":\"Mandíbula en vista lateral con la articulación iluminada: cirugía oral y maxilofacial\"}",
+              "text": null
+            },
+            {
+              "id": "txt",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"right\":\"m\",\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "eb",
+              "parent": "txt",
+              "type": "Eyebrow",
+              "props": "{\"size\":34,\"weight\":\"regular\",\"tone\":\"accent\"}",
+              "text": "IAOMS / ALACIBU 2026"
+            },
+            {
+              "id": "h1",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"xl\",\"weight\":\"semibold\",\"as\":\"h1\",\"style\":{\"marginTop\":24}}",
+              "text": "Un congreso,"
+            },
+            {
+              "id": "h2",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"p\"}",
+              "text": "un ganador"
+            },
+            {
+              "id": "sup",
+              "parent": "txt",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\",\"maxWidth\":820,\"style\":{\"marginTop\":32}}",
+              "text": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026."
+            }
+          ]
+        }
+      ],
+      "caption": "¡Ya tenemos ganador del Segundo Congreso IAOMS / ALACIBU 2026! 🎉\n\nFelicidades a [Nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial, celebrado en San Salvador. Gracias a todos los especialistas que visitaron nuestro stand y participaron.\n\n¿Quieres conocer la tecnología de BTL para tu clínica? Escríbenos “DEMO” por mensaje directo.\n\n#BTLElSalvador #IAOMS #ALACIBU2026 #CirugíaMaxilofacial #ElSalvador",
+      "sources": [
+        "brief.md · Instrucciones creativas del usuario",
+        "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+        "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+      ],
+      "claims": [
+        {
+          "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+          "location": "diapositiva 1",
+          "source": "brief.md · Instrucciones creativas del usuario",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+          "location": "caption",
+          "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "direction": "B",
+      "direction_name": "Metáfora visual",
+      "concept": "El boleto ganador es la metáfora: un ticket luminoso con una estrella brilla en lo alto de la pieza y la foto del ganador es la prueba. La suerte tiene forma de boleto.",
+      "differentiation": "Fondo Enterprise Blue partido en dos columnas: la foto del ganador ocupa toda la altura a la izquierda y se funde; a la derecha, el boleto ilustrado es el protagonista y el texto va debajo. Sin curva ni halo grande (A) y sin primer plano ni fondo claro (C).",
+      "slides": [
+        {
+          "purpose": "Anunciar al ganador con la metáfora del boleto ganador y la foto como prueba.",
+          "background": "enterprise",
+          "lightFrom": "bottom-right",
+          "alt": "Fondo azul de BTL. A la izquierda, la foto del ganador a toda la altura, fundida hacia el centro. A la derecha, la ilustración de un boleto de rifa en trazo blanco con una estrella iluminada en celeste y confeti, y debajo el texto «Un congreso, un ganador» y «[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.». Logo de BTL arriba a la derecha.",
+          "nodes": [
+            {
+              "id": "photo",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-7/Imagen de ChatGPT 24 oct 2026_ 09_41_49.png\",\"alt\":\"Foto del ganador de la rifa (referencia; se sustituye por la foto real)\",\"left\":-60,\"top\":0,\"width\":660,\"height\":1350,\"objectPosition\":\"52% 50%\",\"fade\":[\"right\"],\"fadeSize\":220}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "ill",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":520,\"top\":250,\"width\":520,\"height\":350}",
+              "text": null
+            },
+            {
+              "id": "tk",
+              "parent": "ill",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"tg\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"18\\\"/></filter><filter id=\\\"ts\\\" x=\\\"-20%\\\" y=\\\"-20%\\\" width=\\\"140%\\\" height=\\\"140%\\\"><feGaussianBlur stdDeviation=\\\"5\\\"/></filter><radialGradient id=\\\"th\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.85\\\"/><stop offset=\\\"0.55\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.25\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><g transform=\\\"rotate(-8 300 200)\\\"><g filter=\\\"url(#ts)\\\" opacity=\\\"0.6\\\"><path d=\\\"M60,80 L540,80 L540,166 A34,34 0 0 0 540,234 L540,320 L60,320 L60,234 A34,34 0 0 0 60,166 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"10\\\" stroke-linejoin=\\\"round\\\"/></g><path d=\\\"M60,80 L540,80 L540,166 A34,34 0 0 0 540,234 L540,320 L60,320 L60,234 A34,34 0 0 0 60,166 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.14\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\" stroke-linejoin=\\\"round\\\"/><rect x=\\\"88\\\" y=\\\"106\\\" width=\\\"300\\\" height=\\\"188\\\" rx=\\\"6\\\" fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\" opacity=\\\"0.55\\\"/><line x1=\\\"420\\\" y1=\\\"96\\\" x2=\\\"420\\\" y2=\\\"304\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-dasharray=\\\"2 12\\\" stroke-linecap=\\\"round\\\"/><circle cx=\\\"238\\\" cy=\\\"200\\\" r=\\\"110\\\" fill=\\\"url(#th)\\\"/><circle cx=\\\"238\\\" cy=\\\"200\\\" r=\\\"70\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.35\\\" filter=\\\"url(#tg)\\\"/><polygon points=\\\"238,138 253,182 300,183 263,211 276,256 238,229 200,256 213,211 176,183 223,182\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.3\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"4\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.8\\\"><line x1=\\\"458\\\" y1=\\\"150\\\" x2=\\\"510\\\" y2=\\\"150\\\"/><line x1=\\\"458\\\" y1=\\\"180\\\" x2=\\\"500\\\" y2=\\\"180\\\"/><line x1=\\\"458\\\" y1=\\\"250\\\" x2=\\\"510\\\" y2=\\\"250\\\"/></g><circle cx=\\\"484\\\" cy=\\\"216\\\" r=\\\"10\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\"/></g><g fill=\\\"#96d2ff\\\"><rect x=\\\"30\\\" y=\\\"36\\\" width=\\\"16\\\" height=\\\"7\\\" rx=\\\"2\\\" transform=\\\"rotate(30 38 40)\\\"/><rect x=\\\"560\\\" y=\\\"40\\\" width=\\\"18\\\" height=\\\"7\\\" rx=\\\"2\\\" transform=\\\"rotate(-25 569 44)\\\" fill=\\\"#ffffff\\\"/><rect x=\\\"574\\\" y=\\\"356\\\" width=\\\"16\\\" height=\\\"7\\\" rx=\\\"2\\\" transform=\\\"rotate(50 582 360)\\\"/><rect x=\\\"20\\\" y=\\\"360\\\" width=\\\"14\\\" height=\\\"6\\\" rx=\\\"2\\\" transform=\\\"rotate(-40 27 363)\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"300\\\" cy=\\\"24\\\" r=\\\"5\\\"/><circle cx=\\\"110\\\" cy=\\\"386\\\" r=\\\"4\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"500\\\" cy=\\\"384\\\" r=\\\"5\\\"/></g>\",\"viewBox\":\"0 0 600 400\",\"width\":510,\"height\":340,\"title\":\"Boleto de rifa con una estrella iluminada y confeti: el boleto ganador\"}",
+              "text": null
+            },
+            {
+              "id": "txt",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":580,\"top\":650,\"width\":406,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "eb",
+              "parent": "txt",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"regular\",\"tone\":\"accent\"}",
+              "text": "IAOMS / ALACIBU 2026"
+            },
+            {
+              "id": "h1",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"h1\",\"style\":{\"marginTop\":20}}",
+              "text": "Un congreso,"
+            },
+            {
+              "id": "h2",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"p\"}",
+              "text": "un ganador"
+            },
+            {
+              "id": "sup",
+              "parent": "txt",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"style\":{\"marginTop\":32}}",
+              "text": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026."
+            }
+          ]
+        }
+      ],
+      "caption": "Un boleto, un ganador en IAOMS / ALACIBU 2026. 🎟️\n\nFelicidades a [Nombre del ganador], quien ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial en San Salvador. Gracias a cada especialista que se acercó a nuestro stand: fue un gusto compartir con ustedes.\n\nSi quieres ver de cerca la tecnología de BTL en tu clínica, escríbenos “DEMO” por mensaje directo.\n\n#BTLElSalvador #IAOMS #ALACIBU #CongresoMaxilofacial #ElSalvador",
+      "sources": [
+        "brief.md · Instrucciones creativas del usuario",
+        "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+        "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+      ],
+      "claims": [
+        {
+          "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+          "location": "diapositiva 1",
+          "source": "brief.md · Instrucciones creativas del usuario",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+          "location": "caption",
+          "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "direction": "C",
+      "direction_name": "Macro del detalle",
+      "concept": "Primer plano de la celebración: la sonrisa y el boleto en la mano llenan la pieza; el contexto (el congreso en San Salvador, dibujado como la pirámide del afiche) aparece abajo, junto al texto.",
+      "differentiation": "Fondo claro con la foto del ganador en gran formato saliendo por arriba y por los lados, y el texto en una franja limpia abajo con el logo abajo a la derecha. Es la única propuesta clara y la única con la foto como protagonista absoluta; A y B son oscuras y dan el protagonismo a una curva o a un boleto.",
+      "slides": [
+        {
+          "purpose": "Anunciar al ganador con un primer plano de la celebración y el congreso como contexto.",
+          "background": "light",
+          "lightFrom": "top-right",
+          "alt": "Fondo claro. La foto del ganador en primer plano ocupa la parte superior y se funde hacia abajo. Abajo, una pequeña ilustración de la pirámide del afiche del congreso con un sol celeste, y el texto «Un congreso, un ganador» y «[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.». Logo de BTL abajo a la derecha.",
+          "nodes": [
+            {
+              "id": "photo",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-7/Imagen de ChatGPT 24 oct 2026_ 09_41_49.png\",\"alt\":\"Foto del ganador de la rifa (referencia; se sustituye por la foto real)\",\"left\":-120,\"top\":0,\"width\":1320,\"height\":800,\"objectPosition\":\"50% 48%\",\"fade\":[\"bottom\"],\"fadeSize\":240}",
+              "text": null
+            },
+            {
+              "id": "logo",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": null
+            },
+            {
+              "id": "ill",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":\"m\",\"top\":700,\"width\":300,\"height\":180}",
+              "text": null
+            },
+            {
+              "id": "pyr",
+              "parent": "ill",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"pg\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"16\\\"/></filter><radialGradient id=\\\"ph\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.9\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.3\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"70\\\" fill=\\\"url(#ph)\\\"/><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"26\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.5\\\" filter=\\\"url(#pg)\\\"/><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"20\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><path d=\\\"M20,226 L20,200 L56,200 L56,174 L92,174 L92,148 L128,148 L128,122 L164,122 L164,100 L236,100 L236,122 L272,122 L272,148 L308,148 L308,174 L344,174 L344,200 L380,200 L380,226 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.25\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M176,226 L176,112 M224,226 L224,112\\\"/><path d=\\\"M176,210 L224,210 M176,194 L224,194 M176,178 L224,178 M176,162 L224,162 M176,146 L224,146 M176,130 L224,130\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2\\\" opacity=\\\"0.5\\\"><line x1=\\\"20\\\" y1=\\\"213\\\" x2=\\\"176\\\" y2=\\\"213\\\"/><line x1=\\\"224\\\" y1=\\\"213\\\" x2=\\\"380\\\" y2=\\\"213\\\"/><line x1=\\\"56\\\" y1=\\\"187\\\" x2=\\\"176\\\" y2=\\\"187\\\"/><line x1=\\\"224\\\" y1=\\\"187\\\" x2=\\\"344\\\" y2=\\\"187\\\"/><line x1=\\\"92\\\" y1=\\\"161\\\" x2=\\\"176\\\" y2=\\\"161\\\"/><line x1=\\\"224\\\" y1=\\\"161\\\" x2=\\\"308\\\" y2=\\\"161\\\"/></g><line x1=\\\"0\\\" y1=\\\"226\\\" x2=\\\"400\\\" y2=\\\"226\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/>\",\"viewBox\":\"0 0 400 240\",\"width\":300,\"height\":180,\"title\":\"Pirámide escalonada con un sol celeste: el congreso en San Salvador\"}",
+              "text": null
+            },
+            {
+              "id": "txt",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":\"m\",\"top\":910,\"width\":640,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "h1",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+              "text": "Un congreso,"
+            },
+            {
+              "id": "h2",
+              "parent": "txt",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"p\"}",
+              "text": "un ganador"
+            },
+            {
+              "id": "sup",
+              "parent": "txt",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"regular\",\"style\":{\"marginTop\":24}}",
+              "text": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026."
+            }
+          ]
+        }
+      ],
+      "caption": "Así se celebra en IAOMS / ALACIBU 2026. ✨\n\nFelicidades a [Nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial. Gracias a todos los especialistas que nos acompañaron en San Salvador y se dieron una vuelta por nuestro stand.\n\n¿Te interesa la tecnología de BTL para tu clínica? Escríbenos “DEMO” por mensaje directo y te contamos más.\n\n#BTLElSalvador #IAOMS #ALACIBU2026 #CirugíaOral #ElSalvador",
+      "sources": [
+        "brief.md · Instrucciones creativas del usuario",
+        "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+        "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+      ],
+      "claims": [
+        {
+          "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+          "location": "diapositiva 1",
+          "source": "brief.md · Instrucciones creativas del usuario",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+          "location": "caption",
+          "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+          "approval": "general_statement"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "La foto del ganador es una imagen de referencia: sustitúyela por la foto real con el mismo encuadre vertical (rostro en el tercio superior, sin recortes en la cabeza) y revisa que el rostro no quede cortado, sobre todo en la propuesta C (primer plano).",
+    "El texto aprobado incluye el marcador \"[Nombre del ganador]\": cámbialo por el nombre real con \"Ajustar textos\" antes de aprobar. También aparece en los captions.",
+    "El afiche del congreso (495 × 619 px, con texto y logos de IAOMS/ALACIBU) no se usa directamente: es de baja resolución y sus textos quedarían por debajo de 30 px. Sus elementos se reinterpretan en línea BTL (la pirámide y el perfil maxilofacial dibujados con los colores de marca). Si quieres sus logos oficiales, pide los archivos al congreso.",
+    "La estructura de \"pieza única\" se adaptó a un anuncio de ganador: sin CTA ni características de equipos en la pieza; la invitación a escribir \"DEMO\" va solo en el caption.",
+    "El premio de la rifa no se menciona porque no figura en el brief."
+  ]
+}

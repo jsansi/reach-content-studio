@@ -1,0 +1,320 @@
+{
+  "angle": "En la EPOC cada respiro cuenta: con BTL Spirometry la clínica mide la función pulmonar desde su propia computadora, sigue la evolución de cada paciente y suma un servicio respiratorio de bajo costo de operación.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "¿Cuánto aire\nle falta\na tu paciente?",
+          "support": "Medirlo cambia la conversación.",
+          "points": [],
+          "rationale": "Pregunta directa al profesional que solo se responde con una medición; la diapositiva 2 presenta cómo medirla.",
+          "claims": []
+        },
+        {
+          "headline": "El aire\nno miente.",
+          "support": "Pero alguien tiene que medirlo.",
+          "points": [],
+          "rationale": "Frase emotiva y breve; la segunda línea deja abierta la pregunta de quién y con qué, que resuelve el equipo.",
+          "claims": []
+        },
+        {
+          "headline": "Lo que no\nse mide,\nno se sigue.",
+          "support": "Desliza y descubre cómo medirlo en tu consulta.",
+          "points": [],
+          "rationale": "Tensión profesional reconocible (seguimiento sin datos) que conecta con la comparación de resultados de la diapositiva 2.",
+          "claims": []
+        },
+        {
+          "headline": "Cada respiro\ncuenta una\nhistoria.",
+          "support": "¿La estás leyendo?",
+          "points": [],
+          "rationale": "Tono inspirador y emotivo; la pregunta invita a deslizar y el equipo es la forma de leer esa historia.",
+          "claims": []
+        },
+        {
+          "headline": "Mejoró en\nterapia.\n¿Lo puedes\ndemostrar?",
+          "support": "Los números de hoy frente a los de hace meses.",
+          "points": [],
+          "rationale": "Mirada del profesional que necesita evidencia del progreso; la diapositiva 2 responde con la comparación de pruebas en el tiempo.",
+          "claims": []
+        },
+        {
+          "headline": "Antes de\nrehabilitar,\nmide.",
+          "support": "¿Con qué dato empiezas tú?",
+          "points": [],
+          "rationale": "Imperativo corto dirigido al rehabilitador; la pregunta abre la brecha que cierra la espirometría en la consulta.",
+          "claims": []
+        },
+        {
+          "headline": "Sin aliento.\nSin datos.\nSin plan.",
+          "support": "Desliza: las dos últimas tienen solución.",
+          "points": [],
+          "rationale": "Ritmo emotivo de tres golpes; la diapositiva 2 resuelve \"sin datos\" y la 3 \"sin plan\".",
+          "claims": []
+        },
+        {
+          "headline": "Tu computadora\npuede hacer\nmás.",
+          "support": "Desliza y mira lo que le falta.",
+          "points": [],
+          "rationale": "Giro inesperado en una fecha de salud respiratoria; la diapositiva 2 revela que la PC se convierte en un espirómetro clínico.",
+          "claims": []
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "options": [
+        {
+          "headline": "Mide la función pulmonar\ndesde tu computadora",
+          "support": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+          "points": [
+            {
+              "title": "Normas predictivas",
+              "text": "Interpretación ajustada a la edad, el sexo y la etnia del paciente"
+            },
+            {
+              "title": "Comparación de tendencias",
+              "text": "Resultados actuales y anteriores, lado a lado"
+            },
+            {
+              "title": "Interpretación automática",
+              "text": "El software interpreta cada prueba"
+            }
+          ],
+          "rationale": "Responde de forma directa a los ganchos sobre medir y al de la computadora, con tres ventajas de uso.",
+          "claims": [
+            {
+              "claim": "BTL Spirometry se conecta por USB y convierte tu PC en una estación de espirometría de nivel clínico.",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Reliable Solutions for Pulmonary Diagnostics / PC Spirometry",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Interpretación ajustada a la edad, el sexo y la etnia del paciente",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Resultados actuales y anteriores, lado a lado",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Advanced Trend Analysis",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "El software interpreta cada prueba",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Automatic Interpretation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Cada prueba,\nfrente a la anterior",
+          "support": "Con BTL Spirometry comparas resultados pasados y actuales lado a lado y ves cómo cambia la función pulmonar de tu paciente.",
+          "points": [],
+          "rationale": "Resuelve los ganchos de seguimiento y progreso (\"Lo que no se mide…\", \"¿Lo puedes demostrar?\").",
+          "claims": [
+            {
+              "claim": "Con BTL Spirometry comparas resultados pasados y actuales lado a lado y ves cómo cambia la función pulmonar de tu paciente.",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Advanced Trend Analysis",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Espirometría clínica,\nsin desechables",
+          "support": "BTL Spirometry usa sensores y boquillas reutilizables: menos gasto a largo plazo y menos residuos.",
+          "points": [],
+          "rationale": "Ángulo práctico y económico que responde al gancho de la computadora y prepara las ventajas de costo de la diapositiva 3.",
+          "claims": [
+            {
+              "claim": "BTL Spirometry usa sensores y boquillas reutilizables: menos gasto a largo plazo y menos residuos.",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Cost-Efficient Operation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un dato confiable\npara cada paciente",
+          "support": "BTL Spirometry sigue guías internacionales reconocidas y ajusta la interpretación a la edad, el sexo y la etnia de cada paciente.",
+          "points": [],
+          "rationale": "Responde a los ganchos emotivos (\"El aire no miente\", \"Cada respiro cuenta una historia\") con confianza en el dato.",
+          "claims": [
+            {
+              "claim": "BTL Spirometry sigue guías internacionales reconocidas y ajusta la interpretación a la edad, el sexo y la etnia de cada paciente.",
+              "location": "diapositiva 2",
+              "source": "data/web/spirometry.md · Wide Range of Predictive Norms (ATS, BTS, GOLD, Enright)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Una nueva línea\npara tu consulta",
+          "support": null,
+          "points": [
+            {
+              "title": "Nuevo servicio",
+              "text": "Pruebas de función pulmonar en tu propia consulta"
+            },
+            {
+              "title": "Seguimiento con datos",
+              "text": "Muestra al paciente cómo cambian sus resultados en el tiempo"
+            },
+            {
+              "title": "Bajo costo de operación",
+              "text": "Sensores y boquillas reutilizables: menos gasto en desechables"
+            }
+          ],
+          "rationale": "Cierra con la ventaja de negocio (nueva línea de servicio) y retoma el seguimiento y el costo.",
+          "claims": [
+            {
+              "claim": "Muestra al paciente cómo cambian sus resultados en el tiempo",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Advanced Trend Analysis",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sensores y boquillas reutilizables: menos gasto en desechables",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Cost-Efficient Operation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tu consulta,\ncon cada respiro medido",
+          "support": null,
+          "points": [
+            {
+              "title": "Usa tu propia computadora",
+              "text": "Se conecta por USB y ahorra espacio en la consulta"
+            },
+            {
+              "title": "Interpretación automática",
+              "text": "Cada prueba se interpreta según normas predictivas"
+            },
+            {
+              "title": "Resultados comparables",
+              "text": "Pruebas pasadas y actuales, lado a lado"
+            }
+          ],
+          "rationale": "Conecta con los ganchos de respiro y computadora; tres ventajas operativas concretas.",
+          "claims": [
+            {
+              "claim": "Se conecta por USB y ahorra espacio en la consulta",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · PC Spirometry (space-saving choice)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Cada prueba se interpreta según normas predictivas",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Automatic Interpretation / Wide Range of Predictive Norms",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Pruebas pasadas y actuales, lado a lado",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Advanced Trend Analysis",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Del dato\nal plan de rehabilitación",
+          "support": null,
+          "points": [
+            {
+              "title": "Planes mejor informados",
+              "text": "Decide el siguiente paso con la evolución pulmonar a la vista"
+            },
+            {
+              "title": "Estándares internacionales",
+              "text": "Pruebas FVC, SVC y MVV conforme a las normas ATS/ERS"
+            },
+            {
+              "title": "Listo para alto volumen",
+              "text": "Pensado para consultas con muchas pruebas"
+            }
+          ],
+          "rationale": "Cierra el gancho \"Antes de rehabilitar, mide\" y \"Sin plan\": el dato se convierte en plan.",
+          "claims": [
+            {
+              "claim": "Decide el siguiente paso con la evolución pulmonar a la vista",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Advanced Trend Analysis (more informed treatment planning)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Pruebas FVC, SVC y MVV conforme a las normas ATS/ERS",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Wide Range of Predictive Norms",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Pensado para consultas con muchas pruebas",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Cost-Efficient Operation (high-volume testing environments)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Diferénciate\nen salud respiratoria",
+          "support": null,
+          "points": [
+            {
+              "title": "Mide y da seguimiento",
+              "text": "Prueba, interpretación y tendencias en un mismo sistema"
+            },
+            {
+              "title": "Pacientes de toda edad",
+              "text": "Normas por edad e incentivo para pruebas infantiles"
+            },
+            {
+              "title": "Operación económica",
+              "text": "Menos gasto a largo plazo con componentes reutilizables"
+            }
+          ],
+          "rationale": "Cierre de diferenciación para la clínica, conectado con los ganchos emotivos sobre cada paciente y cada respiro.",
+          "claims": [
+            {
+              "claim": "Prueba, interpretación y tendencias en un mismo sistema",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Automatic Interpretation / Advanced Trend Analysis",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Normas por edad e incentivo para pruebas infantiles",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Wide Range of Predictive Norms / Child Incentive",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Menos gasto a largo plazo con componentes reutilizables",
+              "location": "diapositiva 3",
+              "source": "data/web/spirometry.md · Cost-Efficient Operation",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "BTL SPIROMETRY está pendiente de revisión en el catálogo y no tiene approved_claims: todas las afirmaciones son descripciones del fabricante (página oficial btlnet.com), no afirmaciones clínicas aprobadas.",
+    "Ningún texto afirma que el equipo diagnostique o trate la EPOC: la fuente oficial habla de pruebas de función pulmonar y diagnóstico respiratorio en general; la fecha solo da contexto.",
+    "Se usó la página oficial en btlnet.com (data/web/spirometry.md); el enlace btlnet.es indicado por Jaime no se consultó por separado.",
+    "Siguiendo la indicación de Jaime, los textos se refieren solo al dispositivo PC (conexión USB), no al equipo de escritorio.",
+    "El producto no tiene carpeta de imágenes ni logo oficial en los activos: hará falta adjuntar la foto del dispositivo PC (sin consola) y, si existe, el logo del producto antes del paso 2."
+  ]
+}

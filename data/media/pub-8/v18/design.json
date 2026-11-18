@@ -1,0 +1,413 @@
+{
+  "direction": "C",
+  "direction_name": "Metáfora visual",
+  "concept": "El árbol bronquial como metáfora y una historia en tres tiempos: respirar no debería costar y la pregunta de cómo mostrarle al paciente que avanza; la respuesta, su prueba de hoy junto a la anterior; y lo que gana la consulta mientras tanto.",
+  "differentiation": "La metáfora (un árbol cuya copa forma unos pulmones) es la portada sobre fondo azul y vuelve pequeña en el cierre; una rama de luz sale del tronco y cruza los tres bordes. La diapositiva 2 es blanca, con la foto oficial grande como prueba. Distinta del póster (sin imagen) y de la conversación (fondos claros y preguntas enormes).",
+  "slides": [
+    {
+      "purpose": "Homenaje con la metáfora: fecha en la pastilla, nombre del día, gancho, pregunta que duele y el árbol-pulmón.",
+      "background": "blue",
+      "lightFrom": "bottom-left",
+      "alt": "Fondo azul: pastilla \"18 de noviembre\", \"Día Mundial de la EPOC\", gancho \"Respirar no debería costar.\", la pregunta \"¿Cómo le muestras a tu paciente que está avanzando?\" y un árbol luminoso cuya copa dibuja unos pulmones. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-100,1314],[900,1304],[1700,1320],[2500,1306],[3400,1316]],\"width\":1.5,\"tone\":\"sky\",\"glow\":0,\"opacity\":0.55}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "r",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "18 de noviembre"
+        },
+        {
+          "id": "n4",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":24}}",
+          "text": "Día Mundial de la EPOC"
+        },
+        {
+          "id": "n5",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\",\"style\":{\"marginTop\":48}}",
+          "text": "Respirar"
+        },
+        {
+          "id": "n6",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "no debería\ncostar."
+        },
+        {
+          "id": "q",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":700,\"left\":\"m\",\"width\":400}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "q",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"light\",\"tone\":\"accent\"}",
+          "text": "¿Cómo le muestras a tu paciente que está avanzando?"
+        },
+        {
+          "id": "fig",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":560,\"left\":480,\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "fig",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"tc1b\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"8\\\"/></filter><radialGradient id=\\\"tc1h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.5\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><ellipse cx=\\\"300\\\" cy=\\\"380\\\" rx=\\\"260\\\" ry=\\\"190\\\" fill=\\\"url(#tc1h)\\\"/><path d=\\\"M286,300 C230,250 140,250 104,330 C70,410 90,500 150,520 C210,540 270,500 286,440 Z M314,300 C370,250 460,250 496,330 C530,410 510,500 450,520 C390,540 330,500 314,440 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"2 10\\\" stroke-linecap=\\\"round\\\"/><g filter=\\\"url(#tc1b)\\\" opacity=\\\"0.7\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,600 L300,330\\\" stroke-width=\\\"5.0\\\"/><path d=\\\"M300.0,330.0 Q259.8,307.6 225.6,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M225.6,275.9 Q191.7,272.9 159.0,261.8\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M159.0,261.8 Q135.1,270.0 109.7,272.4\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M109.7,272.4 Q96.1,285.2 79.6,294.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q74.3,307.2 65.9,318.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q66.9,299.7 53.0,301.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M109.7,272.4 Q91.1,271.9 72.8,266.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,272.2 46.3,274.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,261.7 48.7,253.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M159.0,261.8 Q136.3,250.9 116.5,234.7\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M116.5,234.7 Q97.9,234.2 79.6,229.2\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,234.5 53.1,236.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,224.0 55.5,215.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M116.5,234.7 Q103.6,221.2 94.2,204.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q81.4,199.7 70.1,191.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q88.8,192.2 86.5,178.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M225.6,275.9 Q203.6,249.9 188.1,219.1\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M188.1,219.1 Q165.4,208.2 145.7,192.0\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M145.7,192.0 Q127.0,191.4 108.8,186.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,191.7 82.2,193.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,181.2 84.7,173.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M145.7,192.0 Q132.8,178.5 123.3,162.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q110.6,156.9 99.2,148.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q117.9,149.4 115.6,135.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M188.1,219.1 Q179.7,195.3 177.0,169.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M177.0,169.9 Q164.1,156.5 154.7,140.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q141.9,134.9 130.6,126.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q149.3,127.4 147.0,113.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M177.0,169.9 Q177.3,151.3 182.1,133.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q176.7,120.3 174.4,106.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q187.2,120.2 195.3,108.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M300.0,330.0 Q333.7,298.7 374.4,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M374.4,275.9 Q387.8,244.6 408.4,216.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M408.4,216.9 Q408.0,191.7 413.6,166.8\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M413.6,166.8 Q405.7,149.9 401.9,131.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q391.5,122.4 383.4,111.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q400.8,117.6 403.1,103.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M413.6,166.8 Q419.8,149.3 430.2,133.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q429.1,119.7 431.4,105.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q439.1,122.9 450.4,114.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M408.4,216.9 Q425.8,198.7 447.3,184.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M447.3,184.9 Q453.6,167.4 463.9,151.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q462.9,137.8 465.1,124.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q472.9,141.0 484.2,132.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M447.3,184.9 Q464.1,176.8 482.6,172.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q491.5,162.4 502.8,154.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q496.3,171.7 510.2,173.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M374.4,275.9 Q405.9,263.0 440.1,257.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M440.1,257.9 Q457.5,239.7 479.0,225.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M479.0,225.9 Q485.2,208.3 495.6,192.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q494.5,178.8 496.8,164.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q504.5,182.0 515.8,173.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M479.0,225.9 Q495.8,217.8 514.3,213.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q523.2,203.3 534.5,195.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q528.0,212.6 541.8,214.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M440.1,257.9 Q465.3,257.2 490.2,262.5\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M490.2,262.5 Q507.0,254.4 525.5,250.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q534.4,239.9 545.7,231.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q539.3,249.2 553.1,251.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M490.2,262.5 Q507.9,268.6 523.8,278.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q537.5,277.5 551.4,279.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q534.4,287.6 542.8,298.8\\\" stroke-width=\\\"2.0\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,600 L300,330\\\" stroke-width=\\\"5.0\\\"/><path d=\\\"M300.0,330.0 Q259.8,307.6 225.6,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M225.6,275.9 Q191.7,272.9 159.0,261.8\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M159.0,261.8 Q135.1,270.0 109.7,272.4\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M109.7,272.4 Q96.1,285.2 79.6,294.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q74.3,307.2 65.9,318.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q66.9,299.7 53.0,301.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M109.7,272.4 Q91.1,271.9 72.8,266.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,272.2 46.3,274.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,261.7 48.7,253.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M159.0,261.8 Q136.3,250.9 116.5,234.7\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M116.5,234.7 Q97.9,234.2 79.6,229.2\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,234.5 53.1,236.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,224.0 55.5,215.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M116.5,234.7 Q103.6,221.2 94.2,204.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q81.4,199.7 70.1,191.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q88.8,192.2 86.5,178.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M225.6,275.9 Q203.6,249.9 188.1,219.1\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M188.1,219.1 Q165.4,208.2 145.7,192.0\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M145.7,192.0 Q127.0,191.4 108.8,186.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,191.7 82.2,193.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,181.2 84.7,173.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M145.7,192.0 Q132.8,178.5 123.3,162.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q110.6,156.9 99.2,148.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q117.9,149.4 115.6,135.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M188.1,219.1 Q179.7,195.3 177.0,169.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M177.0,169.9 Q164.1,156.5 154.7,140.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q141.9,134.9 130.6,126.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q149.3,127.4 147.0,113.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M177.0,169.9 Q177.3,151.3 182.1,133.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q176.7,120.3 174.4,106.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q187.2,120.2 195.3,108.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M300.0,330.0 Q333.7,298.7 374.4,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M374.4,275.9 Q387.8,244.6 408.4,216.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M408.4,216.9 Q408.0,191.7 413.6,166.8\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M413.6,166.8 Q405.7,149.9 401.9,131.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q391.5,122.4 383.4,111.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q400.8,117.6 403.1,103.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M413.6,166.8 Q419.8,149.3 430.2,133.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q429.1,119.7 431.4,105.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q439.1,122.9 450.4,114.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M408.4,216.9 Q425.8,198.7 447.3,184.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M447.3,184.9 Q453.6,167.4 463.9,151.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q462.9,137.8 465.1,124.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q472.9,141.0 484.2,132.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M447.3,184.9 Q464.1,176.8 482.6,172.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q491.5,162.4 502.8,154.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q496.3,171.7 510.2,173.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M374.4,275.9 Q405.9,263.0 440.1,257.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M440.1,257.9 Q457.5,239.7 479.0,225.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M479.0,225.9 Q485.2,208.3 495.6,192.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q494.5,178.8 496.8,164.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q504.5,182.0 515.8,173.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M479.0,225.9 Q495.8,217.8 514.3,213.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q523.2,203.3 534.5,195.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q528.0,212.6 541.8,214.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M440.1,257.9 Q465.3,257.2 490.2,262.5\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M490.2,262.5 Q507.0,254.4 525.5,250.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q534.4,239.9 545.7,231.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q539.3,249.2 553.1,251.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M490.2,262.5 Q507.9,268.6 523.8,278.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q537.5,277.5 551.4,279.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q534.4,287.6 542.8,298.8\\\" stroke-width=\\\"2.0\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.6\\\"><path d=\\\"M300,560 C270,580 240,590 200,600\\\"/><path d=\\\"M300,560 C330,580 360,590 400,600\\\"/><path d=\\\"M300,575 C290,590 280,600 268,612\\\"/><path d=\\\"M300,575 C310,590 320,600 332,612\\\"/></g><circle cx=\\\"65.9\\\" cy=\\\"318.4\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"53.0\\\" cy=\\\"301.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"46.3\\\" cy=\\\"274.3\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"48.7\\\" cy=\\\"253.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"53.1\\\" cy=\\\"236.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"55.5\\\" cy=\\\"215.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"70.1\\\" cy=\\\"191.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"86.5\\\" cy=\\\"178.4\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"82.2\\\" cy=\\\"193.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"84.7\\\" cy=\\\"173.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"99.2\\\" cy=\\\"148.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"115.6\\\" cy=\\\"135.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"130.6\\\" cy=\\\"126.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"147.0\\\" cy=\\\"113.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"174.4\\\" cy=\\\"106.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"195.3\\\" cy=\\\"108.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"383.4\\\" cy=\\\"111.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"403.1\\\" cy=\\\"103.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"431.4\\\" cy=\\\"105.9\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"450.4\\\" cy=\\\"114.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"465.1\\\" cy=\\\"124.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"484.2\\\" cy=\\\"132.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"502.8\\\" cy=\\\"154.1\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"510.2\\\" cy=\\\"173.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"496.8\\\" cy=\\\"164.9\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"515.8\\\" cy=\\\"173.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"534.5\\\" cy=\\\"195.1\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"541.8\\\" cy=\\\"214.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"545.7\\\" cy=\\\"231.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"553.1\\\" cy=\\\"251.3\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"551.4\\\" cy=\\\"279.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"542.8\\\" cy=\\\"298.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 600 620\",\"width\":540,\"height\":558,\"title\":\"Árbol cuya copa dibuja unos pulmones: el árbol bronquial como metáfora\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Presentación del equipo: responde a la pregunta de la portada con el nombre del producto en grande y la foto del equipo en uso como protagonista.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "La respuesta tiene nombre: BTL Spirometry. El espirómetro que se conecta por USB a tu computadora y pone la prueba de hoy junto a la anterior. Foto grande de BTL Spirometry en su soporte junto a una computadora portátil que muestra la curva de la prueba. Desliza.",
+      "nodes": [
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-1180,1314],[-180,1304],[620,1320],[1420,1306],[2320,1316]],\"width\":1.5,\"tone\":\"enterprise\",\"glow\":0,\"opacity\":0.55}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-8/web-spirometry-02.webp\",\"alt\":\"BTL Spirometry en su soporte, conectado por USB a una computadora portátil que muestra la curva de la prueba\",\"left\":-260,\"top\":630,\"width\":1560,\"height\":660,\"objectPosition\":\"42% 70%\",\"fade\":[\"top\",\"bottom\"],\"fadeSize\":150}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "k",
+          "parent": "t",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"tone\":\"accent\"}",
+          "text": "La respuesta tiene nombre:"
+        },
+        {
+          "id": "n14",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"h2\",\"style\":{\"marginTop\":14}}",
+          "text": "BTL Spirometry"
+        },
+        {
+          "id": "n16",
+          "parent": "t",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"maxWidth\":820,\"style\":{\"marginTop\":22}}",
+          "text": "El espirómetro que se conecta por USB a tu computadora y pone la prueba de hoy junto a la anterior."
+        },
+        {
+          "id": "n17",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cierre: ventajas que hacen crecer la consulta, cada una con su detalle técnico, sobre fondo iluminado, y el CTA.",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Haz crecer tu consulta respiratoria. Estándar internacional: Pruebas FVC, SVC y MVV conforme a ATS/ERS. Seguimiento que se ve: Tendencias: pruebas actuales y anteriores, lado a lado. Más pruebas, menos gasto: Sensores y boquillas reutilizables, listo para alto volumen. Árbol-pulmón luminoso dentro de un anillo de luz. Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "glow",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":640,\"top\":900,\"width\":480,\"height\":360,\"intensity\":0.55}",
+          "text": null
+        },
+        {
+          "id": "halo",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":870,\"cy\":1075,\"r\":140,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.55,\"opacity\":0.7}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-2260,1314],[-1260,1304],[-460,1320],[340,1306],[1240,1316]],\"width\":1.5,\"tone\":\"sky\",\"glow\":0,\"opacity\":0.55}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n20",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+          "text": "Haz crecer"
+        },
+        {
+          "id": "n21",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "tu consulta respiratoria."
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":520,\"right\":\"m\",\"gap\":40}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "i0",
+          "parent": "r0",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"40\\\" r=\\\"24\\\"/><path d=\\\"M37,40 L45,48 L60,32\\\"/><path d=\\\"M34,60 L28,86 L40,80 L48,88\\\"/><path d=\\\"M62,60 L68,86 L56,80 L48,88\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"40\\\" r=\\\"24\\\"/><path d=\\\"M37,40 L45,48 L60,32\\\"/><path d=\\\"M34,60 L28,86 L40,80 L48,88\\\"/><path d=\\\"M62,60 L68,86 L56,80 L48,88\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":96,\"height\":96,\"title\":\"Ícono de un sello con una marca de verificación\"}",
+          "text": null
+        },
+        {
+          "id": "p0",
+          "parent": "r0",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "a0",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Estándar internacional"
+        },
+        {
+          "id": "b0",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Pruebas FVC, SVC y MVV conforme a ATS/ERS"
+        },
+        {
+          "id": "r1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "i1",
+          "parent": "r1",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><polyline points=\\\"14,14 14,82 84,82\\\"/><path d=\\\"M18,74 C30,30 40,24 52,40 C62,54 72,62 82,64\\\" stroke-dasharray=\\\"2 7\\\"/><path d=\\\"M18,74 C28,20 40,14 52,30 C62,44 72,52 82,54\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><polyline points=\\\"14,14 14,82 84,82\\\"/><path d=\\\"M18,74 C30,30 40,24 52,40 C62,54 72,62 82,64\\\" stroke-dasharray=\\\"2 7\\\"/><path d=\\\"M18,74 C28,20 40,14 52,30 C62,44 72,52 82,54\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":96,\"height\":96,\"title\":\"Ícono de dos curvas de prueba superpuestas, la anterior punteada y la actual continua\"}",
+          "text": null
+        },
+        {
+          "id": "p1",
+          "parent": "r1",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "a1",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Seguimiento que se ve"
+        },
+        {
+          "id": "b1",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Tendencias: pruebas actuales y anteriores, lado a lado"
+        },
+        {
+          "id": "r2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"center\"}",
+          "text": null
+        },
+        {
+          "id": "i2",
+          "parent": "r2",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M78,48 A30,30 0 1 1 66,24\\\"/><path d=\\\"M58,18 L67,24 L60,33\\\"/><rect x=\\\"38\\\" y=\\\"36\\\" width=\\\"20\\\" height=\\\"26\\\" rx=\\\"5\\\"/><path d=\\\"M42,62 L42,70 L54,70 L54,62\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M78,48 A30,30 0 1 1 66,24\\\"/><path d=\\\"M58,18 L67,24 L60,33\\\"/><rect x=\\\"38\\\" y=\\\"36\\\" width=\\\"20\\\" height=\\\"26\\\" rx=\\\"5\\\"/><path d=\\\"M42,62 L42,70 L54,70 L54,62\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":96,\"height\":96,\"title\":\"Ícono de una boquilla dentro de una flecha circular de reutilización\"}",
+          "text": null
+        },
+        {
+          "id": "p2",
+          "parent": "r2",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "a2",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Más pruebas, menos gasto"
+        },
+        {
+          "id": "b2",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Sensores y boquillas reutilizables, listo para alto volumen"
+        },
+        {
+          "id": "fig",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":962,\"left\":760,\"width\":230}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "fig",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"tc3b\\\" x=\\\"-30%\\\" y=\\\"-30%\\\" width=\\\"160%\\\" height=\\\"160%\\\"><feGaussianBlur stdDeviation=\\\"8\\\"/></filter><radialGradient id=\\\"tc3h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.5\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><path d=\\\"M286,300 C230,250 140,250 104,330 C70,410 90,500 150,520 C210,540 270,500 286,440 Z M314,300 C370,250 460,250 496,330 C530,410 510,500 450,520 C390,540 330,500 314,440 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" stroke-dasharray=\\\"2 10\\\" stroke-linecap=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,600 L300,330\\\" stroke-width=\\\"5.0\\\"/><path d=\\\"M300.0,330.0 Q259.8,307.6 225.6,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M225.6,275.9 Q191.7,272.9 159.0,261.8\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M159.0,261.8 Q135.1,270.0 109.7,272.4\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M109.7,272.4 Q96.1,285.2 79.6,294.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q74.3,307.2 65.9,318.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,294.4 Q66.9,299.7 53.0,301.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M109.7,272.4 Q91.1,271.9 72.8,266.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,272.2 46.3,274.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M72.8,266.9 Q60.1,261.7 48.7,253.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M159.0,261.8 Q136.3,250.9 116.5,234.7\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M116.5,234.7 Q97.9,234.2 79.6,229.2\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,234.5 53.1,236.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M79.6,229.2 Q66.9,224.0 55.5,215.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M116.5,234.7 Q103.6,221.2 94.2,204.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q81.4,199.7 70.1,191.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M94.2,204.9 Q88.8,192.2 86.5,178.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M225.6,275.9 Q203.6,249.9 188.1,219.1\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M188.1,219.1 Q165.4,208.2 145.7,192.0\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M145.7,192.0 Q127.0,191.4 108.8,186.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,191.7 82.2,193.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M108.8,186.4 Q96.0,181.2 84.7,173.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M145.7,192.0 Q132.8,178.5 123.3,162.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q110.6,156.9 99.2,148.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M123.3,162.1 Q117.9,149.4 115.6,135.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M188.1,219.1 Q179.7,195.3 177.0,169.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M177.0,169.9 Q164.1,156.5 154.7,140.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q141.9,134.9 130.6,126.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M154.7,140.1 Q149.3,127.4 147.0,113.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M177.0,169.9 Q177.3,151.3 182.1,133.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q176.7,120.3 174.4,106.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M182.1,133.0 Q187.2,120.2 195.3,108.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M300.0,330.0 Q333.7,298.7 374.4,275.9\\\" stroke-width=\\\"5.6\\\"/><path d=\\\"M374.4,275.9 Q387.8,244.6 408.4,216.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M408.4,216.9 Q408.0,191.7 413.6,166.8\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M413.6,166.8 Q405.7,149.9 401.9,131.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q391.5,122.4 383.4,111.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M401.9,131.4 Q400.8,117.6 403.1,103.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M413.6,166.8 Q419.8,149.3 430.2,133.4\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q429.1,119.7 431.4,105.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M430.2,133.4 Q439.1,122.9 450.4,114.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M408.4,216.9 Q425.8,198.7 447.3,184.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M447.3,184.9 Q453.6,167.4 463.9,151.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q462.9,137.8 465.1,124.0\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M463.9,151.6 Q472.9,141.0 484.2,132.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M447.3,184.9 Q464.1,176.8 482.6,172.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q491.5,162.4 502.8,154.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M482.6,172.9 Q496.3,171.7 510.2,173.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M374.4,275.9 Q405.9,263.0 440.1,257.9\\\" stroke-width=\\\"4.2\\\"/><path d=\\\"M440.1,257.9 Q457.5,239.7 479.0,225.9\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M479.0,225.9 Q485.2,208.3 495.6,192.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q494.5,178.8 496.8,164.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M495.6,192.5 Q504.5,182.0 515.8,173.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M479.0,225.9 Q495.8,217.8 514.3,213.9\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q523.2,203.3 534.5,195.1\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M514.3,213.9 Q528.0,212.6 541.8,214.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M440.1,257.9 Q465.3,257.2 490.2,262.5\\\" stroke-width=\\\"2.8\\\"/><path d=\\\"M490.2,262.5 Q507.0,254.4 525.5,250.5\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q534.4,239.9 545.7,231.7\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M525.5,250.5 Q539.3,249.2 553.1,251.3\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M490.2,262.5 Q507.9,268.6 523.8,278.8\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q537.5,277.5 551.4,279.6\\\" stroke-width=\\\"2.0\\\"/><path d=\\\"M523.8,278.8 Q534.4,287.6 542.8,298.8\\\" stroke-width=\\\"2.0\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.6\\\"><path d=\\\"M300,560 C270,580 240,590 200,600\\\"/><path d=\\\"M300,560 C330,580 360,590 400,600\\\"/><path d=\\\"M300,575 C290,590 280,600 268,612\\\"/><path d=\\\"M300,575 C310,590 320,600 332,612\\\"/></g><circle cx=\\\"65.9\\\" cy=\\\"318.4\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"53.0\\\" cy=\\\"301.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"46.3\\\" cy=\\\"274.3\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"48.7\\\" cy=\\\"253.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"53.1\\\" cy=\\\"236.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"55.5\\\" cy=\\\"215.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"70.1\\\" cy=\\\"191.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"86.5\\\" cy=\\\"178.4\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"82.2\\\" cy=\\\"193.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"84.7\\\" cy=\\\"173.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"99.2\\\" cy=\\\"148.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"115.6\\\" cy=\\\"135.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"130.6\\\" cy=\\\"126.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"147.0\\\" cy=\\\"113.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"174.4\\\" cy=\\\"106.5\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"195.3\\\" cy=\\\"108.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"383.4\\\" cy=\\\"111.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"403.1\\\" cy=\\\"103.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"431.4\\\" cy=\\\"105.9\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"450.4\\\" cy=\\\"114.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"465.1\\\" cy=\\\"124.0\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"484.2\\\" cy=\\\"132.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"502.8\\\" cy=\\\"154.1\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"510.2\\\" cy=\\\"173.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"496.8\\\" cy=\\\"164.9\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"515.8\\\" cy=\\\"173.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"534.5\\\" cy=\\\"195.1\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"541.8\\\" cy=\\\"214.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"545.7\\\" cy=\\\"231.7\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"553.1\\\" cy=\\\"251.3\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"551.4\\\" cy=\\\"279.6\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"542.8\\\" cy=\\\"298.8\\\" r=\\\"7\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.45\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 600 620\",\"width\":220,\"height\":227,\"title\":\"Árbol-pulmón pequeño como motivo de cierre\"}",
+          "text": null
+        },
+        {
+          "id": "cta",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1040,\"left\":\"m\",\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "n32",
+          "parent": "cta",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy es el Día Mundial de la EPOC. Para tu paciente, respirar no debería costar. Para tu consulta, sumar espirometría tampoco.\n\nTe presentamos BTL Spirometry: pruebas FVC, SVC y MVV conforme a ATS/ERS, comparación de pruebas actuales y anteriores lado a lado, y sensores y boquillas reutilizables pensados para alto volumen.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaMundialEPOC #EPOC #Espirometria #BTLElSalvador #FuncionPulmonar",
+  "sources": [
+    "data/web/spirometry.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/uploads/pub-8/web-spirometry-04.webp",
+    "data/uploads/pub-8/web-spirometry-02.webp"
+  ],
+  "claims": [
+    {
+      "claim": "Día Mundial de la EPOC · 18 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · fecha 2026-11-18, tema",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "se conecta por USB a tu computadora",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · PC Spirometry (connects directly to your computer via USB)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "pone la prueba de hoy junto a la anterior",
+      "location": "diapositiva 2",
+      "source": "data/web/spirometry.md · Advanced Trend Analysis (side-by-side analysis of past and current test results)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pruebas FVC, SVC y MVV conforme a ATS/ERS",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Wide Range of Predictive Norms (FVC, SVC and MVV in full compliance with ATS/ERS standards)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tendencias: pruebas actuales y anteriores, lado a lado",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Advanced Trend Analysis",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sensores y boquillas reutilizables, listo para alto volumen",
+      "location": "diapositiva 3",
+      "source": "data/web/spirometry.md · Cost-Efficient Operation (reusable sensors and mouthpieces; high-volume testing environments)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pruebas FVC, SVC y MVV conforme a ATS/ERS, comparación de pruebas actuales y anteriores lado a lado, y sensores y boquillas reutilizables pensados para alto volumen.",
+      "location": "caption",
+      "source": "data/web/spirometry.md · Wide Range of Predictive Norms / Advanced Trend Analysis / Cost-Efficient Operation",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "metafora-visual"
+}

@@ -1,0 +1,93 @@
+{
+  "direction": "C",
+  "direction_name": "Macro del detalle",
+  "concept": "Primer plano de la celebración: la sonrisa y el boleto en la mano llenan la pieza; el contexto (el congreso en San Salvador, dibujado como la pirámide del afiche) aparece abajo, junto al texto.",
+  "differentiation": "Fondo claro con la foto del ganador en gran formato saliendo por arriba y por los lados, y el texto en una franja limpia abajo con el logo abajo a la derecha. Es la única propuesta clara y la única con la foto como protagonista absoluta; A y B son oscuras y dan el protagonismo a una curva o a un boleto.",
+  "slides": [
+    {
+      "purpose": "Anunciar al ganador con un primer plano de la celebración y el congreso como contexto.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro. La foto del ganador en primer plano ocupa la parte superior y se funde hacia abajo. Abajo, una pequeña ilustración de la pirámide del afiche del congreso con un sol celeste, y el texto «Un congreso, un ganador» y «[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026.». Logo de BTL abajo a la derecha.",
+      "nodes": [
+        {
+          "id": "photo",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-7/Imagen de ChatGPT 24 oct 2026_ 09_41_49.png\",\"alt\":\"Foto del ganador de la rifa (referencia; se sustituye por la foto real)\",\"left\":-120,\"top\":0,\"width\":1320,\"height\":800,\"objectPosition\":\"50% 48%\",\"fade\":[\"bottom\"],\"fadeSize\":240}",
+          "text": null
+        },
+        {
+          "id": "logo",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": null
+        },
+        {
+          "id": "ill",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"top\":700,\"width\":300,\"height\":180}",
+          "text": null
+        },
+        {
+          "id": "pyr",
+          "parent": "ill",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"pg\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"16\\\"/></filter><radialGradient id=\\\"ph\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.9\\\"/><stop offset=\\\"0.5\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.3\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"70\\\" fill=\\\"url(#ph)\\\"/><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"26\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.5\\\" filter=\\\"url(#pg)\\\"/><circle cx=\\\"330\\\" cy=\\\"70\\\" r=\\\"20\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><path d=\\\"M20,226 L20,200 L56,200 L56,174 L92,174 L92,148 L128,148 L128,122 L164,122 L164,100 L236,100 L236,122 L272,122 L272,148 L308,148 L308,174 L344,174 L344,200 L380,200 L380,226 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.25\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3.5\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M176,226 L176,112 M224,226 L224,112\\\"/><path d=\\\"M176,210 L224,210 M176,194 L224,194 M176,178 L224,178 M176,162 L224,162 M176,146 L224,146 M176,130 L224,130\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2\\\" opacity=\\\"0.5\\\"><line x1=\\\"20\\\" y1=\\\"213\\\" x2=\\\"176\\\" y2=\\\"213\\\"/><line x1=\\\"224\\\" y1=\\\"213\\\" x2=\\\"380\\\" y2=\\\"213\\\"/><line x1=\\\"56\\\" y1=\\\"187\\\" x2=\\\"176\\\" y2=\\\"187\\\"/><line x1=\\\"224\\\" y1=\\\"187\\\" x2=\\\"344\\\" y2=\\\"187\\\"/><line x1=\\\"92\\\" y1=\\\"161\\\" x2=\\\"176\\\" y2=\\\"161\\\"/><line x1=\\\"224\\\" y1=\\\"161\\\" x2=\\\"308\\\" y2=\\\"161\\\"/></g><line x1=\\\"0\\\" y1=\\\"226\\\" x2=\\\"400\\\" y2=\\\"226\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\"/>\",\"viewBox\":\"0 0 400 240\",\"width\":300,\"height\":180,\"title\":\"Pirámide escalonada con un sol celeste: el congreso en San Salvador\"}",
+          "text": null
+        },
+        {
+          "id": "txt",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"top\":910,\"width\":640,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "h1",
+          "parent": "txt",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"h1\"}",
+          "text": "Un congreso,"
+        },
+        {
+          "id": "h2",
+          "parent": "txt",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "un ganador"
+        },
+        {
+          "id": "sup",
+          "parent": "txt",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"style\":{\"marginTop\":24}}",
+          "text": "[Nombre del ganador] ganó la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026."
+        }
+      ]
+    }
+  ],
+  "caption": "Así se celebra en IAOMS / ALACIBU 2026. ✨\n\nFelicidades a [Nombre del ganador], ganador de la rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial. Gracias a todos los especialistas que nos acompañaron en San Salvador y se dieron una vuelta por nuestro stand.\n\n¿Te interesa la tecnología de BTL para tu clínica? Escríbenos “DEMO” por mensaje directo y te contamos más.\n\n#BTLElSalvador #IAOMS #ALACIBU2026 #CirugíaOral #ElSalvador",
+  "sources": [
+    "brief.md · Instrucciones creativas del usuario",
+    "data/uploads/pub-7/images.jpeg (afiche del congreso, solo como referencia)",
+    "knowledge/brand-guidelines/btl_corporate_identity.pdf"
+  ],
+  "claims": [
+    {
+      "claim": "rifa de BTL El Salvador en el Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026",
+      "location": "diapositiva 1",
+      "source": "brief.md · Instrucciones creativas del usuario",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Segundo Congreso Centroamericano de Cirugía Oral y Maxilofacial IAOMS / ALACIBU 2026, San Salvador",
+      "location": "caption",
+      "source": "data/uploads/pub-7/images.jpeg (afiche del congreso adjunto por el usuario)",
+      "approval": "general_statement"
+    }
+  ],
+  "direction_id": "macro-detalle"
+}

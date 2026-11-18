@@ -1,0 +1,9 @@
+{
+  "title": "Ícono de una consulta con un signo más: un servicio nuevo",
+  "viewBox": "0 0 96 96",
+  "svg": "<defs><filter id=\"g\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"2\"/></filter></defs><g filter=\"url(#g)\" opacity=\"0.6\" fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14,44 L48,16 L82,44\"/><path d=\"M22,38 L22,82 L74,82 L74,38\"/><path d=\"M48,46 L48,70\"/><path d=\"M36,58 L60,58\"/></g><g fill=\"none\" stroke=\"#96d2ff\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14,44 L48,16 L82,44\"/><path d=\"M22,38 L22,82 L74,82 L74,38\"/><path d=\"M48,46 L48,70\"/><path d=\"M36,58 L60,58\"/></g>",
+  "topic": "Día Mundial de la Enfermedad Pulmonar Obstructiva Crónica (EPOC)",
+  "date": "2026-11-18",
+  "publication_id": 8,
+  "version": 34
+}

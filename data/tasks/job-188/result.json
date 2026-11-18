@@ -1,0 +1,85 @@
+{
+  "angle": "Portada conmemorativa (pastilla \"18 de noviembre\" + \"Día Mundial de la EPOC\") con un gancho que detiene el scroll y deja una pregunta abierta sobre la respiración del paciente; la diapositiva 2 la resuelve con BTL Spirometry en la consulta.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Respira\nhondo.",
+          "support": "Ahora imagina que no puedes. Desliza.",
+          "points": [],
+          "rationale": "Orden directa que el lector cumple sin pensar y giro emotivo que lo pone en el lugar del paciente; deslizar lleva a cómo la clínica puede medir esa función.",
+          "claims": []
+        },
+        {
+          "headline": "Subir una\nescalera.\nTerminar\nuna frase.",
+          "support": "Para algunos pacientes, eso es lo difícil. Desliza.",
+          "points": [],
+          "rationale": "Escenas cotidianas que intrigan antes de entenderse; el subtítulo revela la falta de aire y la diapositiva 2 presenta cómo evaluarla.",
+          "claims": [
+            {
+              "claim": "Para algunos pacientes, subir una escalera o terminar una frase es lo difícil.",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema (Día Mundial de la EPOC); afirmación general, no atribuida al producto",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "¿Y si el\ncansancio\nno fuera\ncansancio?",
+          "support": "Desliza antes de tu próxima consulta.",
+          "points": [],
+          "rationale": "Pregunta que siembra la duda clínica sin afirmar nada; la diapositiva 2 responde con la prueba de función pulmonar.",
+          "claims": []
+        },
+        {
+          "headline": "Un soplo.\nEso es todo\nlo que\nnecesitas.",
+          "support": "Desliza y descubre para qué.",
+          "points": [],
+          "rationale": "Misterio puro: no dice qué se mide; la diapositiva 2 revela el espirómetro.",
+          "claims": []
+        },
+        {
+          "headline": "Tu próxima\nlínea de\nservicio\nse sopla.",
+          "support": "Desliza y mira cómo.",
+          "points": [],
+          "rationale": "Gancho de negocio para el dueño de la clínica con un giro inesperado; la diapositiva 2 lo resuelve con BTL Spirometry.",
+          "claims": []
+        },
+        {
+          "headline": "Hay algo que\ntu consulta\nno está\nviendo.",
+          "support": "Desliza y descúbrelo.",
+          "points": [],
+          "rationale": "Brecha de curiosidad directa al profesional; deslizar revela la función pulmonar como el dato que falta.",
+          "claims": []
+        },
+        {
+          "headline": "El dato que\nfalta en tu\nhistoria\nclínica.",
+          "support": "Desliza: cabe junto a tu computadora.",
+          "points": [],
+          "rationale": "Toca una carencia profesional concreta y anticipa que la solución es compacta (dispositivo PC por USB), lo que resuelve la diapositiva 2.",
+          "claims": [
+            {
+              "claim": "cabe junto a tu computadora",
+              "location": "diapositiva 1",
+              "source": "data/web/spirometry.md · PC Spirometry (connects to your computer via USB, space-saving)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Faltan\npalabras.\nFalta\naire.",
+          "support": "Este 18 de noviembre, desliza y escucha lo que no dicen.",
+          "points": [],
+          "rationale": "Ritmo emotivo en dos golpes que se lee en un segundo; el subtítulo invita a recorrer el carrusel hasta el equipo y las ventajas.",
+          "claims": []
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Según el comentario de Jaime, la portada lleva tres niveles: la pastilla \"18 de noviembre\", el nombre \"Día Mundial de la EPOC\" y el gancho. Estas opciones son solo el gancho y su subtítulo; la pastilla y el nombre del día los compone el paso 2 (Estilo) a partir de la fecha y el tema de la publicación, como en la portada del Día Mundial de la Columna Vertebral. Conviene confirmarlo en las propuestas visuales.",
+    "Ningún gancho afirma que el equipo diagnostique o trate la EPOC.",
+    "BTL SPIROMETRY no tiene foto ni logo oficial en los activos: hay que adjuntar la foto del dispositivo PC (sin la consola de escritorio) y el logo del producto, si existe, antes del paso 2."
+  ]
+}
