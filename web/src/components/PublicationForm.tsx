@@ -241,9 +241,14 @@ export function PublicationForm({
       <Field label="Otras instrucciones" optional hint="Lo que no cubre el brief rápido: estilo, imágenes, referencias…">
         <textarea value={f.creative_instructions} onChange={(e) => set('creative_instructions', e.target.value)} rows={3} />
       </Field>
-      {files !== false && !editing && (
-        <Field label="Documentos de apoyo e imágenes adicionales" optional hint="PDF, MD o TXT para documentos; PNG, JPG o WEBP para imágenes. También puedes añadirlos después.">
+      {files !== false && (
+        <Field
+          label={editing ? 'Añadir documentos o imágenes a la publicación' : 'Documentos de apoyo e imágenes adicionales'}
+          optional
+          hint={`PDF, MD o TXT para documentos; PNG, JPG o WEBP para imágenes.${editing ? ' Se suman a los que ya tiene (sección Archivos) al guardar.' : ' También puedes añadirlos después.'} Para material que sirve en todas las publicaciones de un equipo, súbelo a su ficha.`}
+        >
           <input type="file" multiple accept=".pdf,.md,.txt,.png,.jpg,.jpeg,.webp" onChange={(e) => setPending([...(e.target.files ?? [])])} />
+          {pending.length > 0 && <span className="small muted">{pending.length} archivo(s) se subirán al guardar: {pending.map((x) => x.name).join(', ')}</span>}
         </Field>
       )}
 

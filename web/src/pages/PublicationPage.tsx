@@ -368,7 +368,6 @@ export function PublicationPage({ id, data }: { id: number; data: AppData }) {
         <PublicationForm
           data={data}
           initial={p}
-          files={false}
           onClose={() => setModal(null)}
           onSaved={() => {
             setModal(null);
