@@ -234,8 +234,8 @@ test('direct design edits: editable texts with their effective style; invalid va
   };
   const t = editableTexts(slide);
   assert.deepEqual(t.map((x) => x.node), ['h', 'e', 'c']);
-  assert.deepEqual(t[0], { node: 'h', type: 'Headline', text: 'Titular', size: 'xl', weight: 'light', tone: 'strong' });
-  assert.deepEqual(t[1], { node: 'e', type: 'Eyebrow', text: 'Etiqueta', size: 30, weight: 'semibold', tone: 'accent' });
+  assert.deepEqual(t[0], { node: 'h', type: 'Headline', text: 'Titular', size: 'xl', px: null, weight: 'light', tone: 'strong' });
+  assert.deepEqual(t[1], { node: 'e', type: 'Eyebrow', text: 'Etiqueta', size: 30, px: null, weight: 'semibold', tone: 'accent' });
   const out = applyNodeEdits(slide, [{ node: 'h', text: 'Nuevo\r\ntitular ', weight: 'regular', size: 'l' }, { node: 'e', size: 44 }, { node: 'c', text: 'Agenda tu demo' }]);
   assert.equal(out.nodes[1].text, 'Nuevo\ntitular');
   assert.deepEqual(JSON.parse(out.nodes[1].props), { size: 'l', weight: 'regular' });
@@ -246,6 +246,14 @@ test('direct design edits: editable texts with their effective style; invalid va
   assert.throws(() => applyNodeEdits(slide, [{ node: 'e', size: 50 }]), /Tamaño no válido/);
   assert.throws(() => applyNodeEdits(slide, [{ node: 'logo', text: 'x' }]), /no es un texto editable/);
   assert.throws(() => applyNodeEdits(slide, [{ node: 'h', text: '  ' }]), /no puede quedar vacío/);
+  // exact sizes and highlighted parts
+  const px = applyNodeEdits(slide, [{ node: 'h', px: 88, text: 'Un **titular** resaltado' }]);
+  assert.equal(JSON.parse(px.nodes[1].props).px, 88);
+  assert.equal(editableTexts(px)[0].px, 88);
+  assert.equal(JSON.parse(applyNodeEdits(px, [{ node: 'h', px: null }]).nodes[1].props).px, undefined);
+  assert.throws(() => applyNodeEdits(slide, [{ node: 'h', px: 20 }]), /entre 30 y 140/);
+  assert.throws(() => applyNodeEdits(slide, [{ node: 'e', px: 40 }]), /no admite un tamaño exacto/);
+  assert.throws(() => applyNodeEdits(slide, [{ node: 'h', text: 'Sin **cerrar' }]), /resaltado sin cerrar/);
   assert.equal(claimSlide('diapositiva 3'), 3);
   assert.equal(claimSlide('slide 2'), 2);
   assert.equal(claimSlide('caption'), null);
@@ -302,4 +310,19 @@ test('past publications can be picked as references and reach the context', asyn
   assert.deepEqual(repo.publicationDetail(pub.id).references.map((r) => r.topic), ['Referencia antigua']);
   repo.deletePublication(old.id);
   assert.deepEqual(loadReferences(repo.getPublication(pub.id)).chosen, []); // a deleted reference is skipped
+});
+
+test('design render: **highlighted** parts become SemiBold, px sets an exact size, and a slide previews without saving', async () => {
+  const { slideMarkup, previewSlide } = await import('../server/design/render.ts');
+  const n = (id: string, parent: string | null, type: string, props: object, text: string | null = null) => ({ id, parent, type: type as any, props: JSON.stringify(props), text });
+  const slide = {
+    purpose: 't', background: 'dark' as const, lightFrom: null, alt: 't',
+    nodes: [n('logo', null, 'BtlLogo', {}), n('r', null, 'Region', { top: 300 }), n('h', 'r', 'Headline', { size: 'm', px: 88 }, 'Él pregunta por la **disfunción eréctil**')],
+  };
+  const html = slideMarkup(slide);
+  assert.match(html, /<strong style="font-weight:600">disfunción eréctil<\/strong>/);
+  assert.match(html, /font-size:88px/);
+  assert.ok(!html.includes('**'));
+  const png = await previewSlide(slide);
+  assert.equal(png.readUInt32BE(0), 0x89504e47);
 });

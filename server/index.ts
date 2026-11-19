@@ -335,6 +335,26 @@ route('POST', '/api/versions/:id/locks', async (req) => {
   repo.addHistory(p.id, v.id, b.locked ? 'slide_approved' : 'slide_unlocked', null, null, `v${v.number} · diapositiva ${n}`);
   return detail(p.id);
 });
+// Live preview for "Ajustar textos": renders the slide with the pending edits (nothing is saved or validated).
+route('POST', '/api/versions/:id/slides/:n/preview', async (req, res) => {
+  const v = repo.getVersion(id(req.params[0]));
+  if (v.kind !== 'design' || !v.design) throw new HttpError(400, 'Solo las propuestas del sistema de diseño tienen vista previa.');
+  const n = Number(req.params[1]);
+  if (!(n >= 1 && n <= v.slides.length)) throw new HttpError(400, 'Número de diapositiva fuera de rango');
+  const b = await jsonBody(req);
+  let slide;
+  try {
+    slide = applyNodeEdits(v.design.slides[n - 1], Array.isArray(b.edits) ? b.edits : []);
+  } catch (e) {
+    throw new HttpError(400, (e as Error).message);
+  }
+  const { previewSlide } = await import('./design/render.ts');
+  const { secondaryColor } = await import('./pipeline/jobs.ts');
+  const p = repo.getPublication(v.publication_id);
+  const png = await previewSlide(slide, secondaryColor(repo.getProducts(p.product_ids).map((product) => ({ product }))));
+  res.writeHead(200, { 'content-type': 'image/png', 'content-length': png.length, 'cache-control': 'no-store' });
+  res.end(png);
+});
 route('POST', '/api/versions/:id/design-edit', async (req) => {
   const { v, p } = editableDesign(id(req.params[0]), { job: true });
   const b = await jsonBody(req);

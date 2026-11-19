@@ -2,6 +2,7 @@
 // (design-system/btl/dist), validates every slide with design-system/btl/validate.mjs and applies a few safe
 // automatic corrections (stepping text down a size). Anything still failing is flagged for manual review.
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import React from 'react';
@@ -82,12 +83,19 @@ export function checkDesign(p: Pick<ProposalT, 'slides'>, allowedImages: Set<str
 }
 
 // ---------- spec → React → HTML ----------
+// Highlighted parts of a text: **phrase** is drawn in SemiBold (emphasis by weight, never by color: BTL p. 19).
+export function richText(text: string): React.ReactNode {
+  if (!text.includes('**')) return text;
+  return text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, i) =>
+    /^\*\*[^*]+\*\*$/.test(part) ? React.createElement('strong', { key: i, style: { fontWeight: 600 } }, part.slice(2, -2)) : part);
+}
+
 function element(slide: DesignSlideT, n: DesignNodeT): React.ReactElement {
   const props: Record<string, unknown> = JSON.parse(n.props || '{}');
   if (typeof props.src === 'string') props.src = pathToFileURL(abs(props.src)).href;
   const Comp = LIB[n.type];
   const kids = slide.nodes.filter((c) => c.parent === n.id).map((c) => element(slide, c));
-  const children = CATALOG_ANY[n.type].role === 'text' ? n.text : kids.length ? kids : undefined;
+  const children = CATALOG_ANY[n.type].role === 'text' ? richText(n.text ?? '') : kids.length ? kids : undefined;
   return React.createElement(Comp, { key: n.id, ...props }, children);
 }
 
@@ -142,6 +150,12 @@ function shrink(slide: DesignSlideT, label: string): string | null {
     slide.nodes.find((x) => { try { const p = JSON.parse(x.props); return norm(String(p.value ?? p.title ?? '')) === label; } catch { return false; } });
   if (!n) return null;
   const p = JSON.parse(n.props || '{}');
+  if ((n.type === 'Headline' || n.type === 'Body') && typeof p.px === 'number') {
+    if (p.px <= 30) return null;
+    p.px = Math.max(30, Math.round(p.px * 0.9));
+    n.props = JSON.stringify(p);
+    return `${n.type} «${label}» → ${p.px} px`;
+  }
   if (n.type === 'Headline') {
     const i = HEADLINE_STEPS.indexOf(p.size ?? 'm');
     if (i < 0 || i >= HEADLINE_STEPS.length - 1) return null;
@@ -158,6 +172,22 @@ function shrink(slide: DesignSlideT, label: string): string | null {
   } else return null;
   n.props = JSON.stringify(p);
   return `${n.type} «${label}» → ${p.size}`;
+}
+
+// Quick preview of one slide (no validation, nothing saved): used by "Ajustar textos" while Jaime edits.
+export async function previewSlide(slide: DesignSlideT, secondary: string | null = null): Promise<Buffer> {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'reach-preview-'));
+  const browser = await chromium.launch();
+  try {
+    const pg = await browser.newPage({ viewport: { width: 1200, height: H + 80 }, deviceScaleFactor: 0.5 });
+    fs.writeFileSync(path.join(dir, 'p.html'), page([slide], secondary));
+    await pg.goto(pathToFileURL(path.join(dir, 'p.html')).href, { waitUntil: 'load' });
+    await pg.evaluate(() => document.fonts.ready);
+    return await (await pg.$('#slide-1 [data-btl-slide]'))!.screenshot({ type: 'png' });
+  } finally {
+    await browser.close();
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 }
 
 export interface RenderedProposal {

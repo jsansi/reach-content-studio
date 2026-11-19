@@ -248,17 +248,19 @@ export interface HeadlineProps {
   /** Max line length in px. */
   maxWidth?: Len;
   as?: 'h1' | 'h2' | 'h3' | 'p';
+  /** Exact font size in px (30–140), overriding the size step. */
+  px?: number;
   style?: React.CSSProperties;
 }
 
 /** Hook or slide title. Left-aligned, sentence case, one color (no highlighted words — manual p. 19). */
-export function Headline({ children, size = 'm', weight, tone = 'strong', maxWidth, as: Tag = 'h2', style }: HeadlineProps) {
+export function Headline({ children, size = 'm', weight, tone = 'strong', maxWidth, as: Tag = 'h2', px: fixed, style }: HeadlineProps) {
   const s = HEADLINE[size];
   return (
     <Tag
       className={`btl-text btl-headline btl-c-${tone}`}
       data-btl-text=""
-      style={{ fontSize: s.size, fontWeight: W[weight ?? s.weight], lineHeight: s.lh, letterSpacing: s.ls, maxWidth: len(maxWidth), ...style }}
+      style={{ fontSize: fixed ? Math.max(30, fixed) : s.size, fontWeight: W[weight ?? s.weight], lineHeight: s.lh, letterSpacing: s.ls, maxWidth: len(maxWidth), ...style }}
     >
       {children}
     </Tag>
@@ -274,14 +276,16 @@ export interface BodyProps {
   weight?: Weight;
   tone?: TextTone;
   maxWidth?: Len;
+  /** Exact font size in px (30–80), overriding the size step. */
+  px?: number;
   style?: React.CSSProperties;
 }
 
 /** Body copy, question or supporting line. Benefits for the clinic, not specs. */
-export function Body({ children, size = 'm', weight, tone = 'base', maxWidth, style }: BodyProps) {
+export function Body({ children, size = 'm', weight, tone = 'base', maxWidth, px: fixed, style }: BodyProps) {
   const s = BODY[size];
   return (
-    <p className={`btl-text btl-c-${tone}`} data-btl-text="" style={{ fontSize: s.size, fontWeight: W[weight ?? s.weight], lineHeight: s.lh, maxWidth: len(maxWidth), ...style }}>
+    <p className={`btl-text btl-c-${tone}`} data-btl-text="" style={{ fontSize: fixed ? Math.max(30, fixed) : s.size, fontWeight: W[weight ?? s.weight], lineHeight: s.lh, maxWidth: len(maxWidth), ...style }}>
       {children}
     </p>
   );

@@ -113,7 +113,10 @@ for the clinic = the angle, tone, what to avoid; migration 4).
      Revisions restore locked slides from the base (warning "está aprobada; se mantuvo sin cambios"), the task package
      has `fixed-slides.json` and `task:check` blocks a result that changes them.
    - **Ajustar textos** without AI (`SlideEditor.tsx`, `POST /api/versions/:id/design-edit`, `shared/design-edit.ts`): text,
-     weight, size step and tone (strong/base/accent) of Headline/Body/Eyebrow/Footnote/DatePill/SwipeCue and the CTA title.
+     weight, size and tone (strong/base/accent) of Headline/Body/Eyebrow/Footnote/DatePill/SwipeCue and the CTA title.
+     Headline/Body also take an exact `px` (30–140 / 30–80, design-system prop); `**phrase**` inside a text is drawn in
+     SemiBold (`richText` in `server/design/render.ts`; emphasis by weight only). Live preview while editing:
+     `POST /api/versions/:id/slides/:n/preview` renders that slide with the pending edits (`previewSlide`, nothing saved).
    - **Traer de otra versión**: drag a slide from any design version of the publication onto a slide (or pick + "Usar
      aquí") → `POST /api/versions/:id/slides/:n/replace`; the slide's claims travel with it.
    - **Comentar** per slide (`DesignChanges.tsx`): general comment + one per slide; with only per-slide comments, the

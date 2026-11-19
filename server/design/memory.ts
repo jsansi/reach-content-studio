@@ -34,7 +34,7 @@ export const designSignature = (d: Pick<DesignContentT, 'slides'>) => d.slides.m
 
 export function coverHeadline(d: Pick<DesignContentT, 'slides'>): string {
   const h = d.slides[0]?.nodes.find((n) => n.type === 'Headline' && n.text);
-  return (h?.text ?? '').replace(/\s*\n\s*/g, ' ').trim();
+  return (h?.text ?? '').replace(/\*\*/g, '').replace(/\s*\n\s*/g, ' ').trim();
 }
 
 // 0–1: same background counts 0.3, the shared key components (Jaccard) 0.7, averaged over the slides.

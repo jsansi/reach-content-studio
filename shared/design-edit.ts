@@ -19,6 +19,11 @@ export const SIZE_STEPS: Record<string, (string | number)[]> = {
   Body: ['s', 'm', 'l'],
   Eyebrow: [30, 32, 34, 36, 38, 40, 42, 44],
 };
+// Exact sizes (px) Jaime can pick for headlines and body copy, beyond the named steps.
+export const PX_RANGE: Record<string, { min: number; max: number }> = {
+  Headline: { min: 30, max: 140 },
+  Body: { min: 30, max: 80 },
+};
 export const SIZE_PX: Record<string, Record<string, number>> = {
   Headline: { s: 48, m: 60, l: 76, xl: 96, display: 116 },
   Body: { s: 30, m: 34, l: 42 },
@@ -53,6 +58,8 @@ export interface EditableText {
   type: string;
   text: string;
   size: string | number | null;
+  /** Exact size in px for Headline/Body (null = the size step decides). */
+  px: number | null;
   weight: Weight | null;
   tone: Tone | null;
 }
@@ -61,6 +68,7 @@ export interface NodeEdit {
   node: string;
   text?: string;
   size?: string | number;
+  px?: number | null;
   weight?: Weight;
   tone?: Tone;
 }
@@ -91,11 +99,12 @@ export function editableTexts(slide: DesignSlideT): EditableText[] {
       out.push({
         node: n.id, type: n.type, text: n.text,
         size: c.size ? p.size ?? DEFAULTS[n.type]?.size ?? null : null,
+        px: PX_RANGE[n.type] && typeof p.px === 'number' ? p.px : null,
         weight: c.weight ? effectiveWeight(n.type, p) : null,
         tone: c.tone ? p.tone ?? DEFAULTS[n.type]?.tone ?? null : null,
       });
     } else if (n.type === 'CtaBlock') {
-      out.push({ node: n.id, type: 'CtaBlock', text: typeof p.title === 'string' && p.title ? p.title : p.detail ?? 'Solicita tu demo', size: null, weight: null, tone: null });
+      out.push({ node: n.id, type: 'CtaBlock', text: typeof p.title === 'string' && p.title ? p.title : p.detail ?? 'Solicita tu demo', size: null, px: null, weight: null, tone: null });
     }
   }
   return out;
@@ -112,6 +121,7 @@ export function applyNodeEdits(slide: DesignSlideT, edits: NodeEdit[]): DesignSl
     const p = props(n.props);
     if (e.text !== undefined) {
       const t = e.text.replace(/\r\n/g, '\n').trim();
+      if ((t.split('**').length - 1) % 2) throw new Error('Hay un resaltado sin cerrar: cada parte resaltada va entre ** y **.');
       if (!t) throw new Error(`El ${TYPE_LABELS[n.type]?.toLowerCase() ?? 'texto'} no puede quedar vacío.`);
       if (n.type === 'CtaBlock') {
         if (typeof p.title === 'string' && p.title) p.title = t;
@@ -121,6 +131,16 @@ export function applyNodeEdits(slide: DesignSlideT, edits: NodeEdit[]): DesignSl
     if (e.size !== undefined) {
       if (!c.size || !SIZE_STEPS[n.type].some((x) => String(x) === String(e.size))) throw new Error(`Tamaño no válido para ${TYPE_LABELS[n.type]}.`);
       p.size = n.type === 'Eyebrow' ? Number(e.size) : e.size;
+    }
+    if (e.px !== undefined) {
+      const r = PX_RANGE[n.type];
+      if (!r) throw new Error(`${TYPE_LABELS[n.type]} no admite un tamaño exacto.`);
+      if (e.px === null) delete p.px;
+      else {
+        const v = Math.round(Number(e.px));
+        if (!(v >= r.min && v <= r.max)) throw new Error(`El tamaño de ${TYPE_LABELS[n.type]?.toLowerCase()} debe estar entre ${r.min} y ${r.max} px.`);
+        p.px = v;
+      }
     }
     if (e.weight !== undefined) {
       if (!c.weight || !WEIGHTS.includes(e.weight)) throw new Error(`Peso no válido para ${TYPE_LABELS[n.type]}.`);

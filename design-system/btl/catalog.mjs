@@ -36,9 +36,9 @@ export const CATALOG = {
   Headline: {
     role: 'text',
     summary: 'Hook or title, sentence case, one color. Sizes: display 116 SemiBold, xl 96, l 76, m 60, s 48 (Light). "\\n" forces a line break.',
-    props: { size: '"display" | "xl" | "l" | "m" | "s"', weight: WEIGHT, tone: TONE, maxWidth: LEN, as: '"h1" | "h2" | "h3" | "p"' },
+    props: { size: '"display" | "xl" | "l" | "m" | "s"', weight: WEIGHT, tone: TONE, maxWidth: LEN, as: '"h1" | "h2" | "h3" | "p"', px: 'number 30–140 (exact size, overrides size)' },
   },
-  Body: { role: 'text', summary: 'Body copy or question: l 42 Light, m 34, s 30.', props: { size: '"l" | "m" | "s"', weight: WEIGHT, tone: TONE, maxWidth: LEN } },
+  Body: { role: 'text', summary: 'Body copy or question: l 42 Light, m 34, s 30.', props: { size: '"l" | "m" | "s"', weight: WEIGHT, tone: TONE, maxWidth: LEN, px: 'number 30–80 (exact size, overrides size)' } },
   Eyebrow: { role: 'text', summary: 'Small label above a headline (product, occasion, section). 30–44 px.', props: { size: 'number 30–44', weight: WEIGHT, tone: TONE } },
   Footnote: { role: 'text', summary: 'Source or disclaimer at 30 px.', props: { tone: TONE, maxWidth: LEN } },
   DatePill: { role: 'text', summary: 'Rounded date pill, e.g. "18 de octubre".', props: {} },
