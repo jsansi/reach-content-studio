@@ -1,0 +1,1152 @@
+{
+  "concepts_explored": [
+    "El símbolo masculino como punto focal donde convergen las ondas de choque: la fecha y la terapia en una sola imagen.",
+    "Reportaje de revista sobre salud masculina: columna estrecha frente al equipo real.",
+    "Dos cifras que cuentan la historia: el 19 del día y el 10 de las sesiones breves.",
+    "Una conversación pendiente: dos globos de diálogo, uno vacío (descartado: poco ligado al equipo).",
+    "Un calendario con el 19 marcado y una pregunta para la clínica (descartado: se parece a otras portadas de fecha).",
+    "Ondas que salen del aplicador y llenan el lienzo como luz.",
+    "La silueta de un hombre de perfil con un halo (descartado: puede leerse como paciente o resultado clínico)."
+  ],
+  "proposals": [
+    {
+      "direction": "A",
+      "direction_name": "Ilustración protagonista",
+      "concept": "El símbolo masculino como punto focal: su círculo es el foco donde convergen las ondas de choque, la misma idea de la terapia. Une la fecha con el equipo desde la portada y vuelve como sello en el cierre.",
+      "differentiation": "Fondos oscuros con la ilustración del símbolo masculino y las ondas ocupando más de la mitad de la portada, con brillo celeste; el texto la rodea. La diapositiva 2 cede el protagonismo a la foto oficial del equipo en un panel blanco con halo; el cierre lista las ventajas con íconos dibujados y el símbolo pequeño.",
+      "slides": [
+        {
+          "purpose": "Homenaje del día con el símbolo masculino como foco de las ondas de choque, la fecha y la pregunta a la clínica.",
+          "background": "dark",
+          "lightFrom": "bottom-left",
+          "alt": "Pastilla \"19 de noviembre\", \"Día Internacional del Hombre\", \"Un día para ellos. Una pregunta para ti.\" y \"¿Tu clínica ya atiende la salud masculina?\" junto a un símbolo masculino luminoso cuyo círculo es el punto focal de ondas que convergen. Desliza.",
+          "nodes": [
+            {
+              "id": "fig",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":430,\"left\":560,\"width\":500}",
+              "text": null
+            },
+            {
+              "id": "n1",
+              "parent": "fig",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"ma1\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"8\\\"/></filter><radialGradient id=\\\"ma1h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.5\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"190\\\" fill=\\\"url(#ma1h)\\\"/><g filter=\\\"url(#ma1)\\\" opacity=\\\"0.8\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"12\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"130\\\"/><path d=\\\"M343.6,236.4 L500,80\\\"/><path d=\\\"M410,80 L500,80 L500,170\\\"/></g><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"130\\\"/><path d=\\\"M343.6,236.4 L500,80\\\"/><path d=\\\"M410,80 L500,80 L500,170\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M176.4,516.0 A200,200 0 0 1 50.4,342.6\\\" stroke-width=\\\"3\\\" opacity=\\\"0.95\\\"/><path d=\\\"M159.8,557.8 A245,245 0 0 1 5.5,345.4\\\" stroke-width=\\\"2.6\\\" opacity=\\\"0.77\\\"/><path d=\\\"M143.2,599.6 A290,290 0 0 1 -39.4,348.2\\\" stroke-width=\\\"2.2\\\" opacity=\\\"0.59\\\"/><path d=\\\"M126.7,641.5 A335,335 0 0 1 -84.3,351.0\\\" stroke-width=\\\"1.7999999999999998\\\" opacity=\\\"0.4099999999999999\\\"/></g><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"18\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"40\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" opacity=\\\"0.8\\\"/><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"66\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" opacity=\\\"0.5\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":500,\"height\":500,\"title\":\"Símbolo masculino luminoso cuyo círculo es el punto focal de ondas de choque que convergen\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"width\":440,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": "r",
+              "type": "DatePill",
+              "props": "{}",
+              "text": "19 de noviembre"
+            },
+            {
+              "id": "n4",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":24}}",
+              "text": "Día Internacional\ndel Hombre"
+            },
+            {
+              "id": "n5",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"light\",\"as\":\"h1\",\"style\":{\"marginTop\":56}}",
+              "text": "Un día\npara ellos."
+            },
+            {
+              "id": "n6",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"p\"}",
+              "text": "Una pregunta\npara ti."
+            },
+            {
+              "id": "q",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1000,\"width\":600}",
+              "text": null
+            },
+            {
+              "id": "n7",
+              "parent": "q",
+              "type": "Body",
+              "props": "{\"size\":\"l\",\"weight\":\"regular\",\"tone\":\"strong\"}",
+              "text": "¿Tu clínica ya atiende la salud masculina?"
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "La respuesta: BTL Focused Shockwave, con su foto oficial.",
+          "background": "deep",
+          "lightFrom": "top-right",
+          "alt": "La respuesta llega en ondas de choque. BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina. Foto del equipo BTL Focused Shockwave. Desliza.",
+          "nodes": [
+            {
+              "id": "n9",
+              "parent": null,
+              "type": "Halo",
+              "props": "{\"cx\":540,\"cy\":1000,\"r\":250,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.55,\"opacity\":0.6}",
+              "text": null
+            },
+            {
+              "id": "ph",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":640,\"left\":\"m\",\"right\":\"m\",\"height\":560,\"surface\":\"white\"}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-02.webp\",\"alt\":\"Equipo BTL Focused Shockwave con su aplicador\",\"left\":214,\"top\":650,\"width\":652,\"height\":540,\"objectPosition\":\"50% 50%\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+              "text": "La respuesta llega"
+            },
+            {
+              "id": "n13",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+              "text": "en ondas de choque"
+            },
+            {
+              "id": "n14",
+              "parent": "t",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"maxWidth\":860,\"style\":{\"marginTop\":24}}",
+              "text": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina."
+            },
+            {
+              "id": "n15",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Lo que gana la clínica, con íconos para cada ventaja, y el CTA.",
+          "background": "dark",
+          "lightFrom": "top-left",
+          "alt": "Tu clínica, lista para la salud masculina. Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta. Pago directo: Un procedimiento que el paciente paga directamente. Agenda ágil: Sesiones de no más de 10 minutos por paciente. Solicita tu demo. Símbolo masculino pequeño.",
+          "nodes": [
+            {
+              "id": "fig",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"left\":800,\"width\":190}",
+              "text": null
+            },
+            {
+              "id": "n16",
+              "parent": "fig",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"ma3\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"8\\\"/></filter><radialGradient id=\\\"ma3h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.5\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"190\\\" fill=\\\"url(#ma3h)\\\"/><g filter=\\\"url(#ma3)\\\" opacity=\\\"0.8\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"12\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"130\\\"/><path d=\\\"M343.6,236.4 L500,80\\\"/><path d=\\\"M410,80 L500,80 L500,170\\\"/></g><g fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.08\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"130\\\"/><path d=\\\"M343.6,236.4 L500,80\\\"/><path d=\\\"M410,80 L500,80 L500,170\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-linecap=\\\"round\\\"></g><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"18\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"40\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" opacity=\\\"0.8\\\"/><circle cx=\\\"250\\\" cy=\\\"330\\\" r=\\\"66\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2\\\" opacity=\\\"0.5\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":180,\"height\":180,\"title\":\"Símbolo masculino luminoso, pequeño, como sello\"}",
+              "text": null
+            },
+            {
+              "id": "n17",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"width\":680,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n18",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+              "text": "Tu clínica, lista"
+            },
+            {
+              "id": "n19",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+              "text": "para la salud masculina"
+            },
+            {
+              "id": "l",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":560,\"right\":\"m\",\"gap\":40}",
+              "text": null
+            },
+            {
+              "id": "ar0",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":32,\"crossAlign\":\"center\"}",
+              "text": null
+            },
+            {
+              "id": "n20",
+              "parent": "ar0",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"40\\\" r=\\\"26\\\"/><path d=\\\"M48,26 L52,36 L63,36 L54,43 L57,54 L48,47 L39,54 L42,43 L33,36 L44,36 Z\\\"/><path d=\\\"M36,62 L30,88 L42,82 L48,90\\\"/><path d=\\\"M60,62 L66,88 L54,82 L48,90\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"40\\\" r=\\\"26\\\"/><path d=\\\"M48,26 L52,36 L63,36 L54,43 L57,54 L48,47 L39,54 L42,43 L33,36 L44,36 Z\\\"/><path d=\\\"M36,62 L30,88 L42,82 L48,90\\\"/><path d=\\\"M60,62 L66,88 L54,82 L48,90\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":88,\"height\":88,\"title\":\"Ícono de una insignia con una estrella: un servicio que distingue a la clínica\"}",
+              "text": null
+            },
+            {
+              "id": "ap0",
+              "parent": "ar0",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n21",
+              "parent": "ap0",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Un servicio diferenciador"
+            },
+            {
+              "id": "n22",
+              "parent": "ap0",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+            },
+            {
+              "id": "ar1",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":32,\"crossAlign\":\"center\"}",
+              "text": null
+            },
+            {
+              "id": "n23",
+              "parent": "ar1",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><rect x=\\\"12\\\" y=\\\"24\\\" width=\\\"72\\\" height=\\\"48\\\" rx=\\\"6\\\"/><path d=\\\"M12,38 L84,38\\\"/><path d=\\\"M22,58 L42,58\\\"/><path d=\\\"M62,58 L74,58\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><rect x=\\\"12\\\" y=\\\"24\\\" width=\\\"72\\\" height=\\\"48\\\" rx=\\\"6\\\"/><path d=\\\"M12,38 L84,38\\\"/><path d=\\\"M22,58 L42,58\\\"/><path d=\\\"M62,58 L74,58\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":88,\"height\":88,\"title\":\"Ícono de una tarjeta de pago\"}",
+              "text": null
+            },
+            {
+              "id": "ap1",
+              "parent": "ar1",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n24",
+              "parent": "ap1",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Pago directo"
+            },
+            {
+              "id": "n25",
+              "parent": "ap1",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Un procedimiento que el paciente paga directamente"
+            },
+            {
+              "id": "ar2",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":32,\"crossAlign\":\"center\"}",
+              "text": null
+            },
+            {
+              "id": "n26",
+              "parent": "ar2",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"50\\\" r=\\\"32\\\"/><path d=\\\"M48,30 L48,50 L62,58\\\"/><path d=\\\"M40,12 L56,12\\\"/><path d=\\\"M48,12 L48,18\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"50\\\" r=\\\"32\\\"/><path d=\\\"M48,30 L48,50 L62,58\\\"/><path d=\\\"M40,12 L56,12\\\"/><path d=\\\"M48,12 L48,18\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":88,\"height\":88,\"title\":\"Ícono de un reloj: sesiones breves\"}",
+              "text": null
+            },
+            {
+              "id": "ap2",
+              "parent": "ar2",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n27",
+              "parent": "ap2",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Agenda ágil"
+            },
+            {
+              "id": "n28",
+              "parent": "ap2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Sesiones de no más de 10 minutos por paciente"
+            },
+            {
+              "id": "cta",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1080,\"left\":\"m\",\"width\":560}",
+              "text": null
+            },
+            {
+              "id": "n29",
+              "parent": "cta",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "Hoy, 19 de noviembre, es el Día Internacional del Hombre: un día para ellos y una pregunta para tu clínica: ¿ya atiendes la salud masculina?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #OndasDeChoque #BTLElSalvador #MedicinaEstetica",
+      "sources": [
+        "data/web/focused-shockwave.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/uploads/pub-9/web-focused-shockwave-02.webp"
+      ],
+      "claims": [
+        {
+          "claim": "Día Internacional del Hombre, 19 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · tema y fecha",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+          "location": "diapositiva 2",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, con sesiones de no más de 10 minutos y un procedimiento de pago directo.",
+          "location": "caption",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Procedimiento basado en pago directo / Preguntas frecuentes",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "B",
+      "direction_name": "Revista editorial",
+      "concept": "Un reportaje de salud masculina: la portada abre como una página de revista con la fecha y la pregunta en una columna estrecha frente al equipo; la segunda presenta el aplicador como figura y el cierre en azul profundo resume las ventajas como una ficha numerada.",
+      "differentiation": "Fondos claros con un cierre deep de contrapunto, columnas estrechas frente a fotos grandes fundidas en el fondo, filetes que separan cabecera y cuerpo, logo a la izquierda en las dos primeras. Sin ilustración en portada: la imagen es el equipo real. Distinta de la A (oscura, ilustración protagonista) y de la C (cifras).",
+      "slides": [
+        {
+          "purpose": "Apertura de revista: pastilla, nombre del día, gancho en dos pesos y la pregunta, frente al equipo.",
+          "background": "light",
+          "lightFrom": null,
+          "alt": "Pastilla \"19 de noviembre\", \"Día Internacional del Hombre\", \"Un día para ellos. Una pregunta para ti.\" y \"¿Tu clínica ya atiende la salud masculina?\" en una columna, junto a la foto del equipo BTL Focused Shockwave. Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-02.webp\",\"alt\":\"Equipo BTL Focused Shockwave con su aplicador\",\"left\":480,\"top\":360,\"width\":700,\"height\":820,\"objectPosition\":\"45% 50%\",\"fade\":[\"left\",\"bottom\"],\"fadeSize\":160}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "r",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":300,\"width\":460,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": "r",
+              "type": "DatePill",
+              "props": "{}",
+              "text": "19 de noviembre"
+            },
+            {
+              "id": "n4",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":20}}",
+              "text": "Día Internacional\ndel Hombre"
+            },
+            {
+              "id": "n5",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\",\"style\":{\"marginTop\":56}}",
+              "text": "Un día\npara ellos."
+            },
+            {
+              "id": "n6",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"p\"}",
+              "text": "Una pregunta\npara ti."
+            },
+            {
+              "id": "n7",
+              "parent": "r",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"tone\":\"accent\",\"maxWidth\":440,\"style\":{\"marginTop\":32}}",
+              "text": "¿Tu clínica ya atiende la salud masculina?"
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "El aplicador como figura y la respuesta en una columna con filetes.",
+          "background": "white",
+          "lightFrom": null,
+          "alt": "La respuesta llega en ondas de choque. BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina. Foto del aplicador de BTL Focused Shockwave. Desliza.",
+          "nodes": [
+            {
+              "id": "n9",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-04.webp\",\"alt\":\"Aplicador de BTL Focused Shockwave\",\"left\":470,\"top\":300,\"width\":700,\"height\":600,\"objectPosition\":\"40% 50%\",\"fade\":[\"bottom\"],\"fadeSize\":140}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "hr",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": "hr",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":300,\"width\":460,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\"}",
+              "text": "La respuesta llega"
+            },
+            {
+              "id": "n13",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "en ondas de choque"
+            },
+            {
+              "id": "b",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":940,\"right\":\"m\",\"gap\":20}",
+              "text": null
+            },
+            {
+              "id": "n14",
+              "parent": "b",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "n15",
+              "parent": "b",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"maxWidth\":860}",
+              "text": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina."
+            },
+            {
+              "id": "n16",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Contrapunto deep: ventajas para la clínica en una ficha numerada y el CTA.",
+          "background": "deep",
+          "lightFrom": "top-right",
+          "alt": "Tu clínica, lista para la salud masculina. Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta. Pago directo: Un procedimiento que el paciente paga directamente. Agenda ágil: Sesiones de no más de 10 minutos por paciente. Solicita tu demo.",
+          "nodes": [
+            {
+              "id": "n17",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"width\":700,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n18",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+              "text": "Tu clínica, lista"
+            },
+            {
+              "id": "n19",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+              "text": "para la salud masculina"
+            },
+            {
+              "id": "l",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":540,\"right\":\"m\",\"gap\":22}",
+              "text": null
+            },
+            {
+              "id": "n20",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "br0",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n21",
+              "parent": "br0",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"thin\",\"tone\":\"accent\",\"as\":\"p\"}",
+              "text": "01"
+            },
+            {
+              "id": "bp0",
+              "parent": "br0",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n22",
+              "parent": "bp0",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Un servicio diferenciador"
+            },
+            {
+              "id": "n23",
+              "parent": "bp0",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+            },
+            {
+              "id": "n24",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "br1",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n25",
+              "parent": "br1",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"thin\",\"tone\":\"accent\",\"as\":\"p\"}",
+              "text": "02"
+            },
+            {
+              "id": "bp1",
+              "parent": "br1",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n26",
+              "parent": "bp1",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Pago directo"
+            },
+            {
+              "id": "n27",
+              "parent": "bp1",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Un procedimiento que el paciente paga directamente"
+            },
+            {
+              "id": "n28",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "br2",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"crossAlign\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n29",
+              "parent": "br2",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"thin\",\"tone\":\"accent\",\"as\":\"p\"}",
+              "text": "03"
+            },
+            {
+              "id": "bp2",
+              "parent": "br2",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n30",
+              "parent": "bp2",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Agenda ágil"
+            },
+            {
+              "id": "n31",
+              "parent": "bp2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Sesiones de no más de 10 minutos por paciente"
+            },
+            {
+              "id": "cta",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"bottom\":\"m\",\"left\":\"m\",\"width\":560}",
+              "text": null
+            },
+            {
+              "id": "n32",
+              "parent": "cta",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "19 de noviembre, Día Internacional del Hombre. Un día para ellos y una pregunta para tu clínica: ¿ya atiendes la salud masculina?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #OndasDeChoque #BTLElSalvador #MedicinaEstetica",
+      "sources": [
+        "data/web/focused-shockwave.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/uploads/pub-9/web-focused-shockwave-02.webp",
+        "data/uploads/pub-9/web-focused-shockwave-04.webp"
+      ],
+      "claims": [
+        {
+          "claim": "Día Internacional del Hombre, 19 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · tema y fecha",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+          "location": "diapositiva 2",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, con sesiones de no más de 10 minutos y un procedimiento de pago directo.",
+          "location": "caption",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Procedimiento basado en pago directo / Preguntas frecuentes",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "C",
+      "direction_name": "Dato protagonista",
+      "concept": "Dos cifras cuentan la historia: el 19 del Día Internacional del Hombre abre la conversación y el 10 de las sesiones de no más de 10 minutos la cierra como ventaja para la agenda de la clínica. En medio, las ondas focales y el aplicador.",
+      "differentiation": "Tipografía numérica gigante en portada y cierre (BigNumber fino), fondos alternos (azul → blanco → oscuro). La diapositiva 2 se vuelve ilustración de ondas focales junto al aplicador, porque las fuentes no dan una cifra que encaje con ese texto. Distinta de la A (ilustración del símbolo) y de la B (maquetación editorial con fotos grandes).",
+      "slides": [
+        {
+          "purpose": "El 19 como cifra protagonista: fecha, día, gancho y la pregunta a la clínica.",
+          "background": "blue",
+          "lightFrom": "bottom-left",
+          "alt": "Cifra grande \"19\", \"de noviembre, Día Internacional del Hombre\", \"Un día para ellos. Una pregunta para ti.\" y \"¿Tu clínica ya atiende la salud masculina?\". Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "r",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":200,\"width\":600,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": "r",
+              "type": "BigNumber",
+              "props": "{\"value\":\"19\",\"size\":400,\"weight\":\"thin\"}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": "r",
+              "type": "Headline",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":8}}",
+              "text": "de noviembre\nDía Internacional del Hombre"
+            },
+            {
+              "id": "h",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":720,\"right\":\"m\",\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "h",
+              "type": "Rule",
+              "props": "{\"length\":120,\"thickness\":2,\"emphasis\":\"strong\",\"style\":{\"marginBottom\":32}}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": "h",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\"}",
+              "text": "Un día para ellos."
+            },
+            {
+              "id": "n6",
+              "parent": "h",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"p\"}",
+              "text": "Una pregunta para ti."
+            },
+            {
+              "id": "n7",
+              "parent": "h",
+              "type": "Body",
+              "props": "{\"size\":\"l\",\"weight\":\"regular\",\"tone\":\"strong\",\"style\":{\"marginTop\":32}}",
+              "text": "¿Tu clínica ya atiende la salud masculina?"
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "La respuesta: ondas de choque focales ilustradas junto al aplicador de BTL Focused Shockwave.",
+          "background": "white",
+          "lightFrom": null,
+          "alt": "La respuesta llega en ondas de choque. BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina. Ilustración de ondas focales que convergen y foto del aplicador. Desliza.",
+          "nodes": [
+            {
+              "id": "fig",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":520,\"left\":\"m\",\"width\":520}",
+              "text": null
+            },
+            {
+              "id": "n9",
+              "parent": "fig",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"cw2\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"10\\\"/></filter><radialGradient id=\\\"cw2h\\\" cx=\\\"0.5\\\" cy=\\\"0.5\\\" r=\\\"0.5\\\"><stop offset=\\\"0\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0.5\\\"/><stop offset=\\\"1\\\" stop-color=\\\"#96d2ff\\\" stop-opacity=\\\"0\\\"/></radialGradient></defs><circle cx=\\\"420\\\" cy=\\\"300\\\" r=\\\"110\\\" fill=\\\"url(#cw2h)\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M92.9,493.4 A380,380 0 0 1 92.9,106.6\\\" stroke-width=\\\"2\\\" opacity=\\\"0.45\\\"/><path d=\\\"M144.6,462.9 A320,320 0 0 1 144.6,137.1\\\" stroke-width=\\\"2.6\\\" opacity=\\\"0.5800000000000001\\\"/><path d=\\\"M196.2,432.4 A260,260 0 0 1 196.2,167.6\\\" stroke-width=\\\"3.2\\\" opacity=\\\"0.71\\\"/><path d=\\\"M247.9,401.8 A200,200 0 0 1 247.9,198.2\\\" stroke-width=\\\"3.8\\\" opacity=\\\"0.8400000000000001\\\"/><path d=\\\"M299.5,371.3 A140,140 0 0 1 299.5,228.7\\\" stroke-width=\\\"4.4\\\" opacity=\\\"0.97\\\"/></g><g filter=\\\"url(#cw2)\\\" opacity=\\\"0.8\\\"><circle cx=\\\"420\\\" cy=\\\"300\\\" r=\\\"24\\\" fill=\\\"#96d2ff\\\"/></g><circle cx=\\\"420\\\" cy=\\\"300\\\" r=\\\"12\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"420\\\" cy=\\\"300\\\" r=\\\"38\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 520 600\",\"width\":520,\"height\":600,\"title\":\"Ondas de choque focales que convergen en un único punto\"}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-04.webp\",\"alt\":\"Aplicador de BTL Focused Shockwave\",\"left\":560,\"top\":560,\"width\":520,\"height\":460,\"objectPosition\":\"35% 50%\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+              "text": "La respuesta llega"
+            },
+            {
+              "id": "n13",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+              "text": "en ondas de choque"
+            },
+            {
+              "id": "n14",
+              "parent": "t",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"maxWidth\":860,\"style\":{\"marginTop\":24}}",
+              "text": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina."
+            },
+            {
+              "id": "n15",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "El 10 de las sesiones breves como cifra del cierre, las ventajas y el CTA.",
+          "background": "dark",
+          "lightFrom": "bottom-left",
+          "alt": "Cifra grande \"10\". Tu clínica, lista para la salud masculina. Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta. Pago directo: Un procedimiento que el paciente paga directamente. Agenda ágil: Sesiones de no más de 10 minutos por paciente. Solicita tu demo.",
+          "nodes": [
+            {
+              "id": "n16",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "t",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":236,\"width\":700,\"gap\":0}",
+              "text": null
+            },
+            {
+              "id": "n17",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\"}",
+              "text": "Tu clínica, lista"
+            },
+            {
+              "id": "n18",
+              "parent": "t",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "para la salud masculina"
+            },
+            {
+              "id": "big",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":430,\"left\":\"m\",\"width\":420}",
+              "text": null
+            },
+            {
+              "id": "n19",
+              "parent": "big",
+              "type": "BigNumber",
+              "props": "{\"value\":\"10\",\"size\":360,\"weight\":\"thin\",\"tone\":\"accent\"}",
+              "text": null
+            },
+            {
+              "id": "l",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":430,\"left\":520,\"width\":466,\"gap\":30}",
+              "text": null
+            },
+            {
+              "id": "n20",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":466,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "p0",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n21",
+              "parent": "p0",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Agenda ágil"
+            },
+            {
+              "id": "n22",
+              "parent": "p0",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Sesiones de no más de 10 minutos por paciente"
+            },
+            {
+              "id": "n23",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":466,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "p1",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n24",
+              "parent": "p1",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Un servicio diferenciador"
+            },
+            {
+              "id": "n25",
+              "parent": "p1",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+            },
+            {
+              "id": "n26",
+              "parent": "l",
+              "type": "Rule",
+              "props": "{\"length\":466,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "p2",
+              "parent": "l",
+              "type": "Stack",
+              "props": "{\"gap\":4}",
+              "text": null
+            },
+            {
+              "id": "n27",
+              "parent": "p2",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+              "text": "Pago directo"
+            },
+            {
+              "id": "n28",
+              "parent": "p2",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+              "text": "Un procedimiento que el paciente paga directamente"
+            },
+            {
+              "id": "cta",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1100,\"left\":\"m\",\"width\":560}",
+              "text": null
+            },
+            {
+              "id": "n29",
+              "parent": "cta",
+              "type": "Headline",
+              "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "19 de noviembre, Día Internacional del Hombre: un día para ellos y una pregunta para tu clínica. ¿Ya atiendes la salud masculina?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #OndasDeChoque #BTLElSalvador #MedicinaEstetica",
+      "sources": [
+        "data/web/focused-shockwave.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/uploads/pub-9/web-focused-shockwave-04.webp"
+      ],
+      "claims": [
+        {
+          "claim": "Día Internacional del Hombre, 19 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · tema y fecha",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+          "location": "diapositiva 2",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, con sesiones de no más de 10 minutos y un procedimiento de pago directo.",
+          "location": "caption",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Procedimiento basado en pago directo / Preguntas frecuentes",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "No hay logo oficial de BTL Focused Shockwave en los activos: el equipo aparece con sus fotos oficiales (web-focused-shockwave-02 y -04). Si consigues el logo, súbelo a su ficha (con \"logo\" en el nombre del archivo).",
+    "No se usaron las fotos web-focused-shockwave-01, -03 y -05: muestran tratamientos de hombro y pierna, que no corresponden a salud masculina.",
+    "En C, las cifras grandes son la fecha (19) y la duración máxima de una sesión (10 minutos, de las preguntas frecuentes de BTL); no se usó el \"90 % de éxito\" ni otras cifras sin fuente verificable.",
+    "La ilustración del símbolo masculino y las ondas ilustra la fecha y la terapia; no representa un resultado clínico.",
+    "El cliente pidió que se puedan buscar imágenes de otras fuentes: la app solo descarga fotos de sitios oficiales de BTL. Las fotos de otras fuentes se pueden subir a la ficha del equipo si muestran BTL Focused Shockwave."
+  ]
+}

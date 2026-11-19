@@ -1,0 +1,471 @@
+{
+  "proposal": {
+    "direction": "A",
+    "direction_name": "Pantalla dividida",
+    "concept": "Pregunta y respuesta enfrentadas: a la izquierda, oscuro, el paciente pregunta; a la derecha, en blanco, la pantalla del aplicador y la pregunta a la clínica. El corte gira a horizontal para presentar el equipo completo y vuelve a vertical, desplazado, para el cierre.",
+    "differentiation": "Dos superficies por diapositiva (deep/blanco, blue/blanco, enterprise/blanco) con la línea de corte que se mueve: vertical a la derecha, horizontal, vertical a la izquierda. Las fotos nuevas de la ficha (pantalla del aplicador y equipo en su carro) viven en la mitad blanca, sin recuadros sobre fondo oscuro.",
+    "slides": [
+      {
+        "purpose": "Mitad oscura con la pregunta del paciente; mitad blanca con la pantalla del aplicador y la pregunta a la clínica.",
+        "background": "dark",
+        "lightFrom": "bottom-left",
+        "alt": "Mitad izquierda azul oscuro: pastilla \"19 de noviembre\", \"Día Internacional del Hombre\" y \"Él pregunta por la disfunción eréctil.\" Mitad derecha blanca: la pantalla del aplicador de BTL Focused Shockwave y \"¿Tu consulta tiene una respuesta?\". Desliza.",
+        "nodes": [
+          {
+            "id": "half",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":0,\"left\":560,\"width\":520,\"height\":1350,\"surface\":\"white\"}",
+            "text": null
+          },
+          {
+            "id": "n102",
+            "parent": "half",
+            "type": "BtlLogo",
+            "props": "{\"placement\":\"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "n101",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/products/focused-shockwave/BTL-6000_FSWT_PIC_applicator_upper-view_v1_RGB.jpg\",\"alt\":\"Pantalla del aplicador de BTL Focused Shockwave\",\"left\":560,\"top\":300,\"width\":520,\"height\":600,\"objectPosition\":\"68% 50%\"}",
+            "text": null
+          },
+          {
+            "id": "r",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":236,\"width\":410,\"gap\":0}",
+            "text": null
+          },
+          {
+            "id": "n103",
+            "parent": "r",
+            "type": "DatePill",
+            "props": "{}",
+            "text": "19 de noviembre"
+          },
+          {
+            "id": "n104",
+            "parent": "r",
+            "type": "Headline",
+            "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":18}}",
+            "text": "Día Internacional\ndel Hombre"
+          },
+          {
+            "id": "h",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":600,\"width\":420,\"gap\":0}",
+            "text": null
+          },
+          {
+            "id": "n106",
+            "parent": "h",
+            "type": "Headline",
+            "props": "{\"size\":\"l\",\"weight\":\"thin\",\"as\":\"h1\"}",
+            "text": "Él pregunta\npor la"
+          },
+          {
+            "id": "n107",
+            "parent": "h",
+            "type": "Headline",
+            "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"p\"}",
+            "text": "disfunción\neréctil."
+          },
+          {
+            "id": "q",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":940,\"left\":620,\"width\":366,\"tone\":\"light\",\"gap\":24}",
+            "text": null
+          },
+          {
+            "id": "n108",
+            "parent": "q",
+            "type": "Rule",
+            "props": "{\"length\":64,\"thickness\":2,\"emphasis\":\"strong\"}",
+            "text": null
+          },
+          {
+            "id": "n109",
+            "parent": "q",
+            "type": "Headline",
+            "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"p\"}",
+            "text": "¿Tu consulta\ntiene una\nrespuesta?"
+          },
+          {
+            "id": "sw",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"bottom\":\"m\",\"right\":\"m\",\"tone\":\"light\",\"direction\":\"row\",\"align\":\"end\"}",
+            "text": null
+          },
+          {
+            "id": "n110",
+            "parent": "sw",
+            "type": "SwipeCue",
+            "props": "{\"placement\":\"inline\"}",
+            "text": "Desliza"
+          }
+        ]
+      },
+      {
+        "purpose": "Arriba la respuesta; abajo, en blanco, el texto y el equipo completo en su carro.",
+        "background": "dark",
+        "lightFrom": "top-left",
+        "alt": "Arriba, sobre azul: \"La respuesta llega en ondas de choque\" y el logo de BTL Focused Shockwave. Abajo, a la izquierda, una foto grande de un especialista con el aplicador y el equipo en una sala de tratamiento; a la derecha, \"Trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico.\" Desliza.",
+        "nodes": [
+          {
+            "id": "half",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":600,\"left\":0,\"width\":1080,\"height\":750,\"surface\":\"white\"}",
+            "text": null
+          },
+          {
+            "id": "n111",
+            "parent": null,
+            "type": "ProductImage",
+            "props": "{\"src\":\"data/products/focused-shockwave/image.webp\",\"alt\":\"Especialista con el aplicador de BTL Focused Shockwave junto al equipo, en una sala de tratamiento\",\"left\":0,\"top\":600,\"width\":640,\"height\":750,\"objectPosition\":\"62% 45%\",\"fade\":[\"right\",\"top\"],\"fadeSize\":160}",
+            "text": null
+          },
+          {
+            "id": "n112",
+            "parent": null,
+            "type": "BtlLogo",
+            "props": "{\"placement\":\"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "t",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":260,\"right\":\"m\",\"gap\":0}",
+            "text": null
+          },
+          {
+            "id": "n113",
+            "parent": "t",
+            "type": "Headline",
+            "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+            "text": "La respuesta llega"
+          },
+          {
+            "id": "n114",
+            "parent": "t",
+            "type": "Headline",
+            "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+            "text": "con ondas de choque"
+          },
+          {
+            "id": "pl",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":470,\"left\":-42,\"width\":720}",
+            "text": null
+          },
+          {
+            "id": "plogo",
+            "parent": "pl",
+            "type": "ProductLogo",
+            "props": "{\"src\":\"data/products/focused-shockwave/BTL-Focused-Shockwave-logo-blanco.png\",\"alt\":\"BTL Focused Shockwave\",\"width\":720}",
+            "text": null
+          },
+          {
+            "id": "b",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":700,\"left\":660,\"width\":326,\"tone\":\"light\",\"gap\":24}",
+            "text": null
+          },
+          {
+            "id": "n115",
+            "parent": "b",
+            "type": "Rule",
+            "props": "{\"length\":64,\"thickness\":2,\"emphasis\":\"strong\"}",
+            "text": null
+          },
+          {
+            "id": "n116",
+            "parent": "b",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+            "text": "Trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico."
+          },
+          {
+            "id": "sw",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"bottom\":\"m\",\"right\":\"m\",\"tone\":\"light\",\"direction\":\"row\",\"align\":\"end\"}",
+            "text": null
+          },
+          {
+            "id": "n117",
+            "parent": "sw",
+            "type": "SwipeCue",
+            "props": "{\"placement\":\"inline\"}",
+            "text": "Desliza"
+          }
+        ]
+      },
+      {
+        "purpose": "Panel azul con el titular; mitad blanca con las ventajas y el CTA.",
+        "background": "dark",
+        "lightFrom": "bottom-left",
+        "alt": "Columna azul: \"Que tu clínica sea donde se atreven a consultar\". Zona blanca: tres tarjetas celestes con íconos en círculo azul: un reloj de arena, \"Sesiones breves: de no más de 10 minutos cada una\"; tres reguladores, \"Tratamiento ajustable: se adapta a la respuesta de cada paciente\"; barras que crecen, \"Nueva línea de servicio: suma la salud masculina a la oferta de tu consulta\". Solicita tu demo.",
+        "nodes": [
+          {
+            "id": "half",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":0,\"left\":440,\"width\":640,\"height\":1350,\"surface\":\"white\"}",
+            "text": null
+          },
+          {
+            "id": "n121",
+            "parent": "half",
+            "type": "BtlLogo",
+            "props": "{\"placement\":\"top-right\"}",
+            "text": null
+          },
+          {
+            "id": "t",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":300,\"left\":\"m\",\"width\":340,\"tone\":\"dark\",\"gap\":0}",
+            "text": null
+          },
+          {
+            "id": "n119",
+            "parent": "t",
+            "type": "Headline",
+            "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+            "text": "Que tu\nclínica sea"
+          },
+          {
+            "id": "n120",
+            "parent": "t",
+            "type": "Headline",
+            "props": "{\"size\":\"s\",\"weight\":\"semibold\"}",
+            "text": "donde se atreven\na consultar"
+          },
+          {
+            "id": "l",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"top\":300,\"left\":500,\"width\":486,\"tone\":\"light\"}",
+            "text": null
+          },
+          {
+            "id": "grid",
+            "parent": "l",
+            "type": "ModuleGrid",
+            "props": "{\"columns\":1,\"rows\":\"auto auto auto\",\"open\":true}",
+            "text": null
+          },
+          {
+            "id": "m0",
+            "parent": "grid",
+            "type": "Module",
+            "props": "{\"surface\":\"sky\",\"padding\":28,\"style\":{\"marginTop\":0}}",
+            "text": null
+          },
+          {
+            "id": "card0",
+            "parent": "m0",
+            "type": "Stack",
+            "props": "{\"direction\":\"row\",\"gap\":24,\"crossAlign\":\"center\"}",
+            "text": null
+          },
+          {
+            "id": "i0",
+            "parent": "card0",
+            "type": "Illustration",
+            "props": "{\"svg\":\"<circle cx=\\\"48\\\" cy=\\\"48\\\" r=\\\"46\\\" fill=\\\"#00508c\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M32,24 L64,24\\\"/><path d=\\\"M32,72 L64,72\\\"/><path d=\\\"M35,24 C35,40 61,44 61,48 C61,52 35,56 35,72\\\"/><path d=\\\"M61,24 C61,40 35,44 35,48 C35,52 61,56 61,72\\\"/></g><path d=\\\"M40,66 L56,66 L48,58 Z\\\" fill=\\\"#96d2ff\\\"/>\",\"viewBox\":\"0 0 96 96\",\"width\":84,\"height\":84,\"title\":\"Ícono de un reloj de arena: sesiones breves\"}",
+            "text": null
+          },
+          {
+            "id": "p0",
+            "parent": "card0",
+            "type": "Stack",
+            "props": "{\"gap\":6}",
+            "text": null
+          },
+          {
+            "id": "n123",
+            "parent": "p0",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+            "text": "Sesiones breves"
+          },
+          {
+            "id": "n124",
+            "parent": "p0",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+            "text": "De no más de 10 minutos cada una"
+          },
+          {
+            "id": "m1",
+            "parent": "grid",
+            "type": "Module",
+            "props": "{\"surface\":\"sky\",\"padding\":28,\"style\":{\"marginTop\":24}}",
+            "text": null
+          },
+          {
+            "id": "card1",
+            "parent": "m1",
+            "type": "Stack",
+            "props": "{\"direction\":\"row\",\"gap\":24,\"crossAlign\":\"center\"}",
+            "text": null
+          },
+          {
+            "id": "i1",
+            "parent": "card1",
+            "type": "Illustration",
+            "props": "{\"svg\":\"<circle cx=\\\"48\\\" cy=\\\"48\\\" r=\\\"46\\\" fill=\\\"#00508c\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M28,30 L68,30\\\"/><path d=\\\"M28,48 L68,48\\\"/><path d=\\\"M28,66 L68,66\\\"/></g><g fill=\\\"#96d2ff\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"><circle cx=\\\"40\\\" cy=\\\"30\\\" r=\\\"6\\\"/><circle cx=\\\"58\\\" cy=\\\"48\\\" r=\\\"6\\\"/><circle cx=\\\"46\\\" cy=\\\"66\\\" r=\\\"6\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":84,\"height\":84,\"title\":\"Ícono de tres reguladores en distintas posiciones: tratamiento ajustable\"}",
+            "text": null
+          },
+          {
+            "id": "p1",
+            "parent": "card1",
+            "type": "Stack",
+            "props": "{\"gap\":6}",
+            "text": null
+          },
+          {
+            "id": "n126",
+            "parent": "p1",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+            "text": "Tratamiento ajustable"
+          },
+          {
+            "id": "n127",
+            "parent": "p1",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+            "text": "Se adapta a la respuesta de cada paciente"
+          },
+          {
+            "id": "m2",
+            "parent": "grid",
+            "type": "Module",
+            "props": "{\"surface\":\"sky\",\"padding\":28,\"style\":{\"marginTop\":24}}",
+            "text": null
+          },
+          {
+            "id": "card2",
+            "parent": "m2",
+            "type": "Stack",
+            "props": "{\"direction\":\"row\",\"gap\":24,\"crossAlign\":\"center\"}",
+            "text": null
+          },
+          {
+            "id": "i2",
+            "parent": "card2",
+            "type": "Illustration",
+            "props": "{\"svg\":\"<circle cx=\\\"48\\\" cy=\\\"48\\\" r=\\\"46\\\" fill=\\\"#00508c\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M28,70 L70,70\\\"/><path d=\\\"M34,70 L34,58\\\"/><path d=\\\"M46,70 L46,50\\\"/><path d=\\\"M58,70 L58,40\\\"/><path d=\\\"M30,46 L44,36 L52,40 L66,26\\\"/><path d=\\\"M58,26 L66,26 L66,34\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":84,\"height\":84,\"title\":\"Ícono de barras que crecen con una flecha: nueva línea de servicio\"}",
+            "text": null
+          },
+          {
+            "id": "p2",
+            "parent": "card2",
+            "type": "Stack",
+            "props": "{\"gap\":6}",
+            "text": null
+          },
+          {
+            "id": "n129",
+            "parent": "p2",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+            "text": "Nueva línea de servicio"
+          },
+          {
+            "id": "n130",
+            "parent": "p2",
+            "type": "Body",
+            "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+            "text": "Suma la salud masculina a la oferta de tu consulta"
+          },
+          {
+            "id": "cta",
+            "parent": null,
+            "type": "Region",
+            "props": "{\"bottom\":\"m\",\"left\":500,\"width\":486,\"gap\":32,\"tone\":\"light\"}",
+            "text": null
+          },
+          {
+            "id": "n131",
+            "parent": "cta",
+            "type": "Rule",
+            "props": "{\"length\":486,\"thickness\":2,\"emphasis\":\"strong\"}",
+            "text": null
+          },
+          {
+            "id": "n132",
+            "parent": "cta",
+            "type": "Headline",
+            "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"as\":\"p\"}",
+            "text": "Solicita tu demo"
+          }
+        ]
+      }
+    ],
+    "caption": "Él pregunta por la disfunción eréctil. Este 19 de noviembre, Día Internacional del Hombre, ¿tu consulta tiene una respuesta?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #DisfuncionErectil #OndasDeChoque #BTLElSalvador",
+    "sources": [
+      "data/web/focused-shockwave.md",
+      "knowledge/brand-guidelines/btl-corporate-identity.md",
+      "data/products/focused-shockwave/BTL-6000_FSWT_PIC_applicator_upper-view_v1_RGB.jpg",
+      "data/products/focused-shockwave/BTL-6000_FSWT_PIC_trolley_RGB.jpg"
+    ],
+    "direction_id": "pantalla-dividida",
+    "claims": [
+      {
+        "claim": "Día Internacional del Hombre, 19 de noviembre",
+        "location": "diapositiva 1",
+        "source": "brief de la publicación · tema y fecha",
+        "approval": "general_statement"
+      },
+      {
+        "claim": "De no más de 10 minutos cada una",
+        "location": "diapositiva 3",
+        "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Los parámetros se adaptan a la respuesta de cada paciente",
+        "location": "diapositiva 3",
+        "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Suma la salud masculina a la oferta de tu consulta",
+        "location": "diapositiva 3",
+        "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos con parámetros que se ajustan a cada paciente.",
+        "location": "caption",
+        "source": "data/web/focused-shockwave.md · Salud masculina / Preguntas frecuentes",
+        "approval": "manufacturer_description"
+      },
+      {
+        "claim": "Sí la tiene. BTL Focused Shockwave trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico.",
+        "location": "diapositiva 2",
+        "source": "data/web/focused-shockwave.md · Salud masculina (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+        "approval": "manufacturer_description"
+      }
+    ]
+  },
+  "summary": "Diapositiva 2: la foto pasa a la izquierda, más grande (ocupa la mitad izquierda de la zona blanca hasta el borde inferior) y se funde con el blanco hacia el texto; la descripción queda a la derecha. Diapositiva 3: los beneficios pasan de una lista con líneas a tres tarjetas celestes iguales, una debajo de otra, con íconos nuevos dentro de un círculo azul: reloj de arena (sesiones breves), tres reguladores (tratamiento ajustable) y barras que crecen (nueva línea de servicio). Diapositiva 1 sin cambios.",
+  "changed_slides": [
+    2,
+    3
+  ],
+  "warnings": []
+}

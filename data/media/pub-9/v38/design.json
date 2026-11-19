@@ -1,0 +1,449 @@
+{
+  "direction": "A",
+  "direction_name": "Pantalla dividida",
+  "concept": "Pregunta y respuesta enfrentadas: a la izquierda, oscuro, el paciente pregunta; a la derecha, en blanco, la pantalla del aplicador y la pregunta a la clínica. El corte gira a horizontal para presentar el equipo completo y vuelve a vertical, desplazado, para el cierre.",
+  "differentiation": "Dos superficies por diapositiva (deep/blanco, blue/blanco, enterprise/blanco) con la línea de corte que se mueve: vertical a la derecha, horizontal, vertical a la izquierda. Las fotos nuevas de la ficha (pantalla del aplicador y equipo en su carro) viven en la mitad blanca, sin recuadros sobre fondo oscuro.",
+  "slides": [
+    {
+      "purpose": "Mitad oscura con la pregunta del paciente; mitad blanca con la pantalla del aplicador y la pregunta a la clínica.",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Mitad izquierda azul oscuro: pastilla \"19 de noviembre\", \"Día Internacional del Hombre\" y \"Él pregunta por la disfunción eréctil.\" Mitad derecha blanca: la pantalla del aplicador de BTL Focused Shockwave y \"¿Tu consulta tiene una respuesta?\". Desliza.",
+      "nodes": [
+        {
+          "id": "half",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":0,\"left\":560,\"width\":520,\"height\":1350,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n102",
+          "parent": "half",
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n101",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/focused-shockwave/BTL-6000_FSWT_PIC_applicator_upper-view_v1_RGB.jpg\",\"alt\":\"Pantalla del aplicador de BTL Focused Shockwave\",\"left\":560,\"top\":300,\"width\":520,\"height\":600,\"objectPosition\":\"68% 50%\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":410,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n103",
+          "parent": "r",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de noviembre"
+        },
+        {
+          "id": "n104",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":18}}",
+          "text": "Día Internacional\ndel Hombre"
+        },
+        {
+          "id": "h",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":600,\"width\":420,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n106",
+          "parent": "h",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"thin\",\"as\":\"h1\"}",
+          "text": "Él pregunta\npor la"
+        },
+        {
+          "id": "n107",
+          "parent": "h",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"as\":\"p\"}",
+          "text": "disfunción\neréctil."
+        },
+        {
+          "id": "q",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":940,\"left\":620,\"width\":366,\"tone\":\"light\",\"gap\":24}",
+          "text": null
+        },
+        {
+          "id": "n108",
+          "parent": "q",
+          "type": "Rule",
+          "props": "{\"length\":64,\"thickness\":2,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n109",
+          "parent": "q",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"as\":\"p\"}",
+          "text": "¿Tu consulta\ntiene una\nrespuesta?"
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"right\":\"m\",\"tone\":\"light\",\"direction\":\"row\",\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "n110",
+          "parent": "sw",
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"inline\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Arriba la respuesta; abajo, en blanco, el texto y el equipo completo en su carro.",
+      "background": "dark",
+      "lightFrom": "top-left",
+      "alt": "Arriba, sobre azul: \"La respuesta llega en ondas de choque\" y el logo de BTL Focused Shockwave. Abajo, a la izquierda, una foto grande de un especialista con el aplicador y el equipo en una sala de tratamiento; a la derecha, \"Trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico.\" Desliza.",
+      "nodes": [
+        {
+          "id": "half",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":600,\"left\":0,\"width\":1080,\"height\":750,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n111",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/focused-shockwave/image.webp\",\"alt\":\"Especialista con el aplicador de BTL Focused Shockwave junto al equipo, en una sala de tratamiento\",\"left\":0,\"top\":600,\"width\":640,\"height\":750,\"objectPosition\":\"62% 45%\",\"fade\":[\"right\",\"top\"],\"fadeSize\":160}",
+          "text": null
+        },
+        {
+          "id": "n112",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":260,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n113",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+          "text": "La respuesta llega"
+        },
+        {
+          "id": "n114",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "con ondas de choque"
+        },
+        {
+          "id": "pl",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":470,\"left\":-42,\"width\":720}",
+          "text": null
+        },
+        {
+          "id": "plogo",
+          "parent": "pl",
+          "type": "ProductLogo",
+          "props": "{\"src\":\"data/products/focused-shockwave/BTL-Focused-Shockwave-logo-blanco.png\",\"alt\":\"BTL Focused Shockwave\",\"width\":720}",
+          "text": null
+        },
+        {
+          "id": "b",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":700,\"left\":660,\"width\":326,\"tone\":\"light\",\"gap\":24}",
+          "text": null
+        },
+        {
+          "id": "n115",
+          "parent": "b",
+          "type": "Rule",
+          "props": "{\"length\":64,\"thickness\":2,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n116",
+          "parent": "b",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "Trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico."
+        },
+        {
+          "id": "sw",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"right\":\"m\",\"tone\":\"light\",\"direction\":\"row\",\"align\":\"end\"}",
+          "text": null
+        },
+        {
+          "id": "n117",
+          "parent": "sw",
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"inline\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Panel azul con el titular; mitad blanca con las ventajas y el CTA.",
+      "background": "dark",
+      "lightFrom": "bottom-left",
+      "alt": "Columna azul: \"Ahora tu consulta tiene la respuesta.\". Zona blanca, sin fondos: tres beneficios con íconos de trazo fino y líneas sutiles entre ellos: reloj de arena, \"Sesiones breves: de no más de 10 minutos cada una\"; reguladores, \"Tratamiento ajustable: se adapta a la respuesta de cada paciente\"; barras que crecen, \"Nueva línea de servicio: suma la salud masculina a la oferta de tu consulta\". Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "half",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":0,\"left\":440,\"width\":640,\"height\":1350,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n121",
+          "parent": "half",
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"left\":\"m\",\"width\":340,\"tone\":\"dark\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n119",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+          "text": "Ahora tu\nconsulta"
+        },
+        {
+          "id": "n120",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\"}",
+          "text": "tiene la\nrespuesta."
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":320,\"left\":500,\"width\":486,\"gap\":44,\"tone\":\"light\"}",
+          "text": null
+        },
+        {
+          "id": "r0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "i0",
+          "parent": "r0",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.4\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M30,18 L66,18\\\"/><path d=\\\"M30,78 L66,78\\\"/><path d=\\\"M34,18 C34,38 62,42 62,48 C62,54 34,58 34,78\\\"/><path d=\\\"M62,18 C62,38 34,42 34,48 C34,54 62,58 62,78\\\"/></g><path d=\\\"M40,72 L56,72 L48,63 Z\\\" fill=\\\"#96d2ff\\\"/>\",\"viewBox\":\"0 0 96 96\",\"width\":64,\"height\":64,\"title\":\"Ícono de un reloj de arena en trazo fino: sesiones breves\"}",
+          "text": null
+        },
+        {
+          "id": "p0",
+          "parent": "r0",
+          "type": "Stack",
+          "props": "{\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n123",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Sesiones breves"
+        },
+        {
+          "id": "n124",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+          "text": "De no más de 10 minutos cada una"
+        },
+        {
+          "id": "d1",
+          "parent": "l",
+          "type": "Rule",
+          "props": "{\"length\":486,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "r1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "i1",
+          "parent": "r1",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.4\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M18,28 L78,28\\\"/><path d=\\\"M18,48 L78,48\\\"/><path d=\\\"M18,68 L78,68\\\"/><circle cx=\\\"36\\\" cy=\\\"28\\\" r=\\\"6\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"62\\\" cy=\\\"48\\\" r=\\\"6\\\" fill=\\\"#ffffff\\\"/><circle cx=\\\"44\\\" cy=\\\"68\\\" r=\\\"6\\\" fill=\\\"#ffffff\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":64,\"height\":64,\"title\":\"Ícono de tres reguladores en trazo fino: tratamiento ajustable\"}",
+          "text": null
+        },
+        {
+          "id": "p1",
+          "parent": "r1",
+          "type": "Stack",
+          "props": "{\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n126",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Tratamiento ajustable"
+        },
+        {
+          "id": "n127",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+          "text": "Se adapta a la respuesta de cada paciente"
+        },
+        {
+          "id": "d2",
+          "parent": "l",
+          "type": "Rule",
+          "props": "{\"length\":486,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "r2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "i2",
+          "parent": "r2",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.4\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M16,78 L80,78\\\"/><path d=\\\"M26,78 L26,62\\\"/><path d=\\\"M42,78 L42,52\\\"/><path d=\\\"M58,78 L58,40\\\"/><path d=\\\"M20,48 L38,34 L50,40 L72,20\\\"/><path d=\\\"M62,20 L72,20 L72,30\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":64,\"height\":64,\"title\":\"Ícono de barras que crecen con una flecha, en trazo fino: nueva línea de servicio\"}",
+          "text": null
+        },
+        {
+          "id": "p2",
+          "parent": "r2",
+          "type": "Stack",
+          "props": "{\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n129",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Nueva línea de servicio"
+        },
+        {
+          "id": "n130",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"tone\":\"base\"}",
+          "text": "Suma la salud masculina a la oferta de tu consulta"
+        },
+        {
+          "id": "cta",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"left\":500,\"width\":486,\"gap\":32,\"tone\":\"light\"}",
+          "text": null
+        },
+        {
+          "id": "n131",
+          "parent": "cta",
+          "type": "Rule",
+          "props": "{\"length\":486,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n132",
+          "parent": "cta",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu Demo"
+        }
+      ]
+    }
+  ],
+  "caption": "Él pregunta por la disfunción eréctil. Este 19 de noviembre, Día Internacional del Hombre, ¿tu consulta tiene una respuesta?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #DisfuncionErectil #OndasDeChoque #BTLElSalvador",
+  "sources": [
+    "data/web/focused-shockwave.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/products/focused-shockwave/BTL-6000_FSWT_PIC_applicator_upper-view_v1_RGB.jpg",
+    "data/products/focused-shockwave/BTL-6000_FSWT_PIC_trolley_RGB.jpg"
+  ],
+  "claims": [
+    {
+      "claim": "Día Internacional del Hombre, 19 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · tema y fecha",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "De no más de 10 minutos cada una",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Los parámetros se adaptan a la respuesta de cada paciente",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Suma la salud masculina a la oferta de tu consulta",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos con parámetros que se ajustan a cada paciente.",
+      "location": "caption",
+      "source": "data/web/focused-shockwave.md · Salud masculina / Preguntas frecuentes",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sí la tiene. BTL Focused Shockwave trata la disfunción eréctil con ondas de choque focales, y también la prostatitis crónica y el dolor pélvico crónico.",
+      "location": "diapositiva 2",
+      "source": "data/web/focused-shockwave.md · Salud masculina (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "pantalla-dividida"
+}

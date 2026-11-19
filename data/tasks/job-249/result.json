@@ -1,0 +1,157 @@
+{
+  "angle": "La portada nombra la disfunción eréctil de forma directa y la convierte en una pregunta para la clínica; la diapositiva 2 (aprobada) responde con BTL Focused Shockwave.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Disfunción\neréctil:\nla consulta\nque nadie pide.",
+          "support": "¿Qué le ofreces cuando por fin la pide?",
+          "points": [],
+          "rationale": "Nombra la disfunción eréctil desde la portada y la plantea como una demanda silenciosa que la clínica puede atender; la 2 da la respuesta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "La disfunción eréctil es una consulta que muchos pacientes no piden",
+              "location": "diapositiva 1",
+              "source": "tema de la publicación (disfunción eréctil como afección de la salud masculina); afirmación general, no atribuida al equipo",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "La disfunción\neréctil\ntambién es\nsalud.",
+          "support": "En su día, ¿tu clínica tiene con qué tratarla?",
+          "points": [],
+          "rationale": "Saca la disfunción eréctil del tabú y la lleva al terreno clínico; la pregunta abre el hueco que llena el equipo.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "La disfunción eréctil también es salud",
+              "location": "diapositiva 1",
+              "source": "tema de la publicación (disfunción eréctil como afección de la salud masculina); afirmación general, no atribuida al equipo",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Él pregunta\npor la\ndisfunción\neréctil.",
+          "support": "¿Tu consulta tiene una respuesta?",
+          "points": [],
+          "rationale": "Escena directa de consulta: el paciente ya preguntó y el profesional necesita una respuesta; la 2 es esa respuesta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Disfunción\neréctil:\nmás que una\npastilla.",
+          "support": "¿Qué otra opción le ofreces en tu consulta?",
+          "points": [],
+          "rationale": "Tensión reconocible para el especialista (el tratamiento habitual) sin descalificarlo; la 2 presenta otra opción tratable en consulta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "La disfunción eréctil se trata con más que una pastilla",
+              "location": "diapositiva 1",
+              "source": "tema de la publicación (disfunción eréctil como afección de la salud masculina); afirmación general, no atribuida al equipo",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Hablemos\nclaro: hablemos\nde disfunción\neréctil.",
+          "support": "Este 19 de noviembre, tu clínica puede tratarla.",
+          "points": [],
+          "rationale": "Directo y sin rodeos, como pide la fecha; conecta con la ventaja de ofrecer el tratamiento.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "tu clínica puede tratarla",
+              "location": "diapositiva 1",
+              "source": "data/web/focused-shockwave.md · Salud masculina (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Cuando el\nproblema es\ndisfunción\neréctil,",
+          "support": "¿a dónde lo envías? Desliza.",
+          "points": [],
+          "rationale": "La frase incompleta obliga a deslizar; plantea la pérdida de pacientes que se derivan y la 2 propone tratarlos en la propia clínica.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Detrás del\nsilencio, una\ndisfunción\neréctil.",
+          "support": "Desliza: hay un tratamiento que tu clínica puede ofrecer.",
+          "points": [],
+          "rationale": "Emotivo: une el silencio masculino con la causa concreta y anuncia el tratamiento disponible.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "hay un tratamiento que tu clínica puede ofrecer",
+              "location": "diapositiva 1",
+              "source": "data/web/focused-shockwave.md · Salud masculina (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La pregunta\nque más\ncuesta hacer\nen consulta.",
+          "support": "Disfunción eréctil: ¿tu clínica tiene la respuesta?",
+          "points": [],
+          "rationale": "Abre con la dificultad del paciente y revela el tema en el apoyo; la 2 responde con el equipo.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Ninguna opción da cifras de prevalencia ni promete resultados: no hay fuente para estadísticas y approved_claims está vacío.",
+    "Las opciones que dicen que la clínica \"puede tratarla\" se apoyan en la página oficial de BTL (Salud masculina: trata la disfunción eréctil).",
+    "La opción 5 empieza con \"Hablemos claro\": si prefieres evitar ganchos del tipo \"Hablemos de…\", descártala."
+  ]
+}

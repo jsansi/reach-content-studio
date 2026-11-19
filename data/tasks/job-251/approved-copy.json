@@ -1,0 +1,75 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "Él pregunta\npor la\ndisfunción\neréctil.",
+      "support": "¿Tu consulta tiene una respuesta?",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Día Internacional del Hombre, 19 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · tema y fecha",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "La respuesta llega\nen ondas de choque",
+      "support": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+          "location": "diapositiva 2",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "ventajas",
+      "headline": "Que tu clínica sea\ndonde se atreven a consultar",
+      "support": null,
+      "points": [
+        {
+          "title": "Sesiones breves",
+          "text": "De no más de 10 minutos cada una"
+        },
+        {
+          "title": "Tratamiento ajustable",
+          "text": "Los parámetros se adaptan a la respuesta de cada paciente"
+        },
+        {
+          "title": "Nueva línea de servicio",
+          "text": "Suma la salud masculina a la oferta de tu consulta"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "De no más de 10 minutos cada una",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Los parámetros se adaptan a la respuesta de cada paciente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Suma la salud masculina a la oferta de tu consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-11-18T21:06:28.905Z"
+}

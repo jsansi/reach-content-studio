@@ -1,0 +1,171 @@
+{
+  "angle": "Cierre centrado en lo que gana la clínica al ofrecer BTL Focused Shockwave en salud masculina: diferenciación, ingresos por procedimiento, agenda ágil y un equipo que sirve a varias áreas.",
+  "slides": [
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Tu clínica, lista\npara la salud masculina",
+          "support": null,
+          "points": [
+            {
+              "title": "Un servicio diferenciador",
+              "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+            },
+            {
+              "title": "Pago directo",
+              "text": "Un procedimiento que el paciente paga directamente"
+            },
+            {
+              "title": "Agenda ágil",
+              "text": "Sesiones de no más de 10 minutos por paciente"
+            }
+          ],
+          "rationale": "Responde al gancho (el paciente que calla) con lo que gana la clínica al tener la respuesta: diferenciación, ingreso directo y agenda ágil.",
+          "claims": [
+            {
+              "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un equipo que rinde\nen toda tu clínica",
+          "support": null,
+          "points": [
+            {
+              "title": "Salud masculina",
+              "text": "Disfunción eréctil, prostatitis y dolor pélvico crónicos"
+            },
+            {
+              "title": "Dolor crónico",
+              "text": "Tendinopatías, calcificaciones y fascitis plantar"
+            },
+            {
+              "title": "Inversión que dura",
+              "text": "Intensidad garantizada durante 3 millones de ondas focales"
+            }
+          ],
+          "rationale": "Como en la referencia del Día de la Columna, muestra el retorno del equipo: varias áreas de la consulta y una inversión duradera.",
+          "claims": [
+            {
+              "claim": "Salud masculina: Disfunción eréctil, prostatitis y dolor pélvico crónicos",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Dolor crónico: Tendinopatías, calcificaciones y fascitis plantar",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Un dispositivo, múltiples aplicaciones (tendinopatías, calcificaciones, fascitis plantar)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Inversión que dura: Intensidad garantizada durante 3 millones de ondas focales",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · El rendimiento de mayor duración (3 millones de ondas focales garantizadas)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más consultas\nen tu misma agenda",
+          "support": null,
+          "points": [
+            {
+              "title": "Sesiones cortas",
+              "text": "No más de 10 minutos por sesión"
+            },
+            {
+              "title": "Fácil de integrar",
+              "text": "Un tratamiento rápido y sencillo para tu equipo"
+            },
+            {
+              "title": "Ajustable a cada caso",
+              "text": "Los parámetros se adaptan a la respuesta del paciente"
+            }
+          ],
+          "rationale": "Ventaja operativa: el servicio entra en la agenda sin complicarla.",
+          "claims": [
+            {
+              "claim": "Sesiones cortas: No más de 10 minutos por sesión",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Fácil de integrar: Un tratamiento rápido y sencillo para tu equipo",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Tratamiento rápido y sencillo",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Ajustable a cada caso: Los parámetros se adaptan a la respuesta del paciente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (los parámetros se ajustan según la respuesta del paciente)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Abre una nueva línea\nde ingresos",
+          "support": null,
+          "points": [
+            {
+              "title": "Una consulta nueva",
+              "text": "Atiende disfunción eréctil y dolor pélvico crónico"
+            },
+            {
+              "title": "Terapia no invasiva",
+              "text": "Una opción no invasiva para tus pacientes"
+            },
+            {
+              "title": "Ingreso por procedimiento",
+              "text": "Un tratamiento que el paciente paga directamente"
+            }
+          ],
+          "rationale": "Cierre comercial directo, conectado con el gancho: lo que el paciente callaba se convierte en un servicio para la clínica.",
+          "claims": [
+            {
+              "claim": "Una consulta nueva: Atiende disfunción eréctil y dolor pélvico crónico",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Terapia no invasiva: Una opción no invasiva para tus pacientes",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Alternativa no invasiva (solución moderna, no invasiva)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Ingreso por procedimiento: Un tratamiento que el paciente paga directamente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "\"Más consultas en tu misma agenda\" se apoya en sesiones de no más de 10 minutos (preguntas frecuentes de BTL); no promete un número de pacientes.",
+    "\"Terapia no invasiva\": la página oficial la usa en la descripción general del equipo (dolor musculoesquelético); conviene confirmarlo con BTL para salud masculina.",
+    "Todas las ventajas son descripciones del fabricante (página oficial de BTL); approved_claims está vacío. No se usaron el 90 % de éxito ni los testimonios."
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "direction": "C",
+  "direction_name": "Editorial minimalista",
+  "concept": "Una página casi en blanco donde la pregunta del paciente se lee sola, grande y ligera; la fecha es un 19 fino en una esquina. El aplicador aparece pequeño, como acento, y el cierre en azul corporativo es el único golpe de color.",
+  "differentiation": "Tipografía protagonista con mucho espacio negativo y composición asimétrica (el texto alterna entre la columna izquierda y la derecha); un solo hilo fino al pie que cruza las tres diapositivas. Imagen mínima. A diferencia de la propuesta \"Dato protagonista\" anterior, el 19 es un acento pequeño sobre blanco, no la portada entera.",
+  "slides": [
+    {
+      "purpose": "Página en blanco: el 19 como acento, la pregunta del paciente grande y la pregunta a la clínica.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "\"19 de noviembre, Día Internacional del Hombre\" en una esquina y \"Él pregunta por la disfunción eréctil. ¿Tu consulta tiene una respuesta?\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-100,1300],[800,1318],[1600,1296],[2400,1316],[3400,1302]],\"width\":1.5,\"tone\":\"enterprise\",\"glow\":0,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "d",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"left\":620,\"width\":366,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "d",
+          "type": "BigNumber",
+          "props": "{\"value\":\"19\",\"size\":300,\"weight\":\"thin\",\"tone\":\"accent\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "d",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\",\"style\":{\"marginTop\":12}}",
+          "text": "de noviembre\nDía Internacional del Hombre"
+        },
+        {
+          "id": "h",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":640,\"width\":620,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "h",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "Él pregunta\npor la disfunción\neréctil."
+        },
+        {
+          "id": "q",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1060,\"width\":620,\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "q",
+          "type": "Rule",
+          "props": "{\"length\":96,\"thickness\":1.5,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "q",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "¿Tu consulta tiene una respuesta?"
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "La respuesta en tipografía grande, con el aplicador pequeño como acento.",
+      "background": "light",
+      "lightFrom": null,
+      "alt": "La respuesta llega en ondas de choque. BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina. Foto pequeña del aplicador. Desliza.",
+      "nodes": [
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-1180,1300],[-280,1318],[520,1296],[1320,1316],[2320,1302]],\"width\":1.5,\"tone\":\"enterprise\",\"glow\":0,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-04.webp\",\"alt\":\"Aplicador de BTL Focused Shockwave\",\"left\":94,\"top\":236,\"width\":360,\"height\":300,\"objectPosition\":\"40% 50%\"}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":580,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\"}",
+          "text": "La respuesta llega"
+        },
+        {
+          "id": "n13",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"semibold\"}",
+          "text": "en ondas de choque"
+        },
+        {
+          "id": "b",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":990,\"left\":400,\"width\":586}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "b",
+          "type": "Body",
+          "props": "{\"size\":\"s\"}",
+          "text": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina."
+        },
+        {
+          "id": "n15",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Golpe de azul corporativo: lo que ofrece la clínica y el CTA.",
+      "background": "enterprise",
+      "lightFrom": "top-right",
+      "alt": "Que tu clínica sea donde se atreven a consultar. Sesiones breves: De no más de 10 minutos cada una. Tratamiento ajustable: Los parámetros se adaptan a la respuesta de cada paciente. Nueva línea de servicio: Suma la salud masculina a la oferta de tu consulta. Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "n16",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[-2260,1300],[-1360,1318],[-560,1296],[240,1316],[1240,1302]],\"width\":1.5,\"tone\":\"sky\",\"glow\":0,\"opacity\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"width\":760,\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "Que tu clínica sea"
+        },
+        {
+          "id": "n19",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\"}",
+          "text": "donde se atreven\na consultar"
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":620,\"left\":400,\"width\":586,\"gap\":28}",
+          "text": null
+        },
+        {
+          "id": "p0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "n20",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Sesiones breves"
+        },
+        {
+          "id": "n21",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "De no más de 10 minutos cada una"
+        },
+        {
+          "id": "p1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Tratamiento ajustable"
+        },
+        {
+          "id": "n23",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "Los parámetros se adaptan a la respuesta de cada paciente"
+        },
+        {
+          "id": "p2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "n24",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Nueva línea de servicio"
+        },
+        {
+          "id": "n25",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "Suma la salud masculina a la oferta de tu consulta"
+        },
+        {
+          "id": "cta",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1110,\"left\":\"m\",\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "n26",
+          "parent": "cta",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "19 de noviembre, Día Internacional del Hombre. Él pregunta por la disfunción eréctil: ¿tu consulta tiene una respuesta?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #DisfuncionErectil #OndasDeChoque #BTLElSalvador",
+  "sources": [
+    "data/web/focused-shockwave.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/uploads/pub-9/web-focused-shockwave-04.webp"
+  ],
+  "claims": [
+    {
+      "claim": "Día Internacional del Hombre, 19 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · tema y fecha",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+      "location": "diapositiva 2",
+      "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "De no más de 10 minutos cada una",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Los parámetros se adaptan a la respuesta de cada paciente",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Suma la salud masculina a la oferta de tu consulta",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos con parámetros que se ajustan a cada paciente.",
+      "location": "caption",
+      "source": "data/web/focused-shockwave.md · Salud masculina / Preguntas frecuentes",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "editorial-minimalista"
+}

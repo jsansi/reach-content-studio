@@ -1,0 +1,412 @@
+{
+  "angle": "En el Día Internacional del Hombre, el silencio sobre la salud sexual masculina es la tensión; BTL Focused Shockwave es la respuesta que la clínica puede ofrecer (trata la disfunción eréctil, según BTL), y el cierre muestra lo que gana la consulta al sumar el servicio.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Hay temas\nque ellos\nno cuentan.",
+          "support": "¿Tu consulta tiene una respuesta cuando por fin lo hacen?",
+          "points": [],
+          "rationale": "Nombra el silencio que rodea la salud sexual masculina y pone al profesional como quien puede responder; la 2 presenta esa respuesta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Cuidarse\ntambién es\nhablar de esto.",
+          "support": "Desliza: la salud masculina también se trata en consulta.",
+          "points": [],
+          "rationale": "Lleva el Día del Hombre al autocuidado sin rodeos y anuncia que hay un tratamiento en consulta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Él no lo\nva a decir\nprimero.",
+          "support": "¿Y si tu consulta diera el primer paso?",
+          "points": [],
+          "rationale": "Tensión reconocible para el especialista (el paciente que no se anima) que la 2 resuelve con el equipo.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "La salud\nmasculina\nva más allá\ndel chequeo.",
+          "support": "¿Qué le ofreces cuando el problema es otro?",
+          "points": [],
+          "rationale": "Amplía la idea de salud del hombre y abre la pregunta sobre qué ofrece la clínica.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Lo callan\npor años.",
+          "support": "¿Tienes una alternativa no invasiva para ofrecerle?",
+          "points": [],
+          "rationale": "Emotivo y directo; la pregunta conecta con la terapia no invasiva que presenta la 2.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "alternativa no invasiva",
+              "location": "diapositiva 1",
+              "source": "data/web/focused-shockwave.md · Alternativa no invasiva a la cirugía (\"solución moderna, no invasiva\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un día\npara ellos.\nUna pregunta\npara ti.",
+          "support": "¿Tu clínica ya atiende la salud masculina?",
+          "points": [],
+          "rationale": "Usa la fecha como giro y traslada la pregunta al profesional que puede incorporar el servicio.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Su bienestar\nno debería\nser un tabú.",
+          "support": "Desliza y descubre cómo abrir la conversación en tu consulta.",
+          "points": [],
+          "rationale": "Inspirador: invita a la clínica a ser el lugar donde se habla del tema; la 2 da la herramienta.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Fuerza no\nes callar.",
+          "support": "Este Día del Hombre, ¿qué le respondes cuando pide ayuda?",
+          "points": [],
+          "rationale": "Giro sobre la idea de fortaleza masculina; la respuesta llega con el equipo en la 2.",
+          "claims": [
+            {
+              "claim": "Día Internacional del Hombre, 19 de noviembre",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · tema y fecha",
+              "approval": "general_statement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "options": [
+        {
+          "headline": "Ondas de choque focales\npara la salud masculina",
+          "support": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, con una terapia no invasiva.",
+          "points": [
+            {
+              "title": "Sesiones breves",
+              "text": "De no más de 10 minutos cada una"
+            },
+            {
+              "title": "Ajustable",
+              "text": "Los parámetros se adaptan a la respuesta del paciente"
+            },
+            {
+              "title": "Bien tolerada",
+              "text": "La mayoría de los pacientes la tolera bien"
+            }
+          ],
+          "rationale": "Presenta el equipo con su indicación oficial en salud masculina y tres ventajas de uso que tranquilizan al paciente.",
+          "claims": [
+            {
+              "claim": "trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "terapia no invasiva",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Alternativa no invasiva a la cirugía (\"solución moderna, no invasiva\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "De no más de 10 minutos cada una",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Los parámetros se adaptan a la respuesta del paciente",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "La mayoría de los pacientes la tolera bien",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"bien tolerada por la mayoría de los pacientes\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La respuesta llega\nen ondas de choque",
+          "support": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina.",
+          "points": [],
+          "rationale": "Responde directamente a los ganchos sobre el silencio y la pregunta del paciente: ahora hay algo que ofrecer.",
+          "claims": [
+            {
+              "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Un equipo,\nvarias consultas",
+          "support": "Con BTL Focused Shockwave tratas la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, además de dolor crónico y tendinopatías.",
+          "points": [],
+          "rationale": "Pone la salud masculina al frente y muestra que el mismo equipo sirve para otras áreas de la clínica.",
+          "claims": [
+            {
+              "claim": "tratas la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "además de dolor crónico y tendinopatías",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Un dispositivo, múltiples aplicaciones (dolor crónico, calcificaciones, tendinopatías, salud masculina)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Salud masculina,\nen sesiones breves",
+          "support": "BTL Focused Shockwave aplica ondas de choque focales para tratar la disfunción eréctil. Cada sesión dura hasta 10 minutos y se ajusta a cada paciente.",
+          "points": [],
+          "rationale": "Quita peso a la decisión del paciente (sesiones cortas, ajustables) y responde al gancho de quien no se anima a consultar.",
+          "claims": [
+            {
+              "claim": "aplica ondas de choque focales para tratar la disfunción eréctil",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Cada sesión dura hasta 10 minutos",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "se ajusta a cada paciente",
+              "location": "diapositiva 2",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Una nueva línea\nen tu consulta",
+          "points": [
+            {
+              "title": "Nueva fuente de ingresos",
+              "text": "Suma la salud masculina a los servicios de tu clínica"
+            },
+            {
+              "title": "Pago directo",
+              "text": "Un procedimiento que el paciente paga directamente"
+            },
+            {
+              "title": "Rápido y sencillo",
+              "text": "Sesiones de no más de 10 minutos"
+            }
+          ],
+          "rationale": "Cierre comercial: lo que gana el negocio de la clínica al incorporar el servicio.",
+          "claims": [
+            {
+              "claim": "Nueva fuente de ingresos",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Un procedimiento que el paciente paga directamente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones de no más de 10 minutos",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+              "approval": "manufacturer_description"
+            }
+          ],
+          "support": null
+        },
+        {
+          "headline": "Haz que hablar\nvalga la pena",
+          "points": [
+            {
+              "title": "Una respuesta concreta",
+              "text": "Ofrece un tratamiento cuando el paciente se anima a consultar"
+            },
+            {
+              "title": "Un equipo, varias áreas",
+              "text": "Disfunción eréctil, dolor pélvico, tendinopatías y más"
+            },
+            {
+              "title": "Rendimiento que dura",
+              "text": "Intensidad garantizada durante 3 millones de ondas focales"
+            }
+          ],
+          "rationale": "Cierra la historia del silencio: el paciente habla y la clínica tiene con qué responder.",
+          "claims": [
+            {
+              "claim": "Ofrece un tratamiento cuando el paciente se anima a consultar",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Disfunción eréctil, dolor pélvico, tendinopatías y más",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Un dispositivo, múltiples aplicaciones (dolor crónico, calcificaciones, tendinopatías, salud masculina)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Intensidad garantizada durante 3 millones de ondas focales",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · El rendimiento de mayor duración (\"intensidad 100% precisa durante toda su vida útil\", \"3 millones de ondas focales\")",
+              "approval": "manufacturer_description"
+            }
+          ],
+          "support": null
+        },
+        {
+          "headline": "Que tu clínica sea\ndonde se atreven a consultar",
+          "points": [
+            {
+              "title": "Sesiones breves",
+              "text": "De no más de 10 minutos cada una"
+            },
+            {
+              "title": "Tratamiento ajustable",
+              "text": "Los parámetros se adaptan a la respuesta de cada paciente"
+            },
+            {
+              "title": "Nueva línea de servicio",
+              "text": "Suma la salud masculina a la oferta de tu consulta"
+            }
+          ],
+          "rationale": "Inspirador y emotivo: la clínica como lugar de confianza, con ventajas que facilitan dar el paso.",
+          "claims": [
+            {
+              "claim": "De no más de 10 minutos cada una",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"una sesión de ondas de choque focales no dura más de 10 minutos\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Los parámetros se adaptan a la respuesta de cada paciente",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Preguntas frecuentes (\"los parámetros del procedimiento siempre pueden ajustarse de acuerdo con la respuesta del paciente\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Suma la salud masculina a la oferta de tu consulta",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Crea una nueva fuente de ingresos para tu práctica",
+              "approval": "manufacturer_description"
+            }
+          ],
+          "support": null
+        },
+        {
+          "headline": "Más pacientes,\nmás aplicaciones",
+          "points": [
+            {
+              "title": "Salud masculina",
+              "text": "Disfunción eréctil, prostatitis y dolor pélvico crónicos"
+            },
+            {
+              "title": "Musculoesquelético",
+              "text": "Dolor crónico, calcificaciones y tendinopatías"
+            },
+            {
+              "title": "Larga vida útil",
+              "text": "Intensidad precisa garantizada: 3 millones de ondas focales"
+            }
+          ],
+          "rationale": "Muestra el retorno de un solo equipo para varias áreas de la clínica, con la salud masculina primero.",
+          "claims": [
+            {
+              "claim": "Disfunción eréctil, prostatitis y dolor pélvico crónicos",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Dolor crónico, calcificaciones y tendinopatías",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · Un dispositivo, múltiples aplicaciones (dolor crónico, calcificaciones, tendinopatías, salud masculina)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Intensidad precisa garantizada: 3 millones de ondas focales",
+              "location": "diapositiva 3",
+              "source": "data/web/focused-shockwave.md · El rendimiento de mayor duración (\"intensidad 100% precisa durante toda su vida útil\", \"3 millones de ondas focales\")",
+              "approval": "manufacturer_description"
+            }
+          ],
+          "support": null
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "La indicación de disfunción eréctil, prostatitis crónica y dolor pélvico crónico sale de la página oficial de BTL (sección \"Salud masculina\"); approved_claims está vacío, así que se registra como descripción del fabricante. No se promete ningún resultado.",
+    "No se usaron el \"90% de tasa de éxito\" (marcado \"Datos en archivo\"), los testimonios ni los superlativos de la página (\"los mejores resultados del mercado\", \"el más avanzado\").",
+    "\"No invasiva\" proviene de la descripción general del equipo en la página oficial, que la presenta para el dolor musculoesquelético; conviene que BTL confirme el uso de esa palabra para salud masculina.",
+    "La ficha de BTL Focused Shockwave no tiene fotos ni logo oficiales: hay que subirlos a la ficha (o a la publicación) antes del paso 2. Las imágenes de otras fuentes deben mostrar este equipo.",
+    "BTL Focused Shockwave sigue \"pendiente de revisión\" y sin cliente asignado en su ficha."
+  ]
+}

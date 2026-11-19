@@ -1,0 +1,75 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "Un día\npara ellos.\nUna pregunta\npara ti.",
+      "support": "¿Tu clínica ya atiende la salud masculina?",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Día Internacional del Hombre, 19 de noviembre",
+          "location": "diapositiva 1",
+          "source": "brief de la publicación · tema y fecha",
+          "approval": "general_statement"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "La respuesta llega\nen ondas de choque",
+      "support": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+          "location": "diapositiva 2",
+          "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "ventajas",
+      "headline": "Tu clínica, lista\npara la salud masculina",
+      "support": null,
+      "points": [
+        {
+          "title": "Un servicio diferenciador",
+          "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+        },
+        {
+          "title": "Pago directo",
+          "text": "Un procedimiento que el paciente paga directamente"
+        },
+        {
+          "title": "Agenda ágil",
+          "text": "Sesiones de no más de 10 minutos por paciente"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+          "location": "diapositiva 3",
+          "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-11-18T20:53:41.793Z"
+}

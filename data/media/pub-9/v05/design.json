@@ -1,0 +1,315 @@
+{
+  "direction": "B",
+  "direction_name": "Póster tipográfico",
+  "concept": "Tres carteles como tres capítulos: la pregunta del día, la respuesta y lo que gana la clínica. Las palabras del gancho a casi todo el ancho hacen el trabajo; el equipo aparece pequeño, como prueba.",
+  "differentiation": "Sin ilustración ni foto protagonista: titulares display a casi todo el ancho sobre fondos plenos que cambian como capítulos (enterprise → blue → deep), con un único texto pequeño de apoyo. La foto del aplicador es una pieza pequeña en la diapositiva 2. Distinta de las propuestas anteriores (ilustración, revista con fotos grandes, cifras).",
+  "slides": [
+    {
+      "purpose": "Cartel del día: pastilla, nombre del día y el gancho a todo el ancho.",
+      "background": "enterprise",
+      "lightFrom": "top-left",
+      "alt": "Pastilla \"19 de noviembre\", \"Día Internacional del Hombre\", \"Un día para ellos. Una pregunta para ti.\" en letras grandes y \"¿Tu clínica ya atiende la salud masculina?\". Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "r",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": "r",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "19 de noviembre"
+        },
+        {
+          "id": "n3",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"light\",\"tone\":\"base\",\"as\":\"p\",\"style\":{\"marginTop\":20}}",
+          "text": "Día Internacional del Hombre"
+        },
+        {
+          "id": "n4",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"light\",\"as\":\"h1\",\"style\":{\"marginTop\":72}}",
+          "text": "Un día\npara ellos."
+        },
+        {
+          "id": "n5",
+          "parent": "r",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\",\"as\":\"p\"}",
+          "text": "Una pregunta\npara ti."
+        },
+        {
+          "id": "b",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1080,\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "b",
+          "type": "Body",
+          "props": "{\"size\":\"s\"}",
+          "text": "¿Tu clínica ya atiende la salud masculina?"
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cartel de la respuesta, con el aplicador pequeño como prueba.",
+      "background": "blue",
+      "lightFrom": "top-left",
+      "alt": "La respuesta llega en ondas de choque. BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina. Foto pequeña del aplicador. Desliza.",
+      "nodes": [
+        {
+          "id": "ph",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":960,\"left\":\"m\",\"width\":300,\"height\":260,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/uploads/pub-9/web-focused-shockwave-04.webp\",\"alt\":\"Aplicador de BTL Focused Shockwave\",\"left\":104,\"top\":970,\"width\":280,\"height\":240,\"objectPosition\":\"45% 50%\"}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"semibold\"}",
+          "text": "La respuesta\nllega"
+        },
+        {
+          "id": "n12",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"display\",\"weight\":\"light\"}",
+          "text": "en ondas\nde choque"
+        },
+        {
+          "id": "b",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":960,\"left\":440,\"width\":546}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "b",
+          "type": "Body",
+          "props": "{\"size\":\"s\"}",
+          "text": "BTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina."
+        },
+        {
+          "id": "n14",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Cartel del cierre: lo que gana la clínica en texto y el CTA.",
+      "background": "deep",
+      "lightFrom": "top-right",
+      "alt": "Tu clínica, lista para la salud masculina. Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta. Pago directo: Un procedimiento que el paciente paga directamente. Agenda ágil: Sesiones de no más de 10 minutos por paciente. Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "n15",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "t",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":236,\"right\":\"m\",\"gap\":0}",
+          "text": null
+        },
+        {
+          "id": "n16",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"semibold\"}",
+          "text": "Tu clínica,\nlista"
+        },
+        {
+          "id": "n17",
+          "parent": "t",
+          "type": "Headline",
+          "props": "{\"size\":\"xl\",\"weight\":\"light\"}",
+          "text": "para la salud\nmasculina"
+        },
+        {
+          "id": "l",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":720,\"right\":\"m\",\"gap\":24}",
+          "text": null
+        },
+        {
+          "id": "p0",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Un servicio diferenciador"
+        },
+        {
+          "id": "n19",
+          "parent": "p0",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "Ofrece un tratamiento para la disfunción eréctil en tu consulta"
+        },
+        {
+          "id": "p1",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n20",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Pago directo"
+        },
+        {
+          "id": "n21",
+          "parent": "p1",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "Un procedimiento que el paciente paga directamente"
+        },
+        {
+          "id": "p2",
+          "parent": "l",
+          "type": "Stack",
+          "props": "{\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Agenda ágil"
+        },
+        {
+          "id": "n23",
+          "parent": "p2",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"base\"}",
+          "text": "Sesiones de no más de 10 minutos por paciente"
+        },
+        {
+          "id": "cta",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"bottom\":\"m\",\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "n24",
+          "parent": "cta",
+          "type": "Headline",
+          "props": "{\"size\":\"m\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "19 de noviembre, Día Internacional del Hombre. Un día para ellos. Una pregunta para tu clínica: ¿ya atiendes la salud masculina?\n\nBTL Focused Shockwave lleva a tu consulta un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina: según BTL, trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, en sesiones de no más de 10 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo y conócelo.\n\n#DiaInternacionalDelHombre #SaludMasculina #OndasDeChoque #BTLElSalvador #MedicinaEstetica",
+  "sources": [
+    "data/web/focused-shockwave.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/uploads/pub-9/web-focused-shockwave-04.webp"
+  ],
+  "claims": [
+    {
+      "claim": "Día Internacional del Hombre, 19 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · tema y fecha",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "un tratamiento para la disfunción eréctil y otras afecciones de la salud masculina",
+      "location": "diapositiva 2",
+      "source": "data/web/focused-shockwave.md · Salud masculina / Men's health (\"trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico\")",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Un servicio diferenciador: Ofrece un tratamiento para la disfunción eréctil en tu consulta",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Salud masculina (trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Pago directo: Un procedimiento que el paciente paga directamente",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Procedimiento basado en pago directo",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Agenda ágil: Sesiones de no más de 10 minutos por paciente",
+      "location": "diapositiva 3",
+      "source": "data/web/focused-shockwave.md · Preguntas frecuentes (una sesión no dura más de 10 minutos)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "BTL Focused Shockwave trata la disfunción eréctil, la prostatitis crónica y el dolor pélvico crónico, con sesiones de no más de 10 minutos y un procedimiento de pago directo.",
+      "location": "caption",
+      "source": "data/web/focused-shockwave.md · Salud masculina / Procedimiento basado en pago directo / Preguntas frecuentes",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "poster-tipografico"
+}
