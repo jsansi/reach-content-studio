@@ -1,0 +1,1143 @@
+{
+  "concepts_explored": [
+    "El renglón en blanco: un trazo fino corre por la franja superior de las tres diapositivas, de la mente a la consulta.",
+    "La imagen de marca: la visual oficial de EXOMIND (perfil con el cerebro iluminado) como portada, y el equipo como pieza de catálogo.",
+    "La ficha de estudio: lámina modular, ficha del equipo con espécimen y ventajas en columnas.",
+    "Un subrayado: el trazo subraya la palabra \"mente\" en cada diapositiva (descartado: subrayar es resaltar dentro del texto, contra el manual).",
+    "El reflejo en la pantalla del equipo (descartado: el texto quedaría sobre el detalle de la foto).",
+    "Las tres capas del cerebro en corte (descartado: demasiado anatómico, sugiere una imagen clínica).",
+    "Una línea de tiempo del día de la consulta con la sesión de 30 minutos (descartado: inventaría horarios).",
+    "El espacio vacío como plato (descartado: el plato trivializa el trastorno)."
+  ],
+  "proposals": [
+    {
+      "direction": "A",
+      "direction_name": "Editorial minimalista",
+      "concept": "El renglón en blanco: cada diapositiva deja arriba una franja vacía por donde corre un único trazo fino, como el renglón de un cuaderno que conecta la mente (un pequeño cerebro) con la consulta. Debajo, una sola idea en tipografía grande y ligera.",
+      "differentiation": "La tipografía manda y el aire está arriba, no abajo: el titular se apoya en la mitad inferior y el trazo corre por la franja superior de las tres diapositivas, a la misma altura. El logo va arriba a la derecha y la única imagen es un acento pequeño (el cerebro de 200 px en la portada, el aplicador de 240 px en la diapositiva azul). Fondos light → enterprise → light. Sin halos, anillos, paneles ni fotos grandes.",
+      "slides": [
+        {
+          "purpose": "Gancho: un pequeño cerebro arriba, el trazo que sale de él y el titular grande abajo.",
+          "background": "light",
+          "lightFrom": "bottom-left",
+          "alt": "Fondo claro. Logo de BTL arriba a la derecha. Arriba a la izquierda, un pequeño cerebro de línea azul con un punto iluminado y, a su lado, la fecha: 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria. Del cerebro sale un trazo fino que cruza la diapositiva. Abajo, titular grande: El impulso de comer no siempre es hambre. Debajo: ¿Y si parte del abordaje empezara en la mente? Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Curve",
+              "props": "{\"points\":[[300,480],[900,550],[1620,460],[2420,550],[3060,500]],\"width\":2,\"tone\":\"enterprise\",\"glow\":0.15,\"opacity\":0.9}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":\"m\",\"top\":236,\"width\":200}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "n3",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"aa\\\" x=\\\"-80%\\\" y=\\\"-80%\\\" width=\\\"260%\\\" height=\\\"260%\\\"><feGaussianBlur stdDeviation=\\\"18\\\"/></filter></defs><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"70\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.7\\\" filter=\\\"url(#aa)\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"6\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M80,214 C66,150 104,84 180,64 C230,50 292,50 340,72 C396,98 432,148 430,204 C428,246 402,276 366,282 C352,308 320,320 292,312 C268,330 228,330 206,314 C176,320 140,308 122,288 C94,280 82,250 80,214 Z\\\"/><path d=\\\"M242,52 C232,104 254,146 230,198\\\"/><path d=\\\"M124,244 C180,222 250,228 314,246\\\"/><path d=\\\"M366,282 C392,294 400,322 380,338 C356,352 320,344 306,326\\\"/><path d=\\\"M292,312 C296,340 300,366 306,396\\\"/></g><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"12\\\" fill=\\\"#00508c\\\"/>\",\"viewBox\":\"0 0 500 400\",\"width\":200,\"height\":160,\"title\":\"Cerebro pequeño en línea azul con un punto iluminado\"}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":330,\"top\":236,\"width\":620,\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "30 de noviembre"
+            },
+            {
+              "id": "n7",
+              "parent": "n5",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"light\"}",
+              "text": "Día Internacional de la Lucha contra los\nTrastornos de la Conducta Alimentaria"
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":610,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n9",
+              "parent": "n8",
+              "type": "Headline",
+              "props": "{\"px\":104,\"weight\":\"light\",\"as\":\"h1\"}",
+              "text": "**El impulso**\n**de comer**\nno siempre\nes hambre."
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1090,\"width\":640}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": "n10",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "¿Y si parte del abordaje empezara en la mente?"
+            },
+            {
+              "id": "n12",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Equipo: el golpe de azul; logo de EXOMIND en placa arriba, respuesta grande y el aplicador como acento.",
+          "background": "enterprise",
+          "lightFrom": null,
+          "alt": "Fondo azul BTL liso. Logo de BTL arriba a la derecha. Arriba a la izquierda, el logo oficial de EXOMIND en una placa azul oscuro. El trazo fino continúa por la franja superior. Titular grande: Donde nace el impulso, llega EXOMIND. Texto: Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios. Abajo a la derecha, la foto oficial del aplicador de EXOMIND, pequeña. Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Curve",
+              "props": "{\"points\":[[-780,480],[-180,550],[540,460],[1340,550],[1980,500]],\"width\":2,\"tone\":\"enterprise\",\"glow\":0.15,\"opacity\":0.9}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":94,\"top\":236,\"width\":360,\"height\":94,\"surface\":\"deep\"}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/images (2).jpeg\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":102,\"top\":242,\"width\":344,\"height\":82,\"objectPosition\":\"center 49%\",\"blend\":\"normal\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":22}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":610,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "Headline",
+              "props": "{\"px\":80,\"weight\":\"light\"}",
+              "text": "Donde nace\nel impulso,\n**llega EXOMIND**"
+            },
+            {
+              "id": "n7",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":890,\"width\":560}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": "n7",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios."
+            },
+            {
+              "id": "n9",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/6_20260507114903_20061430_large.png\",\"alt\":\"Aplicador de EXOMIND, foto oficial sin fondo\",\"left\":720,\"top\":860,\"width\":240,\"height\":350,\"objectPosition\":\"center top\",\"blend\":\"normal\",\"fade\":[\"bottom\"],\"fadeSize\":90}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Ventajas y CTA: el trazo termina en la franja superior; tres ventajas en renglones con filetes.",
+          "background": "light",
+          "lightFrom": "top-left",
+          "alt": "Fondo claro. Logo de BTL arriba a la derecha. El trazo fino termina en la franja superior. Titular: La lucha contra los TCA también pasa por tu consulta. Tres renglones separados por filetes: Una nueva herramienta, estimulación magnética patentada para los atracones alimenticios. Pacientes que ya atiendes, quienes viven con atracones pueden estar ya en tu agenda. Menos de 30 minutos, con entrada y salida inmediata, sin interrumpir su día. Abajo: Solicita tu demo.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Curve",
+              "props": "{\"points\":[[-1860,480],[-1260,550],[-540,460],[260,550],[900,500]],\"width\":2,\"tone\":\"enterprise\",\"glow\":0.15,\"opacity\":0.9}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":610,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "n3",
+              "type": "Headline",
+              "props": "{\"px\":60,\"weight\":\"light\"}",
+              "text": "**La lucha contra los TCA**\ntambién pasa por tu consulta"
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":780,\"right\":\"m\",\"gap\":20}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"align\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n7",
+              "parent": "n6",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"accent\",\"style\":{\"flex\":\"0 0 300px\"}}",
+              "text": "Una nueva herramienta"
+            },
+            {
+              "id": "n8",
+              "parent": "n6",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"maxWidth\":556}",
+              "text": "Estimulación magnética patentada para los atracones alimenticios"
+            },
+            {
+              "id": "n9",
+              "parent": "n5",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": "n5",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"align\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": "n10",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"accent\",\"style\":{\"flex\":\"0 0 300px\"}}",
+              "text": "Pacientes que ya atiendes"
+            },
+            {
+              "id": "n12",
+              "parent": "n10",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"maxWidth\":556}",
+              "text": "Quienes viven con atracones pueden estar ya en tu agenda"
+            },
+            {
+              "id": "n13",
+              "parent": "n5",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":1,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "n14",
+              "parent": "n5",
+              "type": "Stack",
+              "props": "{\"direction\":\"row\",\"gap\":36,\"align\":\"start\"}",
+              "text": null
+            },
+            {
+              "id": "n15",
+              "parent": "n14",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\",\"tone\":\"accent\",\"style\":{\"flex\":\"0 0 300px\"}}",
+              "text": "Menos de 30 minutos"
+            },
+            {
+              "id": "n16",
+              "parent": "n14",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\",\"maxWidth\":556}",
+              "text": "Con entrada y salida inmediata, sin interrumpir su día"
+            },
+            {
+              "id": "n17",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1150,\"width\":640}",
+              "text": null
+            },
+            {
+              "id": "n18",
+              "parent": "n17",
+              "type": "Headline",
+              "props": "{\"px\":60,\"weight\":\"regular\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "El impulso de comer no siempre es hambre. Este 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria, dejamos espacio para una pregunta: ¿y si parte del abordaje empezara en la mente?\n\nEXOMIND, de BTL, aplica la estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol. Según BTL, está diseñado para tratar los atracones alimenticios.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#TrastornosDeLaConductaAlimentaria #TCA #EXOMIND #SaludMental #BTLElSalvador",
+      "sources": [
+        "data/web/exomind.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/tasks/job-412/approved-copy.json"
+      ],
+      "claims": [
+        {
+          "claim": "El impulso de comer no siempre es hambre",
+          "location": "diapositiva 1",
+          "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética patentada (ExoTMS™) para los atracones alimenticios",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™) y Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; entrada y salida inmediata; sin medicamentos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "B",
+      "direction_name": "Tecnología médica premium",
+      "concept": "La imagen de marca: la portada usa la imagen oficial de EXOMIND (un perfil con el cerebro iluminado) sin nombrar el equipo, enmarcada por anillos finos; la segunda presenta el equipo completo como una pieza de catálogo, sobre una tarjeta blanca con luz de piso; la tercera cierra en oscuro con el cerebro luminoso como sello.",
+      "differentiation": "La imagen es protagonista en otra clave: la visual oficial de BTL (no una ilustración propia) domina la portada con Rings, y el equipo aparece enmarcado en una tarjeta blanca (Region surface=\"white\") con Glow de piso, como en un catálogo premium. Fondos deep → dark → deep y logo arriba a la izquierda. Sin halos detrás del aplicador ni fotos del aplicador a sangre.",
+      "slides": [
+        {
+          "purpose": "Gancho: la visual oficial de EXOMIND (perfil con el cerebro iluminado) a la derecha, con anillos; el texto en la columna izquierda.",
+          "background": "deep",
+          "lightFrom": null,
+          "alt": "Fondo azul oscuro. Logo de BTL arriba a la izquierda. A la derecha, la imagen oficial de EXOMIND: el perfil de una cabeza con el cerebro iluminado en tonos de luz, enmarcado por anillos finos. En la columna izquierda: 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria; el titular El impulso de comer no siempre es hambre; y ¿Y si parte del abordaje empezara en la mente? Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Rings",
+              "props": "{\"cx\":820,\"cy\":660,\"radii\":[232,282]}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/Exomind_PIC_Head_EN100-500x500.png.png\",\"alt\":\"Imagen oficial de EXOMIND: perfil de una cabeza con el cerebro iluminado\",\"left\":540,\"top\":330,\"width\":560,\"height\":700,\"objectPosition\":\"40% center\",\"blend\":\"normal\",\"fade\":[\"left\",\"top\",\"bottom\",\"right\"],\"fadeSize\":120}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"width\":430,\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": "n4",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "30 de noviembre"
+            },
+            {
+              "id": "n6",
+              "parent": "n4",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"light\"}",
+              "text": "Día Internacional de la\nLucha contra los Trastornos\nde la Conducta Alimentaria"
+            },
+            {
+              "id": "n7",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":480,\"width\":430}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": "n7",
+              "type": "Headline",
+              "props": "{\"px\":70,\"weight\":\"light\",\"as\":\"h1\"}",
+              "text": "**El impulso**\n**de comer**\nno siempre\nes hambre."
+            },
+            {
+              "id": "n9",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":830,\"width\":410}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": "n9",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "¿Y si parte del abordaje empezara en la mente?"
+            },
+            {
+              "id": "n11",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Equipo: EXOMIND completo en una tarjeta blanca con luz de piso; logo y texto breve a la izquierda.",
+          "background": "dark",
+          "lightFrom": "top-right",
+          "alt": "Fondo azul oscuro con luz desde arriba a la derecha. Logo de BTL arriba a la izquierda. A la izquierda: Donde nace el impulso, llega EXOMIND; el logo oficial de EXOMIND en blanco; y Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios. A la derecha, una tarjeta blanca vertical con la foto oficial del equipo EXOMIND completo, con una luz suave bajo la tarjeta. Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Glow",
+              "props": "{\"left\":540,\"top\":1000,\"width\":500,\"height\":200,\"intensity\":0.6}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":580,\"top\":236,\"width\":406,\"height\":860,\"surface\":\"white\"}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/portable-tms-device-with-digital-interface.webp\",\"alt\":\"Equipo EXOMIND completo con pantalla táctil y aplicador, foto oficial\",\"left\":590,\"top\":250,\"width\":386,\"height\":832,\"objectPosition\":\"center 40%\",\"blend\":\"multiply\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":30}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"width\":450}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "Headline",
+              "props": "{\"px\":60,\"weight\":\"light\"}",
+              "text": "Donde nace\nel impulso,\n**llega EXOMIND**"
+            },
+            {
+              "id": "n7",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/images (2).jpeg\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":14,\"top\":470,\"width\":480,\"height\":170,\"objectPosition\":\"center 49%\",\"blend\":\"normal\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":52}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":660,\"width\":440}",
+              "text": null
+            },
+            {
+              "id": "n9",
+              "parent": "n8",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios."
+            },
+            {
+              "id": "n10",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Ventajas y CTA en oscuro, con el cerebro luminoso como sello dentro de un halo.",
+          "background": "deep",
+          "lightFrom": null,
+          "alt": "Fondo azul oscuro. Logo de BTL arriba a la izquierda. Titular: La lucha contra los TCA también pasa por tu consulta. A la izquierda, tres ventajas: Una nueva herramienta, estimulación magnética patentada para los atracones alimenticios. Pacientes que ya atiendes, quienes viven con atracones pueden estar ya en tu agenda. Menos de 30 minutos, con entrada y salida inmediata, sin interrumpir su día. A la derecha, un cerebro luminoso dentro de un halo. Abajo: Solicita tu demo.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-left\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Halo",
+              "props": "{\"cx\":830,\"cy\":640,\"r\":150,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.6}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":690,\"top\":530,\"width\":280}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "n3",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><filter id=\\\"bga\\\" x=\\\"-80%\\\" y=\\\"-80%\\\" width=\\\"260%\\\" height=\\\"260%\\\"><feGaussianBlur stdDeviation=\\\"24\\\"/></filter><filter id=\\\"bgb\\\" x=\\\"-40%\\\" y=\\\"-40%\\\" width=\\\"180%\\\" height=\\\"180%\\\"><feGaussianBlur stdDeviation=\\\"5\\\"/></filter></defs><path d=\\\"M80,214 C66,150 104,84 180,64 C230,50 292,50 340,72 C396,98 432,148 430,204 C428,246 402,276 366,282 C352,308 320,320 292,312 C268,330 228,330 206,314 C176,320 140,308 122,288 C94,280 82,250 80,214 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.1\\\"/><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"90\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.55\\\" filter=\\\"url(#bga)\\\"/><path d=\\\"M80,214 C66,150 104,84 180,64 C200,58 222,54 242,52 C232,104 254,146 230,198 C196,214 160,226 124,244 C98,236 82,228 80,214 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.3\\\"/><path d=\\\"M80,214 C66,150 104,84 180,64 C200,58 222,54 242,52 C232,104 254,146 230,198 C196,214 160,226 124,244 C98,236 82,228 80,214 Z\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"9\\\" opacity=\\\"0.45\\\" filter=\\\"url(#bgb)\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M80,214 C66,150 104,84 180,64 C230,50 292,50 340,72 C396,98 432,148 430,204 C428,246 402,276 366,282 C352,308 320,320 292,312 C268,330 228,330 206,314 C176,320 140,308 122,288 C94,280 82,250 80,214 Z\\\"/><path d=\\\"M242,52 C232,104 254,146 230,198\\\"/><path d=\\\"M124,244 C180,222 250,228 314,246\\\"/><path d=\\\"M366,282 C392,294 400,322 380,338 C356,352 320,344 306,326\\\"/><path d=\\\"M292,312 C296,340 300,366 306,396\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.4\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.75\\\"><path d=\\\"M130,140 C156,150 162,178 146,200\\\"/><path d=\\\"M176,96 C192,122 176,148 198,164\\\"/><path d=\\\"M300,80 C290,118 318,140 304,172\\\"/><path d=\\\"M360,118 C342,144 360,176 346,204\\\"/><path d=\\\"M196,282 C236,270 270,282 300,294\\\"/><path d=\\\"M268,186 C290,198 312,196 334,210\\\"/><path d=\\\"M392,214 C376,226 366,246 364,266\\\"/></g><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"9\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"0 0 500 400\",\"width\":280,\"height\":224,\"title\":\"Cerebro luminoso con la zona frontal iluminada\"}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "Headline",
+              "props": "{\"px\":58,\"weight\":\"light\"}",
+              "text": "**La lucha contra los TCA**\ntambién pasa por tu consulta"
+            },
+            {
+              "id": "n7",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":450,\"width\":540,\"gap\":30}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": "n7",
+              "type": "Stack",
+              "props": "{\"direction\":\"column\",\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n9",
+              "parent": "n8",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "Una nueva herramienta"
+            },
+            {
+              "id": "n10",
+              "parent": "n8",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Estimulación magnética patentada para los atracones alimenticios"
+            },
+            {
+              "id": "n11",
+              "parent": "n7",
+              "type": "Stack",
+              "props": "{\"direction\":\"column\",\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": "n11",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "Pacientes que ya atiendes"
+            },
+            {
+              "id": "n13",
+              "parent": "n11",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Quienes viven con atracones pueden estar ya en tu agenda"
+            },
+            {
+              "id": "n14",
+              "parent": "n7",
+              "type": "Stack",
+              "props": "{\"direction\":\"column\",\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n15",
+              "parent": "n14",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "Menos de 30 minutos"
+            },
+            {
+              "id": "n16",
+              "parent": "n14",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Con entrada y salida inmediata, sin interrumpir su día"
+            },
+            {
+              "id": "n17",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1150,\"width\":640}",
+              "text": null
+            },
+            {
+              "id": "n18",
+              "parent": "n17",
+              "type": "Headline",
+              "props": "{\"px\":60,\"weight\":\"regular\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "Hoy es el Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria, y lo recordamos con una idea: el impulso de comer no siempre es hambre.\n\nEXOMIND, de BTL, aplica la estimulación magnética patentada ExoTMS™ sobre áreas del cerebro ligadas al autocontrol. Según BTL, está diseñado para tratar los atracones alimenticios, con sesiones de menos de 30 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#TCA #SaludMental #EXOMIND #BienestarMental #BTLElSalvador",
+      "sources": [
+        "data/web/exomind.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/tasks/job-412/approved-copy.json"
+      ],
+      "claims": [
+        {
+          "claim": "El impulso de comer no siempre es hambre",
+          "location": "diapositiva 1",
+          "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética patentada (ExoTMS™) para los atracones alimenticios",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™) y Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; entrada y salida inmediata; sin medicamentos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética patentada ExoTMS™ sobre áreas del cerebro ligadas al autocontrol",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Sesiones de menos de 30 minutos",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; entrada y salida inmediata; sin medicamentos)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "direction": "C",
+      "direction_name": "Científica y educativa",
+      "concept": "La ficha de estudio: la portada es una lámina con módulos (el gancho en un módulo azul y el cerebro con la zona frontal punteada y una mira); la segunda es una ficha del equipo con el espécimen (logo y aplicador) en un panel oscuro; la tercera ordena las ventajas en tres columnas azules sobre una banda de luz.",
+      "differentiation": "Estructura modular sobre blanco con módulos enterprise: el texto del gancho vive dentro de un módulo azul (no sobre el fondo) y la lámina del cerebro usa punteado y mira, no rayado. La segunda diapositiva es una ficha a dos columnas con un panel oscuro tipo espécimen, y la tercera usa tres columnas azules en lugar de filas. Logo arriba a la derecha y fondos white → white → white.",
+      "slides": [
+        {
+          "purpose": "Gancho en lámina modular: fecha, titular en un módulo azul, cerebro punteado con mira y pregunta.",
+          "background": "white",
+          "lightFrom": null,
+          "alt": "Fondo blanco. Logo de BTL arriba a la derecha. Una lámina de módulos con filetes: arriba, 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria; a la izquierda, un módulo azul con el titular El impulso de comer no siempre es hambre; a la derecha, un cerebro en línea azul con la zona frontal punteada y una mira; abajo, ¿Y si parte del abordaje empezara en la mente? Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": "n2",
+              "type": "ModuleGrid",
+              "props": "{\"columns\":\"1fr 1fr\"}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "n3",
+              "type": "Module",
+              "props": "{\"span\":2,\"padding\":28,\"gap\":2}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": "n4",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"semibold\",\"tone\":\"accent\"}",
+              "text": "30 de noviembre"
+            },
+            {
+              "id": "n6",
+              "parent": "n4",
+              "type": "Eyebrow",
+              "props": "{\"size\":30,\"weight\":\"light\"}",
+              "text": "Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria"
+            },
+            {
+              "id": "n7",
+              "parent": "n3",
+              "type": "Module",
+              "props": "{\"padding\":36,\"surface\":\"enterprise\"}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": "n7",
+              "type": "Headline",
+              "props": "{\"px\":72,\"weight\":\"light\",\"as\":\"h1\"}",
+              "text": "**El impulso**\n**de comer**\nno siempre\nes hambre."
+            },
+            {
+              "id": "n9",
+              "parent": "n3",
+              "type": "Module",
+              "props": "{\"padding\":24,\"align\":\"center\"}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": "n9",
+              "type": "Illustration",
+              "props": "{\"svg\":\"<defs><clipPath id=\\\"cp\\\"><path d=\\\"M80,214 C66,150 104,84 180,64 C200,58 222,54 242,52 C232,104 254,146 230,198 C196,214 160,226 124,244 C98,236 82,228 80,214 Z\\\"/></clipPath></defs><path d=\\\"M80,214 C66,150 104,84 180,64 C200,58 222,54 242,52 C232,104 254,146 230,198 C196,214 160,226 124,244 C98,236 82,228 80,214 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\"/><g clip-path=\\\"url(#cp)\\\" fill=\\\"#00508c\\\" opacity=\\\"0.45\\\"><circle cx=\\\"91\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"70\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"84\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"98\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"112\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"126\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"140\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"154\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"168\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"182\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"196\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"210\\\" r=\\\"2.6\\\"/><circle cx=\\\"84\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"98\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"112\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"126\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"140\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"154\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"168\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"182\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"196\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"210\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"224\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"238\\\" cy=\\\"224\\\" r=\\\"2.6\\\"/><circle cx=\\\"91\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"105\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"119\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"133\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"147\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"161\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"175\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"189\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"203\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"217\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"231\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/><circle cx=\\\"245\\\" cy=\\\"238\\\" r=\\\"2.6\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M80,214 C66,150 104,84 180,64 C230,50 292,50 340,72 C396,98 432,148 430,204 C428,246 402,276 366,282 C352,308 320,320 292,312 C268,330 228,330 206,314 C176,320 140,308 122,288 C94,280 82,250 80,214 Z\\\"/><path d=\\\"M242,52 C232,104 254,146 230,198\\\"/><path d=\\\"M124,244 C180,222 250,228 314,246\\\"/><path d=\\\"M366,282 C392,294 400,322 380,338 C356,352 320,344 306,326\\\"/><path d=\\\"M292,312 C296,340 300,366 306,396\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.2\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.7\\\"><path d=\\\"M130,140 C156,150 162,178 146,200\\\"/><path d=\\\"M176,96 C192,122 176,148 198,164\\\"/><path d=\\\"M300,80 C290,118 318,140 304,172\\\"/><path d=\\\"M360,118 C342,144 360,176 346,204\\\"/><path d=\\\"M196,282 C236,270 270,282 300,294\\\"/><path d=\\\"M268,186 C290,198 312,196 334,210\\\"/><path d=\\\"M392,214 C376,226 366,246 364,266\\\"/></g><g stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\"><path d=\\\"M128,150 L208,150\\\"/><path d=\\\"M168,110 L168,190\\\"/></g><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"22\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><circle cx=\\\"168\\\" cy=\\\"150\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/>\",\"viewBox\":\"0 0 500 400\",\"width\":380,\"height\":304,\"title\":\"Cerebro en línea azul con la zona frontal punteada y una mira\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": "n3",
+              "type": "Module",
+              "props": "{\"span\":2,\"padding\":32}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": "n11",
+              "type": "Body",
+              "props": "{\"px\":44,\"weight\":\"light\"}",
+              "text": "¿Y si parte del abordaje empezara en la mente?"
+            },
+            {
+              "id": "n13",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Equipo como ficha: titular arriba; a la izquierda el espécimen (logo y aplicador) en un panel oscuro; a la derecha la explicación.",
+          "background": "white",
+          "lightFrom": null,
+          "alt": "Fondo blanco. Logo de BTL arriba a la derecha. Titular: Donde nace el impulso, llega EXOMIND, sobre un filete. A la izquierda, un panel azul oscuro con el logo oficial de EXOMIND y la foto oficial del aplicador de EXOMIND. A la derecha: Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios. Desliza.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": "n2",
+              "type": "Headline",
+              "props": "{\"px\":64,\"weight\":\"light\"}",
+              "text": "Donde nace el impulso,\n**llega EXOMIND**"
+            },
+            {
+              "id": "n4",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":430,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n5",
+              "parent": "n4",
+              "type": "Rule",
+              "props": "{\"length\":892,\"thickness\":2,\"emphasis\":\"strong\"}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":\"m\",\"top\":470,\"width\":410,\"height\":680,\"surface\":\"deep\"}",
+              "text": null
+            },
+            {
+              "id": "n7",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/images (2).jpeg\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":102,\"top\":486,\"width\":394,\"height\":130,\"objectPosition\":\"center 49%\",\"blend\":\"normal\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":30}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": null,
+              "type": "ProductImage",
+              "props": "{\"src\":\"data/products/exomind/6_20260507114903_20061430_large.png\",\"alt\":\"Aplicador de EXOMIND, foto oficial sin fondo\",\"left\":159,\"top\":630,\"width\":280,\"height\":500,\"objectPosition\":\"center top\",\"blend\":\"normal\",\"fade\":[\"bottom\"],\"fadeSize\":110}",
+              "text": null
+            },
+            {
+              "id": "n9",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"left\":540,\"top\":480,\"width\":446,\"gap\":24}",
+              "text": null
+            },
+            {
+              "id": "n10",
+              "parent": "n9",
+              "type": "Body",
+              "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+              "text": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios."
+            },
+            {
+              "id": "n11",
+              "parent": "n9",
+              "type": "Rule",
+              "props": "{\"length\":446,\"thickness\":1,\"emphasis\":\"subtle\"}",
+              "text": null
+            },
+            {
+              "id": "n12",
+              "parent": null,
+              "type": "SwipeCue",
+              "props": "{\"placement\":\"bottom-right\"}",
+              "text": "Desliza"
+            }
+          ]
+        },
+        {
+          "purpose": "Ventajas en tres columnas azules sobre una banda de luz, y el CTA.",
+          "background": "white",
+          "lightFrom": null,
+          "alt": "Fondo blanco. Logo de BTL arriba a la derecha. Titular: La lucha contra los TCA también pasa por tu consulta. Sobre una banda de luz celeste, tres columnas azules: Una nueva herramienta, estimulación magnética patentada para los atracones alimenticios. Pacientes que ya atiendes, quienes viven con atracones pueden estar ya en tu agenda. Menos de 30 minutos, con entrada y salida inmediata, sin interrumpir su día. Abajo: Solicita tu demo.",
+          "nodes": [
+            {
+              "id": "n1",
+              "parent": null,
+              "type": "BtlLogo",
+              "props": "{\"placement\":\"top-right\"}",
+              "text": null
+            },
+            {
+              "id": "n2",
+              "parent": null,
+              "type": "LightBand",
+              "props": "{\"left\":0,\"top\":420,\"width\":1080,\"height\":600,\"from\":\"left\",\"fade\":[\"right\",\"top\",\"bottom\"],\"opacity\":0.9}",
+              "text": null
+            },
+            {
+              "id": "n3",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":250,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n4",
+              "parent": "n3",
+              "type": "Headline",
+              "props": "{\"px\":58,\"weight\":\"light\"}",
+              "text": "**La lucha contra los TCA**\ntambién pasa por tu consulta"
+            },
+            {
+              "id": "n5",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":480,\"right\":\"m\"}",
+              "text": null
+            },
+            {
+              "id": "n6",
+              "parent": "n5",
+              "type": "ModuleGrid",
+              "props": "{\"columns\":3}",
+              "text": null
+            },
+            {
+              "id": "n7",
+              "parent": "n6",
+              "type": "Module",
+              "props": "{\"padding\":26,\"gap\":12,\"surface\":\"enterprise\"}",
+              "text": null
+            },
+            {
+              "id": "n8",
+              "parent": "n7",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\"}",
+              "text": "Una nueva herramienta"
+            },
+            {
+              "id": "n9",
+              "parent": "n7",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+              "text": "Estimulación magnética patentada para los atracones alimenticios"
+            },
+            {
+              "id": "n10",
+              "parent": "n6",
+              "type": "Module",
+              "props": "{\"padding\":26,\"gap\":12,\"surface\":\"enterprise\"}",
+              "text": null
+            },
+            {
+              "id": "n11",
+              "parent": "n10",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\"}",
+              "text": "Pacientes que ya atiendes"
+            },
+            {
+              "id": "n12",
+              "parent": "n10",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+              "text": "Quienes viven con atracones pueden estar ya en tu agenda"
+            },
+            {
+              "id": "n13",
+              "parent": "n6",
+              "type": "Module",
+              "props": "{\"padding\":26,\"gap\":12,\"surface\":\"enterprise\"}",
+              "text": null
+            },
+            {
+              "id": "n14",
+              "parent": "n13",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"semibold\"}",
+              "text": "Menos de 30 minutos"
+            },
+            {
+              "id": "n15",
+              "parent": "n13",
+              "type": "Body",
+              "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+              "text": "Con entrada y salida inmediata, sin interrumpir su día"
+            },
+            {
+              "id": "n16",
+              "parent": null,
+              "type": "Region",
+              "props": "{\"top\":1110,\"width\":640}",
+              "text": null
+            },
+            {
+              "id": "n17",
+              "parent": "n16",
+              "type": "Headline",
+              "props": "{\"px\":60,\"weight\":\"regular\"}",
+              "text": "Solicita tu demo"
+            }
+          ]
+        }
+      ],
+      "caption": "Una ficha para el Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria: el impulso de comer no siempre es hambre, y parte del abordaje puede empezar en la mente.\n\nEXOMIND, de BTL, usa la estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol. Según BTL, está diseñado para tratar los atracones alimenticios, con entrada y salida inmediata.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#DiaContraLosTCA #SaludMental #EXOMIND #Atracones #BTLElSalvador",
+      "sources": [
+        "data/web/exomind.md",
+        "knowledge/brand-guidelines/btl-corporate-identity.md",
+        "data/tasks/job-412/approved-copy.json"
+      ],
+      "claims": [
+        {
+          "claim": "El impulso de comer no siempre es hambre",
+          "location": "diapositiva 1",
+          "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+          "approval": "general_statement"
+        },
+        {
+          "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "diapositiva 2",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética patentada (ExoTMS™) para los atracones alimenticios",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™) y Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+          "location": "diapositiva 3",
+          "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; entrada y salida inmediata; sin medicamentos)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Con entrada y salida inmediata",
+          "location": "caption",
+          "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; entrada y salida inmediata; sin medicamentos)",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "EXOMIND está \"pendiente de revisión\" y sin approved_claims: todas sus afirmaciones son descripciones del fabricante (btlaesthetics.es / btlaesthetics.com), no afirmaciones clínicas aprobadas.",
+    "No hay un logo de EXOMIND con fondo transparente: se usa el logotipo oficial blanco de \"images (2).jpeg\" recortado a las letras, fundido en fondos oscuros o sobre una placa o panel azul oscuro. Si BTL entrega el logo en SVG/PNG transparente, conviene sustituirlo.",
+    "Propuesta B: la portada usa la imagen oficial \"Exomind_PIC_Head\" (perfil con el cerebro iluminado) de la ficha del producto; es material de BTL, no una ilustración propia, y no representa a un paciente real ni un resultado.",
+    "Propuesta C: las ventajas van en módulos con texto (no en NumberedList ni Stat) porque las fuentes no tienen cifras utilizables más allá de los 30 minutos, que ya figuran en el texto aprobado."
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "angle": "El Día Mundial del Neurólogo pone el cerebro en el centro: con EXOMIND (estimulación ExoTMS), la clínica estética puede sumar el bienestar mental como nueva línea de servicio.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Hoy es el día\nde quienes\nentienden\nel cerebro.",
+          "support": "Desliza: tu clínica también puede trabajar con él.",
+          "points": [],
+          "rationale": "Homenaje directo a la fecha que gira hacia la clínica; la diapositiva 2 revela que EXOMIND estimula el cerebro.",
+          "claims": [
+            {
+              "claim": "Día Mundial del Neurólogo (fecha conmemorativa)",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · Tema",
+              "approval": "general_statement"
+            },
+            {
+              "claim": "tu clínica también puede trabajar con él (el cerebro)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (brain stimulation technology into everyday clinical practice)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "El cerebro\nse puede\nentrenar.",
+          "support": "La neurología lo llama neuroplasticidad. ¿Tu clínica ya la aprovecha?",
+          "points": [],
+          "rationale": "Usa un concepto neurológico que el público reconoce como puente con la fecha; la diapositiva 2 presenta EXOMIND como ese entrenamiento.",
+          "claims": [
+            {
+              "claim": "El cerebro se puede entrenar / neuroplasticidad",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (promueve la neuroplasticidad)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "¿Un imán\npuede llegar\nal cerebro?",
+          "support": "Desliza: la respuesta está en tu clínica.",
+          "points": [],
+          "rationale": "Pregunta intrigante sobre la estimulación magnética, ligada al tema neurológico del día; la diapositiva 2 la resuelve con ExoTMS.",
+          "claims": [
+            {
+              "claim": "Estimulación magnética del cerebro (ExoTMS)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · How Does EXOMIND Work? y estudio \"ExoTMS Repetitive Transcranial Magnetic Stimulation\"",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "No invasivo.\nSin fármacos.\nPara la mente.",
+          "support": "En el Día del Neurólogo, desliza y conoce lo nuevo para tu clínica.",
+          "points": [],
+          "rationale": "Tres rasgos verificables en ritmo de enumeración que despiertan la pregunta \"¿qué es?\"; la diapositiva 2 nombra el equipo.",
+          "claims": [
+            {
+              "claim": "No invasivo",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin fármacos",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Sin medicamentos)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Para la mente (bienestar mental)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · Mental Wellness & Resilience",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Menos de\n30 minutos\nque empiezan\nen la mente.",
+          "support": "¿Cabe en la agenda de tu clínica?",
+          "points": [],
+          "rationale": "Ángulo operativo (tiempo de agenda) con el cerebro como protagonista; la diapositiva 2 explica qué ocurre en esa sesión.",
+          "claims": [
+            {
+              "claim": "Sesiones de menos de 30 minutos",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Sesiones cómodas de menos de 30 minutos)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más conexiones\nneuronales.\nMás servicios\nen tu clínica.",
+          "support": "¿Qué equipo une las dos cosas?",
+          "points": [],
+          "rationale": "Paralelo entre el cerebro (tema del día) y el negocio de la clínica; la diapositiva 2 responde con EXOMIND.",
+          "claims": [
+            {
+              "claim": "Más conexiones neuronales",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (mejorar la conectividad neuronal)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Más servicios en tu clínica",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (expand beyond aesthetics into mental wellbeing)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "El cerebro\nya no es solo\ncosa de\nneurólogos.",
+          "support": "Hoy los celebramos. Desliza y descubre el lugar de tu clínica.",
+          "points": [],
+          "rationale": "Giro sobre la fecha: reconoce a la neurología y abre la puerta a otros profesionales; la diapositiva 2 muestra EXOMIND en la consulta estética.",
+          "claims": [
+            {
+              "claim": "El cerebro ya no es solo cosa de neurólogos (otros profesionales pueden ofrecer bienestar mental)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (allowing providers beyond psychiatry to offer meaningful solutions)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Estimula el\ncerebro sin\nque estés\nal lado.",
+          "support": "¿Qué equipo hace eso en tu clínica?",
+          "points": [],
+          "rationale": "Tensión práctica (tiempo del profesional) que conecta con el cerebro del tema; la diapositiva 2 la resuelve con el funcionamiento de EXOMIND sin operador.",
+          "claims": [
+            {
+              "claim": "Estimula el cerebro sin que estés al lado (operador independiente)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Operador independiente**)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "EXOMIND está pendiente de revisión y sin approved_claims: todas sus afirmaciones son descripción del fabricante, no afirmaciones clínicas aprobadas. No se usaron indicaciones (depresión, ansiedad, atracones) ni porcentajes de resultados.",
+    "\"Operador independiente\" lleva un asterisco (**) en la web oficial cuya nota no aparece en la fuente: conviene confirmarlo con BTL antes de usar la opción 8.",
+    "No se afirma que EXOMIND trate enfermedades neurológicas: la fecha ilustra el tema (el cerebro), no prueba un resultado.",
+    "Las pastillas con la fecha (29 de noviembre) y el nombre del día (Día Mundial del Neurólogo) se resuelven en la propuesta visual; no se incluyen en el texto del gancho."
+  ]
+}

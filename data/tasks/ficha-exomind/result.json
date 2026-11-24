@@ -1,0 +1,27 @@
+{
+  "category": "Estimulación magnética transcraneal (bienestar mental)",
+  "description": "EXOMIND es un equipo de BTL que lleva la estimulación cerebral a la práctica clínica con su tecnología patentada ExoTMS®, un enfoque no invasivo y sin medicamentos para el bienestar mental. Según BTL, está indicado para el tratamiento de la depresión, la ansiedad, las conductas obsesivo-compulsivas y los atracones. Permite a la clínica sumar el bienestar mental a su oferta y complementar los tratamientos corporales y faciales que ya realiza.",
+  "key_features": [
+    "Tecnología patentada ExoTMS® de estimulación magnética transcraneal.",
+    "Estimula áreas del cerebro implicadas en la regulación emocional, la función cognitiva y el autocontrol.",
+    "Indicado para depresión, ansiedad, conductas obsesivo-compulsivas y atracones, según BTL.",
+    "Procedimiento no invasivo y sin medicamentos.",
+    "Sesiones de 30 minutos, con procedimiento de entrada y salida inmediata del paciente.",
+    "Operador independiente, según BTL (la condición está en una nota que la página no muestra).",
+    "BTL lo presenta como complemento de EMSCULPT NEO, EMSELLA y EMFACE."
+  ],
+  "sources": [
+    "data/web/exomind.md",
+    "https://btlaesthetics.com/en/for-providers/exomind-providers",
+    "https://btlaesthetics.es/for-providers/exomind-providers"
+  ],
+  "warnings": [
+    "Resultados no incluidos como características: la página en inglés muestra porcentajes de estudios (88 % mejora del bienestar mental, 78 % mejora del sueño y el manejo del estrés, 66 % menos deprimidos, 74 % recuperación completa de los atracones), todos con asterisco y sin la nota que lo explica. No usarlos sin el estudio y la aprobación de BTL.",
+    "Duración de la sesión: la página en inglés dice \"30-min Session\" y la española \"menos de 30 minutos\". Confirma con BTL cuál usar.",
+    "\"Operador independiente\" lleva doble asterisco (**) en ambas páginas y la nota que lo explica no aparece en el texto: confirma con BTL qué significa antes de usarlo en una publicación.",
+    "Indicaciones médicas (depresión, ansiedad, TOC, atracones): BTL advierte que no todos los productos e indicaciones están autorizados en todos los países. Confirma con BTL El Salvador qué indicaciones están aprobadas localmente antes de publicarlas.",
+    "Hay estudios clínicos citados (Dees, Halaas, McCoy; Nanos, Silva, Patel; Pánek, Donchev) que solo se obtienen por solicitud: si BTL los envía, súbelos a la ficha.",
+    "No se leyeron exomindlife.com ni bodybybtl.com porque no son dominios oficiales de BTL reconocidos por la app.",
+    "Los testimonios de médicos de las páginas no se usaron como características."
+  ]
+}

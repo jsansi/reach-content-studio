@@ -1,0 +1,402 @@
+{
+  "direction": "B",
+  "direction_name": "Revista editorial",
+  "concept": "La lámina de divulgación: el carrusel se lee como tres páginas de una revista científica. La portada muestra un diagrama del cerebro con los lóbulos sombreados junto a una columna estrecha con la pregunta; la segunda, en contrapunto oscuro, abre el reportaje del equipo; el cierre vuelve a la página clara con el aplicador.",
+  "differentiation": "Composición en dos columnas con números de sección (01, 02, 03) y filetes que separan cabecera y cuerpo; columna de texto estrecha frente a una imagen grande en la otra mitad. Única propuesta con un diagrama didáctico de lóbulos en trazo azul sobre blanco, con la foto del equipo a sangre a la izquierda en la segunda (deep) y el aplicador completo en el cierre claro.",
+  "slides": [
+    {
+      "purpose": "Gancho: página 01 con el diagrama del cerebro y la pregunta en columna.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Página blanca de estilo revista con el número 01, un filete, las pastillas \"29 de noviembre\" y \"Día Mundial del Neurólogo\", el texto \"¿Un imán puede llegar al cerebro?\" y \"Desliza: la respuesta está en tu clínica.\" en una columna estrecha a la izquierda y un diagrama del cerebro con los lóbulos frontal y temporal sombreados en celeste a la derecha",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Eyebrow",
+          "props": "{\"size\":36,\"weight\":\"light\",\"tone\":\"accent\"}",
+          "text": "01"
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":16}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "29 de noviembre"
+        },
+        {
+          "id": "n6",
+          "parent": "n4",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "Día Mundial del Neurólogo"
+        },
+        {
+          "id": "n7",
+          "parent": "n2",
+          "type": "Rule",
+          "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":440,\"left\":\"m\",\"width\":470,\"gap\":32}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"as\":\"h1\"}",
+          "text": "¿Un imán\npuede llegar\n**al cerebro?**"
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"maxWidth\":440}",
+          "text": "Desliza: la respuesta está en tu clínica."
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":520,\"top\":470,\"width\":560}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n11",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"soft\\\" x=\\\"-60%\\\" y=\\\"-60%\\\" width=\\\"220%\\\" height=\\\"220%\\\"><feGaussianBlur stdDeviation=\\\"16\\\"/></filter></defs><path d=\\\"M318,236 C290,180 316,120 300,62 C370,56 420,70 440,86 C520,120 548,200 520,260 C510,284 490,296 470,300 C410,268 360,262 318,236 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.75\\\"/><path d=\\\"M238,288 C330,262 410,268 470,300 C462,330 456,352 456,352 C430,380 380,388 344,370 C312,388 262,384 236,360 C228,330 230,300 238,288 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.3\\\"/><ellipse cx=\\\"452\\\" cy=\\\"186\\\" rx=\\\"70\\\" ry=\\\"54\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.9\\\" filter=\\\"url(#soft)\\\"/><path d=\\\"M520,260 C548,200 520,120 440,86 C370,56 280,58 210,84 C140,110 92,160 86,220 C80,270 104,312 146,330 C160,360 200,372 236,360 C262,384 312,388 344,370 C380,388 430,380 456,352 C500,346 530,310 520,260 Z\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linejoin=\\\"round\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M146,330 C120,350 112,384 136,404 C166,426 222,420 236,396 C242,384 240,370 236,360\\\"/><path d=\\\"M236,392 C250,420 256,452 252,490\\\"/><path d=\\\"M270,380 C282,412 286,450 282,490\\\"/><path d=\\\"M300,62 C316,120 290,180 318,236\\\"/><path d=\\\"M470,300 C410,268 330,262 238,288\\\"/><path d=\\\"M150,130 C176,160 168,200 190,226\\\"/><path d=\\\"M300,320 C350,318 400,328 440,344\\\"/></g><circle cx=\\\"452\\\" cy=\\\"186\\\" r=\\\"9\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"452\\\" cy=\\\"186\\\" r=\\\"26\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2\\\"/>\",\"viewBox\":\"0 0 640 500\",\"width\":560,\"height\":438,\"title\":\"Diagrama del cerebro de perfil con los lóbulos frontal y temporal sombreados\"}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"right\":\"m\",\"top\":1150}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Rule",
+          "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n15",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Equipo: página 02, contrapunto oscuro con la foto del equipo a sangre y la columna.",
+      "background": "deep",
+      "lightFrom": "bottom-right",
+      "alt": "Página sobre fondo azul profundo con la foto oficial del equipo EXOMIND a sangre en la mitad izquierda y, en una columna a la derecha, el número 02, un filete y el texto \"EXOMIND, un entrenamiento para la mente\" y \"Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos.\"",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/Exomind_PIC_Unit-2221-Dark-Background_EN100.webp\",\"alt\":\"Equipo EXOMIND de BTL\",\"left\":0,\"top\":0,\"width\":520,\"height\":1350,\"objectPosition\":\"42% 50%\",\"fade\":[\"right\"],\"fadeSize\":160}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":280,\"left\":560,\"width\":426,\"gap\":26}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Eyebrow",
+          "props": "{\"size\":36,\"weight\":\"light\",\"tone\":\"accent\"}",
+          "text": "02"
+        },
+        {
+          "id": "n5",
+          "parent": "n3",
+          "type": "Rule",
+          "props": "{\"length\":426,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n3",
+          "type": "Headline",
+          "props": "{\"px\":46,\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "**EXOMIND,**\nun entrenamiento\npara la mente"
+        },
+        {
+          "id": "n7",
+          "parent": "n3",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"maxWidth\":426}",
+          "text": "Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos."
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica: página 03, columna de ventajas frente al aplicador completo.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Página clara de estilo revista con el número 03, un filete, una columna con el título \"Una consulta que cuida por dentro\", tres ventajas (Nueva línea de servicio: suma el bienestar mental a tus tratamientos estéticos; Sesiones breves: de menos de 30 minutos, con entrada y salida inmediata; Sin medicamentos: un enfoque no invasivo que tus pacientes pueden elegir) y \"Solicita tu demo\". y la foto oficial del aplicador de EXOMIND a la derecha",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/6_20260507114903_20061430_large.png\",\"alt\":\"Aplicador de EXOMIND de BTL\",\"left\":600,\"top\":330,\"width\":440,\"height\":509}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Eyebrow",
+          "props": "{\"size\":36,\"weight\":\"light\",\"tone\":\"accent\"}",
+          "text": "03"
+        },
+        {
+          "id": "n5",
+          "parent": "n3",
+          "type": "Rule",
+          "props": "{\"length\":892,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":360,\"left\":\"m\",\"width\":480,\"gap\":28}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"px\":56,\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Una consulta que\n**cuida por dentro**"
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Rule",
+          "props": "{\"length\":480,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n6",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"base\"}",
+          "text": "Nueva línea de servicio"
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Suma el bienestar mental a tus tratamientos estéticos"
+        },
+        {
+          "id": "n12",
+          "parent": "n6",
+          "type": "Rule",
+          "props": "{\"length\":480,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "n6",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"base\"}",
+          "text": "Sesiones breves"
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "De menos de 30 minutos, con entrada y salida inmediata"
+        },
+        {
+          "id": "n16",
+          "parent": "n6",
+          "type": "Rule",
+          "props": "{\"length\":480,\"thickness\":1.5,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n6",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":8}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "n17",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"base\"}",
+          "text": "Sin medicamentos"
+        },
+        {
+          "id": "n19",
+          "parent": "n17",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"tone\":\"accent\"}",
+          "text": "Un enfoque no invasivo que tus pacientes pueden elegir"
+        },
+        {
+          "id": "n20",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"bottom\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n21",
+          "parent": "n20",
+          "type": "Headline",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "Hoy es el Día Mundial del Neurólogo, y vale la pena hacerse una pregunta: ¿un imán puede llegar al cerebro?\n\nLa respuesta es EXOMIND, de BTL. Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos y sin procedimientos invasivos. Funciona en consultas médicas y en clínicas estéticas, con sesiones de menos de 30 minutos.\n\n¿Quieres conocerlo? Escríbenos \"DEMO\" por mensaje directo.\n\n#BTLElSalvador #EXOMIND #DiaDelNeurologo #NeuroBienestar #ClinicasElSalvador",
+  "sources": [
+    "data/web/exomind.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "¿Un imán puede llegar al cerebro? (estimulación magnética del cerebro, ExoTMS)",
+      "location": "diapositiva 1",
+      "source": "data/web/exomind.md · btlaesthetics.com · How Does EXOMIND Work? y estudio \"ExoTMS Repetitive Transcranial Magnetic Stimulation\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología patentada ExoTMS™",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sin medicamentos",
+      "location": "diapositivas 2 y 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sesiones de menos de 30 minutos, con entrada y salida inmediata",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Un enfoque no invasivo",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Nueva línea de servicio: suma el bienestar mental a tus tratamientos estéticos",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (expand beyond aesthetics into mental wellbeing)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Día Mundial del Neurólogo, 29 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · Tema y fecha",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Uso en consultas médicas, no solo estéticas (estimulación cerebral en la práctica clínica)",
+      "location": "caption",
+      "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (into everyday clinical practice) y cita de Rudolph Eberwein, MD (providers beyond psychiatry)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "revista-editorial"
+}

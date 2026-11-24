@@ -1,0 +1,306 @@
+{
+  "direction": "B",
+  "direction_name": "Conversación",
+  "concept": "Tres turnos de conversación con el profesional de salud. Primero la pregunta que abre el tema (\"¿Y si parte del abordaje empezara en la mente?\") y la respuesta: el impulso de comer no siempre es hambre. Luego la pregunta del profesional (\"¿Qué hace EXOMIND?\") con la respuesta de BTL y una foto de la sesión como prueba. Al final, \"¿Y en mi consulta?\": la lucha contra los TCA también pasa por ella, y la respuesta final es la demo.",
+  "differentiation": "La pregunta manda: titulares Light de 100–120 px en forma de pregunta y la respuesta más pequeña debajo, con mucho aire, como un diálogo. La imagen funciona como prueba de cada respuesta (la cabeza iluminada de BTL, una sesión real con el equipo en la consulta). Fondos que pasan de oscuro a blanco y claro, como una conversación que se aclara.",
+  "slides": [
+    {
+      "purpose": "Turno 1 (gancho): la pregunta que abre el tema y la respuesta: el impulso de comer no siempre es hambre.",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Fondo azul oscuro. Logo de BTL arriba a la derecha. Arriba: 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria. Pregunta grande: ¿Y si parte del abordaje empezara en la mente? Respuesta: El impulso de comer no siempre es hambre. Abajo a la derecha, imagen oficial de BTL: una cabeza de perfil con el cerebro iluminado. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/Exomind_PIC_Head_EN100-500x500.png.png\",\"alt\":\"Cabeza de perfil con el cerebro iluminado, imagen oficial de BTL\",\"left\":640,\"top\":730,\"width\":440,\"height\":440,\"objectPosition\":\"center\",\"blend\":\"normal\",\"fade\":[\"left\",\"top\",\"bottom\",\"right\"],\"fadeSize\":90}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":214,\"width\":720,\"gap\":4}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "30 de noviembre"
+        },
+        {
+          "id": "n5",
+          "parent": "n3",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"light\"}",
+          "text": "Día Internacional de la Lucha contra los\nTrastornos de la Conducta Alimentaria"
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":360,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"px\":88,\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "¿Y si parte\ndel abordaje\nempezara\nen la mente?"
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":820,\"width\":520}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Headline",
+          "props": "{\"px\":56,\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "El impulso de comer\n**no siempre es hambre.**"
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Turno 2 (equipo): ¿qué hace EXOMIND? Respuesta de BTL, logo oficial y una sesión en la consulta como prueba.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco. Logo de BTL arriba a la derecha. Pregunta grande: ¿Qué hace EXOMIND? Respuesta: Donde nace el impulso, llega EXOMIND. Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios. Logo oficial de EXOMIND sobre una placa azul oscuro. Abajo, foto oficial: un profesional coloca el aplicador de EXOMIND a una paciente recostada, junto a la pantalla del equipo. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/1-hero-image-exomind.jpg\",\"alt\":\"Profesional colocando el aplicador de EXOMIND a una paciente recostada junto a la pantalla del equipo, foto oficial\",\"left\":380,\"top\":800,\"width\":700,\"height\":400,\"objectPosition\":\"center 45%\",\"blend\":\"normal\",\"fade\":[\"left\",\"top\",\"bottom\"],\"fadeSize\":110}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":230,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Headline",
+          "props": "{\"px\":110,\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "¿Qué hace\nEXOMIND?"
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":520,\"right\":\"m\",\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Headline",
+          "props": "{\"px\":52,\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "**Donde nace el impulso,**\nllega EXOMIND"
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\",\"maxWidth\":860}",
+          "text": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Está diseñado para tratar los atracones alimenticios."
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":900,\"width\":260,\"height\":68,\"surface\":\"deep\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/images (2).jpeg\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":102,\"top\":906,\"width\":244,\"height\":56,\"objectPosition\":\"center 49%\",\"blend\":\"normal\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":22}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Turno 3 (ventajas para la clínica): ¿y en mi consulta? La respuesta, tres ventajas y la demo como última respuesta.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro. Logo de BTL arriba a la derecha. Pregunta grande: ¿Y en mi consulta? Respuesta: La lucha contra los TCA también pasa por tu consulta. Tres respuestas breves: Una nueva herramienta, estimulación magnética patentada para los atracones alimenticios. Pacientes que ya atiendes, quienes viven con atracones pueden estar ya en tu agenda. Menos de 30 minutos, con entrada y salida inmediata, sin interrumpir su día. Abajo: Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":230,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"px\":120,\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "¿Y en mi\nconsulta?"
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":540,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"px\":50,\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "La lucha contra los TCA\n**también pasa por tu consulta**"
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":720,\"width\":800,\"gap\":22}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "**Una nueva herramienta.** Estimulación magnética patentada para los atracones alimenticios."
+        },
+        {
+          "id": "n8",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "**Pacientes que ya atiendes.** Quienes viven con atracones pueden estar ya en tu agenda."
+        },
+        {
+          "id": "n9",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "**Menos de 30 minutos.** Con entrada y salida inmediata, sin interrumpir su día."
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1150,\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n10",
+          "type": "Headline",
+          "props": "{\"px\":60,\"weight\":\"regular\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "¿Y si parte del abordaje de los atracones empezara en la mente? El impulso de comer no siempre es hambre. Este 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria, respondemos a la pregunta que más nos hacen: ¿qué hace EXOMIND?\n\nEXOMIND, de BTL, usa estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol. Y quienes viven con atracones pueden estar ya en tu agenda.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#TCA #SaludMental #EXOMIND #BienestarMental #BTLElSalvador",
+  "sources": [
+    "data/web/exomind.md",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12447532/",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "El impulso de comer no siempre es hambre",
+      "location": "diapositiva 1",
+      "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Estimulación magnética patentada (ExoTMS™) para los atracones alimenticios",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™) y Diseñado para el tratamiento de … atracones alimenticios",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; no invasivo; sin medicamentos; entrada y salida inmediata)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol",
+      "location": "caption",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+      "location": "caption",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "pregunta-respuesta"
+}

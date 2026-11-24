@@ -1,0 +1,376 @@
+{
+  "angle": "En el Día Internacional de la Lucha contra los TCA, la consulta puede sumar un abordaje no invasivo y sin medicamentos: EXOMIND, que BTL diseñó para tratar, entre otras condiciones, los atracones alimenticios.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Comer sin\npoder parar.",
+          "support": "Muchos pacientes lo viven en silencio. ¿Qué les ofrece hoy tu consulta?",
+          "points": [],
+          "rationale": "Nombra la experiencia del atracón con empatía y sin estigma; la diapositiva 2 presenta una opción para la consulta.",
+          "claims": [
+            {
+              "claim": "Atracones alimenticios (comer sin poder parar)",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · Tema (trastornos de la conducta alimentaria)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "No es falta\nde voluntad.",
+          "support": "Desliza: hay otra forma de mirarlo desde tu consulta.",
+          "points": [],
+          "rationale": "Rompe un prejuicio frecuente y abre la puerta a hablar del cerebro y el autocontrol, que la diapositiva 2 retoma.",
+          "claims": [
+            {
+              "claim": "Los trastornos de la conducta alimentaria no se reducen a falta de voluntad",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · Tema (frase general de sensibilización, no atribuida al equipo)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "El impulso\nde comer\nno siempre\nes hambre.",
+          "support": "¿Y si parte del abordaje empezara en la mente?",
+          "points": [],
+          "rationale": "Separa el impulso del hambre física para llevar la conversación a la regulación emocional, sin revelar el equipo.",
+          "claims": [
+            {
+              "claim": "El impulso de comer no siempre es hambre",
+              "location": "diapositiva 1",
+              "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Hoy se habla\nde lo que\nmuchos callan.",
+          "support": "¿Tu consulta está lista para escucharlo?",
+          "points": [],
+          "rationale": "Giro sobre la fecha (visibilizar los TCA) que interpela a la consulta y prepara la respuesta de la diapositiva 2.",
+          "claims": []
+        },
+        {
+          "headline": "Los atracones\nno se ven\na simple vista.",
+          "support": "Pero llegan a tu consulta más de lo que crees.",
+          "points": [],
+          "rationale": "Tensión profesional: un problema poco visible que ya está en la agenda; la diapositiva 2 propone cómo abordarlo.",
+          "claims": [
+            {
+              "claim": "Los pacientes que pueden beneficiarse ya llegan a tu consulta",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La lucha\nempieza\nmás arriba.",
+          "support": "Desliza y descubre una herramienta más para tu equipo de salud.",
+          "points": [],
+          "rationale": "Juega con la palabra \"lucha\" del nombre del día y sugiere el cerebro sin nombrarlo; la diapositiva 2 lo resuelve.",
+          "claims": []
+        },
+        {
+          "headline": "¿Con qué\nherramientas\nacompañas un TCA?",
+          "support": "Hay una que no suma medicamentos.",
+          "points": [],
+          "rationale": "Pregunta directa al profesional ligada a la fecha; el apoyo adelanta un rasgo verificable sin revelar el equipo.",
+          "claims": [
+            {
+              "claim": "Sin medicamentos",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Sin medicamentos)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Detrás de\nla comida,\nla emoción.",
+          "support": "¿Tu consulta tiene cómo trabajar ese lado?",
+          "points": [],
+          "rationale": "Lleva el foco de la comida a la regulación emocional, el área que la diapositiva 2 conecta con EXOMIND.",
+          "claims": [
+            {
+              "claim": "Relación entre la conducta alimentaria y la regulación emocional",
+              "location": "diapositiva 1",
+              "source": "frase general de sensibilización; el vínculo con el equipo se apoya en data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (regulación emocional y autocontrol)",
+              "approval": "general_statement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "options": [
+        {
+          "headline": "EXOMIND:\nla respuesta\nempieza en la mente",
+          "support": "Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol. BTL la diseñó para tratar, entre otras condiciones, los atracones alimenticios.",
+          "points": [],
+          "rationale": "Responde a los ganchos sobre impulso, emoción y voluntad con lo que hace el equipo, citando a BTL como fuente de la indicación.",
+          "claims": [
+            {
+              "claim": "Tecnología patentada ExoTMS™ que estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Diseñado para tratar, entre otras condiciones, los atracones alimenticios",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · \"Diseñado para el tratamiento de la depresión y la ansiedad, conductas obsesivo-compulsivas y atracones alimenticios\"; btlaesthetics.com · What Can You Achieve with EXOMIND? (binge eating)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Una herramienta\nmás para tu\nequipo de salud",
+          "support": "EXOMIND, de BTL, suma a tu consulta la estimulación magnética ExoTMS™: no invasiva y sin medicamentos.",
+          "points": [
+            {
+              "title": "Indicación de BTL",
+              "text": "Diseñado para tratar atracones alimenticios, depresión y ansiedad"
+            },
+            {
+              "title": "Sin medicamentos",
+              "text": "No añade fármacos al tratamiento de tus pacientes"
+            }
+          ],
+          "rationale": "Presenta EXOMIND como complemento del abordaje multidisciplinario, no como sustituto, y aclara su indicación según BTL.",
+          "claims": [
+            {
+              "claim": "Estimulación magnética ExoTMS™, no invasiva y sin medicamentos",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (No invasivo, Sin medicamentos); btlaesthetics.com · estudio \"ExoTMS Repetitive Transcranial Magnetic Stimulation\"",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Diseñado para tratar atracones alimenticios, depresión y ansiedad",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de la depresión y la ansiedad, conductas obsesivo-compulsivas y atracones alimenticios",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "EXOMIND,\nla mente también\nse trabaja",
+          "support": "Estimulación magnética patentada, cómoda y sin medicamentos, en zonas del cerebro involucradas en el autocontrol.",
+          "points": [
+            {
+              "title": "Sesiones cómodas",
+              "text": "El paciente entra, recibe su sesión y sigue con su día"
+            }
+          ],
+          "rationale": "Reformula el tratamiento como trabajo sobre la mente, coherente con el gancho \"no es falta de voluntad\".",
+          "claims": [
+            {
+              "claim": "Estimulación magnética patentada, cómoda y sin medicamentos, en zonas del cerebro involucradas en el autocontrol",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente y Transforma tu consulta (sesiones cómodas, sin medicamentos)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Entrada y salida inmediata",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Procedimiento de entrada y salida inmediata",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Donde nace\nel impulso,\nllega EXOMIND",
+          "support": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol. Según BTL, está diseñado para tratar los atracones alimenticios.",
+          "points": [],
+          "rationale": "Cierra el gancho del impulso y la lucha \"más arriba\" con el lugar donde actúa el equipo, sin prometer resultados.",
+          "claims": [
+            {
+              "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+              "location": "diapositiva 2",
+              "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Una consulta\nmás completa",
+          "support": null,
+          "points": [
+            {
+              "title": "Nueva línea de servicio",
+              "text": "Suma el bienestar mental a la atención que ya das"
+            },
+            {
+              "title": "Sesiones breves",
+              "text": "Menos de 30 minutos, con entrada y salida inmediata"
+            },
+            {
+              "title": "Sin medicamentos",
+              "text": "Un enfoque no invasivo que tus pacientes pueden elegir"
+            }
+          ],
+          "rationale": "Traduce la respuesta en ganancias concretas para la consulta, con las tres ventajas más verificables.",
+          "claims": [
+            {
+              "claim": "Nueva línea de servicio: bienestar mental en tu consulta",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (into everyday clinical practice); cita de Rudolph Eberwein, MD (providers beyond psychiatry)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin medicamentos, no invasivo",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más formas\nde acompañar",
+          "support": null,
+          "points": [
+            {
+              "title": "Se suma a tu abordaje",
+              "text": "Complementa el trabajo de tu equipo de salud"
+            },
+            {
+              "title": "Pacientes que ya tienes",
+              "text": "Quienes buscan cuidar su mente ya están en tu agenda"
+            },
+            {
+              "title": "Sesiones cómodas",
+              "text": "No invasivas y sin medicamentos"
+            }
+          ],
+          "rationale": "Enfoque empático y de acompañamiento, coherente con un tema sensible y con el tono emotivo del brief.",
+          "claims": [
+            {
+              "claim": "Complementa el trabajo de tu equipo de salud",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (complements everything else that we offer) y What is EXOMIND? (holistic patient care)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Quienes buscan cuidar su mente ya están en tu agenda",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones cómodas, no invasivas y sin medicamentos",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tu consulta,\nun paso adelante",
+          "support": null,
+          "points": [
+            {
+              "title": "Tecnología patentada",
+              "text": "Estimulación magnética ExoTMS™, desarrollada por BTL"
+            },
+            {
+              "title": "Agenda que fluye",
+              "text": "Sesiones de menos de 30 minutos que encajan entre citas"
+            },
+            {
+              "title": "Bienestar mental",
+              "text": "Una línea de servicio que va más allá de lo físico"
+            }
+          ],
+          "rationale": "Posicionamiento y diferenciación de la consulta, con datos documentados y sin cifras de resultados.",
+          "claims": [
+            {
+              "claim": "Estimulación magnética ExoTMS™ patentada, desarrollada por BTL",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones de menos de 30 minutos",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Bienestar mental más allá de lo físico",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · Why is Mental Wellness Important for Overall Well-Being? (most procedures focus solely on the physical body)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Acompaña\nsin sumar fármacos",
+          "support": null,
+          "points": [
+            {
+              "title": "Sin medicamentos",
+              "text": "Un enfoque no invasivo para tus pacientes"
+            },
+            {
+              "title": "Entrada y salida inmediata",
+              "text": "El paciente vuelve a su rutina al terminar la sesión"
+            },
+            {
+              "title": "Nueva línea de servicio",
+              "text": "Bienestar mental en tu consulta médica"
+            }
+          ],
+          "rationale": "Pone por delante la ventaja más diferencial para un tema donde muchos pacientes ya toman medicación, sin prometer resultados.",
+          "claims": [
+            {
+              "claim": "Sin medicamentos; enfoque no invasivo",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Entrada y salida inmediata",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Procedimiento de entrada y salida inmediata",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Nueva línea de servicio: bienestar mental en tu consulta médica",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (into everyday clinical practice)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Tema sensible: los textos evitan el estigma, las referencias al peso o al cuerpo y cualquier promesa de curación. Los TCA requieren un abordaje multidisciplinario; las opciones presentan EXOMIND como complemento, no como sustituto.",
+    "Indicación: las fuentes oficiales de BTL dicen que EXOMIND está \"diseñado para el tratamiento de … atracones alimenticios\" (binge eating). No mencionan anorexia ni bulimia: no se afirma que trate todos los TCA. Es descripción del fabricante, no una afirmación aprobada (approved_claims vacío; EXOMIND pendiente de revisión).",
+    "No se usó la cifra \"74 % Achieved Complete Recovery from Binge Eating*\" de la web oficial: es un resultado clínico con asterisco sin nota y no hay afirmación aprobada.",
+    "Audiencia: BTL Medical El Salvador se dirige a fisioterapeutas, rehabilitadores y clínicas; EXOMIND encaja mejor con médicos, psiquiatras, psicólogos clínicos y clínicas de bienestar. Conviene confirmar el público de esta pieza.",
+    "\"Operador independiente\" no se usó (lleva un asterisco sin nota en la web oficial).",
+    "Logo de EXOMIND: en la ficha solo hay versiones con fondo (\"images.png\" azul sobre círculo blanco y \"images (2).jpeg\" blanco sobre azul); para el diseño conviene un PNG transparente o SVG con \"logo\" en el nombre."
+  ]
+}

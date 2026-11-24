@@ -1,0 +1,171 @@
+{
+  "angle": "En el Día de la Lucha contra los TCA, las ventajas de EXOMIND se leen desde el problema: el impulso, la emoción y el silencio de quien tiene atracones, y lo que la consulta puede ofrecerle.",
+  "slides": [
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Cuando el impulso\npide otra respuesta",
+          "support": null,
+          "points": [
+            {
+              "title": "Un abordaje desde la mente",
+              "text": "Actúa en zonas del cerebro ligadas a la regulación emocional"
+            },
+            {
+              "title": "Pensado para atracones",
+              "text": "BTL lo diseñó para tratar, entre otros, los atracones alimenticios"
+            },
+            {
+              "title": "Sin sumar medicamentos",
+              "text": "Una opción no invasiva que tus pacientes pueden elegir"
+            }
+          ],
+          "rationale": "Retoma el gancho del impulso que no es hambre y lo convierte en lo que la consulta puede ofrecer.",
+          "claims": [
+            {
+              "claim": "Actúa en zonas del cerebro ligadas a la regulación emocional",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "BTL lo diseñó para tratar, entre otros, los atracones alimenticios",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin medicamentos; no invasivo",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Escucha lo que\nmuchos callan",
+          "support": null,
+          "points": [
+            {
+              "title": "Atiende los atracones",
+              "text": "Una tecnología que BTL diseñó para tratar esta condición"
+            },
+            {
+              "title": "Una opción sin juicio",
+              "text": "Cómoda, no invasiva y que el paciente puede elegir"
+            },
+            {
+              "title": "Se suma a tu equipo",
+              "text": "Complementa el trabajo de psicología, nutrición y medicina"
+            }
+          ],
+          "rationale": "Conecta con el silencio y el estigma de los atracones y posiciona la consulta como un espacio que escucha y acompaña.",
+          "claims": [
+            {
+              "claim": "Una tecnología que BTL diseñó para tratar los atracones alimenticios",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Cómoda y no invasiva",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas, no invasivo)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Complementa el trabajo de psicología, nutrición y medicina",
+              "location": "diapositiva 3",
+              "source": "frase general sobre el abordaje multidisciplinario de los TCA; data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (holistic patient care)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Más allá\nde la comida",
+          "support": null,
+          "points": [
+            {
+              "title": "Foco en el autocontrol",
+              "text": "Estimula áreas del cerebro ligadas al autocontrol"
+            },
+            {
+              "title": "Bienestar emocional",
+              "text": "Una línea de servicio que atiende la mente, no solo el cuerpo"
+            },
+            {
+              "title": "Sin fármacos",
+              "text": "Un enfoque no invasivo, en sesiones de menos de 30 minutos"
+            }
+          ],
+          "rationale": "Lleva el problema de la comida a la emoción y el autocontrol, que es donde actúa el equipo según BTL.",
+          "claims": [
+            {
+              "claim": "Estimula áreas del cerebro ligadas al autocontrol",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Una línea de servicio que atiende la mente, no solo el cuerpo",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · Why is Mental Wellness Important for Overall Well-Being?",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "No invasivo, sin fármacos, sesiones de menos de 30 minutos",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La lucha contra los TCA\ntambién pasa por tu consulta",
+          "support": null,
+          "points": [
+            {
+              "title": "Una nueva herramienta",
+              "text": "Estimulación magnética patentada para los atracones alimenticios"
+            },
+            {
+              "title": "Pacientes que ya atiendes",
+              "text": "Quienes viven con atracones pueden estar ya en tu agenda"
+            },
+            {
+              "title": "Menos de 30 minutos",
+              "text": "Con entrada y salida inmediata, sin interrumpir su día"
+            }
+          ],
+          "rationale": "Retoma el nombre de la fecha (la lucha) y lo convierte en un papel concreto para la consulta.",
+          "claims": [
+            {
+              "claim": "Estimulación magnética patentada (ExoTMS™) para los atracones alimenticios",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (tecnología patentada ExoTMS™) y Diseñado para el tratamiento de … atracones alimenticios",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "La indicación para atracones alimenticios es descripción del fabricante (\"diseñado para el tratamiento de … atracones alimenticios\"), no una afirmación aprobada; no se afirma que trate otros TCA (anorexia, bulimia) ni se prometen resultados.",
+    "\"Complementa el trabajo de psicología, nutrición y medicina\" es una frase general sobre el abordaje multidisciplinario de los TCA, no una afirmación de BTL.",
+    "EXOMIND está pendiente de revisión y sin approved_claims."
+  ]
+}

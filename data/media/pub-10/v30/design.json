@@ -1,0 +1,416 @@
+{
+  "direction": "A",
+  "direction_name": "Objeto en el centro",
+  "concept": "El centro de todo: una neurona completa ocupa el centro exacto de la portada, rodeada de anillos de luz, como el objeto de estudio del neurólogo. En la segunda, ese centro lo ocupa el aplicador de EXOMIND, sin fondo y con el mismo halo: la respuesta toma el lugar de la pregunta.",
+  "differentiation": "Composición simétrica: objeto centrado con anillos concéntricos y luz, texto breve arriba y una línea abajo. La portada (dark) usa anillos y una neurona radial; la segunda (deep), el aplicador recortado sin fondo dentro de un halo; el cierre (dark) recupera la neurona en pequeño, dentro de dos anillos, junto a las ventajas con iconos. Sin curvas, sin fotos con fondo y sin retícula.",
+  "slides": [
+    {
+      "purpose": "Gancho: la neurona en el centro, rodeada de anillos; la pregunta arriba.",
+      "background": "dark",
+      "lightFrom": "top-right",
+      "alt": "Portada sobre fondo azul oscuro con una neurona completa en trazo blanco y brillo celeste en el centro, rodeada de anillos concéntricos; arriba la pastilla \"29 de noviembre\", el texto \"Día Mundial del Neurólogo\", la pregunta \"¿Un imán puede llegar al cerebro?\" y \"Desliza: la respuesta está en tu clínica.\"",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":880,\"radii\":[200,250,296]}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":340,\"top\":700,\"width\":400,\"height\":360,\"intensity\":0.5}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":300,\"top\":650,\"width\":480}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"glow\\\" x=\\\"-60%\\\" y=\\\"-60%\\\" width=\\\"220%\\\" height=\\\"220%\\\"><feGaussianBlur stdDeviation=\\\"20\\\"/></filter></defs><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"90\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.45\\\" filter=\\\"url(#glow)\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.92\\\"><path d=\\\"M265.4,250 Q223,216.9 152.8,185\\\"/><path d=\\\"M208.7,217.3 L138.9,212.2\\\"/><path d=\\\"M208.7,217.3 L169.3,159.4\\\"/><path d=\\\"M286.3,232.4 Q270.8,164 231.6,82.1\\\"/><path d=\\\"M257.6,153.5 L207.4,104.7\\\"/><path d=\\\"M257.6,153.5 L264.7,83.9\\\"/><path d=\\\"M313.7,232.4 Q352.6,155 378.7,53.9\\\"/><path d=\\\"M348.8,136 L341.7,66.4\\\"/><path d=\\\"M348.8,136 L399,87.2\\\"/><path d=\\\"M334.6,250 Q384.5,229.9 447.2,185\\\"/><path d=\\\"M391.3,217.3 L430.7,159.4\\\"/><path d=\\\"M391.3,217.3 L461.1,212.2\\\"/><path d=\\\"M339.4,276.9 Q406.5,297.7 497,304.7\\\"/><path d=\\\"M422.1,291.5 L489.5,272.5\\\"/><path d=\\\"M422.1,291.5 L478.9,332.4\\\"/><path d=\\\"M260.6,276.9 Q174.1,281.9 73.5,309.9\\\"/><path d=\\\"M159.6,294.8 L102.8,335.7\\\"/><path d=\\\"M159.6,294.8 L92.2,275.8\\\"/><path d=\\\"M265.4,250 Q223,216.9 152.8,185\\\"/><path d=\\\"M208.7,217.3 L138.9,212.2\\\"/><path d=\\\"M208.7,217.3 L169.3,159.4\\\"/><path d=\\\"M260.2,266.5 Q191.5,251.7 100.8,252.6\\\"/><path d=\\\"M176.5,259.2 L111.1,284\\\"/><path d=\\\"M176.5,259.2 L116.4,223.4\\\"/><path d=\\\"M300,312 L300,520\\\"/></g><circle cx=\\\"152.8\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"138.9\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"169.3\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"231.6\\\" cy=\\\"82.1\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"207.4\\\" cy=\\\"104.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"264.7\\\" cy=\\\"83.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"378.7\\\" cy=\\\"53.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"341.7\\\" cy=\\\"66.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"399\\\" cy=\\\"87.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"447.2\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"430.7\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"461.1\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"497\\\" cy=\\\"304.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"489.5\\\" cy=\\\"272.5\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"478.9\\\" cy=\\\"332.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"73.5\\\" cy=\\\"309.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"102.8\\\" cy=\\\"335.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"92.2\\\" cy=\\\"275.8\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"152.8\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"138.9\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"169.3\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"100.8\\\" cy=\\\"252.6\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"111.1\\\" cy=\\\"284\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"116.4\\\" cy=\\\"223.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><rect x=\\\"291\\\" y=\\\"355\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"395\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"435\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"475\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,520 C300,540 280,548 262,566\\\"/><path d=\\\"M300,520 L300,572\\\"/><path d=\\\"M300,520 C300,540 320,548 338,566\\\"/></g><circle cx=\\\"262\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"300\\\" cy=\\\"578\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"338\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"42\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.22\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"/><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"16\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.75\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2\\\"/><circle cx=\\\"304\\\" cy=\\\"266\\\" r=\\\"5\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":480,\"height\":480,\"title\":\"Neurona multipolar completa: dendritas ramificadas, núcleo, axón con mielina y terminal\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":36}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":14}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "29 de noviembre"
+        },
+        {
+          "id": "n9",
+          "parent": "n7",
+          "type": "Eyebrow",
+          "props": "{\"size\":34,\"weight\":\"regular\",\"tone\":\"base\"}",
+          "text": "Día Mundial del Neurólogo"
+        },
+        {
+          "id": "n10",
+          "parent": "n6",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "¿Un imán puede llegar\n**al cerebro?**"
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1150,\"left\":\"m\",\"width\":660}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n11",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"maxWidth\":660}",
+          "text": "Desliza: la respuesta está en tu clínica."
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Equipo: el aplicador de EXOMIND ocupa el centro, dentro de un halo.",
+      "background": "deep",
+      "lightFrom": "top-right",
+      "alt": "Fondo azul profundo con el aplicador oficial de EXOMIND, sin fondo, en el centro de un halo y dos anillos de luz; arriba \"EXOMIND, un entrenamiento para la mente\" y \"Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos.\"",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":760,\"r\":220,\"thickness\":2,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":540,\"cy\":760,\"radii\":[160]}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/6_20260507114903_20061430_large.png\",\"alt\":\"Aplicador de EXOMIND de BTL\",\"left\":330,\"top\":540,\"width\":420,\"height\":500,\"objectPosition\":\"50% 0%\",\"fade\":[\"bottom\"],\"fadeSize\":150}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "**EXOMIND,**\nun entrenamiento\npara la mente"
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1040,\"left\":\"m\",\"width\":680}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"maxWidth\":680}",
+          "text": "Su tecnología ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol."
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica con iconos; la neurona vuelve pequeña, en sus anillos, junto al CTA.",
+      "background": "dark",
+      "lightFrom": "top-right",
+      "alt": "Fondo azul oscuro con \"Una consulta que cuida por dentro\", tres ventajas con iconos (Nueva línea de servicio: suma el bienestar mental a tus tratamientos estéticos; Sesiones breves: de menos de 30 minutos, con entrada y salida inmediata; Sin medicamentos: un enfoque no invasivo que tus pacientes pueden elegir) y \"Solicita tu demo\"; abajo a la derecha, una neurona pequeña dentro de dos anillos",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Rings",
+          "props": "{\"cx\":880,\"cy\":1140,\"radii\":[84,112]}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":810,\"top\":1070,\"width\":140}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"glow\\\" x=\\\"-60%\\\" y=\\\"-60%\\\" width=\\\"220%\\\" height=\\\"220%\\\"><feGaussianBlur stdDeviation=\\\"20\\\"/></filter></defs><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"90\\\" fill=\\\"#96d2ff\\\" opacity=\\\"0.45\\\" filter=\\\"url(#glow)\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.92\\\"><path d=\\\"M265.4,250 Q223,216.9 152.8,185\\\"/><path d=\\\"M208.7,217.3 L138.9,212.2\\\"/><path d=\\\"M208.7,217.3 L169.3,159.4\\\"/><path d=\\\"M286.3,232.4 Q270.8,164 231.6,82.1\\\"/><path d=\\\"M257.6,153.5 L207.4,104.7\\\"/><path d=\\\"M257.6,153.5 L264.7,83.9\\\"/><path d=\\\"M313.7,232.4 Q352.6,155 378.7,53.9\\\"/><path d=\\\"M348.8,136 L341.7,66.4\\\"/><path d=\\\"M348.8,136 L399,87.2\\\"/><path d=\\\"M334.6,250 Q384.5,229.9 447.2,185\\\"/><path d=\\\"M391.3,217.3 L430.7,159.4\\\"/><path d=\\\"M391.3,217.3 L461.1,212.2\\\"/><path d=\\\"M339.4,276.9 Q406.5,297.7 497,304.7\\\"/><path d=\\\"M422.1,291.5 L489.5,272.5\\\"/><path d=\\\"M422.1,291.5 L478.9,332.4\\\"/><path d=\\\"M260.6,276.9 Q174.1,281.9 73.5,309.9\\\"/><path d=\\\"M159.6,294.8 L102.8,335.7\\\"/><path d=\\\"M159.6,294.8 L92.2,275.8\\\"/><path d=\\\"M265.4,250 Q223,216.9 152.8,185\\\"/><path d=\\\"M208.7,217.3 L138.9,212.2\\\"/><path d=\\\"M208.7,217.3 L169.3,159.4\\\"/><path d=\\\"M260.2,266.5 Q191.5,251.7 100.8,252.6\\\"/><path d=\\\"M176.5,259.2 L111.1,284\\\"/><path d=\\\"M176.5,259.2 L116.4,223.4\\\"/><path d=\\\"M300,312 L300,520\\\"/></g><circle cx=\\\"152.8\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"138.9\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"169.3\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"231.6\\\" cy=\\\"82.1\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"207.4\\\" cy=\\\"104.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"264.7\\\" cy=\\\"83.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"378.7\\\" cy=\\\"53.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"341.7\\\" cy=\\\"66.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"399\\\" cy=\\\"87.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"447.2\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"430.7\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"461.1\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"497\\\" cy=\\\"304.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"489.5\\\" cy=\\\"272.5\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"478.9\\\" cy=\\\"332.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"73.5\\\" cy=\\\"309.9\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"102.8\\\" cy=\\\"335.7\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"92.2\\\" cy=\\\"275.8\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"152.8\\\" cy=\\\"185\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"138.9\\\" cy=\\\"212.2\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"169.3\\\" cy=\\\"159.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"100.8\\\" cy=\\\"252.6\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"111.1\\\" cy=\\\"284\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><circle cx=\\\"116.4\\\" cy=\\\"223.4\\\" r=\\\"5.5\\\" fill=\\\"#96d2ff\\\"/><rect x=\\\"291\\\" y=\\\"355\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"395\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"435\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><rect x=\\\"291\\\" y=\\\"475\\\" width=\\\"18\\\" height=\\\"30\\\" rx=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><g fill=\\\"none\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M300,520 C300,540 280,548 262,566\\\"/><path d=\\\"M300,520 L300,572\\\"/><path d=\\\"M300,520 C300,540 320,548 338,566\\\"/></g><circle cx=\\\"262\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"300\\\" cy=\\\"578\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"338\\\" cy=\\\"572\\\" r=\\\"9\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"42\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.22\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"3\\\"/><circle cx=\\\"300\\\" cy=\\\"270\\\" r=\\\"16\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.75\\\" stroke=\\\"#ffffff\\\" stroke-width=\\\"2\\\"/><circle cx=\\\"304\\\" cy=\\\"266\\\" r=\\\"5\\\" fill=\\\"#ffffff\\\"/>\",\"viewBox\":\"0 0 600 600\",\"width\":140,\"height\":140,\"title\":\"Neurona (eco pequeño de la portada)\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":64}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Headline",
+          "props": "{\"size\":\"l\",\"weight\":\"thin\",\"as\":\"h2\"}",
+          "text": "Una consulta que\n**cuida por dentro**"
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":44}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":30,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Icon",
+          "props": "{\"name\":\"trending_up\",\"size\":64,\"tone\":\"accent\"}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n10",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Nueva línea de servicio"
+        },
+        {
+          "id": "n12",
+          "parent": "n10",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"base\",\"maxWidth\":720}",
+          "text": "Suma el bienestar mental a tus tratamientos estéticos"
+        },
+        {
+          "id": "n13",
+          "parent": "n7",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":30,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Icon",
+          "props": "{\"name\":\"patient_list\",\"size\":64,\"tone\":\"accent\"}",
+          "text": null
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n16",
+          "parent": "n15",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Sesiones breves"
+        },
+        {
+          "id": "n17",
+          "parent": "n15",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"base\",\"maxWidth\":720}",
+          "text": "De menos de 30 minutos, con entrada y salida inmediata"
+        },
+        {
+          "id": "n18",
+          "parent": "n7",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":30,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "n18",
+          "type": "Icon",
+          "props": "{\"name\":\"shield_person\",\"size\":64,\"tone\":\"accent\"}",
+          "text": null
+        },
+        {
+          "id": "n20",
+          "parent": "n18",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n21",
+          "parent": "n20",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Sin medicamentos"
+        },
+        {
+          "id": "n22",
+          "parent": "n20",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"tone\":\"base\",\"maxWidth\":720}",
+          "text": "Un enfoque no invasivo que tus pacientes pueden elegir"
+        },
+        {
+          "id": "n23",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"bottom\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n24",
+          "parent": "n23",
+          "type": "Headline",
+          "props": "{\"px\":58,\"weight\":\"semibold\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "Día Mundial del Neurólogo: en el centro de todo está el cerebro. ¿Un imán puede llegar a él?\n\nEXOMIND, de BTL, lo hace con su tecnología patentada ExoTMS™, que estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos. Una opción clínica y estética a la vez: bienestar mental para tu consulta, con sesiones de menos de 30 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#BTLElSalvador #EXOMIND #DiaMundialDelNeurologo #BienestarMental #SaludMental",
+  "sources": [
+    "data/web/exomind.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "direction_id": "objeto-centrado",
+  "claims": [
+    {
+      "claim": "¿Un imán puede llegar al cerebro? (estimulación magnética del cerebro, ExoTMS)",
+      "location": "diapositiva 1",
+      "source": "data/web/exomind.md · btlaesthetics.com · How Does EXOMIND Work? y estudio \"ExoTMS Repetitive Transcranial Magnetic Stimulation\"",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Tecnología patentada ExoTMS™",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sin medicamentos",
+      "location": "diapositivas 2 y 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Sesiones de menos de 30 minutos, con entrada y salida inmediata",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Un enfoque no invasivo",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Nueva línea de servicio: suma el bienestar mental a tus tratamientos estéticos",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (expand beyond aesthetics into mental wellbeing)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Para consultas médicas y clínicas estéticas (práctica clínica diaria)",
+      "location": "caption",
+      "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (into everyday clinical practice); cita de Rudolph Eberwein, MD",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Día Mundial del Neurólogo, 29 de noviembre",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · Tema y fecha",
+      "approval": "general_statement"
+    }
+  ]
+}

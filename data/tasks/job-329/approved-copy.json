@@ -1,0 +1,81 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "role": "hook",
+      "headline": "¿Un imán\npuede llegar\nal cerebro?",
+      "support": "Desliza: la respuesta está en tu clínica.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Estimulación magnética del cerebro (ExoTMS)",
+          "location": "diapositiva 1",
+          "source": "data/web/exomind.md · btlaesthetics.com · How Does EXOMIND Work? y estudio \"ExoTMS Repetitive Transcranial Magnetic Stimulation\"",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "role": "equipo",
+      "headline": "EXOMIND,\nun entrenamiento\npara la mente",
+      "support": "Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos.",
+      "points": [],
+      "claims": [
+        {
+          "claim": "Tecnología patentada ExoTMS™",
+          "location": "slide 2",
+          "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Estimula áreas clave del cerebro involucradas en la regulación emocional, la función cognitiva y el autocontrol",
+          "location": "slide 2",
+          "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "Sin medicamentos",
+          "location": "slide 2",
+          "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+          "approval": "manufacturer_description"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "role": "ventajas",
+      "headline": "Una consulta que\ncuida por dentro",
+      "support": null,
+      "points": [
+        {
+          "title": "Nueva línea de servicio",
+          "text": "Suma el bienestar mental a tus tratamientos estéticos"
+        },
+        {
+          "title": "Sesiones breves",
+          "text": "De menos de 30 minutos, con entrada y salida inmediata"
+        },
+        {
+          "title": "Sin medicamentos",
+          "text": "Un enfoque no invasivo que tus pacientes pueden elegir"
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Sesiones de menos de 30 minutos, entrada y salida inmediata",
+          "location": "slide 3",
+          "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+          "approval": "manufacturer_description"
+        },
+        {
+          "claim": "No invasivo, sin medicamentos",
+          "location": "slide 3",
+          "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+          "approval": "manufacturer_description"
+        }
+      ]
+    }
+  ],
+  "approved_at": "2026-11-20T17:35:37.980Z"
+}

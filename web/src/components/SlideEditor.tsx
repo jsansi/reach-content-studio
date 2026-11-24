@@ -26,6 +26,27 @@ function toggleHighlight(el: HTMLTextAreaElement, text: string): string | null {
   return text.slice(0, a) + '**' + sel.replace(/\*\*/g, '') + '**' + text.slice(b);
 }
 
+// Number field for an exact size: free typing, limits applied on Enter or when leaving the field.
+function PxInput({ value, min, max, label, onChange }: { value: number; min: number; max: number; label: string; onChange: (v: number) => void }) {
+  const [draft, setDraft] = useState(String(value));
+  useEffect(() => setDraft(String(value)), [value]);
+  const commit = () => {
+    const n = Math.round(Number(draft));
+    if (!draft.trim() || !Number.isFinite(n)) return setDraft(String(value));
+    const v = Math.min(max, Math.max(min, n));
+    setDraft(String(v));
+    if (v !== value) onChange(v);
+  };
+  return (
+    <input
+      type="number" min={min} max={max} value={draft} style={{ width: 64 }} aria-label={label}
+      onChange={(e) => setDraft(e.target.value)}
+      onBlur={commit}
+      onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), commit())}
+    />
+  );
+}
+
 export function SlideEditor({ version, slide, onClose, onSaved }: { version: Version; slide: number; onClose: () => void; onSaved: (d: PublicationDetail) => void }) {
   const original = useMemo(() => editableTexts(version.design!.slides[slide - 1]), [version, slide]);
   const [items, setItems] = useState<EditableText[]>(original);
@@ -110,7 +131,7 @@ export function SlideEditor({ version, slide, onClose, onSaved }: { version: Ver
       }
     >
       <div className="slide-editor">
-        <div style={{ position: 'relative' }}>
+        <div className="slide-editor-preview">
           <img src={preview ?? current} alt={version.design!.slides[slide - 1].alt} style={{ opacity: previewing ? 0.6 : 1, transition: 'opacity .2s' }} />
           <p className="small muted" style={{ margin: '6px 0 0' }}>
             {previewing ? 'Actualizando la vista previa…' : preview ? 'Vista previa con tus cambios (aún sin aplicar).' : 'Diapositiva actual.'}
@@ -186,11 +207,7 @@ export function SlideEditor({ version, slide, onClose, onSaved }: { version: Ver
                           aria-label={`${TYPE_LABELS[it.type]}: tamaño en px`} style={{ width: 140 }}
                         />
                         <button className="btn sm ghost" disabled={px >= range.max} onClick={() => set(it.node, { px: Math.min(range.max, px + 2) })} aria-label="2 px más grande">+</button>
-                        <input
-                          type="number" min={range.min} max={range.max} value={px} style={{ width: 64 }}
-                          onChange={(e) => e.target.value && set(it.node, { px: Math.min(range.max, Math.max(range.min, Number(e.target.value))) })}
-                          aria-label={`${TYPE_LABELS[it.type]}: px`}
-                        /> px
+                        <PxInput value={px} min={range.min} max={range.max} label={`${TYPE_LABELS[it.type]}: px`} onChange={(v) => set(it.node, { px: v })} /> px
                         <select
                           value="" onChange={(e) => e.target.value && set(it.node, { size: e.target.value, px: null })}
                           aria-label="Tamaños de la marca" title="Tamaños estándar del sistema de diseño de BTL"

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "category": {
+      "description": "Product category in Spanish (e.g. \"Ondas de choque focales\"), or null if the sources do not say",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "2–4 sentences in Spanish for clinic owners and specialists: what the device is and what it lets the clinic do, only from the sources"
+    },
+    "key_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "4–8 verifiable features in Spanish, one short sentence each (≤ 120 characters), each traceable to a source"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Files and pages actually used"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Missing data, contradictions between sources, or anything Jaime should check (Spanish)"
+    }
+  },
+  "required": [
+    "category",
+    "description",
+    "key_features",
+    "sources",
+    "warnings"
+  ],
+  "additionalProperties": false
+}

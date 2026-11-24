@@ -1,0 +1,178 @@
+{
+  "angle": "En el Día Mundial del Neurólogo, EXOMIND le da a la clínica estética una nueva línea de bienestar mental que se integra a su agenda, a su equipo y a sus pacientes actuales.",
+  "slides": [
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Un servicio nuevo\nque no te quita tiempo",
+          "support": null,
+          "points": [
+            {
+              "title": "Funciona sin operador",
+              "text": "La sesión avanza sin que tengas que estar al lado del paciente."
+            },
+            {
+              "title": "Sesiones de menos de 30 min",
+              "text": "Encajan entre tus citas y el paciente sigue con su día al salir."
+            },
+            {
+              "title": "Pacientes que ya tienes",
+              "text": "Ofrécelo a quienes ya confían en tu clínica."
+            }
+          ],
+          "rationale": "Pone el tiempo del profesional en el centro: nueva fuente de servicio sin cargar la agenda; cierra el gancho de la portada con una ganancia concreta.",
+          "claims": [
+            {
+              "claim": "Funciona sin operador / la sesión avanza sin que estés al lado",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Operador independiente**)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones de menos de 30 min",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (Sesiones cómodas de menos de 30 minutos)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "el paciente sigue con su día al salir",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Procedimiento de entrada y salida inmediata",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Ofrécelo a quienes ya confían en tu clínica (los pacientes ideales ya están en tu consulta)",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tu clínica, a la\nvanguardia del bienestar",
+          "support": null,
+          "points": [
+            {
+              "title": "Te adelantas al mercado",
+              "text": "Integras el bienestar mental junto a tus tratamientos estéticos."
+            },
+            {
+              "title": "Suma a lo que ya ofreces",
+              "text": "Complementa tus tratamientos corporales y faciales de BTL."
+            },
+            {
+              "title": "Responde a lo que buscan",
+              "text": "Tus pacientes quieren cuidar cuerpo y mente en un solo lugar."
+            }
+          ],
+          "rationale": "Ventaja competitiva y de posicionamiento para la clínica, ligada al cerebro como tema del día.",
+          "claims": [
+            {
+              "claim": "a la vanguardia / te adelantas al mercado",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Dr. Carlo Rinaudo (clinics that integrate advanced brain and body modulation tools are positioned at the forefront)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Complementa tus tratamientos corporales y faciales de BTL",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · Which Solutions Best Complement This Treatment?",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Tus pacientes quieren cuidar cuerpo y mente",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · Adults Seek Solutions for Both Body and Mind*",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Más razones para\nque te elijan",
+          "support": null,
+          "points": [
+            {
+              "title": "Una nueva línea de servicio",
+              "text": "Atiendes el bienestar mental sin dejar de ser una clínica estética."
+            },
+            {
+              "title": "No invasivo y sin fármacos",
+              "text": "Una opción no invasiva que es fácil de proponer a tus pacientes."
+            },
+            {
+              "title": "Una experiencia cómoda",
+              "text": "Sesiones cómodas que tus pacientes pueden sumar a su rutina."
+            }
+          ],
+          "rationale": "Enfoca la ventaja en la preferencia del paciente por la clínica: más motivos para elegirla y volver.",
+          "claims": [
+            {
+              "claim": "Una nueva línea de servicio: bienestar mental en una clínica estética",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (expand beyond aesthetics into mental wellbeing)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "No invasivo y sin fármacos / no invasiva",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (No invasivo, Sin medicamentos)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones cómodas",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Sesiones cómodas de menos de 30 minutos",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Crece tu oferta,\nno tu carga de trabajo",
+          "support": null,
+          "points": [
+            {
+              "title": "Tu personal queda libre",
+              "text": "Mientras avanza la sesión, tu equipo atiende a otros pacientes."
+            },
+            {
+              "title": "Se integra a tu día a día",
+              "text": "Un tratamiento eficiente que encaja en la práctica de tu clínica."
+            },
+            {
+              "title": "Entrada y salida inmediata",
+              "text": "El paciente llega, recibe su sesión y vuelve a su rutina."
+            }
+          ],
+          "rationale": "Eficiencia operativa: más servicios con el mismo equipo humano, la ganancia más tangible para quien compra el equipo.",
+          "claims": [
+            {
+              "claim": "Tu personal queda libre mientras avanza la sesión",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Operador independiente** (inferencia operativa)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Un tratamiento eficiente que encaja en la práctica de tu clínica",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Georgine Nanos, MD (efficient, and scalable within clinical practice)",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Entrada y salida inmediata",
+              "location": "diapositiva 3",
+              "source": "data/web/exomind.md · btlaesthetics.es · Procedimiento de entrada y salida inmediata",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "EXOMIND está pendiente de revisión y sin approved_claims: todas las ventajas son descripción del fabricante (incluidas citas de médicos de la web oficial), no afirmaciones clínicas aprobadas. No se mencionan indicaciones ni porcentajes.",
+    "\"Operador independiente\" (opciones 1 y 4) lleva un asterisco (**) en la web oficial cuya nota no aparece en la fuente; confirmarlo con BTL. \"Tu personal queda libre\" es una inferencia operativa de ese dato.",
+    "No se nombran otros equipos BTL (EMSCULPT NEO, EMFACE, EMSELLA) para no obligar a mostrar sus fotos y logos; la opción 2 habla de tratamientos corporales y faciales de BTL en general.",
+    "No se incluyen cifras de ingresos ni de retorno: no hay fuente."
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "angle": "El Día Mundial del Neurólogo pone el foco en el cerebro: la clínica estética que ya cuida el cuerpo puede sumar el bienestar mental con EXOMIND.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Tus pacientes\ncuidan su piel.\n¿Y su mente?",
+          "support": null,
+          "points": [],
+          "rationale": "Contrasta lo que la clínica estética ya atiende con lo que falta; la diapositiva 2 responde con EXOMIND.",
+          "claims": []
+        },
+        {
+          "headline": "Tratas\nel cuerpo.\n¿Quién atiende\nla mente?",
+          "support": null,
+          "points": [],
+          "rationale": "Tensión profesional reconocible: el paciente es uno solo y la consulta solo atiende una parte.",
+          "claims": []
+        },
+        {
+          "headline": "Lo que no se ve\nen el espejo\ntambién pesa.",
+          "support": "¿Tu consulta tiene cómo atenderlo?",
+          "points": [],
+          "rationale": "Lleva la conversación del aspecto al bienestar emocional sin nombrar aún el equipo.",
+          "claims": []
+        },
+        {
+          "headline": "Hoy se habla\ndel cerebro.\n¿Y tu clínica?",
+          "support": "Tiene más que decir de lo que crees.",
+          "points": [],
+          "rationale": "Usa la fecha como giro: el día del neurólogo abre una pregunta que la clínica estética puede contestar.",
+          "claims": [
+            {
+              "claim": "El Día Mundial del Neurólogo pone el foco en el cerebro",
+              "location": "slide 1",
+              "source": "Fecha conmemorativa (Día Mundial del Neurólogo)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "El tratamiento\nque falta\nen tu menú.",
+          "support": "Y no es facial ni corporal.",
+          "points": [],
+          "rationale": "Curiosidad de negocio: un servicio nuevo que no se parece a los que ya ofrece.",
+          "claims": []
+        },
+        {
+          "headline": "Muchos pacientes\nllegan agotados\npor dentro.",
+          "support": "¿Qué les ofrece tu consulta?",
+          "points": [],
+          "rationale": "Parte de una realidad que la clínica ya ve y abre la pregunta que resuelve EXOMIND.",
+          "claims": [
+            {
+              "claim": "Muchos adultos se sienten emocionalmente agotados o mentalmente abrumados",
+              "location": "slide 1",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers («El 50% de los adultos afirma sentirse emocionalmente agotado…»*)",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "El bienestar\nempieza\nmás arriba.",
+          "support": "¿Tu consulta llega hasta ahí?",
+          "points": [],
+          "rationale": "Juego espacial con la fecha (el cerebro, arriba): deja la pregunta abierta para la diapositiva 2.",
+          "claims": []
+        },
+        {
+          "headline": "Un día para\nel cerebro.\nUna idea para\ntu clínica.",
+          "support": null,
+          "points": [],
+          "rationale": "Une la fecha con la oportunidad para el profesional que compra el equipo.",
+          "claims": []
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "options": [
+        {
+          "headline": "EXOMIND,\nun entrenamiento\npara la mente",
+          "support": "Su tecnología patentada ExoTMS™ estimula zonas del cerebro ligadas a la regulación emocional y el autocontrol, sin medicamentos.",
+          "points": [],
+          "rationale": "Responde a «¿y su mente?» con la idea de BTL «un entrenamiento para tu mente».",
+          "claims": [
+            {
+              "claim": "Tecnología patentada ExoTMS™",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Estimula áreas clave del cerebro involucradas en la regulación emocional, la función cognitiva y el autocontrol",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin medicamentos",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Bienestar mental,\nahora en tu consulta",
+          "support": "EXOMIND suma el cuidado de la mente a tu oferta con un procedimiento cómodo y no invasivo.",
+          "points": [
+            {
+              "title": "No invasivo",
+              "text": "Sin cirugía ni agujas"
+            },
+            {
+              "title": "Sin medicamentos",
+              "text": "Un enfoque que el paciente puede elegir"
+            },
+            {
+              "title": "Sesiones breves",
+              "text": "De menos de 30 minutos"
+            }
+          ],
+          "rationale": "Presenta el equipo como el servicio que faltaba y adelanta tres ventajas de uso.",
+          "claims": [
+            {
+              "claim": "Procedimiento no invasivo",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin medicamentos",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sesiones cómodas de menos de 30 minutos",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La mente también\nse puede cuidar",
+          "support": "EXOMIND estimula de forma cómoda las áreas del cerebro que regulan las emociones. El paciente entra y sale de la consulta en la misma visita.",
+          "points": [],
+          "rationale": "Contesta los ganchos sobre lo que no se ve con una respuesta concreta y cercana.",
+          "claims": [
+            {
+              "claim": "Estimula cómodamente áreas clave del cerebro involucradas en la regulación emocional",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Un entrenamiento para tu mente",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Procedimiento de entrada y salida inmediata",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Lo que tu clínica\naún no ofrecía",
+          "support": "EXOMIND lleva la estimulación cerebral a la práctica clínica para apoyar el bienestar emocional de tus pacientes.",
+          "points": [
+            {
+              "title": "Cómodo",
+              "text": "Sin medicamentos y no invasivo"
+            },
+            {
+              "title": "Ágil",
+              "text": "Entrada y salida inmediata"
+            }
+          ],
+          "rationale": "Resuelve los ganchos de negocio («el tratamiento que falta») nombrando el equipo.",
+          "claims": [
+            {
+              "claim": "Lleva la tecnología de estimulación cerebral a la práctica clínica",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.com/en/for-providers/exomind-providers · What is EXOMIND?",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Apoya a los pacientes en su bienestar emocional",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.com/en/for-providers/exomind-providers · What Can You Achieve with EXOMIND?",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Sin medicamentos, no invasivo",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Procedimiento de entrada y salida inmediata",
+              "location": "slide 2",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "options": [
+        {
+          "headline": "Una consulta que\ncuida por dentro",
+          "support": null,
+          "points": [
+            {
+              "title": "Nueva línea de servicio",
+              "text": "Suma el bienestar mental a tus tratamientos estéticos"
+            },
+            {
+              "title": "Sesiones breves",
+              "text": "De menos de 30 minutos, con entrada y salida inmediata"
+            },
+            {
+              "title": "Sin medicamentos",
+              "text": "Un enfoque no invasivo que tus pacientes pueden elegir"
+            }
+          ],
+          "rationale": "Cierra la idea de cuidar la mente con lo que gana la clínica.",
+          "claims": [
+            {
+              "claim": "Sesiones de menos de 30 minutos, entrada y salida inmediata",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "No invasivo, sin medicamentos",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Tu clínica, más allá\nde la estética",
+          "support": null,
+          "points": [
+            {
+              "title": "Atención integral",
+              "text": "Cuida cómo se ve y cómo se siente tu paciente"
+            },
+            {
+              "title": "Complementa tus equipos",
+              "text": "BTL lo combina con EMSCULPT NEO, EMSELLA y EMFACE"
+            },
+            {
+              "title": "Pacientes que ya tienes",
+              "text": "Ofréceles bienestar mental en la misma consulta"
+            }
+          ],
+          "rationale": "Responde a «tratas el cuerpo» con la ventaja de atender cuerpo y mente en un solo lugar.",
+          "claims": [
+            {
+              "claim": "Soluciones que complementan este tratamiento: EMSCULPT NEO, EMSELLA, EMFACE",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.com/en/for-providers/exomind-providers · Which Solutions Best Complement This Treatment?",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Bienestar mental\nen tu menú",
+          "support": null,
+          "points": [
+            {
+              "title": "Un servicio diferente",
+              "text": "Una opción que no es facial ni corporal"
+            },
+            {
+              "title": "Cómodo para el paciente",
+              "text": "Sesiones no invasivas y sin medicamentos"
+            },
+            {
+              "title": "Fácil de integrar",
+              "text": "Procedimiento de entrada y salida inmediata"
+            }
+          ],
+          "rationale": "Encaja con el gancho «el tratamiento que falta en tu menú» y lo convierte en ventajas concretas.",
+          "claims": [
+            {
+              "claim": "No invasivo, sin medicamentos",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            },
+            {
+              "claim": "Procedimiento de entrada y salida inmediata",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Cuerpo y mente,\nen la misma agenda",
+          "support": null,
+          "points": [
+            {
+              "title": "Diferénciate",
+              "text": "Ofrece bienestar mental además de estética"
+            },
+            {
+              "title": "Enfoque integral",
+              "text": "Atiende también cómo se siente tu paciente"
+            },
+            {
+              "title": "Sesiones breves",
+              "text": "De menos de 30 minutos y sin medicamentos"
+            }
+          ],
+          "rationale": "Une la fecha del cerebro con la agenda de la clínica: una nueva razón de visita.",
+          "claims": [
+            {
+              "claim": "Sesiones de menos de 30 minutos, sin medicamentos",
+              "location": "slide 3",
+              "source": "data/web/exomind.md · btlaesthetics.es/for-providers/exomind-providers · Transforma tu consulta",
+              "approval": "manufacturer_description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "EXOMIND está «pendiente de revisión» y sin afirmaciones clínicas aprobadas: los textos hablan de bienestar mental y no dicen que trate depresión, ansiedad, TOC ni atracones, aunque la página de BTL las mencione; BTL advierte que no todas las indicaciones están autorizadas en todos los países. Confirma con BTL El Salvador antes de nombrarlas.",
+    "Duración: la página en español dice «menos de 30 minutos» y la inglesa «30 minutos»; se usó la española. Confirma con BTL.",
+    "No se usaron los porcentajes de resultados de la página (88 %, 78 %, 66 %, 74 %) por ser resultados clínicos con asterisco sin nota visible.",
+    "El gancho «Muchos pacientes llegan agotados por dentro» se apoya en el dato de BTL «el 50% de los adultos…», que lleva asterisco sin fuente visible; por eso se escribió sin cifra.",
+    "La fecha es del neurólogo y EXOMIND se dirige a clínicas estéticas: los textos no presentan el equipo como sustituto de la atención neurológica ni psiquiátrica.",
+    "La ficha de EXOMIND tiene fotos (el equipo, el aplicador, pacientes), pero ningún archivo de logo de producto: sube el logo oficial de EXOMIND antes de las propuestas visuales. Algunas fotos parecen de clínicas o webs no oficiales (Long Island, Mayfair, Michigan, capturas de WhatsApp): conviene usar solo las oficiales de BTL."
+  ]
+}

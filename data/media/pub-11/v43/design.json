@@ -1,0 +1,523 @@
+{
+  "direction": "A",
+  "direction_name": "Propuesta libre",
+  "concept": "Una historia en tres tiempos: el problema que vive tu paciente (el atracón como círculo vicioso: pierde el control, llega la culpa, vuelve a empezar), la respuesta (EXOMIND apunta al autocontrol, con el estudio piloto de la ficha) y lo que gana la clínica al tratar los atracones. El anillo de la portada es el ciclo; la diapositiva 2 lo responde con el equipo en uso; la 3 lo traduce en ventajas concretas para la clínica.",
+  "differentiation": "La portada sigue siendo un diagrama: el texto gira alrededor de un anillo de luz, ahora con un punto luminoso por fase y todo alineado al anillo (rótulos junto a su punto, idea central dentro). En la 2 el equipo aparece en una foto oficial completa en ambiente, no recortado, y en la 3 cada ventaja tiene su ícono en trazo fino.",
+  "slides": [
+    {
+      "purpose": "Gancho: el círculo vicioso del atracón dibujado como un anillo de luz con sus tres fases, y la pregunta para el profesional.",
+      "background": "dark",
+      "lightFrom": "top-left",
+      "alt": "Fondo azul oscuro. Logo de BTL arriba a la derecha. Arriba, una pastilla con 30 de noviembre y debajo Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria. Titular: Tu paciente lo sabe: En el centro, un anillo de luz con tres puntos luminosos, uno por fase: Pierde el control (arriba), Llega la culpa (abajo a la derecha) y Vuelve a empezar (abajo a la izquierda). Dentro del anillo: No es hambre. Es un círculo vicioso. Abajo: ¿Qué le ofreces cuando llega a tu consulta? Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Glow",
+          "props": "{\"left\":290,\"top\":560,\"width\":500,\"height\":500,\"intensity\":0.35}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[601,599],[675,637],[731,700],[758,779],[753,863]],\"width\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[693,968],[622,1014],[540,1030],[458,1014],[387,968]],\"width\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "Curve",
+          "props": "{\"points\":[[327,863],[322,779],[349,700],[405,637],[479,599]],\"width\":3,\"tone\":\"sky\",\"glow\":0.6}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":540,\"cy\":590,\"r\":9,\"thickness\":6,\"tone\":\"sky\",\"glow\":0.9}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":731,\"cy\":920,\"r\":9,\"thickness\":6,\"tone\":\"sky\",\"glow\":0.9}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Halo",
+          "props": "{\"cx\":349,\"cy\":920,\"r\":9,\"thickness\":6,\"tone\":\"sky\",\"glow\":0.9}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":214,\"width\":640,\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "30 de noviembre"
+        },
+        {
+          "id": "n11",
+          "parent": "n9",
+          "type": "Eyebrow",
+          "props": "{\"size\":30,\"weight\":\"regular\",\"tone\":\"base\"}",
+          "text": "Día Internacional de la Lucha contra los\nTrastornos de la Conducta Alimentaria"
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":430,\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "n12",
+          "type": "Headline",
+          "props": "{\"px\":60,\"weight\":\"light\",\"as\":\"p\"}",
+          "text": "Tu paciente lo sabe:"
+        },
+        {
+          "id": "n14",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":404,\"top\":528,\"width\":300}",
+          "text": null
+        },
+        {
+          "id": "n15",
+          "parent": "n14",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Pierde el control"
+        },
+        {
+          "id": "n16",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":760,\"top\":900,\"width\":220}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n16",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Llega\nla culpa"
+        },
+        {
+          "id": "n18",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":150,\"top\":900,\"width\":180}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "n18",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Vuelve\na empezar"
+        },
+        {
+          "id": "n20",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":356,\"top\":730,\"width\":380}",
+          "text": null
+        },
+        {
+          "id": "n21",
+          "parent": "n20",
+          "type": "Headline",
+          "props": "{\"px\":48,\"weight\":\"light\",\"as\":\"h1\"}",
+          "text": "No es hambre.\n**Es un círculo\nvicioso.**"
+        },
+        {
+          "id": "n22",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1100,\"width\":892}",
+          "text": null
+        },
+        {
+          "id": "n23",
+          "parent": "n22",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"light\"}",
+          "text": "¿Qué le ofreces cuando llega a tu consulta?"
+        },
+        {
+          "id": "n24",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Respuesta: EXOMIND apunta al autocontrol; foto oficial completa del equipo en uso, su logo y el estudio de la ficha.",
+      "background": "deep",
+      "lightFrom": null,
+      "alt": "Fondo azul oscuro. Logo de BTL arriba a la derecha. Titular: Apunta al autocontrol con, seguido del logo oficial de EXOMIND en blanco. Texto: Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol para tratar los atracones alimenticios. Debajo, tras un filete: En un estudio piloto publicado en 2025, 38 personas con atracones recibieron 6 sesiones en 3 semanas. Fuente: Pánek y Donchev, PCN Reports 2025, estudio patrocinado por BTL. A la derecha, foto oficial: una mujer sentada junto al equipo EXOMIND con el aplicador sobre la cabeza. Desliza.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/Exomind_PIC_Female-Model2_0125_ENUS100.webp\",\"alt\":\"Mujer sentada junto al equipo EXOMIND con el aplicador sobre la cabeza, foto oficial\",\"left\":560,\"top\":300,\"width\":520,\"height\":820,\"objectPosition\":\"58% 40%\",\"blend\":\"normal\",\"fade\":[\"left\",\"top\",\"bottom\"],\"fadeSize\":150}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"width\":520}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Headline",
+          "props": "{\"px\":72,\"weight\":\"light\"}",
+          "text": "Apunta al\nautocontrol con"
+        },
+        {
+          "id": "n5",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/images (2).jpeg\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":14,\"top\":420,\"width\":480,\"height\":160,\"objectPosition\":\"center 49%\",\"blend\":\"normal\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":50}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":600,\"width\":470}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Body",
+          "props": "{\"size\":\"m\",\"weight\":\"light\"}",
+          "text": "Su **estimulación magnética ExoTMS™** actúa sobre áreas del cerebro ligadas al autocontrol para **tratar los atracones alimenticios**."
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":870,\"width\":470,\"gap\":16}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Rule",
+          "props": "{\"length\":120,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"regular\"}",
+          "text": "En un estudio piloto publicado en 2025, 38 personas con atracones recibieron 6 sesiones en 3 semanas."
+        },
+        {
+          "id": "n11",
+          "parent": "n8",
+          "type": "Footnote",
+          "props": "{}",
+          "text": "Pánek y Donchev, PCN Reports 2025. Patrocinado por BTL."
+        },
+        {
+          "id": "n12",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas para la clínica: lo que gana al tratar los atracones con EXOMIND, una ventaja por ícono, y el CTA.",
+      "background": "dark",
+      "lightFrom": "bottom-right",
+      "alt": "Fondo azul oscuro. Logo de BTL arriba a la derecha. Titular: Lo que gana tu clínica al tratar los atracones. Un filete y tres ventajas, cada una con su ícono en trazo celeste: una consulta con un signo más, Nueva línea de servicio, un tratamiento diseñado para los atracones, sin medicamentos; una agenda con una persona, Pacientes que ya atiendes, quienes viven con atracones pueden estar ya en tu agenda; un cronómetro, Menos de 30 minutos, con entrada y salida inmediata, sin interrumpir su día. Abajo: Solicita tu demo.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-right\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":300,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"px\":64,\"weight\":\"light\"}",
+          "text": "**Lo que gana tu clínica**\nal tratar los atracones"
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":490,\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Rule",
+          "props": "{\"length\":892,\"thickness\":3,\"emphasis\":\"strong\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":560,\"width\":110}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n6",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"g\\\" x=\\\"-50%\\\" y=\\\"-50%\\\" width=\\\"200%\\\" height=\\\"200%\\\"><feGaussianBlur stdDeviation=\\\"2\\\"/></filter></defs><g filter=\\\"url(#g)\\\" opacity=\\\"0.6\\\" fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M14,44 L48,16 L82,44\\\"/><path d=\\\"M22,38 L22,82 L74,82 L74,38\\\"/><path d=\\\"M48,46 L48,70\\\"/><path d=\\\"M36,58 L60,58\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"2.5\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M14,44 L48,16 L82,44\\\"/><path d=\\\"M22,38 L22,82 L74,82 L74,38\\\"/><path d=\\\"M48,46 L48,70\\\"/><path d=\\\"M36,58 L60,58\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":110,\"height\":110,\"title\":\"Ícono de una consulta con un signo más: un servicio nuevo\"}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":240,\"top\":566,\"width\":746,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Nueva línea de servicio"
+        },
+        {
+          "id": "n10",
+          "parent": "n8",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+          "text": "Un tratamiento diseñado para los atracones, sin medicamentos"
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":750,\"width\":110}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n11",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<circle cx=\\\"48\\\" cy=\\\"52\\\" r=\\\"8\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\"/><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><rect x=\\\"16\\\" y=\\\"22\\\" width=\\\"64\\\" height=\\\"60\\\" rx=\\\"6\\\"/><path d=\\\"M16,36 L80,36\\\"/><path d=\\\"M34,14 L34,28\\\"/><path d=\\\"M62,14 L62,28\\\"/><circle cx=\\\"48\\\" cy=\\\"52\\\" r=\\\"8\\\"/><path d=\\\"M33,74 C35,64 61,64 63,74\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":110,\"height\":110,\"title\":\"Ícono de una agenda con una persona: pacientes que ya atiendes\"}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":240,\"top\":756,\"width\":746,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n14",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Pacientes que ya atiendes"
+        },
+        {
+          "id": "n15",
+          "parent": "n13",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+          "text": "Quienes viven con atracones pueden estar ya en tu agenda"
+        },
+        {
+          "id": "n16",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":94,\"top\":940,\"width\":110}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n16",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<path d=\\\"M48,56 L48,30 A26,26 0 0 1 48,82 Z\\\" fill=\\\"#96d2ff\\\" fill-opacity=\\\"0.35\\\"/><g fill=\\\"none\\\" stroke=\\\"#96d2ff\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"56\\\" r=\\\"26\\\"/><path d=\\\"M42,16 L54,16\\\"/><path d=\\\"M48,16 L48,30\\\"/><path d=\\\"M70,32 L75,27\\\"/><path d=\\\"M48,56 L48,40\\\"/><path d=\\\"M48,56 L58,62\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":110,\"height\":110,\"title\":\"Ícono de un cronómetro con media esfera marcada: sesiones breves\"}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":240,\"top\":946,\"width\":746,\"gap\":6}",
+          "text": null
+        },
+        {
+          "id": "n19",
+          "parent": "n18",
+          "type": "Body",
+          "props": "{\"size\":\"l\",\"weight\":\"semibold\",\"tone\":\"accent\"}",
+          "text": "Menos de 30 minutos"
+        },
+        {
+          "id": "n20",
+          "parent": "n18",
+          "type": "Body",
+          "props": "{\"size\":\"s\",\"weight\":\"light\"}",
+          "text": "Con entrada y salida inmediata, sin interrumpir su día"
+        },
+        {
+          "id": "n21",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":240,\"top\":728,\"width\":746}",
+          "text": null
+        },
+        {
+          "id": "n22",
+          "parent": "n21",
+          "type": "Rule",
+          "props": "{\"length\":746,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n23",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":240,\"top\":918,\"width\":746}",
+          "text": null
+        },
+        {
+          "id": "n24",
+          "parent": "n23",
+          "type": "Rule",
+          "props": "{\"length\":746,\"thickness\":1,\"emphasis\":\"subtle\"}",
+          "text": null
+        },
+        {
+          "id": "n25",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":1150,\"width\":640}",
+          "text": null
+        },
+        {
+          "id": "n26",
+          "parent": "n25",
+          "type": "Headline",
+          "props": "{\"px\":60,\"weight\":\"regular\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "Tu paciente lo sabe: no es hambre, es un círculo vicioso. Pierde el control sobre la comida, llega la culpa y vuelve a empezar. Este 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria, ¿qué le ofreces cuando llega a tu consulta?\n\nEXOMIND, de BTL, aplica estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol, sin medicamentos y en sesiones de menos de 30 minutos. Una nueva línea de servicio para tu clínica.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#TCA #SaludMental #EXOMIND #Atracones #BTLElSalvador",
+  "sources": [
+    "data/web/exomind.md",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12447532/",
+    "knowledge/brand-guidelines/btl-corporate-identity.md"
+  ],
+  "claims": [
+    {
+      "claim": "No es hambre: es un círculo vicioso (pierde el control, llega la culpa y vuelve a empezar)",
+      "location": "diapositiva 1",
+      "source": "Pánek D., Donchev T. S., \"ExoTMS transcranial magnetic stimulation for the reduction of binge eating symptoms\", PCN Reports 2025;4(3):e70200 (https://pmc.ncbi.nlm.nih.gov/articles/PMC12447532/, enlace de la ficha de EXOMIND) · Introducción: pérdida de control sobre la comida; la culpa, la vergüenza o el asco después del atracón refuerzan el ciclo",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Su estimulación magnética ExoTMS™ actúa sobre áreas del cerebro ligadas al autocontrol",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Para tratar los atracones alimenticios (según BTL, diseñado para ello)",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "En un estudio piloto publicado en 2025, 38 personas con atracones recibieron 6 sesiones en 3 semanas (patrocinado por BTL)",
+      "location": "diapositiva 2",
+      "source": "Pánek D., Donchev T. S., \"ExoTMS transcranial magnetic stimulation for the reduction of binge eating symptoms\", PCN Reports 2025;4(3):e70200 (https://pmc.ncbi.nlm.nih.gov/articles/PMC12447532/, enlace de la ficha de EXOMIND) · Métodos: estudio piloto abierto, 38 participantes analizados, seis sesiones dos veces por semana (tres semanas); patrocinado por BTL",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Nueva línea de servicio: un tratamiento diseñado para los atracones, sin medicamentos",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · \"bringing advanced brain stimulation technology into everyday clinical practice … opens a new frontier in holistic patient care\" + btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios; sin medicamentos",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Quienes viven con atracones pueden estar ya en tu agenda",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; no invasivo; sin medicamentos; entrada y salida inmediata)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol, sin medicamentos y en sesiones de menos de 30 minutos",
+      "location": "caption",
+      "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND (sesiones cómodas de menos de 30 minutos; no invasivo; sin medicamentos; entrada y salida inmediata)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "libre"
+}

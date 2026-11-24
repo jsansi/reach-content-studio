@@ -1,0 +1,106 @@
+{
+  "angle": "El Día Mundial del Neurólogo como pretexto para intrigar: hay un servicio ligado al cerebro que la clínica estética aún no ofrece, y la diapositiva 2 revela que es EXOMIND.",
+  "slides": [
+    {
+      "slide": 1,
+      "options": [
+        {
+          "headline": "Hay un órgano\nque tu clínica\naún no cuida.",
+          "support": "Pista: hoy celebramos a quien lo estudia.",
+          "points": [],
+          "rationale": "Adivinanza que usa la fecha como pista sin nombrar el equipo; la diapositiva 2 revela el cerebro y EXOMIND.",
+          "claims": [
+            {
+              "claim": "Día Mundial del Neurólogo (quien estudia el cerebro)",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · Tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Ya está en\ntu sala de\nespera.",
+          "support": "Y todavía no lo estás atendiendo.",
+          "points": [],
+          "rationale": "Brecha de curiosidad pura (¿quién o qué?); la diapositiva 2 explica que los pacientes que buscan bienestar mental ya están en la clínica.",
+          "claims": [
+            {
+              "claim": "Los pacientes ideales ya están en tu clínica",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "La pregunta\nque nadie hace\nen consulta.",
+          "support": "Desliza: tu clínica podría ser la que la responda.",
+          "points": [],
+          "rationale": "Deja la pregunta sin decir para obligar a deslizar; la diapositiva 2 la plantea (¿cómo está tu mente?) y presenta el equipo.",
+          "claims": []
+        },
+        {
+          "headline": "¿Qué tiene\nque ver un\nneurólogo con\ntu clínica?",
+          "support": "Más de lo que imaginas.",
+          "points": [],
+          "rationale": "Pregunta directa sobre la fecha que el público no sabe responder; la diapositiva 2 conecta el cerebro con EXOMIND.",
+          "claims": [
+            {
+              "claim": "Día Mundial del Neurólogo",
+              "location": "diapositiva 1",
+              "source": "brief de la publicación · Tema",
+              "approval": "general_statement"
+            }
+          ]
+        },
+        {
+          "headline": "Neurólogos:\nhoy es su día.\nClínicas\nestéticas:\natentas.",
+          "support": "Algo de lo que ellos estudian ya cabe en tu consulta.",
+          "points": [],
+          "rationale": "Saludo a la fecha con un giro que interpela a la audiencia real; la diapositiva 2 revela qué es ese \"algo\".",
+          "claims": [
+            {
+              "claim": "Algo de lo que estudian los neurólogos (el cerebro) ya cabe en tu consulta",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · What is EXOMIND? (brain stimulation technology into everyday clinical practice)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Hoy no es\nun día de\nestética.\n¿O sí?",
+          "support": "Desliza y descubre por qué también es el día de tu clínica.",
+          "points": [],
+          "rationale": "Juega con la aparente distancia entre la fecha y la audiencia; la diapositiva 2 la cierra con EXOMIND.",
+          "claims": []
+        },
+        {
+          "headline": "Esto no se\nenseña en\nestética.",
+          "support": "Pero ya puede llegar a tu clínica.",
+          "points": [],
+          "rationale": "Tensión profesional (algo fuera de la formación habitual) sin revelar qué es; la diapositiva 2 muestra que EXOMIND lo hace accesible.",
+          "claims": [
+            {
+              "claim": "Un servicio fuera de la estética que puede llegar a tu clínica (bienestar mental)",
+              "location": "diapositiva 1",
+              "source": "data/web/exomind.md · btlaesthetics.com · cita de Prof. Ali Ghanem (expand beyond aesthetics into mental wellbeing)",
+              "approval": "manufacturer_description"
+            }
+          ]
+        },
+        {
+          "headline": "Empieza en\nla cabeza.\nTermina en\ntu agenda.",
+          "support": "Desliza: te contamos qué es.",
+          "points": [],
+          "rationale": "Recorrido incompleto (cabeza → agenda) que sugiere el beneficio para la clínica sin nombrar el equipo; la diapositiva 2 lo resuelve.",
+          "claims": []
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "EXOMIND está pendiente de revisión y sin approved_claims: las afirmaciones son descripción del fabricante (incluidas citas de médicos en la web oficial), no afirmaciones clínicas aprobadas.",
+    "Ningún gancho nombra el equipo ni su tecnología, como pidió Jaime; la diapositiva 2 debe revelarlo con el logo y la foto oficiales de EXOMIND.",
+    "Las pastillas con la fecha (29 de noviembre) y el nombre del día (Día Mundial del Neurólogo) se resuelven en la propuesta visual; no forman parte del gancho."
+  ]
+}

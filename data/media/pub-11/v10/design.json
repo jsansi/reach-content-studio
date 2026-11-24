@@ -1,0 +1,383 @@
+{
+  "direction": "B",
+  "direction_name": "Conversación",
+  "concept": "Una conversación con el profesional: la portada le hace la pregunta en grande (\"¿Y si parte del abordaje empezara en la mente?\"); la segunda responde con EXOMIND y la prueba visual de una sesión en consulta; la tercera cierra la conversación con lo que gana su consulta y la demo.",
+  "differentiation": "Ritmo de diálogo con mucho aire sobre fondos claros (light → white → light): la pregunta en Light enorme manda en la portada y la frase del gancho va como entrada; la imagen aparece como prueba (una sesión real, fundida en blanco). Sin fondos oscuros, sin paneles ni cifras.",
+  "slides": [
+    {
+      "purpose": "Gancho: la pregunta al profesional en grande, con la frase del día como entrada.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro: la pastilla \"30 de noviembre\", el texto \"Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria\", \"El impulso de comer no siempre es hambre.\" y \"¿Y si parte del abordaje empezara en la mente?\"; la pregunta en tipografía muy grande y una neurona en trazo azul a la derecha",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":646,\"top\":560,\"width\":340}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": "n1",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<defs><filter id=\\\"glow\\\" x=\\\"-60%\\\" y=\\\"-60%\\\" width=\\\"220%\\\" height=\\\"220%\\\"><feGaussianBlur stdDeviation=\\\"16\\\"/></filter><filter id=\\\"soft\\\" x=\\\"-60%\\\" y=\\\"-60%\\\" width=\\\"220%\\\" height=\\\"220%\\\"><feGaussianBlur stdDeviation=\\\"5\\\"/></filter></defs><g opacity=\\\"0.72\\\"><g opacity=\\\"0.35\\\" transform=\\\"translate(90 110) scale(0.9)\\\"><circle r=\\\"16\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.3\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><path d=\\\"M0,0 C-30,-30 -40,-60 -60,-90\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C30,-26 52,-40 86,-52\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C-36,14 -70,12 -104,26\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C14,40 10,70 24,104\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M-30,-38 C-52,-42 -70,-58 -84,-74\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/></g><g opacity=\\\"0.3\\\" transform=\\\"translate(480 150) scale(0.7)\\\"><circle r=\\\"16\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.3\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><path d=\\\"M0,0 C-30,-30 -40,-60 -60,-90\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C30,-26 52,-40 86,-52\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C-36,14 -70,12 -104,26\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M0,0 C14,40 10,70 24,104\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><path d=\\\"M-30,-38 C-52,-42 -70,-58 -84,-74\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/></g><line x1=\\\"104\\\" y1=\\\"96\\\" x2=\\\"166\\\" y2=\\\"84\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2\\\" opacity=\\\"0.4\\\"/><circle cx=\\\"300\\\" cy=\\\"250\\\" r=\\\"86\\\" fill=\\\"#00508c\\\" opacity=\\\"0.5\\\" filter=\\\"url(#glow)\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.92\\\"><path d=\\\"M300,250 C266,214 244,168 226,104\\\"/><path d=\\\"M240,150 C210,140 186,118 166,84\\\"/><path d=\\\"M230,118 C244,88 254,64 262,34\\\"/><path d=\\\"M178,100 C166,80 150,70 132,64\\\"/><path d=\\\"M300,250 C252,256 196,248 128,262\\\"/><path d=\\\"M186,252 C156,226 120,214 82,212\\\"/><path d=\\\"M160,258 C130,282 104,312 70,326\\\"/><path d=\\\"M110,214 C96,196 82,186 62,182\\\"/><path d=\\\"M300,250 C286,296 262,340 244,404\\\"/><path d=\\\"M258,350 C230,362 200,382 172,414\\\"/><path d=\\\"M248,384 C268,404 280,430 290,460\\\"/><path d=\\\"M196,398 C184,420 176,440 172,462\\\"/><path d=\\\"M300,250 C318,204 332,156 362,104\\\"/><path d=\\\"M342,152 C372,140 402,120 426,92\\\"/><path d=\\\"M356,116 C350,92 346,70 348,44\\\"/><path d=\\\"M300,250 C274,230 254,226 212,226\\\"/><path d=\\\"M240,228 C222,204 214,190 210,170\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"6\\\" stroke-linecap=\\\"round\\\" opacity=\\\"0.5\\\" filter=\\\"url(#soft)\\\"><path d=\\\"M300,250 C266,214 244,168 226,104\\\"/><path d=\\\"M240,150 C210,140 186,118 166,84\\\"/><path d=\\\"M230,118 C244,88 254,64 262,34\\\"/><path d=\\\"M178,100 C166,80 150,70 132,64\\\"/></g><circle cx=\\\"226\\\" cy=\\\"104\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"166\\\" cy=\\\"84\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"262\\\" cy=\\\"34\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"132\\\" cy=\\\"64\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"128\\\" cy=\\\"262\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"82\\\" cy=\\\"212\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"70\\\" cy=\\\"326\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"62\\\" cy=\\\"182\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"244\\\" cy=\\\"404\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"172\\\" cy=\\\"414\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"290\\\" cy=\\\"460\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"172\\\" cy=\\\"462\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"362\\\" cy=\\\"104\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"426\\\" cy=\\\"92\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"348\\\" cy=\\\"44\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"212\\\" cy=\\\"226\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"210\\\" cy=\\\"170\\\" r=\\\"6\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"236\\\" cy=\\\"132\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"250\\\" cy=\\\"186\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"204\\\" cy=\\\"252\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"156\\\" cy=\\\"246\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"272\\\" cy=\\\"330\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"252\\\" cy=\\\"370\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"318\\\" cy=\\\"200\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"338\\\" cy=\\\"160\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"196\\\" cy=\\\"110\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"116\\\" cy=\\\"222\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"214\\\" cy=\\\"396\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><circle cx=\\\"394\\\" cy=\\\"116\\\" r=\\\"3.5\\\" fill=\\\"#00508c\\\"/><path d=\\\"M326,236 C340,250 340,262 326,274\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><path d=\\\"M334,262 L560,286\\\" fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"/><rect x=\\\"351\\\" y=\\\"257\\\" width=\\\"42\\\" height=\\\"18\\\" rx=\\\"9\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" transform=\\\"rotate(6 372 266)\\\"/><rect x=\\\"403\\\" y=\\\"263\\\" width=\\\"42\\\" height=\\\"18\\\" rx=\\\"9\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" transform=\\\"rotate(6 424 272)\\\"/><rect x=\\\"455\\\" y=\\\"269\\\" width=\\\"42\\\" height=\\\"18\\\" rx=\\\"9\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" transform=\\\"rotate(6 476 278)\\\"/><rect x=\\\"507\\\" y=\\\"274\\\" width=\\\"42\\\" height=\\\"18\\\" rx=\\\"9\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.35\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\" transform=\\\"rotate(6 528 283)\\\"/><path d=\\\"M300,212 C326,212 342,230 340,252 C338,276 318,290 296,288 C272,286 258,268 260,248 C262,226 278,212 300,212 Z\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.25\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\"/><circle cx=\\\"300\\\" cy=\\\"250\\\" r=\\\"15\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.7\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2\\\"/><circle cx=\\\"304\\\" cy=\\\"246\\\" r=\\\"5\\\" fill=\\\"#00508c\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\"><path d=\\\"M556,286 L584,289\\\"/><path d=\\\"M584,289 C596,289 602,270 616,262\\\"/><path d=\\\"M584,289 L624,292\\\"/><path d=\\\"M584,289 C596,290 602,310 614,320\\\"/></g><circle cx=\\\"622\\\" cy=\\\"262\\\" r=\\\"8\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"630\\\" cy=\\\"292\\\" r=\\\"8\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\"/><circle cx=\\\"620\\\" cy=\\\"320\\\" r=\\\"8\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.6\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.5\\\"/>\",\"viewBox\":\"0 0 640 500\",\"width\":340,\"height\":266,\"title\":\"Neurona en trazo azul\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":40}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":12}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "DatePill",
+          "props": "{}",
+          "text": "30 de noviembre"
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Body",
+          "props": "{\"px\":30,\"weight\":\"regular\",\"tone\":\"base\",\"maxWidth\":892}",
+          "text": "Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria"
+        },
+        {
+          "id": "n8",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"px\":44,\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "El impulso de comer\n**no siempre es hambre.**"
+        },
+        {
+          "id": "n9",
+          "parent": "n4",
+          "type": "Headline",
+          "props": "{\"px\":88,\"weight\":\"light\",\"tone\":\"accent\",\"as\":\"h1\"}",
+          "text": "¿Y si parte\ndel abordaje\nempezara\nen la mente?"
+        },
+        {
+          "id": "n10",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Equipo: responde la pregunta de la portada (\"Sí: empieza en la mente\") y presenta EXOMIND con su logo oficial y el equipo.",
+      "background": "white",
+      "lightFrom": null,
+      "alt": "Fondo blanco: \"Sí: empieza en la mente.\", \"Justo donde nace el impulso, actúa\" seguido del logo oficial de EXOMIND, y \"Su estimulación magnética ExoTMS™ llega a áreas del cerebro ligadas al autocontrol. BTL lo diseñó para tratar los atracones alimenticios.\"; debajo, la foto oficial del equipo EXOMIND con la pantalla que muestra un cerebro y el aplicador, fundida con el fondo.",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/Exomind_PIC_Unit_0090_ENUS_100_7dd410130f.webp\",\"alt\":\"Equipo EXOMIND de BTL con la pantalla que muestra un cerebro y el aplicador\",\"left\":40,\"top\":730,\"width\":1000,\"height\":527,\"blend\":\"multiply\",\"fade\":[\"left\",\"right\",\"top\",\"bottom\"],\"fadeSize\":110}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":18}",
+          "text": null
+        },
+        {
+          "id": "n4",
+          "parent": "n3",
+          "type": "Body",
+          "props": "{\"px\":38,\"weight\":\"regular\",\"tone\":\"accent\"}",
+          "text": "Sí: empieza en la mente."
+        },
+        {
+          "id": "n5",
+          "parent": "n3",
+          "type": "Headline",
+          "props": "{\"px\":62,\"weight\":\"light\",\"as\":\"h2\"}",
+          "text": "Justo donde nace el impulso,\n**actúa**"
+        },
+        {
+          "id": "n6",
+          "parent": null,
+          "type": "ProductImage",
+          "props": "{\"src\":\"data/products/exomind/images.png\",\"alt\":\"Logo oficial de EXOMIND\",\"left\":72,\"top\":486,\"width\":440,\"height\":92,\"objectPosition\":\"50% 50%\",\"blend\":\"multiply\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":56,\"top\":480,\"width\":34,\"height\":104,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":494,\"top\":480,\"width\":34,\"height\":104,\"surface\":\"white\"}",
+          "text": null
+        },
+        {
+          "id": "n9",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":600,\"left\":\"m\",\"right\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n10",
+          "parent": "n9",
+          "type": "Body",
+          "props": "{\"px\":30,\"maxWidth\":880}",
+          "text": "Su estimulación magnética ExoTMS™ llega a áreas del cerebro ligadas al autocontrol. BTL lo diseñó para tratar los atracones alimenticios."
+        },
+        {
+          "id": "n11",
+          "parent": null,
+          "type": "SwipeCue",
+          "props": "{\"placement\":\"bottom-right\"}",
+          "text": "Desliza"
+        }
+      ]
+    },
+    {
+      "purpose": "Ventajas: el cierre de la conversación y la demo.",
+      "background": "light",
+      "lightFrom": "top-right",
+      "alt": "Fondo claro: \"Y esa respuesta puede estar en tu consulta\", tres ventajas con íconos (Una nueva herramienta: para acompañar a quienes viven con atracones; Pacientes que ya atiendes: quienes buscan esa ayuda pueden estar ya en tu agenda; Menos de 30 minutos: con entrada y salida inmediata, sin interrumpir su día) y \"Solicita tu demo\".",
+      "nodes": [
+        {
+          "id": "n1",
+          "parent": null,
+          "type": "BtlLogo",
+          "props": "{\"placement\":\"top-left\"}",
+          "text": null
+        },
+        {
+          "id": "n2",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"top\":250,\"left\":\"m\",\"right\":\"m\",\"gap\":60}",
+          "text": null
+        },
+        {
+          "id": "n3",
+          "parent": "n2",
+          "type": "Headline",
+          "props": "{\"px\":60,\"weight\":\"light\",\"tone\":\"accent\",\"as\":\"h2\"}",
+          "text": "Y esa respuesta\n**puede estar en tu consulta**"
+        },
+        {
+          "id": "n4",
+          "parent": "n2",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":36}",
+          "text": null
+        },
+        {
+          "id": "n5",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n6",
+          "parent": "n5",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><path d=\\\"M44,16 C34,12 24,18 24,26 C14,28 10,40 16,48 C10,56 14,68 24,70 C26,78 36,82 44,78 Z\\\"/><path d=\\\"M44,16 C52,12 62,16 64,24\\\"/><path d=\\\"M44,16 L44,52\\\"/><path d=\\\"M24,26 C30,28 32,34 28,38\\\"/><path d=\\\"M16,48 C22,46 28,50 26,56\\\"/><path d=\\\"M34,46 C38,42 44,44 44,44\\\"/><path d=\\\"M30,64 C34,60 40,62 44,62\\\"/></g><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"66\\\" cy=\\\"62\\\" r=\\\"18\\\"/><path d=\\\"M66,53 L66,71\\\"/><path d=\\\"M57,62 L75,62\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":68,\"height\":68,\"title\":\"Ícono de un cerebro con un signo más: una nueva herramienta\"}",
+          "text": null
+        },
+        {
+          "id": "n7",
+          "parent": "n5",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n8",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Una nueva herramienta"
+        },
+        {
+          "id": "n9",
+          "parent": "n7",
+          "type": "Body",
+          "props": "{\"px\":30,\"tone\":\"base\",\"maxWidth\":700}",
+          "text": "Para acompañar a quienes viven con atracones"
+        },
+        {
+          "id": "n10",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n11",
+          "parent": "n10",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"2.6\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><rect x=\\\"16\\\" y=\\\"22\\\" width=\\\"64\\\" height=\\\"58\\\" rx=\\\"4\\\"/><path d=\\\"M16,38 L80,38\\\"/><path d=\\\"M32,14 L32,28\\\"/><path d=\\\"M64,14 L64,28\\\"/><circle cx=\\\"48\\\" cy=\\\"54\\\" r=\\\"7\\\"/><path d=\\\"M36,72 C38,64 58,64 60,72\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":68,\"height\":68,\"title\":\"Ícono de una agenda con un paciente: pacientes que ya atiendes\"}",
+          "text": null
+        },
+        {
+          "id": "n12",
+          "parent": "n10",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n13",
+          "parent": "n12",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Pacientes que ya atiendes"
+        },
+        {
+          "id": "n14",
+          "parent": "n12",
+          "type": "Body",
+          "props": "{\"px\":30,\"tone\":\"base\",\"maxWidth\":700}",
+          "text": "Quienes buscan esa ayuda pueden estar ya en tu agenda"
+        },
+        {
+          "id": "n15",
+          "parent": "n4",
+          "type": "Stack",
+          "props": "{\"direction\":\"row\",\"gap\":28,\"crossAlign\":\"start\"}",
+          "text": null
+        },
+        {
+          "id": "n16",
+          "parent": "n15",
+          "type": "Illustration",
+          "props": "{\"svg\":\"<path d=\\\"M48,56 L48,30 A26,26 0 0 1 48,82 Z\\\" fill=\\\"#00508c\\\" fill-opacity=\\\"0.35\\\"/><g fill=\\\"none\\\" stroke=\\\"#00508c\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"><circle cx=\\\"48\\\" cy=\\\"56\\\" r=\\\"26\\\"/><path d=\\\"M42,16 L54,16\\\"/><path d=\\\"M48,16 L48,30\\\"/><path d=\\\"M70,32 L75,27\\\"/><path d=\\\"M48,56 L48,40\\\"/><path d=\\\"M48,56 L58,62\\\"/></g>\",\"viewBox\":\"0 0 96 96\",\"width\":68,\"height\":68,\"title\":\"Ícono de un cronómetro con media esfera marcada: menos de 30 minutos\"}",
+          "text": null
+        },
+        {
+          "id": "n17",
+          "parent": "n15",
+          "type": "Stack",
+          "props": "{\"direction\":\"column\",\"gap\":2}",
+          "text": null
+        },
+        {
+          "id": "n18",
+          "parent": "n17",
+          "type": "Body",
+          "props": "{\"px\":34,\"weight\":\"semibold\",\"tone\":\"strong\"}",
+          "text": "Menos de 30 minutos"
+        },
+        {
+          "id": "n19",
+          "parent": "n17",
+          "type": "Body",
+          "props": "{\"px\":30,\"tone\":\"base\",\"maxWidth\":700}",
+          "text": "Con entrada y salida inmediata, sin interrumpir su día"
+        },
+        {
+          "id": "n20",
+          "parent": null,
+          "type": "Region",
+          "props": "{\"left\":\"m\",\"bottom\":\"m\"}",
+          "text": null
+        },
+        {
+          "id": "n21",
+          "parent": "n20",
+          "type": "Headline",
+          "props": "{\"px\":56,\"weight\":\"regular\",\"as\":\"p\"}",
+          "text": "Solicita tu demo"
+        }
+      ]
+    }
+  ],
+  "caption": "El impulso de comer no siempre es hambre. Este 30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria, te hacemos una pregunta: ¿y si parte del abordaje empezara en la mente?\n\nSí: empieza ahí. EXOMIND, de BTL, actúa con estimulación magnética ExoTMS™ sobre áreas del cerebro ligadas al autocontrol y está diseñado para tratar los atracones alimenticios. Y esa respuesta puede estar en tu consulta, en sesiones de menos de 30 minutos.\n\nEscríbenos \"DEMO\" por mensaje directo.\n\n#BTLElSalvador #EXOMIND #TCA #BienestarMental #DiaDeLaLuchaContraLosTCA",
+  "sources": [
+    "data/web/exomind.md",
+    "knowledge/brand-guidelines/btl-corporate-identity.md",
+    "data/illustrations (neurona e íconos de la biblioteca)"
+  ],
+  "claims": [
+    {
+      "claim": "El impulso de comer no siempre es hambre",
+      "location": "diapositiva 1",
+      "source": "frase general de sensibilización sobre la fecha; no atribuida al equipo",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Actúa sobre áreas del cerebro ligadas al autocontrol",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Según BTL, diseñado para tratar los atracones alimenticios",
+      "location": "diapositiva 2",
+      "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Menos de 30 minutos, con entrada y salida inmediata",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es · Transforma tu consulta con EXOMIND",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "30 de noviembre, Día Internacional de la Lucha contra los Trastornos de la Conducta Alimentaria",
+      "location": "diapositiva 1",
+      "source": "brief de la publicación · Tema y fecha",
+      "approval": "general_statement"
+    },
+    {
+      "claim": "Su estimulación magnética ExoTMS™ llega a áreas del cerebro ligadas al autocontrol",
+      "location": "diapositiva 2 y caption",
+      "source": "data/web/exomind.md · btlaesthetics.es · Un entrenamiento para tu mente (áreas clave del cerebro involucradas en … el autocontrol)",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Una nueva herramienta para acompañar a quienes viven con atracones",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.es · Diseñado para el tratamiento de … atracones alimenticios",
+      "approval": "manufacturer_description"
+    },
+    {
+      "claim": "Quienes buscan esa ayuda pueden estar ya en tu agenda",
+      "location": "diapositiva 3",
+      "source": "data/web/exomind.md · btlaesthetics.com · cita de Rudolph Eberwein, MD (Your ideal EXOMIND patients are already in your practice)",
+      "approval": "manufacturer_description"
+    }
+  ],
+  "direction_id": "pregunta-respuesta"
+}
